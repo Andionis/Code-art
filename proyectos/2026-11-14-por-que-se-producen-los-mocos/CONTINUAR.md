@@ -20,7 +20,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 - [x] 4. El plan → plan.md, con sus escenas
 - [ ] 5. Escena por escena (cada una, su borrador aprobado):
   - [x] escena 1: el hook (hasta 7,95 s)
-  - [ ] escena 2: la trampa (hasta 23,9 s)
+  - [x] escena 2: la trampa (hasta 23,9 s)
   - [ ] escena 3: los pelitos y el viaje (hasta 37,2 s)
   - [ ] escena 4: el resfriado (hasta 46,0 s)
   - [ ] escena 5: el verde y el cierre (hasta el final)
