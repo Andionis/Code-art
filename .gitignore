@@ -1,0 +1,4 @@
+node_modules/
+.env.local
+PEGA-AQUI-TU-CLAVE-ELEVENLABS.txt
+.DS_Store
