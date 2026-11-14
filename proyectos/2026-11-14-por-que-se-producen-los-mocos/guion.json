@@ -2,6 +2,7 @@
   "titulo": "De dónde salen los mocos",
   "idioma": "es",
   "subtitulos": "arriba",
+  "voz": { "id": "TX3LPaxmHKxFdv7VOQHJ" },
   "frases": [
     { "texto": "¿De dónde salen los mocos?", "clave": "mocos", "hook": true },
     { "texto": "Tu nariz los fabrica todos los días, aunque no estés enfermo, y casi todos... te los tragas.", "clave": "tragas", "hook": true },

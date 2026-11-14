@@ -6,6 +6,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 ## Lo decidido (con las palabras del creador)
 
 - «Hazme un video sobre cómo se produce los mocos».
+- Voz: «Usa otra voz que se pueda» (plan gratis de ElevenLabs): Liam (TX3LPaxmHKxFdv7VOQHJ).
 
 ## Pendiente del creador
 
@@ -15,7 +16,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 - [x] 1. La idea y los datos → idea.md
 - [x] 2. El guion → guion.json, **aprobado por el creador**
-- [ ] 3. La voz (una sola vez, con el guion cerrado)
+- [x] 3. La voz (una sola vez, con el guion cerrado)
 - [ ] 4. El plan → plan.md, con sus escenas
 - [ ] 5. Escena por escena (cada una, su borrador aprobado):
   - [ ] escena 1 (el hook)
