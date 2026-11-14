@@ -14,7 +14,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
 - [x] 1. La idea y los datos → idea.md
-- [ ] 2. El guion → guion.json, **aprobado por el creador**
+- [x] 2. El guion → guion.json, **aprobado por el creador**
 - [ ] 3. La voz (una sola vez, con el guion cerrado)
 - [ ] 4. El plan → plan.md, con sus escenas
 - [ ] 5. Escena por escena (cada una, su borrador aprobado):

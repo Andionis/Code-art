@@ -1,0 +1,1 @@
+- Node fetch no usa el proxy de la sesión en la nube: lanzar el motor con NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt.
