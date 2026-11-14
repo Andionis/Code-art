@@ -1,0 +1,18 @@
+{
+  "titulo": "Por qué lloramos con la cebolla",
+  "idioma": "es",
+  "subtitulos": "arriba",
+  "frases": [
+    { "texto": "¿Por qué lloras cada vez que cortas una cebolla?", "clave": "lloras", "hook": true },
+    { "texto": "La cebolla no te pone triste: te está atacando.", "clave": "atacando", "hook": true },
+    { "texto": "Por dentro está hecha de millones de cajitas, y en cada una guarda dos cosas por separado.", "clave": "separado" },
+    { "texto": "Pero el cuchillo revienta las cajitas, y las dos se mezclan.", "clave": "mezclan" },
+    { "texto": "Esa mezcla fabrica un gas invisible, que sube flotando hasta tus ojos.", "clave": "gas" },
+    { "texto": "Ahí toca unos nervios que avisan: ¡algo te pica!", "clave": "pica" },
+    { "texto": "Y tus ojos abren el grifo: lágrimas para lavar el gas.", "clave": "lágrimas" },
+    { "texto": "Es la defensa de la cebolla, para que ningún animal se la quiera comer.", "clave": "defensa" },
+    { "texto": "Por eso una cebolla fría hace llorar menos: el frío frena la mezcla.", "clave": "fría" },
+    { "texto": "Así que no lloras de pena: lloras porque la cebolla se defiende.", "clave": "defiende" },
+    { "texto": "Envíaselo a un amigo que le pueda interesar.", "clave": "amigo" }
+  ]
+}
