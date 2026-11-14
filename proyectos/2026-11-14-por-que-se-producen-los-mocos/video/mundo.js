@@ -166,7 +166,7 @@ export function polvo(g, x, y, r, semilla = 1, al = 1) {
   for (let i = 0; i < 9; i++) { const a = (i / 9) * 6.2832, rr = r * (0.7 + az() * 0.45); i ? g.lineTo(Math.cos(a) * rr, Math.sin(a) * rr) : g.moveTo(Math.cos(a) * rr, Math.sin(a) * rr); }
   g.closePath();
   const gr = g.createRadialGradient(-r * 0.3, -r * 0.3, r * 0.1, 0, 0, r * 1.1);
-  gr.addColorStop(0, "#d8c8b0"); gr.addColorStop(0.6, "#8f7a62"); gr.addColorStop(1, "#4a3a2c");
+  gr.addColorStop(0, "#e2e2e6"); gr.addColorStop(0.55, "#8a8a94"); gr.addColorStop(1, "#3a3a44");
   g.fillStyle = gr; g.fill();
   g.save(); g.clip(); g.globalCompositeOperation = "multiply"; g.globalAlpha *= 0.6; g.drawImage(k.red, -r, -r, r * 2, r * 2); g.restore();
   g.restore();
