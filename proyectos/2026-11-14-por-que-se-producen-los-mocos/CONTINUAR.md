@@ -10,7 +10,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Pendiente del creador
 
--
+- Ver el borrador completo v1 y decir qué cambiar (escenas 3-5 no aprobadas una a una). Miniatura y descripciones ya hechas.
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
