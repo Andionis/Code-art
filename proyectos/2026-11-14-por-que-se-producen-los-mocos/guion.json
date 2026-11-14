@@ -1,0 +1,20 @@
+{
+  "titulo": "De dónde salen los mocos",
+  "idioma": "es",
+  "subtitulos": "arriba",
+  "frases": [
+    { "texto": "¿De dónde salen los mocos?", "clave": "mocos", "hook": true },
+    { "texto": "Tu nariz los fabrica todos los días, aunque no estés enfermo, y casi todos... te los tragas.", "clave": "tragas", "hook": true },
+    { "texto": "Por dentro, tu nariz está forrada de una capa que suelta gotas de moco sin parar.", "clave": "gotas" },
+    { "texto": "Es casi toda agua, pero con unas proteínas que la vuelven espesa, como gelatina.", "clave": "gelatina" },
+    { "texto": "Y funciona como un papel atrapamoscas: el polvo, el polen y los virus que respiras se quedan pegados.", "clave": "pegados" },
+    { "texto": "Debajo, miles de pelitos se mueven como remos, más de diez veces por segundo.", "clave": "remos" },
+    { "texto": "Así empujan el moco hacia la garganta, como la cinta de la caja del súper, y te lo tragas.", "clave": "garganta" },
+    { "texto": "Y en el estómago, el ácido deshace todo lo que atrapó.", "clave": "ácido" },
+    { "texto": "Pero cuando entra un virus, tu nariz se irrita y fabrica mucho más moco del que los pelitos pueden llevar.", "clave": "más" },
+    { "texto": "Como un lavamanos que rebosa, se sale por delante.", "clave": "rebosa" },
+    { "texto": "¿Y el verde? Son tus defensas: glóbulos blancos que mueren luchando y sueltan una sustancia con hierro, que es verde.", "clave": "hierro" },
+    { "texto": "Así que el moco no es basura: es tu trampa contra todo lo que respiras.", "clave": "trampa" },
+    { "texto": "Envíaselo a un amigo que le pueda interesar.", "clave": "amigo" }
+  ]
+}
