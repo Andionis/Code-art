@@ -44,7 +44,7 @@ export function dibuja(g, t) {
   const nivel = mez(860, 650, Math.min(1, sube * 0.9 + 0.1 * rebosa));
   const ag = g.createLinearGradient(0, nivel, 0, 960); ag.addColorStop(0, "rgba(120,200,240,0.9)"); ag.addColorStop(1, "rgba(30,110,170,0.95)");
   g.fillStyle = ag; g.fillRect(0, nivel + 6 * Math.sin(t * 9), 1080, 600);
-  g.globalCompositeOperation = "lighter"; g.globalAlpha = 0.35; g.drawImage(k.causticas, -100 + (t * 60) % 100, nivel, 1300, 600);
+  g.globalCompositeOperation = "lighter"; g.globalAlpha = 0.35; g.drawImage(k.causticas, -100 + 30 * (t - T0), nivel, 1300, 600);
   g.restore();
   // el reflejo de la cerámica
   g.strokeStyle = "rgba(255,255,255,0.9)"; g.lineWidth = 8; g.beginPath(); g.ellipse(540, 800, 395, 160, 0, 3.4, 6.0); g.stroke();

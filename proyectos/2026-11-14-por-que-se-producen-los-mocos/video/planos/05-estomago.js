@@ -68,7 +68,7 @@ export function dibuja(g, t) {
   g.lineTo(1080, 1920); g.closePath(); g.fill(); g.restore();
   // la luz que se mueve dentro del ácido
   g.save(); g.beginPath(); g.rect(0, NIVEL, 1080, 920); g.clip();
-  g.globalCompositeOperation = "lighter"; g.globalAlpha = 0.25; g.drawImage(k.causticas, -200 + (t * 40) % 200, NIVEL - 100, 1500, 1200); g.restore();
+  g.globalCompositeOperation = "lighter"; g.globalAlpha = 0.25; g.drawImage(k.causticas, -200 + 40 * (t - T0), NIVEL - 100, 1500, 1200); g.restore();
   // el borde brillante de la superficie
   g.strokeStyle = "rgba(240,255,170,0.9)"; g.lineWidth = 6; g.beginPath();
   for (let x = 0; x <= 1080; x += 20) x ? g.lineTo(x, ola(x)) : g.moveTo(x, ola(x));

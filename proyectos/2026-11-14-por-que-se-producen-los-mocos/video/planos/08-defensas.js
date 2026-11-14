@@ -66,8 +66,8 @@ export function dibuja(g, t) {
     const fg = g.createLinearGradient(0, 0, 0, 1920);
     fg.addColorStop(0, k.mezColor("#5d4a12", "#1f4a0c", verde)); fg.addColorStop(1, k.mezColor("#c9a640", "#5fae2a", verde));
     g.fillStyle = fg; g.fillRect(0, 0, 1080, 1920);
-    g.save(); g.globalCompositeOperation = "lighter"; g.globalAlpha *= 0.3; g.drawImage(k.causticas, -200 + (t * 25) % 200, -200, 1500, 2400); g.restore();
-    for (const b of FONDO) { g.strokeStyle = "rgba(255,255,220,0.25)"; g.lineWidth = 2; g.beginPath(); g.arc(b.x + 10 * Math.sin(t + b.ph), b.y - (t * 15) % 60, b.r, 0, 6.2832); g.stroke(); }
+    g.save(); g.globalCompositeOperation = "lighter"; g.globalAlpha *= 0.3; g.drawImage(k.causticas, -200 + 25 * (t - T0), -200, 1500, 2400); g.restore();
+    for (const b of FONDO) { g.strokeStyle = "rgba(255,255,220,0.25)"; g.lineWidth = 2; g.beginPath(); g.arc(b.x + 10 * Math.sin(t + b.ph), b.y - 15 * (t - T0), b.r, 0, 6.2832); g.stroke(); }
     // las nubes verdes de cada glóbulo que revienta
     for (const q of GB) {
       const u = tr(t, q.revienta, q.revienta + 1.4);

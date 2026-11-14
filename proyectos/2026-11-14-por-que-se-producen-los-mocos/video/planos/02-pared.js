@@ -71,10 +71,10 @@ function dentro(g, t) {
   fondo.addColorStop(0, k.mezColor("#0c3b63", "#5a3a08", esp)); fondo.addColorStop(1, k.mezColor("#1f86b0", "#d99a1c", esp));
   g.fillStyle = fondo; g.fillRect(0, 0, 1080, 1920);
   // la luz del agua, que se mueve despacio (más lenta cuando espesa)
-  g.save(); g.globalCompositeOperation = "lighter"; g.globalAlpha = 0.45 * (1 - 0.5 * esp);
-  const dx = (t * 30 * (1 - 0.7 * esp)) % 200;
+  g.save(); g.globalCompositeOperation = "lighter"; g.globalAlpha *= 0.45 * (1 - 0.5 * esp);
+  const dx = 30 * Math.max(0, t - Tes) - 21 * Math.max(0, t - Tesp);
   g.drawImage(k.causticas, -200 + dx, -200, 1500, 2400); g.restore();
-  if (esp > 0) { g.save(); g.globalCompositeOperation = "lighter"; g.globalAlpha = 0.4 * esp; g.drawImage(CAUS_ORO(), -200 + dx, -200, 1500, 2400); g.restore(); }
+  if (esp > 0) { g.save(); g.globalCompositeOperation = "lighter"; g.globalAlpha *= 0.4 * esp; g.drawImage(CAUS_ORO(), -200 + dx, -200, 1500, 2400); g.restore(); }
   // burbujitas que suben (más despacio cuando espesa)
   for (const b of BURB) {
     const y = ((b.y - t * b.v * (1 - 0.8 * esp)) % 1920 + 1920) % 1920;
@@ -133,7 +133,7 @@ export function dibuja(g, t) {
       g.save(); g.globalAlpha = capa;
       g.fillStyle = "rgba(240,190,70,0.38)"; g.fillRect(-OX, -OY, W, H);
       g.globalCompositeOperation = "lighter"; g.globalAlpha = 0.22 * capa;
-      g.drawImage(CAUS_ORO(), -OX + 6 * tiembla, -OY + (t * 12) % 60, W, H);
+      g.drawImage(CAUS_ORO(), -OX + 6 * tiembla, -OY + 12 * Math.max(0, t - Tfun), W, H);
       g.restore();
     }
     // lo que llega y se pega

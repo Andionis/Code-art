@@ -48,7 +48,7 @@ export function tunel(g, cam, d, o = {}) {
   }
   // la textura de la carne y su humedad
   g.save(); g.globalCompositeOperation = "multiply"; g.globalAlpha = 0.35;
-  g.drawImage(k.manchas, -300 + ((d * 40) % 200), -300, 1680, 2520); g.restore();
+  g.drawImage(k.manchas, -300 + 90 * Math.sin(d * 0.35), -300, 1680, 2520); g.restore();
   g.save(); g.globalCompositeOperation = "screen"; g.globalAlpha = 0.08; g.drawImage(k.red, -200, -200, 1480, 2320); g.restore();
 }
 
