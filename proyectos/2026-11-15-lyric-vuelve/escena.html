@@ -1,0 +1,162 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Fig;src:url(file:///home/user/Code-art/letra/Figtree-ExtraBold.ttf);font-weight:800}
+@font-face{font-family:Fig;src:url(file:///home/user/Code-art/letra/Figtree-Bold.ttf);font-weight:700}
+@font-face{font-family:Fig;src:url(file:///home/user/Code-art/letra/Figtree-Medium.ttf);font-weight:500}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:transparent;font-family:Fig,Inter,sans-serif;color:#fff}
+#bg{position:absolute;inset:0}
+.blob{position:absolute;border-radius:50%;filter:blur(160px);opacity:.45}
+#cam{position:absolute;inset:0;perspective:1500px;perspective-origin:50% 50%}
+.sc{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transform-style:preserve-3d;opacity:0}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;opacity:.10;mix-blend-mode:overlay;image-rendering:pixelated}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,transparent 45%,rgba(0,0,0,.75) 100%)}
+/* NA-NA */
+#nana{font-weight:800;font-size:250px;letter-spacing:-6px;display:flex;line-height:1}
+#nana span{display:inline-block;text-shadow:0 0 60px rgba(255,40,40,.85),0 0 160px rgba(40,70,255,.6)}
+/* tarjeta letra */
+.card{width:860px;border-radius:64px;padding:70px 70px 90px;position:relative;
+ background:linear-gradient(135deg,#ff3b30 0%,#d1001c 55%,#7a0016 100%);
+ box-shadow:0 60px 140px rgba(230,0,30,.5),0 0 0 3px rgba(80,110,255,.35),inset 0 2px 0 rgba(255,255,255,.5),inset 0 -20px 60px rgba(60,0,20,.4)}
+.card .lbl{font-weight:700;font-size:38px;opacity:.75;margin-bottom:26px}
+.card .ln{font-weight:800;font-size:160px;line-height:1.02;letter-spacing:-4px}
+.card .sh{position:absolute;inset:0;border-radius:64px;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.45) 45%,transparent 60%);mix-blend-mode:screen}
+.w{display:inline-block}
+/* chat */
+#chat{width:900px;display:flex;flex-direction:column;align-items:flex-end;gap:34px}
+.bub{font-weight:800;font-size:96px;line-height:1.05;padding:38px 62px 44px;border-radius:70px;position:relative;
+ background:linear-gradient(160deg,#ff4a3d,#cc0f1f);box-shadow:0 30px 90px rgba(255,30,40,.45),inset 0 3px 0 rgba(255,255,255,.5);transform-origin:100% 100%;max-width:900px}
+.bub.l{align-self:flex-start;background:linear-gradient(160deg,#1d2a66,#0f1638);box-shadow:0 30px 80px rgba(0,0,0,.5),inset 0 2px 0 rgba(255,255,255,.15);transform-origin:0 100%}
+.bub:after{content:"";position:absolute;bottom:0;right:-14px;width:46px;height:46px;background:#cc0f1f;border-bottom-left-radius:40px;clip-path:polygon(0 0,100% 100%,0 100%)}
+#visto{font-weight:700;font-size:40px;opacity:0;color:#cfc4dd;margin-top:-10px}
+/* luna */
+#moon{position:absolute;width:640px;height:640px;border-radius:50%;
+ background:radial-gradient(circle at 38% 34%,#fff 0%,#e8eeff 30%,#9fb4ff 62%,#3a55e0 100%);
+ box-shadow:0 0 120px 30px rgba(120,150,255,.65),0 0 340px 120px rgba(30,60,255,.45)}
+.crat{position:absolute;border-radius:50%;background:rgba(60,80,190,.22);box-shadow:inset 6px 8px 14px rgba(20,30,120,.3)}
+#luna{position:absolute;font-weight:800;font-size:250px;letter-spacing:40px;mix-blend-mode:normal;color:#fff;text-shadow:0 10px 60px rgba(200,0,20,.8)}
+/* reproductor */
+#player{width:900px;border-radius:72px;padding:56px;background:rgba(10,14,40,.62);backdrop-filter:blur(40px);
+ border:2px solid rgba(255,255,255,.14);box-shadow:0 80px 160px rgba(0,0,0,.6),inset 0 2px 0 rgba(255,255,255,.18)}
+#cover{width:788px;height:788px;border-radius:44px;overflow:hidden;position:relative;background:url(portada.png) center/cover !important;
+ background:radial-gradient(circle at 70% 30%,#ffd6f6 0 9%,transparent 10%),linear-gradient(180deg,#1b0e33 0%,#5b1a8f 55%,#ff4fb8 100%)}
+#cover .city{position:absolute;bottom:0;left:0;right:0;height:240px;background:
+ linear-gradient(90deg,#120822 0 10%,transparent 10% 14%,#120822 14% 30%,transparent 30% 33%,#120822 33% 52%,transparent 52% 56%,#120822 56% 78%,transparent 78% 82%,#120822 82%);
+ clip-path:polygon(0 40%,10% 40%,10% 10%,14% 10%,14% 55%,30% 55%,30% 25%,33% 25%,33% 0,52% 0,52% 45%,56% 45%,56% 20%,78% 20%,78% 60%,82% 60%,82% 30%,100% 30%,100% 100%,0 100%)}
+#ttl{font-weight:800;font-size:62px;margin-top:40px}
+#art{font-weight:500;font-size:40px;opacity:.6;margin-top:4px}
+#bar{height:12px;border-radius:6px;background:rgba(255,255,255,.18);margin-top:40px;position:relative}
+#fill{position:absolute;left:0;top:0;bottom:0;border-radius:6px;background:#fff}
+#knob{position:absolute;top:50%;width:30px;height:30px;border-radius:50%;background:#fff;transform:translate(-50%,-50%)}
+#ctr{display:flex;justify-content:center;align-items:center;gap:110px;margin-top:40px}
+#ctr svg{fill:#fff}
+#lyr{position:absolute;left:90px;right:90px;top:190px;font-weight:800;font-size:96px;line-height:1.08;letter-spacing:-2px;text-align:left}
+#lyr .w{color:rgba(255,255,255,.28)}
+</style></head><body>
+<div id="bg">
+ <div class="blob" id="b1" style="width:900px;height:900px;background:#e3101c"></div>
+ <div class="blob" id="b2" style="width:800px;height:800px;background:#1638ff"></div>
+ <div class="blob" id="b3" style="width:700px;height:700px;background:#b0001a"></div>
+</div>
+<div id="cam">
+ <div class="sc" id="s1"><div id="nana"></div></div>
+ <div class="sc" id="s2"><div class="card" id="card"><div class="lbl">Letra</div><div class="ln" id="cardln"></div><div class="sh" id="sh"></div></div></div>
+ <div class="sc" id="s3"><div id="chat"><div class="bub" id="bA"></div><div class="bub" id="bB"></div><div id="visto">Visto</div></div></div>
+ <div class="sc" id="s4"><div id="moon"></div><div id="luna">LUNA</div></div>
+ <div class="sc" id="s5" style="align-items:flex-start;padding-top:470px">
+  <div id="player">
+   <div id="cover"></div>
+   <div id="ttl">Vuelve</div><div id="art">Anuel AA</div>
+   <div id="bar"><div id="fill"></div><div id="knob"></div></div>
+   <div id="ctr">
+    <svg width="90" height="70" viewBox="0 0 90 70"><path d="M44 5 L4 35 L44 65Z M88 5 L48 35 L88 65Z"/></svg>
+    <svg width="110" height="110" viewBox="0 0 110 110" id="pp"><rect x="25" y="15" width="20" height="80" rx="6"/><rect x="65" y="15" width="20" height="80" rx="6"/></svg>
+    <svg width="90" height="70" viewBox="0 0 90 70"><path d="M2 5 L42 35 L2 65Z M46 5 L86 35 L46 65Z"/></svg>
+   </div>
+  </div>
+  <div id="lyr"></div>
+ </div>
+</div>
+
+<div id="vig"></div>
+<script>
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const lin=(t,a,b)=>cl((t-a)/(b-a));
+const eo=x=>1-Math.pow(1-x,3);
+const back=x=>{const c=1.9;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const ei=x=>x*x*x;
+// letra: [texto, inicio, fin] (segundos desde 54.0 de la canción)
+const W={
+ nana:[["Na-",0.42,0.95],["na",0.95,1.52]],
+ card:[["vuelve",1.58,2.14],["a",2.20,2.36],["mí,",2.46,2.64]],
+ A:[["no",2.80,2.86],["me",2.88,2.98],["trates",3.02,3.44]],
+ B:[["como",3.50,4.0],["a",4.0,4.0],["un",4.0,4.06],["extraño.",4.16,4.9]],
+ lyr:[["corre",6.10,6.82],["y",6.86,6.92],["dile",7.0,7.7],["que",7.76,8.0],["yo",8.06,8.14],["aún",8.36,8.56],["la",8.62,8.66],["extraño.",8.72,9.4]],
+};
+function fill(el,list){el.innerHTML=list.map((w,i)=>`<span class="w" data-i="${i}">${w[0]}</span>`).join(' ');return [...el.querySelectorAll('.w')]}
+// NA-NA letra a letra
+$('nana').innerHTML=[..."NA-NA"].map(c=>`<span>${c}</span>`).join('');
+const nanaL=[...$('nana').children];
+const cardW=fill($('cardln'),W.card), AW=fill($('bA'),W.A), BW=fill($('bB'),W.B), LW=fill($('lyr'),W.lyr);
+// cráteres
+[[120,140,90],[380,90,60],[300,330,120],[110,400,70],[460,420,80],[220,520,50]].forEach(([x,y,r])=>{const d=document.createElement('div');d.className='crat';Object.assign(d.style,{left:x+'px',top:y+'px',width:r+'px',height:r+'px'});$('moon').appendChild(d)});
+// escenas: [id, entra, sale]
+const S=[['s1',0.25,1.56],['s2',1.56,2.74],['s3',2.74,4.94],['s4',4.94,6.06],['s5',6.06,10.5]];
+
+function rnd(s){return function(){s=(s*1664525+1013904223)>>>0;return s/4294967296}}
+function sceneEnv(t,a,b){ // 0..1 visible, con entrada y salida tipo zoom
+ const i=eo(lin(t,a-0.02,a+0.22)), o=lin(t,b-0.12,b+0.04);
+ return {i,o,on:t>=a-0.02&&t<b+0.04};
+}
+function pop(el,t,a,dur=0.22){const p=lin(t,a-0.04,a-0.04+dur);el.style.opacity=cl(p*3);el.style.transform=`translateY(${(1-eo(p))*40}px) scale(${0.6+0.4*back(p)})`;el.style.filter=`blur(${(1-p)*12}px)`}
+window.render=function(t){
+ // fondo
+ const b=(id,x,y,s)=>{$(id).style.transform=`translate(${x}px,${y}px) scale(${s})`};
+ b('b1',-250+Math.sin(t*.7)*120,-150+Math.cos(t*.5)*160,1+0.08*Math.sin(t*2));
+ b('b2',500+Math.cos(t*.6)*140,1100+Math.sin(t*.8)*120,1);
+ b('b3',300+Math.sin(t*.9+1)*200,600+Math.cos(t*.4)*200,0.9+0.1*Math.sin(t*1.3));
+ const beat=Math.pow(1-((t*2.0)%1),4); // pulso suave
+ $('bg').style.opacity=0.8+0.2*beat;
+ for(const [id,a,bb] of S){
+  const e=sceneEnv(t,a,bb),el=$(id);
+  if(!e.on){el.style.opacity=0;continue}
+  el.style.opacity=Math.min(e.i,1-e.o);
+  const sc=(0.86+0.14*e.i)*(1+0.5*ei(e.o));
+  el.style.filter=`blur(${(1-e.i)*18+e.o*26}px)`;
+  el.dataset.sc=sc;
+ }
+ const cam=(id,rx,ry,extra='')=>{const el=$(id);el.style.transform=`scale(${el.dataset.sc||1}) rotateX(${rx}deg) rotateY(${ry}deg) ${extra}`};
+ // 1 NA-NA
+ nanaL.forEach((s,i)=>{const a=0.42+i*0.12+(i>2?0.2:0),p=lin(t,a-0.05,a+0.2);s.style.opacity=p;s.style.transform=`translateY(${(1-eo(p))*160}px) scale(${0.5+0.5*back(p)}) rotate(${(1-p)*(i%2?14:-14)}deg)`;s.style.filter=`blur(${(1-p)*20}px)`});
+ cam('s1',0,0,`translateZ(${(t-0.4)*60}px)`);
+ // 2 tarjeta inclinada
+ const c2=t-1.56;cam('s2',14-c2*6,-22+c2*16,`rotateZ(${-4+c2*3}deg)`);
+ cardW.forEach((w,i)=>pop(w,t,W.card[i][1]));
+ $('sh').style.transform=`translateX(${-900+lin(t,1.7,2.6)*1800}px)`;
+ // 3 chat
+ const c3=t-2.74;cam('s3',6-c3*2,10-c3*7,'');
+ const pa=lin(t,2.74,2.96),pb=lin(t,3.46,3.7);
+ $('bA').style.opacity=pa;$('bA').style.transform=`scale(${0.4+0.6*back(pa)})`;
+ $('bB').style.opacity=pb;$('bB').style.transform=`scale(${0.4+0.6*back(pb)})`;
+ [[AW,W.A],[BW,W.B]].forEach(([ws,l])=>ws.forEach((w,i)=>{const p=lin(t,l[i][1]-0.06,l[i][1]+0.1);w.style.opacity=0.25+0.75*p}));
+ const pv=lin(t,4.55,4.75);$('visto').style.opacity=pv;$('visto').style.transform=`translateY(${(1-pv)*20}px)`;
+ // 4 luna
+ const c4=lin(t,4.94,6.06),pm=eo(lin(t,4.94,5.5));
+ $('moon').style.transform=`translateY(${(1-pm)*700-c4*60}px) scale(${0.7+0.3*pm+c4*0.08})`;
+ const pl=lin(t,5.0,5.5);$('luna').style.opacity=pl;$('luna').style.letterSpacing=(120-80*eo(pl))+'px';$('luna').style.transform=`scale(${1.3-0.3*eo(pl)+c4*0.05})`;
+ cam('s4',0,0,'');
+ // 5 reproductor
+ const c5=t-6.06,pp=eo(lin(t,6.06,6.6));
+ cam('s5',18*(1-pp)+Math.sin(c5*1.2)*3,-14*(1-pp)+Math.sin(c5*0.8)*5,`translateY(${(1-pp)*300}px)`);
+ const prog=(54+t)/289.9;$('fill').style.width=(prog*100)+'%';$('knob').style.left=(prog*100)+'%';
+ $('cover').style.transform=`scale(${1+0.025*beat})`;
+ const ly=lin(t,6.0,6.35);$('lyr').style.opacity=ly;$('lyr').style.transform=`translateY(${(1-eo(ly))*60}px)`;
+ LW.forEach((w,i)=>{const p=lin(t,W.lyr[i][1]-0.04,W.lyr[i][1]+0.12);w.style.color=`rgba(255,255,255,${0.28+0.72*p})`;w.style.textShadow=p>0?`0 0 ${30*p}px rgba(255,40,40,${0.85*p})`:'none'});
+ const out=lin(t,9.6,10);$('cam').style.opacity=1-out;
+ // grano
+
+};
+window.render(0);
+</script></body></html>
