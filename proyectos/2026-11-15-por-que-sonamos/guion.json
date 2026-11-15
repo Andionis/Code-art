@@ -2,6 +2,7 @@
   "titulo": "¿Por qué soñamos?",
   "idioma": "es",
   "subtitulos": "arriba",
+  "voz": { "id": "TX3LPaxmHKxFdv7VOQHJ" },
   "frases": [
     { "texto": "¿Por qué soñamos, si al despertar casi nunca nos acordamos?", "clave": "soñamos", "hook": true },
     { "texto": "Cada noventa minutos, tu cerebro se enciende como si estuvieras despierto y te pone una película.", "clave": "película", "hook": true },

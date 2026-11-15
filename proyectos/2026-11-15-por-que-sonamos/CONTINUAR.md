@@ -5,7 +5,9 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Lo decidido (con las palabras del creador)
 
--
+- Guion: «Apruebo» (11 frases, guion.json).
+- Voz: «Usa Liam» (su ElevenLabs es gratis y no deja usar a Antonio; id TX3LPaxmHKxFdv7VOQHJ en guion.json).
+- En este entorno en la nube la voz se hace con: NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt ELEVENLABS_API_KEY=dummy
 
 ## Pendiente del creador
 
@@ -13,12 +15,16 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
-- [ ] 1. La idea y los datos → idea.md
-- [ ] 2. El guion → guion.json, **aprobado por el creador**
-- [ ] 3. La voz (una sola vez, con el guion cerrado)
-- [ ] 4. El plan → plan.md, con sus escenas
+- [x] 1. La idea y los datos → idea.md
+- [x] 2. El guion → guion.json, **aprobado por el creador**
+- [x] 3. La voz (una sola vez, con el guion cerrado)
+- [x] 4. El plan → plan.md, con sus escenas
 - [ ] 5. Escena por escena (cada una, su borrador aprobado):
-  - [ ] escena 1 (el hook)
+  - [ ] escena 1 (el hook), frases 1-2, hasta 10.26 s — v1 enseñada
+  - [ ] escena 2, frases 3-4, hasta 22.0 s
+  - [ ] escena 3, frases 5-6, hasta 32.2 s
+  - [ ] escena 4, frases 7-9, hasta 48.3 s
+  - [ ] escena 5, frases 10-11, hasta el final
 - [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
 - [ ] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,

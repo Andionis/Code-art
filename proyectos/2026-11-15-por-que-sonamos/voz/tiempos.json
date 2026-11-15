@@ -1,0 +1,1198 @@
+{
+  "firma": "9f6a3cd156d8",
+  "duracion": 57.76,
+  "frases": [
+    {
+      "n": 1,
+      "texto": "¿Por qué soñamos, si al despertar casi nunca nos acordamos?",
+      "clave": "soñamos",
+      "inicio": 0,
+      "fin": 4.08
+    },
+    {
+      "n": 2,
+      "texto": "Cada noventa minutos, tu cerebro se enciende como si estuvieras despierto y te pone una película.",
+      "clave": "película",
+      "inicio": 4.4,
+      "fin": 10.24
+    },
+    {
+      "n": 3,
+      "texto": "Y para que no te levantes a actuarla, apaga tus músculos: tu cuerpo queda paralizado.",
+      "clave": "paralizado",
+      "inicio": 10.28,
+      "fin": 15.56
+    },
+    {
+      "n": 4,
+      "texto": "¿Para qué tanto trabajo? La ciencia todavía no lo sabe del todo, pero tiene dos ideas fuertes.",
+      "clave": "dos",
+      "inicio": 15.84,
+      "fin": 21.68
+    },
+    {
+      "n": 5,
+      "texto": "La primera: un simulacro. Por eso tantos sueños son de que te persiguen o te caes.",
+      "clave": "simulacro",
+      "inicio": 22.08,
+      "fin": 27.36
+    },
+    {
+      "n": 6,
+      "texto": "Tu cerebro ensaya el peligro sin riesgo, como un piloto en un simulador.",
+      "clave": "simulador",
+      "inicio": 27.76,
+      "fin": 31.76
+    },
+    {
+      "n": 7,
+      "texto": "La segunda: terapia. Mientras sueñas, la química del estrés baja al mínimo.",
+      "clave": "terapia",
+      "inicio": 32.32,
+      "fin": 37.84
+    },
+    {
+      "n": 8,
+      "texto": "Así tu cerebro vuelve a vivir lo que te dolió en el día, pero sin la angustia.",
+      "clave": "angustia",
+      "inicio": 37.92,
+      "fin": 42.32
+    },
+    {
+      "n": 9,
+      "texto": "En un estudio, la gente que durmió volvió a ver las mismas fotos fuertes, y le afectaron menos.",
+      "clave": "menos",
+      "inicio": 42.36,
+      "fin": 48.24
+    },
+    {
+      "n": 10,
+      "texto": "Así que soñar no es basura de tu cabeza: es tu cerebro entrenándote y curándote mientras duermes.",
+      "clave": "curándote",
+      "inicio": 48.32,
+      "fin": 54.88
+    },
+    {
+      "n": 11,
+      "texto": "Envíaselo a un amigo que le pueda interesar.",
+      "clave": "amigo",
+      "inicio": 54.96,
+      "fin": 56.96
+    }
+  ],
+  "palabras": [
+    {
+      "texto": "¿Por",
+      "inicio": 0,
+      "fin": 0.24,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "qué",
+      "inicio": 0.28,
+      "fin": 0.32,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "soñamos,",
+      "inicio": 0.4,
+      "fin": 1.28,
+      "frase": 1,
+      "clave": true
+    },
+    {
+      "texto": "si",
+      "inicio": 1.32,
+      "fin": 1.36,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "al",
+      "inicio": 1.4,
+      "fin": 1.44,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "despertar",
+      "inicio": 1.56,
+      "fin": 2,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "casi",
+      "inicio": 2.16,
+      "fin": 2.48,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "nunca",
+      "inicio": 2.64,
+      "fin": 2.88,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "nos",
+      "inicio": 2.96,
+      "fin": 3.04,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "acordamos?",
+      "inicio": 3.12,
+      "fin": 4.08,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "Cada",
+      "inicio": 4.4,
+      "fin": 4.56,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "noventa",
+      "inicio": 4.64,
+      "fin": 4.96,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "minutos,",
+      "inicio": 5.04,
+      "fin": 5.68,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 5.76,
+      "fin": 5.84,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "cerebro",
+      "inicio": 5.88,
+      "fin": 6.24,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "se",
+      "inicio": 6.28,
+      "fin": 6.32,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "enciende",
+      "inicio": 6.4,
+      "fin": 6.96,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "como",
+      "inicio": 7.04,
+      "fin": 7.2,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "si",
+      "inicio": 7.24,
+      "fin": 7.28,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "estuvieras",
+      "inicio": 7.36,
+      "fin": 7.76,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "despierto",
+      "inicio": 7.88,
+      "fin": 8.32,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "y",
+      "inicio": 8.48,
+      "fin": 8.56,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "te",
+      "inicio": 8.64,
+      "fin": 8.72,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "pone",
+      "inicio": 8.8,
+      "fin": 9.04,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "una",
+      "inicio": 9.12,
+      "fin": 9.2,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "película.",
+      "inicio": 9.28,
+      "fin": 10.24,
+      "frase": 2,
+      "clave": true
+    },
+    {
+      "texto": "Y",
+      "inicio": 10.28,
+      "fin": 10.32,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "para",
+      "inicio": 10.4,
+      "fin": 10.48,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 10.56,
+      "fin": 10.64,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "no",
+      "inicio": 10.68,
+      "fin": 10.72,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "te",
+      "inicio": 10.76,
+      "fin": 10.8,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "levantes",
+      "inicio": 10.88,
+      "fin": 11.28,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 11.34,
+      "fin": 11.4,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "actuarla,",
+      "inicio": 11.46,
+      "fin": 12,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "apaga",
+      "inicio": 12.12,
+      "fin": 12.48,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "tus",
+      "inicio": 12.56,
+      "fin": 12.72,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "músculos:",
+      "inicio": 12.8,
+      "fin": 13.6,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 13.68,
+      "fin": 13.76,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "cuerpo",
+      "inicio": 13.84,
+      "fin": 14.24,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "queda",
+      "inicio": 14.36,
+      "fin": 14.48,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "paralizado.",
+      "inicio": 14.56,
+      "fin": 15.56,
+      "frase": 3,
+      "clave": true
+    },
+    {
+      "texto": "¿Para",
+      "inicio": 15.84,
+      "fin": 16,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "qué",
+      "inicio": 16.08,
+      "fin": 16.16,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "tanto",
+      "inicio": 16.32,
+      "fin": 16.56,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "trabajo?",
+      "inicio": 16.64,
+      "fin": 17.44,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "La",
+      "inicio": 17.76,
+      "fin": 17.84,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "ciencia",
+      "inicio": 17.92,
+      "fin": 18.32,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "todavía",
+      "inicio": 18.4,
+      "fin": 18.72,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "no",
+      "inicio": 18.8,
+      "fin": 18.88,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "lo",
+      "inicio": 18.96,
+      "fin": 19,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "sabe",
+      "inicio": 19.04,
+      "fin": 19.28,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "del",
+      "inicio": 19.36,
+      "fin": 19.44,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "todo,",
+      "inicio": 19.52,
+      "fin": 20,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "pero",
+      "inicio": 20.04,
+      "fin": 20.16,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "tiene",
+      "inicio": 20.24,
+      "fin": 20.48,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "dos",
+      "inicio": 20.56,
+      "fin": 20.8,
+      "frase": 4,
+      "clave": true
+    },
+    {
+      "texto": "ideas",
+      "inicio": 20.88,
+      "fin": 21.12,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "fuertes.",
+      "inicio": 21.2,
+      "fin": 21.68,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "La",
+      "inicio": 22.08,
+      "fin": 22.16,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "primera:",
+      "inicio": 22.24,
+      "fin": 22.96,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "un",
+      "inicio": 23.04,
+      "fin": 23.12,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "simulacro.",
+      "inicio": 23.2,
+      "fin": 24,
+      "frase": 5,
+      "clave": true
+    },
+    {
+      "texto": "Por",
+      "inicio": 24.4,
+      "fin": 24.48,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "eso",
+      "inicio": 24.56,
+      "fin": 24.72,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "tantos",
+      "inicio": 24.8,
+      "fin": 25.12,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "sueños",
+      "inicio": 25.16,
+      "fin": 25.52,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "son",
+      "inicio": 25.6,
+      "fin": 25.68,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 25.72,
+      "fin": 25.76,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 25.8,
+      "fin": 25.84,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "te",
+      "inicio": 25.92,
+      "fin": 26,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "persiguen",
+      "inicio": 26.16,
+      "fin": 26.64,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "o",
+      "inicio": 26.68,
+      "fin": 26.72,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "te",
+      "inicio": 26.76,
+      "fin": 26.8,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "caes.",
+      "inicio": 26.88,
+      "fin": 27.36,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "Tu",
+      "inicio": 27.76,
+      "fin": 27.84,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "cerebro",
+      "inicio": 27.88,
+      "fin": 28.24,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "ensaya",
+      "inicio": 28.4,
+      "fin": 28.8,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 28.84,
+      "fin": 28.88,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "peligro",
+      "inicio": 28.96,
+      "fin": 29.28,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "sin",
+      "inicio": 29.44,
+      "fin": 29.6,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "riesgo,",
+      "inicio": 29.68,
+      "fin": 30.32,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "como",
+      "inicio": 30.4,
+      "fin": 30.48,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "un",
+      "inicio": 30.56,
+      "fin": 30.64,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "piloto",
+      "inicio": 30.68,
+      "fin": 30.96,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "en",
+      "inicio": 31,
+      "fin": 31.04,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "un",
+      "inicio": 31.08,
+      "fin": 31.12,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "simulador.",
+      "inicio": 31.2,
+      "fin": 31.76,
+      "frase": 6,
+      "clave": true
+    },
+    {
+      "texto": "La",
+      "inicio": 32.32,
+      "fin": 32.4,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "segunda:",
+      "inicio": 32.48,
+      "fin": 33.28,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "terapia.",
+      "inicio": 33.36,
+      "fin": 33.84,
+      "frase": 7,
+      "clave": true
+    },
+    {
+      "texto": "Mientras",
+      "inicio": 34.32,
+      "fin": 34.64,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "sueñas,",
+      "inicio": 34.68,
+      "fin": 35.28,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 35.32,
+      "fin": 35.36,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "química",
+      "inicio": 35.44,
+      "fin": 35.76,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "del",
+      "inicio": 35.84,
+      "fin": 35.92,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "estrés",
+      "inicio": 36,
+      "fin": 36.48,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "baja",
+      "inicio": 36.52,
+      "fin": 36.8,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "al",
+      "inicio": 36.88,
+      "fin": 36.96,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "mínimo.",
+      "inicio": 37.04,
+      "fin": 37.84,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "Así",
+      "inicio": 37.92,
+      "fin": 38.16,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 38.24,
+      "fin": 38.32,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "cerebro",
+      "inicio": 38.4,
+      "fin": 38.8,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "vuelve",
+      "inicio": 38.84,
+      "fin": 39.12,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 39.147,
+      "fin": 39.173,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "vivir",
+      "inicio": 39.2,
+      "fin": 39.44,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "lo",
+      "inicio": 39.52,
+      "fin": 39.6,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 39.64,
+      "fin": 39.68,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "te",
+      "inicio": 39.76,
+      "fin": 39.84,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "dolió",
+      "inicio": 39.92,
+      "fin": 40.107,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "en",
+      "inicio": 40.133,
+      "fin": 40.16,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 40.24,
+      "fin": 40.28,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "día,",
+      "inicio": 40.32,
+      "fin": 40.8,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "pero",
+      "inicio": 40.88,
+      "fin": 41.04,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "sin",
+      "inicio": 41.12,
+      "fin": 41.28,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 41.32,
+      "fin": 41.36,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "angustia.",
+      "inicio": 41.44,
+      "fin": 42.32,
+      "frase": 8,
+      "clave": true
+    },
+    {
+      "texto": "En",
+      "inicio": 42.36,
+      "fin": 42.4,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "un",
+      "inicio": 42.48,
+      "fin": 42.52,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "estudio,",
+      "inicio": 42.56,
+      "fin": 43.2,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 43.24,
+      "fin": 43.28,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "gente",
+      "inicio": 43.36,
+      "fin": 43.6,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 43.64,
+      "fin": 43.68,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "durmió",
+      "inicio": 43.76,
+      "fin": 44.24,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "volvió",
+      "inicio": 44.36,
+      "fin": 44.72,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 44.76,
+      "fin": 44.8,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "ver",
+      "inicio": 44.88,
+      "fin": 44.96,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "las",
+      "inicio": 45.04,
+      "fin": 45.2,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "mismas",
+      "inicio": 45.36,
+      "fin": 45.68,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "fotos",
+      "inicio": 45.76,
+      "fin": 46.08,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "fuertes,",
+      "inicio": 46.16,
+      "fin": 46.8,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "y",
+      "inicio": 46.84,
+      "fin": 46.88,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "le",
+      "inicio": 46.92,
+      "fin": 46.96,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "afectaron",
+      "inicio": 47.04,
+      "fin": 47.44,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "menos.",
+      "inicio": 47.52,
+      "fin": 48.24,
+      "frase": 9,
+      "clave": true
+    },
+    {
+      "texto": "Así",
+      "inicio": 48.32,
+      "fin": 48.44,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 48.48,
+      "fin": 48.56,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "soñar",
+      "inicio": 48.64,
+      "fin": 49.04,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "no",
+      "inicio": 49.12,
+      "fin": 49.28,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "es",
+      "inicio": 49.36,
+      "fin": 49.44,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "basura",
+      "inicio": 49.52,
+      "fin": 49.84,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 49.88,
+      "fin": 49.92,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 50,
+      "fin": 50.08,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "cabeza:",
+      "inicio": 50.12,
+      "fin": 50.8,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "es",
+      "inicio": 50.88,
+      "fin": 50.96,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "tu",
+      "inicio": 51.04,
+      "fin": 51.12,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "cerebro",
+      "inicio": 51.2,
+      "fin": 51.52,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "entrenándote",
+      "inicio": 51.6,
+      "fin": 52.56,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "y",
+      "inicio": 52.64,
+      "fin": 52.8,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "curándote",
+      "inicio": 52.88,
+      "fin": 53.44,
+      "frase": 10,
+      "clave": true
+    },
+    {
+      "texto": "mientras",
+      "inicio": 53.52,
+      "fin": 53.84,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "duermes.",
+      "inicio": 53.92,
+      "fin": 54.88,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "Envíaselo",
+      "inicio": 54.96,
+      "fin": 55.36,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 55.4,
+      "fin": 55.44,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "un",
+      "inicio": 55.48,
+      "fin": 55.52,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "amigo",
+      "inicio": 55.6,
+      "fin": 55.84,
+      "frase": 11,
+      "clave": true
+    },
+    {
+      "texto": "que",
+      "inicio": 55.88,
+      "fin": 55.92,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "le",
+      "inicio": 55.96,
+      "fin": 56,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "pueda",
+      "inicio": 56.08,
+      "fin": 56.2,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "interesar.",
+      "inicio": 56.24,
+      "fin": 56.96,
+      "frase": 11,
+      "clave": false
+    }
+  ]
+}
