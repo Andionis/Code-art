@@ -262,10 +262,10 @@ export function salpica(g, x, y, r, u, semilla = 1) {
 // ---------- El gas: hilos verdes que suben y se enroscan ----------
 // Un hilo que nace en (x0, y0) en el segundo t0 y sube durante dur; ancho w; deriva dx (px, hacia dónde se va).
 const azG = k.azar(91);
-export function hilo(g, t, x0, y0, t0, dur, w = 60, dx = 0, alto = 700, al = 1, semilla = 1) {
+export function hilo(g, t, x0, y0, t0, dur, w = 60, dx = 0, alto = 700, al = 1, semilla = 1, modo = "screen") {
   const u = (t - t0) / dur; if (u <= 0) return;
   const fase = semilla * 1.7;
-  g.save(); g.globalCompositeOperation = "screen";
+  g.save(); g.globalCompositeOperation = modo;
   const N = 26;
   for (let i = 0; i < N; i++) {
     const q = i / N; // a lo largo del hilo (0 = la cabeza, 1 = la cola)
