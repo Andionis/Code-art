@@ -8,12 +8,13 @@
 // - «película»: de la frente sube un haz y vuelve a formarse la burbuja del sueño; la cámara se aleja.
 import * as k from "#kit";
 import { v } from "#voz";
-import { RS, TAU, cerebro, ballena, burbuja, cama, camino2D, cuarto, reloj, sueno, velo, vineta, vista, CAB } from "../mundo.js";
+import { RS, TAU, cerebro, corredor, ballena, burbuja, cama, camino2D, cuarto, reloj, sueno, velo, vineta, vista, CAB } from "../mundo.js";
 
 export const desde = 0;
 const { suave: su, tramo: tr, mez, azar } = k;
 
-const f1 = v.frase(1), f2 = v.frase(2);
+const f1 = v.frase(1), f2 = v.frase(2), f3 = v.frase(3);
+const Tlev = f3.t("levantes"), Tact = f3.t("actuarla"), Tapaga = f3.t("apaga"), Tmus = f3.t("musculos"), Tpar = f3.t("paralizado"), Tfin3 = f3.fin;
 const Tdesp = f1.t("despertar"), Tnunca = f1.t("nunca"), Tacor = f1.t("acordamos");
 const Tcada = f2.t("cada"), Tmin = f2.t("minutos"), Tcer = f2.t("cerebro"), Tenc = f2.t("enciende"), Tpone = f2.t("pone"), Tpeli = f2.t("pelicula");
 
@@ -37,9 +38,20 @@ const cam = camino2D([
   [Tenc + 0.55, [11, CB[0], CB[1] + 3]],
   [Tdes + 0.5, [11.6, CB[0], CB[1] + 3]],
   [Tpeli + 0.5, [1, 540, 960]],
+  [Tlev + 0.3, [1.3, 640, 1040]],
+  [Tmus + 0.4, [1.4, 650, 1060]],
+  [Tfin3 + 0.3, [1.48, 655, 1075]],
 ]);
+// frase 3: la manta se vuelve transparente, la pierna se levanta, los músculos se apagan de la cabeza a los pies
+const manta = (t) => 1 - su(tr(t, f3.inicio, Tlev));
+const pierna = (t) => su(tr(t, Tlev, Tact + 0.45)) * (1 - su(tr(t, Tapaga + 0.55, Tapaga + 1.0)));
+const musc = (t) => (i, u) => 1 - su(tr(t, Tapaga - 0.05 + u * 0.9, Tapaga + 0.25 + u * 0.9));
+const frio = (t) => su(tr(t, Tpar - 0.1, Tpar + 0.5));
 // lo que vuela la cámara dentro del sueño: deprisa al principio, frena al alejarse
-const avance = (t) => 1500 * Math.min(t, Tdesp) + 500 * Math.max(0, t - Tdesp) - 120 * Math.max(0, t - Tdesp) ** 2;
+const avance = (t) => {
+  const u = Math.max(0, t - Tdesp), T = 350 / 240;
+  return 1500 * Math.min(t, Tdesp) + (u < T ? 500 * u - 120 * u * u : 500 * T - 120 * T * T + 150 * (u - T));
+};
 // las horas del reloj
 const horas = (t) => 11.5 + 1.5 * su(tr(t, Tcada, Tmin + 0.45));
 // el estallido de la burbuja
@@ -60,7 +72,8 @@ export function dibuja(g, t) {
   reloj(g, horas(t), k.pulso(t, (Tcada + Tmin) / 2 + 0.2, 0.7));
   const enc = su(tr(t, Tenc - 0.15, Tenc + 0.35));
   const desp = k.pulso(t, f2.t("despierto") + 0.15, 0.35);
-  cama(g, t, { cerebro: Math.min(1.25, enc * (1 + 0.25 * desp)), ojos: enc });
+  cama(g, t, { cerebro: Math.min(1.25, enc * (1 + 0.25 * desp)), ojos: enc, manta: manta(t), pierna: pierna(t), musculos: musc(t), frio: frio(t) });
+  if (t > Tapaga - 0.1) escarcha(g, t);
   // dentro de la cabeza: el cerebro de luz, enorme
   const dn = dentro(t);
   if (dn > 0.003) {
@@ -105,11 +118,41 @@ export function dibuja(g, t) {
       k.brillo(g, x0, y0, 120, "255,210,255", hz);
       g.restore();
     }
-    burbuja(g, B[0], B[1], RB * k.entra(u), (gg) => sueno(gg, t, avance(t)), Math.min(1, u * 3));
+    burbuja(g, B[0], B[1], RB * k.entra(u), (gg) => suenoCorre(gg, t), Math.min(1, u * 3));
     puntos(g, u, t);
   }
   vineta(g, 0.5 * su(tr(t, Tdesp, Tdesp + 0.6)));
   velo(g, 0.35);
+}
+
+// frase 3: en el sueño, él corre por un camino de luz
+function suenoCorre(g, t) {
+  sueno(g, t, avance(t));
+  const u = su(tr(t, Tpeli + 0.2, Tlev + 0.1));
+  if (u <= 0) return;
+  g.save(); g.globalAlpha *= u;
+  const cg = g.createLinearGradient(0, 380, 0, 470); cg.addColorStop(0, "rgba(255,240,200,0.95)"); cg.addColorStop(1, "rgba(255,150,120,0.2)");
+  g.fillStyle = cg; g.fillRect(-RS, 380, 2 * RS, 70);
+  g.fillStyle = "rgba(255,255,255,0.8)"; const d = (avance(t) * 2.5) % 300;
+  for (let x = -RS - d; x < RS; x += 300) g.fillRect(x, 392, 140, 10);
+  g.restore();
+  corredor(g, mez(-1300, -60, k.entra(u)), 384, 620, t * 1.7);
+}
+
+// frase 3: «paralizado»: el cuerpo, azul hielo, con cristales de escarcha que brillan
+const azE = azar(31);
+const ESCARCHA = Array.from({ length: 70 }, () => ({ x: 410 + azE() * 620, y: 1228 + azE() * 60, r: 3 + azE() * 7, u: azE(), f: azE() * TAU }));
+function escarcha(g, t) {
+  g.save(); g.globalCompositeOperation = "lighter";
+  for (const e of ESCARCHA) {
+    const on = su(tr(t, Tapaga + 0.1 + ((e.x - 410) / 620) * 0.9, Tapaga + 0.4 + ((e.x - 410) / 620) * 0.9)) * (0.4 + 0.6 * frio(t));
+    if (on <= 0.01) continue;
+    const al = on * (0.55 + 0.25 * Math.sin(t * 2 + e.f));
+    g.strokeStyle = `rgba(200,240,255,${al})`; g.lineWidth = 1.5;
+    for (let i = 0; i < 3; i++) { const a = (i / 3) * Math.PI + e.f; g.beginPath(); g.moveTo(e.x - Math.cos(a) * e.r, e.y - Math.sin(a) * e.r); g.lineTo(e.x + Math.cos(a) * e.r, e.y + Math.sin(a) * e.r); g.stroke(); }
+    k.brillo(g, e.x, e.y, e.r * 3, "180,230,255", al * 0.5);
+  }
+  g.restore();
 }
 
 // tres burbujitas de la cabeza a la burbuja grande

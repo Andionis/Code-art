@@ -386,13 +386,14 @@ export function cuerpoDeLuz(g, t, al, musculos, pierna = 0, frio = 0) {
   // la silueta (una sola forma, con la rodilla que sube)
   const rod = pierna * 70;
   const forma = () => {
-    g.beginPath(); g.moveTo(400, 1225);
-    g.bezierCurveTo(440, 1215, 560, 1225, 650, 1245);
-    g.quadraticCurveTo(720, 1240 - rod * 0.6, 780, 1235 - rod);
-    g.quadraticCurveTo(840, 1240 - rod * 0.6, 880, 1250);
-    g.lineTo(1000, 1250); g.quadraticCurveTo(1030, 1230, 1040, 1250); g.lineTo(1040, 1290);
-    g.lineTo(880, 1290); g.quadraticCurveTo(820, 1290 - rod * 0.3, 780, 1280 - rod * 0.6); g.quadraticCurveTo(720, 1290 - rod * 0.2, 650, 1300);
-    g.bezierCurveTo(560, 1305, 440, 1300, 400, 1290); g.closePath();
+    g.beginPath(); g.moveTo(398, 1232);
+    g.bezierCurveTo(415, 1205, 450, 1200, 480, 1206);      // el hombro y el pecho
+    g.bezierCurveTo(530, 1214, 580, 1226, 640, 1238);      // la barriga
+    g.quadraticCurveTo(700, 1236 - rod * 0.6, 775, 1228 - rod); // el muslo hasta la rodilla
+    g.quadraticCurveTo(840, 1236 - rod * 0.6, 900, 1252);  // la espinilla
+    g.lineTo(975, 1256); g.quadraticCurveTo(990, 1210, 1010, 1212); g.quadraticCurveTo(1024, 1240, 1022, 1292); // el pie
+    g.lineTo(905, 1294); g.quadraticCurveTo(835, 1292 - rod * 0.3, 778, 1272 - rod * 0.6); g.quadraticCurveTo(715, 1292 - rod * 0.2, 650, 1300);
+    g.bezierCurveTo(560, 1306, 460, 1306, 410, 1296); g.closePath();
   };
   forma();
   const sg = g.createLinearGradient(0, 1210, 0, 1300);
@@ -491,4 +492,36 @@ function cerebro_(g, x, y, r, t, u = 1, { tono = ["255,120,220", "255,200,250"],
   g.restore();
   // borde de luz
   contornoCerebro(g, x, y, r); g.strokeStyle = `rgba(${tono[1]},${0.6 + 0.4 * u})`; g.lineWidth = Math.max(1.5, r * 0.025); g.stroke();
+}
+
+// ---------------------------------------------------------------- alguien que corre
+// De perfil, corriendo hacia la derecha, con los pies en (x, y), de alto h. fase: el paso (en vueltas). ropa: colores.
+export function corredor(g, x, y, h, fase, { camiseta = "#ff5a5a", pantalon = "#3a4aa8", piel = "#f0b896", pelo = "#2a1a1e", miedo = 0 } = {}) {
+  const a = fase * TAU, s = h / 100;
+  g.save(); g.translate(x, y); g.scale(s, s);
+  const bote = Math.abs(Math.sin(a)) * 4;
+  g.translate(0, -bote);
+  const miembro = (x0, y0, a1, l1, a2, l2, w, col, oscuro) => {
+    const x1 = x0 + Math.sin(a1) * l1, y1 = y0 + Math.cos(a1) * l1, x2 = x1 + Math.sin(a2) * l2, y2 = y1 + Math.cos(a2) * l2;
+    g.strokeStyle = oscuro ? k.mezColor(col, "#000000", 0.35) : col; g.lineWidth = w; g.lineCap = "round"; g.lineJoin = "round";
+    g.beginPath(); g.moveTo(x0, y0); g.lineTo(x1, y1); g.lineTo(x2, y2); g.stroke();
+    return [x2, y2];
+  };
+  const cad = [0, -50];
+  // pierna y brazo de atrás (más oscuros)
+  const pierna = (ph, osc) => { const m = Math.sin(ph); const muslo = m * 0.75, rod = muslo - 0.2 - Math.max(0, -Math.cos(ph)) * 1.3; const [px, py] = miembro(cad[0], cad[1], muslo, 26, rod, 26, 11, pantalon, osc); g.fillStyle = osc ? "#222" : "#f4f4f4"; g.beginPath(); g.ellipse(px + 4, py + 2, 8, 4, 0, 0, TAU); g.fill(); };
+  const brazo = (ph, osc) => { const m = -Math.sin(ph) * 0.9; miembro(2, -84, m + 0.25 * miedo, 17, m - 1.2 - 0.6 * miedo, 16, 8, osc ? camiseta : camiseta, osc); };
+  pierna(a + Math.PI, true); brazo(a + Math.PI, true);
+  // el cuerpo, inclinado hacia delante
+  g.save(); g.translate(cad[0], cad[1]); g.rotate(0.22);
+  const tg = g.createLinearGradient(-12, 0, 12, 0); tg.addColorStop(0, k.mezColor(camiseta, "#000000", 0.3)); tg.addColorStop(0.6, camiseta); tg.addColorStop(1, k.mezColor(camiseta, "#ffffff", 0.25));
+  g.fillStyle = tg; k.redondo(g, -12, -40, 24, 44, 10); g.fill();
+  // la cabeza
+  g.fillStyle = piel; g.beginPath(); g.arc(3, -52, 11, 0, TAU); g.fill();
+  g.fillStyle = pelo; g.beginPath(); g.arc(1, -55, 11, Math.PI * 0.9, Math.PI * 2.05); g.fill();
+  g.fillStyle = "#2a1a1e"; g.beginPath(); g.arc(9, -53, 1.6, 0, TAU); g.fill();
+  if (miedo > 0) { g.strokeStyle = "#5a2a2a"; g.lineWidth = 1.5; g.beginPath(); g.ellipse(10, -46, 2, 2.5 * miedo, 0, 0, TAU); g.stroke(); }
+  g.restore();
+  pierna(a, false); brazo(a, false);
+  g.restore();
 }
