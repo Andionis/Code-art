@@ -1,0 +1,639 @@
+{
+  "firma": "55047854945f",
+  "proveedor": "elevenlabs",
+  "ajustes": {
+    "id": "TX3LPaxmHKxFdv7VOQHJ",
+    "modelo": "eleven_v4",
+    "estabilidad": 0.35,
+    "similitud": 0.7,
+    "estilo": 0,
+    "velocidad": 1
+  },
+  "palabras": [
+    {
+      "texto": "¿Por",
+      "inicio": 0,
+      "fin": 0.16
+    },
+    {
+      "texto": "qué",
+      "inicio": 0.24,
+      "fin": 0.4
+    },
+    {
+      "texto": "lloras",
+      "inicio": 0.44,
+      "fin": 0.8
+    },
+    {
+      "texto": "cada",
+      "inicio": 0.84,
+      "fin": 1.04
+    },
+    {
+      "texto": "vez",
+      "inicio": 1.12,
+      "fin": 1.28
+    },
+    {
+      "texto": "que",
+      "inicio": 1.36,
+      "fin": 1.44
+    },
+    {
+      "texto": "cortas",
+      "inicio": 1.52,
+      "fin": 1.76
+    },
+    {
+      "texto": "una",
+      "inicio": 1.84,
+      "fin": 1.92
+    },
+    {
+      "texto": "cebolla?",
+      "inicio": 2,
+      "fin": 2.56
+    },
+    {
+      "texto": "La",
+      "inicio": 3.04,
+      "fin": 3.12
+    },
+    {
+      "texto": "cebolla",
+      "inicio": 3.2,
+      "fin": 3.52
+    },
+    {
+      "texto": "no",
+      "inicio": 3.56,
+      "fin": 3.6
+    },
+    {
+      "texto": "te",
+      "inicio": 3.68,
+      "fin": 3.76
+    },
+    {
+      "texto": "pone",
+      "inicio": 3.84,
+      "fin": 3.92
+    },
+    {
+      "texto": "triste:",
+      "inicio": 4,
+      "fin": 4.8
+    },
+    {
+      "texto": "te",
+      "inicio": 4.84,
+      "fin": 4.88
+    },
+    {
+      "texto": "está",
+      "inicio": 5,
+      "fin": 5.227
+    },
+    {
+      "texto": "atacando.",
+      "inicio": 5.333,
+      "fin": 6.2
+    },
+    {
+      "texto": "Por",
+      "inicio": 6.48,
+      "fin": 6.56
+    },
+    {
+      "texto": "dentro",
+      "inicio": 6.64,
+      "fin": 7.04
+    },
+    {
+      "texto": "está",
+      "inicio": 7.2,
+      "fin": 7.44
+    },
+    {
+      "texto": "hecha",
+      "inicio": 7.48,
+      "fin": 7.68
+    },
+    {
+      "texto": "de",
+      "inicio": 7.76,
+      "fin": 7.84
+    },
+    {
+      "texto": "millones",
+      "inicio": 8,
+      "fin": 8.4
+    },
+    {
+      "texto": "de",
+      "inicio": 8.44,
+      "fin": 8.48
+    },
+    {
+      "texto": "cajitas,",
+      "inicio": 8.56,
+      "fin": 9.36
+    },
+    {
+      "texto": "y",
+      "inicio": 9.4,
+      "fin": 9.44
+    },
+    {
+      "texto": "en",
+      "inicio": 9.52,
+      "fin": 9.6
+    },
+    {
+      "texto": "cada",
+      "inicio": 9.68,
+      "fin": 9.92
+    },
+    {
+      "texto": "una",
+      "inicio": 10,
+      "fin": 10.16
+    },
+    {
+      "texto": "guarda",
+      "inicio": 10.32,
+      "fin": 10.72
+    },
+    {
+      "texto": "dos",
+      "inicio": 10.84,
+      "fin": 10.96
+    },
+    {
+      "texto": "cosas",
+      "inicio": 11.04,
+      "fin": 11.36
+    },
+    {
+      "texto": "por",
+      "inicio": 11.4,
+      "fin": 11.44
+    },
+    {
+      "texto": "separado.",
+      "inicio": 11.52,
+      "fin": 12.56
+    },
+    {
+      "texto": "Pero",
+      "inicio": 12.587,
+      "fin": 12.64
+    },
+    {
+      "texto": "el",
+      "inicio": 12.72,
+      "fin": 12.8
+    },
+    {
+      "texto": "cuchillo",
+      "inicio": 12.88,
+      "fin": 13.28
+    },
+    {
+      "texto": "revienta",
+      "inicio": 13.44,
+      "fin": 14.04
+    },
+    {
+      "texto": "las",
+      "inicio": 14.08,
+      "fin": 14.16
+    },
+    {
+      "texto": "cajitas,",
+      "inicio": 14.24,
+      "fin": 14.96
+    },
+    {
+      "texto": "y",
+      "inicio": 15,
+      "fin": 15.04
+    },
+    {
+      "texto": "las",
+      "inicio": 15.12,
+      "fin": 15.2
+    },
+    {
+      "texto": "dos",
+      "inicio": 15.28,
+      "fin": 15.6
+    },
+    {
+      "texto": "se",
+      "inicio": 15.68,
+      "fin": 15.84
+    },
+    {
+      "texto": "mezclan.",
+      "inicio": 15.96,
+      "fin": 16.6
+    },
+    {
+      "texto": "Esa",
+      "inicio": 16.88,
+      "fin": 17.04
+    },
+    {
+      "texto": "mezcla",
+      "inicio": 17.12,
+      "fin": 17.52
+    },
+    {
+      "texto": "fabrica",
+      "inicio": 17.68,
+      "fin": 17.92
+    },
+    {
+      "texto": "un",
+      "inicio": 17.96,
+      "fin": 18
+    },
+    {
+      "texto": "gas",
+      "inicio": 18.08,
+      "fin": 18.24
+    },
+    {
+      "texto": "invisible,",
+      "inicio": 18.32,
+      "fin": 19.2
+    },
+    {
+      "texto": "que",
+      "inicio": 19.28,
+      "fin": 19.36
+    },
+    {
+      "texto": "sube",
+      "inicio": 19.52,
+      "fin": 19.76
+    },
+    {
+      "texto": "flotando",
+      "inicio": 19.84,
+      "fin": 20.32
+    },
+    {
+      "texto": "hasta",
+      "inicio": 20.373,
+      "fin": 20.48
+    },
+    {
+      "texto": "tus",
+      "inicio": 20.56,
+      "fin": 20.72
+    },
+    {
+      "texto": "ojos.",
+      "inicio": 20.8,
+      "fin": 21.2
+    },
+    {
+      "texto": "Ahí",
+      "inicio": 21.68,
+      "fin": 22
+    },
+    {
+      "texto": "toca",
+      "inicio": 22.08,
+      "fin": 22.32
+    },
+    {
+      "texto": "unos",
+      "inicio": 22.44,
+      "fin": 22.56
+    },
+    {
+      "texto": "nervios",
+      "inicio": 22.6,
+      "fin": 22.88
+    },
+    {
+      "texto": "que",
+      "inicio": 22.96,
+      "fin": 23.04
+    },
+    {
+      "texto": "avisan:",
+      "inicio": 23.08,
+      "fin": 23.76
+    },
+    {
+      "texto": "¡algo",
+      "inicio": 23.84,
+      "fin": 24
+    },
+    {
+      "texto": "te",
+      "inicio": 24.08,
+      "fin": 24.24
+    },
+    {
+      "texto": "pica!",
+      "inicio": 24.28,
+      "fin": 24.72
+    },
+    {
+      "texto": "Y",
+      "inicio": 25.12,
+      "fin": 25.2
+    },
+    {
+      "texto": "tus",
+      "inicio": 25.24,
+      "fin": 25.44
+    },
+    {
+      "texto": "ojos",
+      "inicio": 25.52,
+      "fin": 25.92
+    },
+    {
+      "texto": "abren",
+      "inicio": 26,
+      "fin": 26.24
+    },
+    {
+      "texto": "el",
+      "inicio": 26.28,
+      "fin": 26.32
+    },
+    {
+      "texto": "grifo:",
+      "inicio": 26.4,
+      "fin": 27.12
+    },
+    {
+      "texto": "lágrimas",
+      "inicio": 27.2,
+      "fin": 27.68
+    },
+    {
+      "texto": "para",
+      "inicio": 27.76,
+      "fin": 27.92
+    },
+    {
+      "texto": "lavar",
+      "inicio": 27.96,
+      "fin": 28.24
+    },
+    {
+      "texto": "el",
+      "inicio": 28.28,
+      "fin": 28.32
+    },
+    {
+      "texto": "gas.",
+      "inicio": 28.4,
+      "fin": 29
+    },
+    {
+      "texto": "Es",
+      "inicio": 29.28,
+      "fin": 29.36
+    },
+    {
+      "texto": "la",
+      "inicio": 29.44,
+      "fin": 29.48
+    },
+    {
+      "texto": "defensa",
+      "inicio": 29.52,
+      "fin": 30
+    },
+    {
+      "texto": "de",
+      "inicio": 30.04,
+      "fin": 30.08
+    },
+    {
+      "texto": "la",
+      "inicio": 30.12,
+      "fin": 30.16
+    },
+    {
+      "texto": "cebolla,",
+      "inicio": 30.24,
+      "fin": 30.88
+    },
+    {
+      "texto": "para",
+      "inicio": 30.96,
+      "fin": 31.04
+    },
+    {
+      "texto": "que",
+      "inicio": 31.08,
+      "fin": 31.12
+    },
+    {
+      "texto": "ningún",
+      "inicio": 31.2,
+      "fin": 31.52
+    },
+    {
+      "texto": "animal",
+      "inicio": 31.6,
+      "fin": 31.92
+    },
+    {
+      "texto": "se",
+      "inicio": 32,
+      "fin": 32.08
+    },
+    {
+      "texto": "la",
+      "inicio": 32.12,
+      "fin": 32.16
+    },
+    {
+      "texto": "quiera",
+      "inicio": 32.24,
+      "fin": 32.4
+    },
+    {
+      "texto": "comer.",
+      "inicio": 32.48,
+      "fin": 33.04
+    },
+    {
+      "texto": "Por",
+      "inicio": 33.28,
+      "fin": 33.36
+    },
+    {
+      "texto": "eso",
+      "inicio": 33.44,
+      "fin": 33.68
+    },
+    {
+      "texto": "una",
+      "inicio": 33.84,
+      "fin": 34
+    },
+    {
+      "texto": "cebolla",
+      "inicio": 34.08,
+      "fin": 34.4
+    },
+    {
+      "texto": "fría",
+      "inicio": 34.48,
+      "fin": 34.8
+    },
+    {
+      "texto": "hace",
+      "inicio": 34.88,
+      "fin": 35.04
+    },
+    {
+      "texto": "llorar",
+      "inicio": 35.12,
+      "fin": 35.36
+    },
+    {
+      "texto": "menos:",
+      "inicio": 35.44,
+      "fin": 36.16
+    },
+    {
+      "texto": "el",
+      "inicio": 36.24,
+      "fin": 36.32
+    },
+    {
+      "texto": "frío",
+      "inicio": 36.48,
+      "fin": 36.8
+    },
+    {
+      "texto": "frena",
+      "inicio": 36.96,
+      "fin": 37.28
+    },
+    {
+      "texto": "la",
+      "inicio": 37.32,
+      "fin": 37.36
+    },
+    {
+      "texto": "mezcla.",
+      "inicio": 37.44,
+      "fin": 38.08
+    },
+    {
+      "texto": "Así",
+      "inicio": 38.32,
+      "fin": 38.52
+    },
+    {
+      "texto": "que",
+      "inicio": 38.56,
+      "fin": 38.72
+    },
+    {
+      "texto": "no",
+      "inicio": 38.88,
+      "fin": 38.96
+    },
+    {
+      "texto": "lloras",
+      "inicio": 39.04,
+      "fin": 39.28
+    },
+    {
+      "texto": "de",
+      "inicio": 39.32,
+      "fin": 39.36
+    },
+    {
+      "texto": "pena:",
+      "inicio": 39.44,
+      "fin": 40.16
+    },
+    {
+      "texto": "lloras",
+      "inicio": 40.24,
+      "fin": 40.64
+    },
+    {
+      "texto": "porque",
+      "inicio": 40.72,
+      "fin": 40.88
+    },
+    {
+      "texto": "la",
+      "inicio": 40.92,
+      "fin": 40.96
+    },
+    {
+      "texto": "cebolla",
+      "inicio": 41.04,
+      "fin": 41.44
+    },
+    {
+      "texto": "se",
+      "inicio": 41.52,
+      "fin": 41.6
+    },
+    {
+      "texto": "defiende.",
+      "inicio": 41.68,
+      "fin": 42.52
+    },
+    {
+      "texto": "Envíaselo",
+      "inicio": 42.8,
+      "fin": 43.28
+    },
+    {
+      "texto": "a",
+      "inicio": 43.307,
+      "fin": 43.333
+    },
+    {
+      "texto": "un",
+      "inicio": 43.36,
+      "fin": 43.4
+    },
+    {
+      "texto": "amigo",
+      "inicio": 43.44,
+      "fin": 43.68
+    },
+    {
+      "texto": "que",
+      "inicio": 43.76,
+      "fin": 43.84
+    },
+    {
+      "texto": "le",
+      "inicio": 43.88,
+      "fin": 43.92
+    },
+    {
+      "texto": "pueda",
+      "inicio": 44,
+      "fin": 44.12
+    },
+    {
+      "texto": "interesar.",
+      "inicio": 44.16,
+      "fin": 44.96
+    }
+  ]
+}

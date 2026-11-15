@@ -2,6 +2,7 @@
   "titulo": "Por qué lloramos con la cebolla",
   "idioma": "es",
   "subtitulos": "arriba",
+  "voz": { "id": "TX3LPaxmHKxFdv7VOQHJ" },
   "frases": [
     { "texto": "¿Por qué lloras cada vez que cortas una cebolla?", "clave": "lloras", "hook": true },
     { "texto": "La cebolla no te pone triste: te está atacando.", "clave": "atacando", "hook": true },

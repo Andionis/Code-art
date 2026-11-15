@@ -5,7 +5,8 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Lo decidido (con las palabras del creador)
 
--
+- Guion: «Apruebo» (el de guion.json).
+- Voz: Liam (TX3LPaxmHKxFdv7VOQHJ), la misma del video de los mocos (el plan gratis de ElevenLabs no deja Antonio).
 
 ## Pendiente del creador
 
@@ -13,12 +14,15 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
-- [ ] 1. La idea y los datos → idea.md
-- [ ] 2. El guion → guion.json, **aprobado por el creador**
-- [ ] 3. La voz (una sola vez, con el guion cerrado)
-- [ ] 4. El plan → plan.md, con sus escenas
+- [x] 1. La idea y los datos → idea.md
+- [x] 2. El guion → guion.json, **aprobado por el creador**
+- [x] 3. La voz (una sola vez, con el guion cerrado)
+- [x] 4. El plan → plan.md, con sus escenas
 - [ ] 5. Escena por escena (cada una, su borrador aprobado):
-  - [ ] escena 1 (el hook)
+  - [ ] escena 1 (el hook): frases 1-2, hasta 6.40 s
+  - [ ] escena 2: frases 3-5 (dentro de la cebolla), hasta 19.50 s
+  - [ ] escena 3: el ojo, hasta 29.20 s
+  - [ ] escena 4: frases 8-11, hasta el final
 - [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
 - [ ] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
