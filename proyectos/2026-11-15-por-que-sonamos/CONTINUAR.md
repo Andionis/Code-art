@@ -19,15 +19,15 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 - [x] 2. El guion → guion.json, **aprobado por el creador**
 - [x] 3. La voz (una sola vez, con el guion cerrado)
 - [x] 4. El plan → plan.md, con sus escenas
-- [ ] 5. Escena por escena (cada una, su borrador aprobado):
+- [x] 5. Escena por escena (cada una, su borrador aprobado):
   - [x] escena 1 (el hook), frases 1-2, hasta 10.26 s — aprobada (v1)
   - [x] escena 2, frases 3-4, hasta 22.0 s — aprobada (v1)
   - [x] escena 3, frases 5-6, hasta 32.2 s — aprobada (v1, «Avanza»)
   - [x] escena 4, frases 7-9, hasta 48.3 s — aprobada (v1, «Avanza»)
-  - [ ] escena 5, frases 10-11, hasta el final — enseñada dentro del completo v1
-- [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
+  - [x] escena 5, frases 10-11, hasta el final — aprobada con el completo v1
+- [x] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
-- [ ] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
+- [x] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
       propuesto
 
 ## Para seguir en un chat nuevo
