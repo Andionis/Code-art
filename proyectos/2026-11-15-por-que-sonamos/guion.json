@@ -1,0 +1,18 @@
+{
+  "titulo": "¿Por qué soñamos?",
+  "idioma": "es",
+  "subtitulos": "arriba",
+  "frases": [
+    { "texto": "¿Por qué soñamos, si al despertar casi nunca nos acordamos?", "clave": "soñamos", "hook": true },
+    { "texto": "Cada noventa minutos, tu cerebro se enciende como si estuvieras despierto y te pone una película.", "clave": "película", "hook": true },
+    { "texto": "Y para que no te levantes a actuarla, apaga tus músculos: tu cuerpo queda paralizado.", "clave": "paralizado" },
+    { "texto": "¿Para qué tanto trabajo? La ciencia todavía no lo sabe del todo, pero tiene dos ideas fuertes.", "clave": "dos" },
+    { "texto": "La primera: un simulacro. Por eso tantos sueños son de que te persiguen o te caes.", "clave": "simulacro" },
+    { "texto": "Tu cerebro ensaya el peligro sin riesgo, como un piloto en un simulador.", "clave": "simulador" },
+    { "texto": "La segunda: terapia. Mientras sueñas, la química del estrés baja al mínimo.", "clave": "terapia" },
+    { "texto": "Así tu cerebro vuelve a vivir lo que te dolió en el día, pero sin la angustia.", "clave": "angustia" },
+    { "texto": "En un estudio, la gente que durmió volvió a ver las mismas fotos fuertes, y le afectaron menos.", "clave": "menos" },
+    { "texto": "Así que soñar no es basura de tu cabeza: es tu cerebro entrenándote y curándote mientras duermes.", "clave": "curándote" },
+    { "texto": "Envíaselo a un amigo que le pueda interesar.", "clave": "amigo" }
+  ]
+}
