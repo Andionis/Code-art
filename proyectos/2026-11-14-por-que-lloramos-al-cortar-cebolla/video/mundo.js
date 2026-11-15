@@ -320,3 +320,62 @@ export function chorro(g, t, x, y, t0, al = 1) {
   }
   g.restore();
 }
+
+// ---------- La mano que agarra el mango del cuchillo (en las coordenadas del cuchillo: mango de x 70 a 470) ----------
+function piel2(g, x0, y0, x1, y1) {
+  const gr = g.createLinearGradient(x0, y0, x1, y1);
+  gr.addColorStop(0, "#ffd9b8"); gr.addColorStop(0.45, "#eab08a"); gr.addColorStop(1, "#a8664a");
+  return gr;
+}
+export function manoCuchillo(g, x, y, s = 1, ang = 0) {
+  g.save(); g.translate(x, y); g.rotate(ang); g.scale(s, s);
+  // el antebrazo, que sale hacia la derecha, con su manga
+  g.beginPath(); g.moveTo(330, -250); g.quadraticCurveTo(700, -270, 1100, -230); g.lineTo(1100, 40); g.quadraticCurveTo(700, 20, 360, -20); g.closePath();
+  g.fillStyle = piel2(g, 0, -260, 0, 30); g.fill();
+  g.beginPath(); g.moveTo(760, -275); g.lineTo(1150, -260); g.lineTo(1150, 60); g.lineTo(760, 40); g.closePath();
+  const mg = g.createLinearGradient(0, -275, 0, 60); mg.addColorStop(0, "#5d7fd0"); mg.addColorStop(0.5, "#34539e"); mg.addColorStop(1, "#1b2c5a");
+  g.fillStyle = mg; g.fill();
+  g.strokeStyle = "rgba(255,255,255,0.25)"; g.lineWidth = 6; g.beginPath(); g.moveTo(762, -270); g.lineTo(762, 38); g.stroke();
+  // el dorso de la mano, sobre el mango
+  g.beginPath(); g.moveTo(150, -215); g.quadraticCurveTo(160, -275, 260, -280); g.quadraticCurveTo(380, -285, 420, -230); g.lineTo(420, -40); g.quadraticCurveTo(300, -10, 160, -50); g.closePath();
+  g.fillStyle = piel2(g, 0, -285, 0, -20); g.fill();
+  // los cuatro dedos, que rodean el mango por delante, de canto
+  for (let i = 0; i < 4; i++) {
+    const fx = 165 + i * 62, fy = -165 + i * 4;
+    k.redondo(g, fx, fy, 60, 150 - i * 6, 28);
+    g.fillStyle = piel2(g, fx, fy, fx + 60, fy + 150); g.fill();
+    g.strokeStyle = "rgba(120,60,40,0.55)"; g.lineWidth = 3; g.stroke();
+    // el nudillo del medio y su pliegue
+    g.strokeStyle = "rgba(140,70,45,0.45)"; g.lineWidth = 2.5;
+    g.beginPath(); g.moveTo(fx + 12, fy + 70); g.quadraticCurveTo(fx + 30, fy + 64, fx + 48, fy + 70); g.stroke();
+    g.fillStyle = "rgba(255,240,225,0.45)"; g.beginPath(); g.ellipse(fx + 22, fy + 30, 10, 18, 0, 0, 6.283); g.fill();
+  }
+  // el pulgar, encima del mango, estirado hacia la hoja
+  g.beginPath(); g.moveTo(240, -250); g.quadraticCurveTo(150, -262, 95, -232); g.quadraticCurveTo(70, -212, 100, -198); g.quadraticCurveTo(170, -196, 250, -200); g.closePath();
+  g.fillStyle = piel2(g, 0, -265, 0, -195); g.fill();
+  g.strokeStyle = "rgba(120,60,40,0.5)"; g.lineWidth = 3; g.stroke();
+  g.fillStyle = "rgba(255,235,220,0.8)"; g.beginPath(); g.ellipse(108, -222, 16, 9, -0.2, 0, 6.283); g.fill(); // la uña
+  g.restore();
+}
+
+// La otra mano, sujetando la cebolla por encima, con los dedos doblados (vista de lado, desde la izquierda).
+export function manoSujeta(g, x, y, s = 1, al = 1) {
+  if (al <= 0.01) return;
+  g.save(); g.translate(x, y); g.scale(s, s); g.globalAlpha *= al;
+  // el brazo, que llega desde la izquierda y arriba
+  g.beginPath(); g.moveTo(-700, -520); g.lineTo(-260, -230); g.lineTo(-170, -80); g.lineTo(-640, -300); g.closePath();
+  g.fillStyle = piel2(g, -700, -520, -500, -200); g.fill();
+  g.beginPath(); g.moveTo(-900, -640); g.lineTo(-560, -430); g.lineTo(-500, -250); g.lineTo(-900, -420); g.closePath();
+  const mg = g.createLinearGradient(-900, -640, -600, -300); mg.addColorStop(0, "#5d7fd0"); mg.addColorStop(1, "#1b2c5a"); g.fillStyle = mg; g.fill();
+  // la palma, encima de la cebolla
+  g.beginPath(); g.moveTo(-290, -250); g.quadraticCurveTo(-120, -300, 30, -220); g.quadraticCurveTo(80, -170, 60, -100); g.lineTo(-200, -60); g.quadraticCurveTo(-280, -120, -290, -250); g.closePath();
+  g.fillStyle = piel2(g, -200, -300, -100, -60); g.fill();
+  // los dedos doblados, apoyados en la cebolla
+  for (let i = 0; i < 3; i++) {
+    const fx = -40 + i * 18, fy = -150 + i * 40;
+    g.beginPath(); g.ellipse(fx, fy, 75, 30, 0.5, 0, 6.283);
+    g.fillStyle = piel2(g, fx - 70, fy - 30, fx + 70, fy + 30); g.fill();
+    g.strokeStyle = "rgba(120,60,40,0.5)"; g.lineWidth = 3; g.stroke();
+  }
+  g.restore();
+}

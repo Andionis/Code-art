@@ -6,7 +6,7 @@
 //   hacia la cámara y llena la pantalla; se aclara antes del corte.
 import * as k from "#kit";
 import { v } from "#voz";
-import { cocina, tabla, cebolla, mitad, cuchillo, lagrima, salpica, hilo, nubeGas, chorro, velo, vista, GAS } from "../mundo.js";
+import { cocina, tabla, cebolla, mitad, cuchillo, manoCuchillo, lagrima, salpica, hilo, nubeGas, chorro, velo, vista, GAS } from "../mundo.js";
 
 export const desde = 0;
 const { suave: su, tramo: tr, mez, entra } = k;
@@ -49,13 +49,14 @@ export function dibuja(g, t) {
     mitad(g, CX - 20 - sep, CY + 30 * abre - rebote, S, -1, gira, { ang: -0.12 * abre });
     mitad(g, CX + 20 + sep, CY + 30 * abre - rebote, S, 1, gira, { ang: 0.12 * abre });
   }
-  // el cuchillo: baja de golpe por el centro (hoja de canto, casi de frente) y vuelve a subir
-  const baja = tr(t, -0.12, Tgolpe), sube = su(tr(t, Tgolpe + 0.12, Tgolpe + 0.6));
-  const punta = mez(mez(560, SUELO - 10, baja * baja), -300, sube);
-  if (punta > -200) {
-    g.save(); g.translate(CX, punta - 990); g.scale(0.4, 1.0); cuchillo(g, 0, 0, 1.1, -Math.PI / 2); g.restore();
-    // estela del golpe
-    if (t < Tgolpe + 0.05) { const eg = g.createLinearGradient(0, punta - 600, 0, punta); eg.addColorStop(0, "rgba(255,255,255,0)"); eg.addColorStop(1, "rgba(255,255,255,0.35)"); g.fillStyle = eg; g.fillRect(CX - 70, punta - 600, 140, 600); }
+  // el cuchillo, en la mano de quien corta: de lado, la punta hacia el fondo a la izquierda; baja de golpe por el
+  // centro de la cebolla y vuelve a subir
+  const baja = tr(t, -0.12, Tgolpe), sube = su(tr(t, Tgolpe + 0.15, Tgolpe + 0.7));
+  const ANG = 0.3, hx = 690, hyG = SUELO + 160 * Math.tan(ANG) + 40; // el talón, cuando el filo toca la tabla en el centro
+  const hy = mez(mez(hyG - 620, hyG, baja * baja), hyG - 1500, sube), hxx = hx + 260 * sube;
+  if (hy > hyG - 1450) {
+    cuchillo(g, hxx, hy, 0.95, ANG);
+    manoCuchillo(g, hxx, hy, 0.95, ANG);
   }
   // los hilos de gas, de las caras cortadas (desde el final de la frase 1, cada vez más)
   if (t > Tla - 0.3) {
