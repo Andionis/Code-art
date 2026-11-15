@@ -20,7 +20,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 - [x] 4. El plan → plan.md, con sus escenas
 - [ ] 5. Escena por escena (cada una, su borrador aprobado):
   - [x] escena 1 (el hook): frases 1-2, hasta 6.40 s (v2: «cambia el ángulo del cuchillo, como si una persona lo estuviera cortando con sus manos»; aprobada)
-  - [ ] escena 2: frases 3-5 (dentro de la cebolla), hasta 19.50 s
+  - [x] escena 2: frases 3-5 (dentro de la cebolla), hasta 19.50 s (v1 aprobada)
   - [ ] escena 3: el ojo, hasta 29.20 s
   - [ ] escena 4: frases 8-11, hasta el final
 - [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
