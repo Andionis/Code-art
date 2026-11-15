@@ -23,9 +23,9 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
   - [x] escena 2: frases 3-5 (dentro de la cebolla), hasta 19.50 s (v1 aprobada)
   - [x] escena 3: el ojo, hasta 29.20 s (v1 aprobada)
   - [x] escena 4: frases 8-11, hasta el final (v1 aprobada)
-- [ ] 6. El sonido y el video entero (sonido hecho; completo v1 enseñado; miniatura y descripciones listas): el borrador completo, **aprobado por el creador** (mientras lo mira: la
+- [x] 6. El sonido y el video entero (sonido hecho; completo v1 enseñado; miniatura y descripciones listas): el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
-- [ ] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
+- [x] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
       propuesto
 
 ## Para seguir en un chat nuevo

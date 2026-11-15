@@ -35,7 +35,7 @@ const C0 = CELDAS.reduce((m, q) => (Math.hypot(q.x - 70, q.y) < Math.hypot(m.x -
 
 // el cuchillo: un filo vertical en x = 0 que baja; revienta lo que está a menos de CORTE de él
 const CORTE = W * 0.95, K0 = Tcuch - 0.05, K1 = Tcuch + 1.1, Y0 = -1100, Y1 = 1300;
-const filo = (t) => mez(Y0, Y1, tr(t, K0, K1));
+const filo = (t) => (t <= K1 ? mez(Y0, Y1, tr(t, K0, K1)) : Y1 + (t - K1) * 2200 + 9000 * (t - K1) ** 2);
 const revienta = (q) => K0 + ((q.y - Y0) / (Y1 - Y0)) * (K1 - K0) + 0.02;
 for (const q of CELDAS) q.rota = Math.abs(q.x) < CORTE ? revienta(q) : Infinity;
 export const estallidos = CELDAS.filter((q) => q.rota < 99 && Math.abs(q.y) < 700).map((q) => q.rota);
@@ -156,7 +156,7 @@ export function dibuja(g, t) {
     hilo(g, t, x, y, ch.t, 2.6, 50, (ch.s % 2 ? 1 : -1) * 60, 900, 2.2, ch.s);
   }
   // el cuchillo: un filo enorme que baja por x = 0
-  if (t > K0 - 0.1 && t < K1 + 0.1) {
+  if (t > K0 - 0.1 && t < K1 + 0.5) {
     const e = filo(t);
     g.save(); g.translate(0, e - 990 * 2.2); g.scale(0.6, 1); cuchillo(g, 0, 0, 2.2, -Math.PI / 2); g.restore();
     k.brillo(g, 0, e, 260, "blanca", 0.8);
