@@ -1,0 +1,161 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Anton;src:url(f/anton.woff2)}
+@font-face{font-family:Anton;src:url(f/anton-ext.woff2)}
+@font-face{font-family:In;src:url(f/inter-latin-800-normal.woff2);font-weight:800}
+@font-face{font-family:In;src:url(f/inter-latin-600-normal.woff2);font-weight:600}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#030308;font-family:In,sans-serif;color:#fff}
+#bgimg{position:absolute;left:-400px;top:-100px;width:1880px;height:2120px;background:url(portada.png) center/cover;filter:blur(70px) brightness(.42) saturate(1.35)}
+#tint{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,90,.35),rgba(0,0,0,.2) 45%,rgba(120,0,10,.35))}
+#cam{position:absolute;inset:0;perspective:1600px}
+.sc{position:absolute;inset:0;transform-style:preserve-3d;display:none}
+.c{position:absolute;left:50%;top:50%;transform-style:preserve-3d}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 46%,transparent 42%,rgba(0,0,0,.85) 100%)}
+.glass{background:linear-gradient(160deg,rgba(255,255,255,.14),rgba(255,255,255,.04));border:1.5px solid rgba(255,255,255,.16);
+ box-shadow:0 80px 160px rgba(0,0,0,.7),inset 0 1.5px 0 rgba(255,255,255,.25);backdrop-filter:blur(40px) saturate(1.4)}
+.chunk{position:absolute;white-space:nowrap}
+/* reproductor */
+.player{position:absolute;width:860px;left:-430px;border-radius:64px;padding:48px}
+.player .row{display:flex;gap:40px;align-items:center}
+.thumb{width:230px;height:230px;border-radius:30px;background:url(portada.png) center/cover;box-shadow:0 20px 50px rgba(0,0,0,.5);flex:none}
+.player .tt{font-weight:800;font-size:66px;letter-spacing:-1px}
+.player .ar{font-weight:600;font-size:40px;opacity:.6;margin-top:4px}
+.bar{height:10px;border-radius:5px;background:rgba(255,255,255,.2);margin-top:50px;position:relative}
+.bar i{position:absolute;left:0;top:0;bottom:0;border-radius:5px;background:#fff}
+.bar b{position:absolute;top:50%;width:26px;height:26px;border-radius:50%;background:#fff;transform:translate(-50%,-50%)}
+.times{display:flex;justify-content:space-between;font-weight:600;font-size:30px;opacity:.55;margin-top:16px}
+.ctr{display:flex;justify-content:center;align-items:center;gap:120px;margin-top:26px}
+.ctr svg{fill:#fff}
+.ppb{width:150px;height:150px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center}
+.ppb svg{fill:#0a0a14}
+#lyrA{position:absolute;left:-460px;width:920px;top:330px;font-weight:800;font-size:92px;line-height:1.08;letter-spacing:-2px}
+.w{display:inline-block;white-space:pre}
+/* caps */
+.caps{text-shadow:0 20px 60px rgba(0,0,0,.6);font-family:Anton;text-transform:uppercase;line-height:.92;text-align:center;left:0;width:1080px;letter-spacing:1px}
+/* burbuja */
+.bub{position:absolute;font-weight:800;font-size:116px;letter-spacing:-3px;padding:40px 76px 50px;border-radius:120px;white-space:nowrap;
+ background:linear-gradient(170deg,#ff4b42 0%,#e0101f 60%,#a8000f 100%);box-shadow:0 50px 120px rgba(230,10,30,.45),inset 0 4px 0 rgba(255,255,255,.45),inset 0 -14px 30px rgba(80,0,0,.35)}
+.bub:after{content:"";position:absolute;left:46px;bottom:-26px;width:80px;height:70px;background:#c4000f;clip-path:polygon(0 0,100% 0,0 100%);border-bottom-left-radius:20px}
+.gl{position:absolute;inset:0;border-radius:inherit;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.35) 48%,transparent 60%);overflow:hidden}
+/* tarjeta letra */
+.card{position:absolute;width:900px;height:620px;left:-450px;top:-310px;border-radius:80px;padding:60px 70px;overflow:hidden}
+.card.red{background:linear-gradient(140deg,#ff5148 0%,#e3121f 50%,#8e0012 100%);box-shadow:0 70px 160px rgba(220,0,20,.5),inset 0 3px 0 rgba(255,255,255,.5),inset 0 -30px 80px rgba(70,0,0,.35)}
+.card.blue{background:linear-gradient(140deg,#4d6dff 0%,#1f36e0 50%,#0b1680 100%);box-shadow:0 70px 160px rgba(30,60,255,.5),inset 0 3px 0 rgba(255,255,255,.5),inset 0 -30px 80px rgba(0,0,60,.35)}
+.card .lbl{font-weight:600;font-size:40px;opacity:.8;display:flex;justify-content:space-between}
+.card .chunk{left:70px;top:230px;font-weight:800;font-size:170px;letter-spacing:-5px;text-shadow:0 0 50px rgba(255,255,255,.35)}
+/* portada flotante */
+.art{position:absolute;width:700px;height:700px;left:-350px;top:-560px;border-radius:36px;background:url(portada.png) center/cover;box-shadow:0 80px 160px rgba(0,0,0,.75)}
+.line{left:-480px;width:960px;top:270px;font-weight:800;font-size:110px;letter-spacing:-3px;text-align:center;white-space:normal;line-height:1.02}
+#flash{position:absolute;inset:0;background:#fff;opacity:0}
+</style></head><body>
+<div style="position:absolute;left:-5000px;top:0"><span style="font-family:Anton">AÁ</span><span style="font-family:In;font-weight:800">aá¿</span><span style="font-family:In;font-weight:600">a</span></div><div id="bgimg"></div><div id="tint"></div>
+<div id="cam">
+ <!-- A reproductor -->
+ <div class="sc" id="A"><div class="c" id="Ac">
+  <div class="player glass" style="top:-520px"><div class="row"><div class="thumb"></div><div><div class="tt">Vuelve</div><div class="ar">Anuel AA</div></div></div>
+   <div class="bar"><i id="Abar"></i><b id="Aknob"></b></div><div class="times"><span id="Acur"></span><span>-2:43</span></div>
+   <div class="ctr"><svg width="96" height="70" viewBox="0 0 96 70"><path d="M46 4 L4 35 L46 66Z M92 4 L50 35 L92 66Z"/></svg><div class="ppb"><svg width="64" height="70" viewBox="0 0 64 70"><rect x="6" y="4" width="18" height="62" rx="5"/><rect x="40" y="4" width="18" height="62" rx="5"/></svg></div><svg width="96" height="70" viewBox="0 0 96 70"><path d="M4 4 L46 35 L4 66Z M50 4 L92 35 L50 66Z"/></svg></div>
+  </div>
+  <div id="lyrA"></div></div></div>
+ <!-- B caps -->
+ <div class="sc" id="B"><div id="Bt"></div></div>
+ <!-- C burbujas -->
+ <div class="sc" id="C"><div class="c" id="Cc"></div></div>
+ <!-- D tarjeta -->
+ <div class="sc" id="D"><div class="c" id="Dc"><div class="card red"><div class="lbl"><span>Letra</span><span>Vuelve · Anuel AA</span></div><div id="Dt"></div><div class="gl" id="Dgl"></div></div></div></div>
+ <!-- E caps sobre portada -->
+ <div class="sc" id="E"><div class="c" id="Ec"><div class="art" style="width:980px;height:980px;left:-490px;top:-560px;filter:brightness(.55) blur(2px)" id="Eart"></div></div><div id="Et"></div></div>
+ <!-- F primer plano reproductor -->
+ <div class="sc" id="F"><div class="c" id="Fc"><div class="player glass" style="top:-360px;filter:blur(3px)"><div class="row"><div class="thumb"></div><div><div class="tt">Vuelve</div><div class="ar">Anuel AA</div></div></div>
+   <div class="bar"><i id="Fbar"></i><b id="Fknob"></b></div><div class="times"><span id="Fcur"></span><span>-2:24</span></div>
+   <div class="ctr"><svg id="Frw" width="96" height="70" viewBox="0 0 96 70"><path d="M46 4 L4 35 L46 66Z M92 4 L50 35 L92 66Z"/></svg><div class="ppb"><svg width="64" height="70" viewBox="0 0 64 70"><rect x="6" y="4" width="18" height="62" rx="5"/><rect x="40" y="4" width="18" height="62" rx="5"/></svg></div><svg width="96" height="70" viewBox="0 0 96 70"><path d="M4 4 L46 35 L4 66Z M50 4 L92 35 L50 66Z"/></svg></div></div></div><div id="Ft"></div></div>
+ <!-- G portada flotante -->
+ <div class="sc" id="G"><div class="c" id="Gc"><div class="art" id="Gart"><div class="gl" id="Ggl"></div></div><div id="Gt"></div></div></div>
+ <!-- H tarjeta azul + final -->
+ <div class="sc" id="H"><div class="c" id="Hc">
+  <div class="player glass" id="Hp" style="top:-560px"><div class="thumb" style="width:764px;height:764px;border-radius:40px"></div><div class="tt" style="margin-top:40px">Vuelve</div><div class="ar">Anuel AA</div><div class="bar" style="margin-top:36px"><i id="Hbar"></i></div></div>
+  <div id="Hcard" style="position:absolute;transform-style:preserve-3d"><div class="card blue"><div class="lbl"><span>Letra</span><span>Vuelve · Anuel AA</span></div><div id="Ht"></div><div class="gl" id="Hgl"></div></div></div>
+ </div></div>
+ <div id="flash"></div>
+</div>
+<div id="vig"></div>
+<script>
+const W=__WORDS__;
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), lin=(t,a,b)=>cl((t-a)/(b-a));
+const eo=x=>1-Math.pow(1-x,3), eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2, eo5=x=>1-Math.pow(1-x,5);
+const st=i=>W[i][1];
+const S=[['A',127.0,129.5],['B',129.5,132.1],['C',132.1,136.85],['D',136.85,141.15],['E',141.15,145.38],['F',145.38,147.15],['G',147.15,151.4],['H',151.4,157]];
+// trozos: [escena, contenedor, texto, primera palabra]
+const CH={
+ B:[['Me está',5],['matando',7],['esta',8],['ansiedad',9]],
+ C:[['Me pregunto',10],['¿cómo estás?',12],['¿qué haces?',14],['¿y dónde estás?',16]],
+ D:[['El tiempo',19],['corriendo',21],['sin ti',22],['y el mundo',24],['no para',27],['de girar',29]],
+ E:[['Todas estas',31],['putas',33],['me hacen venir',34],['pero no me dan',37],['felicidad',41]],
+ F:[['En el pasado',42],['me estanco',45]],
+ G:[['Pa’ despejar la mente',47],['voy con mi rifle',51],['a tirar al blanco',55]],
+ H:[['No entiendes',59],['yo siempre',61],['paso la página',63],['y otra vez',66],['se la arranco',69]],
+};
+const box={B:'Bt',C:'Cc',D:'Dt',E:'Et',F:'Ft',G:'Gt',H:'Ht'};
+const cls={B:'chunk caps',C:'bub',D:'chunk',E:'chunk caps',F:'chunk caps',G:'chunk line',H:'chunk'};
+const els={};
+for(const k in CH){els[k]=CH[k].map(([txt])=>{const d=document.createElement('div');d.className=cls[k];d.textContent=txt;$(box[k]).appendChild(d);
+ if(k==='C')d.insertAdjacentHTML('beforeend','<div class="gl"></div>');return d})}
+// karaoke A
+$('lyrA').innerHTML=[0,1,2,3,4].map(i=>`<span class="w">${W[i][0]}</span>`).join(' ');const kA=[...$('lyrA').children];
+let fitted=false;
+const mctx=document.createElement('canvas').getContext('2d');
+function mw(txt,font,ls){mctx.font=font;return mctx.measureText(txt).width+ls*txt.length}
+function fit(){ // tamaños medidos con la letra ya cargada
+ for(const k of ['B','E','F']){const max=k==='F'?230:430;els[k].forEach((d,i)=>{const txt=CH[k][i][0].toUpperCase();const w=mw(txt,'100px Anton',1);
+  const fs=Math.min(max,100*960/w);d.style.fontSize=fs+'px';d.style.top=(k==='F'?430:(960-fs*0.46))+'px'})}
+ els.C.forEach((d,i)=>{const w=mw(CH.C[i][0],'800 116px In',-3)+152;d.style.left=(-w/2)+'px';d.style.top='-110px'});
+ ['D','H'].forEach(k=>els[k].forEach((d,i)=>{const w=mw(CH[k][i][0],'800 170px In',-5);if(w>760)d.style.fontSize=(170*760/w)+'px'}));
+ fitted=true}
+function chunkU(k,t,end,mode){const L=CH[k];els[k].forEach((d,i)=>{const a=st(L[i][1])-0.07,b=(i+1<L.length?st(L[i+1][1])-0.07:end);
+ const pi=eo5(lin(t,a,a+0.28)),po=lin(t,b-0.06,b+0.06),on=t>=a&&t<b+0.06;d.style.display=on?'block':'none';if(!on)return;
+ d.style.opacity=Math.min(cl(pi*1.6),1-po);
+ const s=mode==='bub'?(0.55+0.45*pi):(1.14-0.14*pi);
+ d.style.transform=`translateY(${(1-pi)*(mode==='bub'?60:30)}px) scale(${s*(1-0.04*po)})`;d.style.filter=`blur(${(1-pi)*16+po*10}px)`;
+ // brillo con la voz
+ const gl=d.querySelector('.gl');if(gl)gl.style.transform=`translateX(${-120+lin(t,a,a+0.9)*240}%)`;})}
+function fmt(s){s=Math.floor(s);return Math.floor(s/60)+':'+String(s%60).padStart(2,'0')}
+window.render=function(t){
+ if(!fitted)fit();
+ $('bgimg').style.transform=`translate(${Math.sin(t*.25)*60}px,${Math.cos(t*.2)*80}px) scale(${1+0.05*Math.sin(t*.3)})`;
+ for(const [k,a,b] of S){const el=$(k),on=t>=a-0.02&&t<b+0.05;el.style.display=on?'block':'none';if(!on)continue;
+  const i=eo(lin(t,a-0.02,a+0.24)),o=lin(t,b-0.12,b+0.05);el.style.opacity=Math.min(i,1-o);
+  el.style.filter=`blur(${(1-i)*20+o*28}px)`;el.style.transform=`scale(${(0.9+0.1*i)*(1+0.35*Math.pow(o,2))})`}
+ const prog=t/289.9;
+ // A: el reproductor, la cámara se aleja girando
+ { const p=lin(t,127.0,129.5),e=eio(p);$('Ac').style.transform=`translateZ(${420-420*e}px) rotateX(${22-14*e}deg) rotateY(${-30+24*e}deg) rotateZ(${-6+5*e}deg)`;
+   $('Abar').style.width=prog*100+'%';$('Aknob').style.left=prog*100+'%';$('Acur').textContent=fmt(t);
+   kA.forEach((s,j)=>{const q=lin(t,st(j)-0.05,st(j)+0.14);s.style.color=`rgba(255,255,255,${0.28+0.72*q})`;s.style.textShadow=q>0?`0 0 ${36*q}px rgba(255,255,255,${0.45*q})`:'none'}) }
+ // B
+ chunkU('B',t,132.1);{const p=lin(t,129.5,132.1);$('Bt').style.transform=`scale(${1+0.06*p})`}
+ // C
+ chunkU('C',t,136.85,'bub');{const p=lin(t,132.1,136.85);$('Cc').style.transform=`rotateX(${12-6*p}deg) rotateY(${-24+38*p}deg) rotateZ(${-5+6*p}deg)`}
+ // D
+ chunkU('D',t,141.15);{const p=lin(t,136.85,141.15),e=eio(p);$('Dc').style.transform=`rotateX(${16-10*e}deg) rotateY(${-34+50*e}deg) rotateZ(${-8+10*e}deg) translateZ(${-60+120*e}px)`;
+  $('Dgl').style.transform=`translateX(${-100+((t-136.85)%1.4)/1.4*200}%)`}
+ // E
+ chunkU('E',t,145.38);{const p=lin(t,141.15,145.38);$('Eart').style.transform=`scale(${1.05+0.12*p}) rotateY(${-6+8*p}deg)`}
+ // F
+ chunkU('F',t,147.15);{const p=lin(t,145.38,147.15);$('Fc').style.transform=`translateZ(${520+80*p}px) translateX(${80-120*p}px) rotateX(${14}deg) rotateY(${18-10*p}deg)`;
+  const back=Math.max(0,1-lin(t,145.4,146.4));const pr=prog-0.03*back;$('Fbar').style.width=pr*100+'%';$('Fknob').style.left=pr*100+'%';$('Fcur').textContent=fmt(t-8*back);
+  $('Frw').style.filter=t<146.4?`drop-shadow(0 0 ${20+20*Math.sin(t*20)}px rgba(255,60,60,.9))`:'none'}
+ // G
+ chunkU('G',t,151.4);{const p=lin(t,147.15,151.4),e=eio(p);const hit=lin(t,st(58),st(58)+0.4);
+  $('Gc').style.transform=`rotateX(${10-6*e}deg) rotateY(${26-44*e}deg) translateZ(${-100+100*e+60*(1-hit)*(t>=st(58)?1:0)}px)`;
+  $('Ggl').style.transform=`translateX(${-120+lin(t,147.3,149.3)*240}%)`;
+  $('flash').style.opacity=t>=st(58)?0.55*(1-lin(t,st(58),st(58)+0.3)):0}
+ // H: tarjeta azul y al final se gira y deja la portada
+ chunkU('H',t,155.95);{const p=lin(t,151.4,155.9),e=eio(p),f=eio(lin(t,155.75,156.3));
+  $('Hcard').style.transform=`rotateX(${12-8*e}deg) rotateY(${30-40*e+180*f}deg) rotateZ(${5-6*e}deg)`;$('Hcard').style.opacity=1-lin(t,155.9,156.05);
+  $('Hp').style.display=f>0?'block':'none';$('Hp').style.transform=`rotateY(${-180+180*f}deg) scale(${0.85+0.15*f})`;$('Hp').style.backfaceVisibility='hidden';
+  $('Hbar').style.width=prog*100+'%';$('Hgl').style.transform=`translateX(${-100+((t-151.4)%1.6)/1.6*200}%)`}
+ $('cam').style.opacity=1-lin(t,156.3,156.6);
+};
+</script></body></html>
