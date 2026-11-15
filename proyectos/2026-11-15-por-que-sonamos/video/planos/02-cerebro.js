@@ -58,9 +58,9 @@ export function dibuja(g, t) {
   if (u > 0) {
     for (const [P, dibujo, col, fase] of [[BR, calle, "255,90,90", 0], [BA, calma, "120,200,255", 0.12]]) {
       const uu = k.entra(tr(t, Tdos - 0.1 + fase, Tdos + 0.75 + fase));
-      const x = mez(0, P[0], uu), y = mez(-120, P[1], uu) + Math.sin(t * 1.3 + fase * 20) * 6 * uu;
+      const x = mez(0, P[0], uu), y = mez(-120, P[1], uu) + Math.sin(t * 1.3 + fase * 20) * 6 * uu * (1 - su(tr(t, Tprim, Tsim - 0.2)));
       g.save(); k.brillo(g, x, y, RBb * 3, col, 0.5 * uu); g.restore();
-      burbuja(g, x, y, RBb * mez(0.15, 1, uu), (gg) => dibujo(gg, t), Math.min(1, uu * 2.5), 1.1);
+      burbuja(g, x, y, RBb * mez(0.15, 1, uu), (gg) => dibujo(gg, t), Math.min(1, uu * 2.5), 1.1 * (1 - su(tr(t, Tsim - 0.35, Tsim))));
     }
   }
   vineta(g, 0.5);

@@ -209,7 +209,7 @@ export function burbuja(g, x, y, r, contenido, al = 1, brillo = 1) {
   bg.addColorStop(0, "rgba(255,255,255,0)"); bg.addColorStop(1, `rgba(235,215,255,${0.55 * brillo})`);
   g.fillStyle = bg; g.beginPath(); g.arc(x, y, r, 0, TAU); g.fill();
   g.strokeStyle = `rgba(255,240,255,${0.8 * brillo})`; g.lineWidth = Math.max(1.5, r * 0.012); g.beginPath(); g.arc(x, y, r, 0, TAU); g.stroke();
-  k.reflejo(g, x - r * 0.62, y - r * 0.5, r * 0.08, r * 0.38, 0.35);
+  k.reflejo(g, x - r * 0.62, y - r * 0.5, r * 0.08, r * 0.38, 0.35 * Math.min(1, brillo));
   g.restore();
 }
 

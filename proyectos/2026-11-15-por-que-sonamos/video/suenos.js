@@ -75,27 +75,31 @@ function grietaSuelo(g, x, u) {
 export function sombra(g, x, h, t, al = 1) {
   if (al <= 0.01) return;
   g.save(); g.globalAlpha *= al; g.translate(x, SUELO);
-  const az = azar(5);
-  for (let i = 0; i < 26; i++) {
-    const yy = -h * (i / 26), ww = h * (0.18 + 0.12 * Math.sin((i / 26) * Math.PI)) * (i > 20 ? 0.75 : 1), off = Math.sin(t * 2.2 + i * 0.5) * h * 0.03;
-    const gr = g.createRadialGradient(off, yy, 0, off, yy, ww);
-    gr.addColorStop(0, "rgba(6,0,6,0.9)"); gr.addColorStop(0.7, "rgba(10,0,10,0.6)"); gr.addColorStop(1, "rgba(10,0,10,0)");
-    g.fillStyle = gr; g.beginPath(); g.arc(off, yy, ww, 0, TAU); g.fill();
+  // el contorno rojo, para que se recorte contra el cielo
+  k.brillo(g, h * 0.04, -h * 0.6, h * 1.1, "255,50,40", 0.35);
+  // el cuerpo de humo: estrecho abajo, hombros anchos, cuello y cabeza
+  const ancho = (u) => u < 0.68 ? mez(0.1, 0.27, Math.pow(u / 0.68, 0.8)) : u < 0.78 ? mez(0.27, 0.09, (u - 0.68) / 0.1) : u < 0.97 ? 0.13 * Math.sin(((u - 0.78) / 0.19) * Math.PI) + 0.02 : 0;
+  for (let i = 0; i < 40; i++) {
+    const u = i / 40, yy = -h * u, ww = h * ancho(u), off = Math.sin(t * 2.2 + i * 0.4) * h * 0.012 + u * h * 0.06;
+    if (ww <= 1) continue;
+    const gr = g.createRadialGradient(off, yy, 0, off, yy, ww * 1.15);
+    gr.addColorStop(0, "rgba(4,0,4,0.95)"); gr.addColorStop(0.75, "rgba(8,0,8,0.8)"); gr.addColorStop(1, "rgba(8,0,8,0)");
+    g.fillStyle = gr; g.beginPath(); g.arc(off, yy, ww * 1.15, 0, TAU); g.fill();
   }
   // los brazos que se estiran hacia delante
-  for (const [dy, fase] of [[-0.62, 0], [-0.55, 1.3]]) {
+  for (const [dy, fase] of [[-0.66, 0], [-0.6, 1.3]]) {
     g.strokeStyle = "rgba(8,0,8,0.85)"; g.lineWidth = h * 0.06; g.lineCap = "round";
     g.beginPath(); g.moveTo(0, h * dy); g.quadraticCurveTo(h * 0.25, h * (dy - 0.05 + 0.03 * Math.sin(t * 3 + fase)), h * 0.42, h * (dy + 0.02 + 0.04 * Math.sin(t * 2.4 + fase))); g.stroke();
   }
   // los ojos
-  for (const dx of [0.02, 0.1]) { k.brillo(g, h * dx, -h * 0.86, h * 0.12, "255,40,40", 0.9); g.fillStyle = "#ffd0c0"; g.beginPath(); g.ellipse(h * dx, -h * 0.86, h * 0.022, h * 0.012, -0.2, 0, TAU); g.fill(); }
+  for (const dx of [0.07, 0.13]) { k.brillo(g, h * dx, -h * 0.87, h * 0.1, "255,40,40", 0.9); g.fillStyle = "#ffd0c0"; g.beginPath(); g.ellipse(h * dx, -h * 0.87, h * 0.02, h * 0.011, -0.2, 0, TAU); g.fill(); }
   g.restore();
 }
 // La pesadilla entera, pequeña (para la burbuja): él corre y la sombra le sigue.
 export function calle(g, t) {
   const av = t * 520;
   fondoCalle(g, t, av);
-  sombra(g, -330, 1050, t);
+  sombra(g, -330, 760, t);
   corredor(g, 160, SUELO, 520, t * 1.9, { miedo: 1 });
 }
 
