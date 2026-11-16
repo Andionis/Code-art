@@ -10,7 +10,8 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Pendiente del creador
 
-- Aprobar «completo v1 (borrador).mp4» (revisar/). Miniatura (flyer.jpg, portada 1) y descripciones ya hechas en salida/.
+- Nada: video entregado. Falta solo que diga qué guardar de lo aprendido.
+- Video completo: «Apruebo» (v1).
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
@@ -24,9 +25,9 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
   - [x] escena 3 (frases 5-6, hasta 35,1 s): «Apruebo» (v1)
   - [x] escena 4 (frases 7-9, hasta 52,9 s): «Apruebo» (v1)
   - [x] escena 5 (frases 10-12, hasta el final): «Apruebo» (v1)
-- [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
+- [x] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
-- [ ] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
+- [x] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
       propuesto
 
 ## Para seguir en un chat nuevo

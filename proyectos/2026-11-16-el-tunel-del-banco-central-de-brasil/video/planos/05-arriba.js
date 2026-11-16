@@ -35,6 +35,7 @@ export function dibuja(g, t) {
   if (cam.p[1] < PISO) {
     pinta(g, cam, bov, lb, { lejos: 30 });
     lamparas(g, cam, 1);
+    puerta(g, cam, 1, 0, 0);
     pinta(g, cam, caraTunel, lt, { lejos: 12, niebla: [8, 4, 2] });
     varillas(g, cam, 0.9);
     focos(g, cam, 1);
