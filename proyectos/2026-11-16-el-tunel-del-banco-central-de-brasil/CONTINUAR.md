@@ -17,9 +17,13 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 - [x] 1. La idea y los datos → idea.md
 - [x] 2. El guion → guion.json, **aprobado por el creador**
 - [x] 3. La voz (una sola vez, con el guion cerrado)
-- [ ] 4. El plan → plan.md, con sus escenas
+- [x] 4. El plan → plan.md, con sus escenas
 - [ ] 5. Escena por escena (cada una, su borrador aprobado):
-  - [ ] escena 1 (el hook)
+  - [ ] escena 1 (el hook, frases 1-2, hasta 10,5 s)
+  - [ ] escena 2 (frases 3-4, hasta 20,5 s)
+  - [ ] escena 3 (frases 5-6, hasta 35,1 s)
+  - [ ] escena 4 (frases 7-9, hasta 52,9 s)
+  - [ ] escena 5 (frases 10-12, hasta el final)
 - [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
 - [ ] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
