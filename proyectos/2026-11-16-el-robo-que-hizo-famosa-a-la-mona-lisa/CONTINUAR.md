@@ -12,15 +12,15 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Pendiente del creador
 
-- Nada hasta el borrador completo.
+- Aprobar «completo v1 (borrador).mp4» (en revisar/). Miniatura (flyer.jpg, opción 2) y descripciones ya hechas en salida/.
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
 - [x] 1. La idea y los datos → idea.md
 - [x] 2. El guion → guion.json, **aprobado por el creador**
 - [x] 3. La voz (una sola vez, con el guion cerrado)
-- [ ] 4. El plan → plan.md, con sus escenas
-- [ ] 5. Escena por escena (cada una, su borrador aprobado):
+- [x] 4. El plan → plan.md, con sus escenas
+- [x] 5. Escena por escena (sin borradores por escena, como pidió) (cada una, su borrador aprobado):
   - [ ] escena 1 (el hook)
 - [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
