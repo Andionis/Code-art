@@ -1,0 +1,954 @@
+{
+  "firma": "494ad7f19560",
+  "proveedor": "elevenlabs",
+  "ajustes": {
+    "id": "TX3LPaxmHKxFdv7VOQHJ",
+    "modelo": "eleven_v4",
+    "estabilidad": 0.35,
+    "similitud": 0.7,
+    "estilo": 0,
+    "velocidad": 1
+  },
+  "palabras": [
+    {
+      "texto": "¿Sabías",
+      "inicio": 0,
+      "fin": 0.48
+    },
+    {
+      "texto": "que",
+      "inicio": 0.52,
+      "fin": 0.56
+    },
+    {
+      "texto": "unos",
+      "inicio": 0.64,
+      "fin": 0.8
+    },
+    {
+      "texto": "ladrones",
+      "inicio": 0.88,
+      "fin": 1.36
+    },
+    {
+      "texto": "cavaron",
+      "inicio": 1.413,
+      "fin": 1.76
+    },
+    {
+      "texto": "un",
+      "inicio": 1.88,
+      "fin": 2
+    },
+    {
+      "texto": "túnel",
+      "inicio": 2.053,
+      "fin": 2.32
+    },
+    {
+      "texto": "hasta",
+      "inicio": 2.4,
+      "fin": 2.56
+    },
+    {
+      "texto": "el",
+      "inicio": 2.64,
+      "fin": 2.72
+    },
+    {
+      "texto": "Banco",
+      "inicio": 2.8,
+      "fin": 2.96
+    },
+    {
+      "texto": "Central",
+      "inicio": 3.04,
+      "fin": 3.36
+    },
+    {
+      "texto": "de",
+      "inicio": 3.44,
+      "fin": 3.48
+    },
+    {
+      "texto": "Brasil",
+      "inicio": 3.52,
+      "fin": 3.92
+    },
+    {
+      "texto": "y",
+      "inicio": 4,
+      "fin": 4.08
+    },
+    {
+      "texto": "se",
+      "inicio": 4.16,
+      "fin": 4.24
+    },
+    {
+      "texto": "llevaron",
+      "inicio": 4.32,
+      "fin": 4.72
+    },
+    {
+      "texto": "ciento",
+      "inicio": 4.8,
+      "fin": 5.12
+    },
+    {
+      "texto": "sesenta",
+      "inicio": 5.2,
+      "fin": 5.6
+    },
+    {
+      "texto": "y",
+      "inicio": 5.68,
+      "fin": 5.76
+    },
+    {
+      "texto": "cuatro",
+      "inicio": 5.8,
+      "fin": 6
+    },
+    {
+      "texto": "millones",
+      "inicio": 6.16,
+      "fin": 6.64
+    },
+    {
+      "texto": "de",
+      "inicio": 6.68,
+      "fin": 6.72
+    },
+    {
+      "texto": "reales?",
+      "inicio": 6.8,
+      "fin": 7.36
+    },
+    {
+      "texto": "Y",
+      "inicio": 7.84,
+      "fin": 7.92
+    },
+    {
+      "texto": "nadie",
+      "inicio": 8.08,
+      "fin": 8.4
+    },
+    {
+      "texto": "se",
+      "inicio": 8.48,
+      "fin": 8.56
+    },
+    {
+      "texto": "dio",
+      "inicio": 8.68,
+      "fin": 8.8
+    },
+    {
+      "texto": "cuenta",
+      "inicio": 8.88,
+      "fin": 9.04
+    },
+    {
+      "texto": "hasta",
+      "inicio": 9.08,
+      "fin": 9.28
+    },
+    {
+      "texto": "el",
+      "inicio": 9.32,
+      "fin": 9.36
+    },
+    {
+      "texto": "lunes.",
+      "inicio": 9.44,
+      "fin": 10.24
+    },
+    {
+      "texto": "Primero",
+      "inicio": 10.56,
+      "fin": 10.88
+    },
+    {
+      "texto": "rentaron",
+      "inicio": 11,
+      "fin": 11.36
+    },
+    {
+      "texto": "una",
+      "inicio": 11.44,
+      "fin": 11.52
+    },
+    {
+      "texto": "casa",
+      "inicio": 11.6,
+      "fin": 11.84
+    },
+    {
+      "texto": "cerca",
+      "inicio": 11.92,
+      "fin": 12.16
+    },
+    {
+      "texto": "del",
+      "inicio": 12.24,
+      "fin": 12.32
+    },
+    {
+      "texto": "banco",
+      "inicio": 12.4,
+      "fin": 12.72
+    },
+    {
+      "texto": "y",
+      "inicio": 12.8,
+      "fin": 12.88
+    },
+    {
+      "texto": "la",
+      "inicio": 12.92,
+      "fin": 12.96
+    },
+    {
+      "texto": "disfrazaron",
+      "inicio": 13.04,
+      "fin": 13.6
+    },
+    {
+      "texto": "de",
+      "inicio": 13.64,
+      "fin": 13.68
+    },
+    {
+      "texto": "tienda",
+      "inicio": 13.76,
+      "fin": 14.08
+    },
+    {
+      "texto": "de",
+      "inicio": 14.12,
+      "fin": 14.16
+    },
+    {
+      "texto": "pasto",
+      "inicio": 14.24,
+      "fin": 14.48
+    },
+    {
+      "texto": "sintético.",
+      "inicio": 14.52,
+      "fin": 15.52
+    },
+    {
+      "texto": "Así,",
+      "inicio": 15.6,
+      "fin": 16.16
+    },
+    {
+      "texto": "los",
+      "inicio": 16.24,
+      "fin": 16.32
+    },
+    {
+      "texto": "sacos",
+      "inicio": 16.36,
+      "fin": 16.64
+    },
+    {
+      "texto": "de",
+      "inicio": 16.68,
+      "fin": 16.72
+    },
+    {
+      "texto": "tierra",
+      "inicio": 16.8,
+      "fin": 17.04
+    },
+    {
+      "texto": "que",
+      "inicio": 17.12,
+      "fin": 17.2
+    },
+    {
+      "texto": "salían",
+      "inicio": 17.28,
+      "fin": 17.6
+    },
+    {
+      "texto": "todos",
+      "inicio": 17.76,
+      "fin": 17.92
+    },
+    {
+      "texto": "los",
+      "inicio": 18,
+      "fin": 18.08
+    },
+    {
+      "texto": "días",
+      "inicio": 18.16,
+      "fin": 18.4
+    },
+    {
+      "texto": "no",
+      "inicio": 18.56,
+      "fin": 18.64
+    },
+    {
+      "texto": "le",
+      "inicio": 18.72,
+      "fin": 18.8
+    },
+    {
+      "texto": "parecían",
+      "inicio": 18.88,
+      "fin": 19.2
+    },
+    {
+      "texto": "raros",
+      "inicio": 19.28,
+      "fin": 19.52
+    },
+    {
+      "texto": "a",
+      "inicio": 19.56,
+      "fin": 19.6
+    },
+    {
+      "texto": "nadie.",
+      "inicio": 19.68,
+      "fin": 20.24
+    },
+    {
+      "texto": "Durante",
+      "inicio": 20.56,
+      "fin": 20.96
+    },
+    {
+      "texto": "tres",
+      "inicio": 21.04,
+      "fin": 21.28
+    },
+    {
+      "texto": "meses",
+      "inicio": 21.36,
+      "fin": 21.68
+    },
+    {
+      "texto": "cavaron,",
+      "inicio": 21.72,
+      "fin": 22.4
+    },
+    {
+      "texto": "a",
+      "inicio": 22.44,
+      "fin": 22.48
+    },
+    {
+      "texto": "cuatro",
+      "inicio": 22.64,
+      "fin": 22.96
+    },
+    {
+      "texto": "metros",
+      "inicio": 23.12,
+      "fin": 23.36
+    },
+    {
+      "texto": "bajo",
+      "inicio": 23.44,
+      "fin": 23.6
+    },
+    {
+      "texto": "la",
+      "inicio": 23.64,
+      "fin": 23.68
+    },
+    {
+      "texto": "calle,",
+      "inicio": 23.76,
+      "fin": 24.4
+    },
+    {
+      "texto": "un",
+      "inicio": 24.48,
+      "fin": 24.56
+    },
+    {
+      "texto": "túnel",
+      "inicio": 24.64,
+      "fin": 24.88
+    },
+    {
+      "texto": "de",
+      "inicio": 24.96,
+      "fin": 25.04
+    },
+    {
+      "texto": "casi",
+      "inicio": 25.12,
+      "fin": 25.28
+    },
+    {
+      "texto": "ochenta",
+      "inicio": 25.36,
+      "fin": 25.84
+    },
+    {
+      "texto": "metros:",
+      "inicio": 26,
+      "fin": 26.8
+    },
+    {
+      "texto": "casi",
+      "inicio": 26.88,
+      "fin": 27.04
+    },
+    {
+      "texto": "lo",
+      "inicio": 27.08,
+      "fin": 27.12
+    },
+    {
+      "texto": "largo",
+      "inicio": 27.2,
+      "fin": 27.44
+    },
+    {
+      "texto": "de",
+      "inicio": 27.48,
+      "fin": 27.52
+    },
+    {
+      "texto": "una",
+      "inicio": 27.6,
+      "fin": 27.68
+    },
+    {
+      "texto": "cancha",
+      "inicio": 27.72,
+      "fin": 27.96
+    },
+    {
+      "texto": "de",
+      "inicio": 28,
+      "fin": 28.08
+    },
+    {
+      "texto": "fútbol.",
+      "inicio": 28.16,
+      "fin": 28.56
+    },
+    {
+      "texto": "Era",
+      "inicio": 29.12,
+      "fin": 29.28
+    },
+    {
+      "texto": "tan",
+      "inicio": 29.44,
+      "fin": 29.6
+    },
+    {
+      "texto": "angosto",
+      "inicio": 29.68,
+      "fin": 30.16
+    },
+    {
+      "texto": "que",
+      "inicio": 30.2,
+      "fin": 30.24
+    },
+    {
+      "texto": "se",
+      "inicio": 30.32,
+      "fin": 30.4
+    },
+    {
+      "texto": "pasaba",
+      "inicio": 30.48,
+      "fin": 30.8
+    },
+    {
+      "texto": "a",
+      "inicio": 30.84,
+      "fin": 30.88
+    },
+    {
+      "texto": "gatas,",
+      "inicio": 30.96,
+      "fin": 31.6
+    },
+    {
+      "texto": "pero",
+      "inicio": 31.68,
+      "fin": 31.8
+    },
+    {
+      "texto": "tenía",
+      "inicio": 31.84,
+      "fin": 32.08
+    },
+    {
+      "texto": "luz",
+      "inicio": 32.16,
+      "fin": 32.32
+    },
+    {
+      "texto": "eléctrica",
+      "inicio": 32.4,
+      "fin": 32.88
+    },
+    {
+      "texto": "y",
+      "inicio": 32.96,
+      "fin": 33.04
+    },
+    {
+      "texto": "hasta",
+      "inicio": 33.08,
+      "fin": 33.36
+    },
+    {
+      "texto": "aire",
+      "inicio": 33.44,
+      "fin": 33.68
+    },
+    {
+      "texto": "acondicionado.",
+      "inicio": 33.72,
+      "fin": 35.04
+    },
+    {
+      "texto": "Al",
+      "inicio": 35.12,
+      "fin": 35.2
+    },
+    {
+      "texto": "final",
+      "inicio": 35.44,
+      "fin": 35.68
+    },
+    {
+      "texto": "llegaron",
+      "inicio": 35.72,
+      "fin": 36.24
+    },
+    {
+      "texto": "justo",
+      "inicio": 36.4,
+      "fin": 36.6
+    },
+    {
+      "texto": "debajo",
+      "inicio": 36.64,
+      "fin": 36.96
+    },
+    {
+      "texto": "de",
+      "inicio": 37.04,
+      "fin": 37.08
+    },
+    {
+      "texto": "la",
+      "inicio": 37.12,
+      "fin": 37.2
+    },
+    {
+      "texto": "bóveda",
+      "inicio": 37.24,
+      "fin": 37.68
+    },
+    {
+      "texto": "y",
+      "inicio": 37.72,
+      "fin": 37.76
+    },
+    {
+      "texto": "rompieron",
+      "inicio": 37.84,
+      "fin": 38.24
+    },
+    {
+      "texto": "más",
+      "inicio": 38.28,
+      "fin": 38.4
+    },
+    {
+      "texto": "de",
+      "inicio": 38.48,
+      "fin": 38.72
+    },
+    {
+      "texto": "un",
+      "inicio": 38.8,
+      "fin": 38.88
+    },
+    {
+      "texto": "metro",
+      "inicio": 39.04,
+      "fin": 39.28
+    },
+    {
+      "texto": "de",
+      "inicio": 39.32,
+      "fin": 39.36
+    },
+    {
+      "texto": "concreto",
+      "inicio": 39.44,
+      "fin": 39.84
+    },
+    {
+      "texto": "con",
+      "inicio": 39.92,
+      "fin": 40
+    },
+    {
+      "texto": "acero.",
+      "inicio": 40.08,
+      "fin": 40.96
+    },
+    {
+      "texto": "Arriba",
+      "inicio": 41.04,
+      "fin": 41.52
+    },
+    {
+      "texto": "los",
+      "inicio": 41.6,
+      "fin": 41.68
+    },
+    {
+      "texto": "esperaban",
+      "inicio": 41.8,
+      "fin": 42.16
+    },
+    {
+      "texto": "billetes",
+      "inicio": 42.24,
+      "fin": 42.56
+    },
+    {
+      "texto": "de",
+      "inicio": 42.64,
+      "fin": 42.72
+    },
+    {
+      "texto": "cincuenta:",
+      "inicio": 42.76,
+      "fin": 43.76
+    },
+    {
+      "texto": "tres",
+      "inicio": 43.88,
+      "fin": 44
+    },
+    {
+      "texto": "toneladas",
+      "inicio": 44.16,
+      "fin": 44.64
+    },
+    {
+      "texto": "y",
+      "inicio": 44.72,
+      "fin": 44.76
+    },
+    {
+      "texto": "media,",
+      "inicio": 44.8,
+      "fin": 45.44
+    },
+    {
+      "texto": "más",
+      "inicio": 45.52,
+      "fin": 45.68
+    },
+    {
+      "texto": "de",
+      "inicio": 45.72,
+      "fin": 45.76
+    },
+    {
+      "texto": "lo",
+      "inicio": 45.84,
+      "fin": 45.88
+    },
+    {
+      "texto": "que",
+      "inicio": 45.92,
+      "fin": 46
+    },
+    {
+      "texto": "pesan",
+      "inicio": 46.08,
+      "fin": 46.4
+    },
+    {
+      "texto": "dos",
+      "inicio": 46.48,
+      "fin": 46.64
+    },
+    {
+      "texto": "autos.",
+      "inicio": 46.72,
+      "fin": 47.68
+    },
+    {
+      "texto": "Y",
+      "inicio": 47.72,
+      "fin": 47.76
+    },
+    {
+      "texto": "eran",
+      "inicio": 47.84,
+      "fin": 48
+    },
+    {
+      "texto": "billetes",
+      "inicio": 48.08,
+      "fin": 48.4
+    },
+    {
+      "texto": "usados,",
+      "inicio": 48.48,
+      "fin": 49.12
+    },
+    {
+      "texto": "sin",
+      "inicio": 49.24,
+      "fin": 49.36
+    },
+    {
+      "texto": "números",
+      "inicio": 49.44,
+      "fin": 49.76
+    },
+    {
+      "texto": "en",
+      "inicio": 49.8,
+      "fin": 49.84
+    },
+    {
+      "texto": "orden:",
+      "inicio": 49.92,
+      "fin": 50.56
+    },
+    {
+      "texto": "no",
+      "inicio": 50.6,
+      "fin": 50.64
+    },
+    {
+      "texto": "había",
+      "inicio": 50.72,
+      "fin": 51.12
+    },
+    {
+      "texto": "forma",
+      "inicio": 51.28,
+      "fin": 51.44
+    },
+    {
+      "texto": "de",
+      "inicio": 51.48,
+      "fin": 51.52
+    },
+    {
+      "texto": "rastrearlos.",
+      "inicio": 51.6,
+      "fin": 52.88
+    },
+    {
+      "texto": "El",
+      "inicio": 52.96,
+      "fin": 53.04
+    },
+    {
+      "texto": "lunes,",
+      "inicio": 53.173,
+      "fin": 53.6
+    },
+    {
+      "texto": "los",
+      "inicio": 53.68,
+      "fin": 53.76
+    },
+    {
+      "texto": "empleados",
+      "inicio": 53.88,
+      "fin": 54.24
+    },
+    {
+      "texto": "abrieron",
+      "inicio": 54.32,
+      "fin": 54.64
+    },
+    {
+      "texto": "la",
+      "inicio": 54.68,
+      "fin": 54.72
+    },
+    {
+      "texto": "bóveda",
+      "inicio": 54.8,
+      "fin": 55.2
+    },
+    {
+      "texto": "y",
+      "inicio": 55.24,
+      "fin": 55.28
+    },
+    {
+      "texto": "encontraron",
+      "inicio": 55.36,
+      "fin": 55.92
+    },
+    {
+      "texto": "un",
+      "inicio": 56,
+      "fin": 56.08
+    },
+    {
+      "texto": "hoyo",
+      "inicio": 56.12,
+      "fin": 56.32
+    },
+    {
+      "texto": "en",
+      "inicio": 56.36,
+      "fin": 56.4
+    },
+    {
+      "texto": "el",
+      "inicio": 56.48,
+      "fin": 56.56
+    },
+    {
+      "texto": "piso.",
+      "inicio": 56.6,
+      "fin": 57.36
+    },
+    {
+      "texto": "No",
+      "inicio": 57.44,
+      "fin": 57.52
+    },
+    {
+      "texto": "entraron",
+      "inicio": 57.6,
+      "fin": 57.92
+    },
+    {
+      "texto": "por",
+      "inicio": 57.96,
+      "fin": 58
+    },
+    {
+      "texto": "la",
+      "inicio": 58.08,
+      "fin": 58.16
+    },
+    {
+      "texto": "puerta:",
+      "inicio": 58.2,
+      "fin": 58.8
+    },
+    {
+      "texto": "entraron",
+      "inicio": 58.96,
+      "fin": 59.36
+    },
+    {
+      "texto": "por",
+      "inicio": 59.44,
+      "fin": 59.52
+    },
+    {
+      "texto": "debajo.",
+      "inicio": 59.6,
+      "fin": 60.56
+    },
+    {
+      "texto": "Y",
+      "inicio": 60.6,
+      "fin": 60.64
+    },
+    {
+      "texto": "la",
+      "inicio": 60.72,
+      "fin": 60.76
+    },
+    {
+      "texto": "mayor",
+      "inicio": 60.8,
+      "fin": 61.04
+    },
+    {
+      "texto": "parte",
+      "inicio": 61.12,
+      "fin": 61.4
+    },
+    {
+      "texto": "del",
+      "inicio": 61.44,
+      "fin": 61.52
+    },
+    {
+      "texto": "dinero",
+      "inicio": 61.6,
+      "fin": 62.08
+    },
+    {
+      "texto": "nunca",
+      "inicio": 62.24,
+      "fin": 62.56
+    },
+    {
+      "texto": "apareció.",
+      "inicio": 62.64,
+      "fin": 63.76
+    },
+    {
+      "texto": "Envíaselo",
+      "inicio": 63.84,
+      "fin": 64.24
+    },
+    {
+      "texto": "a",
+      "inicio": 64.267,
+      "fin": 64.293
+    },
+    {
+      "texto": "un",
+      "inicio": 64.32,
+      "fin": 64.4
+    },
+    {
+      "texto": "amigo",
+      "inicio": 64.48,
+      "fin": 64.64
+    },
+    {
+      "texto": "que",
+      "inicio": 64.72,
+      "fin": 64.8
+    },
+    {
+      "texto": "le",
+      "inicio": 64.84,
+      "fin": 64.88
+    },
+    {
+      "texto": "pueda",
+      "inicio": 64.96,
+      "fin": 65.08
+    },
+    {
+      "texto": "interesar.",
+      "inicio": 65.12,
+      "fin": 65.84
+    }
+  ]
+}

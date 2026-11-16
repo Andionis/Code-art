@@ -5,7 +5,8 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Lo decidido (con las palabras del creador)
 
--
+- Guion: «Lo dejo así» (66,6 s, sin recortar).
+- Voz: Liam (TX3LPaxmHKxFdv7VOQHJ), la misma del video de los mocos.
 
 ## Pendiente del creador
 
@@ -14,8 +15,8 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
 - [x] 1. La idea y los datos → idea.md
-- [ ] 2. El guion → guion.json, **aprobado por el creador**
-- [ ] 3. La voz (una sola vez, con el guion cerrado)
+- [x] 2. El guion → guion.json, **aprobado por el creador**
+- [x] 3. La voz (una sola vez, con el guion cerrado)
 - [ ] 4. El plan → plan.md, con sus escenas
 - [ ] 5. Escena por escena (cada una, su borrador aprobado):
   - [ ] escena 1 (el hook)
