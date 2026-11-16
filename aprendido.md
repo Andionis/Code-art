@@ -58,6 +58,7 @@ entregar un video, propón en 2-3 líneas qué añadir aquí o a `piezas/`; entr
   10 %; la madera, con vetas dibujadas.
 - Saltos que avisa el render cada 0,067 s dentro de un clip a 15 fps, o en los cortes propios de un video que se
   enseña en el celular, son del clip: se miran una vez y se aceptan.
+- **Que el final enlace con el principio:** el último plano vuelve al primer fotograma del hook (con `fundido`, llamando al `dibuja` del hook). Así, al repetirse, no se nota el salto y el video se ve dos veces.
 - `revisar.mjs` avisa de cortes parecidos entre fondos oscuros distintos: si son sitios distintos y se ven distintos,
   se acepta.
 

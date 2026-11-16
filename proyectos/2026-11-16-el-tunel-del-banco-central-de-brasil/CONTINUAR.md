@@ -10,7 +10,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Pendiente del creador
 
-- Nada: video entregado. Falta solo que diga qué guardar de lo aprendido.
+- Nada: video entregado. Lo aprendido, guardado («Avanza»): piezas tunel-boveda, corte-suelo, planos/balanza y el final que enlaza con el hook.
 - Video completo: «Apruebo» (v1).
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)

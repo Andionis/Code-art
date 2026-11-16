@@ -1,7 +1,7 @@
 # Piezas
 
 Lo que ya se hizo bien en un video y sirve para otros: se importa, no se rehace. Cada pieza dice arriba cómo se usa.
-`muestras.jpg`: cómo se ven. Se importan con `#piezas/…` desde cualquier archivo de un proyecto.
+`muestras.jpg`: cómo se ven (abajo, el túnel, la bóveda, el corte del suelo y la balanza). Se importan con `#piezas/…` desde cualquier archivo de un proyecto.
 
 | Pieza | Qué es | Para qué |
 |---|---|---|
@@ -14,6 +14,9 @@ Lo que ya se hizo bien en un video y sirve para otros: se importa, no se rehace.
 | `planos/susurro.js` | Plano entero: primer plano de una oreja de lado; unos labios con la mano ahuecada le susurran (para «la verdad…», un secreto). Cambia `SUSURRO` y `OYE` por tus palabras. | un secreto, una confesión |
 | `planos/comprar.js` | Plano entero: el botón COMPRAR, el pulgar lo aprieta, confeti. Cambia `APRIETA`, `BRILLA` y `TEXTO`. | el CTA de un video de venta |
 | `planos/cuentas.js` | Plano entero: tres capturas de cuentas en abanico; luego la de más vistas al frente con círculos rojos en sus vistas y la cifra que corre. Cambia las palabras de `T`, `CIFRA` y `ETIQUETAS`. | la prueba social de un video de venta |
+| `tunel-boveda.js` | En 3D de verdad, con un motor de caras (`pinta`, `cubo`): el túnel de tierra con marcos de madera y focos, el pozo de concreto con varillas, y la bóveda de acero con fajos de billetes, la puerta redonda que se abre y el hoyo en el piso. La cámara puede volar dentro, subir por el pozo y asomar. | robos, minas, túneles, bóvedas, dinero |
+| `corte-suelo.js` | El suelo cortado de lado (como una granja de hormigas): la calle, la tierra en capas, una casa, un edificio con su bóveda bajo tierra y un túnel que avanza entre los dos (focos, aire, una persona a gatas, el concreto que se rompe), con cotas. Letreros en `TEXTOS`. | lo que pasa bajo tierra, distancias, profundidades |
+| `planos/balanza.js` | Plano entero: una balanza enorme; los fajos caen a un plato (con su cifra) y dos autos al otro; gana el dinero. Cambia `FRASE`, `EMPIEZA`, `CAE`, `CONTRA1`, `CONTRA2`, `CIFRA` y `UNIDAD`. | comparar pesos |
 
 Los planos de `planos/` son para copiarlos al proyecto (`video/planos/`) y cambiar sus palabras: ya importan de
 `#piezas/…`. Las piezas `.js` de arriba no se copian: se importan.
