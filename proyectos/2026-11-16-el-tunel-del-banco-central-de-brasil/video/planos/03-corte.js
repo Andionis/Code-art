@@ -25,8 +25,8 @@ const P0 = Tdur + 0.1, P1 = Tcua - 0.2;            // el pozo baja
 const A0 = Ttun - 1.2, A1 = Tmet;                  // el túnel avanza
 const punta = (t) => mez(T.x0 + 0.9, T.x1, Math.pow(su(tr(t, A0, A1)), 1.15));
 
-const gx = (t) => mez(34.6, 36.4, tr(t, Tang - 0.8, f6.fin + 0.4));
-function camara(t) {
+export const gx = (t) => mez(34.6, 36.4, tr(t, Tang - 0.8, f6.fin + 0.4));
+export function camara(t) {
   const cerca = { cx: 6.4, cy: -1.9, s: 135 }, lejos = { cx: 52, cy: -6.5, s: 10 }, dentro = { cx: 34.3, cy: T.y0 + 0.5, s: 420 };
   const z = su(tr(t, A0 + 0.3, A1 + 0.1));
   let s = Math.exp(mez(Math.log(cerca.s), Math.log(lejos.s), z));

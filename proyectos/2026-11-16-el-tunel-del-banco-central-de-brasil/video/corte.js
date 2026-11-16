@@ -140,12 +140,12 @@ function boveda(g, c, st) {
   // las grietas
   const gri = st.grietas || 0;
   if (gri > 0) {
-    g.save(); g.strokeStyle = `rgba(40,30,26,${0.9 * gri})`; g.lineWidth = Math.max(1.5, 0.05 * c.s); g.lineCap = "round";
+    g.save(); g.strokeStyle = `rgba(50,44,40,${0.75 * gri})`; g.lineWidth = Math.max(1.5, 0.022 * c.s); g.lineCap = "round";
     const az = azar(8);
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 6; i++) {
       let x = mez(HOYO.x0, HOYO.x1, az()), y = LOSA.y0;
       g.beginPath(); g.moveTo(SX(c, x), SY(c, y));
-      for (let j = 0; j < 6; j++) { x += (az() - 0.5) * 0.7; y += (0.18 + az() * 0.12) * gri; g.lineTo(SX(c, x), SY(c, Math.min(LOSA.y1 + 0.2, y))); }
+      for (let j = 0; j < 6; j++) { x += (az() - 0.5) * 0.4; y += (0.18 + az() * 0.12) * gri; g.lineTo(SX(c, x), SY(c, Math.min(LOSA.y1 + 0.2, y))); }
       g.stroke();
     }
     g.restore();
