@@ -22,7 +22,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
   - [x] escena 1 (el hook, frases 1-2, hasta 10,5 s): «Apruebo» (v1)
   - [x] escena 2 (frases 3-4, hasta 20,5 s): «Apruebo» (v1)
   - [x] escena 3 (frases 5-6, hasta 35,1 s): «Apruebo» (v1)
-  - [ ] escena 4 (frases 7-9, hasta 52,9 s)
+  - [x] escena 4 (frases 7-9, hasta 52,9 s): «Apruebo» (v1)
   - [ ] escena 5 (frases 10-12, hasta el final)
 - [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
