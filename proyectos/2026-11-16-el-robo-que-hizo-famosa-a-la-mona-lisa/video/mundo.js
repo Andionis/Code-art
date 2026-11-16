@@ -1,6 +1,13 @@
 // Lo que comparten los planos: la Mona Lisa (siempre la misma), su marco, el Salon Carré del Louvre con sus cuatro
 // ganchos, la gente (siluetas de 1911), la multitud de espaldas, los periódicos y la oscuridad con linterna.
 import * as k from "#kit";
+import { loadImage } from "@napi-rs/canvas";
+import { fileURLToPath } from "node:url";
+
+// La Mona Lisa de verdad, con su marco: la foto que dio el creador (1280 × 1691). El cuadro, sin marco, va de
+// (240, 230) a (1072, 1466) dentro de la foto.
+const FOTO = await loadImage(fileURLToPath(new URL("./img/mona-lisa.jpg", import.meta.url)));
+const CU = { x: 240, y: 230, w: 832, h: 1236 };
 
 const { azar, mez } = k;
 const TAU = Math.PI * 2;
@@ -11,121 +18,8 @@ export const ML_W = 688, ML_H = 1000;
 let _ml = null;
 function pintarMona() {
   const c = k.lienzo(ML_W, ML_H), g = c.getContext("2d");
-  const W = ML_W, H = ML_H;
-  // el cielo y el paisaje del fondo
-  let gr = g.createLinearGradient(0, 0, 0, H * 0.6);
-  gr.addColorStop(0, "#a7b89a"); gr.addColorStop(0.5, "#b9bd8e"); gr.addColorStop(1, "#8f8a5a");
-  g.fillStyle = gr; g.fillRect(0, 0, W, H);
-  // montañas lejanas, azul verdoso
-  const monte = (y0, amp, col, sem) => {
-    const a = azar(sem); g.beginPath(); g.moveTo(0, H);
-    for (let x = 0; x <= W; x += 20) g.lineTo(x, y0 - amp * (0.5 + 0.5 * Math.sin(x * 0.011 + sem) * Math.cos(x * 0.027 + sem * 2)) - a() * 8);
-    g.lineTo(W, H); g.closePath(); g.fillStyle = col; g.fill();
-  };
-  monte(H * 0.27, 70, "#7f9a88", 3);
-  monte(H * 0.36, 60, "#6c836b", 7);
-  monte(H * 0.47, 50, "#6f6740", 11);
-  // el lago y el camino que serpentea (izquierda) y el puente (derecha)
-  g.fillStyle = "rgba(200,210,180,0.7)"; g.beginPath(); g.ellipse(W * 0.16, H * 0.33, W * 0.14, H * 0.018, 0, 0, TAU); g.fill();
-  g.beginPath(); g.ellipse(W * 0.86, H * 0.3, W * 0.12, H * 0.014, 0, 0, TAU); g.fill();
-  g.strokeStyle = "rgba(205,180,120,0.8)"; g.lineWidth = 9; g.beginPath();
-  g.moveTo(W * 0.04, H * 0.52); g.bezierCurveTo(W * 0.2, H * 0.47, W * 0.05, H * 0.43, W * 0.2, H * 0.41); g.stroke();
-  g.lineWidth = 6; g.beginPath(); g.moveTo(W * 0.78, H * 0.5); g.bezierCurveTo(W * 0.9, H * 0.46, W * 0.82, H * 0.43, W * 0.95, H * 0.42); g.stroke();
-  // el parapeto detrás de ella
-  g.fillStyle = "#4e4126"; g.fillRect(0, H * 0.5, W, H * 0.035);
-  // el cuerpo: el vestido oscuro, como una pirámide
-  gr = g.createLinearGradient(0, H * 0.45, 0, H);
-  gr.addColorStop(0, "#2c2414"); gr.addColorStop(1, "#16120a");
-  g.fillStyle = gr; g.beginPath();
-  g.moveTo(W * 0.31, H * 0.47); g.quadraticCurveTo(W * 0.12, H * 0.55, W * 0.02, H * 0.8); g.lineTo(-10, H); g.lineTo(W + 10, H);
-  g.lineTo(W * 0.99, H * 0.74); g.quadraticCurveTo(W * 0.88, H * 0.53, W * 0.69, H * 0.47); g.closePath(); g.fill();
-  // el pecho: piel, con el escote curvo
-  gr = g.createRadialGradient(W * 0.53, H * 0.5, 10, W * 0.5, H * 0.52, W * 0.25);
-  gr.addColorStop(0, "#d9ad70"); gr.addColorStop(1, "#8f6434");
-  g.fillStyle = gr; g.beginPath();
-  g.moveTo(W * 0.37, H * 0.44); g.lineTo(W * 0.63, H * 0.44);
-  g.quadraticCurveTo(W * 0.68, H * 0.5, W * 0.7, H * 0.53); g.quadraticCurveTo(W * 0.5, H * 0.6, W * 0.3, H * 0.53);
-  g.quadraticCurveTo(W * 0.33, H * 0.49, W * 0.37, H * 0.44); g.fill();
-  // el borde bordado del escote
-  g.strokeStyle = "#5a4520"; g.lineWidth = 6; g.beginPath(); g.moveTo(W * 0.3, H * 0.53); g.quadraticCurveTo(W * 0.5, H * 0.6, W * 0.7, H * 0.53); g.stroke();
-  // las mangas, ocre con pliegues, que bajan y se cruzan
-  gr = g.createLinearGradient(0, H * 0.6, 0, H);
-  gr.addColorStop(0, "#7a5a26"); gr.addColorStop(1, "#4a3615");
-  g.fillStyle = gr;
-  g.beginPath(); g.moveTo(W * 0.1, H * 0.66); g.quadraticCurveTo(W * 0.25, H * 0.82, W * 0.55, H * 0.83);
-  g.lineTo(W * 0.58, H * 0.92); g.quadraticCurveTo(W * 0.2, H * 0.95, W * 0.02, H * 0.86); g.closePath(); g.fill();
-  g.beginPath(); g.moveTo(W * 0.92, H * 0.62); g.quadraticCurveTo(W * 0.97, H * 0.8, W * 0.75, H * 0.86);
-  g.lineTo(W * 0.62, H * 0.84); g.quadraticCurveTo(W * 0.8, H * 0.74, W * 0.82, H * 0.6); g.closePath(); g.fill();
-  g.strokeStyle = "rgba(240,200,120,0.25)"; g.lineWidth = 3;
-  for (let i = 0; i < 9; i++) { g.beginPath(); g.moveTo(W * (0.08 + i * 0.05), H * (0.7 + i * 0.012)); g.quadraticCurveTo(W * (0.12 + i * 0.05), H * 0.85, W * (0.1 + i * 0.05), H * 0.91); g.stroke(); }
-  // las manos: la izquierda debajo, la derecha encima con los dedos que caen sobre la muñeca
-  const piel = (x0, y0, x1, y1) => { const m = g.createLinearGradient(x0, y0, x1, y1); m.addColorStop(0, "#f2cf96"); m.addColorStop(0.6, "#d9a868"); m.addColorStop(1, "#9c6c38"); return m; };
-  // la izquierda (la de abajo): el dorso que asoma
-  g.fillStyle = piel(W * 0.3, H * 0.84, W * 0.5, H * 0.95);
-  g.beginPath(); g.moveTo(W * 0.27, H * 0.86); g.quadraticCurveTo(W * 0.38, H * 0.83, W * 0.5, H * 0.87);
-  g.quadraticCurveTo(W * 0.52, H * 0.93, W * 0.45, H * 0.95); g.quadraticCurveTo(W * 0.35, H * 0.95, W * 0.28, H * 0.92); g.closePath(); g.fill();
-  // la derecha: el dorso y los dedos
-  g.fillStyle = piel(W * 0.5, H * 0.8, W * 0.7, H * 0.92);
-  g.beginPath(); g.moveTo(W * 0.72, H * 0.8); g.quadraticCurveTo(W * 0.6, H * 0.79, W * 0.5, H * 0.83);
-  g.quadraticCurveTo(W * 0.44, H * 0.86, W * 0.46, H * 0.89); g.quadraticCurveTo(W * 0.58, H * 0.9, W * 0.7, H * 0.87); g.closePath(); g.fill();
-  for (let i = 0; i < 4; i++) {
-    const fx = W * (0.44 + i * 0.035), fy = H * (0.865 + i * 0.004);
-    g.fillStyle = piel(fx, fy - 10, fx, fy + 50);
-    g.beginPath(); g.ellipse(fx, fy + 18, W * 0.02, H * 0.034, 0.25, 0, TAU); g.fill();
-    g.strokeStyle = "rgba(120,75,35,0.45)"; g.lineWidth = 2; g.stroke();
-  }
-  // el cuello, en sombra
-  gr = g.createLinearGradient(W * 0.44, 0, W * 0.57, 0);
-  gr.addColorStop(0, "#7a5228"); gr.addColorStop(0.55, "#c8975a"); gr.addColorStop(1, "#8a5e30");
-  g.fillStyle = gr; g.beginPath(); g.moveTo(W * 0.45, H * 0.33); g.lineTo(W * 0.56, H * 0.33); g.lineTo(W * 0.58, H * 0.45); g.lineTo(W * 0.43, H * 0.45); g.closePath(); g.fill();
-  g.save(); g.translate(W * 0.5, H * 0.27); g.scale(1.08, 1.08); g.translate(-W * 0.5, -H * 0.25);
-  // el pelo oscuro, que cae en ondas a los dos lados hasta los hombros
-  g.fillStyle = "#22160b"; g.beginPath();
-  g.moveTo(W * 0.5, H * 0.11); g.bezierCurveTo(W * 0.3, H * 0.11, W * 0.33, H * 0.3, W * 0.31, H * 0.45);
-  g.bezierCurveTo(W * 0.34, H * 0.46, W * 0.37, H * 0.45, W * 0.4, H * 0.43);
-  g.bezierCurveTo(W * 0.38, H * 0.33, W * 0.39, H * 0.22, W * 0.5, H * 0.19);
-  g.bezierCurveTo(W * 0.61, H * 0.22, W * 0.62, H * 0.33, W * 0.61, H * 0.45);
-  g.bezierCurveTo(W * 0.63, H * 0.45, W * 0.66, H * 0.46, W * 0.69, H * 0.45);
-  g.bezierCurveTo(W * 0.67, H * 0.3, W * 0.7, H * 0.11, W * 0.5, H * 0.11); g.fill();
-  g.strokeStyle = "rgba(90,60,30,0.5)"; g.lineWidth = 2.5;
-  for (let i = 0; i < 6; i++) for (const L of [-1, 1]) {
-    g.beginPath(); const x0 = W * (0.5 + L * (0.13 + i * 0.012));
-    g.moveTo(x0, H * 0.25); g.bezierCurveTo(x0 + L * 8, H * 0.32, x0 - L * 8, H * 0.38, x0 + L * 10, H * 0.46); g.stroke();
-  }
-  // la cara: un óvalo ancho, con la luz desde la izquierda arriba
-  gr = g.createRadialGradient(W * 0.46, H * 0.22, 10, W * 0.5, H * 0.26, W * 0.2);
-  gr.addColorStop(0, "#f4d397"); gr.addColorStop(0.65, "#dcab68"); gr.addColorStop(1, "#9a6c36");
-  g.fillStyle = gr; g.beginPath(); g.ellipse(W * 0.5, H * 0.255, W * 0.128, H * 0.112, 0, 0, TAU); g.fill();
-  // la sombra del lado derecho de la cara y la barbilla
-  g.fillStyle = "rgba(90,55,20,0.32)"; g.beginPath(); g.ellipse(W * 0.6, H * 0.27, W * 0.045, H * 0.085, 0, 0, TAU); g.fill();
-  g.fillStyle = "rgba(90,55,20,0.25)"; g.beginPath(); g.ellipse(W * 0.5, H * 0.36, W * 0.07, H * 0.012, 0, 0, TAU); g.fill();
-  // el velo fino
-  g.strokeStyle = "rgba(40,28,14,0.45)"; g.lineWidth = 3; g.beginPath(); g.ellipse(W * 0.5, H * 0.2, W * 0.135, H * 0.095, 0, Math.PI * 1.08, Math.PI * 1.92); g.stroke();
-  // la raya del pelo en medio
-  g.fillStyle = "#22160b"; g.beginPath(); g.ellipse(W * 0.5, H * 0.165, W * 0.125, H * 0.05, 0, Math.PI, TAU); g.fill();
-  // los ojos, la nariz y la sonrisa
-  const ojo = (x) => {
-    g.fillStyle = "rgba(70,45,20,0.6)"; g.beginPath(); g.ellipse(x, H * 0.235, W * 0.03, H * 0.009, 0, 0, TAU); g.fill();
-    g.fillStyle = "#2a1a0c"; g.beginPath(); g.arc(x + 2, H * 0.235, W * 0.011, 0, TAU); g.fill();
-    g.strokeStyle = "rgba(110,70,30,0.4)"; g.lineWidth = 3; g.beginPath(); g.ellipse(x, H * 0.228, W * 0.034, H * 0.013, 0, Math.PI * 1.1, Math.PI * 1.9); g.stroke();
-  };
-  ojo(W * 0.452); ojo(W * 0.558);
-  g.strokeStyle = "rgba(120,78,36,0.5)"; g.lineWidth = 4; g.beginPath(); g.moveTo(W * 0.51, H * 0.245); g.quadraticCurveTo(W * 0.525, H * 0.285, W * 0.495, H * 0.295); g.stroke();
-  g.strokeStyle = "rgba(95,50,25,0.85)"; g.lineWidth = 4.5; g.beginPath(); g.moveTo(W * 0.452, H * 0.318);
-  g.quadraticCurveTo(W * 0.5, H * 0.33, W * 0.55, H * 0.31); g.stroke();
-  g.fillStyle = "rgba(95,50,25,0.45)"; g.beginPath(); g.arc(W * 0.449, H * 0.315, 4, 0, TAU); g.arc(W * 0.553, H * 0.307, 4, 0, TAU); g.fill();
-  g.restore();
-  // el sfumato: todo un poco difuminado
-  const c2 = k.lienzo(W, H), g2 = c2.getContext("2d");
-  g2.filter = "blur(2.2px)"; g2.drawImage(c, 0, 0); g2.filter = "none";
-  // el barniz amarillento y las grietas del óleo
-  g2.globalCompositeOperation = "multiply";
-  gr = g2.createRadialGradient(W * 0.5, H * 0.4, W * 0.2, W * 0.5, H * 0.5, W * 0.95);
-  gr.addColorStop(0, "#f0d79a"); gr.addColorStop(1, "#6e5a2c");
-  g2.fillStyle = gr; g2.fillRect(0, 0, W, H);
-  g2.globalAlpha = 0.16; for (let yy = 0; yy < H; yy += 384) for (let xx = 0; xx < W; xx += 384) g2.drawImage(k.red, xx, yy, 384, 384); g2.globalAlpha = 0.18; g2.drawImage(k.manchas, 0, 0, W, H);
-  g2.globalAlpha = 1; g2.globalCompositeOperation = "source-over";
-  return k.fijar(c2);
+  g.drawImage(FOTO, CU.x, CU.y, CU.w, CU.h, 0, 0, ML_W, ML_H);
+  return k.fijar(c);
 }
 export const mona = () => (_ml ??= pintarMona());
 
@@ -169,11 +63,22 @@ export function marcoOro(g, x, y, w, h, b, luz = 1) {
 }
 
 // La Mona Lisa con su marco, centrada en (cx, cy), de alto h (sin el marco).
+// La Mona Lisa con su marco de verdad, centrada en (cx, cy), de alto h (el cuadro, sin el marco).
 export function monaEnMarco(g, cx, cy, h, op = {}) {
-  const w = h * ML_W / ML_H, b = h * 0.075;
-  if (op.marco !== false) marcoOro(g, cx - w / 2, cy - h / 2, w, h, b, op.luz ?? 1);
-  g.drawImage(op.periodico ? monaPeriodico() : mona(), cx - w / 2, cy - h / 2, w, h);
+  if (op.marco === false || op.periodico) {
+    const w = h * ML_W / ML_H;
+    g.drawImage(op.periodico ? monaPeriodico() : mona(), cx - w / 2, cy - h / 2, w, h);
+    return;
+  }
+  const s = h / CU.h, x0 = cx - (CU.x + CU.w / 2) * s, y0 = cy - (CU.y + CU.h / 2) * s;
+  g.save(); g.shadowColor = "rgba(0,0,0,0.6)"; g.shadowBlur = 60 * s * 3; g.shadowOffsetY = 25 * s * 3;
+  g.fillStyle = "#2a1a08"; g.fillRect(x0 + 30 * s, y0 + 30 * s, 1220 * s, 1631 * s); g.restore();
+  g.save(); g.beginPath(); g.rect(x0 + 18 * s, y0 + 18 * s, 1244 * s, 1655 * s); g.clip();
+  g.drawImage(FOTO, x0, y0, 1280 * s, 1691 * s);
+  g.restore();
 }
+// Lo que ocupa el cuadro con su marco, desde su centro (para los ganchos y la marca de la pared).
+export const MARCO_X = 610 / 1236, MARCO_Y = 830 / 1236;
 
 // ------------------------------------------------------------------ el Salon Carré
 // Un mundo de SW × SH píxeles: la pared roja con cuadros con marcos de oro, la moldura, el zócalo y el parquet.
@@ -182,15 +87,15 @@ export const SW = 3000, SH = 2400, ESC_S = 1;
 export const MLX = 1500, MLY = 1120, MLH = 520;
 export const SUELO = 1820;
 const ganchos = () => {
-  const w = MLH * ML_W / ML_H, b = MLH * 0.075;
-  return [[MLX - w / 2 - b * 0.4, MLY - MLH / 2 - b * 1.2], [MLX + w / 2 + b * 0.4, MLY - MLH / 2 - b * 1.2], [MLX - w / 2 - b * 0.4, MLY + MLH / 2 + b * 1.2], [MLX + w / 2 + b * 0.4, MLY + MLH / 2 + b * 1.2]];
+  const hx = MLH * 610 / 1236 + 14, hy = MLH * 830 / 1236 + 14;
+  return [[MLX - hx, MLY - hy], [MLX + hx, MLY - hy], [MLX - hx, MLY + hy], [MLX + hx, MLY + hy]];
 };
 export const GANCHOS = ganchos();
 
 // Cuadros de la pared (genéricos: paisajes, retratos, escenas).
 const CUADROS = (() => {
   const a = azar(41), L = [];
-  const huecoML = (x, y, w, h) => Math.abs(x + w / 2 - MLX) < (MLH * 0.5 + w / 2 + 70) && Math.abs(y + h / 2 - MLY) < (MLH * 0.62 + h / 2 + 40);
+  const huecoML = (x, y, w, h) => Math.abs(x + w / 2 - MLX) < (MLH * 0.53 + w / 2 + 70) && Math.abs(y + h / 2 - MLY) < (MLH * 0.7 + h / 2 + 40);
   // filas de cuadros, al estilo de la época: de arriba abajo, apretados
   const filas = [[330, 380], [760, 300], [1110, 320], [1450, 260]];
   for (const [y0, hMax] of filas) {
@@ -250,8 +155,8 @@ function pintarSalon() {
   // los cuadros
   for (const q of CUADROS) pintarCuadro(g, q);
   // la marca más clara de la pared donde va la Mona Lisa (se ve cuando no está) y los cuatro ganchos
-  const w = MLH * ML_W / ML_H, b = MLH * 0.075;
-  g.fillStyle = "rgba(205,115,100,0.32)"; g.fillRect(MLX - w / 2 - b, MLY - MLH / 2 - b, w + 2 * b, MLH + 2 * b);
+  const mw = MLH * 640 / 1236, mh = MLH * 845 / 1236;
+  g.fillStyle = "rgba(205,115,100,0.32)"; g.fillRect(MLX - mw, MLY - mh, 2 * mw, 2 * mh);
   for (const [gx, gy] of GANCHOS) gancho(g, gx, gy, 1);
   // el zócalo de madera y el parquet
   gr = g.createLinearGradient(0, SUELO - 140, 0, SUELO); gr.addColorStop(0, "#3a2010"); gr.addColorStop(0.3, "#6a3e1e"); gr.addColorStop(1, "#24130a");

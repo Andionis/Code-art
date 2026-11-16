@@ -14,7 +14,7 @@ export const arranca = Trob - 0.05;
 function cam(t) {
   const u = k.entra(tr(t, 0, 1.5));
   const w = su(tr(t, 1.5, arranca));
-  return { cx: mez(MLX + 60, MLX, u), cy: mez(MLY - 150, MLY + 40, u) - 30 * w, z: mez(4.2, 1.55, u) + 0.22 * w };
+  return { cx: mez(MLX + 60, MLX, u), cy: mez(MLY - 130, MLY - 30, u) - 30 * w, z: mez(4.2, 1.55, u) + 0.22 * w };
 }
 
 export function dibuja(g, t) {

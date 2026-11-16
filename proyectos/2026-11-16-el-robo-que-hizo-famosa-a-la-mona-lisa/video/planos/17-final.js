@@ -17,7 +17,7 @@ export const flashes = [Tfam - 0.05, Tfam + 0.18, Tfam + 0.4, Tmun + 0.1, Tmun +
 export function dibuja(g, t) {
   // la cámara: cerca del hueco; se aleja en «volvió»; en el cierre vuelve a su cara
   const al = su(tr(t, Tvol - 0.2, Tfam + 0.2)), vuelve = su(tr(t, T23, Fin + 0.6));
-  const z = mez(mez(1.5, 0.78, al), 3.2, vuelve), cx = MLX, cy = mez(mez(MLY, MLY + 300, al), MLY - 140, vuelve);
+  const z = mez(mez(1.5, 0.78, al), 3.2, vuelve), cx = MLX, cy = mez(mez(MLY - 50, MLY + 300, al), MLY - 120, vuelve);
   // la Mona Lisa baja desde arriba hasta sus ganchos
   const b = su(tr(t, T0 + 0.2, cuelga));
   const asienta = t > cuelga ? Math.sin(tr(t, cuelga, cuelga + 0.2) * Math.PI) * 10 : 0;
