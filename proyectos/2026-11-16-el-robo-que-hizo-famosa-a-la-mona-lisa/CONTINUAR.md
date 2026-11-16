@@ -5,17 +5,20 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Lo decidido (con las palabras del creador)
 
+- Voz: «Usa a Liam» (TX3LPaxmHKxFdv7VOQHJ; su cuenta de ElevenLabs es gratuita y no deja usar Antonio).
+- Guion v3 (unos dos minutos) aprobado. Pidió: «que sea más largo», «hazlo de dos minutos».
+- «no me mandes escenas para aprobar solo haz tu trabajo y luego me envías el borrador»: sin borradores por escena; se le enseña directamente el borrador completo.
 - Tema elegido: «El robo que hizo famosa a la Mona Lisa» (quiere «videos de historias de robos, casos raros y cosas así»).
 
 ## Pendiente del creador
 
-- Aprobar el guion v3 (pidió «que sea más largo» y luego «hazlo de dos minutos»).
+- Nada hasta el borrador completo.
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
 - [x] 1. La idea y los datos → idea.md
-- [ ] 2. El guion → guion.json, **aprobado por el creador**
-- [ ] 3. La voz (una sola vez, con el guion cerrado)
+- [x] 2. El guion → guion.json, **aprobado por el creador**
+- [x] 3. La voz (una sola vez, con el guion cerrado)
 - [ ] 4. El plan → plan.md, con sus escenas
 - [ ] 5. Escena por escena (cada una, su borrador aprobado):
   - [ ] escena 1 (el hook)

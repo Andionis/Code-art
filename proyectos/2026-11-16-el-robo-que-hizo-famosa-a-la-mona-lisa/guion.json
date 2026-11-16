@@ -2,29 +2,104 @@
   "titulo": "El robo que hizo famosa a la Mona Lisa",
   "idioma": "es",
   "subtitulos": "arriba",
+  "voz": {
+    "id": "TX3LPaxmHKxFdv7VOQHJ"
+  },
   "frases": [
-    { "texto": "¿Sabías que la Mona Lisa no era famosa hasta que alguien se la robó?", "clave": "robó", "hook": true },
-    { "texto": "Y el ladrón salió del museo con ella escondida debajo de la ropa.", "clave": "escondida", "hook": true },
-    { "texto": "En 1911 era un cuadro más del Louvre: la estrella del museo era la Venus de Milo.", "dicho": "En mil novecientos once era un cuadro más del Louvre: la estrella del museo era la Venus de Milo.", "clave": "Venus" },
-    { "texto": "Un lunes, con el museo cerrado, un italiano que había trabajado ahí se vistió de obrero y la descolgó de la pared.", "clave": "descolgó" },
-    { "texto": "Dejó el marco y el vidrio en una escalera, se la metió debajo de la bata y salió caminando.", "clave": "caminando" },
-    { "texto": "Nadie se dio cuenta hasta el día siguiente, cuando un pintor llegó a copiarla y encontró cuatro ganchos vacíos.", "clave": "ganchos" },
-    { "texto": "Cerraron el museo y el robo salió en los periódicos de todo el mundo, y su cara con él.", "clave": "periódicos" },
-    { "texto": "En el vidrio, la policía encontró una huella del ladrón.", "clave": "huella" },
-    { "texto": "Y sus huellas estaban en los archivos de la policía, porque ya lo habían detenido antes.", "clave": "archivos" },
-    { "texto": "Pero solo guardaban las de la mano derecha… y esa era de la izquierda.", "clave": "izquierda" },
-    { "texto": "Así que buscaron por otro lado, y arrestaron a un poeta famoso.", "clave": "poeta" },
-    { "texto": "Su secretario ya había robado estatuillas del Louvre, y dos de ellas las tenía Picasso.", "clave": "estatuillas" },
-    { "texto": "Así que la policía llamó a declarar a Picasso, aunque ninguno de los dos tenía la Mona Lisa.", "clave": "Picasso" },
-    { "texto": "Y cuando el museo volvió a abrir, miles de personas fueron a mirar… la pared vacía.", "clave": "vacía" },
-    { "texto": "Mientras tanto, la Mona Lisa estaba escondida en un baúl con doble fondo, en el cuarto del ladrón.", "clave": "baúl" },
-    { "texto": "La policía llegó a interrogarlo ahí mismo, y no la encontró.", "clave": "interrogarlo" },
-    { "texto": "Así pasaron dos años.", "clave": "años" },
-    { "texto": "Él decía que la había robado para devolverla a Italia, la tierra de Leonardo da Vinci.", "clave": "Italia" },
-    { "texto": "Pero en vez de regalarla a un museo, intentó vendérsela a un comerciante de arte en Florencia.", "clave": "vendérsela" },
-    { "texto": "El comerciante llamó al director de un museo, comprobaron que era la de verdad… y avisaron a la policía.", "clave": "verdad" },
-    { "texto": "Antes de volver a París la expusieron en Italia, y la gente se empujaba para verla.", "clave": "empujaba" },
-    { "texto": "Así que se robaron un cuadro más del Louvre… y el que volvió era el más famoso del mundo.", "clave": "famoso" },
-    { "texto": "Envíaselo a un amigo que le pueda interesar.", "clave": "amigo" }
+    {
+      "texto": "¿Sabías que la Mona Lisa no era famosa hasta que alguien se la robó?",
+      "clave": "robó",
+      "hook": true
+    },
+    {
+      "texto": "Y el ladrón salió del museo con ella escondida debajo de la ropa.",
+      "clave": "escondida",
+      "hook": true
+    },
+    {
+      "texto": "En 1911 era un cuadro más del Louvre: la estrella del museo era la Venus de Milo.",
+      "dicho": "En mil novecientos once era un cuadro más del Louvre: la estrella del museo era la Venus de Milo.",
+      "clave": "Venus"
+    },
+    {
+      "texto": "Un lunes, con el museo cerrado, un italiano que había trabajado ahí se vistió de obrero y la descolgó de la pared.",
+      "clave": "descolgó"
+    },
+    {
+      "texto": "Dejó el marco y el vidrio en una escalera, se la metió debajo de la bata y salió caminando.",
+      "clave": "caminando"
+    },
+    {
+      "texto": "Nadie se dio cuenta hasta el día siguiente, cuando un pintor llegó a copiarla y encontró cuatro ganchos vacíos.",
+      "clave": "ganchos"
+    },
+    {
+      "texto": "Cerraron el museo y el robo salió en los periódicos de todo el mundo, y su cara con él.",
+      "clave": "periódicos"
+    },
+    {
+      "texto": "En el vidrio, la policía encontró una huella del ladrón.",
+      "clave": "huella"
+    },
+    {
+      "texto": "Y sus huellas estaban en los archivos de la policía, porque ya lo habían detenido antes.",
+      "clave": "archivos"
+    },
+    {
+      "texto": "Pero solo guardaban las de la mano derecha… y esa era de la izquierda.",
+      "clave": "izquierda"
+    },
+    {
+      "texto": "Así que buscaron por otro lado, y arrestaron a un poeta famoso.",
+      "clave": "poeta"
+    },
+    {
+      "texto": "Su secretario ya había robado estatuillas del Louvre, y dos de ellas las tenía Picasso.",
+      "clave": "estatuillas"
+    },
+    {
+      "texto": "Así que la policía llamó a declarar a Picasso, aunque ninguno de los dos tenía la Mona Lisa.",
+      "clave": "Picasso"
+    },
+    {
+      "texto": "Y cuando el museo volvió a abrir, miles de personas fueron a mirar… la pared vacía.",
+      "clave": "vacía"
+    },
+    {
+      "texto": "Mientras tanto, la Mona Lisa estaba escondida en un baúl con doble fondo, en el cuarto del ladrón.",
+      "clave": "baúl"
+    },
+    {
+      "texto": "La policía llegó a interrogarlo ahí mismo, y no la encontró.",
+      "clave": "interrogarlo"
+    },
+    {
+      "texto": "Así pasaron dos años.",
+      "clave": "años"
+    },
+    {
+      "texto": "Él decía que la había robado para devolverla a Italia, la tierra de Leonardo da Vinci.",
+      "clave": "Italia"
+    },
+    {
+      "texto": "Pero en vez de regalarla a un museo, intentó vendérsela a un comerciante de arte en Florencia.",
+      "clave": "vendérsela"
+    },
+    {
+      "texto": "El comerciante llamó al director de un museo, comprobaron que era la de verdad… y avisaron a la policía.",
+      "clave": "verdad"
+    },
+    {
+      "texto": "Antes de volver a París la expusieron en Italia, y la gente se empujaba para verla.",
+      "clave": "empujaba"
+    },
+    {
+      "texto": "Así que se robaron un cuadro más del Louvre… y el que volvió era el más famoso del mundo.",
+      "clave": "famoso"
+    },
+    {
+      "texto": "Envíaselo a un amigo que le pueda interesar.",
+      "clave": "amigo"
+    }
   ]
 }
