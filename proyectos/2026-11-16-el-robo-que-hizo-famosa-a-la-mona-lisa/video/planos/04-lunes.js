@@ -25,7 +25,7 @@ export function dibuja(g, t) {
   const anda = tr(t, Tita - 0.3, llega), ax = mez(MLX - 1000, MLX, su(anda));
   const parado = anda >= 1;
   const brazos = su(tr(t, llega + 0.1, levanta - 0.05)) * (1 - 0.45 * bajaU);
-  const delante = t > baja;
+  const delante = false;
   dibujaSalon(g, c.cx, c.cy, c.z, {
     mona: delante ? null : mona,
     encima: (g2) => {

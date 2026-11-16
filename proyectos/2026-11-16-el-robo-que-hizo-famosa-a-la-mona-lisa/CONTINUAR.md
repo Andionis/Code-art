@@ -12,7 +12,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Pendiente del creador
 
-- «Usa ese cuadro»: la foto real de la Mona Lisa que mandó. Aprobar «completo v2 (borrador).mp4» (en revisar/). Miniatura (flyer.jpg, opción 2) y descripciones ya hechas en salida/.
+- «Usa ese cuadro»: la foto real de la Mona Lisa que mandó. «Apruebo, haz la versión final»: entregado (en revisar/). Miniatura (flyer.jpg, opción 2) y descripciones ya hechas en salida/.
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
@@ -22,9 +22,9 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 - [x] 4. El plan → plan.md, con sus escenas
 - [x] 5. Escena por escena (sin borradores por escena, como pidió) (cada una, su borrador aprobado):
   - [ ] escena 1 (el hook)
-- [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
+- [x] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
-- [ ] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
+- [x] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
       propuesto
 
 ## Para seguir en un chat nuevo
