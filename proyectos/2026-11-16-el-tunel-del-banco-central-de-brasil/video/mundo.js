@@ -37,9 +37,9 @@ export function pinta(g, cam, caras, luz, o = {}) {
     if (zm > lejos) continue;
     const R = recorta(Q);
     if (R.length < 3) continue;
-    let fuera = true;
-    const S = R.map((q) => { const x = CX + (F * q[0]) / q[2], y = CY - (F * q[1]) / q[2]; if (x > -400 && x < 1480 && y > -400 && y < 2320) fuera = false; return [x, y]; });
-    if (fuera && R.length === Q.length && zm > 3) continue;
+    let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9;
+    const S = R.map((q) => { const x = CX + (F * q[0]) / q[2], y = CY - (F * q[1]) / q[2]; if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; return [x, y]; });
+    if (x1 < -50 || x0 > 1130 || y1 < -50 || y0 > 1970) continue;
     lista.push({ c, S, z: zm - (c.sesgo || 0) });
   }
   lista.sort((a, b) => b.z - a.z);

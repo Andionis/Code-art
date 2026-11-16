@@ -37,7 +37,7 @@ piso de la bóveda por el que se fueron 3,5 toneladas de billetes que casi nunca
 
 | Escena | Frases | Planos | Acaba en (s) | Aprobada |
 |---|---|---|---|---|
-| 1 (el hook) | 1-2 | túnel → bóveda | 10,5 | |
+| 1 (el hook) | 1-2 | túnel → bóveda | 10,5 | sí (v1) |
 | 2 | 3-4 | la calle | 20,5 | |
 | 3 | 5-6 | el corte del suelo, el túnel por dentro | 35,1 | |
 | 4 | 7-9 | el concreto, la báscula, los billetes | 52,9 | |
