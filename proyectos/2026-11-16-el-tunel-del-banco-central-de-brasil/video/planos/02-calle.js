@@ -29,7 +29,7 @@ function camara(t) {
   const u1 = su(tr(t, Tcer - 0.15, Tban + 0.35)), u2 = su(tr(t, Tdis - 0.3, Tdis + 0.5));
   let pos = mezV(mezV(A.pos, B.pos, u1), C.pos, u2), mi = mezV(mezV(A.mira, B.mira, u1), C.mira, u2);
   // se acerca despacio desde el principio (nunca quieta)
-  pos = [pos[0], pos[1], pos[2] - 0.5 * tr(t, f3.inicio, f4.fin)];
+  pos = [pos[0] + 0.35 * su(tr(t, Tpas - 0.2, Tsac + 0.3)), pos[1] - 0.15 * su(tr(t, Tpas - 0.2, Tsac)), pos[2] - 0.5 * tr(t, f3.inicio, f4.fin) - 0.7 * su(tr(t, Tpas - 0.2, Tsac + 0.3))];
   return k.mira(pos, mi);
 }
 

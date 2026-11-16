@@ -8,7 +8,7 @@ import * as k from "#kit";
 import { v } from "#voz";
 import { BOV, HOYO, LOSA, SX, SY, T, cota, polvo, seccion } from "../corte.js";
 import { velo } from "../mundo.js";
-import { camara as camAntes } from "./03-corte.js";
+import { camara as camAntes, gx } from "./03-corte.js";
 
 export const desde = "al";
 export const entrada = "sigue";
@@ -48,6 +48,7 @@ export function dibuja(g, t) {
   const st = {
     pozo: 1, punta: T.x1, focos: () => 1,
     aire: { t: t - f6.t("aire"), al: 1 },
+    gateo: { x: gx(t), fase: (t - f6.t("angosto")) * 7, al: 1 },
     grietas: su(tr(t, Trom - 0.05, Tace)),
     hoyo: su(tr(t, Tace - 0.02, Tace + 0.3)),
   };

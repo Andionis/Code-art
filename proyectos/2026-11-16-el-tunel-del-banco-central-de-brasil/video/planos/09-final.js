@@ -59,7 +59,7 @@ export function dibuja(g, t) {
   seccion(g, c, { pozo: 1, punta: T.x1, focos: () => 1, dinero: 0, hoyo: 1, grietas: 1 }, t);
   dinero(g, c, t);
   // al lanzarse a la boca del túnel, la luz cálida lo llena todo
-  const fin = su(tr(t, Tenv + 0.9, Tenv + 1.4));
+  const fin = su(tr(t, Tenv + 0.7, Tenv + 1.15));
   if (fin > 0) { g.fillStyle = `rgba(60,30,14,${fin})`; g.fillRect(0, 0, 1080, 1920); }
   velo(g, 0.45);
 }

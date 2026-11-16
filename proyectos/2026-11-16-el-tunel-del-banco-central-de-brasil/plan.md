@@ -41,4 +41,4 @@ piso de la bóveda por el que se fueron 3,5 toneladas de billetes que casi nunca
 | 2 | 3-4 | la calle | 20,5 | sí (v1) |
 | 3 | 5-6 | el corte del suelo, el túnel por dentro | 35,1 | sí (v1) |
 | 4 | 7-9 | el concreto, la báscula, los billetes | 52,9 | sí (v1) |
-| 5 | 10-12 | la puerta, el hoyo, el final | 66,6 | |
+| 5 | 10-12 | la puerta, el hoyo, el final | 66,6 | sí (v1) |
