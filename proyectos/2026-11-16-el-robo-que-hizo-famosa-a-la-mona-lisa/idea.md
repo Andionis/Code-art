@@ -22,3 +22,10 @@ El robo, no el cuadro, la hizo famosa. La gente iba a ver una pared vacía.
 - Salió con ella «debajo de la ropa», como quien esconde algo bajo la camisa.
 - Escondida en un baúl, como ropa vieja.
 - Una pared con cuatro ganchos vacíos.
+
+## Añadido en guion v2
+- La policía interrogó a Peruggia en su departamento de París en 1911 y no encontró el cuadro. Fuente: resultados de búsqueda (Wikipedia, historyhit.com).
+- Su motivo declarado: devolverla a Italia (Napoleón se había llevado arte italiano). Cuidado: los expertos dudan, porque intentó venderla. Fuentes: thecollector.com, casdinteret.com.
+- Antes de volver se expuso en Florencia (Uffizi) y otras ciudades italianas; multitudes. Fuente: worldhistoryedu.com, artchive.com.
+- El Louvre cerró para investigar al descubrir el robo. Fuente: historyhit.com.
+- Cuidado: el poeta arrestado es Apollinaire (una semana, sin pruebas). Fuente: mentalfloss.com.

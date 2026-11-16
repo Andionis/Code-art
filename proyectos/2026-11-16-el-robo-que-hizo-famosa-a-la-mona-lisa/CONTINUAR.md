@@ -9,7 +9,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Pendiente del creador
 
-- Aprobar el guion (guion.json v1).
+- Aprobar el guion v2 (pidió «que sea más largo»).
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
