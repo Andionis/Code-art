@@ -1,0 +1,20 @@
+{
+  "titulo": "El túnel del Banco Central de Brasil",
+  "idioma": "es",
+  "subtitulos": "arriba",
+  "voz": { "id": "TX3LPaxmHKxFdv7VOQHJ" },
+  "frases": [
+    { "texto": "¿Sabías que unos ladrones cavaron un túnel hasta el Banco Central de Brasil y se llevaron 164 millones de reales?", "dicho": "¿Sabías que unos ladrones cavaron un túnel hasta el Banco Central de Brasil y se llevaron ciento sesenta y cuatro millones de reales?", "clave": "túnel", "hook": true },
+    { "texto": "Y nadie se dio cuenta hasta el lunes.", "clave": "nadie", "hook": true },
+    { "texto": "Primero rentaron una casa cerca del banco y la disfrazaron de tienda de pasto sintético.", "clave": "pasto" },
+    { "texto": "Así, los sacos de tierra que salían todos los días no le parecían raros a nadie.", "clave": "tierra" },
+    { "texto": "Durante tres meses cavaron, a cuatro metros bajo la calle, un túnel de casi ochenta metros: casi lo largo de una cancha de fútbol.", "clave": "cancha" },
+    { "texto": "Era tan angosto que se pasaba a gatas, pero tenía luz eléctrica y hasta aire acondicionado.", "clave": "aire" },
+    { "texto": "Al final llegaron justo debajo de la bóveda y rompieron más de un metro de concreto con acero.", "clave": "concreto" },
+    { "texto": "Arriba los esperaban billetes de cincuenta: tres toneladas y media, más de lo que pesan dos autos.", "clave": "toneladas" },
+    { "texto": "Y eran billetes usados, sin números en orden: no había forma de rastrearlos.", "clave": "rastrearlos" },
+    { "texto": "El lunes, los empleados abrieron la bóveda y encontraron un hoyo en el piso.", "clave": "hoyo" },
+    { "texto": "No entraron por la puerta: entraron por debajo. Y la mayor parte del dinero nunca apareció.", "clave": "nunca" },
+    { "texto": "Envíaselo a un amigo que le pueda interesar.", "clave": "amigo" }
+  ]
+}
