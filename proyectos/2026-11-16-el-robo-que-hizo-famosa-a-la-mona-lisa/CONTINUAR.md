@@ -9,7 +9,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Pendiente del creador
 
-- Aprobar el guion v2 (pidió «que sea más largo»).
+- Aprobar el guion v3 (pidió «que sea más largo» y luego «hazlo de dos minutos»).
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 

@@ -29,3 +29,9 @@ El robo, no el cuadro, la hizo famosa. La gente iba a ver una pared vacía.
 - Antes de volver se expuso en Florencia (Uffizi) y otras ciudades italianas; multitudes. Fuente: worldhistoryedu.com, artchive.com.
 - El Louvre cerró para investigar al descubrir el robo. Fuente: historyhit.com.
 - Cuidado: el poeta arrestado es Apollinaire (una semana, sin pruebas). Fuente: mentalfloss.com.
+
+## Añadido en guion v3 (dos minutos)
+- Huella: en el vidrio/marco dejado en la escalera había una huella de la mano izquierda; Peruggia estaba fichado (detenciones anteriores), pero el archivo de Bertillon solo guardaba la mano derecha, así que no coincidió. Fuentes: slate.com (2011), crimemagazine.com, auxtroiscrayons.com. Cuidado: unas fuentes dicen el vidrio, otras el marco.
+- Apollinaire fue arrestado porque su secretario (Géry Pieret) había robado estatuillas del Louvre; Picasso tenía dos (las había comprado). Fuentes: thecollector.com (did-guillaume-apollinaire…), mentalfloss.com, europeana.eu.
+- Geri llamó a Giovanni Poggi, director de los Uffizi; comprobaron el cuadro y avisaron a la policía. Fuentes: theweek.com, thecollector.com.
+- Los expertos dudan del patriotismo porque intentó venderla en vez de donarla. Fuente: thecollector.com.
