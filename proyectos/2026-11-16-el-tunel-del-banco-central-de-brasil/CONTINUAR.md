@@ -10,7 +10,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Pendiente del creador
 
--
+- Aprobar «completo v1 (borrador).mp4» (revisar/). Miniatura (flyer.jpg, portada 1) y descripciones ya hechas en salida/.
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
