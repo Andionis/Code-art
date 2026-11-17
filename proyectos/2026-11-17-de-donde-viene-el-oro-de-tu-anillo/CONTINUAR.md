@@ -19,7 +19,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 - [x] 3. La voz (una sola vez, con el guion cerrado)
 - [x] 4. El plan → plan.md, con sus escenas
 - [ ] 5. Escena por escena (cada una, su borrador aprobado):
-  - [ ] escena 1 (el hook): frases 1-2, hasta 7,7 s
+  - [x] escena 1 (el hook): frases 1-2, hasta 7,7 s
   - [ ] escena 2 (la estrella): frases 3-4, hasta 20,8 s
   - [ ] escena 3 (la estrella de neutrones): frases 5-6, hasta 34,0 s
   - [ ] escena 4 (el choque): frases 7-9, hasta 54,1 s

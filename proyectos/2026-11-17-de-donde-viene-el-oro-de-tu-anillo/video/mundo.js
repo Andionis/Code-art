@@ -125,3 +125,72 @@ export function puntoAnillo(C, eje, dir, R = 1, r = 0.17) {
   const A = uni(eje), d = res(dir, por(A, pto(dir, A))), n = uni(d);
   return sum(C, sum(por(n, R), por(uni(sum(n, por(A, 0.3))), r)));
 }
+
+// ---------------------------------------------------------------- los átomos: racimos de protones y neutrones
+// Cada núcleo es un racimo de bolitas: protones rojos y neutrones gris azulados. Las posiciones se calculan una vez
+// (apretadas dentro de una bola, empujándose entre sí) para cada tamaño que sale en el video.
+const NUCLEOS = { H: [1, 1], He: [4, 2], C: [12, 6], Fe: [56, 26], Au: [197, 79] };
+const racimos = {};
+for (const [nombre, [n, p]] of Object.entries(NUCLEOS)) {
+  const az = k.azar(900 + n), R = n === 1 ? 0 : 0.92 * Math.cbrt(n), pts = [];
+  for (let i = 0; i < n; i++) { let X; do { X = [(az() * 2 - 1) * R, (az() * 2 - 1) * R, (az() * 2 - 1) * R]; } while (pto(X, X) > R * R); pts.push(X); }
+  for (let it = 0; it < 80 && n > 1; it++) {
+    for (let i = 0; i < n; i++) for (let j = i + 1; j < n; j++) {
+      const d = res(pts[i], pts[j]), l = Math.sqrt(pto(d, d)) || 0.01;
+      if (l < 1.75) { const m = por(d, ((1.75 - l) / l) * 0.5); pts[i] = sum(pts[i], m); pts[j] = res(pts[j], m); }
+    }
+    for (let i = 0; i < n; i++) { const l = Math.sqrt(pto(pts[i], pts[i])); if (l > R) pts[i] = por(pts[i], R / l); }
+  }
+  // los protones, repartidos al azar entre todas
+  const tipo = pts.map((_, i) => i < p), mezcla = k.azar(77 + n);
+  for (let i = n - 1; i > 0; i--) { const j = Math.floor(mezcla() * (i + 1)); [tipo[i], tipo[j]] = [tipo[j], tipo[i]]; }
+  racimos[nombre] = { pts, tipo, R: Math.max(1, R + 1) };
+}
+export const radioRacimo = (nombre) => racimos[nombre].R;
+
+// Una bolita con luz (de arriba a la izquierda), su color de luz, medio y sombra.
+const PROTON = ["#ffc2b0", "#f0503c", "#6e130b"], NEUTRON = ["#eef4ff", "#8fa6c8", "#283850"];
+const GRIS = ["#f2f2f2", "#9a9ea6", "#2c2f35"], DORADA = [ORO.luz, ORO.claro, ORO.oscuro];
+const tono = (A, B, u) => (u <= 0 ? A : [0, 1, 2].map((i) => k.mezColor(A[i], B[i], u)));
+function bolita(g, x, y, r, c) {
+  const gr = g.createRadialGradient(x - r * 0.35, y - r * 0.4, r * 0.08, x, y, r);
+  gr.addColorStop(0, c[0]); gr.addColorStop(0.45, c[1]); gr.addColorStop(1, c[2]);
+  g.fillStyle = gr; g.beginPath(); g.arc(x, y, r, 0, Math.PI * 2); g.fill();
+}
+
+// Un núcleo en (x, y): b es el radio de cada bolita en píxeles; giro, cuánto ha girado; gris y oro, de 0 a 1, cuánto
+// se vuelve gris (el hierro) o de oro. desarma: de 0 a 1, las bolitas se separan y se apagan (lo que no llega a formarse).
+export function racimo(g, nombre, x, y, b, giro = 0, gris = 0, oro = 0, desarma = 0) {
+  const { pts, tipo } = racimos[nombre], cg = Math.cos(giro), sg = Math.sin(giro), ci = Math.cos(0.35), si = Math.sin(0.35);
+  const lista = pts.map((P, i) => {
+    let X = P[0] * cg + P[2] * sg, Z = -P[0] * sg + P[2] * cg, Y = P[1];
+    const Y2 = Y * ci - Z * si; Z = Y * si + Z * ci; Y = Y2;
+    const e = 1 + desarma * 1.6;
+    return { x: x + X * b * e, y: y + Y * b * e, z: Z, p: tipo[i] };
+  }).sort((a, c) => a.z - c.z);
+  const A = g.globalAlpha;
+  g.save();
+  g.globalAlpha = A * (1 - desarma);
+  for (const q of lista) {
+    const base = q.p ? PROTON : NEUTRON;
+    bolita(g, q.x, q.y, b * (1 + 0.04 * q.z / 4), tono(tono(base, GRIS, gris), DORADA, oro));
+  }
+  g.restore();
+}
+
+// ---------------------------------------------------------------- el centro de una estrella
+// Lo de dentro: naranja que hierve, más claro en el medio, con su textura que gira despacio. al: de 0 a 1.
+export function centroEstrella(g, t, al = 1, x = 540, y = 1050) {
+  if (al <= 0.01) return;
+  g.save();
+  g.globalAlpha *= al;
+  const gr = g.createRadialGradient(x, y, 40, x, y, 1500);
+  gr.addColorStop(0, "#fff3c0"); gr.addColorStop(0.18, "#ffc04a"); gr.addColorStop(0.5, "#e8641a"); gr.addColorStop(1, "#5a1404");
+  g.fillStyle = gr; g.fillRect(0, 0, 1080, 1920);
+  g.globalCompositeOperation = "multiply";
+  g.globalAlpha = al * 0.12; k.girado(g, k.red, x, y, 2600, t * 0.05);
+  g.globalAlpha = al * 0.45; k.girado(g, k.manchas, x, y, 2900, -t * 0.06 + 1);
+  g.globalCompositeOperation = "screen";
+  g.globalAlpha = al * 0.4; k.girado(g, k.manchas, x, y, 2400, t * 0.08 + 2);
+  g.restore();
+}
