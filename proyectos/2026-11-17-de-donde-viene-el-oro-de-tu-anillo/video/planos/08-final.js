@@ -20,11 +20,16 @@ const T0 = f12.inicio, Tanillo = f12.t("anillo"), Tviejo = f12.t("viejo"), Tsol 
 const Tsig = f13.t("siguenos"), FIN = v.duracion ?? 74.24;
 
 // la cámara y el giro del anillo terminan donde empieza el video (01-hook en t = 0), con la misma velocidad
-const camZ = k.claves([[T0, 2.7], [Tviejo, 2.85], [Tchoc, 3.05], [FIN, 3.35], [FIN + 1, 2.95]]);
+// el final «rebobina»: la cámara sale disparada hacia atrás mientras el anillo da una vuelta rápida, y vuelve a entrar
+// hasta quedar justo como en el primer fotograma (01-hook en t = 0): parece que el video empieza otra vez.
+const R0 = FIN - 1.4;
+export const rebobina = R0;
+const camZ = k.claves([[T0, 2.7], [Tviejo, 2.85], [Tchoc, 3.05], [R0, 3.2], [FIN - 0.6, 6.2], [FIN - 0.18, 3.7], [FIN, 3.35], [FIN + 1, 2.95]]);
 const camY = k.claves([[T0, 0.42], [FIN, 0.2], [FIN + 1, 0.2]]);
 const camX = k.claves([[T0, -0.1], [FIN, 0.12], [FIN + 1, 0.1]]);
 const camara = (t) => k.mira([camX(t), camY(t), camZ(t)], [0, 0.6, -40]);
-const giroTh = k.claves([[T0, -4.6], [Tchoc, -2.5], [FIN, -1.2], [FIN + 1, -0.6]]);
+const corre = (t) => tramo(t, R0, R0 + 0.2) * (1 - tramo(t, FIN - 0.25, FIN - 0.05));
+const giroTh = k.claves([[T0, -10.88], [Tchoc, -8.78], [R0, -8.1], [FIN - 0.22, -1.6], [FIN, -1.2], [FIN + 1, -0.6]]);
 const giroPs = k.claves([[T0, 0.2], [FIN, 0.42], [FIN + 1, 0.42]]);
 const ejeAnillo = (t) => { const th = giroTh(t), ps = giroPs(t); return [Math.sin(th) * Math.cos(ps), Math.sin(ps), Math.cos(th) * Math.cos(ps)]; };
 
@@ -42,7 +47,7 @@ const rio = Array.from({ length: 120 }, () => ({ t0: Tchoc + az() * 1.2, dur: 0.
 export function dibuja(g, t) {
   const cam = camara(t);
   k.fondo(g, cam, 1);
-  k.estrellas(g, cam, null, cielo);
+  k.estrellas(g, cam, corre(t) > 0 ? camara(t - 1 / 60) : null, cielo);
   // el Sol, lejos, en «Sol»
   const sol = suave(tramo(t, Tviejo, Tsol + 0.2)) * (1 - suave(tramo(t, Tpolvo - 0.2, Tpolvo + 0.4)));
   const S = proyecta(cam, SOL);

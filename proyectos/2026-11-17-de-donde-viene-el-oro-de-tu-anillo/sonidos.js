@@ -8,7 +8,7 @@ import { golpe, lluvia } from "./video/planos/04-balanza.js";
 import { choque, llegaTierra, naceOro, pegan } from "./video/planos/05-choque.js";
 import { enciendeSol, naceTierra, hunde } from "./video/planos/06-disco.js";
 import { caen, cuboListo } from "./video/planos/07-cubo.js";
-import { choque as choqueFinal } from "./video/planos/08-final.js";
+import { choque as choqueFinal, rebobina } from "./video/planos/08-final.js";
 
 const e = [];
 const pon = (sonido, t, o = {}) => e.push({ sonido, t, ...o });
@@ -87,5 +87,9 @@ pon("estallido", choqueFinal + 0.05, { db: -13, lp: 1400, vel: 1.2, que: "chocan
 pon("sube", choqueFinal + 0.6, { db: -13, que: "el oro viaja al anillo" });
 pon("late", choqueFinal + 1.0, { db: -10, que: "el anillo brilla con el oro" });
 pon("aire", f(13).t("siguenos") - 0.3, { ancla: "empieza", db: -15, vel: 0.6, que: "la cámara se aleja" });
+pon("aire", f(13).t("datos"), { db: -17, vel: 0.6, que: "las chispas llegan al anillo" });
+pon("aire", rebobina + 0.05, { ancla: "empieza", db: -12, vel: 0.9, que: "el anillo empieza a girar rápido" });
+pon("empujon", rebobina + 0.6, { db: -10, reves: true, que: "rebobina: la cámara sale disparada" });
+pon("aire", rebobina + 1.15, { db: -12, vel: 1.1, que: "vuelve a entrar al principio" });
 
 export default e;
