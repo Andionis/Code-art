@@ -28,7 +28,7 @@ export function destello(g, x, y, tam, al = 1, color = "255,244,200") {
 // Un anillo de oro en 3D: una malla de toro (tubo de radio r alrededor de un círculo de radio R, centrado en C, con su
 // eje). Cada cara se pinta con lo que refleja: un estudio de luz (arriba claro, el horizonte cálido, abajo oscuro) teñido
 // de oro, más el brillo de la luz principal. Así parece metal pulido y no un tubo de plástico. brilla: destello de más.
-const NM = 240, NT = 34;
+const NM = 320, NT = 40;
 const toro = [];
 for (let i = 0; i < NM; i++) for (let j = 0; j < NT; j++) {
   const f = (i / NM) * Math.PI * 2, q = (j / NT) * Math.PI * 2;
