@@ -194,3 +194,59 @@ export function centroEstrella(g, t, al = 1, x = 540, y = 1050) {
   g.globalAlpha = al * 0.4; k.girado(g, k.manchas, x, y, 2400, t * 0.08 + 2);
   g.restore();
 }
+
+// ---------------------------------------------------------------- una ciudad de noche
+// Una ciudad vista de lado, de noche: edificios azul oscuro con ventanas encendidas, sobre su suelo. Se dibuja una vez
+// (900 × 560) y luego se pone donde haga falta: ciudad(g, x, yBase, ancho, al), con x el borde izquierdo.
+let laCiudad = null;
+function hacerCiudad() {
+  const W = 900, H = 560, l = k.lienzo(W, H), c = l.getContext("2d"), az = k.azar(404);
+  const cielo = c.createLinearGradient(0, 0, 0, H);
+  cielo.addColorStop(0, "rgba(40,60,140,0)"); cielo.addColorStop(1, "rgba(255,170,90,0.35)");
+  c.fillStyle = cielo; c.fillRect(0, 0, W, H);
+  for (const capa of [0, 1]) {
+    let x = -10;
+    while (x < W) {
+      const w = 40 + az() * 70, h = capa ? 170 + Math.pow(az(), 1.3) * 330 : 280 + az() * 220, y = H - 40 - h;
+      const gr = c.createLinearGradient(x, 0, x + w, 0);
+      const base = capa ? ["#1c2550", "#2a3670", "#141a3a"] : ["#141a36", "#1d2650", "#0e1228"];
+      gr.addColorStop(0, base[0]); gr.addColorStop(0.6, base[1]); gr.addColorStop(1, base[2]);
+      c.fillStyle = gr; c.fillRect(x, y, w, h);
+      // las ventanas encendidas
+      for (let wy = y + 12; wy < H - 52; wy += 18) for (let wx = x + 7; wx < x + w - 10; wx += 14) {
+        if (az() < (capa ? 0.45 : 0.25)) { c.fillStyle = az() < 0.8 ? `rgba(255,214,120,${0.6 + az() * 0.4})` : "rgba(180,220,255,0.8)"; c.fillRect(wx, wy, 7, 9); }
+      }
+      if (capa && az() < 0.3) { c.fillStyle = "#ff4040"; c.fillRect(x + w / 2 - 2, y - 14, 4, 14); }
+      x += w + (capa ? 4 : 18) + az() * 10;
+    }
+  }
+  const suelo = c.createLinearGradient(0, H - 40, 0, H);
+  suelo.addColorStop(0, "#2a2f45"); suelo.addColorStop(1, "#0b0d16");
+  c.fillStyle = suelo; c.fillRect(0, H - 40, W, 40);
+  c.globalCompositeOperation = "lighter";
+  const luz = c.createLinearGradient(0, H - 120, 0, H - 40);
+  luz.addColorStop(0, "rgba(255,180,90,0)"); luz.addColorStop(1, "rgba(255,180,90,0.25)");
+  c.fillStyle = luz; c.fillRect(0, H - 120, W, 80);
+  return k.fijar(l);
+}
+export function ciudad(g, x, yBase, ancho, al = 1) {
+  if (al <= 0.01) return;
+  laCiudad ??= hacerCiudad();
+  const h = (ancho * 560) / 900;
+  g.save(); g.globalAlpha *= al; g.drawImage(laCiudad, x, yBase - h, ancho, h); g.restore();
+}
+
+// ---------------------------------------------------------------- una estrella de neutrones
+// Una bola azul blanca que brilla muchísimo, con su resplandor. late: de 0 a 1.
+export function neutrones(g, x, y, r, t, late = 0, al = 1) {
+  if (al <= 0.01) return;
+  k.brillo(g, x, y, r * 7, "azul", (0.55 + 0.35 * late) * al);
+  k.brillo(g, x, y, r * 3.2, "255,255,255", (0.35 + 0.4 * late) * al);
+  k.estrellaTransparente(g, "azul", x, y, r, t * 0.9, 0.6 + 0.4 * late, al);
+  // encima, su luz: casi blanca en el centro, azul en el borde (que no parezca una roca)
+  g.save(); g.globalAlpha *= al; g.globalCompositeOperation = "lighter";
+  const gr = g.createRadialGradient(x - r * 0.2, y - r * 0.25, 0, x, y, r);
+  gr.addColorStop(0, `rgba(255,255,255,${0.75 + 0.2 * late})`); gr.addColorStop(0.55, "rgba(200,225,255,0.45)"); gr.addColorStop(1, "rgba(120,170,255,0.25)");
+  g.fillStyle = gr; g.beginPath(); g.arc(x, y, r, 0, Math.PI * 2); g.fill();
+  g.restore();
+}
