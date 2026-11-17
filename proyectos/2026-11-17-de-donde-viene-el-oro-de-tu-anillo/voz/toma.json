@@ -1,0 +1,1109 @@
+{
+  "firma": "208b57938f72",
+  "proveedor": "elevenlabs",
+  "ajustes": {
+    "id": "TX3LPaxmHKxFdv7VOQHJ",
+    "modelo": "eleven_v4",
+    "estabilidad": 0.35,
+    "similitud": 0.7,
+    "estilo": 0,
+    "velocidad": 1
+  },
+  "palabras": [
+    {
+      "texto": "¿De",
+      "inicio": 0,
+      "fin": 0.16
+    },
+    {
+      "texto": "dónde",
+      "inicio": 0.2,
+      "fin": 0.4
+    },
+    {
+      "texto": "viene",
+      "inicio": 0.48,
+      "fin": 0.72
+    },
+    {
+      "texto": "el",
+      "inicio": 0.8,
+      "fin": 0.88
+    },
+    {
+      "texto": "oro",
+      "inicio": 0.96,
+      "fin": 1.04
+    },
+    {
+      "texto": "de",
+      "inicio": 1.08,
+      "fin": 1.12
+    },
+    {
+      "texto": "tu",
+      "inicio": 1.2,
+      "fin": 1.28
+    },
+    {
+      "texto": "anillo?",
+      "inicio": 1.36,
+      "fin": 1.76
+    },
+    {
+      "texto": "No",
+      "inicio": 2.24,
+      "fin": 2.32
+    },
+    {
+      "texto": "se",
+      "inicio": 2.4,
+      "fin": 2.56
+    },
+    {
+      "texto": "hizo",
+      "inicio": 2.613,
+      "fin": 2.72
+    },
+    {
+      "texto": "en",
+      "inicio": 2.76,
+      "fin": 2.8
+    },
+    {
+      "texto": "la",
+      "inicio": 2.84,
+      "fin": 2.88
+    },
+    {
+      "texto": "Tierra:",
+      "inicio": 2.96,
+      "fin": 3.68
+    },
+    {
+      "texto": "se",
+      "inicio": 3.76,
+      "fin": 3.84
+    },
+    {
+      "texto": "hizo",
+      "inicio": 3.88,
+      "fin": 4.08
+    },
+    {
+      "texto": "en",
+      "inicio": 4.12,
+      "fin": 4.16
+    },
+    {
+      "texto": "un",
+      "inicio": 4.24,
+      "fin": 4.32
+    },
+    {
+      "texto": "choque",
+      "inicio": 4.4,
+      "fin": 4.72
+    },
+    {
+      "texto": "de",
+      "inicio": 4.76,
+      "fin": 4.8
+    },
+    {
+      "texto": "estrellas,",
+      "inicio": 4.88,
+      "fin": 5.68
+    },
+    {
+      "texto": "antes",
+      "inicio": 5.84,
+      "fin": 6
+    },
+    {
+      "texto": "de",
+      "inicio": 6.08,
+      "fin": 6.12
+    },
+    {
+      "texto": "que",
+      "inicio": 6.16,
+      "fin": 6.24
+    },
+    {
+      "texto": "existiera",
+      "inicio": 6.4,
+      "fin": 6.72
+    },
+    {
+      "texto": "el",
+      "inicio": 6.76,
+      "fin": 6.8
+    },
+    {
+      "texto": "Sol.",
+      "inicio": 6.88,
+      "fin": 7.68
+    },
+    {
+      "texto": "Las",
+      "inicio": 7.76,
+      "fin": 7.84
+    },
+    {
+      "texto": "estrellas",
+      "inicio": 7.92,
+      "fin": 8.24
+    },
+    {
+      "texto": "fabrican",
+      "inicio": 8.4,
+      "fin": 8.64
+    },
+    {
+      "texto": "elementos",
+      "inicio": 8.84,
+      "fin": 9.12
+    },
+    {
+      "texto": "apretando",
+      "inicio": 9.2,
+      "fin": 9.68
+    },
+    {
+      "texto": "átomos",
+      "inicio": 9.8,
+      "fin": 10.16
+    },
+    {
+      "texto": "en",
+      "inicio": 10.2,
+      "fin": 10.24
+    },
+    {
+      "texto": "su",
+      "inicio": 10.32,
+      "fin": 10.4
+    },
+    {
+      "texto": "centro:",
+      "inicio": 10.48,
+      "fin": 11.2
+    },
+    {
+      "texto": "hidrógeno,",
+      "inicio": 11.32,
+      "fin": 12.16
+    },
+    {
+      "texto": "helio,",
+      "inicio": 12.32,
+      "fin": 12.8
+    },
+    {
+      "texto": "carbono...",
+      "inicio": 13,
+      "fin": 13.68
+    },
+    {
+      "texto": "hasta",
+      "inicio": 13.76,
+      "fin": 13.92
+    },
+    {
+      "texto": "el",
+      "inicio": 13.96,
+      "fin": 14
+    },
+    {
+      "texto": "hierro.",
+      "inicio": 14.04,
+      "fin": 14.48
+    },
+    {
+      "texto": "Pero",
+      "inicio": 14.96,
+      "fin": 15.12
+    },
+    {
+      "texto": "ahí",
+      "inicio": 15.28,
+      "fin": 15.48
+    },
+    {
+      "texto": "se",
+      "inicio": 15.52,
+      "fin": 15.6
+    },
+    {
+      "texto": "atascan:",
+      "inicio": 15.76,
+      "fin": 16.48
+    },
+    {
+      "texto": "para",
+      "inicio": 16.56,
+      "fin": 16.64
+    },
+    {
+      "texto": "hacer",
+      "inicio": 16.693,
+      "fin": 16.8
+    },
+    {
+      "texto": "algo",
+      "inicio": 16.88,
+      "fin": 17.04
+    },
+    {
+      "texto": "más",
+      "inicio": 17.2,
+      "fin": 17.36
+    },
+    {
+      "texto": "pesado,",
+      "inicio": 17.44,
+      "fin": 18
+    },
+    {
+      "texto": "como",
+      "inicio": 18.08,
+      "fin": 18.16
+    },
+    {
+      "texto": "el",
+      "inicio": 18.2,
+      "fin": 18.24
+    },
+    {
+      "texto": "oro,",
+      "inicio": 18.32,
+      "fin": 18.8
+    },
+    {
+      "texto": "no",
+      "inicio": 18.96,
+      "fin": 19.04
+    },
+    {
+      "texto": "les",
+      "inicio": 19.12,
+      "fin": 19.2
+    },
+    {
+      "texto": "alcanza",
+      "inicio": 19.28,
+      "fin": 19.6
+    },
+    {
+      "texto": "la",
+      "inicio": 19.68,
+      "fin": 19.72
+    },
+    {
+      "texto": "fuerza.",
+      "inicio": 19.76,
+      "fin": 20.16
+    },
+    {
+      "texto": "Cuando",
+      "inicio": 20.88,
+      "fin": 21.12
+    },
+    {
+      "texto": "una",
+      "inicio": 21.2,
+      "fin": 21.28
+    },
+    {
+      "texto": "estrella",
+      "inicio": 21.36,
+      "fin": 21.68
+    },
+    {
+      "texto": "gigante",
+      "inicio": 21.76,
+      "fin": 22.16
+    },
+    {
+      "texto": "muere,",
+      "inicio": 22.24,
+      "fin": 22.88
+    },
+    {
+      "texto": "su",
+      "inicio": 22.96,
+      "fin": 23.04
+    },
+    {
+      "texto": "centro",
+      "inicio": 23.16,
+      "fin": 23.36
+    },
+    {
+      "texto": "se",
+      "inicio": 23.4,
+      "fin": 23.44
+    },
+    {
+      "texto": "aplasta",
+      "inicio": 23.52,
+      "fin": 23.96
+    },
+    {
+      "texto": "en",
+      "inicio": 24,
+      "fin": 24.08
+    },
+    {
+      "texto": "una",
+      "inicio": 24.16,
+      "fin": 24.24
+    },
+    {
+      "texto": "bola",
+      "inicio": 24.28,
+      "fin": 24.48
+    },
+    {
+      "texto": "del",
+      "inicio": 24.56,
+      "fin": 24.64
+    },
+    {
+      "texto": "tamaño",
+      "inicio": 24.72,
+      "fin": 25.12
+    },
+    {
+      "texto": "de",
+      "inicio": 25.2,
+      "fin": 25.28
+    },
+    {
+      "texto": "una",
+      "inicio": 25.36,
+      "fin": 25.44
+    },
+    {
+      "texto": "ciudad:",
+      "inicio": 25.52,
+      "fin": 26.32
+    },
+    {
+      "texto": "una",
+      "inicio": 26.4,
+      "fin": 26.48
+    },
+    {
+      "texto": "estrella",
+      "inicio": 26.56,
+      "fin": 27.04
+    },
+    {
+      "texto": "de",
+      "inicio": 27.12,
+      "fin": 27.16
+    },
+    {
+      "texto": "neutrones.",
+      "inicio": 27.2,
+      "fin": 27.92
+    },
+    {
+      "texto": "Es",
+      "inicio": 28.4,
+      "fin": 28.56
+    },
+    {
+      "texto": "tan",
+      "inicio": 28.72,
+      "fin": 28.96
+    },
+    {
+      "texto": "densa",
+      "inicio": 29.04,
+      "fin": 29.36
+    },
+    {
+      "texto": "que",
+      "inicio": 29.68,
+      "fin": 29.76
+    },
+    {
+      "texto": "una",
+      "inicio": 29.84,
+      "fin": 29.92
+    },
+    {
+      "texto": "cucharadita",
+      "inicio": 30,
+      "fin": 30.48
+    },
+    {
+      "texto": "pesaría",
+      "inicio": 30.56,
+      "fin": 30.96
+    },
+    {
+      "texto": "más",
+      "inicio": 31,
+      "fin": 31.12
+    },
+    {
+      "texto": "que",
+      "inicio": 31.2,
+      "fin": 31.44
+    },
+    {
+      "texto": "todas",
+      "inicio": 31.56,
+      "fin": 31.84
+    },
+    {
+      "texto": "las",
+      "inicio": 31.92,
+      "fin": 32
+    },
+    {
+      "texto": "personas",
+      "inicio": 32.16,
+      "fin": 32.4
+    },
+    {
+      "texto": "del",
+      "inicio": 32.48,
+      "fin": 32.56
+    },
+    {
+      "texto": "mundo",
+      "inicio": 32.64,
+      "fin": 32.88
+    },
+    {
+      "texto": "juntas.",
+      "inicio": 32.96,
+      "fin": 33.52
+    },
+    {
+      "texto": "A",
+      "inicio": 34.08,
+      "fin": 34.16
+    },
+    {
+      "texto": "veces,",
+      "inicio": 34.24,
+      "fin": 34.8
+    },
+    {
+      "texto": "dos",
+      "inicio": 34.88,
+      "fin": 34.96
+    },
+    {
+      "texto": "de",
+      "inicio": 35.04,
+      "fin": 35.12
+    },
+    {
+      "texto": "esas",
+      "inicio": 35.2,
+      "fin": 35.36
+    },
+    {
+      "texto": "bolas",
+      "inicio": 35.44,
+      "fin": 35.68
+    },
+    {
+      "texto": "giran",
+      "inicio": 35.76,
+      "fin": 36.08
+    },
+    {
+      "texto": "una",
+      "inicio": 36.16,
+      "fin": 36.32
+    },
+    {
+      "texto": "alrededor",
+      "inicio": 36.4,
+      "fin": 36.88
+    },
+    {
+      "texto": "de",
+      "inicio": 36.92,
+      "fin": 36.96
+    },
+    {
+      "texto": "la",
+      "inicio": 37.04,
+      "fin": 37.12
+    },
+    {
+      "texto": "otra,",
+      "inicio": 37.2,
+      "fin": 37.68
+    },
+    {
+      "texto": "cada",
+      "inicio": 37.72,
+      "fin": 37.92
+    },
+    {
+      "texto": "vez",
+      "inicio": 38,
+      "fin": 38.08
+    },
+    {
+      "texto": "más",
+      "inicio": 38.32,
+      "fin": 38.48
+    },
+    {
+      "texto": "rápido...",
+      "inicio": 38.56,
+      "fin": 39.44
+    },
+    {
+      "texto": "y",
+      "inicio": 39.48,
+      "fin": 39.52
+    },
+    {
+      "texto": "chocan.",
+      "inicio": 39.6,
+      "fin": 40.08
+    },
+    {
+      "texto": "El",
+      "inicio": 40.56,
+      "fin": 40.64
+    },
+    {
+      "texto": "choque",
+      "inicio": 40.72,
+      "fin": 40.96
+    },
+    {
+      "texto": "lanza",
+      "inicio": 41.04,
+      "fin": 41.28
+    },
+    {
+      "texto": "una",
+      "inicio": 41.36,
+      "fin": 41.52
+    },
+    {
+      "texto": "nube",
+      "inicio": 41.6,
+      "fin": 41.84
+    },
+    {
+      "texto": "de",
+      "inicio": 41.88,
+      "fin": 41.92
+    },
+    {
+      "texto": "neutrones",
+      "inicio": 42,
+      "fin": 42.48
+    },
+    {
+      "texto": "que",
+      "inicio": 42.52,
+      "fin": 42.56
+    },
+    {
+      "texto": "se",
+      "inicio": 42.64,
+      "fin": 42.88
+    },
+    {
+      "texto": "pegan",
+      "inicio": 42.96,
+      "fin": 43.12
+    },
+    {
+      "texto": "a",
+      "inicio": 43.16,
+      "fin": 43.2
+    },
+    {
+      "texto": "los",
+      "inicio": 43.28,
+      "fin": 43.36
+    },
+    {
+      "texto": "átomos",
+      "inicio": 43.44,
+      "fin": 43.76
+    },
+    {
+      "texto": "y",
+      "inicio": 43.84,
+      "fin": 43.92
+    },
+    {
+      "texto": "los",
+      "inicio": 43.96,
+      "fin": 44
+    },
+    {
+      "texto": "vuelven",
+      "inicio": 44.08,
+      "fin": 44.32
+    },
+    {
+      "texto": "pesados",
+      "inicio": 44.48,
+      "fin": 44.88
+    },
+    {
+      "texto": "en",
+      "inicio": 44.96,
+      "fin": 45.2
+    },
+    {
+      "texto": "un",
+      "inicio": 45.24,
+      "fin": 45.28
+    },
+    {
+      "texto": "segundo:",
+      "inicio": 45.36,
+      "fin": 46.32
+    },
+    {
+      "texto": "así",
+      "inicio": 46.44,
+      "fin": 46.64
+    },
+    {
+      "texto": "nace",
+      "inicio": 46.88,
+      "fin": 47.12
+    },
+    {
+      "texto": "el",
+      "inicio": 47.2,
+      "fin": 47.28
+    },
+    {
+      "texto": "oro.",
+      "inicio": 47.36,
+      "fin": 47.6
+    },
+    {
+      "texto": "En",
+      "inicio": 48.16,
+      "fin": 48.24
+    },
+    {
+      "texto": "dos",
+      "inicio": 48.28,
+      "fin": 48.32
+    },
+    {
+      "texto": "mil",
+      "inicio": 48.4,
+      "fin": 48.48
+    },
+    {
+      "texto": "diecisiete",
+      "inicio": 48.56,
+      "fin": 49.04
+    },
+    {
+      "texto": "vimos",
+      "inicio": 49.2,
+      "fin": 49.44
+    },
+    {
+      "texto": "uno:",
+      "inicio": 49.52,
+      "fin": 50.08
+    },
+    {
+      "texto": "fabricó",
+      "inicio": 50.16,
+      "fin": 50.56
+    },
+    {
+      "texto": "tanto",
+      "inicio": 50.72,
+      "fin": 51.04
+    },
+    {
+      "texto": "oro",
+      "inicio": 51.12,
+      "fin": 51.28
+    },
+    {
+      "texto": "como",
+      "inicio": 51.36,
+      "fin": 51.52
+    },
+    {
+      "texto": "para",
+      "inicio": 51.6,
+      "fin": 51.68
+    },
+    {
+      "texto": "hacer",
+      "inicio": 51.76,
+      "fin": 52
+    },
+    {
+      "texto": "varias",
+      "inicio": 52.16,
+      "fin": 52.56
+    },
+    {
+      "texto": "Tierras",
+      "inicio": 52.64,
+      "fin": 52.88
+    },
+    {
+      "texto": "enteras.",
+      "inicio": 52.96,
+      "fin": 53.84
+    },
+    {
+      "texto": "Choques",
+      "inicio": 54.16,
+      "fin": 54.4
+    },
+    {
+      "texto": "así",
+      "inicio": 54.48,
+      "fin": 54.72
+    },
+    {
+      "texto": "llenaron",
+      "inicio": 54.8,
+      "fin": 55.12
+    },
+    {
+      "texto": "de",
+      "inicio": 55.16,
+      "fin": 55.2
+    },
+    {
+      "texto": "oro",
+      "inicio": 55.28,
+      "fin": 55.44
+    },
+    {
+      "texto": "la",
+      "inicio": 55.48,
+      "fin": 55.52
+    },
+    {
+      "texto": "nube",
+      "inicio": 55.68,
+      "fin": 55.84
+    },
+    {
+      "texto": "de",
+      "inicio": 55.92,
+      "fin": 56
+    },
+    {
+      "texto": "polvo",
+      "inicio": 56.08,
+      "fin": 56.32
+    },
+    {
+      "texto": "de",
+      "inicio": 56.36,
+      "fin": 56.4
+    },
+    {
+      "texto": "la",
+      "inicio": 56.44,
+      "fin": 56.48
+    },
+    {
+      "texto": "que",
+      "inicio": 56.56,
+      "fin": 56.64
+    },
+    {
+      "texto": "nacieron",
+      "inicio": 56.693,
+      "fin": 57.04
+    },
+    {
+      "texto": "el",
+      "inicio": 57.08,
+      "fin": 57.12
+    },
+    {
+      "texto": "Sol",
+      "inicio": 57.28,
+      "fin": 57.52
+    },
+    {
+      "texto": "y",
+      "inicio": 57.56,
+      "fin": 57.6
+    },
+    {
+      "texto": "la",
+      "inicio": 57.64,
+      "fin": 57.68
+    },
+    {
+      "texto": "Tierra.",
+      "inicio": 57.76,
+      "fin": 58.56
+    },
+    {
+      "texto": "Casi",
+      "inicio": 58.6,
+      "fin": 59.04
+    },
+    {
+      "texto": "todo",
+      "inicio": 59.16,
+      "fin": 59.28
+    },
+    {
+      "texto": "se",
+      "inicio": 59.36,
+      "fin": 59.44
+    },
+    {
+      "texto": "hundió",
+      "inicio": 59.48,
+      "fin": 59.76
+    },
+    {
+      "texto": "hasta",
+      "inicio": 59.8,
+      "fin": 60
+    },
+    {
+      "texto": "el",
+      "inicio": 60.08,
+      "fin": 60.16
+    },
+    {
+      "texto": "centro",
+      "inicio": 60.28,
+      "fin": 60.48
+    },
+    {
+      "texto": "del",
+      "inicio": 60.56,
+      "fin": 60.64
+    },
+    {
+      "texto": "planeta:",
+      "inicio": 60.76,
+      "fin": 61.52
+    },
+    {
+      "texto": "todo",
+      "inicio": 61.6,
+      "fin": 61.84
+    },
+    {
+      "texto": "el",
+      "inicio": 61.88,
+      "fin": 61.92
+    },
+    {
+      "texto": "oro",
+      "inicio": 62,
+      "fin": 62.16
+    },
+    {
+      "texto": "que",
+      "inicio": 62.2,
+      "fin": 62.24
+    },
+    {
+      "texto": "hemos",
+      "inicio": 62.32,
+      "fin": 62.48
+    },
+    {
+      "texto": "sacado",
+      "inicio": 62.52,
+      "fin": 62.8
+    },
+    {
+      "texto": "en",
+      "inicio": 62.88,
+      "fin": 62.92
+    },
+    {
+      "texto": "la",
+      "inicio": 62.96,
+      "fin": 63
+    },
+    {
+      "texto": "historia",
+      "inicio": 63.04,
+      "fin": 63.44
+    },
+    {
+      "texto": "cabe",
+      "inicio": 63.76,
+      "fin": 63.92
+    },
+    {
+      "texto": "en",
+      "inicio": 63.96,
+      "fin": 64
+    },
+    {
+      "texto": "un",
+      "inicio": 64.08,
+      "fin": 64.16
+    },
+    {
+      "texto": "cubo",
+      "inicio": 64.2,
+      "fin": 64.4
+    },
+    {
+      "texto": "de",
+      "inicio": 64.48,
+      "fin": 64.56
+    },
+    {
+      "texto": "veintidós",
+      "inicio": 64.6,
+      "fin": 65.12
+    },
+    {
+      "texto": "metros.",
+      "inicio": 65.28,
+      "fin": 66.24
+    },
+    {
+      "texto": "Así",
+      "inicio": 66.32,
+      "fin": 66.44
+    },
+    {
+      "texto": "que",
+      "inicio": 66.48,
+      "fin": 66.64
+    },
+    {
+      "texto": "tu",
+      "inicio": 66.8,
+      "fin": 66.88
+    },
+    {
+      "texto": "anillo",
+      "inicio": 66.96,
+      "fin": 67.36
+    },
+    {
+      "texto": "es",
+      "inicio": 67.52,
+      "fin": 67.68
+    },
+    {
+      "texto": "más",
+      "inicio": 67.72,
+      "fin": 67.92
+    },
+    {
+      "texto": "viejo",
+      "inicio": 68,
+      "fin": 68.24
+    },
+    {
+      "texto": "que",
+      "inicio": 68.28,
+      "fin": 68.32
+    },
+    {
+      "texto": "el",
+      "inicio": 68.4,
+      "fin": 68.48
+    },
+    {
+      "texto": "Sol:",
+      "inicio": 68.6,
+      "fin": 69.12
+    },
+    {
+      "texto": "es",
+      "inicio": 69.24,
+      "fin": 69.36
+    },
+    {
+      "texto": "polvo",
+      "inicio": 69.44,
+      "fin": 69.68
+    },
+    {
+      "texto": "de",
+      "inicio": 69.76,
+      "fin": 69.8
+    },
+    {
+      "texto": "estrellas",
+      "inicio": 69.84,
+      "fin": 70.32
+    },
+    {
+      "texto": "que",
+      "inicio": 70.36,
+      "fin": 70.4
+    },
+    {
+      "texto": "chocaron.",
+      "inicio": 70.48,
+      "fin": 71.44
+    },
+    {
+      "texto": "Envíaselo",
+      "inicio": 71.56,
+      "fin": 71.92
+    },
+    {
+      "texto": "a",
+      "inicio": 71.96,
+      "fin": 72
+    },
+    {
+      "texto": "un",
+      "inicio": 72.04,
+      "fin": 72.08
+    },
+    {
+      "texto": "amigo",
+      "inicio": 72.16,
+      "fin": 72.32
+    },
+    {
+      "texto": "que",
+      "inicio": 72.36,
+      "fin": 72.4
+    },
+    {
+      "texto": "le",
+      "inicio": 72.48,
+      "fin": 72.56
+    },
+    {
+      "texto": "pueda",
+      "inicio": 72.587,
+      "fin": 72.72
+    },
+    {
+      "texto": "interesar.",
+      "inicio": 72.84,
+      "fin": 73.44
+    }
+  ]
+}
