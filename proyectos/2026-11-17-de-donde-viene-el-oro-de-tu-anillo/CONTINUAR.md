@@ -6,6 +6,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 ## Lo decidido (con las palabras del creador)
 
 - Tema 15 de los 100. Guion aprobado tal cual («Apruebo»).
+- Cierre cambiado a «Síguenos para más datos que te vuelan la cabeza»; final que rebobina al primer fotograma. Completo v3 aprobado («Apruebo»).
 - Voz: Liam (TX3LPaxmHKxFdv7VOQHJ), como en el video anterior. 74,2 s.
 
 ## Pendiente del creador
@@ -24,9 +25,9 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
   - [x] escena 3 (la estrella de neutrones): frases 5-6, hasta 34,0 s
   - [x] escena 4 (el choque): frases 7-9, hasta 54,1 s
   - [x] escena 5 (del polvo a tu anillo): frases 10-13, hasta el final
-- [ ] 6. (borrador completo v1 enviado) El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
+- [x] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
-- [ ] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
+- [x] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
       propuesto
 
 ## Para seguir en un chat nuevo
