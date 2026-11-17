@@ -144,14 +144,17 @@ for (const [nombre, [n, p]] of Object.entries(NUCLEOS)) {
   // los protones, repartidos al azar entre todas
   const tipo = pts.map((_, i) => i < p), mezcla = k.azar(77 + n);
   for (let i = n - 1; i > 0; i--) { const j = Math.floor(mezcla() * (i + 1)); [tipo[i], tipo[j]] = [tipo[j], tipo[i]]; }
-  racimos[nombre] = { pts, tipo, R: Math.max(1, R + 1) };
+  const orden = pts.map((P, i) => [pto(P, P), P, tipo[i]]).sort((a, b) => a[0] - b[0]);
+  racimos[nombre] = { pts: orden.map((o) => o[1]), tipo: orden.map((o) => o[2]), R: Math.max(1, R + 1) };
 }
 export const radioRacimo = (nombre) => racimos[nombre].R;
 
 // Una bolita con luz (de arriba a la izquierda), su color de luz, medio y sombra.
 const PROTON = ["#ffc2b0", "#f0503c", "#6e130b"], NEUTRON = ["#eef4ff", "#8fa6c8", "#283850"];
 const GRIS = ["#f2f2f2", "#9a9ea6", "#2c2f35"], DORADA = [ORO.luz, ORO.claro, ORO.oscuro];
-const tono = (A, B, u) => (u <= 0 ? A : [0, 1, 2].map((i) => k.mezColor(A[i], B[i], u)));
+const aRgb = (c) => (c[0] === "#" ? [1, 3, 5].map((i) => parseInt(c.slice(i, i + 2), 16)) : c.match(/\d+/g).map(Number));
+const mezcla = (a, b, u) => { const x = aRgb(a), y = aRgb(b); return `rgb(${[0, 1, 2].map((i) => Math.round(x[i] + (y[i] - x[i]) * u)).join(",")})`; };
+const tono = (A, B, u) => (u <= 0 ? A : [0, 1, 2].map((i) => mezcla(A[i], B[i], u)));
 function bolita(g, x, y, r, c) {
   const gr = g.createRadialGradient(x - r * 0.35, y - r * 0.4, r * 0.08, x, y, r);
   gr.addColorStop(0, c[0]); gr.addColorStop(0.45, c[1]); gr.addColorStop(1, c[2]);
@@ -160,8 +163,8 @@ function bolita(g, x, y, r, c) {
 
 // Un núcleo en (x, y): b es el radio de cada bolita en píxeles; giro, cuánto ha girado; gris y oro, de 0 a 1, cuánto
 // se vuelve gris (el hierro) o de oro. desarma: de 0 a 1, las bolitas se separan y se apagan (lo que no llega a formarse).
-export function racimo(g, nombre, x, y, b, giro = 0, gris = 0, oro = 0, desarma = 0) {
-  const { pts, tipo } = racimos[nombre], cg = Math.cos(giro), sg = Math.sin(giro), ci = Math.cos(0.35), si = Math.sin(0.35);
+export function racimo(g, nombre, x, y, b, giro = 0, gris = 0, oro = 0, desarma = 0, cuantos = Infinity) {
+  const pts = racimos[nombre].pts.slice(0, Math.max(1, Math.round(cuantos))), tipo = racimos[nombre].tipo, cg = Math.cos(giro), sg = Math.sin(giro), ci = Math.cos(0.35), si = Math.sin(0.35);
   const lista = pts.map((P, i) => {
     let X = P[0] * cg + P[2] * sg, Z = -P[0] * sg + P[2] * cg, Y = P[1];
     const Y2 = Y * ci - Z * si; Z = Y * si + Z * ci; Y = Y2;
@@ -248,5 +251,36 @@ export function neutrones(g, x, y, r, t, late = 0, al = 1) {
   const gr = g.createRadialGradient(x - r * 0.2, y - r * 0.25, 0, x, y, r);
   gr.addColorStop(0, `rgba(255,255,255,${0.75 + 0.2 * late})`); gr.addColorStop(0.55, "rgba(200,225,255,0.45)"); gr.addColorStop(1, "rgba(120,170,255,0.25)");
   g.fillStyle = gr; g.beginPath(); g.arc(x, y, r, 0, Math.PI * 2); g.fill();
+  g.restore();
+}
+
+// Un neutrón suelto (una bolita gris azulada), y un protón.
+export const bolaNeutron = (g, x, y, r) => bolita(g, x, y, r, NEUTRON);
+
+// ---------------------------------------------------------------- una Tierra de oro macizo
+// La Tierra con sus continentes, pero toda de oro: se dibuja la Tierra, se le da el color del oro (sin perder sus luces
+// y sombras) y encima su brillo. Se hace una vez por fotograma a 360 px y se pone donde haga falta.
+const TAM_T = 360, tierraL = k.lienzo(TAM_T), mascaraL = k.lienzo(TAM_T);
+let tierraGira = null;
+export function tierraDeOro(g, x, y, rad, gira, al = 1) {
+  if (al <= 0.01 || rad < 1) return;
+  if (tierraGira !== gira) {
+    tierraGira = gira;
+    const m = mascaraL.getContext("2d"), c = tierraL.getContext("2d");
+    m.clearRect(0, 0, TAM_T, TAM_T); k.tierra(m, TAM_T / 2, TAM_T / 2, TAM_T * 0.42, gira, -0.8, -0.6);
+    c.globalCompositeOperation = "source-over"; c.clearRect(0, 0, TAM_T, TAM_T); c.drawImage(mascaraL, 0, 0);
+    c.globalCompositeOperation = "color"; c.fillStyle = "#e8a722"; c.fillRect(0, 0, TAM_T, TAM_T);
+    c.globalCompositeOperation = "overlay"; c.fillStyle = "rgba(255,200,80,0.55)"; c.fillRect(0, 0, TAM_T, TAM_T);
+    c.globalCompositeOperation = "destination-in"; c.drawImage(mascaraL, 0, 0);
+    c.globalCompositeOperation = "source-over";
+  }
+  const s = rad / (TAM_T * 0.42);
+  g.save(); g.globalAlpha *= al;
+  k.brillo(g, x, y, rad * 3.2, ORO_RGB, 0.35);
+  g.drawImage(tierraL, x - (TAM_T / 2) * s, y - (TAM_T / 2) * s, TAM_T * s, TAM_T * s);
+  g.globalCompositeOperation = "lighter";
+  const gr = g.createRadialGradient(x - rad * 0.4, y - rad * 0.45, 0, x - rad * 0.3, y - rad * 0.35, rad * 0.7);
+  gr.addColorStop(0, "rgba(255,250,220,0.55)"); gr.addColorStop(1, "rgba(255,250,220,0)");
+  g.fillStyle = gr; g.beginPath(); g.arc(x, y, rad, 0, Math.PI * 2); g.fill();
   g.restore();
 }

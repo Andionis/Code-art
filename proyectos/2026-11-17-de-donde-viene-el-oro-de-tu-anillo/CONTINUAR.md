@@ -21,7 +21,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 - [ ] 5. Escena por escena (cada una, su borrador aprobado):
   - [x] escena 1 (el hook): frases 1-2, hasta 7,7 s
   - [x] escena 2 (la estrella): frases 3-4, hasta 20,8 s
-  - [ ] escena 3 (la estrella de neutrones): frases 5-6, hasta 34,0 s
+  - [x] escena 3 (la estrella de neutrones): frases 5-6, hasta 34,0 s
   - [ ] escena 4 (el choque): frases 7-9, hasta 54,1 s
   - [ ] escena 5 (del polvo a tu anillo): frases 10-13, hasta el final
 - [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
