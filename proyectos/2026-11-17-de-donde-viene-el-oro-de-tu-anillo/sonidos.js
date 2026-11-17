@@ -61,6 +61,7 @@ pon("empujon", f(8).t("neutrones") + 0.6, { db: -12, que: "la cámara entra en l
 for (let t = pegan + 0.15, i = 0; t < f(8).t("segundo") + 0.45; t += 0.17, i++) pon("tic", t, { db: -17, vel: 0.9 + (i % 3) * 0.1, que: "un neutrón se pega" });
 pon("late", naceOro + 0.1, { db: -9, que: "nace el oro" });
 pon("aire", f(9).inicio, { db: -12, vel: 0.7, que: "la cámara sale de la nube" });
+pon("aire", f(9).t("vimos") + 0.1, { db: -16, vel: 0.6, que: "la nube brilla a lo lejos" });
 pon("sube", f(9).t("fabrico"), { db: -14, que: "el oro sale de la nube" });
 pon("aire", f(9).t("tanto") + 0.3, { db: -16, vel: 0.6, que: "el chorro de oro" });
 llegaTierra.forEach((t, i) => pon("golpe", t - 0.25, { db: -13, vel: 1.15 - i * 0.07, que: "se forma una Tierra de oro" }));
@@ -85,6 +86,6 @@ pon("clic", f(12).t("sol"), { db: -15, que: "aparece el Sol" });
 pon("estallido", choqueFinal + 0.05, { db: -13, lp: 1400, vel: 1.2, que: "chocan las estrellas del fondo" });
 pon("sube", choqueFinal + 0.6, { db: -13, que: "el oro viaja al anillo" });
 pon("late", choqueFinal + 1.0, { db: -10, que: "el anillo brilla con el oro" });
-pon("aire", f(13).t("amigo") - 0.3, { ancla: "empieza", db: -15, vel: 0.6, que: "la cámara se aleja" });
+pon("aire", f(13).t("siguenos") - 0.3, { ancla: "empieza", db: -15, vel: 0.6, que: "la cámara se aleja" });
 
 export default e;

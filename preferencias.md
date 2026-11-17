@@ -7,7 +7,7 @@
 - «El nicho que yo te diga»: elige el tema en cada video. Sin ficha fija.
 
 ## Cierre
-- «Envíaselo a un amigo que le pueda interesar».
+- «a partir de ahora cambie cuando dice envíaselo a un amigo por síguenos y cosa así» (desde el 2026-11-17). Frase: «Síguenos para más datos que te vuelan la cabeza». Antes: «Envíaselo a un amigo que le pueda interesar».
 
 ## Sonido
 - Efectos de sonido: sí.

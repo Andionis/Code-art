@@ -1,5 +1,5 @@
-// «Así que tu anillo es más viejo que el Sol: es polvo de estrellas que chocaron. Envíaselo a un amigo que le pueda
-// interesar.»
+// «Así que tu anillo es más viejo que el Sol: es polvo de estrellas que chocaron. Síguenos para más datos que te vuelan
+// la cabeza.»
 // - Corte en «Así»: el anillo de oro otra vez, cerca, girando.
 // - «más viejo que el Sol»: detrás aparece el Sol, lejos, y se apaga.
 // - «polvo de estrellas que chocaron»: al fondo, por el agujero, dos estrellas azules chocan con un destello y de ellas
@@ -8,6 +8,7 @@
 //   estrellas al fondo y las chispas llegando), para que el final enlace con el principio.
 import * as k from "#kit";
 import { v } from "#voz";
+import { choque as choqueHook } from "./01-hook.js";
 import { anillo, chispa, destello, espiral, puntoAnillo, veloArriba, ORO_RGB } from "../mundo.js";
 
 export const desde = (v) => v.frase(12).inicio;
@@ -16,7 +17,7 @@ export const entrada = "corte";
 const { suave, tramo, pulso, proyecta, F } = k;
 const f12 = v.frase(12), f13 = v.frase(13);
 const T0 = f12.inicio, Tanillo = f12.t("anillo"), Tviejo = f12.t("viejo"), Tsol = f12.t("sol"), Tpolvo = f12.t("polvo"), Tchoc = f12.t("chocaron") + 0.1;
-const Tamigo = f13.t("amigo"), FIN = v.duracion ?? 74.24;
+const Tsig = f13.t("siguenos"), FIN = v.duracion ?? 74.24;
 
 // la cámara y el giro del anillo terminan donde empieza el video (01-hook en t = 0), con la misma velocidad
 const camZ = k.claves([[T0, 2.7], [Tviejo, 2.85], [Tchoc, 3.05], [FIN, 3.35], [FIN + 1, 2.95]]);
@@ -53,13 +54,13 @@ export function dibuja(g, t) {
   const C = proyecta(cam, C2);
   if (C) {
     const antesCh = suave(tramo(t, Tpolvo - 0.6, Tpolvo)) * (t < Tchoc ? 1 : 0);
-    const otraVez = suave(tramo(t, Tamigo - 0.3, FIN - 0.3));
+    const otraVez = suave(tramo(t, Tsig - 0.3, FIN - 0.3));
     const dibujaPar = (tt, Tc, al) => {
       const [a, b] = espiral(C2, tt, Tc, 3, 4.4, 5);
       for (const X of [a, b]) { const Q = proyecta(cam, X); if (Q) k.estrellaTransparente(g, "azul", Q.x, Q.y, (F * 0.42) / Q.z, tt * 0.8, 0.5, al); }
     };
-    if (antesCh > 0) dibujaPar(t - (Tchoc - 4.46), 4.46, antesCh);
-    if (otraVez > 0) dibujaPar(t - FIN, 4.46, otraVez);
+    if (antesCh > 0) dibujaPar(t - (Tchoc - choqueHook), choqueHook, antesCh);
+    if (otraVez > 0) dibujaPar(t - FIN, choqueHook, otraVez);
     if (t >= Tchoc) {
       const u = t - Tchoc;
       k.fogonazo(g, C.x, C.y, u * 1.4, 700, "255,222,150");
@@ -72,7 +73,7 @@ export function dibuja(g, t) {
     }
   }
   // las chispas que llegan del fondo, como al principio
-  const al0 = suave(tramo(t, Tamigo - 0.6, FIN - 0.4));
+  const al0 = suave(tramo(t, Tsig - 0.6, FIN - 0.4));
   if (al0 > 0) for (const c of llegan) {
     const f = (c.fase + t * c.vel) % 1, X = k.mezV(c.a, c.b, f);
     chispa(g, cam, null, X, c.tam, al0 * Math.sin(Math.PI * f) * 0.9);
