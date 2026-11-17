@@ -5,7 +5,7 @@
 ¿De dónde viene el oro? No se hizo en la Tierra.
 Se fabricó cuando chocaron dos estrellas de neutrones, antes de que existiera el Sol. Tu anillo es más viejo que el Sol ✨
 
-Envíaselo a ese amigo que no se quita su anillo.
+Síguenos para más datos que te vuelan la cabeza.
 ¿Sabías que el oro venía del espacio?
 
 #oro #espacio #astronomia #ciencia #estrellas
@@ -20,7 +20,7 @@ Envíaselo a ese amigo que no se quita su anillo.
 
 **Título:** De dónde viene el oro: de un choque de estrellas
 
-**Descripción:** El oro de tu anillo no se hizo en la Tierra: nació cuando chocaron dos estrellas de neutrones, antes de que existiera el Sol. En 2017 vimos uno de esos choques, y fabricó oro como para varias Tierras. Suscríbete para más ciencia en un minuto.
+**Descripción:** El oro de tu anillo no se hizo en la Tierra: nació cuando chocaron dos estrellas de neutrones, antes de que existiera el Sol. En 2017 vimos uno de esos choques, y fabricó oro como para varias Tierras. Síguenos para más datos que te vuelan la cabeza.
 
 #Shorts #oro #espacio #astronomia #ciencia
 
@@ -28,4 +28,4 @@ Envíaselo a ese amigo que no se quita su anillo.
 
 ## Facebook Reels
 
-El oro de tu anillo no se hizo en la Tierra: viene de un choque de estrellas más viejo que el Sol. Compártelo con alguien que tenga un anillo de oro. ¿Lo sabías? #oro #espacio
+El oro de tu anillo no se hizo en la Tierra: viene de un choque de estrellas más viejo que el Sol. Síguenos para más datos así. ¿Lo sabías? #oro #espacio
