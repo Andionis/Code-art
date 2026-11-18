@@ -2,6 +2,7 @@
   "titulo": "Por qué te duele la cabeza al tomar algo muy helado",
   "idioma": "es",
   "subtitulos": "arriba",
+  "voz": { "id": "TX3LPaxmHKxFdv7VOQHJ" },
   "frases": [
     { "texto": "¿Por qué te duele la cabeza cuando tomas algo muy helado?", "clave": "helado", "hook": true },
     { "texto": "Tu cerebro no se está congelando: el frío ni siquiera le llega.", "clave": "congelando", "hook": true },
