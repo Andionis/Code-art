@@ -50,7 +50,7 @@ export const estado = (t) => {
 
 // las ondas de la presión: anillos rojos que salen de la arteria y chocan contra el cráneo
 function ondas(g, t) {
-  const on = (0.45 * su(tr(t, Tcer + 0.2, Tcer + 0.8)) + 0.55 * su(tr(t, Tpre - 0.3, Tpre + 0.1))) * (1 - su(tr(t, f7.fin, f7.fin + 0.2)));
+  const on = (0.45 * su(tr(t, Tcer + 0.2, Tcer + 0.8)) + 0.55 * su(tr(t, Tpre - 0.3, Tpre + 0.1))) * (1 - su(tr(t, f7.fin - 0.45, f7.fin - 0.05)));
   if (on <= 0) return;
   g.save(); caminoCabeza(g); g.clip(); g.globalCompositeOperation = "lighter"; g.lineWidth = 14;
   for (let i = 0; i < 4; i++) {
