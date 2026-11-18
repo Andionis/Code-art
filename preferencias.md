@@ -20,3 +20,6 @@
 - Palabra del CTA: no usa.
 - CTA: enviar a un amigo (ligado al tema) y una pregunta para comentar.
 - Pocos emojis, sin hashtag fijo.
+
+## Voz
+- «Siempre usa la voz de Liam» (ElevenLabs, id `TX3LPaxmHKxFdv7VOQHJ`).

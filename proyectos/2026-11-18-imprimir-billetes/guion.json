@@ -2,18 +2,60 @@
   "titulo": "¿Por qué no imprimen más billetes?",
   "idioma": "es",
   "subtitulos": "arriba",
+  "voz": {
+    "id": "TX3LPaxmHKxFdv7VOQHJ"
+  },
   "frases": [
-    { "texto": "¿Por qué no imprimen más billetes para que todos seamos ricos?", "clave": "ricos", "hook": true },
-    { "texto": "Zimbabue lo intentó, y terminó imprimiendo un billete de cien billones.", "clave": "billones", "hook": true },
-    { "texto": "Imagina un pueblo con diez panes y diez billetes: cada pan cuesta un billete.", "clave": "pan" },
-    { "texto": "Ahora la máquina imprime diez billetes más.", "clave": "imprime" },
-    { "texto": "Todos tienen el doble, pero del horno siguen saliendo diez panes.", "clave": "horno" },
-    { "texto": "Así que el panadero sube el precio: ahora cada pan cuesta dos billetes.", "clave": "dos" },
-    { "texto": "Nadie es más rico: solo hay más papel.", "clave": "papel" },
-    { "texto": "Eso es la inflación, y si no paras la máquina, se descontrola.", "clave": "inflación" },
-    { "texto": "En Zimbabue, los precios llegaron a duplicarse cada día.", "clave": "cada día" },
-    { "texto": "Y en Alemania, un pan que costaba 160 marcos terminó costando 200 mil millones en menos de un año.", "clave": "200 mil millones", "dicho": "Y en Alemania, un pan que costaba ciento sesenta marcos terminó costando doscientos mil millones en menos de un año." },
-    { "texto": "Porque el dinero no es la riqueza: imprimir más no hace más pan, solo hace que cada billete valga menos.", "clave": "menos" },
-    { "texto": "Envíaselo a un amigo que le pueda interesar.", "clave": "amigo" }
+    {
+      "texto": "¿Por qué no imprimen más billetes para que todos seamos ricos?",
+      "clave": "ricos",
+      "hook": true
+    },
+    {
+      "texto": "Zimbabue lo intentó, y terminó imprimiendo un billete de cien billones.",
+      "clave": "billones",
+      "hook": true
+    },
+    {
+      "texto": "Imagina un pueblo con diez panes y diez billetes: cada pan cuesta un billete.",
+      "clave": "pan"
+    },
+    {
+      "texto": "Ahora la máquina imprime diez billetes más.",
+      "clave": "imprime"
+    },
+    {
+      "texto": "Todos tienen el doble, pero del horno siguen saliendo diez panes.",
+      "clave": "horno"
+    },
+    {
+      "texto": "Así que el panadero sube el precio: ahora cada pan cuesta dos billetes.",
+      "clave": "dos"
+    },
+    {
+      "texto": "Nadie es más rico: solo hay más papel.",
+      "clave": "papel"
+    },
+    {
+      "texto": "Eso es la inflación, y si no paras la máquina, se descontrola.",
+      "clave": "inflación"
+    },
+    {
+      "texto": "En Zimbabue, los precios llegaron a duplicarse cada día.",
+      "clave": "día"
+    },
+    {
+      "texto": "Y en Alemania, un pan que costaba 160 marcos terminó costando 200 mil millones en menos de un año.",
+      "clave": "millones",
+      "dicho": "Y en Alemania, un pan que costaba ciento sesenta marcos terminó costando doscientos mil millones en menos de un año."
+    },
+    {
+      "texto": "Porque el dinero no es la riqueza: imprimir más no hace más pan, solo hace que cada billete valga menos.",
+      "clave": "menos"
+    },
+    {
+      "texto": "Envíaselo a un amigo que le pueda interesar.",
+      "clave": "amigo"
+    }
   ]
 }

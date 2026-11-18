@@ -1,0 +1,1093 @@
+{
+  "firma": "d3347dd9b0b9",
+  "duracion": 51.2,
+  "frases": [
+    {
+      "n": 1,
+      "texto": "¿Por qué no imprimen más billetes para que todos seamos ricos?",
+      "clave": "ricos",
+      "inicio": 0,
+      "fin": 3.6
+    },
+    {
+      "n": 2,
+      "texto": "Zimbabue lo intentó, y terminó imprimiendo un billete de cien billones.",
+      "clave": "billones",
+      "inicio": 3.68,
+      "fin": 8.28
+    },
+    {
+      "n": 3,
+      "texto": "Imagina un pueblo con diez panes y diez billetes: cada pan cuesta un billete.",
+      "clave": "pan",
+      "inicio": 8.56,
+      "fin": 13.44
+    },
+    {
+      "n": 4,
+      "texto": "Ahora la máquina imprime diez billetes más.",
+      "clave": "imprime",
+      "inicio": 13.52,
+      "fin": 16
+    },
+    {
+      "n": 5,
+      "texto": "Todos tienen el doble, pero del horno siguen saliendo diez panes.",
+      "clave": "horno",
+      "inicio": 16.16,
+      "fin": 19.92
+    },
+    {
+      "n": 6,
+      "texto": "Así que el panadero sube el precio: ahora cada pan cuesta dos billetes.",
+      "clave": "dos",
+      "inicio": 20,
+      "fin": 24.48
+    },
+    {
+      "n": 7,
+      "texto": "Nadie es más rico: solo hay más papel.",
+      "clave": "papel",
+      "inicio": 24.52,
+      "fin": 27.04
+    },
+    {
+      "n": 8,
+      "texto": "Eso es la inflación, y si no paras la máquina, se descontrola.",
+      "clave": "inflación",
+      "inicio": 27.08,
+      "fin": 31.04
+    },
+    {
+      "n": 9,
+      "texto": "En Zimbabue, los precios llegaron a duplicarse cada día.",
+      "clave": "cada día",
+      "inicio": 31.08,
+      "fin": 34.48
+    },
+    {
+      "n": 10,
+      "texto": "Y en Alemania, un pan que costaba 160 marcos terminó costando 200 mil millones en menos de un año.",
+      "clave": "200 mil millones",
+      "inicio": 34.52,
+      "fin": 41.6
+    },
+    {
+      "n": 11,
+      "texto": "Porque el dinero no es la riqueza: imprimir más no hace más pan, solo hace que cada billete valga menos.",
+      "clave": "menos",
+      "inicio": 41.64,
+      "fin": 48
+    },
+    {
+      "n": 12,
+      "texto": "Envíaselo a un amigo que le pueda interesar.",
+      "clave": "amigo",
+      "inicio": 48.24,
+      "fin": 50.4
+    }
+  ],
+  "palabras": [
+    {
+      "texto": "¿Por",
+      "inicio": 0,
+      "fin": 0.16,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "qué",
+      "inicio": 0.2,
+      "fin": 0.24,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "no",
+      "inicio": 0.32,
+      "fin": 0.4,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "imprimen",
+      "inicio": 0.48,
+      "fin": 0.8,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "más",
+      "inicio": 0.88,
+      "fin": 1.04,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "billetes",
+      "inicio": 1.12,
+      "fin": 1.52,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "para",
+      "inicio": 1.6,
+      "fin": 1.68,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 1.76,
+      "fin": 1.84,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "todos",
+      "inicio": 2,
+      "fin": 2.32,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "seamos",
+      "inicio": 2.4,
+      "fin": 2.72,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "ricos?",
+      "inicio": 2.84,
+      "fin": 3.6,
+      "frase": 1,
+      "clave": true
+    },
+    {
+      "texto": "Zimbabue",
+      "inicio": 3.68,
+      "fin": 4.08,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "lo",
+      "inicio": 4.16,
+      "fin": 4.24,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "intentó,",
+      "inicio": 4.4,
+      "fin": 5.04,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "y",
+      "inicio": 5.12,
+      "fin": 5.16,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "terminó",
+      "inicio": 5.2,
+      "fin": 5.573,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "imprimiendo",
+      "inicio": 5.627,
+      "fin": 6.08,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "un",
+      "inicio": 6.12,
+      "fin": 6.16,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "billete",
+      "inicio": 6.24,
+      "fin": 6.56,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 6.64,
+      "fin": 6.8,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "cien",
+      "inicio": 6.88,
+      "fin": 7.12,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "billones.",
+      "inicio": 7.28,
+      "fin": 8.28,
+      "frase": 2,
+      "clave": true
+    },
+    {
+      "texto": "Imagina",
+      "inicio": 8.56,
+      "fin": 8.96,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "un",
+      "inicio": 9,
+      "fin": 9.04,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "pueblo",
+      "inicio": 9.12,
+      "fin": 9.36,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "con",
+      "inicio": 9.44,
+      "fin": 9.6,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "diez",
+      "inicio": 9.68,
+      "fin": 9.92,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "panes",
+      "inicio": 10,
+      "fin": 10.4,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "y",
+      "inicio": 10.44,
+      "fin": 10.48,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "diez",
+      "inicio": 10.56,
+      "fin": 10.76,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "billetes:",
+      "inicio": 10.8,
+      "fin": 11.68,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "cada",
+      "inicio": 11.733,
+      "fin": 11.84,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "pan",
+      "inicio": 12,
+      "fin": 12.16,
+      "frase": 3,
+      "clave": true
+    },
+    {
+      "texto": "cuesta",
+      "inicio": 12.24,
+      "fin": 12.48,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "un",
+      "inicio": 12.52,
+      "fin": 12.56,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "billete.",
+      "inicio": 12.64,
+      "fin": 13.44,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "Ahora",
+      "inicio": 13.52,
+      "fin": 13.76,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 13.8,
+      "fin": 13.84,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "máquina",
+      "inicio": 13.92,
+      "fin": 14.16,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "imprime",
+      "inicio": 14.24,
+      "fin": 14.64,
+      "frase": 4,
+      "clave": true
+    },
+    {
+      "texto": "diez",
+      "inicio": 14.76,
+      "fin": 14.92,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "billetes",
+      "inicio": 14.96,
+      "fin": 15.36,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "más.",
+      "inicio": 15.44,
+      "fin": 16,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "Todos",
+      "inicio": 16.16,
+      "fin": 16.32,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "tienen",
+      "inicio": 16.36,
+      "fin": 16.56,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 16.64,
+      "fin": 16.72,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "doble,",
+      "inicio": 16.76,
+      "fin": 17.36,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "pero",
+      "inicio": 17.44,
+      "fin": 17.56,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "del",
+      "inicio": 17.6,
+      "fin": 17.68,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "horno",
+      "inicio": 17.76,
+      "fin": 18.08,
+      "frase": 5,
+      "clave": true
+    },
+    {
+      "texto": "siguen",
+      "inicio": 18.16,
+      "fin": 18.4,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "saliendo",
+      "inicio": 18.44,
+      "fin": 18.8,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "diez",
+      "inicio": 18.88,
+      "fin": 19.12,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "panes.",
+      "inicio": 19.2,
+      "fin": 19.92,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "Así",
+      "inicio": 20,
+      "fin": 20.16,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 20.2,
+      "fin": 20.24,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 20.28,
+      "fin": 20.32,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "panadero",
+      "inicio": 20.4,
+      "fin": 20.8,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "sube",
+      "inicio": 20.88,
+      "fin": 21.08,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 21.12,
+      "fin": 21.2,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "precio:",
+      "inicio": 21.4,
+      "fin": 21.84,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "ahora",
+      "inicio": 21.92,
+      "fin": 22.32,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "cada",
+      "inicio": 22.36,
+      "fin": 22.56,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "pan",
+      "inicio": 22.64,
+      "fin": 22.88,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "cuesta",
+      "inicio": 22.92,
+      "fin": 23.28,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "dos",
+      "inicio": 23.36,
+      "fin": 23.52,
+      "frase": 6,
+      "clave": true
+    },
+    {
+      "texto": "billetes.",
+      "inicio": 23.6,
+      "fin": 24.48,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "Nadie",
+      "inicio": 24.52,
+      "fin": 24.8,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "es",
+      "inicio": 24.84,
+      "fin": 24.88,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "más",
+      "inicio": 24.96,
+      "fin": 25.08,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "rico:",
+      "inicio": 25.12,
+      "fin": 25.68,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "solo",
+      "inicio": 25.733,
+      "fin": 25.84,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "hay",
+      "inicio": 25.92,
+      "fin": 26,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "más",
+      "inicio": 26.04,
+      "fin": 26.16,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "papel.",
+      "inicio": 26.293,
+      "fin": 27.04,
+      "frase": 7,
+      "clave": true
+    },
+    {
+      "texto": "Eso",
+      "inicio": 27.08,
+      "fin": 27.44,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "es",
+      "inicio": 27.52,
+      "fin": 27.6,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 27.68,
+      "fin": 27.72,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "inflación,",
+      "inicio": 27.76,
+      "fin": 28.48,
+      "frase": 8,
+      "clave": true
+    },
+    {
+      "texto": "y",
+      "inicio": 28.52,
+      "fin": 28.56,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "si",
+      "inicio": 28.6,
+      "fin": 28.64,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "no",
+      "inicio": 28.72,
+      "fin": 28.88,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "paras",
+      "inicio": 28.96,
+      "fin": 29.12,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 29.2,
+      "fin": 29.28,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "máquina,",
+      "inicio": 29.307,
+      "fin": 29.76,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "se",
+      "inicio": 29.84,
+      "fin": 29.92,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "descontrola.",
+      "inicio": 30,
+      "fin": 31.04,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "En",
+      "inicio": 31.08,
+      "fin": 31.12,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "Zimbabue,",
+      "inicio": 31.2,
+      "fin": 31.84,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "los",
+      "inicio": 31.92,
+      "fin": 32,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "precios",
+      "inicio": 32.08,
+      "fin": 32.4,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "llegaron",
+      "inicio": 32.453,
+      "fin": 32.72,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 32.76,
+      "fin": 32.8,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "duplicarse",
+      "inicio": 32.84,
+      "fin": 33.52,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "cada",
+      "inicio": 33.56,
+      "fin": 33.84,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "día.",
+      "inicio": 33.92,
+      "fin": 34.48,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "Y",
+      "inicio": 34.52,
+      "fin": 34.56,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "en",
+      "inicio": 34.6,
+      "fin": 34.64,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "Alemania,",
+      "inicio": 34.72,
+      "fin": 35.36,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "un",
+      "inicio": 35.44,
+      "fin": 35.52,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "pan",
+      "inicio": 35.6,
+      "fin": 35.68,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 35.76,
+      "fin": 35.84,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "costaba",
+      "inicio": 35.92,
+      "fin": 36.24,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "160",
+      "inicio": 36.32,
+      "fin": 37.04,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "marcos",
+      "inicio": 37.2,
+      "fin": 37.52,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "terminó",
+      "inicio": 37.6,
+      "fin": 37.92,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "costando",
+      "inicio": 38.04,
+      "fin": 38.4,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "200",
+      "inicio": 38.48,
+      "fin": 39.12,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "mil",
+      "inicio": 39.28,
+      "fin": 39.44,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "millones",
+      "inicio": 39.52,
+      "fin": 40,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "en",
+      "inicio": 40.08,
+      "fin": 40.32,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "menos",
+      "inicio": 40.4,
+      "fin": 40.56,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 40.64,
+      "fin": 40.72,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "un",
+      "inicio": 40.76,
+      "fin": 40.8,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "año.",
+      "inicio": 40.88,
+      "fin": 41.6,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "Porque",
+      "inicio": 41.64,
+      "fin": 41.76,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 41.8,
+      "fin": 41.84,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "dinero",
+      "inicio": 41.92,
+      "fin": 42.24,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "no",
+      "inicio": 42.32,
+      "fin": 42.4,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "es",
+      "inicio": 42.48,
+      "fin": 42.56,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 42.64,
+      "fin": 42.68,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "riqueza:",
+      "inicio": 42.72,
+      "fin": 43.52,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "imprimir",
+      "inicio": 43.6,
+      "fin": 44,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "más",
+      "inicio": 44.08,
+      "fin": 44.32,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "no",
+      "inicio": 44.4,
+      "fin": 44.48,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "hace",
+      "inicio": 44.56,
+      "fin": 44.72,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "más",
+      "inicio": 44.8,
+      "fin": 44.96,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "pan,",
+      "inicio": 45.12,
+      "fin": 45.6,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "solo",
+      "inicio": 45.64,
+      "fin": 45.84,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "hace",
+      "inicio": 45.88,
+      "fin": 46.08,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 46.16,
+      "fin": 46.32,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "cada",
+      "inicio": 46.36,
+      "fin": 46.56,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "billete",
+      "inicio": 46.64,
+      "fin": 47.04,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "valga",
+      "inicio": 47.12,
+      "fin": 47.36,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "menos.",
+      "inicio": 47.44,
+      "fin": 48,
+      "frase": 11,
+      "clave": true
+    },
+    {
+      "texto": "Envíaselo",
+      "inicio": 48.24,
+      "fin": 48.72,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 48.747,
+      "fin": 48.773,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "un",
+      "inicio": 48.8,
+      "fin": 48.88,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "amigo",
+      "inicio": 48.96,
+      "fin": 49.2,
+      "frase": 12,
+      "clave": true
+    },
+    {
+      "texto": "que",
+      "inicio": 49.24,
+      "fin": 49.28,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "le",
+      "inicio": 49.32,
+      "fin": 49.36,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "pueda",
+      "inicio": 49.44,
+      "fin": 49.6,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "interesar.",
+      "inicio": 49.72,
+      "fin": 50.4,
+      "frase": 12,
+      "clave": false
+    }
+  ]
+}
