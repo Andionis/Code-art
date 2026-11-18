@@ -7,7 +7,7 @@
 - «El nicho que yo te diga»: elige el tema en cada video. Sin ficha fija.
 
 ## Cierre
-- «Envíaselo a un amigo que le pueda interesar».
+- «Quiero que al final del video pongas síguenos para más en vez de envíaselo a un amigo y ponle una animación como de botón de sígueme, y quiero que el video haga un movimiento como que va a empezar de nuevo».
 
 ## Sonido
 - Efectos de sonido: sí.

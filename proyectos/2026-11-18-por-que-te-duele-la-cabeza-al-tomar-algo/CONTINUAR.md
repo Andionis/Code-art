@@ -9,10 +9,11 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 - Guion: «Apruebo».
 - Hook: «Arregla el sorbete está mal colocado se ve mal» → pajita doblada que sale por la tapa; luego «Apruebo».
 - Voz: Liam (TX3LPaxmHKxFdv7VOQHJ), como en el video anterior (plan gratis de ElevenLabs).
+- Cierre: «Quiero que al final del video pongas síguenos para más en vez de envíaselo a un amigo y ponle una animación como de botón de sígueme, y quiero que el video haga un movimiento como que va a empezar de nuevo» (guardado en preferencias.md). La frase «Síguenos para más.» se grabó aparte con otra clave (la primera cuenta se quedó sin caracteres) y se pegó tras «prisa».
 
 ## Pendiente del creador
 
-- Ver y aprobar la escena 5 (la prisa y el cierre): revisar/escenas 1-5 prisa v1 (borrador).mp4
+- Ver y aprobar la escena 5 (la prisa y el cierre): revisar/escenas 1-5 prisa v2 (borrador).mp4
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 

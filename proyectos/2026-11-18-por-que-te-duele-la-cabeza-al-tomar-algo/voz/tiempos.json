@@ -1,6 +1,6 @@
 {
-  "firma": "c1df98915840",
-  "duracion": 52.08,
+  "firma": "c15d3a1fb5a2",
+  "duracion": 52.679,
   "frases": [
     {
       "n": 1,
@@ -81,10 +81,10 @@
     },
     {
       "n": 12,
-      "texto": "Envíaselo a un amigo que le pueda interesar.",
-      "clave": "amigo",
-      "inicio": 49.16,
-      "fin": 51.28
+      "texto": "Síguenos para más.",
+      "clave": "síguenos",
+      "inicio": 49.419,
+      "fin": 50.858
     }
   ],
   "palabras": [
@@ -1195,58 +1195,23 @@
       "clave": true
     },
     {
-      "texto": "Envíaselo",
-      "inicio": 49.16,
-      "fin": 49.6,
-      "frase": 12,
-      "clave": false
-    },
-    {
-      "texto": "a",
-      "inicio": 49.627,
-      "fin": 49.653,
-      "frase": 12,
-      "clave": false
-    },
-    {
-      "texto": "un",
-      "inicio": 49.68,
-      "fin": 49.76,
-      "frase": 12,
-      "clave": false
-    },
-    {
-      "texto": "amigo",
-      "inicio": 49.84,
-      "fin": 50,
+      "texto": "Síguenos",
+      "inicio": 49.419,
+      "fin": 49.979,
       "frase": 12,
       "clave": true
     },
     {
-      "texto": "que",
-      "inicio": 50.08,
-      "fin": 50.16,
+      "texto": "para",
+      "inicio": 50.099,
+      "fin": 50.218,
       "frase": 12,
       "clave": false
     },
     {
-      "texto": "le",
-      "inicio": 50.2,
-      "fin": 50.24,
-      "frase": 12,
-      "clave": false
-    },
-    {
-      "texto": "pueda",
-      "inicio": 50.32,
-      "fin": 50.48,
-      "frase": 12,
-      "clave": false
-    },
-    {
-      "texto": "interesar.",
-      "inicio": 50.6,
-      "fin": 51.28,
+      "texto": "más.",
+      "inicio": 50.259,
+      "fin": 50.858,
       "frase": 12,
       "clave": false
     }

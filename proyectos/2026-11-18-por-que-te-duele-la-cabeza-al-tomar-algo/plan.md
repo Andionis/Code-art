@@ -25,8 +25,8 @@ nervio que lleva el aviso también lleva la frente: por eso duele la frente y no
 | 8 | Pero lo más raro: el aviso viaja por un **nervio** que también lleva lo que sientes en la frente. | Se enciende el nervio amarillo: del paladar sube y se parte en dos ramas, una a la boca y otra a la frente. Una chispa sube desde el paladar. | «nervio», «frente» | sigue la chispa | sigue |
 | 9 | Así que tu cerebro se confunde, y te duele la **frente**, no la boca. | La chispa llega al cerebro, que duda entre las dos ramas; «frente»: se enciende la frente en rojo; «no la boca»: la boca, tranquila. | «confunde», «frente» | se aleja hasta la cabeza | sigue |
 | 10 | Por eso casi siempre dura menos de un **minuto**: en cuanto tu boca se calienta, se apaga. | Un reloj «menos de 1 minuto»; la boca pasa de azul a naranja cálido, la escarcha se derrite y el rojo de la frente se apaga. | «minuto», «apaga» | quieta | corte en «Y» |
-| 11 | Y si tomas rápido, te pasa el **doble** de veces. No es el helado: es la prisa. | Dos granizados; el de la izquierda se vacía de un sorbo, dos rayos de dolor; el otro, despacio, uno. «doble»: 2 contra 1. «prisa»: el rápido sorbe la última gota. | «doble», «prisa» | quieta | corte en «Envíaselo» |
-| 12 | Envíaselo a un **amigo** que le pueda interesar. | La cabeza vuelve a sorber el granizado, y la escarcha empieza a subir a la frente (como el principio). | «amigo» | se acerca a la pajita | fin (enlaza con el hook) |
+| 11 | Y si tomas rápido, te pasa el **doble** de veces. No es el helado: es la prisa. | Dos granizados; el de la izquierda se vacía de un sorbo, dos rayos de dolor; el otro, despacio, uno. «doble»: 2 contra 1. «prisa»: el rápido sorbe la última gota. | «doble», «prisa» | quieta | corte en «Síguenos» |
+| 12 | **Síguenos** para más. | La cabeza a oscuras; llega rebotando un botón rojo «SEGUIR»; en «más» el pulgar lo aprieta y pasa a «SIGUIENDO ✓». Luego el video se rebobina por el hook hasta su primer fotograma. | «más» | quieta; rebobina | fin (enlaza con el hook) |
 
 ## Las escenas
 
