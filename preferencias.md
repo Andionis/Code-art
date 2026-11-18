@@ -7,7 +7,8 @@
 - «El nicho que yo te diga»: elige el tema en cada video. Sin ficha fija.
 
 ## Cierre
-- «Envíaselo a un amigo que le pueda interesar».
+- «Síguenos para más», con «una animación como de botón de sígueme»: «En todos los videos los quiero» (pieza `#piezas/boton-seguir.js`; ejemplo en proyectos/2026-11-18-imprimir-billetes, plano 09).
+- Antes: «Envíaselo a un amigo que le pueda interesar» (ya no).
 
 ## Sonido
 - Efectos de sonido: sí.
@@ -18,7 +19,7 @@
 ## Descripciones
 - Cuentas: sin @ por ahora.
 - Palabra del CTA: no usa.
-- CTA: enviar a un amigo (ligado al tema) y una pregunta para comentar.
+- CTA: «Síguenos para más» (va con el cierre del video) y una pregunta para comentar.
 - Pocos emojis, sin hashtag fijo.
 
 ## Voz
