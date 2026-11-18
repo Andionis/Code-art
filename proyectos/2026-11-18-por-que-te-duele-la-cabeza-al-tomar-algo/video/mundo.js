@@ -135,6 +135,7 @@ const VASOS = [0, 1, 2].map((j) => suaviza(PALADAR.slice(0, 5).map(([x, y], i) =
 // frente.
 export const ARTERIA = suaviza([[160, 900], [160, 420], [140, 220], [70, 80], [-30, 20], [-140, -40], [-240, -150], [-275, -300], [-230, -440]]);
 // El nervio: el nudo detrás de la nariz, una rama al paladar, otra a la frente y otra al cerebro.
+export const GLOBO_U = 0.8;
 export const NUDO = [10, 70];
 export const RAMA_PALADAR = suaviza([[-150, 168], [-100, 130], [-30, 100], NUDO]);
 export const RAMA_FRENTE = suaviza([NUDO, [-90, 20], [-210, -40], [-300, -130], [-330, -240]]);
@@ -247,6 +248,7 @@ export function cabeza(g, t, o = {}) {
   lu.addColorStop(0, `rgba(255,230,220,${0.45 + 0.2 * cal})`); lu.addColorStop(0.5, "rgba(255,150,170,0.05)"); lu.addColorStop(1, "rgba(60,0,40,0.55)");
   g.fillStyle = lu; g.fillRect(-400, -560, 820, 760);
   if (cal > 0) { g.globalCompositeOperation = "lighter"; g.fillStyle = `rgba(255,110,60,${0.16 * cal * (0.6 + 0.4 * late)})`; g.fillRect(-400, -560, 820, 760); }
+  if (o.oscuro) { g.globalCompositeOperation = "source-over"; g.fillStyle = `rgba(20,4,30,${0.55 * o.oscuro})`; g.fillRect(-400, -560, 820, 760); }
   g.restore();
   // la boca por dentro
   g.save();
@@ -283,9 +285,8 @@ export function cabeza(g, t, o = {}) {
   const ar = o.arteria ?? 0;
   if (ar > 0) {
     const inf = Math.max(0, ar - 1), wa = 14 + 40 * inf;
-    if (inf > 0) { g.save(); g.globalCompositeOperation = "lighter"; g.beginPath(); ARTERIA.slice(55).forEach(([x, y], i) => (i ? g.lineTo(x, y) : g.moveTo(x, y))); g.strokeStyle = `rgba(255,60,50,${0.35 * inf})`; g.lineWidth = wa * 2.4; g.lineCap = "round"; g.stroke(); g.restore(); }
     // el ancho crece hacia la frente cuando se infla (tramos cada vez más gruesos, encima unos de otros)
-    const n = ARTERIA.length, tramos = [[0, 14], [0.5, 14 + 14 * inf], [0.58, 14 + 28 * inf], [0.66, 14 + 42 * inf]];
+    const n = ARTERIA.length, tramos = [[0, 14]];
     for (const [desde, wi] of tramos) {
       if (desde > 0 && inf <= 0.01) continue;
       const P = ARTERIA.slice(Math.floor(desde * n));
@@ -293,6 +294,18 @@ export function cabeza(g, t, o = {}) {
       g.beginPath(); P.forEach(([x, y], i) => (i ? g.lineTo(x, y) : g.moveTo(x, y)));
       g.strokeStyle = "#a0102a"; g.lineWidth = wi; g.stroke();
       g.strokeStyle = "rgba(255,120,120,0.85)"; g.lineWidth = wi * 0.32; g.translate(-wi * 0.15, -wi * 0.12); g.stroke();
+      g.restore();
+    }
+    // el globo: un trozo de la arteria, detrás de la frente, que se hincha
+    if (inf > 0.01) {
+      const [bx, by] = puntoEn(ARTERIA, GLOBO_U), R = 10 + 62 * inf;
+      k.brillo(g, bx, by, R * 6, "255,60,50", 0.5 * inf);
+      g.save(); g.globalAlpha *= Math.min(1, ar);
+      g.beginPath(); g.ellipse(bx, by, R * 0.9, R * 1.15, -0.35, 0, 6.283);
+      const bg = g.createRadialGradient(bx - R * 0.35, by - R * 0.45, R * 0.1, bx, by, R * 1.2);
+      bg.addColorStop(0, "#ff8a8a"); bg.addColorStop(0.45, "#e0202e"); bg.addColorStop(1, "#6a0614");
+      g.fillStyle = bg; g.fill();
+      g.beginPath(); g.ellipse(bx - R * 0.35, by - R * 0.5, R * 0.22, R * 0.34, -0.5, 0, 6.283); g.fillStyle = "rgba(255,235,235,0.75)"; g.fill();
       g.restore();
     }
     corre(g, ARTERIA, t, 12, 0.9, "255,80,70", 40 + 30 * inf, (o.flujoArteria ?? 0) * Math.min(1, ar));
