@@ -35,7 +35,7 @@ export const cam = camino2D([
   [Tmin + 0.2, [0.95, -150, -20]],
   [Tcal + 0.3, [1.3, -170, 140]],
   [Tapa + 0.1, [1.25, -170, 110]],
-  [f10.fin + 0.2, [1.05, -160, -30]],
+  [f10.fin - 0.2, [1.1, -165, 0]],
 ]);
 
 const antes = estadoAntes(T0);
@@ -70,7 +70,7 @@ export function dibuja(g, t) {
   granizado(g, t, 0.77, 0);
   cabeza(g, t, e);
   // la boca que se calienta
-  k.brillo(g, PALADAR_C[0], PALADAR_C[1] + 30, 600, "255,150,70", 0.85 * e.calienta * (1 - 0.4 * su(tr(t, Tapa, Tapa + 0.6))));
+  k.brillo(g, PALADAR_C[0], PALADAR_C[1] + 30, 600, "255,150,70", 0.85 * e.calienta * (1 - 0.4 * su(tr(t, Tapa, Tapa + 0.35))));
   // el cerebro duda: las dos puntas del nervio se encienden por turnos
   const duda = su(tr(t, Tcon - 0.1, Tcon + 0.2)) * (1 - su(tr(t, Tfr2 - 0.2, Tfr2)));
   if (duda > 0) {
@@ -91,7 +91,7 @@ export function dibuja(g, t) {
   const [fx, fy] = aPantalla(c, FRENTE[0] - 30, FRENTE[1]);
   k.fogonazo(g, fx, fy, t - Tfr2, 900, "255,90,70");
   // el reloj: menos de 1 minuto, con su aro que se va llenando
-  const rel = su(tr(t, Tmin - 0.25, Tmin + 0.1)) * (1 - su(tr(t, Tapa + 0.2, f10.fin)));
+  const rel = su(tr(t, Tmin - 0.25, Tmin + 0.1)) * (1 - su(tr(t, Tapa + 0.1, f10.fin - 0.25)));
   if (rel > 0) {
     const x = 790, y = 730;
     k.pastilla(g, x, y, "< 1", "min", "255,236,180", rel, 76);

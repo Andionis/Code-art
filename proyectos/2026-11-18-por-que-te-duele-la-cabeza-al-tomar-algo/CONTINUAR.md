@@ -12,7 +12,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Pendiente del creador
 
-- Ver y aprobar la escena 4 (el nervio y el minuto): revisar/escenas 1-4 nervio v1 (borrador).mp4
+- Ver y aprobar la escena 5 (la prisa y el cierre): revisar/escenas 1-5 prisa v1 (borrador).mp4
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
@@ -24,7 +24,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
   - [x] escena 1 (el hook, hasta 8,0 s): aprobada en v2 («Apruebo»)
   - [x] escena 2 (el paladar, hasta 20,5 s): aprobada en v1 («Apruebo»)
   - [x] escena 3 (la presión, hasta 29,3 s): aprobada en v1 («Apruebo»)
-  - [ ] escena 4 (el nervio y el minuto, hasta 43,8 s)
+  - [x] escena 4 (el nervio y el minuto, hasta 43,8 s): aprobada en v1 («Apruebo»)
   - [ ] escena 5 (la prisa y el cierre, hasta el final)
 - [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
