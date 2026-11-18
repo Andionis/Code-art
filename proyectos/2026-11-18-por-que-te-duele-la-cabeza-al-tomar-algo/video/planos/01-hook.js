@@ -53,3 +53,5 @@ export function dibuja(g, t) {
   vineta(g);
   velo(g, 0.45);
 }
+
+export const momentos = { duele: Tdue, cabeza: Tcab, helado: Thel, cerebro: Tcer, congelando: Tcon, frio: Tfri };

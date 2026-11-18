@@ -13,7 +13,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Pendiente del creador
 
-- Ver y aprobar la escena 5 (la prisa y el cierre): revisar/escenas 1-5 prisa v2 (borrador).mp4
+- Ver y aprobar el video completo: revisar/completo v1 (borrador).mp4 (miniatura y descripciones ya en salida/)
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
@@ -26,7 +26,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
   - [x] escena 2 (el paladar, hasta 20,5 s): aprobada en v1 («Apruebo»)
   - [x] escena 3 (la presión, hasta 29,3 s): aprobada en v1 («Apruebo»)
   - [x] escena 4 (el nervio y el minuto, hasta 43,8 s): aprobada en v1 («Apruebo»)
-  - [ ] escena 5 (la prisa y el cierre, hasta el final)
+  - [x] escena 5 (la prisa y el cierre, hasta el final): aprobada en v2 («Apruebo»)
 - [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
 - [ ] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
