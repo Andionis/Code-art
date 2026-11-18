@@ -218,7 +218,7 @@ export function escena(g, t, cam, e) {
     k.brillo(g, 540, 1350, 1600, "255,190,110", 0.22);
     horno(g, t, e.abre ?? 0, e.fuego ?? 0);
     if (e.antesMostrador) e.antesMostrador(g);
-    g.save(); g.translate(0, e.cartelDy ?? 0); cartel(g, t, e.giro ?? 0, e.sube ?? 0, e.cartelAl ?? 1); g.restore();
+    if ((e.cartelAl ?? 1) > 0) { g.save(); g.translate(0, e.cartelDy ?? 0); cartel(g, t, e.giro ?? 0, e.sube ?? 0, e.cartelAl ?? 1); g.restore(); }
     g.drawImage(texMadera, -300, MOSTRADOR, 1680, 1000);
     // los panes
     const tp = e.tPanes || [];

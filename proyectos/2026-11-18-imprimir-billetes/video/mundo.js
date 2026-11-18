@@ -111,8 +111,8 @@ function rodillo(g, cx, cy, s, gira, tono) {
   g.globalCompositeOperation = "multiply"; g.globalAlpha = 0.12; g.drawImage(k.red, x0, cy - r, w, r * 2);
   g.restore();
 }
-export function rotativa(g, cx, cy, s, t, gira, furia = 0) {
-  const sx = furia * Math.sin(t * 61) * 0.06 * s, sy = furia * Math.cos(t * 47) * 0.05 * s;
+export function rotativa(g, cx, cy, s, t, gira, furia = 0, tiembla = furia) {
+  const sx = tiembla * Math.sin(t * 61) * 0.06 * s, sy = tiembla * Math.cos(t * 47) * 0.05 * s;
   cx += sx; cy += sy;
   // el cuerpo: un bloque de hierro pintado, detrás de los rodillos
   const cuerpo = (x, y, w, h, c1, c2) => { const gg = g.createLinearGradient(x, y, x, y + h); gg.addColorStop(0, c1); gg.addColorStop(1, c2); k.redondo(g, x, y, w, h, s * 0.4); g.fillStyle = gg; g.fill(); };
