@@ -1,5 +1,5 @@
 {
-  "firma": "d3347dd9b0b9",
+  "firma": "e3125e3f5908",
   "proveedor": "elevenlabs",
   "ajustes": {
     "id": "TX3LPaxmHKxFdv7VOQHJ",
@@ -17,12 +17,12 @@
     },
     {
       "texto": "qué",
-      "inicio": 0.2,
-      "fin": 0.24
+      "inicio": 0.24,
+      "fin": 0.32
     },
     {
       "texto": "no",
-      "inicio": 0.32,
+      "inicio": 0.36,
       "fin": 0.4
     },
     {
@@ -33,11 +33,11 @@
     {
       "texto": "más",
       "inicio": 0.88,
-      "fin": 1.04
+      "fin": 0.96
     },
     {
       "texto": "billetes",
-      "inicio": 1.12,
+      "inicio": 1.04,
       "fin": 1.52
     },
     {
@@ -52,407 +52,407 @@
     },
     {
       "texto": "todos",
-      "inicio": 2,
-      "fin": 2.32
+      "inicio": 1.92,
+      "fin": 2.24
     },
     {
       "texto": "seamos",
-      "inicio": 2.4,
-      "fin": 2.72
+      "inicio": 2.28,
+      "fin": 2.64
     },
     {
       "texto": "ricos?",
-      "inicio": 2.84,
+      "inicio": 2.76,
       "fin": 3.6
     },
     {
       "texto": "Zimbabue",
-      "inicio": 3.68,
+      "inicio": 3.64,
       "fin": 4.08
     },
     {
       "texto": "lo",
-      "inicio": 4.16,
-      "fin": 4.24
+      "inicio": 4.12,
+      "fin": 4.16
     },
     {
       "texto": "intentó,",
-      "inicio": 4.4,
-      "fin": 5.04
+      "inicio": 4.32,
+      "fin": 4.96
     },
     {
       "texto": "y",
-      "inicio": 5.12,
-      "fin": 5.16
+      "inicio": 5,
+      "fin": 5.04
     },
     {
       "texto": "terminó",
       "inicio": 5.2,
-      "fin": 5.573
+      "fin": 5.413
     },
     {
       "texto": "imprimiendo",
-      "inicio": 5.627,
-      "fin": 6.08
+      "inicio": 5.467,
+      "fin": 5.92
     },
     {
       "texto": "un",
-      "inicio": 6.12,
-      "fin": 6.16
+      "inicio": 5.96,
+      "fin": 6
     },
     {
       "texto": "billete",
-      "inicio": 6.24,
-      "fin": 6.56
+      "inicio": 6.08,
+      "fin": 6.4
     },
     {
       "texto": "de",
-      "inicio": 6.64,
-      "fin": 6.8
+      "inicio": 6.48,
+      "fin": 6.64
     },
     {
       "texto": "cien",
-      "inicio": 6.88,
-      "fin": 7.12
+      "inicio": 6.72,
+      "fin": 6.96
     },
     {
       "texto": "billones.",
-      "inicio": 7.28,
-      "fin": 8.28
+      "inicio": 7.12,
+      "fin": 8.12
     },
     {
       "texto": "Imagina",
-      "inicio": 8.56,
-      "fin": 8.96
+      "inicio": 8.4,
+      "fin": 8.8
     },
     {
       "texto": "un",
-      "inicio": 9,
-      "fin": 9.04
+      "inicio": 8.84,
+      "fin": 8.88
     },
     {
       "texto": "pueblo",
-      "inicio": 9.12,
-      "fin": 9.36
+      "inicio": 8.92,
+      "fin": 9.2
     },
     {
       "texto": "con",
-      "inicio": 9.44,
-      "fin": 9.6
+      "inicio": 9.32,
+      "fin": 9.44
     },
     {
       "texto": "diez",
-      "inicio": 9.68,
-      "fin": 9.92
+      "inicio": 9.52,
+      "fin": 9.68
     },
     {
       "texto": "panes",
-      "inicio": 10,
-      "fin": 10.4
+      "inicio": 9.76,
+      "fin": 10.16
     },
     {
       "texto": "y",
-      "inicio": 10.44,
+      "inicio": 10.2,
+      "fin": 10.24
+    },
+    {
+      "texto": "diez",
+      "inicio": 10.32,
       "fin": 10.48
     },
     {
-      "texto": "diez",
-      "inicio": 10.56,
-      "fin": 10.76
-    },
-    {
       "texto": "billetes:",
-      "inicio": 10.8,
-      "fin": 11.68
+      "inicio": 10.56,
+      "fin": 11.36
     },
     {
       "texto": "cada",
-      "inicio": 11.733,
-      "fin": 11.84
+      "inicio": 11.4,
+      "fin": 11.6
     },
     {
       "texto": "pan",
-      "inicio": 12,
-      "fin": 12.16
+      "inicio": 11.68,
+      "fin": 11.92
     },
     {
       "texto": "cuesta",
-      "inicio": 12.24,
-      "fin": 12.48
+      "inicio": 11.96,
+      "fin": 12.24
     },
     {
       "texto": "un",
-      "inicio": 12.52,
-      "fin": 12.56
+      "inicio": 12.28,
+      "fin": 12.32
     },
     {
       "texto": "billete.",
-      "inicio": 12.64,
-      "fin": 13.44
+      "inicio": 12.4,
+      "fin": 13.2
     },
     {
       "texto": "Ahora",
-      "inicio": 13.52,
-      "fin": 13.76
+      "inicio": 13.28,
+      "fin": 13.52
     },
     {
       "texto": "la",
-      "inicio": 13.8,
-      "fin": 13.84
+      "inicio": 13.56,
+      "fin": 13.6
     },
     {
       "texto": "máquina",
-      "inicio": 13.92,
-      "fin": 14.16
+      "inicio": 13.68,
+      "fin": 13.92
     },
     {
       "texto": "imprime",
-      "inicio": 14.24,
+      "inicio": 14,
+      "fin": 14.32
+    },
+    {
+      "texto": "diez",
+      "inicio": 14.4,
       "fin": 14.64
     },
     {
-      "texto": "diez",
-      "inicio": 14.76,
-      "fin": 14.92
-    },
-    {
       "texto": "billetes",
-      "inicio": 14.96,
-      "fin": 15.36
+      "inicio": 14.72,
+      "fin": 15.04
     },
     {
       "texto": "más.",
-      "inicio": 15.44,
-      "fin": 16
+      "inicio": 15.12,
+      "fin": 15.68
     },
     {
       "texto": "Todos",
-      "inicio": 16.16,
-      "fin": 16.32
+      "inicio": 15.84,
+      "fin": 16
     },
     {
       "texto": "tienen",
-      "inicio": 16.36,
-      "fin": 16.56
+      "inicio": 16.08,
+      "fin": 16.24
     },
     {
       "texto": "el",
-      "inicio": 16.64,
-      "fin": 16.72
+      "inicio": 16.32,
+      "fin": 16.4
     },
     {
       "texto": "doble,",
-      "inicio": 16.76,
-      "fin": 17.36
+      "inicio": 16.44,
+      "fin": 17.04
     },
     {
       "texto": "pero",
-      "inicio": 17.44,
-      "fin": 17.56
+      "inicio": 17.12,
+      "fin": 17.24
     },
     {
       "texto": "del",
-      "inicio": 17.6,
-      "fin": 17.68
+      "inicio": 17.28,
+      "fin": 17.44
     },
     {
       "texto": "horno",
-      "inicio": 17.76,
-      "fin": 18.08
+      "inicio": 17.547,
+      "fin": 17.76
     },
     {
       "texto": "siguen",
-      "inicio": 18.16,
-      "fin": 18.4
+      "inicio": 17.84,
+      "fin": 18.16
     },
     {
       "texto": "saliendo",
-      "inicio": 18.44,
-      "fin": 18.8
+      "inicio": 18.24,
+      "fin": 18.56
     },
     {
       "texto": "diez",
-      "inicio": 18.88,
-      "fin": 19.12
+      "inicio": 18.64,
+      "fin": 18.84
     },
     {
       "texto": "panes.",
-      "inicio": 19.2,
-      "fin": 19.92
+      "inicio": 18.88,
+      "fin": 19.68
     },
     {
       "texto": "Así",
-      "inicio": 20,
-      "fin": 20.16
+      "inicio": 19.76,
+      "fin": 19.88
     },
     {
       "texto": "que",
-      "inicio": 20.2,
-      "fin": 20.24
+      "inicio": 19.92,
+      "fin": 20
     },
     {
       "texto": "el",
-      "inicio": 20.28,
-      "fin": 20.32
+      "inicio": 20.027,
+      "fin": 20.053
     },
     {
       "texto": "panadero",
-      "inicio": 20.4,
-      "fin": 20.8
+      "inicio": 20.08,
+      "fin": 20.56
     },
     {
       "texto": "sube",
-      "inicio": 20.88,
-      "fin": 21.08
+      "inicio": 20.64,
+      "fin": 20.8
     },
     {
       "texto": "el",
-      "inicio": 21.12,
-      "fin": 21.2
+      "inicio": 20.84,
+      "fin": 20.88
     },
     {
       "texto": "precio:",
-      "inicio": 21.4,
-      "fin": 21.84
+      "inicio": 21.08,
+      "fin": 21.6
     },
     {
       "texto": "ahora",
-      "inicio": 21.92,
-      "fin": 22.32
+      "inicio": 21.68,
+      "fin": 21.92
     },
     {
       "texto": "cada",
-      "inicio": 22.36,
-      "fin": 22.56
+      "inicio": 22.08,
+      "fin": 22.32
     },
     {
       "texto": "pan",
-      "inicio": 22.64,
-      "fin": 22.88
+      "inicio": 22.4,
+      "fin": 22.64
     },
     {
       "texto": "cuesta",
-      "inicio": 22.92,
-      "fin": 23.28
+      "inicio": 22.68,
+      "fin": 22.96
     },
     {
       "texto": "dos",
-      "inicio": 23.36,
-      "fin": 23.52
+      "inicio": 23.12,
+      "fin": 23.28
     },
     {
       "texto": "billetes.",
-      "inicio": 23.6,
-      "fin": 24.48
+      "inicio": 23.36,
+      "fin": 24.08
     },
     {
       "texto": "Nadie",
-      "inicio": 24.52,
-      "fin": 24.8
+      "inicio": 24.32,
+      "fin": 24.64
     },
     {
       "texto": "es",
-      "inicio": 24.84,
+      "inicio": 24.68,
+      "fin": 24.72
+    },
+    {
+      "texto": "más",
+      "inicio": 24.8,
       "fin": 24.88
     },
     {
-      "texto": "más",
-      "inicio": 24.96,
-      "fin": 25.08
-    },
-    {
       "texto": "rico:",
-      "inicio": 25.12,
-      "fin": 25.68
+      "inicio": 24.96,
+      "fin": 25.52
     },
     {
       "texto": "solo",
-      "inicio": 25.733,
-      "fin": 25.84
+      "inicio": 25.56,
+      "fin": 25.76
     },
     {
       "texto": "hay",
-      "inicio": 25.92,
-      "fin": 26
+      "inicio": 25.84,
+      "fin": 25.92
     },
     {
       "texto": "más",
-      "inicio": 26.04,
-      "fin": 26.16
+      "inicio": 25.973,
+      "fin": 26.08
     },
     {
       "texto": "papel.",
-      "inicio": 26.293,
-      "fin": 27.04
+      "inicio": 26.12,
+      "fin": 26.8
     },
     {
       "texto": "Eso",
-      "inicio": 27.08,
-      "fin": 27.44
+      "inicio": 27.04,
+      "fin": 27.36
     },
     {
       "texto": "es",
-      "inicio": 27.52,
-      "fin": 27.6
+      "inicio": 27.44,
+      "fin": 27.52
     },
     {
       "texto": "la",
-      "inicio": 27.68,
-      "fin": 27.72
+      "inicio": 27.6,
+      "fin": 27.64
     },
     {
       "texto": "inflación,",
-      "inicio": 27.76,
-      "fin": 28.48
+      "inicio": 27.68,
+      "fin": 28.4
     },
     {
       "texto": "y",
-      "inicio": 28.52,
-      "fin": 28.56
+      "inicio": 28.44,
+      "fin": 28.48
     },
     {
       "texto": "si",
-      "inicio": 28.6,
+      "inicio": 28.56,
       "fin": 28.64
     },
     {
       "texto": "no",
       "inicio": 28.72,
-      "fin": 28.88
+      "fin": 28.8
     },
     {
       "texto": "paras",
-      "inicio": 28.96,
+      "inicio": 28.88,
       "fin": 29.12
     },
     {
       "texto": "la",
-      "inicio": 29.2,
-      "fin": 29.28
+      "inicio": 29.16,
+      "fin": 29.2
     },
     {
       "texto": "máquina,",
-      "inicio": 29.307,
+      "inicio": 29.28,
       "fin": 29.76
     },
     {
       "texto": "se",
-      "inicio": 29.84,
-      "fin": 29.92
+      "inicio": 29.8,
+      "fin": 29.84
     },
     {
       "texto": "descontrola.",
-      "inicio": 30,
+      "inicio": 29.92,
       "fin": 31.04
     },
     {
       "texto": "En",
-      "inicio": 31.08,
-      "fin": 31.12
+      "inicio": 31.12,
+      "fin": 31.2
     },
     {
       "texto": "Zimbabue,",
-      "inicio": 31.2,
+      "inicio": 31.24,
       "fin": 31.84
     },
     {
@@ -463,11 +463,11 @@
     {
       "texto": "precios",
       "inicio": 32.08,
-      "fin": 32.4
+      "fin": 32.32
     },
     {
       "texto": "llegaron",
-      "inicio": 32.453,
+      "inicio": 32.4,
       "fin": 32.72
     },
     {
@@ -477,7 +477,7 @@
     },
     {
       "texto": "duplicarse",
-      "inicio": 32.84,
+      "inicio": 32.907,
       "fin": 33.52
     },
     {
@@ -488,247 +488,222 @@
     {
       "texto": "día.",
       "inicio": 33.92,
-      "fin": 34.48
-    },
-    {
-      "texto": "Y",
-      "inicio": 34.52,
       "fin": 34.56
     },
     {
-      "texto": "en",
+      "texto": "Y",
       "inicio": 34.6,
       "fin": 34.64
     },
     {
+      "texto": "en",
+      "inicio": 34.68,
+      "fin": 34.72
+    },
+    {
       "texto": "Alemania,",
-      "inicio": 34.72,
-      "fin": 35.36
+      "inicio": 34.8,
+      "fin": 35.44
     },
     {
       "texto": "un",
-      "inicio": 35.44,
-      "fin": 35.52
-    },
-    {
-      "texto": "pan",
-      "inicio": 35.6,
+      "inicio": 35.56,
       "fin": 35.68
     },
     {
-      "texto": "que",
+      "texto": "pan",
       "inicio": 35.76,
       "fin": 35.84
     },
     {
-      "texto": "costaba",
+      "texto": "que",
       "inicio": 35.92,
-      "fin": 36.24
+      "fin": 36
+    },
+    {
+      "texto": "costaba",
+      "inicio": 36.08,
+      "fin": 36.4
     },
     {
       "texto": "ciento",
-      "inicio": 36.32,
-      "fin": 36.64
+      "inicio": 36.48,
+      "fin": 36.72
     },
     {
       "texto": "sesenta",
-      "inicio": 36.72,
-      "fin": 37.04
+      "inicio": 36.8,
+      "fin": 37.2
     },
     {
       "texto": "marcos",
-      "inicio": 37.2,
-      "fin": 37.52
+      "inicio": 37.28,
+      "fin": 37.68
     },
     {
       "texto": "terminó",
-      "inicio": 37.6,
-      "fin": 37.92
+      "inicio": 37.76,
+      "fin": 38.08
     },
     {
       "texto": "costando",
-      "inicio": 38.04,
-      "fin": 38.4
+      "inicio": 38.16,
+      "fin": 38.56
     },
     {
       "texto": "doscientos",
-      "inicio": 38.48,
-      "fin": 39.12
+      "inicio": 38.68,
+      "fin": 39.2
     },
     {
       "texto": "mil",
-      "inicio": 39.28,
-      "fin": 39.44
+      "inicio": 39.36,
+      "fin": 39.52
     },
     {
       "texto": "millones",
-      "inicio": 39.52,
-      "fin": 40
+      "inicio": 39.6,
+      "fin": 40.16
     },
     {
       "texto": "en",
-      "inicio": 40.08,
-      "fin": 40.32
+      "inicio": 40.24,
+      "fin": 40.48
     },
     {
       "texto": "menos",
-      "inicio": 40.4,
-      "fin": 40.56
-    },
-    {
-      "texto": "de",
-      "inicio": 40.64,
+      "inicio": 40.56,
       "fin": 40.72
     },
     {
+      "texto": "de",
+      "inicio": 40.8,
+      "fin": 40.84
+    },
+    {
       "texto": "un",
-      "inicio": 40.76,
-      "fin": 40.8
+      "inicio": 40.88,
+      "fin": 40.92
     },
     {
       "texto": "año.",
-      "inicio": 40.88,
-      "fin": 41.6
+      "inicio": 40.96,
+      "fin": 41.68
     },
     {
       "texto": "Porque",
-      "inicio": 41.64,
-      "fin": 41.76
+      "inicio": 41.76,
+      "fin": 41.88
     },
     {
       "texto": "el",
-      "inicio": 41.8,
-      "fin": 41.84
+      "inicio": 41.92,
+      "fin": 41.96
     },
     {
       "texto": "dinero",
-      "inicio": 41.92,
-      "fin": 42.24
-    },
-    {
-      "texto": "no",
-      "inicio": 42.32,
+      "inicio": 42,
       "fin": 42.4
     },
     {
-      "texto": "es",
+      "texto": "no",
       "inicio": 42.48,
       "fin": 42.56
     },
     {
-      "texto": "la",
+      "texto": "es",
       "inicio": 42.64,
-      "fin": 42.68
+      "fin": 42.72
+    },
+    {
+      "texto": "la",
+      "inicio": 42.8,
+      "fin": 42.84
     },
     {
       "texto": "riqueza:",
-      "inicio": 42.72,
-      "fin": 43.52
+      "inicio": 42.88,
+      "fin": 43.68
     },
     {
       "texto": "imprimir",
-      "inicio": 43.6,
-      "fin": 44
+      "inicio": 43.76,
+      "fin": 44.24
     },
     {
       "texto": "más",
-      "inicio": 44.08,
-      "fin": 44.32
+      "inicio": 44.373,
+      "fin": 44.64
     },
     {
       "texto": "no",
-      "inicio": 44.4,
-      "fin": 44.48
+      "inicio": 44.72,
+      "fin": 44.8
     },
     {
       "texto": "hace",
-      "inicio": 44.56,
-      "fin": 44.72
+      "inicio": 44.84,
+      "fin": 45.04
     },
     {
       "texto": "más",
-      "inicio": 44.8,
-      "fin": 44.96
+      "inicio": 45.08,
+      "fin": 45.28
     },
     {
       "texto": "pan,",
-      "inicio": 45.12,
-      "fin": 45.6
-    },
-    {
-      "texto": "solo",
-      "inicio": 45.64,
+      "inicio": 45.4,
       "fin": 45.84
     },
     {
-      "texto": "hace",
+      "texto": "solo",
       "inicio": 45.88,
       "fin": 46.08
     },
     {
-      "texto": "que",
-      "inicio": 46.16,
+      "texto": "hace",
+      "inicio": 46.12,
       "fin": 46.32
     },
     {
-      "texto": "cada",
-      "inicio": 46.36,
+      "texto": "que",
+      "inicio": 46.4,
       "fin": 46.56
     },
     {
+      "texto": "cada",
+      "inicio": 46.6,
+      "fin": 46.8
+    },
+    {
       "texto": "billete",
-      "inicio": 46.64,
-      "fin": 47.04
+      "inicio": 46.88,
+      "fin": 47.28
     },
     {
       "texto": "valga",
-      "inicio": 47.12,
-      "fin": 47.36
+      "inicio": 47.36,
+      "fin": 47.6
     },
     {
       "texto": "menos.",
-      "inicio": 47.44,
-      "fin": 48
+      "inicio": 47.68,
+      "fin": 48.48
     },
     {
-      "texto": "Envíaselo",
-      "inicio": 48.24,
-      "fin": 48.72
-    },
-    {
-      "texto": "a",
-      "inicio": 48.747,
-      "fin": 48.773
-    },
-    {
-      "texto": "un",
-      "inicio": 48.8,
+      "texto": "Síguenos",
+      "inicio": 48.52,
       "fin": 48.88
     },
     {
-      "texto": "amigo",
+      "texto": "para",
       "inicio": 48.96,
-      "fin": 49.2
+      "fin": 49.04
     },
     {
-      "texto": "que",
-      "inicio": 49.24,
-      "fin": 49.28
-    },
-    {
-      "texto": "le",
-      "inicio": 49.32,
-      "fin": 49.36
-    },
-    {
-      "texto": "pueda",
-      "inicio": 49.44,
+      "texto": "más.",
+      "inicio": 49.12,
       "fin": 49.6
-    },
-    {
-      "texto": "interesar.",
-      "inicio": 49.72,
-      "fin": 50.4
     }
   ]
 }

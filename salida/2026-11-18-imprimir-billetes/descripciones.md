@@ -5,7 +5,7 @@
 ¿Por qué no imprimen más billetes para que todos seamos ricos? 💸
 Zimbabue lo intentó y terminó con un billete de cien billones. En Alemania, un pan llegó a costar 200 mil millones de marcos.
 
-Envíaselo a un amigo que le pueda interesar.
+Síguenos para más economía explicada fácil.
 ¿Tú qué harías si mañana todos tuvieran el doble de dinero? Cuéntame en los comentarios.
 
 #inflacion #economia #dinero #finanzaspersonales #datoscuriosos
@@ -24,4 +24,4 @@ Envíaselo a un amigo que le pueda interesar.
 
 ## Facebook Reels
 
-¿Por qué no imprimen más billetes para que todos seamos ricos? Porque más billetes no hacen más pan: solo suben los precios 💸 Envíaselo a un amigo que le pueda interesar. ¿Lo sabías? #inflacion #dinero
+¿Por qué no imprimen más billetes para que todos seamos ricos? Porque más billetes no hacen más pan: solo suben los precios 💸 Síguenos para más. ¿Lo sabías? #inflacion #dinero

@@ -10,16 +10,17 @@ import { dibuja as d5 } from "./05-doble.js";
 import { dibuja as d6 } from "./06-inflacion.js";
 import { dibuja as d7 } from "./07-precios.js";
 import { dibuja as d8 } from "./08-remate.js";
+import { dibuja as d9 } from "./09-siguenos.js";
 
 const { suave: su, tramo: tr } = k;
-export const T0 = v.frase(12).fin - 0.05;
+export const T0 = v.frase(12).fin + 0.02;
 export const desde = T0;
 export const entrada = "corte";
 const TF = v.duracion - 1 / 60;
 
 const PL = [
   [0, d1], [v.t("zimbabue"), d2], [v.t("imagina"), d3], [v.t("ahora"), d4], [v.t("todos#2"), d5],
-  [v.t("eso"), d6], [v.t("en"), d7], [v.t("porque"), d8],
+  [v.t("eso"), d6], [v.t("en"), d7], [v.t("porque"), d8], [v.t("siguenos"), d9],
 ].map(([a, d]) => [Math.max(0, a - 0.07), d]);
 function pinta(g, s) { let d = PL[0][1]; for (const [a, f] of PL) if (s >= a) d = f; d(g, s); }
 

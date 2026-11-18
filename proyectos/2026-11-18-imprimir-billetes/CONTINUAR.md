@@ -13,10 +13,11 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 - Escena 3 (descontrol, v1): «Apruebo».
 - Escena 4 (remate, v1): «Apruebo».
 - Video entero: «al final rebobina y vuelve al primer fotograma»; v2: «Apruebo».
+- Tras entregar: «al final del video pongas síguenos para más en vez de envíaselo a un amigo y ponle una animación como de botón de sígueme» (solo este video). Voz rehecha.
 
 ## Pendiente del creador
 
-- Nada: entregado.
+- Aprobar el borrador completo v3 (cierre «Síguenos para más» con botón de seguir) y volver a hacer el final.
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
