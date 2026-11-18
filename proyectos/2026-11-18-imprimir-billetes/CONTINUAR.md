@@ -6,15 +6,16 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 ## Lo decidido (con las palabras del creador)
 
 - Tema 43 de los 100 temas: «Tema 43».
+- Guion: «Sí, apruebo el guion».
 
 ## Pendiente del creador
 
-- Aprobar el guion (guion.json).
+- La voz: su cuenta de ElevenLabs es gratuita y no deja usar a Antonio por la API. Decidir: subir de plan, voz gratuita u otra voz suya.
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
 - [x] 1. La idea y los datos → idea.md
-- [ ] 2. El guion → guion.json, **aprobado por el creador**
+- [x] 2. El guion → guion.json, **aprobado por el creador**
 - [ ] 3. La voz (una sola vez, con el guion cerrado)
 - [ ] 4. El plan → plan.md, con sus escenas
 - [ ] 5. Escena por escena (cada una, su borrador aprobado):
