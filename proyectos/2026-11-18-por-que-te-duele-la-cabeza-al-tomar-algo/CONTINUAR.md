@@ -11,7 +11,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Pendiente del creador
 
-- Ver y aprobar la escena 1 (el hook): revisar/escena 1 hook v1 (borrador).mp4
+- Ver y aprobar la escena 1 (el hook): revisar/escena 1 hook v2 (borrador).mp4 (v1: «Arregla el sorbete está mal colocado se ve mal» → pajita doblada que sale por la tapa)
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 

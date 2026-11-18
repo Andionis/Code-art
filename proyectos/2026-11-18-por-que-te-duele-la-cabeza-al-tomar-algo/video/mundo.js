@@ -343,13 +343,30 @@ const hielo = (() => {
 })();
 // El vaso: de pie en (x, y) (la base), alto h; nivel (0-1) de granizado; pajita hasta (px, py); sorbe: 0-1 (el
 // granizado sube por la pajita).
-export const VASO = { x: -640, y: 860, h: 520 };
+export const VASO = { x: -640, y: 960, h: 480 };
 export function granizado(g, t, nivel = 0.85, sorbe = 0, pajita = BOCA, V = VASO) {
   const { x, y, h } = V, wb = h * 0.27, wt = h * 0.38, top = y - h;
   const ancho = (yy) => mez(wb, wt, (y - yy) / h);
   // la pajita (por detrás, la parte de dentro del vaso)
-  const p0 = [x + wt * 0.25, y - h * 0.15];
-  const pajitaCamino = (c) => { c.beginPath(); c.moveTo(p0[0], p0[1]); c.lineTo(pajita[0], pajita[1]); };
+  // una pajita de las que se doblan: sube recta por el centro de la tapa, se dobla y entra entre los labios
+  const px = x + wt * 0.12, codo = Math.min(top - h * 0.3, pajita[1] + 40), R = 60;
+  const fin = [pajita[0] + 6, pajita[1]];
+  const ang = Math.atan2(fin[1] - (codo - R), fin[0] - (px + R));
+  const pajitaCamino = (c) => {
+    c.beginPath(); c.moveTo(px, y - h * 0.12); c.lineTo(px, codo);
+    c.quadraticCurveTo(px, codo - R, px + R * Math.cos(ang) * 0.9 + R * 0.1, codo - R + R * Math.sin(ang) * 0.9);
+    c.lineTo(fin[0], fin[1]);
+  };
+  const acordeon = () => {
+    const A = [px, codo + 24], C = [px, codo - R], E = [px + R * Math.cos(ang) * 0.9 + R * 0.1, codo - R + R * Math.sin(ang) * 0.9];
+    g.save(); g.lineCap = "round"; g.strokeStyle = "rgba(255,225,228,0.75)"; g.lineWidth = 3.5;
+    for (let q = 0.12; q < 0.95; q += 0.14) {
+      const m = 1 - q, X = m * m * A[0] + 2 * m * q * C[0] + q * q * E[0], Y = m * m * A[1] + 2 * m * q * C[1] + q * q * E[1];
+      const dx = 2 * m * (C[0] - A[0]) + 2 * q * (E[0] - C[0]), dy = 2 * m * (C[1] - A[1]) + 2 * q * (E[1] - C[1]), L = Math.hypot(dx, dy);
+      g.beginPath(); g.moveTo(X - dy / L * 14, Y + dx / L * 14); g.lineTo(X + dy / L * 14, Y - dx / L * 14); g.stroke();
+    }
+    g.restore();
+  };
   // el granizado
   const yN = y - h * nivel;
   g.save();
@@ -364,8 +381,9 @@ export function granizado(g, t, nivel = 0.85, sorbe = 0, pajita = BOCA, V = VASO
   pajitaCamino(g); g.strokeStyle = "rgba(255,80,90,0.95)"; g.lineWidth = 30; g.stroke();
   pajitaCamino(g); g.strokeStyle = "rgba(255,200,205,0.9)"; g.lineWidth = 8; g.translate(-6, -4); g.stroke(); g.translate(6, 4);
   if (sorbe > 0) {
-    pajitaCamino(g); g.setLineDash([26, 14]); g.lineDashOffset = t * 520; g.strokeStyle = `rgba(80,190,255,${sorbe})`; g.lineWidth = 18; g.stroke(); g.setLineDash([]);
+    pajitaCamino(g); g.setLineDash([26, 14]); g.lineDashOffset = -t * 520; g.strokeStyle = `rgba(80,190,255,${sorbe})`; g.lineWidth = 18; g.stroke(); g.setLineDash([]);
   }
+  acordeon();
   g.restore();
   // el vaso de plástico, con su tapa de cúpula
   g.save();
