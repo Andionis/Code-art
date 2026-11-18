@@ -11,10 +11,12 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 - Escena 1 (hook, v1): «Apruebo».
 - Escena 2 (pueblo, v1): «Apruebo».
 - Escena 3 (descontrol, v1): «Apruebo».
+- Escena 4 (remate, v1): «Apruebo».
+- Video entero: «al final rebobina y vuelve al primer fotograma»; v2: «Apruebo».
 
 ## Pendiente del creador
 
-- Aprobar el video entero (borrador completo).
+- Nada: entregado.
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
@@ -27,9 +29,9 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
   - [x] escena 2: el pueblo (frases 3-7, hasta 27,06 s)
   - [x] escena 3: el descontrol (frases 8-10, hasta 41,62 s)
   - [x] escena 4: el remate y el cierre (frases 11-12, hasta el final)
-- [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
+- [x] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
-- [ ] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
+- [x] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
       propuesto
 
 ## Para seguir en un chat nuevo
