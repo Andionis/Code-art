@@ -8,6 +8,7 @@ import { momentos as m5, billetes as b5 } from "./video/planos/05-doble.js";
 import { momentos as m6 } from "./video/planos/06-inflacion.js";
 import { momentos as m7, hojas } from "./video/planos/07-precios.js";
 import { momentos as m8 } from "./video/planos/08-remate.js";
+import { momentos as m9 } from "./video/planos/09-rebobina.js";
 
 const e = [];
 const pon = (sonido, t, o = {}) => e.push({ sonido, t, ...o });
@@ -75,6 +76,9 @@ pon("aire", m8.cada, { ancla: "empieza", db: -12, vel: 1.1, que: "llega el bille
 pon("aire", m8.menos, { ancla: "empieza", db: -12, vel: 0.5, reves: true, que: "el billete se encoge y se apaga" });
 pon("aire", v.frase(12).inicio, { ancla: "empieza", db: -15, vel: 0.5, que: "la cámara se aleja, la lluvia se calma" });
 pon("clic", v.frase(12).t("amigo"), { db: -15, vel: 0.9, que: "el cierre" });
+pon("empujon", m9.empieza + 0.12, { ancla: "empieza", db: -11, vel: 1.4, reves: true, corta: v.duracion, que: "el vídeo rebobina" });
+pon("tic", m9.empieza + 0.3, { db: -15, vel: 1.6, que: "la cinta" });
+pon("tic", m9.empieza + 0.45, { db: -15, vel: 1.8, que: "la cinta" });
 
 void espacia;
 export default e;
