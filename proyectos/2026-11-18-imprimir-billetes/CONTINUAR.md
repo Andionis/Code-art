@@ -14,7 +14,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Pendiente del creador
 
-- Aprobar la escena 4 (remate y cierre).
+- Aprobar el video entero (borrador completo).
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
@@ -22,11 +22,11 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 - [x] 2. El guion → guion.json, **aprobado por el creador**
 - [x] 3. La voz (una sola vez, con el guion cerrado)
 - [x] 4. El plan → plan.md, con sus escenas
-- [ ] 5. Escena por escena (cada una, su borrador aprobado):
+- [x] 5. Escena por escena (cada una, su borrador aprobado):
   - [x] escena 1: el hook (frases 1-2, hasta 8,4 s)
   - [x] escena 2: el pueblo (frases 3-7, hasta 27,06 s)
   - [x] escena 3: el descontrol (frases 8-10, hasta 41,62 s)
-  - [ ] escena 4: el remate y el cierre (frases 11-12, hasta el final)
+  - [x] escena 4: el remate y el cierre (frases 11-12, hasta el final)
 - [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
 - [ ] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
