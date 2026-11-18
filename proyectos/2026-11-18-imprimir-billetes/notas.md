@@ -14,3 +14,7 @@ Lo que se arregló al revisar:
 
 Avisos aceptados: los saltos del render en 31,98-34,48 s y 39,88 s son las hojas del calendario (buscados); 50,93 s,
 el rebobinado.
+
+Después de entregar, el creador pidió cerrar con «Síguenos para más» y un botón de seguir: se rehízo la voz (50,4 s),
+planos/09-siguenos.js (botón SEGUIR → SIGUIENDO, con el pulgar de #piezas/celular.js) sobre el remate oscurecido, y el
+rebobinado pasó a planos/10-rebobina.js. Saltos nuevos aceptados: 4,98 s (un cero que se enciende) y 37,77 s (hoja).

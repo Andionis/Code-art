@@ -17,7 +17,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Pendiente del creador
 
-- Aprobar el borrador completo v3 (cierre «Síguenos para más» con botón de seguir) y volver a hacer el final.
+- Nada: entregado (v3, «Si»).
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
