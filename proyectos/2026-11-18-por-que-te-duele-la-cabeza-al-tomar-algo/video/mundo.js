@@ -130,10 +130,10 @@ const PALADAR = [[-318, 214], [-260, 186], [-170, 160], [-60, 158], [30, 180], [
 const HUECO = [[-336, 244], ...PALADAR, [100, 300], [80, 380], [-60, 360], [-200, 320], [-300, 282]];
 const LENGUA = [[-300, 270], [-220, 236], [-100, 220], [20, 240], [70, 300], [40, 360], [-120, 352], [-250, 312]];
 // Los vasos del paladar: tres líneas onduladas a lo largo, justo encima del techo de la boca.
-const VASOS = [0, 1, 2].map((j) => suaviza(PALADAR.slice(0, 5).map(([x, y], i) => [x + 10, y - 10 - j * 14 + Math.sin(i * 1.7 + j) * 6])));
+const VASOS = [0, 1, 2].map((j) => suaviza(PALADAR.slice(0, 5).map(([x, y], i) => [x + 10, y - 6 - j * 20 + Math.sin(i * 1.7 + j) * 6])));
 // La arteria de detrás de la frente: sube desde el cuello por detrás de la boca y se curva hacia delante, detrás de la
 // frente.
-export const ARTERIA = suaviza([[60, 700], [70, 420], [40, 200], [-30, 40], [-140, -40], [-240, -150], [-275, -300], [-230, -440]]);
+export const ARTERIA = suaviza([[160, 900], [160, 420], [140, 220], [70, 80], [-30, 20], [-140, -40], [-240, -150], [-275, -300], [-230, -440]]);
 // El nervio: el nudo detrás de la nariz, una rama al paladar, otra a la frente y otra al cerebro.
 export const NUDO = [10, 70];
 export const RAMA_PALADAR = suaviza([[-150, 168], [-100, 130], [-30, 100], NUDO]);
@@ -261,22 +261,22 @@ export function cabeza(g, t, o = {}) {
   g.lineCap = "round"; g.lineJoin = "round";
   g.beginPath(); curvaPor(g, PALADAR, false);
   g.strokeStyle = `rgb(${mezRgb("200,90,120", "255,150,170", pal)})`; g.lineWidth = 34; g.stroke();
-  g.strokeStyle = `rgba(255,220,230,${0.35 + 0.4 * pal})`; g.lineWidth = 8; g.translate(0, -8); g.stroke(); g.translate(0, 8);
+  g.strokeStyle = `rgba(255,220,230,${0.3 + 0.2 * pal})`; g.lineWidth = 6; g.translate(0, -8); g.stroke(); g.translate(0, 8);
   for (let i = 0; i < 6; i++) { const [x, y] = puntoEn(PALADAR, 0.06 + i * 0.07); g.strokeStyle = "rgba(140,30,60,0.6)"; g.lineWidth = 4; g.beginPath(); g.moveTo(x - 6, y - 10); g.quadraticCurveTo(x + 4, y, x - 6, y + 12); g.stroke(); }
-  if (pal > 0) k.brillo(g, PALADAR_C[0], PALADAR_C[1] - 10, 520, "255,140,170", 0.55 * pal);
+  if (pal > 0) k.brillo(g, PALADAR_C[0], PALADAR_C[1] - 10, 520, "255,140,170", 0.3 * pal);
   // sus vasos
-  const w = 7 * (o.vasos ?? 1);
-  for (const V of VASOS) tubo(g, V, w, "#b0102a", "#ff5a6a", Math.max(0.3, pal));
+  const w = 12 * (o.vasos ?? 1);
+  for (const V of VASOS) tubo(g, V, w, `rgb(${mezRgb("90,20,60", "190,16,42", Math.min(1, o.vasos ?? 1))})`, `rgb(${mezRgb("150,90,140", "255,90,106", Math.min(1, o.vasos ?? 1))})`, Math.max(0.3, pal));
   corre(g, VASOS[1], t, 9, 1.4 * (o.vasos ?? 1), "255,70,60", 34 + w * 3, o.flujo ?? 0);
   // el frío en la boca
   const bf = o.bocaFria ?? 0;
   if (bf > 0) {
     g.globalCompositeOperation = "lighter";
     const fg = g.createRadialGradient(-200, 230, 10, -200, 230, 260);
-    fg.addColorStop(0, `rgba(150,220,255,${0.8 * bf})`); fg.addColorStop(1, "rgba(60,140,255,0)");
+    fg.addColorStop(0, `rgba(150,220,255,${0.4 * bf})`); fg.addColorStop(1, "rgba(60,140,255,0)");
     g.fillStyle = fg; g.fillRect(-500, 0, 640, 460);
     g.globalCompositeOperation = "source-over";
-    g.save(); g.beginPath(); curvaPor(g, HUECO); g.clip(); g.globalAlpha *= 0.55 * bf; g.globalCompositeOperation = "screen"; g.drawImage(escarcha, -420, 60, 460, 460); g.restore();
+    g.save(); g.beginPath(); curvaPor(g, HUECO); g.clip(); g.globalAlpha *= 0.3 * bf; g.globalCompositeOperation = "screen"; g.drawImage(escarcha, -420, 60, 460, 460); g.restore();
   }
   g.restore();
   // la arteria
@@ -284,14 +284,15 @@ export function cabeza(g, t, o = {}) {
   if (ar > 0) {
     const inf = Math.max(0, ar - 1), wa = 14 + 40 * inf;
     if (inf > 0) { g.save(); g.globalCompositeOperation = "lighter"; g.beginPath(); ARTERIA.slice(55).forEach(([x, y], i) => (i ? g.lineTo(x, y) : g.moveTo(x, y))); g.strokeStyle = `rgba(255,60,50,${0.35 * inf})`; g.lineWidth = wa * 2.4; g.lineCap = "round"; g.stroke(); g.restore(); }
-    // el ancho crece hacia la frente cuando se infla
-    const n = ARTERIA.length;
-    for (let i = 1; i < n; i++) {
-      const s = i / n, wi = 14 + 40 * inf * su(tr(s, 0.5, 0.8));
-      g.save(); g.globalAlpha *= Math.min(1, ar); g.lineCap = "round";
-      g.beginPath(); g.moveTo(...ARTERIA[i - 1]); g.lineTo(...ARTERIA[i]);
+    // el ancho crece hacia la frente cuando se infla (tramos cada vez más gruesos, encima unos de otros)
+    const n = ARTERIA.length, tramos = [[0, 14], [0.5, 14 + 14 * inf], [0.58, 14 + 28 * inf], [0.66, 14 + 42 * inf]];
+    for (const [desde, wi] of tramos) {
+      if (desde > 0 && inf <= 0.01) continue;
+      const P = ARTERIA.slice(Math.floor(desde * n));
+      g.save(); g.globalAlpha *= Math.min(1, ar); g.lineCap = "round"; g.lineJoin = "round";
+      g.beginPath(); P.forEach(([x, y], i) => (i ? g.lineTo(x, y) : g.moveTo(x, y)));
       g.strokeStyle = "#a0102a"; g.lineWidth = wi; g.stroke();
-      g.strokeStyle = "rgba(255,120,120,0.85)"; g.lineWidth = wi * 0.35; g.translate(-wi * 0.15, -wi * 0.12); g.stroke();
+      g.strokeStyle = "rgba(255,120,120,0.85)"; g.lineWidth = wi * 0.32; g.translate(-wi * 0.15, -wi * 0.12); g.stroke();
       g.restore();
     }
     corre(g, ARTERIA, t, 12, 0.9, "255,80,70", 40 + 30 * inf, (o.flujoArteria ?? 0) * Math.min(1, ar));

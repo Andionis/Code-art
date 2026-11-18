@@ -7,11 +7,12 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 - Tema: «¿Por qué te duele la cabeza al tomar algo muy helado?» (pedido como pregunta).
 - Guion: «Apruebo».
+- Hook: «Arregla el sorbete está mal colocado se ve mal» → pajita doblada que sale por la tapa; luego «Apruebo».
 - Voz: Liam (TX3LPaxmHKxFdv7VOQHJ), como en el video anterior (plan gratis de ElevenLabs).
 
 ## Pendiente del creador
 
-- Ver y aprobar la escena 1 (el hook): revisar/escena 1 hook v2 (borrador).mp4 (v1: «Arregla el sorbete está mal colocado se ve mal» → pajita doblada que sale por la tapa)
+- Ver y aprobar la escena 2 (el paladar): revisar/escenas 1-2 paladar v1 (borrador).mp4
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
@@ -20,7 +21,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 - [x] 3. La voz (una sola vez, con el guion cerrado)
 - [x] 4. El plan → plan.md, con sus escenas
 - [ ] 5. Escena por escena (cada una, su borrador aprobado):
-  - [ ] escena 1 (el hook, hasta 8,0 s)
+  - [x] escena 1 (el hook, hasta 8,0 s): aprobada en v2 («Apruebo»)
   - [ ] escena 2 (el paladar, hasta 20,5 s)
   - [ ] escena 3 (la presión, hasta 29,3 s)
   - [ ] escena 4 (el nervio y el minuto, hasta 43,8 s)
