@@ -63,6 +63,7 @@ entregar un video, propón en 2-3 líneas qué añadir aquí o a `piezas/`; entr
 
 ## Costo y tiempo
 
+- **Voz con la cuenta gratuita de ElevenLabs:** no deja usar por la API las voces de la biblioteca (Antonio, Tony): da 402. Solo las básicas, como Liam (`TX3LPaxmHKxFdv7VOQHJ`), que es la de `preferencias.md`.
 - **Un chat por video.** Para seguir uno en otra conversación, «continúa el proyecto …» (lee su `CONTINUAR.md`).
 - **Cerrar el guion antes de la voz:** cada cambio de frase rehace la voz entera (cuesta dinero en ElevenLabs y mueve
   todos los tiempos). Junta los cambios del creador y haz la voz una vez.

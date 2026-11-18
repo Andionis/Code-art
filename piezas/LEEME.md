@@ -11,6 +11,10 @@ Lo que ya se hizo bien en un video y sirve para otros: se importa, no se rehace.
 | `boton-comprar.js` | El botón «COMPRAR» (o la palabra que se le pase). | el CTA de un video de venta |
 | `titulo-portada.js` | El título de portada: blanco arriba, la clave en rojo. | enseñar portadas dentro de un video |
 | `objetos.js` | Objetos con acabado, en 3D con la cámara del kit: cajas sombreadas con bisel (`caja`), la madera clara de veta fina (`conMadera`), la sombra de contacto de lo que apoya (`sombraContacto`) y la cota con topes, flechas y su cifra (`cota`). Para que un objeto no parezca de juguete. | herramientas, piezas, medidas |
+| `billete.js` | Un billete verde genérico («1», «UN BILLETE»): plano en pantalla (`billete`), con aleteo, o volando en 3D (`billete3D`). | dinero, lluvias y chorros de billetes |
+| `panaderia.js` | La panadería del pueblo: pared con azulejos, horno de ladrillo con fuego y puerta, mostrador visto desde arriba, pirámide de diez panes, fajo de billetes, cartel de precio que gira; y `pan` suelto. Con su cámara (`mezCam`). | precios, dinero, economía de casa, comida |
+| `boton-seguir.js` | El botón «+ SEGUIR» que pasa a «✓ SIGUIENDO» y la foto de perfil redonda con anillo de colores (`avatar`, con lo que dibujes dentro). | el cierre «Síguenos para más» |
+| `planos/rebobina.js` | Plano entero: al terminar la voz, el vídeo pasa hacia atrás a toda velocidad (rayas de cinta, ◀◀) y frena en el primer fotograma, para el bucle. Pon en `PLANOS` tus planos. | el final de cualquier vídeo |
 | `planos/susurro.js` | Plano entero: primer plano de una oreja de lado; unos labios con la mano ahuecada le susurran (para «la verdad…», un secreto). Cambia `SUSURRO` y `OYE` por tus palabras. | un secreto, una confesión |
 | `planos/comprar.js` | Plano entero: el botón COMPRAR, el pulgar lo aprieta, confeti. Cambia `APRIETA`, `BRILLA` y `TEXTO`. | el CTA de un video de venta |
 | `planos/cuentas.js` | Plano entero: tres capturas de cuentas en abanico; luego la de más vistas al frente con círculos rojos en sus vistas y la cifra que corre. Cambia las palabras de `T`, `CIFRA` y `ETIQUETAS`. | la prueba social de un video de venta |
