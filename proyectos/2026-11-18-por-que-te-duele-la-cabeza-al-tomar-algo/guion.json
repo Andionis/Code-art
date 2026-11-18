@@ -1,0 +1,19 @@
+{
+  "titulo": "Por qué te duele la cabeza al tomar algo muy helado",
+  "idioma": "es",
+  "subtitulos": "arriba",
+  "frases": [
+    { "texto": "¿Por qué te duele la cabeza cuando tomas algo muy helado?", "clave": "helado", "hook": true },
+    { "texto": "Tu cerebro no se está congelando: el frío ni siquiera le llega.", "clave": "congelando", "hook": true },
+    { "texto": "Todo empieza en el techo de tu boca: el paladar.", "clave": "paladar" },
+    { "texto": "El frío lo golpea, y sus vasos de sangre se cierran de golpe para guardar el calor.", "clave": "cierran" },
+    { "texto": "Un segundo después se abren, y la sangre entra a toda velocidad.", "clave": "sangre" },
+    { "texto": "Detrás de tu frente, una arteria se infla como un globo.", "clave": "globo" },
+    { "texto": "Y como tu cabeza es una caja cerrada, los científicos creen que esa presión es lo que duele.", "clave": "presión" },
+    { "texto": "Pero lo más raro: el aviso viaja por un nervio que también lleva lo que sientes en la frente.", "clave": "nervio" },
+    { "texto": "Así que tu cerebro se confunde, y te duele la frente, no la boca.", "clave": "frente" },
+    { "texto": "Por eso casi siempre dura menos de un minuto: en cuanto tu boca se calienta, se apaga.", "clave": "minuto" },
+    { "texto": "Y si tomas rápido, te pasa el doble de veces. No es el helado: es la prisa.", "clave": "prisa" },
+    { "texto": "Envíaselo a un amigo que le pueda interesar.", "clave": "amigo" }
+  ]
+}
