@@ -85,7 +85,8 @@ function monte(g, t) {
 
 const camara = (t) => {
   let c = mezCam(CAM0, { x: 540, y: 1000, z: 1.12 }, su(tr(t, T9, Tpre + 0.4)));
-  c = mezCam(c, { x: 560, y: 960, z: 0.97 }, su(tr(t, Tterm, Tmil + 0.6)));
+  c = mezCam(c, { x: 500, y: 920, z: 1.25 }, su(tr(t, T10, Tterm - 0.1)));
+  c = mezCam(c, { x: 560, y: 960, z: 0.97 }, su(tr(t, Tterm - 0.05, Tmil + 0.6)));
   return c;
 };
 
@@ -93,10 +94,11 @@ export function dibuja(g, t) {
   const h = hoja(t), p = precio(t, h);
   escena(g, t, camara(t), {
     fajo1: 20, cartelAl: 0,
+    brilloPanes: 0.7 * k.pulso(t, f10.t("pan") + 0.1, 0.2),
     antesMostrador: (g) => calendario(g, t, h),
     extra: (g) => {
       monte(g, t);
-      const golpe = k.pulso(t, h.cambio + 0.05, 0.08);
+      const golpe = k.pulso(t, h.cambio + 0.05, 0.08) + k.pulso(t, T160 + 0.05, 0.1);
       g.save(); g.translate(540, 1000); g.scale(1 + 0.12 * golpe, 1 + 0.12 * golpe);
       k.pastilla(g, 0, 0, p.txt, p.uni, p.col, 1, h.aleman && p.txt.length > 9 ? 92 : 120);
       g.restore();
