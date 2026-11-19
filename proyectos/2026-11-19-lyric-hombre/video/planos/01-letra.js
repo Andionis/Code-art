@@ -5,6 +5,8 @@ import { v } from "#voz";
 import { beat, colorEn, humos, grietas, cuadros, FPS_FONDO } from "../mundo.js";
 
 export const desde = 0;
+// BN=1 (variable de entorno): el video de fondo en blanco y negro; la letra sigue a color
+const BN = process.env.BN === "1";
 const FUNDE = 23.2; // donde empieza el desvanecido (el mismo que el de la música)
 
 const CX = 515, ANCHO_MAX = 870;
@@ -21,9 +23,17 @@ function fondo(g, t, col, b) {
   g.restore();
   // el color de la línea, mezclado con la imagen
   g.save();
-  g.globalCompositeOperation = "color";
-  g.globalAlpha = 0.35;
-  g.fillStyle = rgb(col); g.fillRect(0, 0, 1080, 1920);
+  if (BN) {
+    // blanco y negro: se le quita todo el color y se le sube un poco el contraste
+    g.globalCompositeOperation = "saturation";
+    g.fillStyle = "#808080"; g.fillRect(0, 0, 1080, 1920);
+    g.globalCompositeOperation = "soft-light";
+    g.globalAlpha = 0.5; g.fillStyle = "#000000"; g.fillRect(0, 0, 1080, 1920);
+  } else {
+    g.globalCompositeOperation = "color";
+    g.globalAlpha = 0.35;
+    g.fillStyle = rgb(col); g.fillRect(0, 0, 1080, 1920);
+  }
   g.globalCompositeOperation = "source-over";
   g.globalAlpha = 1;
   // un poco más oscuro, para que la letra mande
@@ -31,7 +41,7 @@ function fondo(g, t, col, b) {
   // un destello del color en cada beat
   g.globalCompositeOperation = "lighter";
   const hal = g.createRadialGradient(540, 1900, 50, 540, 1900, 1100);
-  hal.addColorStop(0, rgb(col, 0.35 * b)); hal.addColorStop(1, rgb(col, 0));
+  hal.addColorStop(0, BN ? `rgba(255,255,255,${0.12 * b})` : rgb(col, 0.35 * b)); hal.addColorStop(1, rgb(col, 0));
   g.fillStyle = hal; g.fillRect(0, 0, 1080, 1920);
   g.restore();
   // viñeta

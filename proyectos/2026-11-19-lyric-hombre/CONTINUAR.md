@@ -14,5 +14,6 @@ Pasos:
 - [x] Borrador v1 (ciudad de neón)
 - [x] Borrador v2: fondo = video del creador (fondo/original.mov) en bucle, recortado en vertical siguiendo al artista (fondo/f/); letra corregida por el creador
 - [x] Borrador v3: letra solo hasta «hombre» y desvanecido a negro de video y música (23,2 → 25,1 s)
-- [ ] El creador aprueba o corrige
+- [x] Versión en blanco y negro (BN=1 al renderizar): revisar/Hombre lyric v3 blanco y negro (borrador).mp4
+- [ ] El creador elige color o blanco y negro, y aprueba
 - [ ] Final a 60 fps, miniatura y descripciones
