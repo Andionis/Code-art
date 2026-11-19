@@ -258,3 +258,64 @@ export function golpe(g, x, y, u, tam = 700) {
   g.beginPath(); g.ellipse(x, y, tam * 0.2 + tam * 0.6 * k.entra(u), (tam * 0.2 + tam * 0.6 * k.entra(u)) * 0.16, 0, 0, TAU); g.stroke();
   g.restore();
 }
+
+// ---------------------------------------------------------------------------------------------------------------
+// La mosca vista desde arriba, mirando hacia arriba de la imagen (ang gira). S: su largo en píxeles.
+// ---------------------------------------------------------------------------------------------------------------
+export function moscaArriba(g, x, y, S, ang = 0, o = {}) {
+  const { alas = 0, t = 0, al = 1 } = o;
+  g.save(); g.translate(x, y); g.rotate(ang);
+  // sombra
+  const sg = g.createRadialGradient(S * 0.06, S * 0.08, 0, S * 0.06, S * 0.08, S * 0.55); sg.addColorStop(0, `rgba(20,8,2,${0.45 * al})`); sg.addColorStop(1, "rgba(20,8,2,0)");
+  g.fillStyle = sg; g.beginPath(); g.arc(S * 0.06, S * 0.08, S * 0.55, 0, TAU); g.fill();
+  g.scale(S, S); g.globalAlpha *= al;
+  // patas
+  g.strokeStyle = "#1c181a"; g.lineCap = "round"; g.lineJoin = "round";
+  const PAT = [[-0.12, [-0.28, -0.3], [-0.34, -0.42]], [-0.1, [-0.34, -0.08], [-0.44, 0.02]], [-0.06, [-0.3, 0.16], [-0.36, 0.34]]];
+  for (const sx of [-1, 1]) for (const [ay, [kx, ky], [fx, fy]] of PAT) {
+    g.lineWidth = 0.022; g.beginPath(); g.moveTo(sx * 0.05, ay); g.lineTo(sx * Math.abs(kx), ky); g.stroke();
+    g.lineWidth = 0.015; g.beginPath(); g.moveTo(sx * Math.abs(kx), ky); g.lineTo(sx * Math.abs(fx), fy); g.stroke();
+  }
+  // abdomen
+  g.beginPath(); g.ellipse(0, 0.16, 0.15, 0.22, 0, 0, TAU);
+  const ag = g.createRadialGradient(-0.04, 0.1, 0.01, 0, 0.16, 0.24); ag.addColorStop(0, "#b69a68"); ag.addColorStop(0.5, "#6e5a3c"); ag.addColorStop(1, "#1e1710");
+  g.fillStyle = ag; g.fill();
+  g.fillStyle = "rgba(25,18,10,0.45)"; for (let i = 0; i < 4; i++) { g.beginPath(); g.ellipse(0, 0.02 + i * 0.08, 0.14, 0.012, 0, 0, TAU); g.fill(); }
+  g.fillStyle = "rgba(20,14,8,0.5)"; g.fillRect(-0.015, -0.04, 0.03, 0.4);
+  // tórax con sus rayas
+  g.beginPath(); g.ellipse(0, -0.12, 0.14, 0.15, 0, 0, TAU);
+  const tg = g.createRadialGradient(-0.04, -0.17, 0.01, 0, -0.12, 0.16); tg.addColorStop(0, "#9a9aa0"); tg.addColorStop(0.55, "#4a4a50"); tg.addColorStop(1, "#141416");
+  g.fillStyle = tg; g.fill();
+  g.fillStyle = "rgba(10,10,12,0.65)"; for (const sx of [-0.07, -0.025, 0.025, 0.07]) { g.beginPath(); g.ellipse(sx, -0.12, 0.013, 0.13, 0, 0, TAU); g.fill(); }
+  // alas, en V sobre el abdomen
+  const batir = alas > 0.05;
+  for (const sx of [-1, 1]) {
+    const reps = batir ? 6 : 1;
+    for (let r = 0; r < reps; r++) {
+      const a0 = batir ? sx * (0.3 + r * 0.22 + 0.05 * Math.sin(t * 60 + r)) : sx * 0.32;
+      g.save(); g.translate(sx * 0.05, -0.1); g.rotate(a0);
+      g.beginPath(); g.moveTo(0, 0); g.bezierCurveTo(sx * 0.1, 0.1, sx * 0.12, 0.4, sx * 0.03, 0.52); g.bezierCurveTo(-sx * 0.06, 0.45, -sx * 0.05, 0.15, 0, 0); g.closePath();
+      g.fillStyle = `rgba(215,230,250,${batir ? 0.14 : 0.32})`; g.fill();
+      g.strokeStyle = `rgba(40,36,40,${batir ? 0.15 : 0.5})`; g.lineWidth = 0.005; g.stroke();
+      if (!batir) { g.beginPath(); g.moveTo(0.0, 0.02); g.quadraticCurveTo(sx * 0.07, 0.25, sx * 0.04, 0.48); g.moveTo(0, 0.05); g.quadraticCurveTo(sx * 0.0, 0.3, -sx * 0.02, 0.46); g.stroke(); }
+      g.restore();
+    }
+  }
+  // cabeza con sus dos ojos rojos
+  g.fillStyle = "#2a2528"; g.beginPath(); g.ellipse(0, -0.31, 0.13, 0.08, 0, 0, TAU); g.fill();
+  for (const sx of [-1, 1]) {
+    g.save(); g.translate(sx * 0.075, -0.315); g.beginPath(); g.ellipse(0, 0, 0.075, 0.085, sx * 0.4, 0, TAU);
+    const eg = g.createRadialGradient(-0.02, -0.03, 0.005, 0, 0, 0.09); eg.addColorStop(0, "#f06a52"); eg.addColorStop(0.5, "#a3201a"); eg.addColorStop(1, "#3a0705");
+    g.fillStyle = eg; g.fill();
+    g.save(); g.clip(); g.globalCompositeOperation = "multiply"; g.globalAlpha *= 0.5; g.drawImage(FACETAS, -0.09, -0.09, 0.18, 0.18); g.restore();
+    g.restore();
+  }
+  g.restore();
+}
+
+// La mesa vista desde arriba: la madera llena la imagen, con la luz de la ventana arriba a la izquierda.
+export function mesaArriba(g, luz = 1) {
+  g.save(); g.translate(1080, 0); g.rotate(Math.PI / 2); g.drawImage(vetas, 0, 0, 1920, 1080); g.restore();
+  const rg = g.createRadialGradient(200, 300, 50, 200, 300, 1400); rg.addColorStop(0, `rgba(255,236,200,${0.3 * luz})`); rg.addColorStop(1, "rgba(0,0,0,0.35)");
+  g.fillStyle = rg; g.fillRect(0, 0, 1080, 1920);
+}
