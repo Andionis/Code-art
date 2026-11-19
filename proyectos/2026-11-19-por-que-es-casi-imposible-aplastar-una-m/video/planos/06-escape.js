@@ -25,6 +25,9 @@ const bez = (u) => [(1 - u) ** 2 * P0[0] + 2 * (1 - u) * u * P1[0] + u * u * P2[
 const manoEn = (t) => { const u = su(tr(t, T0 - 1, Fin + 0.3)); return [mez(-300, 120, u), mez(-50, 620, u)]; };
 
 export function dibuja(g, t) {
+  // la cámara se acerca a la mosca mientras «lo más sorprendente», y se aleja cuando aparece la flecha
+  const z = 1 + 0.22 * su(tr(t, T0, Tpla - 0.2)) - 0.22 * su(tr(t, Tpla - 0.2, Tesc + 0.2));
+  g.save(); g.translate(MX + 40, MY - 180); g.scale(z, z); g.translate(-MX - 40, -MY + 180);
   cocina(g, 1180, 0.9);
   // la flecha de puntos, que se dibuja en «planea»
   const dib = su(tr(t, Tpla - 0.1, Tesc + 0.35)), brilla = 1 + 0.8 * k.pulso(t, Tcon + 0.1, 0.25);
@@ -59,6 +62,7 @@ export function dibuja(g, t) {
   for (const [d, a] of [[0.75, 0.14], [0.5, 0.22], [0.25, 0.32]]) { const [x, y] = manoEn(t - d); mano(g, x, y, 640, 0.6, a, 2.45); }
   const [hx, hy] = manoEn(t); mano(g, hx, hy, 640, 0.6, 1, 2.45);
   if (volando) volando();
+  g.restore();
   const vg = g.createLinearGradient(0, 200, 0, 600); vg.addColorStop(0, "rgba(15,8,4,0.55)"); vg.addColorStop(1, "rgba(15,8,4,0)");
   g.fillStyle = vg; g.fillRect(0, 0, 1080, 600);
 }

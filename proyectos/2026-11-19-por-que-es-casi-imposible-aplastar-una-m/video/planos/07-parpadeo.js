@@ -7,11 +7,12 @@ import { v } from "#voz";
 import { cocina, mosca, mano, golpe } from "../mundo.js";
 
 export const desde = (vz) => vz.frase(10).inicio;
-export const entrada = "corte";
+export const entrada = "sigue";
 const { suave: su, tramo: tr, mez, entra } = k;
 const f10 = v.frase(10);
 const T0 = f10.inicio, Tmen = f10.t("menos"), Tpar = f10.t("parpadeo"), Fin = f10.fin;
-const Tsal = Tmen + 0.05, Tgol = Tmen + 0.2;
+const Tsal = Tmen + 0.14, Tgol = Tmen + 0.29;
+const Tvuelve = T0 + 0.55; // rebobina: la mano sube y la mosca vuelve a su sitio
 const Tcierra = Tpar - 0.05, Tabre = Tpar + 0.35;
 export const momentos = { salta: Tsal, golpe: Tgol, parpadeo: Tcierra };
 
@@ -46,7 +47,11 @@ export function dibuja(g, t) {
   cocina(g, 1180, 0.9);
   const vuelo = tr(t, Tsal, Tsal + 0.28);
   let volando = null;
-  if (vuelo < 1) {
+  const rebob = 1 - su(tr(t, T0, Tvuelve));          // 1 al empezar (como acabó el plano de antes), 0 ya en su sitio
+  if (t < Tvuelve) {
+    const [bx, by] = bez(Math.min(1, rebob * 1.05));
+    mosca(g, bx - 40, by + 200, MS, { t, aire: Math.min(1, rebob * 5), alas: rebob > 0.02 ? 1 : 0, inclina: -0.35 * Math.min(1, rebob * 3), suelo: 1380 });
+  } else if (vuelo < 1) {
     let x = MX, y = MY;
     if (vuelo > 0) { const [bx, by] = bez(vuelo); x = bx - 40; y = by + 200; }
     const pinta = () => mosca(g, x, y, MS, { t, frota: vuelo > 0 ? 0 : 1, inclina: vuelo > 0 ? -0.35 : 0, aire: Math.min(1, vuelo * 5), alas: vuelo > 0 ? 1 : 0, suelo: 1380 });
@@ -56,8 +61,10 @@ export function dibuja(g, t) {
     const x = mez(860, 900, tr(t, Tsal + 0.28, Fin)), y = mez(760, 730, tr(t, Tsal + 0.28, Fin));
     mosca(g, x, y, 200, { t, aire: 1, alas: 1, inclina: -0.2, sombra: 0 });
   }
-  const baja = Math.pow(tr(t, T0, Tgol), 2);
-  mano(g, mez(-120, 380, baja), mez(120, 900, baja), 640, 0.6, 1, 2.45, 140 * tr(t, Tgol - 0.3, Tgol) * (t < Tgol ? 1 : 0));
+  // la mano: vuelve arriba rebobinando y luego baja de golpe
+  const baja = Math.pow(tr(t, Tvuelve + 0.1, Tgol), 2);
+  const hx = t < Tvuelve + 0.1 ? mez(-120, 120, rebob) : mez(-120, 380, baja), hy = t < Tvuelve + 0.1 ? mez(120, 620, rebob) : mez(120, 900, baja);
+  mano(g, hx, hy, 640, 0.6, 1, 2.45, 140 * tr(t, Tgol - 0.3, Tgol) * (t < Tgol ? 1 : 0));
   if (volando) volando();
   golpe(g, 520, 1380, tr(t, Tgol, Tgol + 0.45), 760);
   // la cifra
