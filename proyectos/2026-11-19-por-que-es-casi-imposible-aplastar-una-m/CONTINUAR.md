@@ -20,7 +20,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 - [x] 3. La voz (una sola vez, con el guion cerrado)
 - [x] 4. El plan → plan.md, con sus escenas
 - [ ] 5. Escena por escena (cada una, su borrador aprobado):
-  - [ ] escena 1 (el hook): frases 1-2, hasta 6,2 s
+  - [x] escena 1 (el hook): frases 1-2, hasta 6,2 s
   - [ ] escena 2: frases 3-5, hasta 17,4 s
   - [ ] escena 3: frases 6-7, hasta 26,0 s
   - [ ] escena 4: frases 8-10, hasta 37,5 s

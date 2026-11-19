@@ -36,7 +36,7 @@ despegar; el truco es apuntar por delante de ella.
 
 | Escena | Frases | Acaba en (s) | Aprobada |
 |---|---|---|---|
-| 1 (el hook) | 1-2 | 6,2 | |
+| 1 (el hook) | 1-2 | 6,2 | sí (v1) |
 | 2 | 3-5 | 17,4 | |
 | 3 | 6-7 | 26,0 | |
 | 4 | 8-10 | 37,5 | |

@@ -57,7 +57,7 @@ export function cocina(g, yh = 1150, luz = 1) {
 const azM = azar(4242);
 const PELOS_T = Array.from({ length: 70 }, () => { const a = azM() * Math.PI - Math.PI * 0.95; return { a, r: 0.95 + azM() * 0.1, l: 0.012 + azM() * 0.022 }; });
 const PELOS_A = Array.from({ length: 60 }, () => { const a = azM() * TAU; return { a, r: 0.97 + azM() * 0.05, l: 0.01 + azM() * 0.018 }; });
-const FACETAS = (() => {
+export const FACETAS = (() => {
   const l = k.lienzo(256), c = l.getContext("2d");
   c.fillStyle = "#000"; c.fillRect(0, 0, 256, 256);
   c.strokeStyle = "rgba(255,255,255,0.55)"; c.lineWidth = 1.2;
@@ -109,7 +109,7 @@ function ala(g, ang, al, batir) {
 }
 
 export function mosca(g, x, y, S, o = {}) {
-  const { frota = 0, alas = 0, aire = 0, inclina = 0, agacha = 0, t = 0, al = 1, sombra = 1, suelo = null } = o;
+  const { frota = 0, alas = 0, aire = 0, inclina = 0, agacha = 0, t = 0, al = 1, sombra = 1, suelo = null, camina = 0 } = o;
   if (al <= 0.003) return;
   g.save(); g.translate(x, y);
   // la sombra en la mesa
@@ -130,18 +130,21 @@ export function mosca(g, x, y, S, o = {}) {
   const colgar = (p, q) => [mez(p[0], q[0], aire), mez(p[1], q[1], aire)];
   const patas = (lejos) => {
     const d = lejos ? -0.035 : 0, gro = lejos ? 0.019 : 0.022;
+    // al caminar: trípode (delante y detrás de un lado con el medio del otro)
+    const paso = (i, p) => { const f = t * 11 + (i % 2) * Math.PI + (lejos ? Math.PI : 0); return [p[0] + 0.045 * camina * Math.sin(f), p[1] - 0.03 * camina * Math.max(0, Math.cos(f))]; };
+    const rod = (i, p) => [p[0] + 0.02 * camina * Math.sin(t * 11 + (i % 2) * Math.PI + (lejos ? Math.PI : 0)), p[1]];
     // delante: si se frota, las dos patas suben hacia la cabeza
     const a1 = ins(0.13 + d, 0.08);
     const n1 = [mez(0.27, 0.36, fr) + d, mez(-0.06, -0.12, fr) + (lejos ? 0 : ph * 0.015 * fr)];
     const t1 = [mez(0.31, 0.41, fr) + d, mez(-0.0, -0.03, fr) + (lejos ? ph * 0.02 * fr : 0)];
     const f1 = [mez(0.39, 0.43, fr) + d, mez(0, 0.04, fr) + (lejos ? -ph * 0.015 * fr : ph * 0.02 * fr)];
-    pata(g, P3(a1, colgar(n1, [0.2, cuerpoY + 0.18]), colgar(t1, [0.24, cuerpoY + 0.3]), colgar(f1, [0.26, cuerpoY + 0.36])), gro, col(lejos));
+    pata(g, P3(a1, colgar(rod(0, n1), [0.2, cuerpoY + 0.18]), colgar(paso(0, t1), [0.24, cuerpoY + 0.3]), colgar(paso(0, f1), [0.26, cuerpoY + 0.36])), gro, col(lejos));
     // medio: recoge para saltar
     const a2 = ins(0.05 + d, 0.1);
-    pata(g, P3(a2, colgar([0.09 + d, mez(-0.13, -0.06, agacha)], [0.06, cuerpoY + 0.2]), colgar([0.06 + d, 0], [0.02, cuerpoY + 0.32]), colgar([-0.02 + d, 0], [0.0, cuerpoY + 0.38])), gro, col(lejos));
+    pata(g, P3(a2, colgar(rod(1, [0.09 + d, mez(-0.13, -0.06, agacha)]), [0.06, cuerpoY + 0.2]), colgar(paso(1, [0.06 + d, 0]), [0.02, cuerpoY + 0.32]), colgar(paso(1, [-0.02 + d, 0]), [0.0, cuerpoY + 0.38])), gro, col(lejos));
     // detrás
     const a3 = ins(-0.03 + d, 0.1);
-    pata(g, P3(a3, colgar([-0.17 + d, -0.15], [-0.08, cuerpoY + 0.2]), colgar([-0.22 + d, 0], [-0.12, cuerpoY + 0.32]), colgar([-0.3 + d, 0], [-0.13, cuerpoY + 0.38])), gro, col(lejos));
+    pata(g, P3(a3, colgar(rod(2, [-0.17 + d, -0.15]), [-0.08, cuerpoY + 0.2]), colgar(paso(2, [-0.22 + d, 0]), [-0.12, cuerpoY + 0.32]), colgar(paso(2, [-0.3 + d, 0]), [-0.13, cuerpoY + 0.38])), gro, col(lejos));
   };
   patas(true);
   g.save(); g.translate(0, cuerpoY + bob); g.rotate(inclina);
