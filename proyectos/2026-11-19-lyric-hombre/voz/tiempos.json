@@ -1,0 +1,589 @@
+{
+ "firma": "cancion",
+ "duracion": 26.3,
+ "frases": [
+  {
+   "n": 1,
+   "texto": "Rompe, tú dale a parar con ese bompe.",
+   "clave": "rompe",
+   "inicio": 0.17,
+   "fin": 2.85
+  },
+  {
+   "n": 2,
+   "texto": "Que ya te lleguen a ti, dime entonces.",
+   "clave": "entonces",
+   "inicio": 3.11,
+   "fin": 5.77
+  },
+  {
+   "n": 3,
+   "texto": "Yo tengo la Glock con el chip, esto e' under.",
+   "clave": "under",
+   "inicio": 6.01,
+   "fin": 8.63
+  },
+  {
+   "n": 4,
+   "texto": "Ese culo e' mío, ella mata por su hombre.",
+   "clave": "hombre",
+   "inicio": 8.89,
+   "fin": 11.51
+  },
+  {
+   "n": 5,
+   "texto": "Rompe, tú dale a parar con ese bompe.",
+   "clave": "rompe",
+   "inicio": 11.83,
+   "fin": 14.33
+  },
+  {
+   "n": 6,
+   "texto": "Que ya te lleguen a ti, dime entonces.",
+   "clave": "entonces",
+   "inicio": 14.73,
+   "fin": 17.33
+  },
+  {
+   "n": 7,
+   "texto": "Yo tengo la Glock con el chip, esto e' under.",
+   "clave": "under",
+   "inicio": 17.55,
+   "fin": 20.21
+  },
+  {
+   "n": 8,
+   "texto": "Ese culo e' mío, ella mata por su hombre.",
+   "clave": "hombre",
+   "inicio": 20.49,
+   "fin": 23.13
+  },
+  {
+   "n": 9,
+   "texto": "Quemando de la verde.",
+   "clave": "verde",
+   "inicio": 24.61,
+   "fin": 25.99
+  }
+ ],
+ "palabras": [
+  {
+   "texto": "Rompe,",
+   "inicio": 0.17,
+   "fin": 0.51,
+   "frase": 1,
+   "clave": true
+  },
+  {
+   "texto": "tú",
+   "inicio": 0.91,
+   "fin": 1.03,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "dale",
+   "inicio": 1.07,
+   "fin": 1.27,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "a",
+   "inicio": 1.31,
+   "fin": 1.37,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "parar",
+   "inicio": 1.43,
+   "fin": 1.73,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "con",
+   "inicio": 1.81,
+   "fin": 1.97,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "ese",
+   "inicio": 2.03,
+   "fin": 2.33,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "bompe.",
+   "inicio": 2.39,
+   "fin": 2.85,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "Que",
+   "inicio": 3.11,
+   "fin": 3.209,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "ya",
+   "inicio": 3.25,
+   "fin": 3.369,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "te",
+   "inicio": 3.45,
+   "fin": 3.57,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "lleguen",
+   "inicio": 3.61,
+   "fin": 4.01,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "a",
+   "inicio": 4.05,
+   "fin": 4.13,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "ti,",
+   "inicio": 4.21,
+   "fin": 4.41,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "dime",
+   "inicio": 4.91,
+   "fin": 5.13,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "entonces.",
+   "inicio": 5.15,
+   "fin": 5.77,
+   "frase": 2,
+   "clave": true
+  },
+  {
+   "texto": "Yo",
+   "inicio": 6.01,
+   "fin": 6.09,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "tengo",
+   "inicio": 6.15,
+   "fin": 6.45,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "la",
+   "inicio": 6.49,
+   "fin": 6.65,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "Glock",
+   "inicio": 6.67,
+   "fin": 6.93,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "con",
+   "inicio": 7.05,
+   "fin": 7.19,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "el",
+   "inicio": 7.25,
+   "fin": 7.35,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "chip,",
+   "inicio": 7.41,
+   "fin": 7.57,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "esto",
+   "inicio": 7.81,
+   "fin": 8.03,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "e'",
+   "inicio": 8.07,
+   "fin": 8.11,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "under.",
+   "inicio": 8.25,
+   "fin": 8.63,
+   "frase": 3,
+   "clave": true
+  },
+  {
+   "texto": "Ese",
+   "inicio": 8.89,
+   "fin": 9.15,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "culo",
+   "inicio": 9.21,
+   "fin": 9.41,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "e'",
+   "inicio": 9.51,
+   "fin": 9.51,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "mío,",
+   "inicio": 9.61,
+   "fin": 10.01,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "ella",
+   "inicio": 10.09,
+   "fin": 10.25,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "mata",
+   "inicio": 10.29,
+   "fin": 10.61,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "por",
+   "inicio": 10.65,
+   "fin": 10.81,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "su",
+   "inicio": 10.87,
+   "fin": 11.03,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "hombre.",
+   "inicio": 11.09,
+   "fin": 11.51,
+   "frase": 4,
+   "clave": true
+  },
+  {
+   "texto": "Rompe,",
+   "inicio": 11.83,
+   "fin": 12.19,
+   "frase": 5,
+   "clave": true
+  },
+  {
+   "texto": "tú",
+   "inicio": 12.47,
+   "fin": 12.61,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "dale",
+   "inicio": 12.65,
+   "fin": 12.83,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "a",
+   "inicio": 12.89,
+   "fin": 12.91,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "parar",
+   "inicio": 13.01,
+   "fin": 13.31,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "con",
+   "inicio": 13.37,
+   "fin": 13.51,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "ese",
+   "inicio": 13.59,
+   "fin": 13.89,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "bompe.",
+   "inicio": 13.95,
+   "fin": 14.33,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "Que",
+   "inicio": 14.73,
+   "fin": 14.81,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "ya",
+   "inicio": 14.83,
+   "fin": 14.91,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "te",
+   "inicio": 14.97,
+   "fin": 15.09,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "lleguen",
+   "inicio": 15.13,
+   "fin": 15.53,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "a",
+   "inicio": 15.59,
+   "fin": 15.65,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "ti,",
+   "inicio": 15.73,
+   "fin": 15.95,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "dime",
+   "inicio": 16.43,
+   "fin": 16.65,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "entonces.",
+   "inicio": 16.69,
+   "fin": 17.33,
+   "frase": 6,
+   "clave": true
+  },
+  {
+   "texto": "Yo",
+   "inicio": 17.55,
+   "fin": 17.63,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "tengo",
+   "inicio": 17.67,
+   "fin": 17.99,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "la",
+   "inicio": 18.01,
+   "fin": 18.17,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "Glock",
+   "inicio": 18.21,
+   "fin": 18.55,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "con",
+   "inicio": 18.61,
+   "fin": 18.75,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "el",
+   "inicio": 18.81,
+   "fin": 18.91,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "chip,",
+   "inicio": 18.97,
+   "fin": 19.13,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "esto",
+   "inicio": 19.39,
+   "fin": 19.589,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "e'",
+   "inicio": 19.629,
+   "fin": 19.69,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "under.",
+   "inicio": 19.809,
+   "fin": 20.21,
+   "frase": 7,
+   "clave": true
+  },
+  {
+   "texto": "Ese",
+   "inicio": 20.49,
+   "fin": 20.73,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "culo",
+   "inicio": 20.79,
+   "fin": 20.99,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "e'",
+   "inicio": 21.03,
+   "fin": 21.07,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "mío,",
+   "inicio": 21.17,
+   "fin": 21.53,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "ella",
+   "inicio": 21.65,
+   "fin": 21.81,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "mata",
+   "inicio": 21.87,
+   "fin": 22.15,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "por",
+   "inicio": 22.21,
+   "fin": 22.39,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "su",
+   "inicio": 22.45,
+   "fin": 22.65,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "hombre.",
+   "inicio": 22.71,
+   "fin": 23.13,
+   "frase": 8,
+   "clave": true
+  },
+  {
+   "texto": "Quemando",
+   "inicio": 24.61,
+   "fin": 25.09,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "de",
+   "inicio": 25.15,
+   "fin": 25.27,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "la",
+   "inicio": 25.33,
+   "fin": 25.45,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "verde.",
+   "inicio": 25.55,
+   "fin": 25.99,
+   "frase": 9,
+   "clave": true
+  }
+ ]
+}
