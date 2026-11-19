@@ -1,0 +1,48 @@
+{
+  "titulo": "Lyric video lyric-riendo",
+  "idioma": "es",
+  "subtitulos": "no",
+  "frases": [
+    {
+      "texto": "Por fuera estoy riendo y por dentro me estoy muriendo",
+      "clave": "muriendo"
+    },
+    {
+      "texto": "Estoy agonizando; baby, yo te extraño",
+      "clave": "agonizando"
+    },
+    {
+      "texto": "Ya tú no me habla' y yo no sé qué hacer",
+      "clave": "habla"
+    },
+    {
+      "texto": "Mi conciencia me dice que tú no' va' a volver",
+      "clave": "conciencia"
+    },
+    {
+      "texto": "Yo nunca te quería perder, baby, yo me enredé en tu piel",
+      "clave": "perder"
+    },
+    {
+      "texto": "Yo solo te quiero comer tu totito otra vez",
+      "clave": "comer"
+    },
+    {
+      "texto": "Y si tú crees, que yo, no sé amar",
+      "clave": "amar"
+    },
+    {
+      "texto": "Pues yo te olvido y tú olvídame",
+      "clave": "olvido"
+    },
+    {
+      "texto": "Pero si tú, na' más, quieres chingar",
+      "clave": "chingar"
+    }
+  ],
+  "lyric": {
+    "bn": true,
+    "funde": 40.6,
+    "marca": false
+  }
+}
