@@ -11,6 +11,7 @@ Cómo está hecho (no es un video de voz):
 
 Pasos:
 - [x] Tramo, letra sincronizada y beats
-- [x] Borrador completo v1 (revisar/Hombre lyric v1 (borrador).mp4)
+- [x] Borrador v1 (ciudad de neón)
+- [x] Borrador v2: fondo = video del creador (fondo/original.mov) en bucle, recortado en vertical siguiendo al artista (fondo/f/); letra corregida por el creador
 - [ ] El creador aprueba o corrige (letra, colores, estilo)
 - [ ] Final a 60 fps, miniatura y descripciones

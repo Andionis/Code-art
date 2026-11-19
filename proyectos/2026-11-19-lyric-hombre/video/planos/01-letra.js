@@ -2,7 +2,7 @@
 // late con el beat; la letra grande en el centro, palabra a palabra, y la palabra clave enorme en el color de la línea.
 import * as k from "#kit";
 import { v } from "#voz";
-import { beat, colorEn, capas, gotas, humos, grietas } from "../mundo.js";
+import { beat, colorEn, humos, grietas, cuadros, FPS_FONDO } from "../mundo.js";
 
 export const desde = 0;
 
@@ -10,64 +10,28 @@ const CX = 515, ANCHO_MAX = 870;
 const GRIETAS = grietas(3);
 const rgb = (c, a = 1) => `rgba(${c[0]},${c[1]},${c[2]},${a})`;
 
-// --- el fondo: cielo con neón, ciudad en tres capas, lluvia, calle mojada
+// --- el fondo: el video en bucle, con el color de la línea encima y un golpe de zoom en cada beat
 function fondo(g, t, col, b) {
-  const zoom = 1 + 0.08 * (t / v.duracion) + 0.018 * b;
+  const img = cuadros[Math.floor(t * FPS_FONDO) % cuadros.length];
+  const zoom = 1.04 + 0.04 * b;
   g.save();
   g.translate(540, 960); g.scale(zoom, zoom); g.translate(-540, -960);
-  const cielo = g.createLinearGradient(0, 0, 0, 1920);
-  cielo.addColorStop(0, "#04030a");
-  cielo.addColorStop(0.45, rgb(col.map((x) => x * 0.22)));
-  cielo.addColorStop(0.62, rgb(col.map((x) => x * 0.45)));
-  cielo.addColorStop(0.7, "#05040c");
-  cielo.addColorStop(1, "#020206");
-  g.fillStyle = cielo; g.fillRect(-100, -100, 1280, 2120);
-  // el resplandor de la ciudad
-  g.globalCompositeOperation = "lighter";
-  const hal = g.createRadialGradient(540, 1330, 50, 540, 1330, 900);
-  hal.addColorStop(0, rgb(col, 0.35 + 0.25 * b)); hal.addColorStop(1, rgb(col, 0));
-  g.fillStyle = hal; g.fillRect(-100, 300, 1280, 1700);
+  g.drawImage(img, 0, 0, 1080, 1920);
+  g.restore();
+  // el color de la línea, mezclado con la imagen
+  g.save();
+  g.globalCompositeOperation = "color";
+  g.globalAlpha = 0.35;
+  g.fillStyle = rgb(col); g.fillRect(0, 0, 1080, 1920);
   g.globalCompositeOperation = "source-over";
-  // los edificios: la capa de atrás más clara y lenta
-  const suelo = 1360;
-  capas.slice().reverse().forEach((eds, ci) => {
-    const c = 2 - ci, par = (c + 1) * 14 * Math.sin(t * 0.25);
-    const tono = [8 + c * 2, 7 + c * 2, 16 + c * 4];
-    for (const e of eds) {
-      const x = e.x + par, y = suelo - e.h;
-      const lad = g.createLinearGradient(x, 0, x + e.w, 0);
-      lad.addColorStop(0, rgb(tono)); lad.addColorStop(1, rgb(tono.map((q) => q * 0.6)));
-      g.fillStyle = lad; g.fillRect(x, y, e.w, e.h);
-      // el borde de neón que le da la luz de la calle
-      g.fillStyle = rgb(col, 0.25 + 0.2 * b); g.fillRect(x, y, e.w, 3);
-      if (e.antena) { g.fillStyle = rgb(tono); g.fillRect(x + e.w / 2 - 2, y - 60, 4, 60); g.fillStyle = `rgba(255,60,60,${0.5 + 0.5 * Math.sin(t * 3 + e.x)})`; g.beginPath(); g.arc(x + e.w / 2, y - 62, 5, 0, 6.28); g.fill(); }
-      for (const [vx, vy, r] of e.ventanas) {
-        const enc = r < 0.5 ? 0.85 : 0.25 + 0.5 * b * (r > 0.85 ? 1 : 0);
-        g.fillStyle = r < 0.25 ? `rgba(255,214,150,${enc})` : rgb(col.map((q) => 120 + q * 0.5), enc * 0.7);
-        g.fillRect(x + vx, y + vy, 12, 16);
-      }
-    }
-  });
-  // la calle mojada: el reflejo del neón
-  const calle = g.createLinearGradient(0, suelo, 0, 1920);
-  calle.addColorStop(0, rgb(col.map((x) => x * 0.35))); calle.addColorStop(0.15, "#06050c"); calle.addColorStop(1, "#020205");
-  g.fillStyle = calle; g.fillRect(-100, suelo, 1280, 700);
+  g.globalAlpha = 1;
+  // un poco más oscuro, para que la letra mande
+  g.fillStyle = "rgba(0,0,0,0.28)"; g.fillRect(0, 0, 1080, 1920);
+  // un destello del color en cada beat
   g.globalCompositeOperation = "lighter";
-  for (let i = 0; i < 9; i++) {
-    const rx = 60 + i * 120 + 20 * Math.sin(i * 7.1);
-    const re = g.createLinearGradient(0, suelo, 0, suelo + 420);
-    re.addColorStop(0, rgb(col, 0.28 + 0.2 * b)); re.addColorStop(1, rgb(col, 0));
-    g.fillStyle = re; g.fillRect(rx, suelo, 10 + (i % 3) * 8, 420);
-  }
-  // la lluvia
-  g.strokeStyle = "rgba(200,210,255,0.22)"; g.lineWidth = 2;
-  g.beginPath();
-  for (const [x0, y0, vel, r] of gotas) {
-    const y = ((y0 + t * 1400 * vel) % 2200) - 140, x = x0 - y * 0.12;
-    g.moveTo(x, y); g.lineTo(x - 6, y + 40 + r * 30);
-  }
-  g.stroke();
-  g.globalCompositeOperation = "source-over";
+  const hal = g.createRadialGradient(540, 1900, 50, 540, 1900, 1100);
+  hal.addColorStop(0, rgb(col, 0.35 * b)); hal.addColorStop(1, rgb(col, 0));
+  g.fillStyle = hal; g.fillRect(0, 0, 1080, 1920);
   g.restore();
   // viñeta
   const vi = g.createRadialGradient(540, 900, 300, 540, 960, 1250);
@@ -97,7 +61,7 @@ function maqueta(g, f) {
     fila.palabras.push({ w, texto, ancho }); fila.ancho += hueco + ancho;
   }
   const alto = filas.reduce((s, r) => s + r.tam * 1.08, 0);
-  let y = 900 - alto / 2;
+  let y = 1060 - alto / 2;
   for (const r of filas) {
     const total = r.palabras.reduce((s, p) => s + p.ancho, 0) + 24 * (r.palabras.length - 1);
     let x = CX - total / 2;
@@ -113,7 +77,7 @@ function maqueta(g, f) {
 function letra(g, t, col, b) {
   const fs = v.frases;
   // un velo oscuro detrás de la letra, para que se lea sobre la ciudad
-  const ve = g.createRadialGradient(CX, 900, 60, CX, 900, 620);
+  const ve = g.createRadialGradient(CX, 1060, 60, CX, 1060, 620);
   ve.addColorStop(0, "rgba(0,0,0,0.55)"); ve.addColorStop(1, "rgba(0,0,0,0)");
   g.fillStyle = ve; g.fillRect(0, 250, 1080, 1300);
   fs.forEach((f, i) => {
@@ -123,7 +87,7 @@ function letra(g, t, col, b) {
     const sal = sig ? k.sale(k.tramo(t, z - 0.16, z)) : 0;
     const ps = maqueta(g, f);
     g.save();
-    g.translate(CX, 900); g.scale(1 + 0.25 * sal, 1 + 0.25 * sal); g.translate(-CX, -900);
+    g.translate(CX, 1060); g.scale(1 + 0.25 * sal, 1 + 0.25 * sal); g.translate(-CX, -1060);
     for (const p of ps) {
       const ta = p.w.inicio - 0.06;
       if (t < ta) continue;
@@ -163,7 +127,7 @@ function rompe(g, t) {
     g.globalAlpha = 0.55 * Math.exp(-d / 0.07);
     g.fillStyle = "#ffffff"; g.fillRect(0, 0, 1080, 1920);
     g.globalAlpha = al;
-    g.translate(CX, 900);
+    g.translate(CX, 1060);
     const crece = k.entra(k.tramo(d, 0, 0.12));
     g.strokeStyle = "rgba(255,255,255,0.85)"; g.lineWidth = 3; g.shadowColor = "rgba(255,80,90,0.9)"; g.shadowBlur = 14;
     for (const pts of GRIETAS) {

@@ -14,7 +14,7 @@ export function beat(t) {
 }
 
 // el color de cada línea [r,g,b]: rompe rojo, entonces violeta, under cian, hombre rosa, verde verde
-const PALETA = { rompe: [255, 40, 60], entonces: [150, 70, 255], under: [40, 200, 255], hombre: [255, 40, 150], verde: [60, 255, 120] };
+const PALETA = { rompe: [255, 40, 60], donde: [150, 70, 255], under: [40, 200, 255], hombre: [255, 40, 150], verde: [60, 255, 120] };
 export function colorEn(t) {
   const fs = v.frases;
   let i = 0;
@@ -55,3 +55,10 @@ export function grietas(semilla) {
   }
   return gs;
 }
+
+// el video de fondo (ya en vertical, siguiendo al artista), en bucle: sus fotogramas, cargados una vez
+import { loadImage } from "@napi-rs/canvas";
+import { readdirSync } from "node:fs";
+const carpeta = new URL("../fondo/f/", import.meta.url);
+export const cuadros = await Promise.all(readdirSync(carpeta).filter((f) => f.endsWith(".jpg")).sort().map((f) => loadImage(new URL(f, carpeta).pathname)));
+export const FPS_FONDO = 30;
