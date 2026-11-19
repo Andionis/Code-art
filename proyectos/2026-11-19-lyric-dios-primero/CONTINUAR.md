@@ -14,5 +14,5 @@ Pasos:
 - [x] Borrador v2: como mucho 3 filas de letra en pantalla (las líneas largas, en pantallas seguidas)
 - [x] Borrador v3: termina en «Gracia', Dios mío» (ad-lib, colocado a oído hacia 41,3-41,75 s de la canción; las voces callan de 41,75 a 42,9), desvanecido 21,75 → 22,9 s; sin «Ser rico…»
 - [x] Borrador v4: vuelve a durar 26,6 s; tras «Dios mío» la letra se va y la música (con su voz, sin letra en pantalla) y la imagen se desvanecen despacio de 21,75 s al final
-- [ ] El creador aprueba o corrige
-- [ ] Final a 60 fps, miniatura (SIN_LETRA=1) y descripciones
+- [x] Aprobado v4
+- [x] Final a 60 fps: salida/./Lil Naay - Dios Primero (letra).mp4; flyer (portada 2) y descripciones
