@@ -1,6 +1,6 @@
 {
  "firma": "cancion",
- "duracion": 26.6,
+ "duracion": 22.9,
  "frases": [
   {
    "n": 1,
@@ -56,14 +56,14 @@
    "texto": "debería estar orgullosa",
    "clave": "orgullosa",
    "inicio": 20.28,
-   "fin": 21.64
+   "fin": 21.25
   },
   {
    "n": 9,
-   "texto": "Ser rico es otra cosa, te lo juro, es otra cosa",
-   "clave": "rico",
-   "inicio": 22.94,
-   "fin": 26.04
+   "texto": "Gracia', Dios mío",
+   "clave": "dios",
+   "inicio": 21.3,
+   "fin": 21.75
   }
  ],
  "palabras": [
@@ -476,98 +476,42 @@
   {
    "texto": "debería",
    "inicio": 20.28,
-   "fin": 20.62,
+   "fin": 20.66,
    "frase": 8,
    "clave": false
   },
   {
    "texto": "estar",
    "inicio": 20.68,
-   "fin": 20.8,
+   "fin": 20.84,
    "frase": 8,
    "clave": false
   },
   {
    "texto": "orgullosa",
    "inicio": 20.86,
-   "fin": 21.64,
+   "fin": 21.12,
    "frase": 8,
    "clave": true
   },
   {
-   "texto": "Ser",
-   "inicio": 22.94,
-   "fin": 23.08,
+   "texto": "Gracia',",
+   "inicio": 21.3,
+   "fin": 21.42,
    "frase": 9,
    "clave": false
   },
   {
-   "texto": "rico",
-   "inicio": 23.12,
-   "fin": 23.32,
+   "texto": "Dios",
+   "inicio": 21.45,
+   "fin": 21.56,
    "frase": 9,
    "clave": true
   },
   {
-   "texto": "es",
-   "inicio": 23.36,
-   "fin": 23.44,
-   "frase": 9,
-   "clave": false
-  },
-  {
-   "texto": "otra",
-   "inicio": 23.44,
-   "fin": 23.64,
-   "frase": 9,
-   "clave": false
-  },
-  {
-   "texto": "cosa,",
-   "inicio": 23.74,
-   "fin": 24.18,
-   "frase": 9,
-   "clave": false
-  },
-  {
-   "texto": "te",
-   "inicio": 24.7,
-   "fin": 24.78,
-   "frase": 9,
-   "clave": false
-  },
-  {
-   "texto": "lo",
-   "inicio": 24.82,
-   "fin": 24.92,
-   "frase": 9,
-   "clave": false
-  },
-  {
-   "texto": "juro,",
-   "inicio": 24.96,
-   "fin": 25.2,
-   "frase": 9,
-   "clave": false
-  },
-  {
-   "texto": "es",
-   "inicio": 25.24,
-   "fin": 25.32,
-   "frase": 9,
-   "clave": false
-  },
-  {
-   "texto": "otra",
-   "inicio": 25.3,
-   "fin": 25.5,
-   "frase": 9,
-   "clave": false
-  },
-  {
-   "texto": "cosa",
-   "inicio": 25.62,
-   "fin": 26.04,
+   "texto": "mío",
+   "inicio": 21.56,
+   "fin": 21.75,
    "frase": 9,
    "clave": false
   }

@@ -8,7 +8,7 @@ import { beat, colorEn, cuadros, FPS_FONDO } from "../mundo.js";
 export const desde = 0;
 // BN=1 (variable de entorno): el video de fondo en blanco y negro; la letra sigue a color
 const BN = process.env.BN !== "0"; // este video: blanco y negro (BN=0 para verlo a color)
-const FUNDE = 25.95; // donde empieza el desvanecido (el mismo que el de la música)
+const FUNDE = 21.75; // donde empieza el desvanecido (el mismo que el de la música)
 
 const CX = 515, ANCHO_MAX = 870;
 const rgb = (c, a = 1) => `rgba(${c[0]},${c[1]},${c[2]},${a})`;
