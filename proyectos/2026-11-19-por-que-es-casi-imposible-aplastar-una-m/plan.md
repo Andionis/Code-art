@@ -40,4 +40,4 @@ despegar; el truco es apuntar por delante de ella.
 | 2 | 3-5 | 17,4 | sí (v1) |
 | 3 | 6-7 | 26,0 | sí (v1) |
 | 4 | 8-10 | 37,5 | sí (v1) |
-| 5 | 11-13 | 50,7 | |
+| 5 | 11-13 | 50,7 | sí (v1) |
