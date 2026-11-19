@@ -1,6 +1,6 @@
 {
  "firma": "cancion",
- "duracion": 26.3,
+ "duracion": 25.1,
  "frases": [
   {
    "n": 1,
@@ -57,13 +57,6 @@
    "clave": "hombre",
    "inicio": 20.49,
    "fin": 23.13
-  },
-  {
-   "n": 9,
-   "texto": "Quemando de la verde",
-   "clave": "verde",
-   "inicio": 24.61,
-   "fin": 25.99
   }
  ],
  "palabras": [
@@ -583,34 +576,6 @@
    "inicio": 22.71,
    "fin": 23.13,
    "frase": 8,
-   "clave": true
-  },
-  {
-   "texto": "Quemando",
-   "inicio": 24.61,
-   "fin": 25.09,
-   "frase": 9,
-   "clave": false
-  },
-  {
-   "texto": "de",
-   "inicio": 25.15,
-   "fin": 25.27,
-   "frase": 9,
-   "clave": false
-  },
-  {
-   "texto": "la",
-   "inicio": 25.33,
-   "fin": 25.45,
-   "frase": 9,
-   "clave": false
-  },
-  {
-   "texto": "verde",
-   "inicio": 25.55,
-   "fin": 25.99,
-   "frase": 9,
    "clave": true
   }
  ]

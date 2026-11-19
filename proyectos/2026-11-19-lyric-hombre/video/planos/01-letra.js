@@ -5,6 +5,7 @@ import { v } from "#voz";
 import { beat, colorEn, humos, grietas, cuadros, FPS_FONDO } from "../mundo.js";
 
 export const desde = 0;
+const FUNDE = 23.2; // donde empieza el desvanecido (el mismo que el de la música)
 
 const CX = 515, ANCHO_MAX = 870;
 const GRIETAS = grietas(3);
@@ -159,7 +160,9 @@ function humo(g, t) {
 export function dibuja(g, t) {
   const col = colorEn(t), b = beat(t);
   fondo(g, t, col, b);
-  humo(g, t);
   rompe(g, t);
   letra(g, t, col, b);
+  // al final, todo se desvanece a negro con la música (desde que acaba «hombre»)
+  const negro = k.suave(k.tramo(t, FUNDE, v.duracion - 0.05));
+  if (negro > 0) { g.fillStyle = `rgba(0,0,0,${negro})`; g.fillRect(0, 0, 1080, 1920); }
 }
