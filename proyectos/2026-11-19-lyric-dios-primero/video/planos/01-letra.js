@@ -105,7 +105,7 @@ function letra(g, t, col, b) {
     const sig = pags[i + 1];
     const a = pg.inicio - 0.12, z = sig ? sig.inicio - 0.1 : v.duracion + 1;
     if (t < a || t > z) return;
-    const sal = sig ? k.sale(k.tramo(t, z - 0.16, z)) : 0;
+    const sal = sig ? k.sale(k.tramo(t, z - 0.16, z)) : k.suave(k.tramo(t, FUNDE + 0.3, FUNDE + 1.3)) ; // la última letra se va al empezar el desvanecido: luego, solo música
     const ps = pg.palabras;
     g.save();
     g.translate(CX, 1060); g.scale(1 + 0.25 * sal, 1 + 0.25 * sal); g.translate(-CX, -1060);
@@ -120,17 +120,17 @@ function letra(g, t, col, b) {
       g.translate(p.x, p.y - 30 * (1 - u)); g.scale(esc, esc);
       g.font = fuente(p.tam); g.textAlign = "center"; g.textBaseline = "alphabetic";
       if (p.clave) {
-        g.shadowColor = rgb(col, 0.95); g.shadowBlur = 40 + 30 * b;
+        g.shadowColor = rgb(col, 0.95 * (1 - sal)); g.shadowBlur = 40 + 30 * b; // la sombra no respeta globalAlpha
         g.fillStyle = rgb(col); g.fillText(p.texto, 0, 0);
         g.shadowBlur = 0;
         const brillo = g.createLinearGradient(0, -p.tam * 0.8, 0, 0);
         brillo.addColorStop(0, "rgba(255,255,255,0.75)"); brillo.addColorStop(0.55, "rgba(255,255,255,0)");
         g.fillStyle = brillo; g.fillText(p.texto, 0, 0);
       } else {
-        g.shadowColor = "rgba(0,0,0,0.85)"; g.shadowBlur = 18; g.shadowOffsetY = 6;
+        g.shadowColor = `rgba(0,0,0,${0.85 * (1 - sal)})`; g.shadowBlur = 18; g.shadowOffsetY = 6;
         g.fillStyle = sonando ? "#ffffff" : "rgba(235,235,245,0.82)";
         g.fillText(p.texto, 0, 0);
-        if (sonando) { g.shadowColor = rgb(col, 0.9); g.shadowBlur = 26; g.shadowOffsetY = 0; g.fillText(p.texto, 0, 0); }
+        if (sonando) { g.shadowColor = rgb(col, 0.9 * (1 - sal)); g.shadowBlur = 26; g.shadowOffsetY = 0; g.fillText(p.texto, 0, 0); }
       }
       g.restore();
     }
