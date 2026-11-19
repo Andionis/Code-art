@@ -23,3 +23,11 @@
 
 ## Marca de agua
 - «Le puedes crear una marca de agua para todos los video que vayas a hacer con este nombre Michi Lyrics»: en todos los videos, `marcaDeAgua(g)` de `#piezas/marca-agua.js` al final del `dibuja` de cada plano (no en las portadas).
+
+## Mis videos
+- «Cómo puedo hacer para abrir otra sección y que todos mis video sean así»: todos sus videos son lyric videos como
+  «Hombre» y «Dios Primero» (`plantillas.md`, «Lyric video Michi Lyrics»), salvo que pida otra cosa.
+- «Quiero que cambies algo en las letras que no sean tan largas ponlas mínimos dos o tres líneas»: como mucho 3 filas
+  de letra en pantalla.
+- Al final, la letra termina y la música sigue sonando, sin letra, mientras imagen y música se desvanecen hasta acabar.
+- Fondo de video en blanco y negro, letra a color.

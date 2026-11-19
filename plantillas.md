@@ -4,6 +4,40 @@ Formatos que ya se hicieron y funcionaron: su estructura, para que el siguiente 
 punto de partida, no un molde: el guion lo decide el creador y el video se hace con `METODO.md`. Las piezas, en
 `piezas/`.
 
+## Lyric video Michi Lyrics (~25 s)
+
+El formato de todos los videos del creador (`preferencias.md`): un tramo de una canción con su letra en pantalla, sobre
+un video de fondo que él manda. Aprobado en «Hombre» y «Dios Primero» (Lil Naay, `proyectos/2026-11-19-lyric-*`).
+No lleva guion, voz ni cierre: la canción es la voz. No pidas aprobar guion; sí el borrador.
+
+**Lo que se le pide** (en un mensaje, solo lo que falte): la canción (mp3), el tramo (desde-hasta, en segundos o
+palabras), la letra de ese tramo tal cual, y el video de fondo. Si dice «desde que dice X», búscalo en lo oído.
+
+**Cómo se hace:**
+1. La letra, en un .txt de la carpeta temporal: una línea por frase, tal cual la escribió (sus «'» y todo); la palabra
+   clave de cada línea entre *asteriscos* (la que más pega: un sustantivo o un verbo fuerte, no «que» ni «yo»).
+   Lo que va entre paréntesis (ad-libs) no sale, salvo que lo pida (entonces, una línea propia).
+2. `node piezas/lyric/preparar.mjs lyric-<nombre> --cancion … --desde … --hasta … --letra … --fondo … [--x 0.5]
+   [--funde …] [--sin-marca]` (`--ayuda`). Crea el proyecto, corta la canción, sincroniza la letra (ElevenLabs,
+   speech-to-text: céntimos), saca el ritmo, recorta el fondo en vertical y pone el plano. Imprime cada línea con su
+   segundo: si algo no cuadra, mira `audio/oido.json`.
+3. Mira el fondo antes (`ffmpeg … fps=1,tile`) para elegir `--x`: el artista dentro del recorte vertical. Si se mueve
+   mucho de lado, recorta tú los fotogramas con un `crop` que lo siga (así se hizo en «Hombre»).
+4. `ver.mjs` en 4-6 segundos (cada línea con su clave), y el borrador:
+   `node motor/render.mjs <proyecto> --borrador --salida "tmp v1.mp4"` y luego
+   `node piezas/lyric/preparar.mjs <proyecto> --poner-audio "revisar/tmp v1.mp4" --salida "revisar/<Canción> v1 (borrador).mp4"`.
+5. Final igual, sin `--borrador`, con `--salida "../../salida/<carpeta>/<Artista> - <Canción> (letra).mp4"` en
+   `--poner-audio`. Portada con `SIN_LETRA=1 node motor/portada.mjs … --titulo "<Artista> *<Canción>*" --etiqueta "con letra"`
+   (`--dy` para que se vea la cara). Descripciones como las de `salida/2026-11-19-lyric-*`.
+
+**El look aprobado** (`piezas/planos/letra.js`; se ajusta en `guion.json` → `"lyric"`):
+- Fondo: su video en bucle, en blanco y negro con algo de contraste (`"bn": false` para color), zoom suave en cada beat.
+- Letra: Figtree ExtraBold en mayúsculas, centrada (y ≈ 1060), palabra a palabra cuando se canta; como mucho 3 filas
+  por pantalla (las líneas largas, en pantallas seguidas); la clave enorme, en el color de su línea, con brillo.
+- Final: tras la última palabra, la letra se va en 1 s y la canción sigue sonando sin letra mientras imagen y música
+  se desvanecen a negro hasta el final (`--funde` = el segundo de la canción en que acaba la última palabra).
+- Marca de agua Michi Lyrics, salvo que diga que no para ese video (`--sin-marca`).
+
 ## Promo en celular: «comenta la palabra» (~25 s)
 
 Para promocionar este tipo de videos. Todo pasa en un celular en primera persona, sin cortes (todos los planos
