@@ -12,7 +12,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Pendiente del creador
 
-- Aprobar el borrador completo (revisar/completo v2 (borrador).mp4). Miniatura (flyer.jpg, portada 1) y descripciones ya hechas en salida/.
+- Nada: entregado (video, flyer.jpg y descripciones.md en salida/). Pendiente solo si quiere guardar lo aprendido.
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
@@ -26,9 +26,9 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
   - [x] escena 3: frases 6-7, hasta 26,0 s
   - [x] escena 4: frases 8-10, hasta 37,5 s
   - [x] escena 5: frases 11-13, hasta 50,7 s
-- [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
+- [x] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
-- [ ] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
+- [x] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
       propuesto
 
 ## Para seguir en un chat nuevo

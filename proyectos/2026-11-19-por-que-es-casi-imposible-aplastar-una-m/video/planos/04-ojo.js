@@ -33,8 +33,9 @@ function panal(g, t, R, al) {
   g.save(); g.globalAlpha *= al;
   g.fillStyle = "#1a0303"; g.fillRect(0, 0, 1080, 1920);
   const h = R * Math.sqrt(3), barrido = tr(t, Tlentes - 0.25, Tlentes + 0.7);
-  for (let i = -1; i * R * 1.5 < 1080 + R; i++) for (let j = -1; j * h < 1920 + h; j++) {
-    const cx = 540 + (i - Math.round(540 / (R * 1.5))) * R * 1.5, cy = 960 + (j - Math.round(960 / h)) * h + (i % 2 ? h / 2 : 0);
+  const ni = Math.ceil(600 / (R * 1.5)) + 1, nj = Math.ceil(1000 / h) + 1;
+  for (let i = -ni; i <= ni; i++) for (let j = -nj; j <= nj; j++) {
+    const cx = 540 + i * R * 1.5, cy = 960 + j * h + (((i % 2) + 2) % 2 ? h / 2 : 0);
     if (cx < -R || cx > 1080 + R || cy < -R || cy > 1920 + R) continue;
     g.beginPath(); for (let s = 0; s < 6; s++) { const a = (s * Math.PI) / 3; g.lineTo(cx + R * 0.94 * Math.cos(a), cy + R * 0.94 * Math.sin(a)); } g.closePath();
     const dg = g.createRadialGradient(cx - R * 0.3, cy - R * 0.35, R * 0.05, cx, cy, R);
