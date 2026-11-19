@@ -1,0 +1,21 @@
+{
+  "titulo": "¿Por qué es casi imposible aplastar una mosca?",
+  "idioma": "es",
+  "subtitulos": "arriba",
+  "voz": { "id": "TX3LPaxmHKxFdv7VOQHJ" },
+  "frases": [
+    { "texto": "¿Por qué es casi imposible aplastar una mosca?", "clave": "mosca", "hook": true },
+    { "texto": "Porque para ella, tu mano va en cámara lenta.", "clave": "lenta", "hook": true },
+    { "texto": "Tus ojos captan unas 60 imágenes por segundo.", "clave": "60", "dicho": "Tus ojos captan unas sesenta imágenes por segundo." },
+    { "texto": "Los de la mosca, unas 250: más de cuatro veces más.", "clave": "250", "dicho": "Los de la mosca, unas doscientas cincuenta: más de cuatro veces más." },
+    { "texto": "Es como si viera tu manotazo en una película a cámara lenta.", "clave": "película" },
+    { "texto": "Y no necesita girar la cabeza: cada ojo tiene miles de lentes que miran hacia casi todos lados.", "clave": "lentes" },
+    { "texto": "Así que te ve venir, aunque llegues por detrás.", "clave": "detrás" },
+    { "texto": "Y lo más sorprendente: antes de despegar, planea su escape.", "clave": "escape" },
+    { "texto": "Mueve las patas, se inclina hacia el lado contrario de tu mano... y salta.", "clave": "salta" },
+    { "texto": "Todo en menos de lo que dura un parpadeo.", "clave": "parpadeo" },
+    { "texto": "Por eso el truco no es ir más rápido: es apuntar un poco por delante de ella, adonde va a saltar.", "clave": "delante" },
+    { "texto": "No es que tú seas lento: es que ella vive en otro tiempo.", "clave": "tiempo" },
+    { "texto": "Envíaselo a un amigo que le pueda interesar.", "clave": "amigo" }
+  ]
+}
