@@ -36,7 +36,7 @@ palabras), la letra de ese tramo tal cual, y el video de fondo. Si dice «desde 
   por pantalla (las líneas largas, en pantallas seguidas); la clave enorme, en el color de su línea, con brillo.
 - Final: tras la última palabra, la letra se va en 1 s y la canción sigue sonando sin letra mientras imagen y música
   se desvanecen a negro hasta el final (`--funde` = el segundo de la canción en que acaba la última palabra).
-- Marca de agua Michi Lyrics, salvo que diga que no para ese video (`--sin-marca`).
+- Sin marca de agua (`--sin-marca`): «La marca de agua no va ya» (`preferencias.md`).
 
 ## Promo en celular: «comenta la palabra» (~25 s)
 

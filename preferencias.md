@@ -22,7 +22,7 @@
 - Pocos emojis, sin hashtag fijo.
 
 ## Marca de agua
-- «Le puedes crear una marca de agua para todos los video que vayas a hacer con este nombre Michi Lyrics»: en todos los videos, `marcaDeAgua(g)` de `#piezas/marca-agua.js` al final del `dibuja` de cada plano (no en las portadas).
+- «La marca de agua no va ya»: sin marca de agua en sus videos (`--sin-marca`).
 
 ## Mis videos
 - «Cómo puedo hacer para abrir otra sección y que todos mis video sean así»: todos sus videos son lyric videos como
