@@ -71,16 +71,25 @@ function maqueta(g, f) {
     if (!fila || fila.ancho + hueco + ancho > ANCHO_MAX) { fila = { tam: TAM, palabras: [], ancho: -hueco }; filas.push(fila); }
     fila.palabras.push({ w, texto, ancho }); fila.ancho += hueco + ancho;
   }
-  const alto = filas.reduce((s, r) => s + r.tam * 1.08, 0);
-  let y = 1060 - alto / 2;
-  for (const r of filas) {
-    const total = r.palabras.reduce((s, p) => s + p.ancho, 0) + 24 * (r.palabras.length - 1);
-    let x = CX - total / 2;
-    r.y = y + r.tam * 0.8;
-    for (const p of r.palabras) { p.x = x + p.ancho / 2; p.y = r.y; p.tam = r.tam; x += p.ancho + 24; }
-    y += r.tam * 1.08;
+  // como mucho 3 filas en pantalla: las líneas largas se reparten en pantallas seguidas, parejas (4 → 2 + 2, 5 → 3 + 2)
+  const n = Math.ceil(filas.length / 3), paginas = [];
+  for (let j = 0, i0 = 0; j < n; j++) {
+    const cuantas = Math.ceil((filas.length - i0) / (n - j));
+    paginas.push(filas.slice(i0, i0 + cuantas)); i0 += cuantas;
   }
-  const m = filas.flatMap((r) => r.palabras);
+  const m = paginas.map((fs) => {
+    const alto = fs.reduce((s, r) => s + r.tam * 1.08, 0);
+    let y = 1060 - alto / 2;
+    for (const r of fs) {
+      const total = r.palabras.reduce((s, p) => s + p.ancho, 0) + 24 * (r.palabras.length - 1);
+      let x = CX - total / 2;
+      r.y = y + r.tam * 0.8;
+      for (const p of r.palabras) { p.x = x + p.ancho / 2; p.y = r.y; p.tam = r.tam; x += p.ancho + 24; }
+      y += r.tam * 1.08;
+    }
+    const ps = fs.flatMap((r) => r.palabras);
+    return { inicio: ps[0].w.inicio, palabras: ps };
+  });
   cache.set(f.n, m);
   return m;
 }
@@ -91,12 +100,13 @@ function letra(g, t, col, b) {
   const ve = g.createRadialGradient(CX, 1060, 60, CX, 1060, 620);
   ve.addColorStop(0, "rgba(0,0,0,0.55)"); ve.addColorStop(1, "rgba(0,0,0,0)");
   g.fillStyle = ve; g.fillRect(0, 250, 1080, 1300);
-  fs.forEach((f, i) => {
-    const sig = fs[i + 1];
-    const a = f.inicio - 0.12, z = sig ? sig.inicio - 0.1 : v.duracion + 1;
+  const pags = fs.flatMap((f) => maqueta(g, f));
+  pags.forEach((pg, i) => {
+    const sig = pags[i + 1];
+    const a = pg.inicio - 0.12, z = sig ? sig.inicio - 0.1 : v.duracion + 1;
     if (t < a || t > z) return;
     const sal = sig ? k.sale(k.tramo(t, z - 0.16, z)) : 0;
-    const ps = maqueta(g, f);
+    const ps = pg.palabras;
     g.save();
     g.translate(CX, 1060); g.scale(1 + 0.25 * sal, 1 + 0.25 * sal); g.translate(-CX, -1060);
     for (const p of ps) {

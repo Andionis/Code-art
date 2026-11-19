@@ -11,5 +11,6 @@ Tras render.mjs se cambia el audio por el estéreo original con ffmpeg (-map 0:v
 Pasos:
 - [x] Tramo, letra sincronizada, beats y fondo
 - [x] Borrador v1 (revisar/Dios Primero lyric v1 (borrador).mp4)
+- [x] Borrador v2: como mucho 3 filas de letra en pantalla (las líneas largas, en pantallas seguidas)
 - [ ] El creador aprueba o corrige
 - [ ] Final a 60 fps, miniatura (SIN_LETRA=1) y descripciones
