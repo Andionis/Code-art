@@ -1,6 +1,7 @@
 // Toda la letra, de «Rompe» a «verde»: la ciudad de noche bajo la lluvia, con neón que cambia de color en cada línea y
 // late con el beat; la letra grande en el centro, palabra a palabra, y la palabra clave enorme en el color de la línea.
 import * as k from "#kit";
+import { marcaDeAgua } from "#piezas/marca-agua.js";
 import { v } from "#voz";
 import { beat, colorEn, humos, grietas, cuadros, FPS_FONDO } from "../mundo.js";
 
@@ -172,6 +173,7 @@ export function dibuja(g, t) {
   fondo(g, t, col, b);
   rompe(g, t);
   if (process.env.SIN_LETRA !== "1") letra(g, t, col, b); // SIN_LETRA=1: para la portada
+  if (process.env.SIN_LETRA !== "1") marcaDeAgua(g);
   // al final, todo se desvanece a negro con la música (desde que acaba «hombre»)
   const negro = k.suave(k.tramo(t, FUNDE, v.duracion - 0.05));
   if (negro > 0) { g.fillStyle = `rgba(0,0,0,${negro})`; g.fillRect(0, 0, 1080, 1920); }

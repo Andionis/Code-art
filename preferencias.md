@@ -20,3 +20,6 @@
 - Palabra del CTA: no usa.
 - CTA: enviar a un amigo (ligado al tema) y una pregunta para comentar.
 - Pocos emojis, sin hashtag fijo.
+
+## Marca de agua
+- «Le puedes crear una marca de agua para todos los video que vayas a hacer con este nombre Michi Lyrics»: en todos los videos, `marcaDeAgua(g)` de `#piezas/marca-agua.js` al final del `dibuja` de cada plano (no en las portadas).
