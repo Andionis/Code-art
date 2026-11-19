@@ -1,0 +1,575 @@
+{
+ "firma": "cancion",
+ "duracion": 26.6,
+ "frases": [
+  {
+   "n": 1,
+   "texto": "Despué' que tú te busca es que te buscan",
+   "clave": "buscan",
+   "inicio": 0.8,
+   "fin": 2.66
+  },
+  {
+   "n": 2,
+   "texto": "Tuve que guaya' la yuca, yo no me detuve nunca",
+   "clave": "nunca",
+   "inicio": 3.26,
+   "fin": 5.9
+  },
+  {
+   "n": 3,
+   "texto": "Yo sé que vamo' a morir, todito'",
+   "clave": "morir",
+   "inicio": 7.0,
+   "fin": 8.82
+  },
+  {
+   "n": 4,
+   "texto": "pero ante' de morirme quiero como cuatro casa",
+   "clave": "casa",
+   "inicio": 8.92,
+   "fin": 11.46
+  },
+  {
+   "n": 5,
+   "texto": "Yo estoy en una nota",
+   "clave": "nota",
+   "inicio": 12.2,
+   "fin": 13.44
+  },
+  {
+   "n": 6,
+   "texto": "De hacer dinero porque lo malo atrasa",
+   "clave": "dinero",
+   "inicio": 14.26,
+   "fin": 16.46
+  },
+  {
+   "n": 7,
+   "texto": "Yo siempre le dije a mami, que yo me iba a buscar",
+   "clave": "mami",
+   "inicio": 17.08,
+   "fin": 19.6
+  },
+  {
+   "n": 8,
+   "texto": "debería estar orgullosa",
+   "clave": "orgullosa",
+   "inicio": 20.28,
+   "fin": 21.64
+  },
+  {
+   "n": 9,
+   "texto": "Ser rico es otra cosa, te lo juro, es otra cosa",
+   "clave": "rico",
+   "inicio": 22.94,
+   "fin": 26.04
+  }
+ ],
+ "palabras": [
+  {
+   "texto": "Despué'",
+   "inicio": 0.8,
+   "fin": 1.04,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "que",
+   "inicio": 1.04,
+   "fin": 1.167,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "tú",
+   "inicio": 1.167,
+   "fin": 1.31,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "te",
+   "inicio": 1.31,
+   "fin": 1.48,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "busca",
+   "inicio": 1.48,
+   "fin": 1.727,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "es",
+   "inicio": 1.727,
+   "fin": 1.807,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "que",
+   "inicio": 1.88,
+   "fin": 1.96,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "te",
+   "inicio": 1.933,
+   "fin": 2.013,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "buscan",
+   "inicio": 2.06,
+   "fin": 2.66,
+   "frase": 1,
+   "clave": true
+  },
+  {
+   "texto": "Tuve",
+   "inicio": 3.26,
+   "fin": 3.44,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "que",
+   "inicio": 3.5,
+   "fin": 3.6,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "guaya'",
+   "inicio": 3.64,
+   "fin": 3.89,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "la",
+   "inicio": 3.89,
+   "fin": 4.04,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "yuca,",
+   "inicio": 4.04,
+   "fin": 4.355,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "yo",
+   "inicio": 4.355,
+   "fin": 4.54,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "no",
+   "inicio": 4.54,
+   "fin": 4.67,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "me",
+   "inicio": 4.67,
+   "fin": 4.82,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "detuve",
+   "inicio": 4.82,
+   "fin": 5.25,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "nunca",
+   "inicio": 5.25,
+   "fin": 5.9,
+   "frase": 2,
+   "clave": true
+  },
+  {
+   "texto": "Yo",
+   "inicio": 7.0,
+   "fin": 7.1,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "sé",
+   "inicio": 7.14,
+   "fin": 7.24,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "que",
+   "inicio": 7.28,
+   "fin": 7.38,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "vamo'",
+   "inicio": 7.42,
+   "fin": 7.64,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "a",
+   "inicio": 7.68,
+   "fin": 7.76,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "morir,",
+   "inicio": 7.78,
+   "fin": 8.16,
+   "frase": 3,
+   "clave": true
+  },
+  {
+   "texto": "todito'",
+   "inicio": 8.42,
+   "fin": 8.82,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "pero",
+   "inicio": 8.92,
+   "fin": 9.12,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "ante'",
+   "inicio": 9.22,
+   "fin": 9.42,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "de",
+   "inicio": 9.5,
+   "fin": 9.58,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "morirme",
+   "inicio": 9.66,
+   "fin": 10.06,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "quiero",
+   "inicio": 10.1,
+   "fin": 10.34,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "como",
+   "inicio": 10.42,
+   "fin": 10.66,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "cuatro",
+   "inicio": 10.7,
+   "fin": 10.96,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "casa",
+   "inicio": 11.08,
+   "fin": 11.46,
+   "frase": 4,
+   "clave": true
+  },
+  {
+   "texto": "Yo",
+   "inicio": 12.2,
+   "fin": 12.32,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "estoy",
+   "inicio": 12.34,
+   "fin": 12.54,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "en",
+   "inicio": 12.58,
+   "fin": 12.68,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "una",
+   "inicio": 12.76,
+   "fin": 12.92,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "nota",
+   "inicio": 13.0,
+   "fin": 13.44,
+   "frase": 5,
+   "clave": true
+  },
+  {
+   "texto": "De",
+   "inicio": 14.26,
+   "fin": 14.36,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "hacer",
+   "inicio": 14.38,
+   "fin": 14.62,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "dinero",
+   "inicio": 14.66,
+   "fin": 15.04,
+   "frase": 6,
+   "clave": true
+  },
+  {
+   "texto": "porque",
+   "inicio": 15.12,
+   "fin": 15.4,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "lo",
+   "inicio": 15.42,
+   "fin": 15.52,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "malo",
+   "inicio": 15.58,
+   "fin": 15.8,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "atrasa",
+   "inicio": 15.9,
+   "fin": 16.46,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "Yo",
+   "inicio": 17.08,
+   "fin": 17.16,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "siempre",
+   "inicio": 17.2,
+   "fin": 17.48,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "le",
+   "inicio": 17.52,
+   "fin": 17.62,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "dije",
+   "inicio": 17.66,
+   "fin": 17.84,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "a",
+   "inicio": 17.86,
+   "fin": 17.94,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "mami,",
+   "inicio": 17.98,
+   "fin": 18.26,
+   "frase": 7,
+   "clave": true
+  },
+  {
+   "texto": "que",
+   "inicio": 18.3,
+   "fin": 18.42,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "yo",
+   "inicio": 18.46,
+   "fin": 18.6,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "me",
+   "inicio": 18.64,
+   "fin": 18.78,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "iba",
+   "inicio": 18.84,
+   "fin": 18.96,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "a",
+   "inicio": 18.98,
+   "fin": 19.06,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "buscar",
+   "inicio": 19.06,
+   "fin": 19.6,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "debería",
+   "inicio": 20.28,
+   "fin": 20.62,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "estar",
+   "inicio": 20.68,
+   "fin": 20.8,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "orgullosa",
+   "inicio": 20.86,
+   "fin": 21.64,
+   "frase": 8,
+   "clave": true
+  },
+  {
+   "texto": "Ser",
+   "inicio": 22.94,
+   "fin": 23.08,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "rico",
+   "inicio": 23.12,
+   "fin": 23.32,
+   "frase": 9,
+   "clave": true
+  },
+  {
+   "texto": "es",
+   "inicio": 23.36,
+   "fin": 23.44,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "otra",
+   "inicio": 23.44,
+   "fin": 23.64,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "cosa,",
+   "inicio": 23.74,
+   "fin": 24.18,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "te",
+   "inicio": 24.7,
+   "fin": 24.78,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "lo",
+   "inicio": 24.82,
+   "fin": 24.92,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "juro,",
+   "inicio": 24.96,
+   "fin": 25.2,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "es",
+   "inicio": 25.24,
+   "fin": 25.32,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "otra",
+   "inicio": 25.3,
+   "fin": 25.5,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "cosa",
+   "inicio": 25.62,
+   "fin": 26.04,
+   "frase": 9,
+   "clave": false
+  }
+ ]
+}
