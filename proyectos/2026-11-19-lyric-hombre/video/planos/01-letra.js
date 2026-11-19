@@ -171,7 +171,7 @@ export function dibuja(g, t) {
   const col = colorEn(t), b = beat(t);
   fondo(g, t, col, b);
   rompe(g, t);
-  letra(g, t, col, b);
+  if (process.env.SIN_LETRA !== "1") letra(g, t, col, b); // SIN_LETRA=1: para la portada
   // al final, todo se desvanece a negro con la música (desde que acaba «hombre»)
   const negro = k.suave(k.tramo(t, FUNDE, v.duracion - 0.05));
   if (negro > 0) { g.fillStyle = `rgba(0,0,0,${negro})`; g.fillRect(0, 0, 1080, 1920); }
