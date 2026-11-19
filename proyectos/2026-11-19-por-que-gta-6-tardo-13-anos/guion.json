@@ -1,0 +1,20 @@
+{
+  "titulo": "Por qué GTA 6 tardó 13 años",
+  "idioma": "es",
+  "subtitulos": "arriba",
+  "voz": { "id": "TX3LPaxmHKxFdv7VOQHJ" },
+  "frases": [
+    { "texto": "¿Por qué GTA 6 tardó trece años en salir?", "dicho": "¿Por qué yi ti ei seis tardó trece años en salir?", "clave": "trece", "hook": true },
+    { "texto": "Un niño que tenía cinco años cuando salió el GTA 5, hoy ya puede manejar.", "dicho": "Un niño que tenía cinco años cuando salió el yi ti ei cinco, hoy ya puede manejar.", "clave": "manejar", "hook": true },
+    { "texto": "La primera razón: GTA 5 nunca dejó de vender.", "dicho": "La primera razón: yi ti ei cinco nunca dejó de vender.", "clave": "vender" },
+    { "texto": "Lleva más de 230 millones de copias: más que toda la gente de Brasil.", "dicho": "Lleva más de doscientos treinta millones de copias: más que toda la gente de Brasil.", "clave": "Brasil" },
+    { "texto": "Con un juego que seguía dando dinero, Rockstar no tenía prisa.", "clave": "prisa" },
+    { "texto": "La segunda: antes hicieron otro juego enorme, Red Dead Redemption 2, el del viejo oeste.", "dicho": "La segunda: antes hicieron otro juego enorme, Red Ded Redémpshon dos, el del viejo oeste.", "clave": "oeste" },
+    { "texto": "Y hasta que no lo terminaron, en 2018, el 6 casi no avanzó.", "dicho": "Y hasta que no lo terminaron, en dos mil dieciocho, el seis casi no avanzó.", "clave": "avanzó" },
+    { "texto": "La tercera: su mundo es gigante, una copia de Florida con ciudades, playas y pantanos.", "clave": "Florida" },
+    { "texto": "Por eso lo retrasaron dos veces: de 2025 a mayo, y de mayo a noviembre.", "dicho": "Por eso lo retrasaron dos veces: de dos mil veinticinco a mayo, y de mayo a noviembre.", "clave": "retrasaron" },
+    { "texto": "Y la espera se notó: su primer tráiler tuvo 90 millones de vistas en un día, récord Guinness.", "dicho": "Y la espera se notó: su primer tráiler tuvo noventa millones de vistas en un día, récord Guinness.", "clave": "récord" },
+    { "texto": "Así que no tardó por flojera: el 5 les pagó trece años para hacer el 6 enorme.", "dicho": "Así que no tardó por flojera: el cinco les pagó trece años para hacer el seis enorme.", "clave": "enorme" },
+    { "texto": "Envíaselo a un amigo que le pueda interesar.", "clave": "amigo" }
+  ]
+}
