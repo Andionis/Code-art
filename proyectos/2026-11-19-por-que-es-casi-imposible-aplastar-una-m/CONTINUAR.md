@@ -8,10 +8,11 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 - Tema: «¿Por qué es casi imposible aplastar una mosca?» (de los 5 temas de plagas).
 - Voz: Liam (TX3LPaxmHKxFdv7VOQHJ), como en el video anterior (plan gratis de ElevenLabs).
 - Guion: aprobado tal cual («Sí, apruebo el guion»).
+- Cierre de este video: «Síguenos para más» con animación de botón de seguir, y un final que vuelve a empezar (se rehízo la voz).
 
 ## Pendiente del creador
 
-- Aprobar el borrador completo (revisar/completo v1 (borrador).mp4). Miniatura (flyer.jpg, portada 1) y descripciones ya hechas en salida/.
+- Aprobar el borrador completo (revisar/completo v2 (borrador).mp4). Miniatura (flyer.jpg, portada 1) y descripciones ya hechas en salida/.
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 

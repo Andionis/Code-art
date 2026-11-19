@@ -26,7 +26,7 @@ const manoEn = (t) => { const u = su(tr(t, T0 - 1, Fin + 0.3)); return [mez(-300
 
 export function dibuja(g, t) {
   // la cámara se acerca a la mosca mientras «lo más sorprendente», y se aleja cuando aparece la flecha
-  const z = 1 + 0.22 * su(tr(t, T0, Tpla - 0.2)) - 0.22 * su(tr(t, Tpla - 0.2, Tesc + 0.2));
+  const z = 1 + 0.32 * su(tr(t, T0, Tpla - 0.2)) - 0.32 * su(tr(t, Tpla - 0.2, Tesc + 0.2));
   g.save(); g.translate(MX + 40, MY - 180); g.scale(z, z); g.translate(-MX - 40, -MY + 180);
   cocina(g, 1180, 0.9);
   // la flecha de puntos, que se dibuja en «planea»

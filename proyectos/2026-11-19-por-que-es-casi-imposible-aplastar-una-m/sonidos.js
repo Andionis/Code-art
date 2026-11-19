@@ -9,6 +9,7 @@ import { momentos as m6 } from "./video/planos/06-escape.js";
 import { momentos as m7 } from "./video/planos/07-parpadeo.js";
 import { momentos as m8 } from "./video/planos/08-truco.js";
 import { momentos as m9 } from "./video/planos/09-tiempo.js";
+import { momentos as m10 } from "./video/planos/10-siguenos.js";
 
 const e = [];
 const pon = (sonido, t, o = {}) => e.push({ sonido, t, ...o });
@@ -86,7 +87,16 @@ pon("sube", m8.golpe2 + 0.15, { db: -14, que: "el fogonazo dorado" });
 pon("aire", f(12).inicio + 0.15, { ancla: "empieza", db: -15, vel: 0.4, que: "la mosca vuela lenta" });
 pon("cristal", f(12).t("lento") + 0.1, { db: -17, vel: 0.7, que: "la gota brilla" });
 pon("aire", f(12).t("vive") - 0.1, { ancla: "empieza", db: -16, vel: 0.4, que: "rodea la gota" });
-pon("aire", f(13).inicio + 0.05, { ancla: "empieza", db: -14, vel: 0.6, que: "la cámara se aleja" });
+pon("aire", f(12).t("tiempo") - 0.45, { ancla: "empieza", db: -14, vel: 0.6, que: "la cámara se aleja" });
 pon("tierra", m9.posa + 0.2, { db: -16, vel: 1.3, que: "la mosca se posa" });
+
+// el botón de seguir y la vuelta al principio
+pon("clic", m10.entra + 0.1, { db: -12, que: "salta el botón" });
+pon("aire", m10.entra + 0.15, { ancla: "empieza", db: -16, vel: 0.9, que: "llega el pulgar" });
+pon("toque", m10.aprieta, { db: -8, que: "el pulgar aprieta" });
+pon("sube", m10.aprieta + 0.05, { db: -12, que: "el confeti" });
+pon("aire", m10.sevan, { ancla: "empieza", db: -13, vel: 1.1, que: "el botón se va" });
+pon("estallido", m10.rebobina + 0.3, { db: -14, reves: true, lp: 1400, que: "rebobina" });
+pon("aire", m10.mano, { ancla: "empieza", db: -13, vel: 0.6, que: "la mano vuelve a entrar" });
 
 export default e;

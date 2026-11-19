@@ -5,7 +5,7 @@
 ¿Por qué es casi imposible aplastar una mosca? 🪰
 Para ella, tu mano va en cámara lenta: sus ojos captan unas 250 imágenes por segundo, y antes de despegar ya planeó hacia dónde saltar.
 
-Envíaselo a ese amigo que se pasa la tarde persiguiendo moscas.
+Síguenos para más curiosidades como esta.
 ¿Cuántos manotazos te ha costado tu última mosca? Cuéntame en los comentarios.
 
 #moscas #insectos #ciencia #datoscuriosos #naturaleza
@@ -26,4 +26,4 @@ Envíaselo a ese amigo que se pasa la tarde persiguiendo moscas.
 
 ## Facebook Reels
 
-¿Por qué es casi imposible aplastar una mosca? Porque ve tu mano en cámara lenta y salta antes de que llegues 🪰 El truco: apunta un poco por delante de ella. Envíaselo a un amigo que le pueda interesar. #moscas #curiosidades
+¿Por qué es casi imposible aplastar una mosca? Porque ve tu mano en cámara lenta y salta antes de que llegues 🪰 El truco: apunta un poco por delante de ella. Síguenos para más. #moscas #curiosidades

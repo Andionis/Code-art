@@ -37,7 +37,7 @@ function fotos() {
 function tira(g, cx, y0, esc, t, densa, al = 1) {
   FOTOS ??= fotos();
   const W = (LADO + 80) * esc, paso = (LADO + 24) * esc, vel = 260;
-  const d = Fin - 0.4, te = t < d ? t - T0 : d - T0 + 0.3 * (1 - Math.pow(1 - tr(t, d, d + 0.6), 2)); // frena antes del corte
+  const d = Fin - 0.65, te = t < d ? t - T0 : d - T0 + 0.3 * (1 - Math.pow(1 - tr(t, d, d + 0.6), 2)); // frena antes del corte
   const s = (te * vel * esc) / paso; // casillas que ya han salido
   g.save(); g.globalAlpha *= al;
   g.beginPath(); g.rect(cx - W / 2 - 4, y0, W + 8, 1920 - y0); g.clip();

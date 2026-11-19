@@ -1,10 +1,10 @@
-// «No es que tú seas lento: es que ella vive en otro tiempo. Envíaselo a un amigo que le pueda interesar.»
+// «No es que tú seas lento: es que ella vive en otro tiempo.»
 // Corte en «No» a la cocina, de lado y de cerca: el tiempo de la mosca.
 // - Una gota de agua cae despacísimo, casi quieta en el aire, y el polvo flota sin moverse; la mosca vuela a su lado
 //   y se le ven las alas batir una a una, tranquilas.
 // - «vive en otro tiempo»: la mosca rodea la gota.
-// - «Envíaselo a un amigo»: la cámara se aleja y la mosca se posa en la mesa, frotándose las patas, como en el primer
-//   fotograma del video (para que se vea en bucle).
+// - «otro tiempo»: la cámara se aleja y la mosca se posa en la mesa, frotándose las patas, como en el primer
+//   fotograma del video. Sigue el plano del botón de seguir.
 import * as k from "#kit";
 import { v } from "#voz";
 import { cocina, mosca } from "../mundo.js";
@@ -13,8 +13,9 @@ export const desde = (vz) => vz.frase(12).inicio;
 export const entrada = "corte";
 const { suave: su, tramo: tr, mez, azar } = k;
 const TAU = Math.PI * 2;
-const f12 = v.frase(12), f13 = v.frase(13);
-const T0 = f12.inicio, Tviv = f12.t("vive"), Ttie = f12.t("tiempo"), Tc = f13.inicio, Tami = f13.t("amigo"), Fin = f13.fin;
+const f12 = v.frase(12);
+const T0 = f12.inicio, Tviv = f12.t("vive"), Ttie = f12.t("tiempo"), Fin = f12.fin;
+const Tc = Ttie - 0.4, Tami = Fin - 0.6;  // la cámara se aleja y la mosca se posa al acabar la frase
 export const momentos = { gota: T0 + 0.2, posa: Tami + 0.3 };
 
 const azP = azar(515);
