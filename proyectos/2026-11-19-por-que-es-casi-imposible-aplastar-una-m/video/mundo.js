@@ -109,7 +109,7 @@ function ala(g, ang, al, batir) {
 }
 
 export function mosca(g, x, y, S, o = {}) {
-  const { frota = 0, alas = 0, aire = 0, inclina = 0, agacha = 0, t = 0, al = 1, sombra = 1, suelo = null, camina = 0 } = o;
+  const { frota = 0, alas = 0, aire = 0, inclina = 0, agacha = 0, t = 0, al = 1, sombra = 1, suelo = null, camina = 0, alaAng = null } = o;
   if (al <= 0.003) return;
   g.save(); g.translate(x, y);
   // la sombra en la mesa
@@ -151,7 +151,7 @@ export function mosca(g, x, y, S, o = {}) {
   // el ala del otro lado
   const batir = alas > 0.05;
   if (batir) { for (let i = 0; i < 7; i++) ala(g, -0.9 + i * 0.22 + Math.sin(t * 60 + i) * 0.05, 0.28, true); }
-  else ala(g, -0.12, 0.7, false);
+  else ala(g, alaAng == null ? -0.12 : alaAng - 0.07, 0.7, false);
   // abdomen
   g.save(); g.translate(-0.2, 0.015); g.rotate(0.08);
   g.beginPath(); g.ellipse(0, 0, 0.22, 0.135, 0, 0, TAU);
@@ -204,7 +204,7 @@ export function mosca(g, x, y, S, o = {}) {
   g.restore();
   // el ala de este lado
   if (batir) { g.save(); g.globalCompositeOperation = "lighter"; for (let i = 0; i < 9; i++) ala(g, -1.1 + i * 0.25 + Math.sin(t * 70 + i * 2) * 0.06, 0.22, true); g.restore(); }
-  else ala(g, -0.05, 1, false);
+  else ala(g, alaAng == null ? -0.05 : alaAng, 1, false);
   g.restore();
   patas(false);
   g.restore();
