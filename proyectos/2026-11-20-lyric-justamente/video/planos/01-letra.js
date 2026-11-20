@@ -5,7 +5,7 @@
 // Se ajusta en guion.json, "lyric": { "bn": true, "funde": <segundo del video>, "marca": true }.
 import * as k from "#kit";
 import { v } from "#voz";
-import { loadImage } from "@napi-rs/canvas";
+import { loadImage, GlobalFonts } from "@napi-rs/canvas";
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { marcaDeAgua } from "#piezas/marca-agua.js";
 
@@ -91,7 +91,12 @@ function fondo(g, t, col, b) {
 }
 
 // --- la letra
-const fuente = (tam) => `800 ${tam}px Figtree`;
+// la letra: Figtree por defecto; otra con "lyric": { "fuente": "Anton" } (sus .ttf en letras/ del proyecto)
+const FUENTES = { Anton: ["Anton-Regular.ttf", 400], "Bebas Neue": ["BebasNeue-Regular.ttf", 400], "Archivo Black": ["ArchivoBlack-Regular.ttf", 400], Oswald: ["Oswald.ttf", 700] };
+const FAM = process.env.FUENTE || L.fuente || "Figtree";
+if (FUENTES[FAM]) GlobalFonts.registerFromPath(new URL("letras/" + FUENTES[FAM][0], raiz).pathname, FAM);
+const PESO = FUENTES[FAM]?.[1] ?? 800;
+const fuente = (tam) => `${PESO} ${tam}px "${FAM}"`;
 const cache = new Map();
 function maqueta(g, f) {
   if (cache.has(f.n)) return cache.get(f.n);
