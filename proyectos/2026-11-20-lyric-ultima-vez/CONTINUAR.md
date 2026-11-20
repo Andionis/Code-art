@@ -8,5 +8,6 @@ desvanecido de 73,6 al final. Sin marca de agua. Letra del creador (sin los par�
 Pasos:
 - [x] Tramo, letra sincronizada, beats y fondo
 - [x] Borrador v2 (revisar/La Última Vez v2 (borrador).mp4)
+- [x] Borrador v3: el latido, a 97 bpm alineado con el bombo (audio/golpes.json rehecho; el preparar sacó 119 bpm)
 - [ ] Aprobado
 - [ ] Final: salida/<carpeta>/Anuel AA, Bad Bunny - La Última Vez (letra).mp4; flyer y descripciones
