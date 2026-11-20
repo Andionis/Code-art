@@ -10,5 +10,5 @@ Pasos:
 - [x] Tramo, letra sincronizada, beats y fondo en cámara lenta
 - [x] Borrador v1 (revisar/Te Imagino v1 (borrador).mp4)
 - [x] Borrador v2: sin latido ni marca, letra chica, 1-2 filas
-- [ ] Aprobado
-- [ ] Final a 60 fps, flyer y descripciones
+- [x] Aprobado v2
+- [x] Final a 60 fps: salida/2026-11-20-lyric-te-imagino/Myke Towers - Te Imagino (letra).mp4; flyer (portada 2, --dy 380) y descripciones
