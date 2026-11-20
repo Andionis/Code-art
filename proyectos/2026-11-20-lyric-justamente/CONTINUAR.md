@@ -8,5 +8,6 @@ Desvanecido de 37 s al final. Para la ElevenLabs en este entorno: NODE_USE_ENV_P
 Pasos:
 - [x] Tramo, letra sincronizada, beats y fondo
 - [x] Borrador v1 (revisar/Justamente v1 (borrador).mp4)
+- [x] Borrador v2: sin latido (audio/golpes.json vacío; el original en golpes-original.json)
 - [ ] Aprobado
 - [ ] Final, flyer y descripciones
