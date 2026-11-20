@@ -15,7 +15,9 @@ export const T = {
   f6: f(6).inicio, huelen: f(6).t("huelen"), siguen: f(6).t("siguen"), comida6: f(6).t("comida"), f6fin: f(6).fin,
   f7: f(7).inicio, vez: f(7).t("vez"), cargada: f(7).t("cargada"), marca: f(7).t("marca"), fuerte: f(7).t("fuerte"), llegan: f(7).t("llegan"), f7fin: f(7).fin,
   dos: f(8).t("dos"), corto: f(8).t("corto"), rapido: f(8).t("rapido"), marca8: f(8).t("marca"), huele8: f(8).t("huele"), f8fin: f(8).fin,
-  acaba: f(9).t("acaba"),
+  f9: f(9).inicio, acaba: f(9).t("acaba"), comida9: f(9).t("comida"), nadie: f(9).t("nadie"), borra: f(9).t("borra"), f9fin: f(9).fin,
+  f10: f(10).inicio, encontro10: f(10).t("encontro"), colonia: f(10).t("colonia"), encontro10b: f(10).t("encontro", 2), sola10: f(10).t("sola"), hormiga10: f(10).t("hormiga"), conto: f(10).t("conto"), todas: f(10).t("todas"), olor10: f(10).t("olor"), f10fin: f(10).fin,
+  f11: f(11).inicio,
   rastro: f(5).t("rastro"), migas: f(5).t("migas"), invisibles: f(5).t("invisibles"), f5fin: f(5).fin,
 };
 
@@ -136,8 +138,45 @@ export function camara(t) {
       Z = Math.exp(mez(lg(Z), lg(3.2), w3)); cx = mez(cx, q.x, w3); cy = mez(cy, q.y, w3);
     }
   }
+  if (t > T.f9 - 0.2) {
+    // 10. a la concha cuando se acaba, y fuera otra vez mientras se borra el rastro
+    const w = su(tr(t, T.f9 - 0.1, T.comida9)) * (1 - su(tr(t, T.nadie - 0.1, T.borra - 0.3)));
+    Z = Math.exp(mez(lg(Z), lg(1.45), w)); cx = mez(cx, 40, w); cy = mez(cy, 380, w);
+    // 11. al hueco: la colonia
+    const w2 = su(tr(t, T.f10 - 0.1, T.encontro10 + 0.6));
+    Z = Math.exp(mez(lg(Z), lg(4.2), w2)); cx = mez(cx, M.NIDO[0], w2); cy = mez(cy, -882, w2);
+    // 12. la sigue a ella, con todas detrás
+    const x = exploradora2(t);
+    if (x) {
+      const w3 = su(tr(t, T.sola10 - 0.2, T.olor10));
+      Z = Math.exp(mez(lg(Z), lg(1.7), w3)); cx = mez(cx, x.x, w3); cy = mez(cy, x.y - 160, w3);
+      // 13. hasta su cara, como al principio
+      const cara = cabeza(x, 17), w4 = entra(tr(t, T.f11, T.f11 + 2.1));
+      Z = Math.exp(mez(lg(Z), lg(24), w4)); cx = mez(cx, cara[0], su(tr(t, T.f11, T.f11 + 1.6))); cy = mez(cy, cara[1], su(tr(t, T.f11, T.f11 + 1.6)));
+    }
+  }
   return [Z, cx, cy];
 }
+
+// ---------------------------------------------------------------- el final: la exploradora sale otra vez, y todas detrás
+const T_SALE2 = () => T.encontro10b - 0.1;
+const VEL2 = [];
+{ let s = 0; for (let i = 0; i <= 1200; i++) { VEL2.push(s); const tt = T_SALE2() + i / 120; s += (tt < T.f11 + 0.2 ? 200 : mez(200, 7, su(tr(tt, T.f11 + 0.2, T.f11 + 1.6)))) / 120; } }
+const sExp2 = (t) => t < T_SALE2() ? 0 : VEL2[Math.min(1200, Math.round((t - T_SALE2()) * 120))];
+export function exploradora2(t) {
+  if (t < T_SALE2()) return null;
+  const s = sExp2(t), p = M.CORTO.at(s);
+  return { x: p.x, y: p.y, a: p.a, anda: s, s };
+}
+// las demás, detrás de ella, desde «todas»
+const N_DETRAS = 26;
+function detras(t, i) {
+  const sE = sExp2(t), sF = Math.min(sE - 62, 420 * (t - (T.todas - 0.25)));
+  return sF - 48 * i;
+}
+// las cabezas de la colonia, asomadas en el hueco
+const azC = k.azar(6060);
+const ASOMADAS = Array.from({ length: 9 }, (_, i) => ({ x: M.NIDO[0] + (i / 8 - 0.5) * 115 + (azC() - 0.5) * 8, y: M.PARED - 22 - azC() * 18 - Math.abs(i / 8 - 0.5) * 30, a: Math.PI / 2 + (azC() - 0.5) * 0.7, sem: azC() * 9 }));
 
 // ---------------------------------------------------------------- el fotograma
 export function escena(g, t) {
@@ -147,7 +186,9 @@ export function escena(g, t) {
   M.zocalo(g, c);
   M.taza(g);
   M.granos(g, c);
-  M.concha(g, 1);
+  const entera = 1 - su(tr(t, T.acaba - 0.05, T.comida9 + 0.6));
+  M.concha(g, entera);
+  if (t > T.acaba) migasConcha(g, t);
   // la colonia del hook (por el corto), con su rastro suave
   const tauH = tauHook(t);
   const hayHook = t < T.rebobina + 1.7;
@@ -170,7 +211,7 @@ export function escena(g, t) {
   g.save(); M.recortePiso(g);
   if (hayHook) M.dibujaColonia(g, c, COL_HOOK, tauH, t, { ant: 0.3 });
   if (t > T.f6 - 0.2) {
-    const tau = tau2(t), marca = su(tr(t, T.marca - 0.3, T.marca + 0.2));
+    const tau = tau2(t), marca = su(tr(t, T.marca - 0.3, T.marca + 0.2)) * (1 - su(tr(t, T.nadie - 0.2, T.nadie + 0.4)));
     M.dibujaColonia(g, c, COL2, tau, t, { ant: 0.35 });
     // las que vuelven cargadas tocan el piso con la punta: una gota detrás de cada una
     if (marca > 0.01) for (const h of COL2) { const p = M.donde(h, tau); if (p && p.vuelve) { const pt = cabeza(p, -22.5); M.gota(g, pt[0], pt[1], marca * (h.corto ? 1 : 1 - 0.8 * su(tr(t, T.corto, T.huele8))) * (0.5 + 0.5 * Math.max(0, Math.sin(p.anda * 0.32)))); } }
@@ -196,7 +237,63 @@ export function escena(g, t) {
     if (an > 0.02) { g.save(); g.strokeStyle = `rgba(255,255,255,${0.85 * an})`; g.lineWidth = 4 / c[0] * 1.5; g.beginPath(); g.arc(e.x, e.y, 34 + 30 * (1 - an), 0, M.TAU); g.stroke(); g.restore(); }
   }
   g.restore();
+  if (t > T.f10 - 0.3) final(g, t, c);
   M.luzCocina(g);
+}
+
+// lo que queda de la concha: migas rosas
+const azM = k.azar(1212);
+const RESTOS = Array.from({ length: 34 }, () => { const a = azM() * M.TAU, r = Math.sqrt(azM()) * M.RC * 0.9; return { x: M.CONCHA[0] + Math.cos(a) * r, y: M.CONCHA[1] + Math.sin(a) * r, a: azM() * 6, s: 3 + azM() * 5, sale: azM() }; });
+function migasConcha(g, t) {
+  const u = tr(t, T.acaba, T.comida9 + 0.6);
+  for (const m of RESTOS) {
+    if (u < m.sale * 0.9) continue;
+    const al = 1 - su(tr(t, T.borra, T.f9fin + 0.6));
+    g.save(); g.translate(m.x, m.y); g.rotate(m.a); g.globalAlpha *= al;
+    const gr = g.createRadialGradient(-1, -1, 0.5, 0, 0, m.s); gr.addColorStop(0, "#ffd7e6"); gr.addColorStop(0.6, "#f590b2"); gr.addColorStop(1, "#c25a2c");
+    g.fillStyle = "rgba(90,45,15,0.25)"; g.beginPath(); g.ellipse(1.5, 2, m.s, m.s * 0.7, 0, 0, M.TAU); g.fill();
+    g.fillStyle = gr; g.beginPath(); g.moveTo(-m.s, -m.s * 0.6); g.lineTo(m.s * 0.7, -m.s); g.lineTo(m.s, m.s * 0.4); g.lineTo(-m.s * 0.3, m.s); g.closePath(); g.fill();
+    g.restore();
+  }
+}
+
+// el final: la colonia asomada en el hueco; sale ella; el olor llega a todas y salen detrás
+function final(g, t, c) {
+  const asoma = su(tr(t, T.encontro10 - 0.1, T.colonia + 0.2));
+  const avisa = su(tr(t, T.conto - 0.1, T.todas + 0.1));
+  // dentro del hueco
+  if (asoma > 0.01) {
+    g.save(); M.huecoRecorte(g);
+    for (const a of ASOMADAS) {
+      const sale = 14 * avisa;
+      M.hormiga(g, a.x, a.y - 14 * (1 - asoma) + sale, a.a, { t, semilla: a.sem, zoom: c[0], ant: 0.6 + 0.6 * avisa, al: asoma });
+      if (avisa > 0.01) M.gota(g, a.x + Math.cos(a.a) * 30, a.y + sale + Math.sin(a.a) * 30, avisa * (0.6 + 0.6 * k.pulso(t, T.olor10 + 0.1, 0.2)));
+    }
+    const sombra = g.createLinearGradient(0, M.PARED - 80, 0, M.PARED);
+    sombra.addColorStop(0, "rgba(5,2,1,0.8)"); sombra.addColorStop(0.6, "rgba(5,2,1,0.25)"); sombra.addColorStop(1, "rgba(5,2,1,0)");
+    g.fillStyle = sombra; g.fillRect(M.NIDO[0] - 90, M.PARED - 90, 180, 95);
+    g.restore();
+  }
+  // su rastro, desde el hueco hasta ella, que se enciende y viaja hacia atrás en «contó»
+  const x = exploradora2(t);
+  if (x) {
+    const fz = 0.5 + 0.6 * avisa + 0.6 * k.pulso(t, T.olor10 + 0.1, 0.22);
+    const frente = mez(x.s, 0, su(tr(t, T.conto - 0.1, T.todas + 0.2)));
+    M.rastro(g, "corto", 0, x.s - 25, fz, t, { ola: (sv) => (avisa > 0 && sv >= frente ? 1.6 : 0.8), ancho: 1 + 0.4 * avisa });
+    g.save(); M.recortePiso(g);
+    for (let i = 0; i < N_DETRAS; i++) {
+      const sv = detras(t, i);
+      if (sv <= -30) continue;
+      const p = M.CORTO.at(Math.max(0, sv)), lado = ((i * 37) % 7 - 3) * 3;
+      const px = p.x - Math.sin(p.a) * lado, py = p.y + Math.cos(p.a) * lado + (sv < 0 ? sv : 0);
+      M.hormiga(g, px, py, p.a, { fase: sv, t, semilla: i * 1.3, zoom: c[0], ant: 0.4 });
+    }
+    M.hormiga(g, x.x, x.y, x.a, { fase: x.anda, t, semilla: 3, zoom: c[0], ant: 0.5 });
+    const pt = cabeza(x, -22.5); M.gota(g, pt[0], pt[1], 0.6 + 0.4 * Math.max(0, Math.sin(x.anda * 0.32)));
+    const an = k.pulso(t, T.sola10 + 0.15, 0.35);
+    if (an > 0.02) { g.strokeStyle = `rgba(255,255,255,${0.85 * an})`; g.lineWidth = 6 / c[0]; g.beginPath(); g.arc(x.x, x.y, 34 + 30 * (1 - an), 0, M.TAU); g.stroke(); }
+    g.restore();
+  }
 }
 
 // cuánto huele el azúcar (las puntas de las antenas se encienden)
@@ -224,8 +321,17 @@ const T0_FILA = 0; // en segundos del vídeo se fija abajo
 export function tau2(t) { return t - (T.f6 - 0.15); }
 const absT = (d) => d + T.f6 - 0.15;
 const pCorto = (d) => { const a = absT(d); return 0.05 + 0.25 * su(tr(a, T.marca, T.dos - 1.5)) + 0.69 * su(tr(a, T.dos - 1.5, T.corto)); };
-export const COL2 = M.colonia(520, 77, { d0: 0, d1: T.acaba - 0.4 - (T.f6 - 0.15), ritmo: 2.4, vel: 1.2, eligeCorto: (d, r) => r < pCorto(d) });
+export const COL2 = M.colonia(520, 77, { d0: 0, d1: T.acaba - 2.2 - (T.f6 - 0.15), ritmo: 2.4, vel: 1.2, eligeCorto: (d, r) => r < pCorto(d) });
 Object.assign(COL2[0], { d: 0, v: 560, lado: 0, corto: false });
+// cuando se acaba la concha, ninguna se queda comiendo: las que están en ella se van
+{
+  const tauC = tau2(T.comida9 + 0.2);
+  for (const h of COL2) {
+    const ruta = h.corto ? M.CORTO : M.LARGO, E = ruta.at(ruta.L);
+    const llega = h.d + ruta.L / h.v + Math.hypot(h.P[0] - E.x, h.P[1] - E.y) / (h.v * 0.45);
+    if (llega + h.come > tauC) h.come = Math.max(0.15, tauC - llega);
+  }
+}
 // la que la cámara sigue cuando vuelve cargada: sale de la concha justo al empezar la frase 7 y sube por el largo
 export const CARGADA = (() => {
   const h = COL2[1], E = M.LARGO.at(M.LARGO.L);

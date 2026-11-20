@@ -112,6 +112,12 @@ export function hueco(g) {
   g.strokeStyle = "rgba(255,245,225,0.6)"; g.lineWidth = 2.5; g.stroke();
   g.restore();
 }
+// recorta al hueco (lo que está dentro, en la oscuridad)
+export function huecoRecorte(g) {
+  const [x, y] = NIDO;
+  g.beginPath(); g.moveTo(x - 70, PARED); g.quadraticCurveTo(x - 66, y - 70, x - 10, y - 74); g.quadraticCurveTo(x + 60, y - 76, x + 74, PARED); g.closePath();
+  g.clip();
+}
 // recorta lo que entra en el hueco (las hormigas que se meten): solo se ve lo que está en el piso o en la boca del hueco
 export function recortePiso(g) {
   const [x] = NIDO;
