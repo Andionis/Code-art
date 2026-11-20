@@ -7,7 +7,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 - Guion: «Apruebo».
 - Voz: Liam (TX3LPaxmHKxFdv7VOQHJ), porque su plan gratis de ElevenLabs no deja usar las de la biblioteca (como en los mocos).
-- Marca de agua «Michi Lyrics» (preferencias.md).
+- «La marca de agua no va en este video»: sin marca de agua.
 
 ## Pendiente del creador
 

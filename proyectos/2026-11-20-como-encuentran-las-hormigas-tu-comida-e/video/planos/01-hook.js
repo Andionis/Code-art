@@ -5,11 +5,9 @@
 // - «Ninguna»: el tiempo va hacia atrás; todas vuelven de espaldas al hueco del zócalo.
 // - «una sola»: entra una hormiga en zigzag, la cámara la sigue y toca la concha en «azar».
 import { escena } from "../historia.js";
-import { marcaDeAgua } from "#piezas/marca-agua.js";
 
 export const desde = 0;
 
 export function dibuja(g, t) {
   escena(g, t);
-  marcaDeAgua(g);
 }
