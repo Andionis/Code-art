@@ -31,9 +31,9 @@ palabras), la letra de ese tramo tal cual, y el video de fondo. Si dice «desde 
    (`--dy` para que se vea la cara). Descripciones como las de `salida/2026-11-19-lyric-*`.
 
 **El look aprobado** (`piezas/planos/letra.js`; se ajusta en `guion.json` → `"lyric"`):
-- Fondo: su video en bucle, en blanco y negro con algo de contraste (`"bn": false` para color), zoom suave en cada beat.
-- Letra: Figtree ExtraBold en mayúsculas, centrada (y ≈ 1060), palabra a palabra cuando se canta; como mucho 3 filas
-  por pantalla (las líneas largas, en pantallas seguidas); la clave enorme, en el color de su línea, con brillo.
+- Fondo: su video en bucle, en blanco y negro con algo de contraste (`"bn": false` para color), sin latido (sin zoom con el ritmo).
+- Letra: Figtree ExtraBold en mayúsculas, centrada (y ≈ 1060), palabra a palabra cuando se canta, chica (70 px; la clave, 140); como mucho 2 filas
+  por pantalla (las líneas largas, en pantallas seguidas); la clave más grande, en el color de su línea, con brillo.
 - Final: tras la última palabra, la letra se va en 1 s y la canción sigue sonando sin letra mientras imagen y música
   se desvanecen a negro hasta el final (`--funde` = el segundo de la canción en que acaba la última palabra).
 - Marca de agua Michi Lyrics, salvo que diga que no para ese video (`--sin-marca`).

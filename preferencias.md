@@ -27,7 +27,9 @@
 ## Mis videos
 - «Cómo puedo hacer para abrir otra sección y que todos mis video sean así»: todos sus videos son lyric videos como
   «Hombre» y «Dios Primero» (`plantillas.md`, «Lyric video Michi Lyrics»), salvo que pida otra cosa.
-- «Quiero que cambies algo en las letras que no sean tan largas ponlas mínimos dos o tres líneas»: como mucho 3 filas
+- «Quiero que cambies algo en las letras que no sean tan largas ponlas mínimos dos o tres líneas» (luego lo bajó a 1-2 filas, abajo)
   de letra en pantalla.
+- «Ok, quítale el latido … Y la letra por la más chiquita. Que la letra sea de una línea a dos líneas» (para todos):
+  letra chica, de 1 a 2 filas en pantalla, y el fondo sin latido (sin zoom con el ritmo).
 - Al final, la letra termina y la música sigue sonando, sin letra, mientras imagen y música se desvanecen hasta acabar.
 - Fondo de video en blanco y negro, letra a color.
