@@ -48,7 +48,7 @@ const rgb = (c, a = 1) => `rgba(${c[0]},${c[1]},${c[2]},${a})`;
 
 // --- el fondo: el video en bucle, con el color de la línea encima y un golpe de zoom en cada beat
 function fondo(g, t, col, b) {
-  const zoom = 1.04 + 0.04 * b;
+  const zoom = 1.04;
   if (cuadros.length) {
     const img = cuadros[Math.floor(t * FPS_FONDO) % cuadros.length];
     g.save();
@@ -97,12 +97,12 @@ function maqueta(g, f) {
   if (cache.has(f.n)) return cache.get(f.n);
   const filas = [];
   let fila = null;
-  const TAM = 104;
+  const TAM = 70;
   for (const w of f.palabras) {
     const texto = w.texto.replace(/[.,:"]/g, "").toUpperCase();
     if (w.clave) {
-      let tam = 230; g.font = fuente(tam);
-      while (g.measureText(texto).width > ANCHO_MAX && tam > 120) { tam -= 6; g.font = fuente(tam); }
+      let tam = 140; g.font = fuente(tam);
+      while (g.measureText(texto).width > ANCHO_MAX && tam > 90) { tam -= 6; g.font = fuente(tam); }
       filas.push({ tam, palabras: [{ w, texto, ancho: g.measureText(texto).width, clave: true }] });
       fila = null; continue;
     }
@@ -112,7 +112,7 @@ function maqueta(g, f) {
     fila.palabras.push({ w, texto, ancho }); fila.ancho += hueco + ancho;
   }
   // como mucho 3 filas en pantalla: las líneas largas se reparten en pantallas seguidas, parejas (4 → 2 + 2, 5 → 3 + 2)
-  const n = Math.ceil(filas.length / 3), paginas = [];
+  const n = Math.ceil(filas.length / 2), paginas = []; // como mucho 2 filas (lo pidió para este video)
   for (let j = 0, i0 = 0; j < n; j++) {
     const cuantas = Math.ceil((filas.length - i0) / (n - j));
     paginas.push(filas.slice(i0, i0 + cuantas)); i0 += cuantas;
@@ -189,7 +189,7 @@ function fogonazo(g, t) {
 }
 
 export function dibuja(g, t) {
-  const col = colorEn(t), b = beat(t);
+  const col = colorEn(t), b = 0; // sin latido (lo pidió para este video)
   fondo(g, t, col, b);
   fogonazo(g, t);
   if (process.env.SIN_LETRA !== "1") letra(g, t, col, b); // SIN_LETRA=1: para la portada
