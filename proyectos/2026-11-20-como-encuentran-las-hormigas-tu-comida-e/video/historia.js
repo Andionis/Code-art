@@ -133,7 +133,8 @@ export function camara(t) {
     const w2 = su(tr(t, T.comida6 + 0.2, T.f6fin + 0.5));
     Z = Math.exp(mez(lg(Z), lg(0.76), w2)); cx = mez(cx, 40, w2); cy = mez(cy, -190, w2);
     // 9. una que vuelve cargada, de cerca, marcando; y fuera otra vez antes de «fuerte»
-    const q = M.donde(CARGADA, tau2(t));
+    // si ya entró en el hueco, la cámara sigue mirando a la boca del hueco (sin salto)
+    const q = M.donde(CARGADA, tau2(t)) || (t > T.f7 + 1 ? { x: M.NIDO[0], y: M.NIDO[1] } : null);
     if (q) {
       const w3 = su(tr(t, T.f7 - 0.1, T.cargada + 0.1)) * (1 - su(tr(t, T.vez + 0.1, T.fuerte - 0.15)));
       Z = Math.exp(mez(lg(Z), lg(3.2), w3)); cx = mez(cx, q.x, w3); cy = mez(cy, q.y, w3);

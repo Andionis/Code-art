@@ -24,9 +24,9 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
   - [x] escena 2 (la exploradora, frases 3-5, hasta 21,4 s)
   - [x] escena 3 (la fila, frases 6-8, hasta 36,7 s)
   - [x] escena 4 (el final, frases 9-11, hasta el final)
-- [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
+- [x] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
-- [ ] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
+- [x] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
       propuesto
 
 ## Para seguir en un chat nuevo
