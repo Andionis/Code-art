@@ -31,3 +31,7 @@
   de letra en pantalla.
 - Al final, la letra termina y la música sigue sonando, sin letra, mientras imagen y música se desvanecen hasta acabar.
 - Fondo de video en blanco y negro, letra a color.
+
+## El final
+- «Pon el final como siempre que termine en el primer fotograma como que si va a empezar de nuevo»: el último
+  fotograma de cada video es el primero, para que se vea en bucle.

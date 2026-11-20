@@ -32,6 +32,7 @@ const TAU0 = 9;
   const E = M.CORTO.at(M.CORTO.L), dP = Math.hypot(HERO.P[0] - E.x, HERO.P[1] - E.y), tB = dP / (HERO.v * 0.45);
   HERO.d = TAU0 - (M.CORTO.L / HERO.v + 2 * tB + HERO.come + 0.75);
 }
+export const HERO_A = () => (M.donde(HERO, TAU0) || { a: 0 }).a;
 // el reloj de la colonia: empieza a cámara lenta en la cara de la hormiga y va hacia atrás en «Ninguna»
 const RITMO = [];
 { let tau = TAU0; for (let i = 0; i <= 600; i++) { RITMO.push(tau); const t = i / 120; tau += (0.12 + 0.88 * su(tr(t, 0.05, 1.4))) / 120; } }
@@ -166,7 +167,9 @@ const sExp2 = (t) => t < T_SALE2() ? 0 : VEL2[Math.min(1200, Math.round((t - T_S
 export function exploradora2(t) {
   if (t < T_SALE2()) return null;
   const s = sExp2(t), p = M.CORTO.at(s);
-  return { x: p.x, y: p.y, a: p.a, anda: s, s };
+  // al final se gira hasta quedar como la del primer fotograma (para que el video empiece otra vez sin salto)
+  const aH = HERO_A(); let da = aH - p.a; while (da > Math.PI) da -= M.TAU; while (da < -Math.PI) da += M.TAU;
+  return { x: p.x, y: p.y, a: p.a + da * su(tr(t, T.f11 + 0.5, T.f11 + 2.0)), anda: s, s };
 }
 // las demás, detrás de ella, desde «todas»
 const N_DETRAS = 26;
