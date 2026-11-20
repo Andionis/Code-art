@@ -1,12 +1,15 @@
-// «(la primera frase)»
-// Lo que se ve, frase a frase, de la primera palabra a la última (lo mismo que dice plan.md).
-import * as k from "#kit";
-import { v } from "#voz";
+// «¿Cómo encuentran las hormigas tu comida en minutos? Ninguna te vio dejarla: la encontró una sola, caminando al azar.»
+// El piso de la cocina, a escala de hormiga (todo el dibujo, en ../historia.js).
+// - Fotograma 0: la cara de una hormiga llena la pantalla, con un cristal de azúcar; la cámara sale disparada hacia
+//   arriba y se ve el río de hormigas sobre la concha.
+// - «Ninguna»: el tiempo va hacia atrás; todas vuelven de espaldas al hueco del zócalo.
+// - «una sola»: entra una hormiga en zigzag, la cámara la sigue y toca la concha en «azar».
+import { escena } from "../historia.js";
+import { marcaDeAgua } from "#piezas/marca-agua.js";
 
-export const desde = 0; // el primer plano empieza en 0; los demás, en la palabra que trae lo nuevo ("palabra" o "palabra#2")
+export const desde = 0;
 
 export function dibuja(g, t) {
-  // t: el segundo del vídeo. Todo se calcula desde t (nada se guarda de un fotograma al siguiente).
-  // v.t("palabra"): cuándo se dice esa palabra.
-  g.fillStyle = "#03050a"; g.fillRect(0, 0, 1080, 1920);
+  escena(g, t);
+  marcaDeAgua(g);
 }

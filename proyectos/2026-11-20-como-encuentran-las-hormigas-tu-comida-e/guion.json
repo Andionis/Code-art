@@ -2,6 +2,7 @@
   "titulo": "Cómo encuentran las hormigas tu comida en minutos",
   "idioma": "es",
   "subtitulos": "arriba",
+  "voz": { "id": "TX3LPaxmHKxFdv7VOQHJ" },
   "frases": [
     { "texto": "¿Cómo encuentran las hormigas tu comida en minutos?", "clave": "hormigas", "hook": true },
     { "texto": "Ninguna te vio dejarla: la encontró una sola, caminando al azar.", "clave": "sola", "hook": true },
