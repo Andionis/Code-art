@@ -1,0 +1,736 @@
+{
+  "firma": "cancion",
+  "duracion": 30,
+  "frases": [
+    {
+      "n": 1,
+      "texto": "Tú no te va' a arrepentir de haberme conocido",
+      "clave": "arrepentir",
+      "inicio": 0.74,
+      "fin": 3.4
+    },
+    {
+      "n": 2,
+      "texto": "Encima mío a cada rato te imagino",
+      "clave": "imagino",
+      "inicio": 3.68,
+      "fin": 5.62
+    },
+    {
+      "n": 3,
+      "texto": "Es que tú sabe' que contigo compagino",
+      "clave": "compagino",
+      "inicio": 5.96,
+      "fin": 7.88
+    },
+    {
+      "n": 4,
+      "texto": "¿Por qué tú cree' que sin pensar nos elegimo'?",
+      "clave": "elegimo",
+      "inicio": 8.24,
+      "fin": 10.195
+    },
+    {
+      "n": 5,
+      "texto": "Y yo no olvido na' de lo que nos dijimo'",
+      "clave": "olvido",
+      "inicio": 10.6,
+      "fin": 13.003
+    },
+    {
+      "n": 6,
+      "texto": "Vamo' a lo que vinimo'",
+      "clave": "vinimo",
+      "inicio": 13.58,
+      "fin": 14.903
+    },
+    {
+      "n": 7,
+      "texto": "En el deportivo la toqué y ella se vino",
+      "clave": "deportivo",
+      "inicio": 15.079,
+      "fin": 17.28
+    },
+    {
+      "n": 8,
+      "texto": "El tiempo no perdimo'",
+      "clave": "tiempo",
+      "inicio": 17.7,
+      "fin": 18.935
+    },
+    {
+      "n": 9,
+      "texto": "Tú no te va' a arrepentir de haberme conocido",
+      "clave": "arrepentir",
+      "inicio": 19.26,
+      "fin": 21.84
+    },
+    {
+      "n": 10,
+      "texto": "Encima mío a cada rato te imagino",
+      "clave": "imagino",
+      "inicio": 22.12,
+      "fin": 24.16
+    },
+    {
+      "n": 11,
+      "texto": "Es que tú sabe' que contigo compagino",
+      "clave": "compagino",
+      "inicio": 24.42,
+      "fin": 26.36
+    },
+    {
+      "n": 12,
+      "texto": "¿Por qué tú crees que sin pensar nos elegimo'?",
+      "clave": "elegimo",
+      "inicio": 26.7,
+      "fin": 28.603
+    }
+  ],
+  "palabras": [
+    {
+      "texto": "Tú",
+      "inicio": 0.74,
+      "fin": 0.82,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "no",
+      "inicio": 0.86,
+      "fin": 0.96,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "te",
+      "inicio": 1.02,
+      "fin": 1.14,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "va'",
+      "inicio": 1.18,
+      "fin": 1.26,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 1.32,
+      "fin": 1.4,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "arrepentir",
+      "inicio": 1.36,
+      "fin": 2.02,
+      "frase": 1,
+      "clave": true
+    },
+    {
+      "texto": "de",
+      "inicio": 2.08,
+      "fin": 2.16,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "haberme",
+      "inicio": 2.22,
+      "fin": 2.62,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "conocido",
+      "inicio": 2.66,
+      "fin": 3.4,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "Encima",
+      "inicio": 3.68,
+      "fin": 4.02,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "mío",
+      "inicio": 4.08,
+      "fin": 4.24,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 4.26,
+      "fin": 4.34,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "cada",
+      "inicio": 4.38,
+      "fin": 4.56,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "rato",
+      "inicio": 4.64,
+      "fin": 4.84,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "te",
+      "inicio": 4.9,
+      "fin": 4.98,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "imagino",
+      "inicio": 5,
+      "fin": 5.62,
+      "frase": 2,
+      "clave": true
+    },
+    {
+      "texto": "Es",
+      "inicio": 5.96,
+      "fin": 6.04,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 6.08,
+      "fin": 6.16,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "tú",
+      "inicio": 6.22,
+      "fin": 6.3,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "sabe'",
+      "inicio": 6.38,
+      "fin": 6.572,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 6.66,
+      "fin": 6.74,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "contigo",
+      "inicio": 6.78,
+      "fin": 7.16,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "compagino",
+      "inicio": 7.22,
+      "fin": 7.88,
+      "frase": 3,
+      "clave": true
+    },
+    {
+      "texto": "¿Por",
+      "inicio": 8.24,
+      "fin": 8.36,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "qué",
+      "inicio": 8.36,
+      "fin": 8.48,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "tú",
+      "inicio": 8.52,
+      "fin": 8.6,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "cree'",
+      "inicio": 8.64,
+      "fin": 8.752,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 8.8,
+      "fin": 8.88,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "sin",
+      "inicio": 8.92,
+      "fin": 9.06,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "pensar",
+      "inicio": 9.08,
+      "fin": 9.36,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "nos",
+      "inicio": 9.4,
+      "fin": 9.5,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "elegimo'?",
+      "inicio": 9.6,
+      "fin": 10.195,
+      "frase": 4,
+      "clave": true
+    },
+    {
+      "texto": "Y",
+      "inicio": 10.6,
+      "fin": 10.68,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "yo",
+      "inicio": 10.7,
+      "fin": 10.8,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "no",
+      "inicio": 10.82,
+      "fin": 10.9,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "olvido",
+      "inicio": 10.9,
+      "fin": 11.24,
+      "frase": 5,
+      "clave": true
+    },
+    {
+      "texto": "na'",
+      "inicio": 11.28,
+      "fin": 11.36,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 11.44,
+      "fin": 11.52,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "lo",
+      "inicio": 11.56,
+      "fin": 11.66,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 11.72,
+      "fin": 11.8,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "nos",
+      "inicio": 11.86,
+      "fin": 12,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "dijimo'",
+      "inicio": 12.06,
+      "fin": 13.003,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "Vamo'",
+      "inicio": 13.58,
+      "fin": 13.788,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 13.92,
+      "fin": 14,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "lo",
+      "inicio": 14.02,
+      "fin": 14.1,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 14.16,
+      "fin": 14.28,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "vinimo'",
+      "inicio": 14.32,
+      "fin": 14.903,
+      "frase": 6,
+      "clave": true
+    },
+    {
+      "texto": "En",
+      "inicio": 15.079,
+      "fin": 15.159,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 15.2,
+      "fin": 15.28,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "deportivo",
+      "inicio": 15.3,
+      "fin": 15.82,
+      "frase": 7,
+      "clave": true
+    },
+    {
+      "texto": "la",
+      "inicio": 15.88,
+      "fin": 15.98,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "toqué",
+      "inicio": 16.02,
+      "fin": 16.3,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "y",
+      "inicio": 16.38,
+      "fin": 16.46,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "ella",
+      "inicio": 16.427,
+      "fin": 16.54,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "se",
+      "inicio": 16.6,
+      "fin": 16.72,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "vino",
+      "inicio": 16.8,
+      "fin": 17.28,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "El",
+      "inicio": 17.7,
+      "fin": 17.82,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "tiempo",
+      "inicio": 17.88,
+      "fin": 18.14,
+      "frase": 8,
+      "clave": true
+    },
+    {
+      "texto": "no",
+      "inicio": 18.18,
+      "fin": 18.26,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "perdimo'",
+      "inicio": 18.34,
+      "fin": 18.935,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "Tú",
+      "inicio": 19.26,
+      "fin": 19.34,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "no",
+      "inicio": 19.38,
+      "fin": 19.46,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "te",
+      "inicio": 19.52,
+      "fin": 19.62,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "va'",
+      "inicio": 19.66,
+      "fin": 19.74,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 19.78,
+      "fin": 19.86,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "arrepentir",
+      "inicio": 19.82,
+      "fin": 20.46,
+      "frase": 9,
+      "clave": true
+    },
+    {
+      "texto": "de",
+      "inicio": 20.52,
+      "fin": 20.6,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "haberme",
+      "inicio": 20.66,
+      "fin": 21.04,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "conocido",
+      "inicio": 21.1,
+      "fin": 21.84,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "Encima",
+      "inicio": 22.12,
+      "fin": 22.48,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "mío",
+      "inicio": 22.54,
+      "fin": 22.68,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 22.72,
+      "fin": 22.8,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "cada",
+      "inicio": 22.84,
+      "fin": 23.04,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "rato",
+      "inicio": 23.1,
+      "fin": 23.34,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "te",
+      "inicio": 23.38,
+      "fin": 23.46,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "imagino",
+      "inicio": 23.46,
+      "fin": 24.16,
+      "frase": 10,
+      "clave": true
+    },
+    {
+      "texto": "Es",
+      "inicio": 24.42,
+      "fin": 24.5,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 24.52,
+      "fin": 24.64,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "tú",
+      "inicio": 24.68,
+      "fin": 24.78,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "sabe'",
+      "inicio": 24.84,
+      "fin": 25.016,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 25.1,
+      "fin": 25.2,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "contigo",
+      "inicio": 25.24,
+      "fin": 25.62,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "compagino",
+      "inicio": 25.68,
+      "fin": 26.36,
+      "frase": 11,
+      "clave": true
+    },
+    {
+      "texto": "¿Por",
+      "inicio": 26.7,
+      "fin": 26.82,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "qué",
+      "inicio": 26.82,
+      "fin": 26.94,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "tú",
+      "inicio": 27,
+      "fin": 27.08,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "crees",
+      "inicio": 27.12,
+      "fin": 27.24,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 27.28,
+      "fin": 27.36,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "sin",
+      "inicio": 27.4,
+      "fin": 27.5,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "pensar",
+      "inicio": 27.54,
+      "fin": 27.82,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "nos",
+      "inicio": 27.86,
+      "fin": 27.96,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "elegimo'?",
+      "inicio": 28.06,
+      "fin": 28.603,
+      "frase": 12,
+      "clave": true
+    }
+  ]
+}

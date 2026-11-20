@@ -1,0 +1,60 @@
+{
+  "titulo": "Lyric video lyric-te-imagino",
+  "idioma": "es",
+  "subtitulos": "no",
+  "frases": [
+    {
+      "texto": "Tú no te va' a arrepentir de haberme conocido",
+      "clave": "arrepentir"
+    },
+    {
+      "texto": "Encima mío a cada rato te imagino",
+      "clave": "imagino"
+    },
+    {
+      "texto": "Es que tú sabe' que contigo compagino",
+      "clave": "compagino"
+    },
+    {
+      "texto": "¿Por qué tú cree' que sin pensar nos elegimo'?",
+      "clave": "elegimo"
+    },
+    {
+      "texto": "Y yo no olvido na' de lo que nos dijimo'",
+      "clave": "olvido"
+    },
+    {
+      "texto": "Vamo' a lo que vinimo'",
+      "clave": "vinimo"
+    },
+    {
+      "texto": "En el deportivo la toqué y ella se vino",
+      "clave": "deportivo"
+    },
+    {
+      "texto": "El tiempo no perdimo'",
+      "clave": "tiempo"
+    },
+    {
+      "texto": "Tú no te va' a arrepentir de haberme conocido",
+      "clave": "arrepentir"
+    },
+    {
+      "texto": "Encima mío a cada rato te imagino",
+      "clave": "imagino"
+    },
+    {
+      "texto": "Es que tú sabe' que contigo compagino",
+      "clave": "compagino"
+    },
+    {
+      "texto": "¿Por qué tú crees que sin pensar nos elegimo'?",
+      "clave": "elegimo"
+    }
+  ],
+  "lyric": {
+    "bn": true,
+    "funde": 28.7,
+    "marca": true
+  }
+}
