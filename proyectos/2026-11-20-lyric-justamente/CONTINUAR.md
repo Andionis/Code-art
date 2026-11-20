@@ -10,5 +10,5 @@ Pasos:
 - [x] Borrador v1 (revisar/Justamente v1 (borrador).mp4)
 - [x] Borrador v2: sin latido (audio/golpes.json vacío; el original en golpes-original.json)
 - [x] Borrador v3: misma letra (Figtree), más chica (filas 78 px, clave 170 px; en video/planos/01-letra.js)
-- [ ] Aprobado
-- [ ] Final, flyer y descripciones
+- [x] Aprobado v3
+- [x] Final a 60 fps: salida/2026-11-20-lyric-justamente/Justamente (letra).mp4 (sin miniatura ni descripciones: lo pidió así)
