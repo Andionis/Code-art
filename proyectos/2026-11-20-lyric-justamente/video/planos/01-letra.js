@@ -102,17 +102,17 @@ function maqueta(g, f) {
   if (cache.has(f.n)) return cache.get(f.n);
   const filas = [];
   let fila = null;
-  const TAM = 104;
+  const TAM = 78;
   for (const w of f.palabras) {
     const texto = w.texto.replace(/[.,:"]/g, "").toUpperCase();
     if (w.clave) {
-      let tam = 230; g.font = fuente(tam);
-      while (g.measureText(texto).width > ANCHO_MAX && tam > 120) { tam -= 6; g.font = fuente(tam); }
+      let tam = 170; g.font = fuente(tam);
+      while (g.measureText(texto).width > ANCHO_MAX && tam > 90) { tam -= 6; g.font = fuente(tam); }
       filas.push({ tam, palabras: [{ w, texto, ancho: g.measureText(texto).width, clave: true }] });
       fila = null; continue;
     }
     g.font = fuente(TAM);
-    const ancho = g.measureText(texto).width, hueco = 24;
+    const ancho = g.measureText(texto).width, hueco = 18;
     if (!fila || fila.ancho + hueco + ancho > ANCHO_MAX) { fila = { tam: TAM, palabras: [], ancho: -hueco }; filas.push(fila); }
     fila.palabras.push({ w, texto, ancho }); fila.ancho += hueco + ancho;
   }
@@ -129,7 +129,7 @@ function maqueta(g, f) {
       const total = r.palabras.reduce((s, p) => s + p.ancho, 0) + 24 * (r.palabras.length - 1);
       let x = CX - total / 2;
       r.y = y + r.tam * 0.8;
-      for (const p of r.palabras) { p.x = x + p.ancho / 2; p.y = r.y; p.tam = r.tam; x += p.ancho + 24; }
+      for (const p of r.palabras) { p.x = x + p.ancho / 2; p.y = r.y; p.tam = r.tam; x += p.ancho + 18; }
       y += r.tam * 1.08;
     }
     const ps = fs.flatMap((r) => r.palabras);
