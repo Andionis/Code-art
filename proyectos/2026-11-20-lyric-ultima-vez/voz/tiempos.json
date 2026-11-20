@@ -6,631 +6,631 @@
       "n": 1,
       "texto": "Por fuera estoy riendo y por dentro me estoy muriendo",
       "clave": "muriendo",
-      "inicio": 0.18,
-      "fin": 2.54
+      "inicio": 0.4,
+      "fin": 2.58
     },
     {
       "n": 2,
       "texto": "Estoy agonizando; baby, yo te extraño",
       "clave": "agonizando",
-      "inicio": 2.54,
-      "fin": 6.26
+      "inicio": 2.6,
+      "fin": 6.88
     },
     {
       "n": 3,
       "texto": "Ya tú no me habla' y yo no sé qué hacer",
       "clave": "habla",
-      "inicio": 7.42,
-      "fin": 11.3
+      "inicio": 7.52,
+      "fin": 11.22
     },
     {
       "n": 4,
       "texto": "Mi conciencia me dice que tú no' va' a volver",
       "clave": "conciencia",
-      "inicio": 12.42,
-      "fin": 17.26
+      "inicio": 12.34,
+      "fin": 16.04
     },
     {
       "n": 5,
       "texto": "Yo nunca te quería perder, baby, yo me enredé en tu piel",
       "clave": "perder",
-      "inicio": 17.34,
-      "fin": 22.35
+      "inicio": 17.44,
+      "fin": 22.38
     },
     {
       "n": 6,
       "texto": "Yo solo te quiero comer tu totito otra vez",
       "clave": "comer",
-      "inicio": 22.34,
-      "fin": 27.44
+      "inicio": 22.44,
+      "fin": 27.32
     },
     {
       "n": 7,
       "texto": "Y si tú crees, que yo, no sé amar",
       "clave": "amar",
-      "inicio": 27.46,
-      "fin": 32.119
+      "inicio": 27.4,
+      "fin": 32.02
     },
     {
       "n": 8,
       "texto": "Pues yo te olvido y tú olvídame",
       "clave": "olvido",
-      "inicio": 32.2,
-      "fin": 35.8
+      "inicio": 32.26,
+      "fin": 35.66
     },
     {
       "n": 9,
       "texto": "Pero si tú, na' más, quieres chingar",
       "clave": "chingar",
-      "inicio": 37.2,
-      "fin": 41.3
+      "inicio": 37.28,
+      "fin": 41.8
     }
   ],
   "palabras": [
     {
       "texto": "Por",
-      "inicio": 0.18,
-      "fin": 0.462,
+      "inicio": 0.4,
+      "fin": 0.48,
       "frase": 1,
       "clave": false
     },
     {
       "texto": "fuera",
-      "inicio": 0.412,
-      "fin": 0.52,
+      "inicio": 0.42,
+      "fin": 0.58,
       "frase": 1,
       "clave": false
     },
     {
       "texto": "estoy",
-      "inicio": 0.568,
-      "fin": 1.363,
+      "inicio": 0.68,
+      "fin": 0.8,
       "frase": 1,
       "clave": false
     },
     {
       "texto": "riendo",
-      "inicio": 1.313,
-      "fin": 1.463,
+      "inicio": 0.86,
+      "fin": 1.18,
       "frase": 1,
       "clave": false
     },
     {
       "texto": "y",
-      "inicio": 1.454,
-      "fin": 1.534,
+      "inicio": 1.22,
+      "fin": 1.3,
       "frase": 1,
       "clave": false
     },
     {
       "texto": "por",
-      "inicio": 1.486,
-      "fin": 1.569,
+      "inicio": 1.32,
+      "fin": 1.44,
       "frase": 1,
       "clave": false
     },
     {
       "texto": "dentro",
-      "inicio": 1.486,
-      "fin": 1.68,
+      "inicio": 1.48,
+      "fin": 1.76,
       "frase": 1,
       "clave": false
     },
     {
       "texto": "me",
-      "inicio": 1.68,
-      "fin": 1.82,
+      "inicio": 1.82,
+      "fin": 1.92,
       "frase": 1,
       "clave": false
     },
     {
       "texto": "estoy",
-      "inicio": 1.86,
-      "fin": 1.98,
+      "inicio": 1.94,
+      "fin": 2.08,
       "frase": 1,
       "clave": false
     },
     {
       "texto": "muriendo",
-      "inicio": 2.04,
-      "fin": 2.54,
+      "inicio": 2.14,
+      "fin": 2.58,
       "frase": 1,
       "clave": true
     },
     {
       "texto": "Estoy",
-      "inicio": 2.54,
-      "fin": 2.72,
+      "inicio": 2.6,
+      "fin": 2.8,
       "frase": 2,
       "clave": false
     },
     {
       "texto": "agonizando;",
-      "inicio": 2.9,
-      "fin": 4.26,
+      "inicio": 2.88,
+      "fin": 4.44,
       "frase": 2,
       "clave": true
     },
     {
       "texto": "baby,",
-      "inicio": 4.62,
-      "fin": 5.36,
+      "inicio": 4.74,
+      "fin": 5.32,
       "frase": 2,
       "clave": false
     },
     {
       "texto": "yo",
-      "inicio": 5.66,
-      "fin": 5.74,
+      "inicio": 5.42,
+      "fin": 5.56,
       "frase": 2,
       "clave": false
     },
     {
       "texto": "te",
-      "inicio": 5.67,
-      "fin": 5.75,
+      "inicio": 5.7,
+      "fin": 5.86,
       "frase": 2,
       "clave": false
     },
     {
       "texto": "extraño",
-      "inicio": 5.7,
-      "fin": 6.26,
+      "inicio": 5.96,
+      "fin": 6.88,
       "frase": 2,
       "clave": false
     },
     {
       "texto": "Ya",
-      "inicio": 7.42,
-      "fin": 7.52,
+      "inicio": 7.52,
+      "fin": 7.64,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "tú",
-      "inicio": 8.94,
-      "fin": 9.02,
+      "inicio": 7.7,
+      "fin": 7.82,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "no",
-      "inicio": 8.96,
-      "fin": 9.04,
+      "inicio": 7.98,
+      "fin": 8.1,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "me",
-      "inicio": 9.06,
-      "fin": 9.52,
+      "inicio": 8.18,
+      "fin": 8.4,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "habla'",
-      "inicio": 9.52,
-      "fin": 9.6,
+      "inicio": 8.46,
+      "fin": 9.143,
       "frase": 3,
       "clave": true
     },
     {
       "texto": "y",
       "inicio": 9.52,
-      "fin": 9.6,
+      "fin": 9.62,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "yo",
-      "inicio": 9.6,
-      "fin": 9.88,
+      "inicio": 9.74,
+      "fin": 9.98,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "no",
-      "inicio": 9.94,
-      "fin": 10.18,
+      "inicio": 10.06,
+      "fin": 10.26,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "sé",
-      "inicio": 10.28,
-      "fin": 10.48,
+      "inicio": 10.36,
+      "fin": 10.56,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "qué",
-      "inicio": 10.54,
-      "fin": 10.62,
+      "inicio": 10.62,
+      "fin": 10.7,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "hacer",
-      "inicio": 10.74,
-      "fin": 11.3,
+      "inicio": 10.72,
+      "fin": 11.22,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "Mi",
-      "inicio": 12.42,
-      "fin": 12.7,
+      "inicio": 12.34,
+      "fin": 12.44,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "conciencia",
-      "inicio": 12.92,
-      "fin": 14.2,
+      "inicio": 12.48,
+      "fin": 13.08,
       "frase": 4,
       "clave": true
     },
     {
       "texto": "me",
-      "inicio": 14.3,
-      "fin": 14.5,
+      "inicio": 13.14,
+      "fin": 13.38,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "dice",
-      "inicio": 14.5,
-      "fin": 14.58,
+      "inicio": 13.46,
+      "fin": 14.3,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "que",
-      "inicio": 14.5,
+      "inicio": 14.38,
       "fin": 14.58,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "tú",
-      "inicio": 14.6,
-      "fin": 14.8,
+      "inicio": 14.66,
+      "fin": 14.9,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "no'",
-      "inicio": 14.92,
-      "fin": 15.06,
+      "inicio": 14.94,
+      "fin": 15.1,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "va'",
-      "inicio": 16.4,
-      "fin": 16.52,
+      "inicio": 15.16,
+      "fin": 15.24,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "a",
-      "inicio": 16.68,
-      "fin": 16.76,
+      "inicio": 15.3,
+      "fin": 15.38,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "volver",
-      "inicio": 16.8,
-      "fin": 17.26,
+      "inicio": 15.379,
+      "fin": 16.04,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "Yo",
-      "inicio": 17.34,
+      "inicio": 17.44,
       "fin": 17.6,
       "frase": 5,
       "clave": false
     },
     {
       "texto": "nunca",
-      "inicio": 17.66,
-      "fin": 18.22,
+      "inicio": 17.74,
+      "fin": 18.26,
       "frase": 5,
       "clave": false
     },
     {
       "texto": "te",
-      "inicio": 18.32,
-      "fin": 18.54,
+      "inicio": 18.4,
+      "fin": 18.62,
       "frase": 5,
       "clave": false
     },
     {
       "texto": "quería",
-      "inicio": 18.6,
-      "fin": 19.14,
+      "inicio": 18.7,
+      "fin": 19.22,
       "frase": 5,
       "clave": false
     },
     {
       "texto": "perder,",
-      "inicio": 19.22,
-      "fin": 19.76,
+      "inicio": 19.32,
+      "fin": 19.88,
       "frase": 5,
       "clave": true
     },
     {
       "texto": "baby,",
-      "inicio": 19.86,
-      "fin": 20.46,
+      "inicio": 19.96,
+      "fin": 20.52,
       "frase": 5,
       "clave": false
     },
     {
       "texto": "yo",
-      "inicio": 20.52,
-      "fin": 20.68,
+      "inicio": 20.6,
+      "fin": 20.78,
       "frase": 5,
       "clave": false
     },
     {
       "texto": "me",
-      "inicio": 20.76,
-      "fin": 20.94,
+      "inicio": 20.86,
+      "fin": 21.12,
       "frase": 5,
       "clave": false
     },
     {
       "texto": "enredé",
-      "inicio": 20.89,
-      "fin": 21.364,
+      "inicio": 21.296,
+      "fin": 21.634,
       "frase": 5,
       "clave": false
     },
     {
       "texto": "en",
-      "inicio": 21.272,
-      "fin": 21.576,
+      "inicio": 21.584,
+      "fin": 21.68,
       "frase": 5,
       "clave": false
     },
     {
       "texto": "tu",
-      "inicio": 21.576,
-      "fin": 21.88,
+      "inicio": 21.8,
+      "fin": 21.947,
       "frase": 5,
       "clave": false
     },
     {
       "texto": "piel",
-      "inicio": 21.98,
-      "fin": 22.35,
+      "inicio": 22.08,
+      "fin": 22.38,
       "frase": 5,
       "clave": false
     },
     {
       "texto": "Yo",
-      "inicio": 22.34,
-      "fin": 22.44,
+      "inicio": 22.44,
+      "fin": 22.56,
       "frase": 6,
       "clave": false
     },
     {
       "texto": "solo",
-      "inicio": 22.66,
-      "fin": 23.14,
+      "inicio": 22.68,
+      "fin": 23.18,
       "frase": 6,
       "clave": false
     },
     {
       "texto": "te",
-      "inicio": 23.24,
-      "fin": 23.5,
+      "inicio": 23.3,
+      "fin": 23.56,
       "frase": 6,
       "clave": false
     },
     {
       "texto": "quiero",
-      "inicio": 23.56,
-      "fin": 24.08,
+      "inicio": 23.64,
+      "fin": 24.16,
       "frase": 6,
       "clave": false
     },
     {
       "texto": "comer",
-      "inicio": 24.18,
-      "fin": 24.7,
+      "inicio": 24.24,
+      "fin": 24.78,
       "frase": 6,
       "clave": true
     },
     {
       "texto": "tu",
-      "inicio": 24.81,
-      "fin": 24.96,
+      "inicio": 24.86,
+      "fin": 25.047,
       "frase": 6,
       "clave": false
     },
     {
       "texto": "totito",
-      "inicio": 25.06,
+      "inicio": 25.16,
       "fin": 26.08,
       "frase": 6,
       "clave": false
     },
     {
       "texto": "otra",
-      "inicio": 26.16,
-      "fin": 26.58,
+      "inicio": 26.24,
+      "fin": 26.68,
       "frase": 6,
       "clave": false
     },
     {
       "texto": "vez",
-      "inicio": 26.9,
-      "fin": 27.44,
+      "inicio": 26.76,
+      "fin": 27.32,
       "frase": 6,
       "clave": false
     },
     {
       "texto": "Y",
-      "inicio": 27.46,
-      "fin": 27.54,
+      "inicio": 27.4,
+      "fin": 27.52,
       "frase": 7,
       "clave": false
     },
     {
       "texto": "si",
-      "inicio": 27.56,
-      "fin": 27.78,
+      "inicio": 27.64,
+      "fin": 27.82,
       "frase": 7,
       "clave": false
     },
     {
       "texto": "tú",
-      "inicio": 27.86,
-      "fin": 28.08,
+      "inicio": 27.94,
+      "fin": 28.18,
       "frase": 7,
       "clave": false
     },
     {
       "texto": "crees,",
-      "inicio": 28.22,
-      "fin": 29.04,
+      "inicio": 28.3,
+      "fin": 29.14,
       "frase": 7,
       "clave": false
     },
     {
       "texto": "que",
-      "inicio": 29.12,
-      "fin": 29.32,
+      "inicio": 29.88,
+      "fin": 30,
       "frase": 7,
       "clave": false
     },
     {
       "texto": "yo,",
-      "inicio": 30.08,
-      "fin": 30.22,
+      "inicio": 30.18,
+      "fin": 30.34,
       "frase": 7,
       "clave": false
     },
     {
       "texto": "no",
-      "inicio": 30.32,
-      "fin": 30.56,
+      "inicio": 30.44,
+      "fin": 30.6,
       "frase": 7,
       "clave": false
     },
     {
       "texto": "sé",
-      "inicio": 30.66,
-      "fin": 30.94,
+      "inicio": 30.72,
+      "fin": 31,
       "frase": 7,
       "clave": false
     },
     {
       "texto": "amar",
-      "inicio": 31.06,
-      "fin": 32.119,
+      "inicio": 31,
+      "fin": 32.02,
       "frase": 7,
       "clave": true
     },
     {
       "texto": "Pues",
-      "inicio": 32.2,
-      "fin": 32.45,
+      "inicio": 32.26,
+      "fin": 32.54,
       "frase": 8,
       "clave": false
     },
     {
       "texto": "yo",
-      "inicio": 32.5,
-      "fin": 32.75,
+      "inicio": 32.62,
+      "fin": 32.8,
       "frase": 8,
       "clave": false
     },
     {
       "texto": "te",
-      "inicio": 32.8,
-      "fin": 33.1,
+      "inicio": 32.88,
+      "fin": 32.96,
       "frase": 8,
       "clave": false
     },
     {
       "texto": "olvido",
-      "inicio": 33.2,
-      "fin": 34,
+      "inicio": 33.04,
+      "fin": 33.64,
       "frase": 8,
       "clave": true
     },
     {
       "texto": "y",
-      "inicio": 34.6,
-      "fin": 34.85,
+      "inicio": 33.68,
+      "fin": 33.76,
       "frase": 8,
       "clave": false
     },
     {
       "texto": "tú",
-      "inicio": 34.9,
-      "fin": 35.1,
+      "inicio": 33.84,
+      "fin": 34.06,
       "frase": 8,
       "clave": false
     },
     {
       "texto": "olvídame",
-      "inicio": 35.15,
-      "fin": 35.8,
+      "inicio": 34.24,
+      "fin": 35.66,
       "frase": 8,
       "clave": false
     },
     {
       "texto": "Pero",
-      "inicio": 37.2,
-      "fin": 37.6,
+      "inicio": 37.28,
+      "fin": 37.76,
       "frase": 9,
       "clave": false
     },
     {
       "texto": "si",
-      "inicio": 37.7,
-      "fin": 38,
-      "frase": 9,
-      "clave": false
-    },
-    {
-      "texto": "tú,",
-      "inicio": 38.1,
+      "inicio": 38.48,
       "fin": 38.7,
       "frase": 9,
       "clave": false
     },
     {
+      "texto": "tú,",
+      "inicio": 38.82,
+      "fin": 38.92,
+      "frase": 9,
+      "clave": false
+    },
+    {
       "texto": "na'",
-      "inicio": 38.8,
-      "fin": 39.05,
+      "inicio": 39.78,
+      "fin": 39.98,
       "frase": 9,
       "clave": false
     },
     {
       "texto": "más,",
-      "inicio": 39.1,
-      "fin": 39.6,
+      "inicio": 39.98,
+      "fin": 40.28,
       "frase": 9,
       "clave": false
     },
     {
       "texto": "quieres",
-      "inicio": 40.15,
-      "fin": 40.55,
+      "inicio": 40.34,
+      "fin": 40.84,
       "frase": 9,
       "clave": false
     },
     {
       "texto": "chingar",
-      "inicio": 40.6,
-      "fin": 41.3,
+      "inicio": 40.88,
+      "fin": 41.8,
       "frase": 9,
       "clave": true
     }

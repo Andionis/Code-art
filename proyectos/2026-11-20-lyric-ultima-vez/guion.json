@@ -1,5 +1,5 @@
 {
-  "titulo": "Lyric video lyric-riendo",
+  "titulo": "Lyric video lyric-ultima-vez",
   "idioma": "es",
   "subtitulos": "no",
   "frases": [
@@ -42,7 +42,7 @@
   ],
   "lyric": {
     "bn": true,
-    "funde": 40.6,
+    "funde": 41,
     "marca": false
   }
 }
