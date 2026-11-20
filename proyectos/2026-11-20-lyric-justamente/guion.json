@@ -1,0 +1,40 @@
+{
+  "titulo": "Lyric video lyric-justamente",
+  "idioma": "es",
+  "subtitulos": "no",
+  "frases": [
+    {
+      "texto": "'Toy haciendo justamente to' lo que no debo",
+      "clave": "debo"
+    },
+    {
+      "texto": "La botella dice \"peligro\", pero igual la bebo",
+      "clave": "peligro"
+    },
+    {
+      "texto": "La comida tiene veneno, pero igual la pruebo",
+      "clave": "veneno"
+    },
+    {
+      "texto": "Que me iba a enredar, lo sé, lo supe desde el inicio",
+      "clave": "enredar"
+    },
+    {
+      "texto": "Te probé por curioso y terminaste siendo un vicio",
+      "clave": "vicio"
+    },
+    {
+      "texto": "Me diste alas para volar en tu precipicio",
+      "clave": "alas"
+    },
+    {
+      "texto": "Pero lo vuelvo a hacer sin importar el sacrificio",
+      "clave": "sacrificio"
+    }
+  ],
+  "lyric": {
+    "bn": true,
+    "funde": 37,
+    "marca": false
+  }
+}

@@ -1,0 +1,491 @@
+{
+ "firma": "cancion",
+ "duracion": 38.2,
+ "frases": [
+  {
+   "n": 1,
+   "texto": "'Toy haciendo justamente to' lo que no debo",
+   "clave": "debo",
+   "inicio": 0.64,
+   "fin": 3.9
+  },
+  {
+   "n": 2,
+   "texto": "La botella dice \"peligro\", pero igual la bebo",
+   "clave": "peligro",
+   "inicio": 5.48,
+   "fin": 8.92
+  },
+  {
+   "n": 3,
+   "texto": "La comida tiene veneno, pero igual la pruebo",
+   "clave": "veneno",
+   "inicio": 10.54,
+   "fin": 13.88
+  },
+  {
+   "n": 4,
+   "texto": "Que me iba a enredar, lo sé, lo supe desde el inicio",
+   "clave": "enredar",
+   "inicio": 16.64,
+   "fin": 21.72
+  },
+  {
+   "n": 5,
+   "texto": "Te probé por curioso y terminaste siendo un vicio",
+   "clave": "vicio",
+   "inicio": 22.08,
+   "fin": 26.76
+  },
+  {
+   "n": 6,
+   "texto": "Me diste alas para volar en tu precipicio",
+   "clave": "alas",
+   "inicio": 26.84,
+   "fin": 31.66
+  },
+  {
+   "n": 7,
+   "texto": "Pero lo vuelvo a hacer sin importar el sacrificio",
+   "clave": "sacrificio",
+   "inicio": 32.18,
+   "fin": 36.88
+  }
+ ],
+ "palabras": [
+  {
+   "texto": "'Toy",
+   "inicio": 0.64,
+   "fin": 0.76,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "haciendo",
+   "inicio": 0.78,
+   "fin": 1.3,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "justamente",
+   "inicio": 1.34,
+   "fin": 1.8,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "to'",
+   "inicio": 1.84,
+   "fin": 1.98,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "lo",
+   "inicio": 2.02,
+   "fin": 2.12,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "que",
+   "inicio": 2.16,
+   "fin": 2.36,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "no",
+   "inicio": 2.48,
+   "fin": 2.64,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "debo",
+   "inicio": 2.84,
+   "fin": 3.9,
+   "frase": 1,
+   "clave": true
+  },
+  {
+   "texto": "La",
+   "inicio": 5.48,
+   "fin": 5.58,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "botella",
+   "inicio": 5.6,
+   "fin": 6.04,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "dice",
+   "inicio": 6.08,
+   "fin": 6.36,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "\"peligro\",",
+   "inicio": 6.42,
+   "fin": 6.8,
+   "frase": 2,
+   "clave": true
+  },
+  {
+   "texto": "pero",
+   "inicio": 6.88,
+   "fin": 7.08,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "igual",
+   "inicio": 7.12,
+   "fin": 7.4,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "la",
+   "inicio": 7.56,
+   "fin": 7.72,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "bebo",
+   "inicio": 7.86,
+   "fin": 8.92,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "La",
+   "inicio": 10.54,
+   "fin": 10.62,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "comida",
+   "inicio": 10.68,
+   "fin": 11.14,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "tiene",
+   "inicio": 11.22,
+   "fin": 11.46,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "veneno,",
+   "inicio": 11.52,
+   "fin": 11.88,
+   "frase": 3,
+   "clave": true
+  },
+  {
+   "texto": "pero",
+   "inicio": 11.98,
+   "fin": 12.18,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "igual",
+   "inicio": 12.22,
+   "fin": 12.72,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "la",
+   "inicio": 12.64,
+   "fin": 12.8,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "pruebo",
+   "inicio": 12.94,
+   "fin": 13.88,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "Que",
+   "inicio": 16.64,
+   "fin": 16.8,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "me",
+   "inicio": 17.02,
+   "fin": 17.21,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "iba",
+   "inicio": 17.16,
+   "fin": 17.415,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "a",
+   "inicio": 17.36,
+   "fin": 17.476,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "enredar,",
+   "inicio": 17.476,
+   "fin": 18.27,
+   "frase": 4,
+   "clave": true
+  },
+  {
+   "texto": "lo",
+   "inicio": 18.3,
+   "fin": 18.447,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "sé,",
+   "inicio": 18.447,
+   "fin": 18.96,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "lo",
+   "inicio": 19.3,
+   "fin": 19.38,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "supe",
+   "inicio": 19.5,
+   "fin": 20.14,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "desde",
+   "inicio": 20.5,
+   "fin": 20.6,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "el",
+   "inicio": 20.74,
+   "fin": 20.82,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "inicio",
+   "inicio": 20.94,
+   "fin": 21.72,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "Te",
+   "inicio": 22.08,
+   "fin": 22.2,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "probé",
+   "inicio": 22.38,
+   "fin": 22.84,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "por",
+   "inicio": 23.02,
+   "fin": 23.28,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "curioso",
+   "inicio": 23.36,
+   "fin": 24.02,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "y",
+   "inicio": 24.04,
+   "fin": 24.14,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "terminaste",
+   "inicio": 24.28,
+   "fin": 25.42,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "siendo",
+   "inicio": 25.5,
+   "fin": 26.04,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "un",
+   "inicio": 26.04,
+   "fin": 26.12,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "vicio",
+   "inicio": 26.18,
+   "fin": 26.76,
+   "frase": 5,
+   "clave": true
+  },
+  {
+   "texto": "Me",
+   "inicio": 26.84,
+   "fin": 27.08,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "diste",
+   "inicio": 27.256,
+   "fin": 27.72,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "alas",
+   "inicio": 27.84,
+   "fin": 28.39,
+   "frase": 6,
+   "clave": true
+  },
+  {
+   "texto": "para",
+   "inicio": 28.42,
+   "fin": 29.06,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "volar",
+   "inicio": 29.34,
+   "fin": 29.98,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "en",
+   "inicio": 30.04,
+   "fin": 30.22,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "tu",
+   "inicio": 30.3,
+   "fin": 30.42,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "precipicio",
+   "inicio": 30.58,
+   "fin": 31.66,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "Pero",
+   "inicio": 32.18,
+   "fin": 32.68,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "lo",
+   "inicio": 32.8,
+   "fin": 32.94,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "vuelvo",
+   "inicio": 33.08,
+   "fin": 33.48,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "a",
+   "inicio": 33.5,
+   "fin": 33.58,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "hacer",
+   "inicio": 33.58,
+   "fin": 33.96,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "sin",
+   "inicio": 34.06,
+   "fin": 34.32,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "importar",
+   "inicio": 34.48,
+   "fin": 35.34,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "el",
+   "inicio": 35.4,
+   "fin": 35.52,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "sacrificio",
+   "inicio": 35.62,
+   "fin": 36.88,
+   "frase": 7,
+   "clave": true
+  }
+ ]
+}
