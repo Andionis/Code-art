@@ -21,7 +21,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 - [x] 4. El plan → plan.md, con sus escenas
 - [ ] 5. Escena por escena (cada una, su borrador aprobado):
   - [x] escena 1 (el hook, frases 1-2, hasta 7,5 s)
-  - [ ] escena 2 (la exploradora, frases 3-5, hasta 21,4 s)
+  - [x] escena 2 (la exploradora, frases 3-5, hasta 21,4 s)
   - [ ] escena 3 (la fila, frases 6-8, hasta 36,7 s)
   - [ ] escena 4 (el final, frases 9-11, hasta el final)
 - [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la

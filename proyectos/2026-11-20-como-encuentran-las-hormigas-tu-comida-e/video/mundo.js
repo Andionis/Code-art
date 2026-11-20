@@ -325,15 +325,15 @@ function cargaDibujo(g, carga, boca = 0) {
 // ---------------------------------------------------------------- la colonia: hormigas que van y vuelven por un camino
 // Cada una sale del nido en d (segundos de su reloj), va por su camino, entra en la concha hasta un punto, come un
 // rato y vuelve cargada. Todo sale del reloj tau: si tau va hacia atrás, vuelven andando de espaldas.
-export function colonia(n, semilla, { d0, d1, ritmo = 1, eligeCorto }) {
+export function colonia(n, semilla, { d0, d1, ritmo = 1, eligeCorto, vel = 1 }) {
   const az = azar(semilla);
   return Array.from({ length: n }, (_, i) => {
     const u = Math.pow((i + az()) / n, 1 / ritmo);
     const d = mez(d0, d1, u);
     const a = az() * TAU, r = Math.sqrt(az()) * RC * 0.78;
     return {
-      d, v: 470 + az() * 120, lado: (az() - 0.5) * 26, P: [CONCHA[0] + Math.cos(a) * r, CONCHA[1] + Math.sin(a) * r],
-      come: 1.0 + az() * 1.6, gira: 1.5 + az() * 2, carga: az() < 0.45 ? "azucar" : "rosa", semilla: az() * 10,
+      d, v: (470 + az() * 120) * vel, lado: (az() - 0.5) * 26, P: [CONCHA[0] + Math.cos(a) * r, CONCHA[1] + Math.sin(a) * r],
+      come: 0.6 + az() * 1.0, gira: 1.5 + az() * 2, carga: az() < 0.45 ? "azucar" : "rosa", semilla: az() * 10,
       corto: eligeCorto ? eligeCorto(d, az()) : false, i,
     };
   });
@@ -377,6 +377,7 @@ export const MIGAS = { largo: migas(LARGO), corto: migas(CORTO) };
 export function rastro(g, cual, s0, s1, fuerza, t, { pan = 0, ancho = 1, ola = null } = {}) {
   if (fuerza <= 0.005 && pan <= 0.005) return;
   const ruta = cual === "corto" ? CORTO : LARGO;
+  ancho *= Math.max(1, 1.25 / g.getTransform().a); // de lejos, más gordas para que se vean
   g.save();
   // un hilo fino por debajo, que une las gotas
   if (fuerza > 0.01) {
