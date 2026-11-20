@@ -48,8 +48,35 @@ export function exploradora(t) {
     return { x: p.x, y: p.y, a: p.a + Math.sin(t * 9) * 0.25, anda: s, ant: 0.5 };
   }
   const E = M.PASEO.at(M.PASEO.L);
-  return { x: E.x, y: E.y, a: E.a, anda: M.PASEO.L, ant: 0.5 + 0.8 * su(tr(t, T.antenas - 0.2, T.antenas + 0.3)) };
+  const ant = 0.5 + 0.9 * su(tr(t, T.antenas - 0.2, T.antenas + 0.3)) - 0.6 * su(tr(t, T.toma - 0.2, T.toma + 0.3));
+  if (t < T.vuelve + 0.05) {
+    // olfatea, muerde un trocito y se queda con él
+    const boca = k.pulso(t, T.poquito, 0.22) + 0.6 * k.pulso(t, T.toma + 0.1, 0.15);
+    return { x: E.x, y: E.y, a: E.a + 0.1 * Math.sin(t * 2.2) * (1 - su(tr(t, T.toma - 0.3, T.toma))), anda: M.PASEO.L + 10 * k.pulso(t, T.poquito, 0.3), ant, boca, carga: t > T.poquito + 0.12 ? "rosa" : null };
+  }
+  // se da la vuelta y vuelve a casa por el camino largo, tocando el piso con la punta
+  const aVuelta = M.LARGO.at(M.LARGO.L).a + Math.PI;
+  if (t < T_SALE) {
+    let da = aVuelta - E.a; while (da > Math.PI) da -= M.TAU; while (da < -Math.PI) da += M.TAU;
+    return { x: E.x, y: E.y, a: E.a + da * su(tr(t, T.vuelve, T_SALE)), anda: M.PASEO.L + 60 * tr(t, T.vuelve, T_SALE), ant: 0.4, carga: "rosa" };
+  }
+  const s = sVuelta(t);
+  if (s <= 0) return null;
+  const p = M.LARGO.at(s);
+  return { x: p.x, y: p.y, a: p.a + Math.PI, anda: M.PASEO.L + 60 + (M.LARGO.L - s), ant: 0.4, carga: "rosa", punta: su(tr(t, T.tocando - 0.1, T.tocando + 0.3)), s };
 }
+// el camino de vuelta: más despacio cuando la cámara mira la punta, y entra en el hueco al final de la frase 5
+export const T_SALE = T.vuelve + 0.5, T_NIDO = T.f5fin - 0.25;
+const VUELTA = [];
+{
+  const N = 2000, vel = (t) => 1 - 0.65 * k.pulso(t, T.punta + 0.25, 0.55);
+  let tot = 0; const acc = [0];
+  for (let i = 1; i <= N; i++) { tot += vel(mez(T_SALE, T_NIDO, i / N)); acc.push(tot); }
+  for (const a of acc) VUELTA.push(M.LARGO.L * (1 - a / tot));
+}
+export function sVuelta(t) { const u = tr(t, T_SALE, T_NIDO) * 2000; const i = Math.floor(u); return mez(VUELTA[i], VUELTA[Math.min(2000, i + 1)], u - i) - (t > T_NIDO ? 300 * (t - T_NIDO) : 0); }
+// donde empezó a dejar el rastro
+export const S_RASTRO = () => sVuelta(T.tocando);
 // la cabeza de la exploradora (para que la cámara la mire)
 export const cabeza = (p, d = 15) => [p.x + Math.cos(p.a) * d, p.y + Math.sin(p.a) * d];
 
@@ -71,6 +98,25 @@ export function camara(t) {
     const Ze = Math.exp(mez(lg(2.6), lg(3.3), su(tr(t, T.sola + 0.2, TLLEGA + 0.1))));
     Z = Math.exp(mez(lg(Z), lg(Ze), w)); cx = mez(cx, e.x, w); cy = mez(cy, e.y + 60 * (1 - su(tr(t, T.sola, TLLEGA))), w);
   }
+  if (t > TLLEGA) {
+    // 3. entra hasta su cabeza: las antenas
+    const E = M.PASEO.at(M.PASEO.L), cab = cabeza({ x: E.x, y: E.y, a: E.a }, 22);
+    const w = su(tr(t, T.f3 - 0.1, T.antenas + 0.35));
+    Z = Math.exp(mez(lg(Z), lg(mez(13, 15, tr(t, T.antenas, T.toma))), w)); cx = mez(cx, cab[0], w); cy = mez(cy, cab[1], w);
+    // 4. se aleja un poco cuando ella se da la vuelta y la sigue
+    if (t > T.vuelve - 0.1 && e) {
+      const w2 = su(tr(t, T.vuelve - 0.1, T_SALE + 0.3));
+      Z = Math.exp(mez(lg(Z), lg(6.5), w2)); cx = mez(cx, e.x, w2); cy = mez(cy, e.y, w2);
+      // 5. la punta de su abdomen, de cerca
+      const pt = cabeza(e, -22), w3 = su(tr(t, T.punta - 0.55, T.punta + 0.05)) * (1 - su(tr(t, T.f4fin - 0.6, T.f4fin + 0.2)));
+      Z = Math.exp(mez(lg(Z), lg(13), w3)); cx = mez(cx, pt[0], w3); cy = mez(cy, pt[1], w3);
+      // 6. se aleja con ella mientras deja el rastro, hasta ver todo el camino
+      const w4 = su(tr(t, T.f4fin - 0.6, T.migas));
+      Z = Math.exp(mez(lg(Z), lg(2.2), w4));
+      const w5 = su(tr(t, T.migas - 0.4, T_NIDO));
+      Z = Math.exp(mez(lg(Z), lg(0.85), w5)); cx = mez(cx, 60, w5); cy = mez(cy, -370, w5);
+    } else if (t > T.vuelve - 0.1 && !e) { Z = 0.85; cx = 60; cy = -370; }
+  }
   return [Z, cx, cy];
 }
 
@@ -87,6 +133,14 @@ export function escena(g, t) {
   const tauH = tauHook(t);
   const hayHook = t < T.rebobina + 1.7;
   if (hayHook) M.rastro(g, "corto", 0, M.CORTO.L, 0.55 * (1 - su(tr(t, T.rebobina, T.rebobina + 1.5))), t);
+  // el rastro de la exploradora: de donde está ella hasta donde empezó a marcarlo
+  if (t > T.tocando) {
+    const e0 = exploradora(t), sE = e0 && e0.s != null ? e0.s : -400;
+    const pan = su(tr(t, T.migas - 0.15, T.migas + 0.3)) * (1 - su(tr(t, T.invisibles - 0.45, T.invisibles + 0.1)));
+    M.rastro(g, "largo", Math.max(0, sE + 12), S_RASTRO(), fuerzaLargo(t) * (1 - 0.7 * pan), t, { pan });
+  }
+  // el olor del azúcar sube del pan hacia sus antenas
+  { const E = M.PASEO.at(M.PASEO.L), cab = cabeza({ x: E.x, y: E.y, a: E.a }, 30); M.olorAzucar(g, cab[0] + 30, cab[1] + 90, cab, t, oler(t)); }
   g.save(); M.recortePiso(g);
   if (hayHook) M.dibujaColonia(g, c, COL_HOOK, tauH, t, { ant: 0.3 });
   // la exploradora
@@ -99,7 +153,9 @@ export function escena(g, t) {
       for (let s = s0; s < s1 - 30; s += 30) { const a = M.PASEO.at(s), b = M.PASEO.at(s + 30); g.strokeStyle = `rgba(255,255,255,${0.5 * borra * ((s - s0) / 900)})`; g.beginPath(); g.moveTo(a.x, a.y); g.lineTo(b.x, b.y); g.stroke(); }
       g.restore();
     }
-    M.hormiga(g, e.x, e.y, e.a, { fase: e.anda, t, semilla: 3, zoom: c[0], ant: e.ant });
+    M.hormiga(g, e.x, e.y, e.a, { fase: e.anda, t, semilla: 3, zoom: c[0], ant: e.ant, boca: e.boca || 0, carga: e.carga, punta: e.punta || 0, puntasLuz: oler(t) * (0.6 + 0.4 * Math.sin(t * 11)) });
+    // la gota de olor en la punta del abdomen, cada vez que toca
+    if (e.punta > 0.05) { const pt = cabeza(e, -22.5), late = 0.55 + 0.45 * Math.max(0, Math.sin(e.anda * 0.32)); M.gota(g, pt[0], pt[1], e.punta * late * (1 + 0.5 * k.pulso(t, T.punta + 0.15, 0.3))); }
     // en «sola», un anillo de luz que la señala
     const an = k.pulso(t, T.sola + 0.15, 0.35);
     if (an > 0.02) { g.save(); g.strokeStyle = `rgba(255,255,255,${0.85 * an})`; g.lineWidth = 4 / c[0] * 1.5; g.beginPath(); g.arc(e.x, e.y, 34 + 30 * (1 - an), 0, M.TAU); g.stroke(); g.restore(); }
@@ -107,5 +163,10 @@ export function escena(g, t) {
   g.restore();
   M.luzCocina(g);
 }
+
+// cuánto huele el azúcar (las puntas de las antenas se encienden)
+function oler(t) { return su(tr(t, T.huele - 0.2, T.azucar + 0.2)) * (1 - su(tr(t, T.toma, T.vuelve))); }
+// la fuerza del rastro largo: brilla al dejarlo y se vuelve casi invisible
+export function fuerzaLargo(t) { return 0.95 - 0.62 * su(tr(t, T.invisibles - 0.1, T.invisibles + 0.6)); }
 
 export const momentos = { rebobina: T.rebobina, sola: T.sola, llega: TLLEGA };

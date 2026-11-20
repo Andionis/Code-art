@@ -304,7 +304,7 @@ export function hormiga(g, x, y, ang, o = {}) {
     g.strokeStyle = "#241206"; g.lineWidth = 1.1; g.beginPath(); g.moveTo(bx, by); g.lineTo(ex, ey); g.quadraticCurveTo(ex + Math.cos(a2) * 4, ey + Math.sin(a2) * 4, tx, ty); g.stroke();
     g.strokeStyle = "rgba(200,140,90,0.5)"; g.lineWidth = 0.5; g.beginPath(); g.moveTo(bx, by - 0.4); g.lineTo(ex, ey - 0.4); g.stroke();
     g.fillStyle = "#241206"; g.beginPath(); g.ellipse(tx - Math.cos(a2) * 1.2, ty - Math.sin(a2) * 1.2, 1.6, 1.05, a2, 0, TAU); g.fill();
-    if (o.puntasLuz) k.brillo(g, tx, ty, 16, o.puntasColor || "255,170,200", o.puntasLuz);
+    if (o.puntasLuz > 0.01) { g.save(); g.globalCompositeOperation = "screen"; const hg = g.createRadialGradient(tx, ty, 0, tx, ty, 6); hg.addColorStop(0, `rgba(255,150,200,${0.8 * o.puntasLuz})`); hg.addColorStop(1, "rgba(255,150,200,0)"); g.fillStyle = hg; g.beginPath(); g.arc(tx, ty, 6, 0, TAU); g.fill(); g.restore(); }
   }
   g.restore();
 }
@@ -373,56 +373,74 @@ const azR = azar(4242);
 const migas = (ruta) => { const M = []; for (let s = 6; s < ruta.L; s += 9 + azR() * 6) { const p = ruta.at(s), off = (azR() - 0.5) * 7; M.push({ s, x: p.x - Math.sin(p.a) * off, y: p.y + Math.cos(p.a) * off, r: 1.6 + azR() * 1.8, f: azR() * 6, a: azR() * TAU }); } return M; };
 export const MIGAS = { largo: migas(LARGO), corto: migas(CORTO) };
 // el rastro de un camino, de s0 a s1, con su fuerza (0-1+); pan: 0-1, las migas se ven de pan
+// Gotitas cian, cada una con su halo pequeño; nunca una estela continua (parecería un láser).
 export function rastro(g, cual, s0, s1, fuerza, t, { pan = 0, ancho = 1, ola = null } = {}) {
   if (fuerza <= 0.005 && pan <= 0.005) return;
   const ruta = cual === "corto" ? CORTO : LARGO;
   g.save();
-  // un velo continuo, suave, por debajo
+  // un hilo fino por debajo, que une las gotas
   if (fuerza > 0.01) {
-    g.globalCompositeOperation = "lighter"; g.lineCap = "round"; g.lineJoin = "round";
-    for (const [w, a] of [[26 * ancho, 0.07], [12 * ancho, 0.12], [4 * ancho, 0.22]]) {
-      g.strokeStyle = `rgba(${OLOR},${Math.min(1, a * fuerza)})`; g.lineWidth = w; g.beginPath();
-      for (let s = Math.max(0, s0); s <= Math.min(ruta.L, s1); s += 8) { const p = ruta.at(s); s === Math.max(0, s0) ? g.moveTo(p.x, p.y) : g.lineTo(p.x, p.y); }
-      g.stroke();
-    }
+    g.lineCap = "round"; g.lineJoin = "round";
+    g.strokeStyle = `rgba(40,200,240,${Math.min(0.5, 0.22 * fuerza * ancho)})`; g.lineWidth = 3 * ancho; g.beginPath();
+    for (let s = Math.max(0, s0), i = 0; s <= Math.min(ruta.L, s1); s += 8, i++) { const p = ruta.at(s); i ? g.lineTo(p.x, p.y) : g.moveTo(p.x, p.y); }
+    g.stroke();
   }
-  // las gotitas de olor (o migas de pan)
   for (const m of MIGAS[cual]) {
     if (m.s < s0 || m.s > s1) continue;
     const olaF = ola ? ola(m.s) : 1;
-    const f = fuerza * olaF * (0.75 + 0.25 * Math.sin(t * 3 + m.f));
+    const f = Math.min(1.3, fuerza * olaF * (0.8 + 0.2 * Math.sin(t * 3 + m.f)));
     if (pan > 0.01) {
-      g.globalCompositeOperation = "source-over";
+      // una miga de pan, dorada, con su sombra
       g.save(); g.translate(m.x, m.y); g.rotate(m.a); g.globalAlpha *= pan;
-      const r = m.r * 1.9, gr = g.createRadialGradient(-r * 0.3, -r * 0.3, 0.2, 0, 0, r * 1.2);
-      gr.addColorStop(0, "#ffe6a8"); gr.addColorStop(0.6, "#e2a24c"); gr.addColorStop(1, "#9c5a1e");
+      const r = m.r * 2.6, gr = g.createRadialGradient(-r * 0.3, -r * 0.3, 0.2, 0, 0, r * 1.2);
+      gr.addColorStop(0, "#ffe9b0"); gr.addColorStop(0.6, "#e0a04a"); gr.addColorStop(1, "#9c5a1e");
       g.fillStyle = "rgba(90,45,15,0.3)"; g.beginPath(); g.ellipse(r * 0.3, r * 0.4, r * 1.1, r * 0.8, 0, 0, TAU); g.fill();
       g.fillStyle = gr; g.beginPath(); g.moveTo(-r, -r * 0.5); g.lineTo(r * 0.2, -r); g.lineTo(r, -r * 0.1); g.lineTo(r * 0.6, r * 0.8); g.lineTo(-r * 0.7, r * 0.7); g.closePath(); g.fill();
       g.restore();
     }
     if (f > 0.01) {
-      g.globalCompositeOperation = "lighter";
-      k.brillo(g, m.x, m.y, 22 * m.r * ancho, OLOR, Math.min(1, 0.5 * f));
-      g.fillStyle = `rgba(220,255,255,${Math.min(1, 0.85 * f)})`; g.beginPath(); g.arc(m.x, m.y, m.r * 0.9 * Math.min(1.6, ancho), 0, TAU); g.fill();
+      const r = m.r * Math.min(1.7, ancho);
+      g.save(); g.globalCompositeOperation = "screen";
+      const hg = g.createRadialGradient(m.x, m.y, 0, m.x, m.y, r * 4);
+      hg.addColorStop(0, `rgba(60,220,255,${0.55 * f})`); hg.addColorStop(1, "rgba(60,220,255,0)");
+      g.fillStyle = hg; g.beginPath(); g.arc(m.x, m.y, r * 4, 0, TAU); g.fill();
+      g.restore();
+      const dg = g.createRadialGradient(m.x - r * 0.3, m.y - r * 0.3, 0, m.x, m.y, r);
+      dg.addColorStop(0, `rgba(235,255,255,${Math.min(1, f)})`); dg.addColorStop(0.5, `rgba(70,220,250,${Math.min(1, f)})`); dg.addColorStop(1, `rgba(0,150,210,${Math.min(1, 0.9 * f)})`);
+      g.fillStyle = dg; g.beginPath(); g.arc(m.x, m.y, r, 0, TAU); g.fill();
     }
   }
   g.restore();
 }
+// una gota de olor que sale de la punta del abdomen
+export function gota(g, x, y, f) {
+  if (f <= 0.01) return;
+  g.save(); g.globalCompositeOperation = "screen";
+  const hg = g.createRadialGradient(x, y, 0, x, y, 14); hg.addColorStop(0, `rgba(60,220,255,${0.6 * Math.min(1, f)})`); hg.addColorStop(1, "rgba(60,220,255,0)");
+  g.fillStyle = hg; g.beginPath(); g.arc(x, y, 14, 0, TAU); g.fill(); g.restore();
+  const dg = g.createRadialGradient(x - 0.8, y - 0.8, 0, x, y, 3.2);
+  dg.addColorStop(0, `rgba(235,255,255,${Math.min(1, f)})`); dg.addColorStop(0.5, `rgba(70,220,250,${Math.min(1, f)})`); dg.addColorStop(1, `rgba(0,150,210,${Math.min(1, f)})`);
+  g.fillStyle = dg; g.beginPath(); g.arc(x, y, 3.2, 0, TAU); g.fill();
+}
 
-// ---------------------------------------------------------------- el olor del azúcar: cintas rosa dorado que suben del pan
+// ---------------------------------------------------------------- el olor del azúcar: motitas rosa dorado que suben del pan
+const azO = azar(5150);
+const MOTAS = Array.from({ length: 90 }, () => ({ f: azO(), ox: (azO() - 0.5) * 140, oy: (azO() - 0.5) * 90, w: 2 + azO() * 3, r: 0.8 + azO() * 1.4, c: azO() }));
 export function olorAzucar(g, x, y, hacia, t, al) {
   if (al <= 0.01) return;
-  g.save(); g.globalCompositeOperation = "lighter"; g.lineCap = "round";
-  for (let i = 0; i < 7; i++) {
-    const f = i * 1.37, fase = (t * 0.55 + i / 7) % 1;
-    const sx = x + Math.sin(f * 3) * 40, sy = y + Math.cos(f * 2) * 25;
-    const ex = mez(sx, hacia[0], fase), ey = mez(sy, hacia[1], fase);
-    const a = al * Math.sin(fase * Math.PI) * 0.6;
-    g.strokeStyle = `rgba(255,${170 + i * 8},${150 + i * 6},${a * 0.35})`; g.lineWidth = 14;
-    g.beginPath(); g.moveTo(sx, sy);
-    for (let j = 1; j <= 10; j++) { const w = j / 10; g.lineTo(mez(sx, ex, w) + Math.sin(w * 7 + t * 2.3 + f) * 9 * w, mez(sy, ey, w) + Math.cos(w * 6 + t * 2 + f) * 6 * w); }
-    g.stroke();
-    g.strokeStyle = `rgba(255,220,200,${a * 0.6})`; g.lineWidth = 3; g.stroke();
+  g.save();
+  for (const m of MOTAS) {
+    const fase = (t * 0.45 + m.f) % 1;
+    const sx = x + m.ox, sy = y + m.oy, w = k.suave(fase);
+    const px = mez(sx, hacia[0], w) + Math.sin(fase * 9 + m.f * 20) * m.w * 3 * (1 - w);
+    const py = mez(sy, hacia[1], w) + Math.cos(fase * 7 + m.f * 13) * m.w * 2 * (1 - w);
+    const a = al * Math.sin(fase * Math.PI);
+    const col = m.c < 0.5 ? "255,140,190" : "255,200,120";
+    g.globalCompositeOperation = "screen";
+    const hg = g.createRadialGradient(px, py, 0, px, py, m.r * 5); hg.addColorStop(0, `rgba(${col},${0.5 * a})`); hg.addColorStop(1, `rgba(${col},0)`);
+    g.fillStyle = hg; g.beginPath(); g.arc(px, py, m.r * 5, 0, TAU); g.fill();
+    g.globalCompositeOperation = "source-over";
+    g.fillStyle = `rgba(255,${m.c < 0.5 ? 120 : 190},${m.c < 0.5 ? 170 : 110},${0.9 * a})`; g.beginPath(); g.arc(px, py, m.r, 0, TAU); g.fill();
   }
   g.restore();
 }
