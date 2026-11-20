@@ -9,5 +9,5 @@ Pasos:
 - [x] Tramo, letra sincronizada, beats y fondo
 - [x] Borrador v2 (revisar/La Última Vez v2 (borrador).mp4)
 - [x] Borrador v3: el latido, a 97 bpm alineado con el bombo (audio/golpes.json rehecho; el preparar sacó 119 bpm)
-- [ ] Aprobado
-- [ ] Final: salida/<carpeta>/Anuel AA, Bad Bunny - La Última Vez (letra).mp4; flyer y descripciones
+- [x] Aprobado v3
+- [x] Final a 60 fps: salida/<carpeta>/Anuel AA, Bad Bunny - La Última Vez (letra).mp4; flyer (portada 1, SIN_LETRA=1) y descripciones
