@@ -1,29 +1,11 @@
-# Lyric video lyric-se-toco: todo lo necesario para continuar
+# Lyric video: Se Tocó el Totito con Mi Glock (Anuel AA)
 
-Este archivo es la memoria del proyecto. En una conversación nueva basta con leerlo, junto con METODO.md y lo que este
-pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
+Lo decidido: del segundo 12,85 al 50 de la canción; letra del creador hasta «…Cartel de Los Zeta'». Después, desvanecido
+de imagen y música (33,15 s → final) sin letra, con «El avión…» sonando. Fondo: cortes de Anuel de sus grabaciones
+(salida/2026-11-21-anuel-cortes), al 75 % de velocidad, recortados en vertical siguiéndolo, a color original.
+Plano cambiado (lo pidió): una sola fila de letra por pantalla, la clave en la misma fila; sin tinte de color en el
+fondo; sin latidos (ni zoom ni destellos con el ritmo); sin marca de agua.
 
-## Lo decidido (con las palabras del creador)
-
--
-
-## Pendiente del creador
-
--
-
-## Pasos (METODO.md; marca cada uno al terminarlo)
-
-- [ ] 1. La idea y los datos → idea.md
-- [ ] 2. El guion → guion.json, **aprobado por el creador**
-- [ ] 3. La voz (una sola vez, con el guion cerrado)
-- [ ] 4. El plan → plan.md, con sus escenas
-- [ ] 5. Escena por escena (cada una, su borrador aprobado):
-  - [ ] escena 1 (el hook)
-- [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
-      miniatura y las descripciones)
-- [ ] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
-      propuesto
-
-## Para seguir en un chat nuevo
-
-Abre una conversación nueva en la carpeta CODE ART y escribe: **«continúa el proyecto 2026-11-21-lyric-se-toco»**.
+- [x] Borradores v1-v4 (revisar/)
+- [x] Aprobado v4
+- [x] Final a 60 fps: salida/2026-11-21-lyric-se-toco/Anuel AA - Se Tocó el Totito con Mi Glock (letra).mp4; flyer (portada 1) y descripciones
