@@ -1,0 +1,1290 @@
+{
+  "language_code": "spa",
+  "language_probability": 1,
+  "text": "Quieren matarme, ya están haciendo reuniones. Bajen las blindadas y a los diablos con cuernos y cincuentones. En la playa con chancleta Christian Dior. Traje dos tussi pa' las putas de diferentes colores. Tengo cuatro millones de relojes. Richard Mille, Patek Philippe, AP, Cartier, Jacob y Rolex. Me puse un Lamborghini en la muñeca. Si algún día me paran, que me mamen el bicho, soy cuatro letras. Trabajo con la empresa pa' que sepan. Toda esta feria vendida y piso la urus a doscientas. Rameador amarillo, la glopeta. Te graban y te...",
+  "words": [
+    {
+      "text": "Quieren",
+      "start": 1.2,
+      "end": 1.42,
+      "type": "word",
+      "logprob": -0.001608231727524461
+    },
+    {
+      "text": " ",
+      "start": 1.42,
+      "end": 1.46,
+      "type": "spacing",
+      "logprob": -0.00007211902266135439
+    },
+    {
+      "text": "matarme,",
+      "start": 1.46,
+      "end": 1.92,
+      "type": "word",
+      "logprob": -0.00010559647762420354
+    },
+    {
+      "text": " ",
+      "start": 1.92,
+      "end": 1.96,
+      "type": "spacing",
+      "logprob": -0.16501399874687195
+    },
+    {
+      "text": "ya",
+      "start": 1.96,
+      "end": 2.02,
+      "type": "word",
+      "logprob": -0.16501399874687195
+    },
+    {
+      "text": " ",
+      "start": 2.02,
+      "end": 2.08,
+      "type": "spacing",
+      "logprob": -0.00017093151109293103
+    },
+    {
+      "text": "están",
+      "start": 2.08,
+      "end": 2.26,
+      "type": "word",
+      "logprob": -0.00017093151109293103
+    },
+    {
+      "text": " ",
+      "start": 2.26,
+      "end": 2.26,
+      "type": "spacing",
+      "logprob": -0.0000034570634852570947
+    },
+    {
+      "text": "haciendo",
+      "start": 2.28,
+      "end": 2.72,
+      "type": "word",
+      "logprob": -0.0000034570634852570947
+    },
+    {
+      "text": " ",
+      "start": 2.72,
+      "end": 2.78,
+      "type": "spacing",
+      "logprob": -0.00011681827891152352
+    },
+    {
+      "text": "reuniones.",
+      "start": 2.78,
+      "end": 3.42,
+      "type": "word",
+      "logprob": -0.00013632865593535826
+    },
+    {
+      "text": " ",
+      "start": 3.42,
+      "end": 3.66,
+      "type": "spacing",
+      "logprob": -0.47940051555633545
+    },
+    {
+      "text": "Bajen",
+      "start": 3.66,
+      "end": 3.96,
+      "type": "word",
+      "logprob": -0.2878636928508058
+    },
+    {
+      "text": " ",
+      "start": 3.96,
+      "end": 4,
+      "type": "spacing",
+      "logprob": -0.000005483612312673358
+    },
+    {
+      "text": "las",
+      "start": 4,
+      "end": 4.12,
+      "type": "word",
+      "logprob": -0.000005483612312673358
+    },
+    {
+      "text": " ",
+      "start": 4.12,
+      "end": 4.14,
+      "type": "spacing",
+      "logprob": -0.0001445904199499637
+    },
+    {
+      "text": "blindadas",
+      "start": 4.14,
+      "end": 4.6,
+      "type": "word",
+      "logprob": -0.0005458480478005691
+    },
+    {
+      "text": " ",
+      "start": 4.6,
+      "end": 4.62,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": "y",
+      "start": 4.62,
+      "end": 4.66,
+      "type": "word",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": " ",
+      "start": 4.66,
+      "end": 4.72,
+      "type": "spacing",
+      "logprob": -0.0000023841830625315197
+    },
+    {
+      "text": "a",
+      "start": 4.72,
+      "end": 4.78,
+      "type": "word",
+      "logprob": -0.0000023841830625315197
+    },
+    {
+      "text": " ",
+      "start": 4.78,
+      "end": 4.82,
+      "type": "spacing",
+      "logprob": -0.000006437280717364047
+    },
+    {
+      "text": "los",
+      "start": 4.82,
+      "end": 4.96,
+      "type": "word",
+      "logprob": -0.000006437280717364047
+    },
+    {
+      "text": " ",
+      "start": 4.96,
+      "end": 5.02,
+      "type": "spacing",
+      "logprob": -0.002382180653512478
+    },
+    {
+      "text": "diablos",
+      "start": 5.02,
+      "end": 5.32,
+      "type": "word",
+      "logprob": -0.0013620124324721214
+    },
+    {
+      "text": " ",
+      "start": 5.32,
+      "end": 5.36,
+      "type": "spacing",
+      "logprob": -0.0000010728830375228426
+    },
+    {
+      "text": "con",
+      "start": 5.36,
+      "end": 5.52,
+      "type": "word",
+      "logprob": -0.0000010728830375228426
+    },
+    {
+      "text": " ",
+      "start": 5.52,
+      "end": 5.56,
+      "type": "spacing",
+      "logprob": -0.00045980370487086475
+    },
+    {
+      "text": "cuernos",
+      "start": 5.56,
+      "end": 5.9,
+      "type": "word",
+      "logprob": -0.07759151992753946
+    },
+    {
+      "text": " ",
+      "start": 5.9,
+      "end": 5.92,
+      "type": "spacing",
+      "logprob": 0
+    },
+    {
+      "text": "y",
+      "start": 5.92,
+      "end": 5.98,
+      "type": "word",
+      "logprob": 0
+    },
+    {
+      "text": " ",
+      "start": 5.98,
+      "end": 6.06,
+      "type": "spacing",
+      "logprob": -0.001029438222758472
+    },
+    {
+      "text": "cincuentones.",
+      "start": 6.06,
+      "end": 6.76,
+      "type": "word",
+      "logprob": -0.04466081434375505
+    },
+    {
+      "text": " ",
+      "start": 6.76,
+      "end": 6.8,
+      "type": "spacing",
+      "logprob": -0.000002861018856492592
+    },
+    {
+      "text": "En",
+      "start": 6.8,
+      "end": 6.86,
+      "type": "word",
+      "logprob": -0.000002861018856492592
+    },
+    {
+      "text": " ",
+      "start": 6.86,
+      "end": 6.9,
+      "type": "spacing",
+      "logprob": -0.000004410734163684538
+    },
+    {
+      "text": "la",
+      "start": 6.9,
+      "end": 6.98,
+      "type": "word",
+      "logprob": -0.000004410734163684538
+    },
+    {
+      "text": " ",
+      "start": 6.98,
+      "end": 7.04,
+      "type": "spacing",
+      "logprob": -0.00027414379292167723
+    },
+    {
+      "text": "playa",
+      "start": 7.04,
+      "end": 7.36,
+      "type": "word",
+      "logprob": -0.00027414379292167723
+    },
+    {
+      "text": " ",
+      "start": 7.36,
+      "end": 7.4,
+      "type": "spacing",
+      "logprob": -0.000003814689989667386
+    },
+    {
+      "text": "con",
+      "start": 7.4,
+      "end": 7.52,
+      "type": "word",
+      "logprob": -0.000003814689989667386
+    },
+    {
+      "text": " ",
+      "start": 7.52,
+      "end": 7.56,
+      "type": "spacing",
+      "logprob": -0.0381012037396431
+    },
+    {
+      "text": "chancleta",
+      "start": 7.56,
+      "end": 8,
+      "type": "word",
+      "logprob": -0.27849094486898845
+    },
+    {
+      "text": " ",
+      "start": 8,
+      "end": 8.02,
+      "type": "spacing",
+      "logprob": -0.0949440523982048
+    },
+    {
+      "text": "Christian",
+      "start": 8.02,
+      "end": 8.38,
+      "type": "word",
+      "logprob": -0.0949440523982048
+    },
+    {
+      "text": " ",
+      "start": 8.38,
+      "end": 8.44,
+      "type": "spacing",
+      "logprob": -0.005157262086868286
+    },
+    {
+      "text": "Dior.",
+      "start": 8.44,
+      "end": 8.86,
+      "type": "word",
+      "logprob": -0.004222465044585988
+    },
+    {
+      "text": " ",
+      "start": 8.86,
+      "end": 8.86,
+      "type": "spacing",
+      "logprob": -0.000029444261599564925
+    },
+    {
+      "text": "Traje",
+      "start": 9.28,
+      "end": 9.56,
+      "type": "word",
+      "logprob": -0.00002119513628713321
+    },
+    {
+      "text": " ",
+      "start": 9.56,
+      "end": 9.6,
+      "type": "spacing",
+      "logprob": -0.000010967194612021558
+    },
+    {
+      "text": "dos",
+      "start": 9.6,
+      "end": 9.74,
+      "type": "word",
+      "logprob": -0.000010967194612021558
+    },
+    {
+      "text": " ",
+      "start": 9.74,
+      "end": 9.78,
+      "type": "spacing",
+      "logprob": -0.006611259654164314
+    },
+    {
+      "text": "tussi",
+      "start": 9.78,
+      "end": 10.08,
+      "type": "word",
+      "logprob": -0.40075712837278843
+    },
+    {
+      "text": " ",
+      "start": 10.08,
+      "end": 10.14,
+      "type": "spacing",
+      "logprob": -0.0013622299302369356
+    },
+    {
+      "text": "pa'",
+      "start": 10.14,
+      "end": 10.2,
+      "type": "word",
+      "logprob": -0.012172548255572716
+    },
+    {
+      "text": " ",
+      "start": 10.2,
+      "end": 10.28,
+      "type": "spacing",
+      "logprob": -0.00000965590606938349
+    },
+    {
+      "text": "las",
+      "start": 10.28,
+      "end": 10.44,
+      "type": "word",
+      "logprob": -0.00000965590606938349
+    },
+    {
+      "text": " ",
+      "start": 10.44,
+      "end": 10.48,
+      "type": "spacing",
+      "logprob": -0.005050519946962595
+    },
+    {
+      "text": "putas",
+      "start": 10.48,
+      "end": 10.82,
+      "type": "word",
+      "logprob": -0.003030311968177557
+    },
+    {
+      "text": " ",
+      "start": 10.82,
+      "end": 10.88,
+      "type": "spacing",
+      "logprob": 0
+    },
+    {
+      "text": "de",
+      "start": 10.88,
+      "end": 10.96,
+      "type": "word",
+      "logprob": 0
+    },
+    {
+      "text": " ",
+      "start": 10.96,
+      "end": 11,
+      "type": "spacing",
+      "logprob": -0.0003554189461283386
+    },
+    {
+      "text": "diferentes",
+      "start": 11,
+      "end": 11.62,
+      "type": "word",
+      "logprob": -0.0003554189461283386
+    },
+    {
+      "text": " ",
+      "start": 11.62,
+      "end": 11.68,
+      "type": "spacing",
+      "logprob": -0.0009427393670193851
+    },
+    {
+      "text": "colores.",
+      "start": 11.68,
+      "end": 12.24,
+      "type": "word",
+      "logprob": -0.0008250906610811626
+    },
+    {
+      "text": " ",
+      "start": 12.24,
+      "end": 12.36,
+      "type": "spacing",
+      "logprob": -0.000009298280929215252
+    },
+    {
+      "text": "Tengo",
+      "start": 12.36,
+      "end": 12.64,
+      "type": "word",
+      "logprob": -0.000009298280929215252
+    },
+    {
+      "text": " ",
+      "start": 12.64,
+      "end": 12.7,
+      "type": "spacing",
+      "logprob": -0.00004708655978902243
+    },
+    {
+      "text": "cuatro",
+      "start": 12.7,
+      "end": 13,
+      "type": "word",
+      "logprob": -0.00004708655978902243
+    },
+    {
+      "text": " ",
+      "start": 13,
+      "end": 13.08,
+      "type": "spacing",
+      "logprob": -0.0000058412379075889476
+    },
+    {
+      "text": "millones",
+      "start": 13.08,
+      "end": 13.54,
+      "type": "word",
+      "logprob": -0.0000058412379075889476
+    },
+    {
+      "text": " ",
+      "start": 13.54,
+      "end": 13.6,
+      "type": "spacing",
+      "logprob": -0.020541900768876076
+    },
+    {
+      "text": "de",
+      "start": 13.6,
+      "end": 13.62,
+      "type": "word",
+      "logprob": -0.020541900768876076
+    },
+    {
+      "text": " ",
+      "start": 13.62,
+      "end": 13.7,
+      "type": "spacing",
+      "logprob": -0.0000066756979322235566
+    },
+    {
+      "text": "relojes.",
+      "start": 13.7,
+      "end": 14.34,
+      "type": "word",
+      "logprob": -0.0183738693435771
+    },
+    {
+      "text": " ",
+      "start": 14.34,
+      "end": 14.92,
+      "type": "spacing",
+      "logprob": -0.0003299168893136084
+    },
+    {
+      "text": "Richard",
+      "start": 14.92,
+      "end": 15.22,
+      "type": "word",
+      "logprob": -0.0003299168893136084
+    },
+    {
+      "text": " ",
+      "start": 15.22,
+      "end": 15.26,
+      "type": "spacing",
+      "logprob": -0.0016781308222562075
+    },
+    {
+      "text": "Mille,",
+      "start": 15.26,
+      "end": 15.4,
+      "type": "word",
+      "logprob": -0.0013992370785823975
+    },
+    {
+      "text": " ",
+      "start": 15.4,
+      "end": 15.46,
+      "type": "spacing",
+      "logprob": -0.0003156163729727268
+    },
+    {
+      "text": "Patek",
+      "start": 15.46,
+      "end": 15.74,
+      "type": "word",
+      "logprob": -0.00077863116748631
+    },
+    {
+      "text": " ",
+      "start": 15.74,
+      "end": 15.78,
+      "type": "spacing",
+      "logprob": -0.15940316021442413
+    },
+    {
+      "text": "Philippe,",
+      "start": 15.78,
+      "end": 16.379,
+      "type": "word",
+      "logprob": -0.14169739337739884
+    },
+    {
+      "text": " ",
+      "start": 16.379,
+      "end": 16.379,
+      "type": "spacing",
+      "logprob": -0.0004844683862756938
+    },
+    {
+      "text": "AP,",
+      "start": 16.379,
+      "end": 16.379,
+      "type": "word",
+      "logprob": -0.0003244889050317094
+    },
+    {
+      "text": " ",
+      "start": 16.379,
+      "end": 16.42,
+      "type": "spacing",
+      "logprob": -0.0008199428557418287
+    },
+    {
+      "text": "Cartier,",
+      "start": 16.42,
+      "end": 16.76,
+      "type": "word",
+      "logprob": -0.0007180460438007685
+    },
+    {
+      "text": " ",
+      "start": 16.76,
+      "end": 16.82,
+      "type": "spacing",
+      "logprob": -0.00211016065441072
+    },
+    {
+      "text": "Jacob",
+      "start": 16.82,
+      "end": 17.12,
+      "type": "word",
+      "logprob": -0.00211016065441072
+    },
+    {
+      "text": " ",
+      "start": 17.12,
+      "end": 17.16,
+      "type": "spacing",
+      "logprob": -0.6334221363067627
+    },
+    {
+      "text": "y",
+      "start": 17.16,
+      "end": 17.24,
+      "type": "word",
+      "logprob": -0.6334221363067627
+    },
+    {
+      "text": " ",
+      "start": 17.24,
+      "end": 17.3,
+      "type": "spacing",
+      "logprob": -0.000020861407392658293
+    },
+    {
+      "text": "Rolex.",
+      "start": 17.3,
+      "end": 17.66,
+      "type": "word",
+      "logprob": -0.00001738450616054858
+    },
+    {
+      "text": " ",
+      "start": 17.66,
+      "end": 17.66,
+      "type": "spacing",
+      "logprob": -0.01522244606167078
+    },
+    {
+      "text": "Me",
+      "start": 17.82,
+      "end": 17.9,
+      "type": "word",
+      "logprob": -0.01522244606167078
+    },
+    {
+      "text": " ",
+      "start": 17.9,
+      "end": 17.96,
+      "type": "spacing",
+      "logprob": -0.00017093151109293103
+    },
+    {
+      "text": "puse",
+      "start": 17.96,
+      "end": 18.18,
+      "type": "word",
+      "logprob": -0.00017093151109293103
+    },
+    {
+      "text": " ",
+      "start": 18.18,
+      "end": 18.22,
+      "type": "spacing",
+      "logprob": -0.0002972637885250151
+    },
+    {
+      "text": "un",
+      "start": 18.22,
+      "end": 18.28,
+      "type": "word",
+      "logprob": -0.0002972637885250151
+    },
+    {
+      "text": " ",
+      "start": 18.28,
+      "end": 18.32,
+      "type": "spacing",
+      "logprob": -0.000008940656698541716
+    },
+    {
+      "text": "Lamborghini",
+      "start": 18.32,
+      "end": 18.88,
+      "type": "word",
+      "logprob": -0.000008940656698541716
+    },
+    {
+      "text": " ",
+      "start": 18.88,
+      "end": 18.9,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": "en",
+      "start": 18.9,
+      "end": 18.96,
+      "type": "word",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": " ",
+      "start": 18.96,
+      "end": 19,
+      "type": "spacing",
+      "logprob": -0.0000014305104514278355
+    },
+    {
+      "text": "la",
+      "start": 19,
+      "end": 19.1,
+      "type": "word",
+      "logprob": -0.0000014305104514278355
+    },
+    {
+      "text": " ",
+      "start": 19.1,
+      "end": 19.14,
+      "type": "spacing",
+      "logprob": -0.000019311717551317997
+    },
+    {
+      "text": "muñeca.",
+      "start": 19.14,
+      "end": 19.76,
+      "type": "word",
+      "logprob": -0.00013587951330659313
+    },
+    {
+      "text": " ",
+      "start": 19.76,
+      "end": 19.76,
+      "type": "spacing",
+      "logprob": -0.0000786750388215296
+    },
+    {
+      "text": "Si",
+      "start": 20.2,
+      "end": 20.24,
+      "type": "word",
+      "logprob": -0.0000786750388215296
+    },
+    {
+      "text": " ",
+      "start": 20.24,
+      "end": 20.28,
+      "type": "spacing",
+      "logprob": -0.5232596397399902
+    },
+    {
+      "text": "algún",
+      "start": 20.28,
+      "end": 20.5,
+      "type": "word",
+      "logprob": -0.5232596397399902
+    },
+    {
+      "text": " ",
+      "start": 20.5,
+      "end": 20.54,
+      "type": "spacing",
+      "logprob": -0.5236096978187561
+    },
+    {
+      "text": "día",
+      "start": 20.54,
+      "end": 20.62,
+      "type": "word",
+      "logprob": -0.5236096978187561
+    },
+    {
+      "text": " ",
+      "start": 20.62,
+      "end": 20.62,
+      "type": "spacing",
+      "logprob": 0
+    },
+    {
+      "text": "me",
+      "start": 20.64,
+      "end": 20.66,
+      "type": "word",
+      "logprob": 0
+    },
+    {
+      "text": " ",
+      "start": 20.66,
+      "end": 20.7,
+      "type": "spacing",
+      "logprob": -0.00035398892941884696
+    },
+    {
+      "text": "paran,",
+      "start": 20.7,
+      "end": 20.98,
+      "type": "word",
+      "logprob": -0.0026557615638012066
+    },
+    {
+      "text": " ",
+      "start": 20.98,
+      "end": 21.06,
+      "type": "spacing",
+      "logprob": -0.0000010728830375228426
+    },
+    {
+      "text": "que",
+      "start": 21.06,
+      "end": 21.18,
+      "type": "word",
+      "logprob": -0.0000010728830375228426
+    },
+    {
+      "text": " ",
+      "start": 21.18,
+      "end": 21.24,
+      "type": "spacing",
+      "logprob": 0
+    },
+    {
+      "text": "me",
+      "start": 21.24,
+      "end": 21.34,
+      "type": "word",
+      "logprob": 0
+    },
+    {
+      "text": " ",
+      "start": 21.34,
+      "end": 21.38,
+      "type": "spacing",
+      "logprob": -0.00013517419574782252
+    },
+    {
+      "text": "mamen",
+      "start": 21.38,
+      "end": 21.7,
+      "type": "word",
+      "logprob": -0.00007700581336393953
+    },
+    {
+      "text": " ",
+      "start": 21.7,
+      "end": 21.74,
+      "type": "spacing",
+      "logprob": -0.0000017881377516459906
+    },
+    {
+      "text": "el",
+      "start": 21.74,
+      "end": 21.86,
+      "type": "word",
+      "logprob": -0.0000017881377516459906
+    },
+    {
+      "text": " ",
+      "start": 21.86,
+      "end": 21.9,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": "bicho,",
+      "start": 21.9,
+      "end": 22.14,
+      "type": "word",
+      "logprob": -0.00003681478604633526
+    },
+    {
+      "text": " ",
+      "start": 22.14,
+      "end": 22.22,
+      "type": "spacing",
+      "logprob": -0.004191423766314983
+    },
+    {
+      "text": "soy",
+      "start": 22.22,
+      "end": 22.36,
+      "type": "word",
+      "logprob": -0.004191423766314983
+    },
+    {
+      "text": " ",
+      "start": 22.36,
+      "end": 22.4,
+      "type": "spacing",
+      "logprob": -0.0006932000978849828
+    },
+    {
+      "text": "cuatro",
+      "start": 22.4,
+      "end": 22.72,
+      "type": "word",
+      "logprob": -0.0006932000978849828
+    },
+    {
+      "text": " ",
+      "start": 22.72,
+      "end": 22.76,
+      "type": "spacing",
+      "logprob": -0.00003814624506048858
+    },
+    {
+      "text": "letras.",
+      "start": 22.78,
+      "end": 23.26,
+      "type": "word",
+      "logprob": -0.00003269678148041878
+    },
+    {
+      "text": " ",
+      "start": 23.26,
+      "end": 23.26,
+      "type": "spacing",
+      "logprob": -0.0016567088896408677
+    },
+    {
+      "text": "Trabajo",
+      "start": 23.48,
+      "end": 23.72,
+      "type": "word",
+      "logprob": -0.0016567088896408677
+    },
+    {
+      "text": " ",
+      "start": 23.72,
+      "end": 23.78,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": "con",
+      "start": 23.78,
+      "end": 23.88,
+      "type": "word",
+      "logprob": -1.1920928244535389e-7
+    },
+    {
+      "text": " ",
+      "start": 23.88,
+      "end": 23.92,
+      "type": "spacing",
+      "logprob": -0.000007033323527139146
+    },
+    {
+      "text": "la",
+      "start": 23.92,
+      "end": 23.94,
+      "type": "word",
+      "logprob": -0.000007033323527139146
+    },
+    {
+      "text": " ",
+      "start": 23.94,
+      "end": 24,
+      "type": "spacing",
+      "logprob": -0.027352474629878998
+    },
+    {
+      "text": "empresa",
+      "start": 24,
+      "end": 24.42,
+      "type": "word",
+      "logprob": -0.027352474629878998
+    },
+    {
+      "text": " ",
+      "start": 24.42,
+      "end": 24.48,
+      "type": "spacing",
+      "logprob": -0.004140614531934261
+    },
+    {
+      "text": "pa'",
+      "start": 24.48,
+      "end": 24.54,
+      "type": "word",
+      "logprob": -0.0027612044156436846
+    },
+    {
+      "text": " ",
+      "start": 24.54,
+      "end": 24.6,
+      "type": "spacing",
+      "logprob": -0.00012385078298393637
+    },
+    {
+      "text": "que",
+      "start": 24.6,
+      "end": 24.74,
+      "type": "word",
+      "logprob": -0.00012385078298393637
+    },
+    {
+      "text": " ",
+      "start": 24.74,
+      "end": 24.8,
+      "type": "spacing",
+      "logprob": -0.00004339123915997334
+    },
+    {
+      "text": "sepan.",
+      "start": 24.8,
+      "end": 25.28,
+      "type": "word",
+      "logprob": -0.000036199102391757755
+    },
+    {
+      "text": " ",
+      "start": 25.28,
+      "end": 25.68,
+      "type": "spacing",
+      "logprob": -0.03212449699640274
+    },
+    {
+      "text": "Toda",
+      "start": 25.68,
+      "end": 25.86,
+      "type": "word",
+      "logprob": -0.03212449699640274
+    },
+    {
+      "text": " ",
+      "start": 25.86,
+      "end": 25.9,
+      "type": "spacing",
+      "logprob": -0.00004005352093372494
+    },
+    {
+      "text": "esta",
+      "start": 25.9,
+      "end": 26.12,
+      "type": "word",
+      "logprob": -0.00004005352093372494
+    },
+    {
+      "text": " ",
+      "start": 26.12,
+      "end": 26.2,
+      "type": "spacing",
+      "logprob": -0.00015186110977083445
+    },
+    {
+      "text": "feria",
+      "start": 26.2,
+      "end": 26.48,
+      "type": "word",
+      "logprob": -0.00015186110977083445
+    },
+    {
+      "text": " ",
+      "start": 26.48,
+      "end": 26.52,
+      "type": "spacing",
+      "logprob": -0.0005679901223629713
+    },
+    {
+      "text": "vendida",
+      "start": 26.52,
+      "end": 26.9,
+      "type": "word",
+      "logprob": -0.20414069867027657
+    },
+    {
+      "text": " ",
+      "start": 26.9,
+      "end": 26.92,
+      "type": "spacing",
+      "logprob": -0.0019298041006550193
+    },
+    {
+      "text": "y",
+      "start": 26.92,
+      "end": 27,
+      "type": "word",
+      "logprob": -0.0019298041006550193
+    },
+    {
+      "text": " ",
+      "start": 27,
+      "end": 27.04,
+      "type": "spacing",
+      "logprob": -0.001636119675822556
+    },
+    {
+      "text": "piso",
+      "start": 27.04,
+      "end": 27.3,
+      "type": "word",
+      "logprob": -0.001636119675822556
+    },
+    {
+      "text": " ",
+      "start": 27.3,
+      "end": 27.36,
+      "type": "spacing",
+      "logprob": -0.0000033378546504536644
+    },
+    {
+      "text": "la",
+      "start": 27.36,
+      "end": 27.5,
+      "type": "word",
+      "logprob": -0.0000033378546504536644
+    },
+    {
+      "text": " ",
+      "start": 27.5,
+      "end": 27.62,
+      "type": "spacing",
+      "logprob": -0.18758650124073029
+    },
+    {
+      "text": "urus",
+      "start": 27.62,
+      "end": 27.82,
+      "type": "word",
+      "logprob": -0.09574482694733888
+    },
+    {
+      "text": " ",
+      "start": 27.82,
+      "end": 27.88,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-7
+    },
+    {
+      "text": "a",
+      "start": 27.88,
+      "end": 27.92,
+      "type": "word",
+      "logprob": -5.960462772236497e-7
+    },
+    {
+      "text": " ",
+      "start": 27.92,
+      "end": 27.96,
+      "type": "spacing",
+      "logprob": -0.0010810013627633452
+    },
+    {
+      "text": "doscientas.",
+      "start": 27.96,
+      "end": 28.68,
+      "type": "word",
+      "logprob": -0.012445070621816838
+    },
+    {
+      "text": " ",
+      "start": 28.68,
+      "end": 28.74,
+      "type": "spacing",
+      "logprob": -0.3789709508419037
+    },
+    {
+      "text": "Rameador",
+      "start": 28.74,
+      "end": 29.26,
+      "type": "word",
+      "logprob": -0.09821853693574667
+    },
+    {
+      "text": " ",
+      "start": 29.26,
+      "end": 29.32,
+      "type": "spacing",
+      "logprob": -0.001665277755819261
+    },
+    {
+      "text": "amarillo,",
+      "start": 29.34,
+      "end": 29.82,
+      "type": "word",
+      "logprob": -0.002564249870677789
+    },
+    {
+      "text": " ",
+      "start": 29.82,
+      "end": 29.88,
+      "type": "spacing",
+      "logprob": -0.0006274400511756539
+    },
+    {
+      "text": "la",
+      "start": 29.88,
+      "end": 29.98,
+      "type": "word",
+      "logprob": -0.0006274400511756539
+    },
+    {
+      "text": " ",
+      "start": 29.98,
+      "end": 30.02,
+      "type": "spacing",
+      "logprob": -0.0018641252536326647
+    },
+    {
+      "text": "glopeta.",
+      "start": 30.02,
+      "end": 30.9,
+      "type": "word",
+      "logprob": -0.0004918244906093605
+    },
+    {
+      "text": " ",
+      "start": 30.9,
+      "end": 31.28,
+      "type": "spacing",
+      "logprob": -0.00013004888023715466
+    },
+    {
+      "text": "Te",
+      "start": 31.28,
+      "end": 31.36,
+      "type": "word",
+      "logprob": -0.00013004888023715466
+    },
+    {
+      "text": " ",
+      "start": 31.36,
+      "end": 31.42,
+      "type": "spacing",
+      "logprob": -0.002111945068463683
+    },
+    {
+      "text": "graban",
+      "start": 31.42,
+      "end": 31.8,
+      "type": "word",
+      "logprob": -0.0014356982525593291
+    },
+    {
+      "text": " ",
+      "start": 31.8,
+      "end": 31.88,
+      "type": "spacing",
+      "logprob": -0.00018845213344320655
+    },
+    {
+      "text": "y",
+      "start": 31.88,
+      "end": 31.92,
+      "type": "word",
+      "logprob": -0.00018845213344320655
+    },
+    {
+      "text": " ",
+      "start": 31.92,
+      "end": 31.98,
+      "type": "spacing",
+      "logprob": -0.00017593742813915014
+    },
+    {
+      "text": "te...",
+      "start": 31.98,
+      "end": 32.1,
+      "type": "word",
+      "logprob": -0.188655918603763
+    }
+  ],
+  "transcription_id": "Ko6JkmJvf1Glme3NqF1N",
+  "audio_duration_secs": 32.15
+}
