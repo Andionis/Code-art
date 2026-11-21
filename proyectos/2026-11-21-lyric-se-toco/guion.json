@@ -1,0 +1,60 @@
+{
+  "titulo": "Lyric video lyric-se-toco",
+  "idioma": "es",
+  "subtitulos": "no",
+  "frases": [
+    {
+      "texto": "Quieren matarme, ya están haciendo reunione'",
+      "clave": "matarme"
+    },
+    {
+      "texto": "Bajen las blindada' y a los diablo' con cuerno' y cincuentone'",
+      "clave": "blindada"
+    },
+    {
+      "texto": "En la playa con chancleta' Christian Diore'",
+      "clave": "diore"
+    },
+    {
+      "texto": "Traje dos tussi pa' las puta' de diferente' colore'",
+      "clave": "tussi"
+    },
+    {
+      "texto": "Tengo $4 millone' en reloje'",
+      "clave": "millone"
+    },
+    {
+      "texto": "Richard Mille, Patek Phillipe, AP, Cartier, Jacob y Rolex",
+      "clave": "rolex"
+    },
+    {
+      "texto": "Yo me puse un Lamborghini en la muñeca",
+      "clave": "lamborghini"
+    },
+    {
+      "texto": "Si arma'o me paran, que me mamen el bicho, soy cuatro letra'",
+      "clave": "letra"
+    },
+    {
+      "texto": "Trabajo con la empresa, pa' que sepan",
+      "clave": "empresa"
+    },
+    {
+      "texto": "Toma esta feria, buen día, y piso la Urus a 200",
+      "clave": "feria"
+    },
+    {
+      "texto": "Rameada oro amarillo la glopeta",
+      "clave": "glopeta"
+    },
+    {
+      "texto": "Te grabamo' y te picamo' como el Cartel de Los Zeta'",
+      "clave": "zeta"
+    }
+  ],
+  "lyric": {
+    "bn": false,
+    "funde": 33.15,
+    "marca": false
+  }
+}
