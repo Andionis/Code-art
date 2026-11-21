@@ -46,11 +46,19 @@
     {
       "texto": "Rameada oro amarillo la glopeta",
       "clave": "glopeta"
+    },
+    {
+      "texto": "Te grabamo' y te picamo' como el Cartel de Los Zeta'",
+      "clave": "zeta"
+    },
+    {
+      "texto": "El avión lleno de kilo aterrizó",
+      "clave": "avion"
     }
   ],
   "lyric": {
-    "bn": true,
-    "funde": 29.15,
+    "bn": false,
+    "funde": 36.45,
     "marca": true
   }
 }

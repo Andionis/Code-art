@@ -1,12 +1,12 @@
 {
   "firma": "cancion",
-  "duracion": 30.15,
+  "duracion": 37.15,
   "frases": [
     {
       "n": 1,
       "texto": "Quieren matarme, ya están haciendo reunione'",
       "clave": "matarme",
-      "inicio": 0.2,
+      "inicio": 0.12,
       "fin": 2.349
     },
     {
@@ -77,13 +77,27 @@
       "texto": "Rameada oro amarillo la glopeta",
       "clave": "glopeta",
       "inicio": 27.74,
-      "fin": 29.9
+      "fin": 29.88
+    },
+    {
+      "n": 12,
+      "texto": "Te grabamo' y te picamo' como el Cartel de Los Zeta'",
+      "clave": "zeta",
+      "inicio": 30.28,
+      "fin": 34.38
+    },
+    {
+      "n": 13,
+      "texto": "El avión lleno de kilo aterrizó",
+      "clave": "avion",
+      "inicio": 34.46,
+      "fin": 36.26
     }
   ],
   "palabras": [
     {
       "texto": "Quieren",
-      "inicio": 0.2,
+      "inicio": 0.12,
       "fin": 0.42,
       "frase": 1,
       "clave": false
@@ -111,7 +125,7 @@
     },
     {
       "texto": "haciendo",
-      "inicio": 1.28,
+      "inicio": 1.26,
       "fin": 1.72,
       "frase": 1,
       "clave": false
@@ -161,7 +175,7 @@
     {
       "texto": "los",
       "inicio": 3.82,
-      "fin": 3.96,
+      "fin": 3.98,
       "frase": 2,
       "clave": false
     },
@@ -182,7 +196,7 @@
     {
       "texto": "cuerno'",
       "inicio": 4.56,
-      "fin": 4.851,
+      "fin": 4.834,
       "frase": 2,
       "clave": false
     },
@@ -210,7 +224,7 @@
     {
       "texto": "la",
       "inicio": 5.9,
-      "fin": 5.98,
+      "fin": 6,
       "frase": 3,
       "clave": false
     },
@@ -231,7 +245,7 @@
     {
       "texto": "chancleta'",
       "inicio": 6.56,
-      "fin": 7,
+      "fin": 6.956,
       "frase": 3,
       "clave": false
     },
@@ -315,7 +329,7 @@
     {
       "texto": "Tengo",
       "inicio": 11.36,
-      "fin": 11.64,
+      "fin": 11.66,
       "frase": 5,
       "clave": false
     },
@@ -329,7 +343,7 @@
     {
       "texto": "millone'",
       "inicio": 12.08,
-      "fin": 12.483,
+      "fin": 12.465,
       "frase": 5,
       "clave": true
     },
@@ -447,8 +461,8 @@
     },
     {
       "texto": "en",
-      "inicio": 17.9,
-      "fin": 17.98,
+      "inicio": 17.92,
+      "fin": 18,
       "frase": 7,
       "clave": false
     },
@@ -476,21 +490,21 @@
     {
       "texto": "arma'o",
       "inicio": 19.28,
-      "fin": 19.68,
+      "fin": 19.5,
       "frase": 8,
       "clave": false
     },
     {
       "texto": "me",
-      "inicio": 19.64,
-      "fin": 19.72,
+      "inicio": 19.54,
+      "fin": 19.66,
       "frase": 8,
       "clave": false
     },
     {
       "texto": "paran,",
       "inicio": 19.7,
-      "fin": 19.98,
+      "fin": 20,
       "frase": 8,
       "clave": false
     },
@@ -517,7 +531,7 @@
     },
     {
       "texto": "el",
-      "inicio": 20.74,
+      "inicio": 20.76,
       "fin": 20.86,
       "frase": 8,
       "clave": false
@@ -623,13 +637,13 @@
     {
       "texto": "buen",
       "inicio": 25.5,
-      "fin": 25.683,
+      "fin": 25.71,
       "frase": 10,
       "clave": false
     },
     {
       "texto": "día,",
-      "inicio": 25.683,
+      "inicio": 25.71,
       "fin": 25.9,
       "frase": 10,
       "clave": false
@@ -686,13 +700,13 @@
     {
       "texto": "oro",
       "inicio": 28.13,
-      "fin": 28.35,
+      "fin": 28.34,
       "frase": 11,
       "clave": false
     },
     {
       "texto": "amarillo",
-      "inicio": 28.34,
+      "inicio": 28.32,
       "fin": 28.82,
       "frase": 11,
       "clave": false
@@ -707,9 +721,128 @@
     {
       "texto": "glopeta",
       "inicio": 29.02,
-      "fin": 29.9,
+      "fin": 29.88,
       "frase": 11,
       "clave": true
+    },
+    {
+      "texto": "Te",
+      "inicio": 30.28,
+      "fin": 30.36,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "grabamo'",
+      "inicio": 30.42,
+      "fin": 30.858,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "y",
+      "inicio": 30.92,
+      "fin": 31,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "te",
+      "inicio": 30.98,
+      "fin": 31.1,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "picamo'",
+      "inicio": 31.14,
+      "fin": 31.534,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "como",
+      "inicio": 31.64,
+      "fin": 31.82,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 31.86,
+      "fin": 31.94,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "Cartel",
+      "inicio": 31.98,
+      "fin": 32.3,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 32.34,
+      "fin": 32.42,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "Los",
+      "inicio": 32.46,
+      "fin": 32.58,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "Zeta'",
+      "inicio": 32.66,
+      "fin": 34.38,
+      "frase": 12,
+      "clave": true
+    },
+    {
+      "texto": "El",
+      "inicio": 34.46,
+      "fin": 34.54,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "avión",
+      "inicio": 34.68,
+      "fin": 34.86,
+      "frase": 13,
+      "clave": true
+    },
+    {
+      "texto": "lleno",
+      "inicio": 34.9,
+      "fin": 35.22,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 35.26,
+      "fin": 35.4,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "kilo",
+      "inicio": 35.46,
+      "fin": 35.64,
+      "frase": 13,
+      "clave": false
+    },
+    {
+      "texto": "aterrizó",
+      "inicio": 35.68,
+      "fin": 36.26,
+      "frase": 13,
+      "clave": false
     }
   ]
 }

@@ -97,12 +97,12 @@ function maqueta(g, f) {
   if (cache.has(f.n)) return cache.get(f.n);
   const filas = [];
   let fila = null;
-  const TAM = 104;
+  const TAM = 68;
   for (const w of f.palabras) {
     const texto = w.texto.replace(/[.,:"]/g, "").toUpperCase();
     if (w.clave) {
-      let tam = 230; g.font = fuente(tam);
-      while (g.measureText(texto).width > ANCHO_MAX && tam > 120) { tam -= 6; g.font = fuente(tam); }
+      let tam = 128; g.font = fuente(tam);
+      while (g.measureText(texto).width > ANCHO_MAX && tam > 80) { tam -= 6; g.font = fuente(tam); }
       filas.push({ tam, palabras: [{ w, texto, ancho: g.measureText(texto).width, clave: true }] });
       fila = null; continue;
     }
@@ -112,7 +112,7 @@ function maqueta(g, f) {
     fila.palabras.push({ w, texto, ancho }); fila.ancho += hueco + ancho;
   }
   // como mucho 3 filas en pantalla: las líneas largas se reparten en pantallas seguidas, parejas (4 → 2 + 2, 5 → 3 + 2)
-  const n = Math.ceil(filas.length / 3), paginas = [];
+  const n = 1, paginas = []; // una línea entera por pantalla, más chica
   for (let j = 0, i0 = 0; j < n; j++) {
     const cuantas = Math.ceil((filas.length - i0) / (n - j));
     paginas.push(filas.slice(i0, i0 + cuantas)); i0 += cuantas;
