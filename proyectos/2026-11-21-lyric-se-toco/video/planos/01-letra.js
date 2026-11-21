@@ -20,6 +20,7 @@ const MARCA = L.marca !== false;                 // marca de agua Michi Lyrics
 // el ritmo
 const ritmo = existsSync(new URL("audio/golpes.json", raiz)) ? JSON.parse(readFileSync(new URL("audio/golpes.json", raiz), "utf8")) : { golpes: [] };
 function beat(t) {
+  return 0; // sin latidos (lo pidió el creador)
   let m = 0;
   for (const b of ritmo.golpes) { if (b > t) break; m = Math.max(m, Math.exp(-(t - b) / 0.16)); }
   return m;
@@ -70,9 +71,7 @@ function fondo(g, t, col, b) {
     g.globalCompositeOperation = "soft-light";
     g.globalAlpha = 0.5; g.fillStyle = "#000000"; g.fillRect(0, 0, 1080, 1920);
   } else {
-    g.globalCompositeOperation = "color";
-    g.globalAlpha = 0.35;
-    g.fillStyle = rgb(col); g.fillRect(0, 0, 1080, 1920);
+    // el color original del video, sin teñirlo
   }
   g.globalCompositeOperation = "source-over";
   g.globalAlpha = 1;
@@ -95,40 +94,21 @@ const fuente = (tam) => `800 ${tam}px Figtree`;
 const cache = new Map();
 function maqueta(g, f) {
   if (cache.has(f.n)) return cache.get(f.n);
-  const filas = [];
+  // una sola fila por pantalla: la línea se reparte en pantallas seguidas; la clave, en la misma fila, algo más grande
+  const TAM = 68, TAMC = 92, hueco = 22, filas = [];
   let fila = null;
-  const TAM = 68;
   for (const w of f.palabras) {
     const texto = w.texto.replace(/[.,:"]/g, "").toUpperCase();
-    if (w.clave) {
-      let tam = 128; g.font = fuente(tam);
-      while (g.measureText(texto).width > ANCHO_MAX && tam > 80) { tam -= 6; g.font = fuente(tam); }
-      filas.push({ tam, palabras: [{ w, texto, ancho: g.measureText(texto).width, clave: true }] });
-      fila = null; continue;
-    }
-    g.font = fuente(TAM);
-    const ancho = g.measureText(texto).width, hueco = 24;
-    if (!fila || fila.ancho + hueco + ancho > ANCHO_MAX) { fila = { tam: TAM, palabras: [], ancho: -hueco }; filas.push(fila); }
-    fila.palabras.push({ w, texto, ancho }); fila.ancho += hueco + ancho;
+    const tam = w.clave ? TAMC : TAM;
+    g.font = fuente(tam);
+    const ancho = g.measureText(texto).width;
+    if (!fila || fila.ancho + hueco + ancho > ANCHO_MAX) { fila = { palabras: [], ancho: -hueco }; filas.push(fila); }
+    fila.palabras.push({ w, texto, ancho, tam, clave: w.clave }); fila.ancho += hueco + ancho;
   }
-  // como mucho 3 filas en pantalla: las líneas largas se reparten en pantallas seguidas, parejas (4 → 2 + 2, 5 → 3 + 2)
-  const n = 1, paginas = []; // una línea entera por pantalla, más chica
-  for (let j = 0, i0 = 0; j < n; j++) {
-    const cuantas = Math.ceil((filas.length - i0) / (n - j));
-    paginas.push(filas.slice(i0, i0 + cuantas)); i0 += cuantas;
-  }
-  const m = paginas.map((fs) => {
-    const alto = fs.reduce((s, r) => s + r.tam * 1.08, 0);
-    let y = 1060 - alto / 2;
-    for (const r of fs) {
-      const total = r.palabras.reduce((s, p) => s + p.ancho, 0) + 24 * (r.palabras.length - 1);
-      let x = CX - total / 2;
-      r.y = y + r.tam * 0.8;
-      for (const p of r.palabras) { p.x = x + p.ancho / 2; p.y = r.y; p.tam = r.tam; x += p.ancho + 24; }
-      y += r.tam * 1.08;
-    }
-    const ps = fs.flatMap((r) => r.palabras);
-    return { inicio: ps[0].w.inicio, palabras: ps };
+  const m = filas.map((r) => {
+    let x = CX - r.ancho / 2;
+    for (const p of r.palabras) { p.x = x + p.ancho / 2; p.y = 1060 + TAM * 0.35; x += p.ancho + hueco; }
+    return { inicio: r.palabras[0].w.inicio, palabras: r.palabras };
   });
   cache.set(f.n, m);
   return m;
@@ -191,7 +171,7 @@ function fogonazo(g, t) {
 export function dibuja(g, t) {
   const col = colorEn(t), b = beat(t);
   fondo(g, t, col, b);
-  fogonazo(g, t);
+  // sin fogonazos (sin latidos)
   if (process.env.SIN_LETRA !== "1") letra(g, t, col, b); // SIN_LETRA=1: para la portada
   if (MARCA && process.env.SIN_LETRA !== "1") marcaDeAgua(g);
   // al final, todo se desvanece a negro con la música (desde que acaba «hombre»)
