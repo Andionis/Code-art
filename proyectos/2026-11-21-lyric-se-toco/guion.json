@@ -50,15 +50,11 @@
     {
       "texto": "Te grabamo' y te picamo' como el Cartel de Los Zeta'",
       "clave": "zeta"
-    },
-    {
-      "texto": "El avión lleno de kilo aterrizó",
-      "clave": "avion"
     }
   ],
   "lyric": {
     "bn": false,
-    "funde": 36.45,
+    "funde": 33.15,
     "marca": false
   }
 }
