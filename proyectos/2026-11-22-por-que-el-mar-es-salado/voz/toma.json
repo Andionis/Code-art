@@ -1,0 +1,1084 @@
+{
+  "firma": "1c3fb9bb3df9",
+  "proveedor": "elevenlabs",
+  "ajustes": {
+    "id": "TX3LPaxmHKxFdv7VOQHJ",
+    "modelo": "eleven_v4",
+    "estabilidad": 0.35,
+    "similitud": 0.7,
+    "estilo": 0,
+    "velocidad": 1
+  },
+  "palabras": [
+    {
+      "texto": "¿Por",
+      "inicio": 0,
+      "fin": 0.16
+    },
+    {
+      "texto": "qué",
+      "inicio": 0.24,
+      "fin": 0.32
+    },
+    {
+      "texto": "el",
+      "inicio": 0.36,
+      "fin": 0.4
+    },
+    {
+      "texto": "mar",
+      "inicio": 0.48,
+      "fin": 0.64
+    },
+    {
+      "texto": "es",
+      "inicio": 0.72,
+      "fin": 0.8
+    },
+    {
+      "texto": "salado,",
+      "inicio": 0.92,
+      "fin": 1.44
+    },
+    {
+      "texto": "si",
+      "inicio": 1.52,
+      "fin": 1.6
+    },
+    {
+      "texto": "los",
+      "inicio": 1.68,
+      "fin": 1.76
+    },
+    {
+      "texto": "ríos",
+      "inicio": 1.84,
+      "fin": 2.08
+    },
+    {
+      "texto": "que",
+      "inicio": 2.12,
+      "fin": 2.16
+    },
+    {
+      "texto": "lo",
+      "inicio": 2.24,
+      "fin": 2.28
+    },
+    {
+      "texto": "llenan",
+      "inicio": 2.32,
+      "fin": 2.64
+    },
+    {
+      "texto": "son",
+      "inicio": 2.72,
+      "fin": 2.88
+    },
+    {
+      "texto": "de",
+      "inicio": 2.92,
+      "fin": 2.96
+    },
+    {
+      "texto": "agua",
+      "inicio": 3.04,
+      "fin": 3.2
+    },
+    {
+      "texto": "dulce?",
+      "inicio": 3.24,
+      "fin": 3.68
+    },
+    {
+      "texto": "La",
+      "inicio": 4.24,
+      "fin": 4.32
+    },
+    {
+      "texto": "culpa",
+      "inicio": 4.4,
+      "fin": 4.72
+    },
+    {
+      "texto": "es",
+      "inicio": 4.88,
+      "fin": 4.96
+    },
+    {
+      "texto": "de",
+      "inicio": 5.04,
+      "fin": 5.08
+    },
+    {
+      "texto": "la",
+      "inicio": 5.12,
+      "fin": 5.2
+    },
+    {
+      "texto": "lluvia.",
+      "inicio": 5.28,
+      "fin": 5.68
+    },
+    {
+      "texto": "Al",
+      "inicio": 6.08,
+      "fin": 6.24
+    },
+    {
+      "texto": "caer,",
+      "inicio": 6.32,
+      "fin": 6.88
+    },
+    {
+      "texto": "cada",
+      "inicio": 6.92,
+      "fin": 7.12
+    },
+    {
+      "texto": "gota",
+      "inicio": 7.2,
+      "fin": 7.44
+    },
+    {
+      "texto": "atrapa",
+      "inicio": 7.52,
+      "fin": 7.84
+    },
+    {
+      "texto": "un",
+      "inicio": 7.92,
+      "fin": 8
+    },
+    {
+      "texto": "poco",
+      "inicio": 8.04,
+      "fin": 8.24
+    },
+    {
+      "texto": "del",
+      "inicio": 8.32,
+      "fin": 8.4
+    },
+    {
+      "texto": "aire",
+      "inicio": 8.48,
+      "fin": 8.72
+    },
+    {
+      "texto": "y",
+      "inicio": 8.8,
+      "fin": 8.88
+    },
+    {
+      "texto": "se",
+      "inicio": 8.92,
+      "fin": 8.96
+    },
+    {
+      "texto": "vuelve",
+      "inicio": 9.04,
+      "fin": 9.28
+    },
+    {
+      "texto": "un",
+      "inicio": 9.36,
+      "fin": 9.44
+    },
+    {
+      "texto": "poquito",
+      "inicio": 9.52,
+      "fin": 9.92
+    },
+    {
+      "texto": "ácida,",
+      "inicio": 10,
+      "fin": 10.56
+    },
+    {
+      "texto": "como",
+      "inicio": 10.64,
+      "fin": 10.72
+    },
+    {
+      "texto": "el",
+      "inicio": 10.76,
+      "fin": 10.8
+    },
+    {
+      "texto": "agua",
+      "inicio": 10.88,
+      "fin": 10.96
+    },
+    {
+      "texto": "con",
+      "inicio": 11.04,
+      "fin": 11.12
+    },
+    {
+      "texto": "gas.",
+      "inicio": 11.2,
+      "fin": 11.52
+    },
+    {
+      "texto": "Así,",
+      "inicio": 11.92,
+      "fin": 12.48
+    },
+    {
+      "texto": "gota",
+      "inicio": 12.64,
+      "fin": 12.96
+    },
+    {
+      "texto": "a",
+      "inicio": 13,
+      "fin": 13.04
+    },
+    {
+      "texto": "gota,",
+      "inicio": 13.12,
+      "fin": 13.6
+    },
+    {
+      "texto": "va",
+      "inicio": 13.68,
+      "fin": 13.76
+    },
+    {
+      "texto": "deshaciendo",
+      "inicio": 13.8,
+      "fin": 14.32
+    },
+    {
+      "texto": "las",
+      "inicio": 14.4,
+      "fin": 14.48
+    },
+    {
+      "texto": "rocas",
+      "inicio": 14.56,
+      "fin": 14.8
+    },
+    {
+      "texto": "de",
+      "inicio": 14.84,
+      "fin": 14.88
+    },
+    {
+      "texto": "las",
+      "inicio": 14.96,
+      "fin": 15.04
+    },
+    {
+      "texto": "montañas",
+      "inicio": 15.16,
+      "fin": 15.6
+    },
+    {
+      "texto": "y",
+      "inicio": 15.68,
+      "fin": 15.72
+    },
+    {
+      "texto": "les",
+      "inicio": 15.76,
+      "fin": 15.92
+    },
+    {
+      "texto": "arranca",
+      "inicio": 16.04,
+      "fin": 16.4
+    },
+    {
+      "texto": "sus",
+      "inicio": 16.48,
+      "fin": 16.56
+    },
+    {
+      "texto": "minerales.",
+      "inicio": 16.64,
+      "fin": 17.2
+    },
+    {
+      "texto": "Y",
+      "inicio": 17.6,
+      "fin": 17.68
+    },
+    {
+      "texto": "entre",
+      "inicio": 17.76,
+      "fin": 18
+    },
+    {
+      "texto": "esos",
+      "inicio": 18.08,
+      "fin": 18.24
+    },
+    {
+      "texto": "minerales",
+      "inicio": 18.32,
+      "fin": 18.8
+    },
+    {
+      "texto": "está",
+      "inicio": 18.88,
+      "fin": 19.08
+    },
+    {
+      "texto": "la",
+      "inicio": 19.12,
+      "fin": 19.2
+    },
+    {
+      "texto": "misma",
+      "inicio": 19.36,
+      "fin": 19.68
+    },
+    {
+      "texto": "sal",
+      "inicio": 19.76,
+      "fin": 19.92
+    },
+    {
+      "texto": "que",
+      "inicio": 20,
+      "fin": 20.08
+    },
+    {
+      "texto": "tienes",
+      "inicio": 20.12,
+      "fin": 20.4
+    },
+    {
+      "texto": "en",
+      "inicio": 20.44,
+      "fin": 20.48
+    },
+    {
+      "texto": "el",
+      "inicio": 20.52,
+      "fin": 20.56
+    },
+    {
+      "texto": "salero",
+      "inicio": 20.64,
+      "fin": 20.88
+    },
+    {
+      "texto": "de",
+      "inicio": 20.96,
+      "fin": 21
+    },
+    {
+      "texto": "tu",
+      "inicio": 21.04,
+      "fin": 21.12
+    },
+    {
+      "texto": "cocina.",
+      "inicio": 21.2,
+      "fin": 21.6
+    },
+    {
+      "texto": "Los",
+      "inicio": 22.08,
+      "fin": 22.24
+    },
+    {
+      "texto": "ríos",
+      "inicio": 22.32,
+      "fin": 22.56
+    },
+    {
+      "texto": "se",
+      "inicio": 22.64,
+      "fin": 22.72
+    },
+    {
+      "texto": "llevan",
+      "inicio": 22.773,
+      "fin": 22.96
+    },
+    {
+      "texto": "esa",
+      "inicio": 23.04,
+      "fin": 23.12
+    },
+    {
+      "texto": "sal",
+      "inicio": 23.2,
+      "fin": 23.36
+    },
+    {
+      "texto": "hasta",
+      "inicio": 23.4,
+      "fin": 23.6
+    },
+    {
+      "texto": "el",
+      "inicio": 23.64,
+      "fin": 23.68
+    },
+    {
+      "texto": "mar,",
+      "inicio": 23.76,
+      "fin": 24.16
+    },
+    {
+      "texto": "pero",
+      "inicio": 24.24,
+      "fin": 24.4
+    },
+    {
+      "texto": "tan",
+      "inicio": 24.56,
+      "fin": 24.72
+    },
+    {
+      "texto": "poquita",
+      "inicio": 24.8,
+      "fin": 25.2
+    },
+    {
+      "texto": "que",
+      "inicio": 25.28,
+      "fin": 25.36
+    },
+    {
+      "texto": "ni",
+      "inicio": 25.44,
+      "fin": 25.52
+    },
+    {
+      "texto": "la",
+      "inicio": 25.56,
+      "fin": 25.6
+    },
+    {
+      "texto": "notas",
+      "inicio": 25.68,
+      "fin": 26
+    },
+    {
+      "texto": "al",
+      "inicio": 26.04,
+      "fin": 26.08
+    },
+    {
+      "texto": "probarlos.",
+      "inicio": 26.16,
+      "fin": 26.92
+    },
+    {
+      "texto": "Y",
+      "inicio": 27.12,
+      "fin": 27.2
+    },
+    {
+      "texto": "en",
+      "inicio": 27.24,
+      "fin": 27.28
+    },
+    {
+      "texto": "el",
+      "inicio": 27.36,
+      "fin": 27.44
+    },
+    {
+      "texto": "mar,",
+      "inicio": 27.52,
+      "fin": 28
+    },
+    {
+      "texto": "el",
+      "inicio": 28.04,
+      "fin": 28.08
+    },
+    {
+      "texto": "sol",
+      "inicio": 28.16,
+      "fin": 28.32
+    },
+    {
+      "texto": "calienta",
+      "inicio": 28.4,
+      "fin": 28.88
+    },
+    {
+      "texto": "el",
+      "inicio": 28.92,
+      "fin": 28.96
+    },
+    {
+      "texto": "agua",
+      "inicio": 29.04,
+      "fin": 29.28
+    },
+    {
+      "texto": "y",
+      "inicio": 29.36,
+      "fin": 29.387
+    },
+    {
+      "texto": "la",
+      "inicio": 29.413,
+      "fin": 29.44
+    },
+    {
+      "texto": "evapora,",
+      "inicio": 29.52,
+      "fin": 30.24
+    },
+    {
+      "texto": "pero",
+      "inicio": 30.32,
+      "fin": 30.44
+    },
+    {
+      "texto": "la",
+      "inicio": 30.48,
+      "fin": 30.56
+    },
+    {
+      "texto": "sal",
+      "inicio": 30.64,
+      "fin": 30.8
+    },
+    {
+      "texto": "no",
+      "inicio": 30.96,
+      "fin": 31.04
+    },
+    {
+      "texto": "se",
+      "inicio": 31.12,
+      "fin": 31.2
+    },
+    {
+      "texto": "va",
+      "inicio": 31.28,
+      "fin": 31.36
+    },
+    {
+      "texto": "con",
+      "inicio": 31.44,
+      "fin": 31.52
+    },
+    {
+      "texto": "ella:",
+      "inicio": 31.64,
+      "fin": 32.08
+    },
+    {
+      "texto": "se",
+      "inicio": 32.16,
+      "fin": 32.24
+    },
+    {
+      "texto": "queda.",
+      "inicio": 32.32,
+      "fin": 32.64
+    },
+    {
+      "texto": "Ese",
+      "inicio": 33.12,
+      "fin": 33.36
+    },
+    {
+      "texto": "vapor",
+      "inicio": 33.4,
+      "fin": 33.68
+    },
+    {
+      "texto": "forma",
+      "inicio": 33.76,
+      "fin": 34.08
+    },
+    {
+      "texto": "nubes,",
+      "inicio": 34.12,
+      "fin": 34.72
+    },
+    {
+      "texto": "las",
+      "inicio": 34.8,
+      "fin": 34.96
+    },
+    {
+      "texto": "nubes",
+      "inicio": 35.04,
+      "fin": 35.28
+    },
+    {
+      "texto": "vuelven",
+      "inicio": 35.36,
+      "fin": 35.6
+    },
+    {
+      "texto": "a",
+      "inicio": 35.627,
+      "fin": 35.653
+    },
+    {
+      "texto": "ser",
+      "inicio": 35.68,
+      "fin": 35.84
+    },
+    {
+      "texto": "lluvia,",
+      "inicio": 35.88,
+      "fin": 36.48
+    },
+    {
+      "texto": "y",
+      "inicio": 36.52,
+      "fin": 36.56
+    },
+    {
+      "texto": "la",
+      "inicio": 36.64,
+      "fin": 36.72
+    },
+    {
+      "texto": "lluvia",
+      "inicio": 36.8,
+      "fin": 37.12
+    },
+    {
+      "texto": "trae",
+      "inicio": 37.2,
+      "fin": 37.44
+    },
+    {
+      "texto": "más",
+      "inicio": 37.6,
+      "fin": 37.84
+    },
+    {
+      "texto": "sal.",
+      "inicio": 38,
+      "fin": 38.4
+    },
+    {
+      "texto": "Y",
+      "inicio": 38.64,
+      "fin": 38.68
+    },
+    {
+      "texto": "no",
+      "inicio": 38.72,
+      "fin": 38.8
+    },
+    {
+      "texto": "solo",
+      "inicio": 38.88,
+      "fin": 39.04
+    },
+    {
+      "texto": "llega",
+      "inicio": 39.093,
+      "fin": 39.28
+    },
+    {
+      "texto": "desde",
+      "inicio": 39.36,
+      "fin": 39.48
+    },
+    {
+      "texto": "arriba:",
+      "inicio": 39.52,
+      "fin": 40.16
+    },
+    {
+      "texto": "en",
+      "inicio": 40.2,
+      "fin": 40.24
+    },
+    {
+      "texto": "el",
+      "inicio": 40.32,
+      "fin": 40.4
+    },
+    {
+      "texto": "fondo",
+      "inicio": 40.56,
+      "fin": 40.8
+    },
+    {
+      "texto": "del",
+      "inicio": 40.88,
+      "fin": 40.96
+    },
+    {
+      "texto": "mar",
+      "inicio": 41.04,
+      "fin": 41.28
+    },
+    {
+      "texto": "hay",
+      "inicio": 41.36,
+      "fin": 41.44
+    },
+    {
+      "texto": "volcanes",
+      "inicio": 41.56,
+      "fin": 42
+    },
+    {
+      "texto": "y",
+      "inicio": 42.08,
+      "fin": 42.12
+    },
+    {
+      "texto": "grietas",
+      "inicio": 42.16,
+      "fin": 42.56
+    },
+    {
+      "texto": "que",
+      "inicio": 42.6,
+      "fin": 42.64
+    },
+    {
+      "texto": "escupen",
+      "inicio": 42.72,
+      "fin": 43.04
+    },
+    {
+      "texto": "agua",
+      "inicio": 43.16,
+      "fin": 43.28
+    },
+    {
+      "texto": "hirviendo,",
+      "inicio": 43.36,
+      "fin": 44
+    },
+    {
+      "texto": "cargada",
+      "inicio": 44.04,
+      "fin": 44.56
+    },
+    {
+      "texto": "de",
+      "inicio": 44.6,
+      "fin": 44.64
+    },
+    {
+      "texto": "minerales.",
+      "inicio": 44.72,
+      "fin": 45.36
+    },
+    {
+      "texto": "Repite",
+      "inicio": 45.84,
+      "fin": 46.16
+    },
+    {
+      "texto": "todo",
+      "inicio": 46.32,
+      "fin": 46.56
+    },
+    {
+      "texto": "eso",
+      "inicio": 46.64,
+      "fin": 46.8
+    },
+    {
+      "texto": "durante",
+      "inicio": 46.88,
+      "fin": 47.2
+    },
+    {
+      "texto": "millones",
+      "inicio": 47.28,
+      "fin": 47.76
+    },
+    {
+      "texto": "de",
+      "inicio": 47.84,
+      "fin": 47.92
+    },
+    {
+      "texto": "años,",
+      "inicio": 48,
+      "fin": 48.48
+    },
+    {
+      "texto": "y",
+      "inicio": 48.56,
+      "fin": 48.64
+    },
+    {
+      "texto": "hoy",
+      "inicio": 48.68,
+      "fin": 48.88
+    },
+    {
+      "texto": "cada",
+      "inicio": 49.12,
+      "fin": 49.36
+    },
+    {
+      "texto": "litro",
+      "inicio": 49.48,
+      "fin": 49.68
+    },
+    {
+      "texto": "de",
+      "inicio": 49.72,
+      "fin": 49.76
+    },
+    {
+      "texto": "mar",
+      "inicio": 49.84,
+      "fin": 50
+    },
+    {
+      "texto": "tiene",
+      "inicio": 50.08,
+      "fin": 50.24
+    },
+    {
+      "texto": "casi",
+      "inicio": 50.32,
+      "fin": 50.56
+    },
+    {
+      "texto": "dos",
+      "inicio": 50.72,
+      "fin": 50.88
+    },
+    {
+      "texto": "cucharadas",
+      "inicio": 50.96,
+      "fin": 51.44
+    },
+    {
+      "texto": "de",
+      "inicio": 51.48,
+      "fin": 51.52
+    },
+    {
+      "texto": "sal.",
+      "inicio": 51.6,
+      "fin": 51.92
+    },
+    {
+      "texto": "Tanta,",
+      "inicio": 52.32,
+      "fin": 52.88
+    },
+    {
+      "texto": "que",
+      "inicio": 52.92,
+      "fin": 52.96
+    },
+    {
+      "texto": "si",
+      "inicio": 53,
+      "fin": 53.04
+    },
+    {
+      "texto": "la",
+      "inicio": 53.12,
+      "fin": 53.2
+    },
+    {
+      "texto": "sacaras",
+      "inicio": 53.24,
+      "fin": 53.68
+    },
+    {
+      "texto": "toda",
+      "inicio": 53.72,
+      "fin": 54
+    },
+    {
+      "texto": "y",
+      "inicio": 54.08,
+      "fin": 54.133
+    },
+    {
+      "texto": "la",
+      "inicio": 54.187,
+      "fin": 54.24
+    },
+    {
+      "texto": "repartieras",
+      "inicio": 54.32,
+      "fin": 54.8
+    },
+    {
+      "texto": "por",
+      "inicio": 54.88,
+      "fin": 54.96
+    },
+    {
+      "texto": "los",
+      "inicio": 55,
+      "fin": 55.04
+    },
+    {
+      "texto": "continentes,",
+      "inicio": 55.12,
+      "fin": 56
+    },
+    {
+      "texto": "haría",
+      "inicio": 56.08,
+      "fin": 56.24
+    },
+    {
+      "texto": "una",
+      "inicio": 56.32,
+      "fin": 56.4
+    },
+    {
+      "texto": "capa",
+      "inicio": 56.52,
+      "fin": 56.72
+    },
+    {
+      "texto": "más",
+      "inicio": 56.8,
+      "fin": 57.04
+    },
+    {
+      "texto": "alta",
+      "inicio": 57.12,
+      "fin": 57.36
+    },
+    {
+      "texto": "que",
+      "inicio": 57.4,
+      "fin": 57.44
+    },
+    {
+      "texto": "un",
+      "inicio": 57.52,
+      "fin": 57.6
+    },
+    {
+      "texto": "edificio",
+      "inicio": 57.64,
+      "fin": 58.08
+    },
+    {
+      "texto": "de",
+      "inicio": 58.16,
+      "fin": 58.24
+    },
+    {
+      "texto": "cuarenta",
+      "inicio": 58.32,
+      "fin": 58.8
+    },
+    {
+      "texto": "pisos.",
+      "inicio": 58.88,
+      "fin": 59.76
+    },
+    {
+      "texto": "Así",
+      "inicio": 59.84,
+      "fin": 59.96
+    },
+    {
+      "texto": "que",
+      "inicio": 60,
+      "fin": 60.08
+    },
+    {
+      "texto": "lo",
+      "inicio": 60.12,
+      "fin": 60.16
+    },
+    {
+      "texto": "que",
+      "inicio": 60.24,
+      "fin": 60.28
+    },
+    {
+      "texto": "sala",
+      "inicio": 60.32,
+      "fin": 60.56
+    },
+    {
+      "texto": "el",
+      "inicio": 60.6,
+      "fin": 60.64
+    },
+    {
+      "texto": "mar",
+      "inicio": 60.76,
+      "fin": 60.88
+    },
+    {
+      "texto": "es",
+      "inicio": 60.96,
+      "fin": 61.2
+    },
+    {
+      "texto": "justo",
+      "inicio": 61.28,
+      "fin": 61.6
+    },
+    {
+      "texto": "lo",
+      "inicio": 61.68,
+      "fin": 61.76
+    },
+    {
+      "texto": "más",
+      "inicio": 61.92,
+      "fin": 62.08
+    },
+    {
+      "texto": "dulce",
+      "inicio": 62.16,
+      "fin": 62.4
+    },
+    {
+      "texto": "que",
+      "inicio": 62.48,
+      "fin": 62.56
+    },
+    {
+      "texto": "tiene:",
+      "inicio": 62.6,
+      "fin": 63.28
+    },
+    {
+      "texto": "la",
+      "inicio": 63.36,
+      "fin": 63.44
+    },
+    {
+      "texto": "lluvia.",
+      "inicio": 63.52,
+      "fin": 64.4
+    },
+    {
+      "texto": "Síguenos",
+      "inicio": 64.44,
+      "fin": 64.88
+    },
+    {
+      "texto": "para",
+      "inicio": 64.96,
+      "fin": 65.04
+    },
+    {
+      "texto": "más",
+      "inicio": 65.12,
+      "fin": 65.28
+    },
+    {
+      "texto": "videos.",
+      "inicio": 65.36,
+      "fin": 66.08
+    }
+  ]
+}
