@@ -27,7 +27,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
   - [x] escena 2: la lluvia y las rocas (3-5), hasta 22,0 s; v2 aprobada («Continúa»)
   - [x] escena 3: río, sol y nubes (6-8), hasta 38,5 s; v1 aprobada («Apruebo»)
   - [x] escena 4: el fondo del mar (9), hasta 45,7 s; v1 aprobada («Apruebo»)
-  - [ ] escena 5: millones de años (10-11), hasta 59,8 s
+  - [x] escena 5: millones de años (10-11), hasta 59,8 s; v1 aprobada («Apruebo»)
   - [ ] escena 6: el remate y el botón Seguir (12-13), hasta el final
 - [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
