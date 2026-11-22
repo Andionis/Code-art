@@ -33,3 +33,4 @@ Abre una conversación nueva en la carpeta CODE ART y escribe: **«continúa el 
 - Letra: la del creador (v2).
 - [x] Borrador v1 (letra a oído)
 - [x] Borrador v2: con su letra — revisar/Certero v2 (borrador).mp4
+- [x] Borrador v3: los «Brr» en pantalla (15,2 s y 22,1 s, a mano en voz/tiempos.json y guion.json) — revisar/Certero v3 (borrador).mp4

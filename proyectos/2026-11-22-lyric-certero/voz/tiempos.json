@@ -1,610 +1,638 @@
 {
-  "firma": "cancion",
-  "duracion": 35.3,
-  "frases": [
-    {
-      "n": 1,
-      "texto": "Certero",
-      "clave": "certero",
-      "inicio": 0.52,
-      "fin": 1.54
-    },
-    {
-      "n": 2,
-      "texto": "Pa' morirme yo te cazo primero",
-      "clave": "morirme",
-      "inicio": 1.9,
-      "fin": 4.28
-    },
-    {
-      "n": 3,
-      "texto": "Con la DEA yo no coopero",
-      "clave": "dea",
-      "inicio": 4.96,
-      "fin": 6.64
-    },
-    {
-      "n": 4,
-      "texto": "No traiciono por puta' ni dinero",
-      "clave": "traiciono",
-      "inicio": 7.34,
-      "fin": 9.74
-    },
-    {
-      "n": 5,
-      "texto": "Guerrero, escare'",
-      "clave": "guerrero",
-      "inicio": 10.12,
-      "fin": 12.42
-    },
-    {
-      "n": 6,
-      "texto": "Mis brazos armado' disfrazado' de militare'",
-      "clave": "armado",
-      "inicio": 12.66,
-      "fin": 15.18
-    },
-    {
-      "n": 7,
-      "texto": "Fenta y perico cruzando los mare'",
-      "clave": "fenta",
-      "inicio": 15.37,
-      "fin": 17.788
-    },
-    {
-      "n": 8,
-      "texto": "Mucho dinero, nivel 10 los blindaje'",
-      "clave": "dinero",
-      "inicio": 18.12,
-      "fin": 20.6
-    },
-    {
-      "n": 9,
-      "texto": "No se resbalen",
-      "clave": "resbalen",
-      "inicio": 20.84,
-      "fin": 23.76
-    },
-    {
-      "n": 10,
-      "texto": "El avión lleno de kilo' aterrizó",
-      "clave": "avion",
-      "inicio": 23.82,
-      "fin": 25.78
-    },
-    {
-      "n": 11,
-      "texto": "Tu puta conmigo se mojó",
-      "clave": "mojo",
-      "inicio": 26.84,
-      "fin": 28.28
-    },
-    {
-      "n": 12,
-      "texto": "No sé cuánto tomó, se emborrachó",
-      "clave": "emborracho",
-      "inicio": 29.4,
-      "fin": 31.22
-    },
-    {
-      "n": 13,
-      "texto": "Se tocó el totito con mi Glock",
-      "clave": "totito",
-      "inicio": 32.28,
-      "fin": 33.962
-    },
-    {
-      "n": 14,
-      "texto": "Con mi Glock, con mi Glock",
-      "clave": "glock",
-      "inicio": 33.96,
-      "fin": 35.3
-    }
-  ],
-  "palabras": [
-    {
-      "texto": "Certero",
-      "inicio": 0.52,
-      "fin": 1.54,
-      "frase": 1,
-      "clave": true
-    },
-    {
-      "texto": "Pa'",
-      "inicio": 1.9,
-      "fin": 1.997,
-      "frase": 2,
-      "clave": false
-    },
-    {
-      "texto": "morirme",
-      "inicio": 1.947,
-      "fin": 2.472,
-      "frase": 2,
-      "clave": true
-    },
-    {
-      "texto": "yo",
-      "inicio": 2.62,
-      "fin": 2.7,
-      "frase": 2,
-      "clave": false
-    },
-    {
-      "texto": "te",
-      "inicio": 2.76,
-      "fin": 2.86,
-      "frase": 2,
-      "clave": false
-    },
-    {
-      "texto": "cazo",
-      "inicio": 2.94,
-      "fin": 3.24,
-      "frase": 2,
-      "clave": false
-    },
-    {
-      "texto": "primero",
-      "inicio": 3.3,
-      "fin": 4.28,
-      "frase": 2,
-      "clave": false
-    },
-    {
-      "texto": "Con",
-      "inicio": 4.96,
-      "fin": 5.1,
-      "frase": 3,
-      "clave": false
-    },
-    {
-      "texto": "la",
-      "inicio": 5.16,
-      "fin": 5.3,
-      "frase": 3,
-      "clave": false
-    },
-    {
-      "texto": "DEA",
-      "inicio": 5.34,
-      "fin": 5.6,
-      "frase": 3,
-      "clave": true
-    },
-    {
-      "texto": "yo",
-      "inicio": 5.66,
-      "fin": 5.78,
-      "frase": 3,
-      "clave": false
-    },
-    {
-      "texto": "no",
-      "inicio": 5.82,
-      "fin": 5.94,
-      "frase": 3,
-      "clave": false
-    },
-    {
-      "texto": "coopero",
-      "inicio": 6.04,
-      "fin": 6.64,
-      "frase": 3,
-      "clave": false
-    },
-    {
-      "texto": "No",
-      "inicio": 7.34,
-      "fin": 7.42,
-      "frase": 4,
-      "clave": false
-    },
-    {
-      "texto": "traiciono",
-      "inicio": 7.5,
-      "fin": 7.96,
-      "frase": 4,
-      "clave": true
-    },
-    {
-      "texto": "por",
-      "inicio": 8.039,
-      "fin": 8.16,
-      "frase": 4,
-      "clave": false
-    },
-    {
-      "texto": "puta'",
-      "inicio": 8.24,
-      "fin": 8.464,
-      "frase": 4,
-      "clave": false
-    },
-    {
-      "texto": "ni",
-      "inicio": 8.58,
-      "fin": 8.72,
-      "frase": 4,
-      "clave": false
-    },
-    {
-      "texto": "dinero",
-      "inicio": 8.82,
-      "fin": 9.74,
-      "frase": 4,
-      "clave": false
-    },
-    {
-      "texto": "Guerrero,",
-      "inicio": 10.12,
-      "fin": 11.06,
-      "frase": 5,
-      "clave": true
-    },
-    {
-      "texto": "escare'",
-      "inicio": 11.26,
-      "fin": 12.42,
-      "frase": 5,
-      "clave": false
-    },
-    {
-      "texto": "Mis",
-      "inicio": 12.66,
-      "fin": 12.812,
-      "frase": 6,
-      "clave": false
-    },
-    {
-      "texto": "brazos",
-      "inicio": 12.762,
-      "fin": 13.12,
-      "frase": 6,
-      "clave": false
-    },
-    {
-      "texto": "armado'",
-      "inicio": 13.14,
-      "fin": 13.46,
-      "frase": 6,
-      "clave": true
-    },
-    {
-      "texto": "disfrazado'",
-      "inicio": 13.5,
-      "fin": 13.96,
-      "frase": 6,
-      "clave": false
-    },
-    {
-      "texto": "de",
-      "inicio": 14.02,
-      "fin": 14.1,
-      "frase": 6,
-      "clave": false
-    },
-    {
-      "texto": "militare'",
-      "inicio": 14.2,
-      "fin": 15.18,
-      "frase": 6,
-      "clave": false
-    },
-    {
-      "texto": "Fenta",
-      "inicio": 15.37,
-      "fin": 15.838,
-      "frase": 7,
-      "clave": true
-    },
-    {
-      "texto": "y",
-      "inicio": 15.788,
-      "fin": 15.868,
-      "frase": 7,
-      "clave": false
-    },
-    {
-      "texto": "perico",
-      "inicio": 15.864,
-      "fin": 16.32,
-      "frase": 7,
-      "clave": false
-    },
-    {
-      "texto": "cruzando",
-      "inicio": 16.379,
-      "fin": 16.88,
-      "frase": 7,
-      "clave": false
-    },
-    {
-      "texto": "los",
-      "inicio": 16.96,
-      "fin": 17.16,
-      "frase": 7,
-      "clave": false
-    },
-    {
-      "texto": "mare'",
-      "inicio": 17.26,
-      "fin": 17.788,
-      "frase": 7,
-      "clave": false
-    },
-    {
-      "texto": "Mucho",
-      "inicio": 18.12,
-      "fin": 18.38,
-      "frase": 8,
-      "clave": false
-    },
-    {
-      "texto": "dinero,",
-      "inicio": 18.44,
-      "fin": 18.86,
-      "frase": 8,
-      "clave": true
-    },
-    {
-      "texto": "nivel",
-      "inicio": 18.98,
-      "fin": 19.24,
-      "frase": 8,
-      "clave": false
-    },
-    {
-      "texto": "10",
-      "inicio": 19.3,
-      "fin": 19.4,
-      "frase": 8,
-      "clave": false
-    },
-    {
-      "texto": "los",
-      "inicio": 19.46,
-      "fin": 19.6,
-      "frase": 8,
-      "clave": false
-    },
-    {
-      "texto": "blindaje'",
-      "inicio": 19.64,
-      "fin": 20.6,
-      "frase": 8,
-      "clave": false
-    },
-    {
-      "texto": "No",
-      "inicio": 20.84,
-      "fin": 20.94,
-      "frase": 9,
-      "clave": false
-    },
-    {
-      "texto": "se",
-      "inicio": 21,
-      "fin": 21.08,
-      "frase": 9,
-      "clave": false
-    },
-    {
-      "texto": "resbalen",
-      "inicio": 21.16,
-      "fin": 23.76,
-      "frase": 9,
-      "clave": true
-    },
-    {
-      "texto": "El",
-      "inicio": 23.82,
-      "fin": 24,
-      "frase": 10,
-      "clave": false
-    },
-    {
-      "texto": "avión",
-      "inicio": 24,
-      "fin": 24.215,
-      "frase": 10,
-      "clave": true
-    },
-    {
-      "texto": "lleno",
-      "inicio": 24.1,
-      "fin": 24.58,
-      "frase": 10,
-      "clave": false
-    },
-    {
-      "texto": "de",
-      "inicio": 24.62,
-      "fin": 24.72,
-      "frase": 10,
-      "clave": false
-    },
-    {
-      "texto": "kilo'",
-      "inicio": 24.82,
-      "fin": 25.02,
-      "frase": 10,
-      "clave": false
-    },
-    {
-      "texto": "aterrizó",
-      "inicio": 25.04,
-      "fin": 25.78,
-      "frase": 10,
-      "clave": false
-    },
-    {
-      "texto": "Tu",
-      "inicio": 26.84,
-      "fin": 26.92,
-      "frase": 11,
-      "clave": false
-    },
-    {
-      "texto": "puta",
-      "inicio": 26.98,
-      "fin": 27.26,
-      "frase": 11,
-      "clave": false
-    },
-    {
-      "texto": "conmigo",
-      "inicio": 27.34,
-      "fin": 27.74,
-      "frase": 11,
-      "clave": false
-    },
-    {
-      "texto": "se",
-      "inicio": 27.82,
-      "fin": 27.94,
-      "frase": 11,
-      "clave": false
-    },
-    {
-      "texto": "mojó",
-      "inicio": 28.02,
-      "fin": 28.28,
-      "frase": 11,
-      "clave": true
-    },
-    {
-      "texto": "No",
-      "inicio": 29.4,
-      "fin": 29.48,
-      "frase": 12,
-      "clave": false
-    },
-    {
-      "texto": "sé",
-      "inicio": 29.54,
-      "fin": 29.671,
-      "frase": 12,
-      "clave": false
-    },
-    {
-      "texto": "cuánto",
-      "inicio": 29.723,
-      "fin": 29.98,
-      "frase": 12,
-      "clave": false
-    },
-    {
-      "texto": "tomó,",
-      "inicio": 30.06,
-      "fin": 30.32,
-      "frase": 12,
-      "clave": false
-    },
-    {
-      "texto": "se",
-      "inicio": 30.4,
-      "fin": 30.48,
-      "frase": 12,
-      "clave": false
-    },
-    {
-      "texto": "emborrachó",
-      "inicio": 30.48,
-      "fin": 31.22,
-      "frase": 12,
-      "clave": true
-    },
-    {
-      "texto": "Se",
-      "inicio": 32.28,
-      "fin": 32.38,
-      "frase": 13,
-      "clave": false
-    },
-    {
-      "texto": "tocó",
-      "inicio": 32.46,
-      "fin": 32.64,
-      "frase": 13,
-      "clave": false
-    },
-    {
-      "texto": "el",
-      "inicio": 32.68,
-      "fin": 32.76,
-      "frase": 13,
-      "clave": false
-    },
-    {
-      "texto": "totito",
-      "inicio": 32.8,
-      "fin": 33.2,
-      "frase": 13,
-      "clave": true
-    },
-    {
-      "texto": "con",
-      "inicio": 33.26,
-      "fin": 33.466,
-      "frase": 13,
-      "clave": false
-    },
-    {
-      "texto": "mi",
-      "inicio": 33.466,
-      "fin": 33.603,
-      "frase": 13,
-      "clave": false
-    },
-    {
-      "texto": "Glock",
-      "inicio": 33.603,
-      "fin": 33.962,
-      "frase": 13,
-      "clave": false
-    },
-    {
-      "texto": "Con",
-      "inicio": 33.96,
-      "fin": 34.166,
-      "frase": 14,
-      "clave": false
-    },
-    {
-      "texto": "mi",
-      "inicio": 34.166,
-      "fin": 34.303,
-      "frase": 14,
-      "clave": false
-    },
-    {
-      "texto": "Glock,",
-      "inicio": 34.303,
-      "fin": 34.635,
-      "frase": 14,
-      "clave": true
-    },
-    {
-      "texto": "con",
-      "inicio": 34.62,
-      "fin": 34.843,
-      "frase": 14,
-      "clave": false
-    },
-    {
-      "texto": "mi",
-      "inicio": 34.843,
-      "fin": 34.991,
-      "frase": 14,
-      "clave": false
-    },
-    {
-      "texto": "Glock",
-      "inicio": 34.991,
-      "fin": 35.3,
-      "frase": 14,
-      "clave": true
-    }
-  ]
+ "firma": "cancion",
+ "duracion": 35.3,
+ "frases": [
+  {
+   "n": 1,
+   "texto": "Certero",
+   "clave": "certero",
+   "inicio": 0.52,
+   "fin": 1.54
+  },
+  {
+   "n": 2,
+   "texto": "Pa' morirme yo te cazo primero",
+   "clave": "morirme",
+   "inicio": 1.9,
+   "fin": 4.28
+  },
+  {
+   "n": 3,
+   "texto": "Con la DEA yo no coopero",
+   "clave": "dea",
+   "inicio": 4.96,
+   "fin": 6.64
+  },
+  {
+   "n": 4,
+   "texto": "No traiciono por puta' ni dinero",
+   "clave": "traiciono",
+   "inicio": 7.34,
+   "fin": 9.74
+  },
+  {
+   "n": 5,
+   "texto": "Guerrero, escare'",
+   "clave": "guerrero",
+   "inicio": 10.12,
+   "fin": 12.42
+  },
+  {
+   "n": 6,
+   "texto": "Mis brazos armado' disfrazado' de militare'",
+   "clave": "armado",
+   "inicio": 12.66,
+   "fin": 15.18
+  },
+  {
+   "n": 7,
+   "texto": "Brr",
+   "clave": "brr",
+   "inicio": 15.2,
+   "fin": 15.5
+  },
+  {
+   "n": 8,
+   "texto": "Fenta y perico cruzando los mare'",
+   "clave": "fenta",
+   "inicio": 15.54,
+   "fin": 17.788
+  },
+  {
+   "n": 9,
+   "texto": "Mucho dinero, nivel 10 los blindaje'",
+   "clave": "dinero",
+   "inicio": 18.12,
+   "fin": 20.6
+  },
+  {
+   "n": 10,
+   "texto": "No se resbalen",
+   "clave": "resbalen",
+   "inicio": 20.84,
+   "fin": 22.05
+  },
+  {
+   "n": 11,
+   "texto": "Brr",
+   "clave": "brr",
+   "inicio": 22.1,
+   "fin": 22.6
+  },
+  {
+   "n": 12,
+   "texto": "El avión lleno de kilo' aterrizó",
+   "clave": "avion",
+   "inicio": 23.82,
+   "fin": 25.78
+  },
+  {
+   "n": 13,
+   "texto": "Tu puta conmigo se mojó",
+   "clave": "mojo",
+   "inicio": 26.84,
+   "fin": 28.28
+  },
+  {
+   "n": 14,
+   "texto": "No sé cuánto tomó, se emborrachó",
+   "clave": "emborracho",
+   "inicio": 29.4,
+   "fin": 31.22
+  },
+  {
+   "n": 15,
+   "texto": "Se tocó el totito con mi Glock",
+   "clave": "totito",
+   "inicio": 32.28,
+   "fin": 33.962
+  },
+  {
+   "n": 16,
+   "texto": "Con mi Glock, con mi Glock",
+   "clave": "glock",
+   "inicio": 33.96,
+   "fin": 35.3
+  }
+ ],
+ "palabras": [
+  {
+   "texto": "Certero",
+   "inicio": 0.52,
+   "fin": 1.54,
+   "frase": 1,
+   "clave": true
+  },
+  {
+   "texto": "Pa'",
+   "inicio": 1.9,
+   "fin": 1.997,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "morirme",
+   "inicio": 1.947,
+   "fin": 2.472,
+   "frase": 2,
+   "clave": true
+  },
+  {
+   "texto": "yo",
+   "inicio": 2.62,
+   "fin": 2.7,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "te",
+   "inicio": 2.76,
+   "fin": 2.86,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "cazo",
+   "inicio": 2.94,
+   "fin": 3.24,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "primero",
+   "inicio": 3.3,
+   "fin": 4.28,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "Con",
+   "inicio": 4.96,
+   "fin": 5.1,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "la",
+   "inicio": 5.16,
+   "fin": 5.3,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "DEA",
+   "inicio": 5.34,
+   "fin": 5.6,
+   "frase": 3,
+   "clave": true
+  },
+  {
+   "texto": "yo",
+   "inicio": 5.66,
+   "fin": 5.78,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "no",
+   "inicio": 5.82,
+   "fin": 5.94,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "coopero",
+   "inicio": 6.04,
+   "fin": 6.64,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "No",
+   "inicio": 7.34,
+   "fin": 7.42,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "traiciono",
+   "inicio": 7.5,
+   "fin": 7.96,
+   "frase": 4,
+   "clave": true
+  },
+  {
+   "texto": "por",
+   "inicio": 8.039,
+   "fin": 8.16,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "puta'",
+   "inicio": 8.24,
+   "fin": 8.464,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "ni",
+   "inicio": 8.58,
+   "fin": 8.72,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "dinero",
+   "inicio": 8.82,
+   "fin": 9.74,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "Guerrero,",
+   "inicio": 10.12,
+   "fin": 11.06,
+   "frase": 5,
+   "clave": true
+  },
+  {
+   "texto": "escare'",
+   "inicio": 11.26,
+   "fin": 12.42,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "Mis",
+   "inicio": 12.66,
+   "fin": 12.812,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "brazos",
+   "inicio": 12.762,
+   "fin": 13.12,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "armado'",
+   "inicio": 13.14,
+   "fin": 13.46,
+   "frase": 6,
+   "clave": true
+  },
+  {
+   "texto": "disfrazado'",
+   "inicio": 13.5,
+   "fin": 13.96,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "de",
+   "inicio": 14.02,
+   "fin": 14.1,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "militare'",
+   "inicio": 14.2,
+   "fin": 15.18,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "Brr",
+   "inicio": 15.2,
+   "fin": 15.5,
+   "frase": 7,
+   "clave": true
+  },
+  {
+   "texto": "Fenta",
+   "inicio": 15.54,
+   "fin": 15.838,
+   "frase": 8,
+   "clave": true
+  },
+  {
+   "texto": "y",
+   "inicio": 15.838,
+   "fin": 15.868,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "perico",
+   "inicio": 15.864,
+   "fin": 16.32,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "cruzando",
+   "inicio": 16.379,
+   "fin": 16.88,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "los",
+   "inicio": 16.96,
+   "fin": 17.16,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "mare'",
+   "inicio": 17.26,
+   "fin": 17.788,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "Mucho",
+   "inicio": 18.12,
+   "fin": 18.38,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "dinero,",
+   "inicio": 18.44,
+   "fin": 18.86,
+   "frase": 9,
+   "clave": true
+  },
+  {
+   "texto": "nivel",
+   "inicio": 18.98,
+   "fin": 19.24,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "10",
+   "inicio": 19.3,
+   "fin": 19.4,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "los",
+   "inicio": 19.46,
+   "fin": 19.6,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "blindaje'",
+   "inicio": 19.64,
+   "fin": 20.6,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "No",
+   "inicio": 20.84,
+   "fin": 20.94,
+   "frase": 10,
+   "clave": false
+  },
+  {
+   "texto": "se",
+   "inicio": 21,
+   "fin": 21.08,
+   "frase": 10,
+   "clave": false
+  },
+  {
+   "texto": "resbalen",
+   "inicio": 21.16,
+   "fin": 23.76,
+   "frase": 10,
+   "clave": true
+  },
+  {
+   "texto": "Brr",
+   "inicio": 22.1,
+   "fin": 22.6,
+   "frase": 11,
+   "clave": true
+  },
+  {
+   "texto": "El",
+   "inicio": 23.82,
+   "fin": 24,
+   "frase": 12,
+   "clave": false
+  },
+  {
+   "texto": "avión",
+   "inicio": 24,
+   "fin": 24.215,
+   "frase": 12,
+   "clave": true
+  },
+  {
+   "texto": "lleno",
+   "inicio": 24.1,
+   "fin": 24.58,
+   "frase": 12,
+   "clave": false
+  },
+  {
+   "texto": "de",
+   "inicio": 24.62,
+   "fin": 24.72,
+   "frase": 12,
+   "clave": false
+  },
+  {
+   "texto": "kilo'",
+   "inicio": 24.82,
+   "fin": 25.02,
+   "frase": 12,
+   "clave": false
+  },
+  {
+   "texto": "aterrizó",
+   "inicio": 25.04,
+   "fin": 25.78,
+   "frase": 12,
+   "clave": false
+  },
+  {
+   "texto": "Tu",
+   "inicio": 26.84,
+   "fin": 26.92,
+   "frase": 13,
+   "clave": false
+  },
+  {
+   "texto": "puta",
+   "inicio": 26.98,
+   "fin": 27.26,
+   "frase": 13,
+   "clave": false
+  },
+  {
+   "texto": "conmigo",
+   "inicio": 27.34,
+   "fin": 27.74,
+   "frase": 13,
+   "clave": false
+  },
+  {
+   "texto": "se",
+   "inicio": 27.82,
+   "fin": 27.94,
+   "frase": 13,
+   "clave": false
+  },
+  {
+   "texto": "mojó",
+   "inicio": 28.02,
+   "fin": 28.28,
+   "frase": 13,
+   "clave": true
+  },
+  {
+   "texto": "No",
+   "inicio": 29.4,
+   "fin": 29.48,
+   "frase": 14,
+   "clave": false
+  },
+  {
+   "texto": "sé",
+   "inicio": 29.54,
+   "fin": 29.671,
+   "frase": 14,
+   "clave": false
+  },
+  {
+   "texto": "cuánto",
+   "inicio": 29.723,
+   "fin": 29.98,
+   "frase": 14,
+   "clave": false
+  },
+  {
+   "texto": "tomó,",
+   "inicio": 30.06,
+   "fin": 30.32,
+   "frase": 14,
+   "clave": false
+  },
+  {
+   "texto": "se",
+   "inicio": 30.4,
+   "fin": 30.48,
+   "frase": 14,
+   "clave": false
+  },
+  {
+   "texto": "emborrachó",
+   "inicio": 30.48,
+   "fin": 31.22,
+   "frase": 14,
+   "clave": true
+  },
+  {
+   "texto": "Se",
+   "inicio": 32.28,
+   "fin": 32.38,
+   "frase": 15,
+   "clave": false
+  },
+  {
+   "texto": "tocó",
+   "inicio": 32.46,
+   "fin": 32.64,
+   "frase": 15,
+   "clave": false
+  },
+  {
+   "texto": "el",
+   "inicio": 32.68,
+   "fin": 32.76,
+   "frase": 15,
+   "clave": false
+  },
+  {
+   "texto": "totito",
+   "inicio": 32.8,
+   "fin": 33.2,
+   "frase": 15,
+   "clave": true
+  },
+  {
+   "texto": "con",
+   "inicio": 33.26,
+   "fin": 33.466,
+   "frase": 15,
+   "clave": false
+  },
+  {
+   "texto": "mi",
+   "inicio": 33.466,
+   "fin": 33.603,
+   "frase": 15,
+   "clave": false
+  },
+  {
+   "texto": "Glock",
+   "inicio": 33.603,
+   "fin": 33.962,
+   "frase": 15,
+   "clave": false
+  },
+  {
+   "texto": "Con",
+   "inicio": 33.96,
+   "fin": 34.166,
+   "frase": 16,
+   "clave": false
+  },
+  {
+   "texto": "mi",
+   "inicio": 34.166,
+   "fin": 34.303,
+   "frase": 16,
+   "clave": false
+  },
+  {
+   "texto": "Glock,",
+   "inicio": 34.303,
+   "fin": 34.635,
+   "frase": 16,
+   "clave": true
+  },
+  {
+   "texto": "con",
+   "inicio": 34.62,
+   "fin": 34.843,
+   "frase": 16,
+   "clave": false
+  },
+  {
+   "texto": "mi",
+   "inicio": 34.843,
+   "fin": 34.991,
+   "frase": 16,
+   "clave": false
+  },
+  {
+   "texto": "Glock",
+   "inicio": 34.991,
+   "fin": 35.3,
+   "frase": 16,
+   "clave": true
+  }
+ ]
 }
