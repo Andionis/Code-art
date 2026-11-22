@@ -350,3 +350,59 @@ export function velo(g, al = 0.5) {
   gr.addColorStop(0, `rgba(4,16,34,${al * 0.5})`); gr.addColorStop(0.6, `rgba(4,16,34,${al})`); gr.addColorStop(1, "rgba(4,16,34,0)");
   g.fillStyle = gr; g.fillRect(0, 0, 1080, 660);
 }
+
+// ---------------------------------------------------------------- la Tierra, con sus continentes cubiertos de sal
+// Como la Tierra del kit, con un segundo mapa en el que la tierra firme es sal blanca. salada (0-1) pasa de uno a otro.
+const mapaT = (salado) => {
+  const t = k.ruido(256, 41, 3, 5, "crudo"), nb = k.ruido(256, 43, 5, 4, "crudo"), n = 256;
+  const l = k.lienzo(n * 2, n), cx = l.getContext("2d"), img = cx.createImageData(n * 2, n);
+  for (let y = 0; y < n; y++) for (let x = 0; x < n * 2; x++) {
+    const i = y * n + (x < n ? x : 2 * n - 1 - x), h = t.crudo[i], nube = nb.crudo[i], q = (y * n * 2 + x) * 4, lat = Math.abs(y / n - 0.5) * 2;
+    let col = h > 0.56 ? (lat > 0.82 ? [236, 240, 246] : h > 0.66 ? [124, 104, 72] : [62, 120, 58]) : [18 + 30 * h, 62 + 60 * h, 140 + 80 * h];
+    if (salado && h > 0.56) { const v = 232 + 20 * (h - 0.56) * 4; col = [v, v + 4, v + 10]; }
+    const cl = salado ? 0 : Math.max(0, Math.min(1, (nube - 0.55) * 4));
+    img.data[q] = mez(col[0], 245, cl); img.data[q + 1] = mez(col[1], 248, cl); img.data[q + 2] = mez(col[2], 252, cl); img.data[q + 3] = 255;
+  }
+  cx.putImageData(img, 0, 0);
+  return k.fijar(l);
+};
+let MAPA = null, MAPA_SAL = null;
+export function tierraSal(g, x, y, rad, gira, salada = 0) {
+  MAPA ??= mapaT(false); MAPA_SAL ??= mapaT(true);
+  g.save();
+  const halo = g.createRadialGradient(x, y, rad * 0.95, x, y, rad * 1.18);
+  halo.addColorStop(0, "rgba(120,180,255,0.55)"); halo.addColorStop(1, "rgba(120,180,255,0)");
+  g.fillStyle = halo; g.beginPath(); g.arc(x, y, rad * 1.18, 0, Math.PI * 2); g.fill();
+  g.beginPath(); g.arc(x, y, rad, 0, Math.PI * 2); g.clip();
+  const w = rad * 4, h = rad * 2, off = ((((gira % 1) + 1) % 1)) * w;
+  for (const [m, a] of [[MAPA, 1], [MAPA_SAL, salada]]) {
+    if (a <= 0.001) continue;
+    g.globalAlpha = a; g.drawImage(m, x - rad - off, y - rad, w, h); g.drawImage(m, x - rad - off + w, y - rad, w, h);
+  }
+  g.globalAlpha = 1;
+  const esf = g.createRadialGradient(x - rad * 0.3, y - rad * 0.35, rad * 0.1, x, y, rad);
+  esf.addColorStop(0, "rgba(255,255,255,0.18)"); esf.addColorStop(0.7, "rgba(0,0,0,0)"); esf.addColorStop(1, "rgba(0,10,30,0.55)");
+  g.fillStyle = esf; g.fillRect(x - rad, y - rad, rad * 2, rad * 2);
+  const sombra = g.createLinearGradient(x - rad, y, x + rad, y);
+  sombra.addColorStop(0, "rgba(0,0,0,0)"); sombra.addColorStop(0.55, "rgba(0,0,0,0.1)"); sombra.addColorStop(1, "rgba(0,0,10,0.8)");
+  g.fillStyle = sombra; g.fillRect(x - rad, y - rad, rad * 2, rad * 2);
+  g.restore();
+}
+
+// ---------------------------------------------------------------- la cocina (la pared cálida y la mesa de madera)
+export const MESA = 1330;
+export function cocina(g) {
+  const gr = g.createLinearGradient(0, 0, 0, MESA);
+  gr.addColorStop(0, "#3a2418"); gr.addColorStop(1, "#7a4a2c");
+  g.fillStyle = gr; g.fillRect(0, 0, 1080, MESA);
+  k.brillo(g, 820, 520, 900, "255,200,140", 0.45);
+  k.brillo(g, 180, 900, 500, "255,170,110", 0.25);
+  const mg = g.createLinearGradient(0, MESA, 0, 1920);
+  mg.addColorStop(0, "#c98d55"); mg.addColorStop(1, "#6e4224");
+  g.fillStyle = mg; g.fillRect(0, MESA, 1080, 590);
+  g.save(); g.strokeStyle = "rgba(90,50,25,0.35)"; g.lineWidth = 3;
+  for (let i = 0; i < 26; i++) { const y = MESA + 12 + i * i * 0.9; g.beginPath(); g.moveTo(0, y); g.bezierCurveTo(300, y + 6 * Math.sin(i), 700, y - 8 * Math.cos(i), 1080, y + 4); g.stroke(); }
+  g.globalCompositeOperation = "multiply"; g.globalAlpha = 0.25; g.drawImage(k.red, 0, MESA, 1080, 590);
+  g.restore();
+  g.fillStyle = "rgba(255,230,190,0.35)"; g.fillRect(0, MESA, 1080, 4);
+}
