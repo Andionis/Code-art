@@ -35,8 +35,7 @@ const VAPOR = Array.from({ length: 70 }, () => ({ X: (az() - 0.5) * 50, Z: -6 - 
 // las nubes que se forman: [X, Y, Z, ancho]
 const NUBES = [[-150, 125, 430, 240], [20, 140, 470, 290], [140, 115, 380, 220], [-60, 100, 330, 200], [90, 90, 290, 170], [-20, 85, 260, 140]];
 
-export function dibuja(g, t) {
-  const c = camara(t);
+export function dibuja(g, t, c = camara(t)) {
   const forma = su(tr(t, Tnub - 0.5, Tnub + 0.8)), oscuro = 0.65 * su(tr(t, Tnub2 - 0.2, Tllu + 0.2));
   const calor = su(tr(t, Tsol - 0.2, Tcal + 0.4)) * (1 - su(tr(t, Tnub2 - 0.3, Tllu)));
   paisaje(g, c, t, {
