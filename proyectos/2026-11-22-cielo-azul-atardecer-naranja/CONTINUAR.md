@@ -30,7 +30,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
   - [x] escena 4: el atardecer (hasta 52,7)
   - [x] escena 5: las nubes y el vaso (hasta 71,5)
   - [x] escena 6: el final y SEGUIR (hasta el final)
-- [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
+- [x] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
 - [ ] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
       propuesto
