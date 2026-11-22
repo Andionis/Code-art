@@ -14,7 +14,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Pendiente del creador
 
-- Aprobar el video completo (v1).
+- Nada: entregado.
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
@@ -29,9 +29,9 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
   - [x] escena 4: el fondo del mar (9), hasta 45,7 s; v1 aprobada («Apruebo»)
   - [x] escena 5: millones de años (10-11), hasta 59,8 s; v1 aprobada («Apruebo»)
   - [x] escena 6: el remate y el botón Seguir (12-13), hasta el final; v1 aprobada («Apruebo»)
-- [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
+- [x] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
-- [ ] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
+- [x] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
       propuesto
 
 ## Para seguir en un chat nuevo
