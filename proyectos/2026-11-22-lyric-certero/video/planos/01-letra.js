@@ -42,6 +42,7 @@ const cuadros = existsSync(carpeta)
   ? await Promise.all(readdirSync(carpeta).filter((f) => f.endsWith(".jpg")).sort().map((f) => loadImage(new URL(f, carpeta).pathname)))
   : [];
 const FPS_FONDO = 30;
+const VEL = L.velocidad ?? 0.75; // velocidad del fondo (1 = normal)
 
 const CX = 515, ANCHO_MAX = 870;
 const rgb = (c, a = 1) => `rgba(${c[0]},${c[1]},${c[2]},${a})`;
@@ -50,7 +51,8 @@ const rgb = (c, a = 1) => `rgba(${c[0]},${c[1]},${c[2]},${a})`;
 function fondo(g, t, col, b) {
   const zoom = 1.04 + 0.04 * b;
   if (cuadros.length) {
-    const img = cuadros[Math.floor(t * FPS_FONDO) % cuadros.length];
+    const N = cuadros.length, per = Math.max(1, 2 * (N - 1)), q = Math.floor(t * FPS_FONDO * VEL) % per;
+    const img = cuadros[q < N ? q : per - q]; // ida y vuelta (hacia delante y en reverso), más lento
     g.save();
     g.translate(540, 960); g.scale(zoom, zoom); g.translate(-540, -960);
     g.drawImage(img, 0, 0, 1080, 1920);
@@ -95,36 +97,35 @@ const fuente = (tam) => `800 ${tam}px Figtree`;
 const cache = new Map();
 function maqueta(g, f) {
   if (cache.has(f.n)) return cache.get(f.n);
-  const filas = [];
-  let fila = null;
-  const TAM = 104;
-  for (const w of f.palabras) {
-    const texto = w.texto.replace(/[.,:"]/g, "").toUpperCase();
-    if (w.clave) {
-      let tam = 230; g.font = fuente(tam);
-      while (g.measureText(texto).width > ANCHO_MAX && tam > 120) { tam -= 6; g.font = fuente(tam); }
-      filas.push({ tam, palabras: [{ w, texto, ancho: g.measureText(texto).width, clave: true }] });
-      fila = null; continue;
+  // una sola línea por pantalla, letra chica: si la frase no cabe, sigue en la pantalla siguiente
+  const TAM = 50, TAMC = 66, MAXW = 1000;
+  const ws = f.palabras.map((w) => {
+    const texto = w.texto.replace(/[.,:"]/g, "").toUpperCase(), tam = w.clave ? TAMC : TAM;
+    g.font = fuente(tam);
+    return { w, texto, ancho: g.measureText(texto).width, clave: w.clave, tam };
+  });
+  const hueco = 22, total = ws.reduce((s, p) => s + p.ancho + hueco, -hueco);
+  // si no cabe, se parte en pantallas parejas (sin palabras sueltas)
+  let n = Math.ceil(total / MAXW), paginas;
+  for (;; n++) {
+    const meta = total / n;
+    paginas = []; let fila = null;
+    for (const p of ws) {
+      if (!fila || (fila.ancho + hueco + p.ancho > MAXW) || (fila.ancho > 0 && fila.ancho + hueco + p.ancho / 2 > meta && paginas.length < n)) {
+        fila = { tam: TAMC, palabras: [], ancho: -hueco }; paginas.push([fila]);
+      }
+      fila.palabras.push(p); fila.ancho += hueco + p.ancho;
     }
-    g.font = fuente(TAM);
-    const ancho = g.measureText(texto).width, hueco = 24;
-    if (!fila || fila.ancho + hueco + ancho > ANCHO_MAX) { fila = { tam: TAM, palabras: [], ancho: -hueco }; filas.push(fila); }
-    fila.palabras.push({ w, texto, ancho }); fila.ancho += hueco + ancho;
-  }
-  // como mucho 3 filas en pantalla: las líneas largas se reparten en pantallas seguidas, parejas (4 → 2 + 2, 5 → 3 + 2)
-  const n = Math.ceil(filas.length / 3), paginas = [];
-  for (let j = 0, i0 = 0; j < n; j++) {
-    const cuantas = Math.ceil((filas.length - i0) / (n - j));
-    paginas.push(filas.slice(i0, i0 + cuantas)); i0 += cuantas;
+    if (paginas.length <= n || n > 6) break;
   }
   const m = paginas.map((fs) => {
     const alto = fs.reduce((s, r) => s + r.tam * 1.08, 0);
     let y = 1060 - alto / 2;
     for (const r of fs) {
-      const total = r.palabras.reduce((s, p) => s + p.ancho, 0) + 24 * (r.palabras.length - 1);
-      let x = CX - total / 2;
+      const total = r.palabras.reduce((s, p) => s + p.ancho, 0) + 22 * (r.palabras.length - 1);
+      let x = 540 - total / 2;
       r.y = y + r.tam * 0.8;
-      for (const p of r.palabras) { p.x = x + p.ancho / 2; p.y = r.y; p.tam = r.tam; x += p.ancho + 24; }
+      for (const p of r.palabras) { p.x = x + p.ancho / 2; p.y = r.y; x += p.ancho + 22; }
       y += r.tam * 1.08;
     }
     const ps = fs.flatMap((r) => r.palabras);
@@ -137,7 +138,7 @@ function maqueta(g, f) {
 function letra(g, t, col, b) {
   const fs = v.frases;
   // un velo oscuro detrás de la letra, para que se lea sobre la ciudad
-  const ve = g.createRadialGradient(CX, 1060, 60, CX, 1060, 620);
+  const ve = g.createRadialGradient(540, 1060, 40, 540, 1060, 460);
   ve.addColorStop(0, "rgba(0,0,0,0.55)"); ve.addColorStop(1, "rgba(0,0,0,0)");
   g.fillStyle = ve; g.fillRect(0, 250, 1080, 1300);
   const pags = fs.flatMap((f) => maqueta(g, f));
@@ -148,19 +149,19 @@ function letra(g, t, col, b) {
     const sal = sig ? k.sale(k.tramo(t, z - 0.16, z)) : k.suave(k.tramo(t, FUNDE + 0.3, FUNDE + 1.3)) ; // la última letra se va al empezar el desvanecido: luego, solo música
     const ps = pg.palabras;
     g.save();
-    g.translate(CX, 1060); g.scale(1 + 0.25 * sal, 1 + 0.25 * sal); g.translate(-CX, -1060);
+    g.translate(540, 1060); g.scale(1 + 0.12 * sal, 1 + 0.12 * sal); g.translate(-540, -1060);
     for (const p of ps) {
       const ta = p.w.inicio - 0.06;
       if (t < ta) continue;
       const u = k.entra(k.tramo(t, ta, ta + (p.clave ? 0.22 : 0.16)));
-      const esc = (p.clave ? 1.5 : 1.22) - (p.clave ? 0.5 : 0.22) * u + (p.clave ? 0.06 * b : 0);
+      const esc = (p.clave ? 1.3 : 1.15) - (p.clave ? 0.3 : 0.15) * u + (p.clave ? 0.06 * b : 0);
       const sonando = t >= p.w.inicio - 0.06 && t < p.w.fin + 0.08;
       g.save();
       g.globalAlpha = u * (1 - sal);
       g.translate(p.x, p.y - 30 * (1 - u)); g.scale(esc, esc);
       g.font = fuente(p.tam); g.textAlign = "center"; g.textBaseline = "alphabetic";
       if (p.clave) {
-        g.shadowColor = rgb(col, 0.95 * (1 - sal)); g.shadowBlur = 40 + 30 * b; // la sombra no respeta globalAlpha
+        g.shadowColor = rgb(col, 0.95 * (1 - sal)); g.shadowBlur = 26 + 20 * b; // la sombra no respeta globalAlpha
         g.fillStyle = rgb(col); g.fillText(p.texto, 0, 0);
         g.shadowBlur = 0;
         const brillo = g.createLinearGradient(0, -p.tam * 0.8, 0, 0);
