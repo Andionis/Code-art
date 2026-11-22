@@ -57,7 +57,7 @@ function hacerNube(sem, dia) {
   x.filter = "none";
   return c;
 }
-const NUBES_DIA = [1, 2, 3, 4].map((s) => hacerNube(700 + s, true));
+export const NUBES_DIA = [1, 2, 3, 4].map((s) => hacerNube(700 + s, true));
 const NUBES_TARDE = [1, 2, 3, 4].map((s) => hacerNube(700 + s, false));
 
 // Dónde están las nubes en el mundo (la cámara vuela por +z; el mar está en y = -60).
