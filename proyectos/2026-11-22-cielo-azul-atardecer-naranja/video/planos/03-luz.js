@@ -26,7 +26,8 @@ function punto(i, s, t, a, m1, m2) {
   const r = 540 - i * 40, ang = Math.PI * (1 - s);
   const arc = [540 + r * Math.cos(ang), 1330 - 50 * su(tr(t, Tarc, Tcada)) - r * Math.sin(ang) * (1 + 0.015 * Math.sin(t * 3))];
   const x = -60 + 1200 * s;
-  const ola = [x, YW(i) + AMP * Math.sin((2 * Math.PI * (x - VEL * (t - Tcada))) / LAMBDA[i])];
+  const Tq = Tfin - 0.35, te = t < Tq ? t : Tq + 0.12 * (1 - Math.exp(-(t - Tq) / 0.12));
+  const ola = [x, YW(i) + AMP * Math.sin((2 * Math.PI * (x - VEL * (te - Tcada))) / LAMBDA[i])];
   const p = [mez(lin[0], arc[0], m1), mez(lin[1], arc[1], m1)];
   return [mez(p[0], ola[0], m2), mez(p[1], ola[1], m2)];
 }

@@ -104,7 +104,7 @@ export function dibuja(g, t) {
       k.pastilla(g, 540, 1420, "blanco", "", "255,255,255", su(tr(t, Tbla, Tbla + 0.25)), 120);
     }
     // un velo bajo el subtítulo
-    const vg = g.createLinearGradient(0, 240, 0, 560); vg.addColorStop(0, "rgba(10,25,60,0)"); vg.addColorStop(0.4, "rgba(10,25,60,0.25)"); vg.addColorStop(1, "rgba(10,25,60,0)");
+    const vg = g.createLinearGradient(0, 240, 0, 560); vg.addColorStop(0, "rgba(10,25,60,0)"); vg.addColorStop(0.4, `rgba(10,25,60,${0.25 + 0.45 * su(tr(t, Tbla - 0.2, Tbla + 0.3))})`); vg.addColorStop(1, "rgba(10,25,60,0)");
     g.fillStyle = vg; g.fillRect(0, 240, 1080, 320);
   }
 }
