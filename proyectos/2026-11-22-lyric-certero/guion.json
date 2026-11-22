@@ -1,0 +1,72 @@
+{
+  "titulo": "Lyric video lyric-certero",
+  "idioma": "es",
+  "subtitulos": "no",
+  "frases": [
+    {
+      "texto": "Certero",
+      "clave": "certero"
+    },
+    {
+      "texto": "Por money yo te caso primero",
+      "clave": "money"
+    },
+    {
+      "texto": "Por la de ella yo no copero",
+      "clave": "copero"
+    },
+    {
+      "texto": "No traiciono por putas ni dinero",
+      "clave": "traiciono"
+    },
+    {
+      "texto": "Guerrero",
+      "clave": "guerrero"
+    },
+    {
+      "texto": "Scare, migración",
+      "clave": "migracion"
+    },
+    {
+      "texto": "Mago disfraza'o de militare'",
+      "clave": "mago"
+    },
+    {
+      "texto": "Antiperico cruzando los mares",
+      "clave": "cruzando"
+    },
+    {
+      "texto": "Mucho dinero, nivel de los blindaje'",
+      "clave": "dinero"
+    },
+    {
+      "texto": "No se resbale",
+      "clave": "resbale"
+    },
+    {
+      "texto": "En la BM no desquilo, aterrizo",
+      "clave": "aterrizo"
+    },
+    {
+      "texto": "Tu puta conmigo se mojó",
+      "clave": "mojo"
+    },
+    {
+      "texto": "No se esconde, tomó, se emborrachó",
+      "clave": "esconde"
+    },
+    {
+      "texto": "Se toca el totito conmigo",
+      "clave": "totito"
+    },
+    {
+      "texto": "Conmigo, conmigo",
+      "clave": "conmigo"
+    }
+  ],
+  "lyric": {
+    "bn": true,
+    "funde": 34.85,
+    "marca": false
+  }
+}

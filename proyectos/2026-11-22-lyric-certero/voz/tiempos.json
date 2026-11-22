@@ -1,0 +1,561 @@
+{
+ "firma": "cancion",
+ "duracion": 35.3,
+ "frases": [
+  {
+   "n": 1,
+   "texto": "Certero",
+   "clave": "certero",
+   "inicio": 0.52,
+   "fin": 1.54
+  },
+  {
+   "n": 2,
+   "texto": "Por money yo te caso primero",
+   "clave": "money",
+   "inicio": 1.9,
+   "fin": 4.28
+  },
+  {
+   "n": 3,
+   "texto": "Por la de ella yo no copero",
+   "clave": "copero",
+   "inicio": 4.96,
+   "fin": 6.64
+  },
+  {
+   "n": 4,
+   "texto": "No traiciono por putas ni dinero",
+   "clave": "traiciono",
+   "inicio": 7.34,
+   "fin": 9.74
+  },
+  {
+   "n": 5,
+   "texto": "Guerrero",
+   "clave": "guerrero",
+   "inicio": 10.1,
+   "fin": 11.08
+  },
+  {
+   "n": 6,
+   "texto": "Scare, migración",
+   "clave": "migracion",
+   "inicio": 11.44,
+   "fin": 13.089
+  },
+  {
+   "n": 7,
+   "texto": "Mago disfraza'o de militare'",
+   "clave": "mago",
+   "inicio": 13.089,
+   "fin": 15.14
+  },
+  {
+   "n": 8,
+   "texto": "Antiperico cruzando los mares",
+   "clave": "cruzando",
+   "inicio": 15.56,
+   "fin": 18.04
+  },
+  {
+   "n": 9,
+   "texto": "Mucho dinero, nivel de los blindaje'",
+   "clave": "dinero",
+   "inicio": 18.1,
+   "fin": 20.6
+  },
+  {
+   "n": 10,
+   "texto": "No se resbale",
+   "clave": "resbale",
+   "inicio": 20.84,
+   "fin": 22.04
+  },
+  {
+   "n": 11,
+   "texto": "En la BM no desquilo, aterrizo",
+   "clave": "aterrizo",
+   "inicio": 23.82,
+   "fin": 25.76
+  },
+  {
+   "n": 12,
+   "texto": "Tu puta conmigo se mojó",
+   "clave": "mojo",
+   "inicio": 26.84,
+   "fin": 28.28
+  },
+  {
+   "n": 13,
+   "texto": "No se esconde, tomó, se emborrachó",
+   "clave": "esconde",
+   "inicio": 29.4,
+   "fin": 31.22
+  },
+  {
+   "n": 14,
+   "texto": "Se toca el totito conmigo",
+   "clave": "totito",
+   "inicio": 32.28,
+   "fin": 33.74
+  },
+  {
+   "n": 15,
+   "texto": "Conmigo, conmigo",
+   "clave": "conmigo",
+   "inicio": 33.96,
+   "fin": 35.14
+  }
+ ],
+ "palabras": [
+  {
+   "texto": "Certero",
+   "inicio": 0.52,
+   "fin": 1.54,
+   "frase": 1,
+   "clave": true
+  },
+  {
+   "texto": "Por",
+   "inicio": 1.9,
+   "fin": 2.04,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "money",
+   "inicio": 2.06,
+   "fin": 2.62,
+   "frase": 2,
+   "clave": true
+  },
+  {
+   "texto": "yo",
+   "inicio": 2.58,
+   "fin": 2.68,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "te",
+   "inicio": 2.74,
+   "fin": 2.86,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "caso",
+   "inicio": 2.92,
+   "fin": 3.24,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "primero",
+   "inicio": 3.3,
+   "fin": 4.28,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "Por",
+   "inicio": 4.96,
+   "fin": 5.1,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "la",
+   "inicio": 5.16,
+   "fin": 5.3,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "de",
+   "inicio": 5.34,
+   "fin": 5.46,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "ella",
+   "inicio": 5.5,
+   "fin": 5.6,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "yo",
+   "inicio": 5.64,
+   "fin": 5.78,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "no",
+   "inicio": 5.82,
+   "fin": 5.96,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "copero",
+   "inicio": 6.02,
+   "fin": 6.64,
+   "frase": 3,
+   "clave": true
+  },
+  {
+   "texto": "No",
+   "inicio": 7.34,
+   "fin": 7.42,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "traiciono",
+   "inicio": 7.48,
+   "fin": 7.98,
+   "frase": 4,
+   "clave": true
+  },
+  {
+   "texto": "por",
+   "inicio": 8.02,
+   "fin": 8.16,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "putas",
+   "inicio": 8.22,
+   "fin": 8.6,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "ni",
+   "inicio": 8.58,
+   "fin": 8.72,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "dinero",
+   "inicio": 8.8,
+   "fin": 9.74,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "Guerrero",
+   "inicio": 10.1,
+   "fin": 11.08,
+   "frase": 5,
+   "clave": true
+  },
+  {
+   "texto": "Scare,",
+   "inicio": 11.44,
+   "fin": 12.42,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "migración",
+   "inicio": 12.66,
+   "fin": 13.089,
+   "frase": 6,
+   "clave": true
+  },
+  {
+   "texto": "Mago",
+   "inicio": 13.089,
+   "fin": 13.386,
+   "frase": 7,
+   "clave": true
+  },
+  {
+   "texto": "disfraza'o",
+   "inicio": 13.48,
+   "fin": 13.948,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "de",
+   "inicio": 14.02,
+   "fin": 14.1,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "militare'",
+   "inicio": 14.18,
+   "fin": 15.14,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "Antiperico",
+   "inicio": 15.56,
+   "fin": 16.3,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "cruzando",
+   "inicio": 16.379,
+   "fin": 16.88,
+   "frase": 8,
+   "clave": true
+  },
+  {
+   "texto": "los",
+   "inicio": 16.94,
+   "fin": 17.16,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "mares",
+   "inicio": 17.26,
+   "fin": 18.04,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "Mucho",
+   "inicio": 18.1,
+   "fin": 18.38,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "dinero,",
+   "inicio": 18.42,
+   "fin": 18.86,
+   "frase": 9,
+   "clave": true
+  },
+  {
+   "texto": "nivel",
+   "inicio": 18.96,
+   "fin": 19.24,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "de",
+   "inicio": 19.28,
+   "fin": 19.4,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "los",
+   "inicio": 19.46,
+   "fin": 19.6,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "blindaje'",
+   "inicio": 19.64,
+   "fin": 20.6,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "No",
+   "inicio": 20.84,
+   "fin": 20.92,
+   "frase": 10,
+   "clave": false
+  },
+  {
+   "texto": "se",
+   "inicio": 20.98,
+   "fin": 21.08,
+   "frase": 10,
+   "clave": false
+  },
+  {
+   "texto": "resbale",
+   "inicio": 21.14,
+   "fin": 22.04,
+   "frase": 10,
+   "clave": true
+  },
+  {
+   "texto": "En",
+   "inicio": 23.82,
+   "fin": 23.9,
+   "frase": 11,
+   "clave": false
+  },
+  {
+   "texto": "la",
+   "inicio": 23.94,
+   "fin": 24.06,
+   "frase": 11,
+   "clave": false
+  },
+  {
+   "texto": "BM",
+   "inicio": 24.1,
+   "fin": 24.4,
+   "frase": 11,
+   "clave": false
+  },
+  {
+   "texto": "no",
+   "inicio": 24.48,
+   "fin": 24.58,
+   "frase": 11,
+   "clave": false
+  },
+  {
+   "texto": "desquilo,",
+   "inicio": 24.62,
+   "fin": 25.02,
+   "frase": 11,
+   "clave": false
+  },
+  {
+   "texto": "aterrizo",
+   "inicio": 25.04,
+   "fin": 25.76,
+   "frase": 11,
+   "clave": true
+  },
+  {
+   "texto": "Tu",
+   "inicio": 26.84,
+   "fin": 26.92,
+   "frase": 12,
+   "clave": false
+  },
+  {
+   "texto": "puta",
+   "inicio": 26.98,
+   "fin": 27.28,
+   "frase": 12,
+   "clave": false
+  },
+  {
+   "texto": "conmigo",
+   "inicio": 27.32,
+   "fin": 27.76,
+   "frase": 12,
+   "clave": false
+  },
+  {
+   "texto": "se",
+   "inicio": 27.84,
+   "fin": 27.94,
+   "frase": 12,
+   "clave": false
+  },
+  {
+   "texto": "mojó",
+   "inicio": 28.02,
+   "fin": 28.28,
+   "frase": 12,
+   "clave": true
+  },
+  {
+   "texto": "No",
+   "inicio": 29.4,
+   "fin": 29.5,
+   "frase": 13,
+   "clave": false
+  },
+  {
+   "texto": "se",
+   "inicio": 29.56,
+   "fin": 29.64,
+   "frase": 13,
+   "clave": false
+  },
+  {
+   "texto": "esconde,",
+   "inicio": 29.68,
+   "fin": 29.98,
+   "frase": 13,
+   "clave": true
+  },
+  {
+   "texto": "tomó,",
+   "inicio": 30.06,
+   "fin": 30.32,
+   "frase": 13,
+   "clave": false
+  },
+  {
+   "texto": "se",
+   "inicio": 30.4,
+   "fin": 30.48,
+   "frase": 13,
+   "clave": false
+  },
+  {
+   "texto": "emborrachó",
+   "inicio": 30.48,
+   "fin": 31.22,
+   "frase": 13,
+   "clave": false
+  },
+  {
+   "texto": "Se",
+   "inicio": 32.28,
+   "fin": 32.38,
+   "frase": 14,
+   "clave": false
+  },
+  {
+   "texto": "toca",
+   "inicio": 32.46,
+   "fin": 32.64,
+   "frase": 14,
+   "clave": false
+  },
+  {
+   "texto": "el",
+   "inicio": 32.68,
+   "fin": 32.76,
+   "frase": 14,
+   "clave": false
+  },
+  {
+   "texto": "totito",
+   "inicio": 32.8,
+   "fin": 33.2,
+   "frase": 14,
+   "clave": true
+  },
+  {
+   "texto": "conmigo",
+   "inicio": 33.26,
+   "fin": 33.74,
+   "frase": 14,
+   "clave": false
+  },
+  {
+   "texto": "Conmigo,",
+   "inicio": 33.96,
+   "fin": 34.44,
+   "frase": 15,
+   "clave": false
+  },
+  {
+   "texto": "conmigo",
+   "inicio": 34.62,
+   "fin": 35.14,
+   "frase": 15,
+   "clave": true
+  }
+ ]
+}
