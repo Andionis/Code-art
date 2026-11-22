@@ -170,7 +170,7 @@ export function paisaje(g, c, t, o = {}) {
     g.beginPath(); g.moveTo(ra.x, ra.y); g.lineTo(rb.x, rb.y); g.lineTo(rd.x, rd.y); g.lineTo(rc.x, rc.y); g.closePath(); g.fill();
     // la corriente: rayas de luz que bajan hacia el mar
     const fase = (z0 + t * (o.velRio ?? 6)) * 0.5;
-    if (Math.sin(fase) > 0.75 && z0 < 140) {
+    if (Math.sin(fase) > 0.75 && z0 < 140 && z0 - c.z > 6) {
       g.strokeStyle = `rgba(230,248,255,${0.35 * (1 - lej)})`; g.lineWidth = Math.max(1, a.s * 0.12);
       g.beginPath(); g.moveTo(mez(ra.x, rb.x, 0.3), ra.y); g.lineTo(mez(ra.x, rb.x, 0.62), ra.y); g.stroke();
     }
@@ -188,7 +188,9 @@ export function paisaje(g, c, t, o = {}) {
     const X = rioX(a.z) + a.lado * (rioAncho(a.z) / 2 + a.d);
     const P = pp(c, X, 0, a.z);
     if (!P || P.y > 1990) continue;
-    arbol(g, P.x, P.y, P.s * a.t, os, Math.min(1, (MONTE - a.z) / 30));
+    const tam = P.s * a.t;
+    if (tam > 260) continue;
+    arbol(g, P.x, P.y, tam, os, Math.min(1, (MONTE - a.z) / 30) * Math.min(1, (260 - tam) / 80));
   }
   // los brillos del río y los granos de sal que bajan
   g.save(); g.globalCompositeOperation = "lighter";
@@ -200,19 +202,19 @@ export function paisaje(g, c, t, o = {}) {
     k.brillo(g, P.x, P.y, Math.max(6, P.s * 0.5), "235,250,255", al);
   }
   g.restore();
-  if (o.sal > 0) for (const q of GRANOS_RIO) {
-    let z = (q.z0 - t * q.v * (o.velSal ?? 1)) % 200; if (z < 0) z += 200;
-    z += 2;
+  if (o.sal > 0) for (const [iq, q] of GRANOS_RIO.entries()) {
+    if (iq / GRANOS_RIO.length >= (o.nSal ?? 1)) continue;
+    let z = (q.z0 * 0.4 - t * q.v * (o.velSal ?? 1)) % 80; if (z < 0) z += 80;
+    z += Math.max(COSTA, c.z) + 1;
     if (z < Zcerca) continue;
     const P = pp(c, rioX(z) + q.u * rioAncho(z), 0.1, z);
     if (!P) continue;
-    grano(g, P.x, P.y, Math.max(2.5, P.s * 0.22), t, q.sem, o.sal * Math.min(1, z / 6));
+    grano(g, P.x, P.y, Math.min(60, Math.max(3, P.s * 0.3)), t, q.sem, o.sal * Math.min(1, (z - c.z - 0.6) / 1.5) * Math.min(1, (80 - (z - Math.max(COSTA, c.z))) / 15));
   }
 
   // el mar, delante de la costa
   const C = pp(c, 0, 0, COSTA);
   if (C && C.y < 1920 + 10) mar(g, c, t, C.y, o);
-  else if (!C) mar(g, c, t, c.hy, o);
 }
 const ARBOLES = (() => { const a = azar(5150), l = []; for (let i = 0; i < 110; i++) l.push({ z: 4 + Math.pow(a(), 1.6) * 200, lado: a() < 0.5 ? -1 : 1, d: 1 + a() * 22, t: 1.2 + a() * 1.4 }); return l.sort((p, q) => q.z - p.z); })();
 function arbol(g, x, y, r, os, al) {
@@ -286,12 +288,12 @@ function mar(g, c, t, y0, o) {
   g.restore();
   if (o.salMar > 0) {
     const a = azar(4141);
-    for (let i = 0; i < 160; i++) {
-      const X = (a() - 0.5) * 70 + c.x, Z = COSTA - 1 - a() * 45, d = a();
+    for (let i = 0; i < 90; i++) {
+      const X = (a() - 0.5) * 60 + c.x, Z = COSTA - 3 - a() * 60, d = a();
       if (d > o.salMar) continue;
       const P = pp(c, X, -0.2, Z);
       if (!P || P.y < y0 + 4) continue;
-      grano(g, P.x, P.y, Math.max(2.5, P.s * 0.18), t, i * 13, Math.min(1, (o.salMar - d) * 6) * (o.salMarAl ?? 1));
+      grano(g, P.x, P.y, Math.min(40, Math.max(3, P.s * 0.4)), t, i * 13, Math.min(1, (o.salMar - d) * 6) * (o.salMarAl ?? 1));
     }
   }
 }

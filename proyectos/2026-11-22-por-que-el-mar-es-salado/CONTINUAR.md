@@ -24,7 +24,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 - [x] 4. El plan → plan.md, con sus escenas
 - [ ] 5. Escena por escena (cada una, su borrador aprobado):
   - [x] escena 1: el hook (frases 1-2), hasta 6,1 s; v1 aprobada («Si»)
-  - [ ] escena 2: la lluvia y las rocas (3-5), hasta 22,0 s
+  - [x] escena 2: la lluvia y las rocas (3-5), hasta 22,0 s; v2 aprobada («Continúa»)
   - [ ] escena 3: río, sol y nubes (6-8), hasta 38,5 s
   - [ ] escena 4: el fondo del mar (9), hasta 45,7 s
   - [ ] escena 5: millones de años (10-11), hasta 59,8 s
