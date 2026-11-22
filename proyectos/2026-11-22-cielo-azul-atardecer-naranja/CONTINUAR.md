@@ -4,6 +4,8 @@ Este archivo es la memoria del proyecto. En una conversación nueva basta con le
 pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Lo decidido (con las palabras del creador)
+- Duración: «Que dure más minutos» → versión de unos 2 min.
+- Formato: video explicativo (no lyric), voz Liam (plan gratis).
 
 -
 

@@ -10,3 +10,10 @@
 - El azul se dispersa por el camino; llegan amarillo, naranja y rojo. — scijinks.gov, NASA Space Place
 - Con polvo o contaminación, atardeceres más intensos. — NASA Space Place (no va en el guion)
 - Comparación de casa: agua con unas gotas de leche + linterna: de lado azulada, a través naranja (experimento clásico de dispersión). Cuidado: con leche se ve tenue; se dice «azulada».
+
+## Para la versión larga (~2 min, pedida por el creador: «Que dure más minutos»)
+- Violeta: se dispersa aún más que el azul, pero el Sol emite menos violeta y el ojo es menos sensible a él. — scijinks.gov; Scientific American (https://www.scientificamerican.com/article/why-is-the-sky-blue)
+- Sin atmósfera no hay dispersión: en la Luna el cielo es negro aunque sea de día. — NASA Space Place
+- Polvo, humo y contaminación dispersan más azul → atardeceres más rojos/intensos. — NASA Space Place
+- Nubes blancas: las gotitas son mucho más grandes que la longitud de onda y dispersan todos los colores casi por igual. — NOAA/scijinks; UCAR (https://scied.ucar.edu/learning-zone/atmosphere/appearance-sky)
+- Marte: cielo de día color caramelo (polvo fino); atardeceres azulados. — NASA Space Place / misiones Curiosity e InSight. Cuidado: «azulados» alrededor del Sol, no todo el cielo.
