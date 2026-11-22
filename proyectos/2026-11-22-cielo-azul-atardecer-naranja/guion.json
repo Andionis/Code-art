@@ -1,0 +1,21 @@
+{
+  "titulo": "Por qué el cielo es azul y el atardecer naranja",
+  "idioma": "es",
+  "subtitulos": "arriba",
+  "voz": { "id": "TX3LPaxmHKxFdv7VOQHJ" },
+  "frases": [
+    { "texto": "¿Por qué el cielo es azul, pero al atardecer se pone naranja?", "clave": "naranja", "hook": true },
+    { "texto": "Es la misma luz del Sol. Lo único que cambia es cuánto aire tiene que cruzar.", "clave": "aire", "hook": true },
+    { "texto": "La luz del Sol parece blanca, pero trae todos los colores mezclados.", "clave": "colores" },
+    { "texto": "Al entrar en el aire, choca con millones de partículas diminutas y rebota, como una bola de pinball.", "clave": "rebota" },
+    { "texto": "Y el azul rebota mucho más que el rojo: más de cinco veces.", "clave": "cinco" },
+    { "texto": "Así que el azul sale disparado para todos lados y llena el cielo entero. Mires donde mires, ves azul.", "clave": "azul" },
+    { "texto": "Pero al atardecer el Sol está bajito, y su luz cruza casi cuarenta veces más aire para llegar hasta ti.", "clave": "cuarenta" },
+    { "texto": "En ese camino tan largo, el azul se va rebotando y se pierde antes de llegar.", "clave": "pierde" },
+    { "texto": "Lo que sí llega son los colores que casi no rebotan: el amarillo, el naranja y el rojo.", "clave": "rojo" },
+    { "texto": "Lo puedes ver con un vaso de agua, unas gotas de leche y la linterna del celular.", "clave": "leche" },
+    { "texto": "De lado, el agua se ve azulada. Mirando la luz de frente, naranja: un atardecer en un vaso.", "clave": "vaso" },
+    { "texto": "Así que el atardecer no pinta el cielo de otro color: es la misma luz, que perdió su azul en el camino.", "clave": "camino" },
+    { "texto": "Envíaselo a un amigo que le pueda interesar.", "clave": "amigo" }
+  ]
+}
