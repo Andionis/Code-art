@@ -51,11 +51,14 @@ const rgb = (c, a = 1) => `rgba(${c[0]},${c[1]},${c[2]},${a})`;
 function fondo(g, t, col, b) {
   const zoom = 1.04 + 0.04 * b;
   if (cuadros.length) {
-    const N = cuadros.length, per = Math.max(1, 2 * (N - 1)), q = Math.floor(t * FPS_FONDO * VEL) % per;
-    const img = cuadros[q < N ? q : per - q]; // ida y vuelta (hacia delante y en reverso), más lento
+    // ida y vuelta (hacia delante y en reverso), más lento; entre dos fotogramas, mezclados para que no dé tirones
+    const N = cuadros.length, per = Math.max(1, 2 * (N - 1)), pos = t * FPS_FONDO * VEL;
+    const idx = (q) => { q = ((q % per) + per) % per; return q < N ? q : per - q; };
+    const q0 = Math.floor(pos), fr = pos - q0;
     g.save();
     g.translate(540, 960); g.scale(zoom, zoom); g.translate(-540, -960);
-    g.drawImage(img, 0, 0, 1080, 1920);
+    g.drawImage(cuadros[idx(q0)], 0, 0, 1080, 1920);
+    if (fr > 0.01) { g.globalAlpha = fr; g.drawImage(cuadros[idx(q0 + 1)], 0, 0, 1080, 1920); g.globalAlpha = 1; }
     g.restore();
   } else {
     // sin video de fondo: un degradado oscuro con el color de la línea

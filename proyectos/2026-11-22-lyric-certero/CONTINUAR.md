@@ -36,3 +36,4 @@ Abre una conversación nueva en la carpeta CODE ART y escribe: **«continúa el 
 - [x] Borrador v3: los «Brr» en pantalla (15,2 s y 22,1 s, a mano en voz/tiempos.json y guion.json) — revisar/Certero v3 (borrador).mp4
 - [x] Borrador v4: letra más chica (50/66 px) y en una sola línea (las largas, en 2 pantallas parejas); fondo en ida y vuelta (reverso) al 0,75 — en video/planos/01-letra.js ("lyric".velocidad) — revisar/Certero v4 (borrador).mp4
 - [x] Borrador v5: una palabra por pantalla, mismo tamaño que v4 — revisar/Certero v5 (borrador).mp4
+- [x] Aprobado v5. Final a 60 fps (fondo con fotogramas mezclados, sin tirones): salida/2026-11-22-lyric-certero/Certero (letra).mp4. Sin miniatura ni descripciones (lo pidió).
