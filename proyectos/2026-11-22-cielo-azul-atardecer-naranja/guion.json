@@ -25,7 +25,7 @@
       "clave": "ondas"
     },
     {
-      "texto": "Al entrar en el aire, la luz choca con millones de partículas diminutas, mucho más chiquitas que una gota de agua.",
+      "texto": "Al entrar en el aire, la luz choca con millones de partículas diminutas.",
       "clave": "partículas"
     },
     {
@@ -33,24 +33,8 @@
       "clave": "cinco"
     },
     {
-      "texto": "Así que el azul sale disparado para todos lados y llena el cielo entero. Mires donde mires, ves azul.",
+      "texto": "Así que el azul sale disparado para todos lados y llena el cielo entero.",
       "clave": "azul"
-    },
-    {
-      "texto": "¿Y el violeta? Sus ondas son aún más cortas, y rebota todavía más.",
-      "clave": "violeta"
-    },
-    {
-      "texto": "Pero el Sol manda menos violeta, y tus ojos lo ven peor. Por eso el cielo no te parece morado.",
-      "clave": "ojos"
-    },
-    {
-      "texto": "Y si subes por encima del aire, ya no hay nada con que rebotar: el cielo se vuelve negro, aunque el Sol esté brillando.",
-      "clave": "negro"
-    },
-    {
-      "texto": "Así lo ven los astronautas desde la Luna: un Sol encendido en un cielo negro.",
-      "clave": "Luna"
     },
     {
       "texto": "Pero al atardecer el Sol está bajito, y su luz cruza casi cuarenta veces más aire para llegar hasta ti.",
@@ -65,10 +49,6 @@
       "clave": "rojo"
     },
     {
-      "texto": "Por eso, cuando hay polvo o humo en el aire, los atardeceres se ven todavía más rojos.",
-      "clave": "humo"
-    },
-    {
       "texto": "¿Y las nubes? Sus gotitas son mucho más grandes, y rebotan todos los colores por igual. Todos juntos: blanco.",
       "clave": "blanco"
     },
@@ -79,10 +59,6 @@
     {
       "texto": "De lado, el agua se ve azulada. Mirando la luz de frente, naranja: un atardecer en un vaso.",
       "clave": "vaso"
-    },
-    {
-      "texto": "Y en Marte pasa al revés: su cielo de día es color caramelo, y sus atardeceres son azules.",
-      "clave": "Marte"
     },
     {
       "texto": "Así que el atardecer no pinta el cielo de otro color: es la misma luz, que perdió su azul en el camino.",

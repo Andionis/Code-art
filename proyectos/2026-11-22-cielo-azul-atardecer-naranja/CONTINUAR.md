@@ -4,6 +4,7 @@ Este archivo es la memoria del proyecto. En una conversación nueva basta con le
 pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Lo decidido (con las palabras del creador)
+- «Lo quiero de 1:20 minutos» → guion recortado a ~1:20 (15 frases).
 - Cierre de este video: «Él envíaselo a un amigo por síguenos para más videos y ponle al final seguir en pantalla» → «Síguenos para más videos.» con el botón SEGUIR en pantalla (#piezas/boton-comprar.js / planos/comprar.js).
 - «Y sin marca de agua»: este video va sin la marca Michi Lyrics.
 - «Necesito que el video dure más de 1 minuto. Que sea como los videos explicativos que has hecho» (como el de los mocos).
