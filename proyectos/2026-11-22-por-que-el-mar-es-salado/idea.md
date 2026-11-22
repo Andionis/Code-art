@@ -19,8 +19,9 @@ se queda, y así durante millones de años.
   3. Los ríos no saben salados porque la lluvia los rellena todo el rato de agua dulce y llevan muy poca sal. — NOAA,
      «Why are rivers not salty?» (oceanservice.noaa.gov/facts/riversnotsalty.html).
   4. En el mar, el agua se evapora y la sal se queda: se ha ido acumulando. — USGS; NOAA.
-  5. También aportan minerales las fuentes hidrotermales y los volcanes del fondo del mar. — USGS; NOAA. (No va en el
-     guion: no cambia la respuesta.)
+  5. También aportan minerales las fuentes hidrotermales y los volcanes del fondo del mar. — USGS; NOAA. (Va en el guion v2, como segundo «¡hala!».)
+- La mayor parte de la sal del mar es sodio y cloruro, los ingredientes de la sal de mesa. — NOAA, «Why are rivers
+  not salty?».
 - **Las cifras:**
   - El agua de mar tiene de media unos 35 g de sal por litro (3,5 %). — USGS; NOAA. Una cucharada sopera de sal pesa
     unos 17-18 g → «casi dos cucharadas por litro».

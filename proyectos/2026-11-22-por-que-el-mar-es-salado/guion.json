@@ -6,13 +6,15 @@
     { "texto": "¿Por qué el mar es salado, si los ríos que lo llenan son de agua dulce?", "clave": "salado", "hook": true },
     { "texto": "La culpa es de la lluvia.", "clave": "lluvia", "hook": true },
     { "texto": "Al caer, cada gota atrapa un poco del aire y se vuelve un poquito ácida, como el agua con gas.", "clave": "ácida" },
-    { "texto": "Así, gota a gota, va deshaciendo las rocas y les arranca sus minerales, entre ellos la sal.", "clave": "rocas" },
-    { "texto": "Los ríos se llevan esa sal hasta el mar, pero tan poquita que ni la notas.", "clave": "ríos" },
+    { "texto": "Así, gota a gota, va deshaciendo las rocas de las montañas y les arranca sus minerales.", "clave": "rocas" },
+    { "texto": "Y entre esos minerales está la misma sal que tienes en el salero de tu cocina.", "clave": "salero" },
+    { "texto": "Los ríos se llevan esa sal hasta el mar, pero tan poquita que ni la notas al probarlos.", "clave": "ríos" },
     { "texto": "Y en el mar, el sol calienta el agua y la evapora, pero la sal no se va con ella: se queda.", "clave": "queda" },
-    { "texto": "Ese vapor vuelve a ser lluvia, y la lluvia trae más sal.", "clave": "más" },
-    { "texto": "Repite eso millones de años, y hoy cada litro de mar tiene casi dos cucharadas de sal.", "clave": "cucharadas" },
-    { "texto": "Tanta, que repartida por todos los continentes haría una capa más alta que un edificio de cuarenta pisos.", "clave": "cuarenta" },
+    { "texto": "Ese vapor forma nubes, las nubes vuelven a ser lluvia, y la lluvia trae más sal.", "clave": "más" },
+    { "texto": "Y no solo llega desde arriba: en el fondo del mar hay volcanes y grietas que escupen agua hirviendo, cargada de minerales.", "clave": "volcanes" },
+    { "texto": "Repite todo eso durante millones de años, y hoy cada litro de mar tiene casi dos cucharadas de sal.", "clave": "cucharadas" },
+    { "texto": "Tanta, que si la sacaras toda y la repartieras por los continentes, haría una capa más alta que un edificio de cuarenta pisos.", "clave": "cuarenta" },
     { "texto": "Así que lo que sala el mar es justo lo más dulce que tiene: la lluvia.", "clave": "lluvia" },
-    { "texto": "Envíaselo a un amigo que le pueda interesar.", "clave": "amigo" }
+    { "texto": "Síguenos para más videos.", "clave": "Síguenos" }
   ]
 }

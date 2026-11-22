@@ -6,10 +6,13 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 ## Lo decidido (con las palabras del creador)
 
 - «¿Por qué el mar es salado?»: video explicativo (no lyric), estilo CODE ART 2D.
+- «Necesito que el video dure más de 1 minuto. Que sea como los videos explicativos que has hecho.»
+- «Cámbiale el envíaselo a un amigo por síguenos para más videos y ponle al final seguir en pantalla»: cierre
+  «Síguenos para más videos» con un botón «Seguir» en pantalla al final.
 
 ## Pendiente del creador
 
-- Aprobar el guion (v1).
+- Aprobar el guion (v2).
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
