@@ -53,7 +53,14 @@ export function dibuja(g, t) {
   // la lluvia y la gota que llega a la cámara
   lluvia(g, t, su(tr(t, Tllu - 0.1, Tllu + 0.35)) * 0.9, Tllu);
   const ug = tr(t, Tfin - 0.5, Tfin);
-  if (ug > 0) gotaQueLlega(g, k.sale(ug));
+  if (ug > 0) {
+    // el cielo de tormenta del plano siguiente va llegando detrás de la gota
+    const os2 = su(tr(t, Tfin - 0.45, Tfin));
+    const gr = g.createLinearGradient(0, 0, 0, 1920);
+    gr.addColorStop(0, `rgba(38,50,74,${os2})`); gr.addColorStop(0.6, `rgba(60,76,102,${os2})`); gr.addColorStop(1, `rgba(92,111,138,${os2})`);
+    g.fillStyle = gr; g.fillRect(0, 0, 1080, 1920);
+    gotaQueLlega(g, k.sale(ug));
+  }
   // la ola que revienta contra la pantalla y se escurre
   ola(g, t);
   // los cristales de sal pegados al cristal
@@ -63,7 +70,7 @@ export function dibuja(g, t) {
     const y = q.y + q.baja * Math.min(1.8, escurre) * 0.5 + 900 * sale * sale;
     grano(g, q.x, y, q.r, t, q.sem, su(tr(escurre, q.d * 0.2, q.d * 0.2 + 0.2)) * (1 - sale), 1.3);
   }
-  velo(g, 0.35 + 0.25 * su(tr(t, Tcul, Tllu)));
+  velo(g, 0.35 + 0.25 * su(tr(t, Tcul, Tllu)) * (1 - su(tr(t, Tfin - 0.45, Tfin))));
   marcaDeAgua(g);
 }
 
@@ -111,7 +118,7 @@ function ola(g, t) {
 
 // Una gota que viene del cielo hacia el centro y crece hasta llenar la pantalla.
 function gotaQueLlega(g, u) {
-  const r = mez(10, 1300, u * u), x = 540, y = mez(500, 1000, u);
+  const r = mez(10, 1300, u * u), x = 540, y = mez(500, 1150, u);
   gotaGrande(g, x, y, r, u);
 }
 export function gotaGrande(g, x, y, r, brillo = 0) {
