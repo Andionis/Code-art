@@ -27,9 +27,9 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 ## Para seguir en un chat nuevo
 
 Abre una conversación nueva en la carpeta CODE ART y escribe: **«continúa el proyecto 2026-11-22-lyric-certero»**.
-
 ## Este video
 - Canción: el audio del video de TikTok que mandó (0 → 35,3 s; después viene el cierre de TikTok, fuera).
 - Sin marca de agua y **sin latidos** (pedido): audio/golpes.json renombrado a golpes-sin-usar.json → sin zoom ni destellos al ritmo.
-- Letra sacada a oído (speech-to-text); la última línea, recolocada a mano en voz/tiempos.json (33,96-35,14).
-- [x] Borrador v1: revisar/Certero v1 (borrador).mp4 — pendiente de aprobar / corregir letra.
+- Letra: la del creador (v2).
+- [x] Borrador v1 (letra a oído)
+- [x] Borrador v2: con su letra — revisar/Certero v2 (borrador).mp4

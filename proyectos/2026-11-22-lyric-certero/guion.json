@@ -8,65 +8,61 @@
       "clave": "certero"
     },
     {
-      "texto": "Por money yo te caso primero",
-      "clave": "money"
+      "texto": "Pa' morirme yo te cazo primero",
+      "clave": "morirme"
     },
     {
-      "texto": "Por la de ella yo no copero",
-      "clave": "copero"
+      "texto": "Con la DEA yo no coopero",
+      "clave": "dea"
     },
     {
-      "texto": "No traiciono por putas ni dinero",
+      "texto": "No traiciono por puta' ni dinero",
       "clave": "traiciono"
     },
     {
-      "texto": "Guerrero",
+      "texto": "Guerrero, escare'",
       "clave": "guerrero"
     },
     {
-      "texto": "Scare, migración",
-      "clave": "migracion"
+      "texto": "Mis brazos armado' disfrazado' de militare'",
+      "clave": "armado"
     },
     {
-      "texto": "Mago disfraza'o de militare'",
-      "clave": "mago"
+      "texto": "Fenta y perico cruzando los mare'",
+      "clave": "fenta"
     },
     {
-      "texto": "Antiperico cruzando los mares",
-      "clave": "cruzando"
-    },
-    {
-      "texto": "Mucho dinero, nivel de los blindaje'",
+      "texto": "Mucho dinero, nivel 10 los blindaje'",
       "clave": "dinero"
     },
     {
-      "texto": "No se resbale",
-      "clave": "resbale"
+      "texto": "No se resbalen",
+      "clave": "resbalen"
     },
     {
-      "texto": "En la BM no desquilo, aterrizo",
-      "clave": "aterrizo"
+      "texto": "El avión lleno de kilo' aterrizó",
+      "clave": "avion"
     },
     {
       "texto": "Tu puta conmigo se mojó",
       "clave": "mojo"
     },
     {
-      "texto": "No se esconde, tomó, se emborrachó",
-      "clave": "esconde"
+      "texto": "No sé cuánto tomó, se emborrachó",
+      "clave": "emborracho"
     },
     {
-      "texto": "Se toca el totito conmigo",
+      "texto": "Se tocó el totito con mi Glock",
       "clave": "totito"
     },
     {
-      "texto": "Conmigo, conmigo",
-      "clave": "conmigo"
+      "texto": "Con mi Glock, con mi Glock",
+      "clave": "glock"
     }
   ],
   "lyric": {
     "bn": true,
-    "funde": 34.85,
+    "funde": 35.1,
     "marca": false
   }
 }
