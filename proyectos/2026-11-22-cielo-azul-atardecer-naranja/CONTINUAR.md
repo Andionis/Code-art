@@ -25,7 +25,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 - [x] 4. El plan → plan.md, con sus escenas
 - [ ] 5. Escena por escena (cada una, su borrador aprobado):
   - [x] escena 1: el hook (0–8,6 s)
-  - [ ] escena 2: la luz y sus colores (hasta 21,3)
+  - [x] escena 2: la luz y sus colores (hasta 21,3)
   - [ ] escena 3: dentro del aire, el cielo azul (hasta 36,3)
   - [ ] escena 4: el atardecer (hasta 52,7)
   - [ ] escena 5: las nubes y el vaso (hasta 71,5)
