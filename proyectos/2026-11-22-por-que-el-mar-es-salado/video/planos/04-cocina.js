@@ -5,7 +5,6 @@
 // - «salero»: deja de sacudirse; los últimos granos caen y todo reposa antes del corte.
 import * as k from "#kit";
 import { v } from "#voz";
-import { marcaDeAgua } from "#piezas/marca-agua.js";
 import { grano, velo } from "../mundo.js";
 
 export const desde = "misma";
@@ -60,7 +59,6 @@ export function dibuja(g, t) {
   }
   salero(g, sx, sy, ang);
   velo(g, 0.3);
-  marcaDeAgua(g);
 }
 
 // El salero: un cuerpo de vidrio lleno de sal con tapa de metal agujereada, girado ang (la tapa hacia arriba en 0).

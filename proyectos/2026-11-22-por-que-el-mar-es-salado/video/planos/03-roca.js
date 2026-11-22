@@ -9,7 +9,6 @@
 //   centro y se queda girando despacio antes del corte.
 import * as k from "#kit";
 import { v } from "#voz";
-import { marcaDeAgua } from "#piezas/marca-agua.js";
 import { grano, lluvia, velo } from "../mundo.js";
 
 export const desde = "asi";
@@ -108,7 +107,6 @@ export function dibuja(g, t) {
   // la lluvia, delante (se va cuando entra hacia el cristal)
   lluvia(g, t, 0.75 * (1 - enfoca), 0);
   velo(g, 0.4);
-  marcaDeAgua(g);
 }
 
 // La ladera: roca gris azulada con luz de arriba a la izquierda, textura, grietas y vetas de colores.

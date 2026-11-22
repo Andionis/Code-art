@@ -7,7 +7,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 - «¿Por qué el mar es salado?»: video explicativo (no lyric), estilo CODE ART 2D.
 - Guion v2 aprobado («Apruebo»). Voz: Liam (TX3LPaxmHKxFdv7VOQHJ), porque el plan gratis de ElevenLabs no deja usar
-  Antonio. Marca de agua «Michi Lyrics» en cada plano.
+  Antonio. Sin marca de agua en este video: «Quita la marca de agua».
 - «Necesito que el video dure más de 1 minuto. Que sea como los videos explicativos que has hecho.»
 - «Cámbiale el envíaselo a un amigo por síguenos para más videos y ponle al final seguir en pantalla»: cierre
   «Síguenos para más videos» con un botón «Seguir» en pantalla al final.

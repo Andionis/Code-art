@@ -6,7 +6,6 @@
 // - «gas»: dentro, las burbujas suben como en un vaso de agua con gas; frenan antes del corte.
 import * as k from "#kit";
 import { v } from "#voz";
-import { marcaDeAgua } from "#piezas/marca-agua.js";
 import { nube, velo } from "../mundo.js";
 import { gotaGrande } from "./01-hook.js";
 
@@ -107,7 +106,6 @@ export function dibuja(g, t0) {
   });
   g.restore();
   velo(g, 0.35);
-  marcaDeAgua(g);
 }
 
 function camino(g, x, y, r) {

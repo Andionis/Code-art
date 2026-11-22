@@ -8,7 +8,6 @@
 //   llega al centro y crece (el plano siguiente sigue con ella, sin corte).
 import * as k from "#kit";
 import { v } from "#voz";
-import { marcaDeAgua } from "#piezas/marca-agua.js";
 import { camPaisaje, paisaje, grano, lluvia, velo, pp, rioX } from "../mundo.js";
 
 export const desde = 0;
@@ -71,7 +70,6 @@ export function dibuja(g, t) {
     grano(g, q.x, y, q.r, t, q.sem, su(tr(escurre, q.d * 0.2, q.d * 0.2 + 0.2)) * (1 - sale), 1.3);
   }
   velo(g, 0.35 + 0.25 * su(tr(t, Tcul, Tllu)) * (1 - su(tr(t, Tfin - 0.45, Tfin))));
-  marcaDeAgua(g);
 }
 
 // La ola: una pared de agua que sube desde abajo, se curva arriba con espuma y tapa la pantalla; en «salado» revienta
