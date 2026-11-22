@@ -48,7 +48,7 @@ export function dibuja(g, t) {
   const gira = su(tr(t, Tmir - 0.25, Tfre + 0.45)); // la cámara gira alrededor del vaso
   const luz = su(tr(t, Tlin - 0.1, Tlin + 0.25));
   const leche = su(tr(t, Tlec, Tlin + 0.6));
-  const acerca = mez(1, 1.12, su(tr(t, T0, Tlin + 1)));
+  const acerca = mez(1, 1.12, su(tr(t, T0 - 0.3, Tlin + 1))) * mez(1, 1.15, su(tr(t, Tnar - 0.4, Tfin + 0.3)));
   g.save(); g.translate(540, 1150); g.scale(acerca, acerca); g.translate(-540, -1150);
   // la habitación
   const bg = g.createRadialGradient(540, 900, 100, 540, 900, 1300);
@@ -73,7 +73,7 @@ export function dibuja(g, t) {
   g.fillStyle = sombra; g.beginPath(); g.ellipse(GX, GB + 10, GW * 1.3, 40, 0, 0, Math.PI * 2); g.fill();
   const cuerpo = (path) => { g.beginPath(); g.moveTo(GX - GW, GT); g.lineTo(GX - GW * 0.86, GB - 30); g.quadraticCurveTo(GX - GW * 0.84, GB, GX - GW * 0.7, GB); g.lineTo(GX + GW * 0.7, GB); g.quadraticCurveTo(GX + GW * 0.84, GB, GX + GW * 0.86, GB - 30); g.lineTo(GX + GW, GT); if (path) g.closePath(); };
   // el agua: algo lechosa; azulada de lado donde pasa el haz, naranja de frente
-  const ola = 6 * Math.sin(t * 3);
+  const ola = 9 * Math.sin(t * 3.4);
   g.save(); cuerpo(true); g.clip();
   const ag = g.createLinearGradient(0, AGUA, 0, GB);
   ag.addColorStop(0, `rgba(${k.mezRgb("90,130,190", "235,235,240", leche * 0.6)},0.55)`); ag.addColorStop(1, `rgba(${k.mezRgb("40,70,130", "200,205,220", leche * 0.6)},0.7)`);
