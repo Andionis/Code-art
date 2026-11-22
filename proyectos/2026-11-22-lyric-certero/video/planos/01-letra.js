@@ -104,20 +104,8 @@ function maqueta(g, f) {
     g.font = fuente(tam);
     return { w, texto, ancho: g.measureText(texto).width, clave: w.clave, tam };
   });
-  const hueco = 22, total = ws.reduce((s, p) => s + p.ancho + hueco, -hueco);
-  // si no cabe, se parte en pantallas parejas (sin palabras sueltas)
-  let n = Math.ceil(total / MAXW), paginas;
-  for (;; n++) {
-    const meta = total / n;
-    paginas = []; let fila = null;
-    for (const p of ws) {
-      if (!fila || (fila.ancho + hueco + p.ancho > MAXW) || (fila.ancho > 0 && fila.ancho + hueco + p.ancho / 2 > meta && paginas.length < n)) {
-        fila = { tam: TAMC, palabras: [], ancho: -hueco }; paginas.push([fila]);
-      }
-      fila.palabras.push(p); fila.ancho += hueco + p.ancho;
-    }
-    if (paginas.length <= n || n > 6) break;
-  }
+  // una palabra por pantalla
+  const paginas = ws.map((p) => [{ tam: TAMC, palabras: [p], ancho: p.ancho }]);
   const m = paginas.map((fs) => {
     const alto = fs.reduce((s, r) => s + r.tam * 1.08, 0);
     let y = 1060 - alto / 2;
