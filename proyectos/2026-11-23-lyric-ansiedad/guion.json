@@ -1,0 +1,48 @@
+{
+  "titulo": "Lyric video lyric-ansiedad",
+  "idioma": "es",
+  "subtitulos": "no",
+  "frases": [
+    {
+      "texto": "Me desespero cuando no contesta', me está matando esta ansiedad",
+      "clave": "desespero"
+    },
+    {
+      "texto": "Me pregunto cómo estás, qué haces y dónde estás",
+      "clave": "pregunto"
+    },
+    {
+      "texto": "El tiempo corriendo sin ti, el mundo no para de girar",
+      "clave": "tiempo"
+    },
+    {
+      "texto": "Toa' estas putas me hacen venir, pero no me dan felicidad",
+      "clave": "felicidad"
+    },
+    {
+      "texto": "En el pasado me estanco",
+      "clave": "estanco"
+    },
+    {
+      "texto": "Pa' despejar la mente voy con mi rifle a tirar al blanco",
+      "clave": "rifle"
+    },
+    {
+      "texto": "No entiende', yo siempre paso la página, y otras vece' la arranco",
+      "clave": "pagina"
+    },
+    {
+      "texto": "Esta vez se me fue la guagua y me quedé senta'o en el banco",
+      "clave": "guagua"
+    },
+    {
+      "texto": "Titanic, se me hundió el barco",
+      "clave": "titanic"
+    }
+  ],
+  "lyric": {
+    "bn": true,
+    "funde": 35.1,
+    "marca": false
+  }
+}

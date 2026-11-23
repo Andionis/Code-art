@@ -1,0 +1,701 @@
+{
+  "firma": "cancion",
+  "duracion": 35.3,
+  "frases": [
+    {
+      "n": 1,
+      "texto": "Me desespero cuando no contesta', me está matando esta ansiedad",
+      "clave": "desespero",
+      "inicio": 0.06,
+      "fin": 4.62
+    },
+    {
+      "n": 2,
+      "texto": "Me pregunto cómo estás, qué haces y dónde estás",
+      "clave": "pregunto",
+      "inicio": 4.82,
+      "fin": 9.22
+    },
+    {
+      "n": 3,
+      "texto": "El tiempo corriendo sin ti, el mundo no para de girar",
+      "clave": "tiempo",
+      "inicio": 9.58,
+      "fin": 13.62
+    },
+    {
+      "n": 4,
+      "texto": "Toa' estas putas me hacen venir, pero no me dan felicidad",
+      "clave": "felicidad",
+      "inicio": 13.86,
+      "fin": 18
+    },
+    {
+      "n": 5,
+      "texto": "En el pasado me estanco",
+      "clave": "estanco",
+      "inicio": 18.008,
+      "fin": 19.38
+    },
+    {
+      "n": 6,
+      "texto": "Pa' despejar la mente voy con mi rifle a tirar al blanco",
+      "clave": "rifle",
+      "inicio": 19.88,
+      "fin": 23.8
+    },
+    {
+      "n": 7,
+      "texto": "No entiende', yo siempre paso la página, y otras vece' la arranco",
+      "clave": "pagina",
+      "inicio": 24.16,
+      "fin": 28.46
+    },
+    {
+      "n": 8,
+      "texto": "Esta vez se me fue la guagua y me quedé senta'o en el banco",
+      "clave": "guagua",
+      "inicio": 28.66,
+      "fin": 33
+    },
+    {
+      "n": 9,
+      "texto": "Titanic, se me hundió el barco",
+      "clave": "titanic",
+      "inicio": 33.26,
+      "fin": 35.3
+    }
+  ],
+  "palabras": [
+    {
+      "texto": "Me",
+      "inicio": 0.06,
+      "fin": 0.18,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "desespero",
+      "inicio": 0.26,
+      "fin": 0.98,
+      "frase": 1,
+      "clave": true
+    },
+    {
+      "texto": "cuando",
+      "inicio": 1.02,
+      "fin": 1.38,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "no",
+      "inicio": 1.42,
+      "fin": 1.52,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "contesta',",
+      "inicio": 1.58,
+      "fin": 2.042,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "me",
+      "inicio": 2.16,
+      "fin": 2.24,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "está",
+      "inicio": 2.32,
+      "fin": 2.54,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "matando",
+      "inicio": 2.62,
+      "fin": 3.22,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "esta",
+      "inicio": 3.3,
+      "fin": 3.54,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "ansiedad",
+      "inicio": 3.58,
+      "fin": 4.62,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "Me",
+      "inicio": 4.82,
+      "fin": 4.94,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "pregunto",
+      "inicio": 4.98,
+      "fin": 5.64,
+      "frase": 2,
+      "clave": true
+    },
+    {
+      "texto": "cómo",
+      "inicio": 5.74,
+      "fin": 6.08,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "estás,",
+      "inicio": 6.16,
+      "fin": 6.86,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "qué",
+      "inicio": 7.24,
+      "fin": 7.4,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "haces",
+      "inicio": 7.44,
+      "fin": 7.84,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "y",
+      "inicio": 7.88,
+      "fin": 7.96,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "dónde",
+      "inicio": 8,
+      "fin": 8.34,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "estás",
+      "inicio": 8.38,
+      "fin": 9.22,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "El",
+      "inicio": 9.58,
+      "fin": 9.66,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "tiempo",
+      "inicio": 9.7,
+      "fin": 10.04,
+      "frase": 3,
+      "clave": true
+    },
+    {
+      "texto": "corriendo",
+      "inicio": 10.12,
+      "fin": 10.58,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "sin",
+      "inicio": 10.66,
+      "fin": 10.78,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "ti,",
+      "inicio": 10.86,
+      "fin": 11.02,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 11.2,
+      "fin": 11.32,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "mundo",
+      "inicio": 11.4,
+      "fin": 11.7,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "no",
+      "inicio": 11.76,
+      "fin": 11.88,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "para",
+      "inicio": 11.94,
+      "fin": 12.44,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 12.52,
+      "fin": 12.68,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "girar",
+      "inicio": 12.82,
+      "fin": 13.62,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "Toa'",
+      "inicio": 13.86,
+      "fin": 13.956,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "estas",
+      "inicio": 14,
+      "fin": 14.18,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "putas",
+      "inicio": 14.24,
+      "fin": 14.58,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "me",
+      "inicio": 14.64,
+      "fin": 14.76,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "hacen",
+      "inicio": 14.84,
+      "fin": 15.14,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "venir,",
+      "inicio": 15.22,
+      "fin": 15.54,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "pero",
+      "inicio": 15.64,
+      "fin": 15.86,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "no",
+      "inicio": 15.92,
+      "fin": 16.12,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "me",
+      "inicio": 16.2,
+      "fin": 16.3,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "dan",
+      "inicio": 16.5,
+      "fin": 16.7,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "felicidad",
+      "inicio": 16.78,
+      "fin": 18,
+      "frase": 4,
+      "clave": true
+    },
+    {
+      "texto": "En",
+      "inicio": 18.008,
+      "fin": 18.104,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 18.082,
+      "fin": 18.162,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "pasado",
+      "inicio": 18.082,
+      "fin": 18.42,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "me",
+      "inicio": 18.48,
+      "fin": 18.56,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "estanco",
+      "inicio": 18.6,
+      "fin": 19.38,
+      "frase": 5,
+      "clave": true
+    },
+    {
+      "texto": "Pa'",
+      "inicio": 19.88,
+      "fin": 20,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "despejar",
+      "inicio": 20.14,
+      "fin": 20.66,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 20.74,
+      "fin": 20.9,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "mente",
+      "inicio": 21.02,
+      "fin": 21.5,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "voy",
+      "inicio": 21.58,
+      "fin": 21.76,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "con",
+      "inicio": 21.82,
+      "fin": 21.94,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "mi",
+      "inicio": 21.98,
+      "fin": 22.08,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "rifle",
+      "inicio": 22.16,
+      "fin": 22.44,
+      "frase": 6,
+      "clave": true
+    },
+    {
+      "texto": "a",
+      "inicio": 22.48,
+      "fin": 22.56,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "tirar",
+      "inicio": 22.58,
+      "fin": 22.98,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "al",
+      "inicio": 23.08,
+      "fin": 23.18,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "blanco",
+      "inicio": 23.22,
+      "fin": 23.8,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "No",
+      "inicio": 24.16,
+      "fin": 24.24,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "entiende',",
+      "inicio": 24.26,
+      "fin": 24.669,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "yo",
+      "inicio": 24.78,
+      "fin": 24.88,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "siempre",
+      "inicio": 24.96,
+      "fin": 25.42,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "paso",
+      "inicio": 25.5,
+      "fin": 25.76,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 25.8,
+      "fin": 25.96,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "página,",
+      "inicio": 26.08,
+      "fin": 26.78,
+      "frase": 7,
+      "clave": true
+    },
+    {
+      "texto": "y",
+      "inicio": 26.84,
+      "fin": 26.92,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "otras",
+      "inicio": 26.96,
+      "fin": 27.25,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "vece'",
+      "inicio": 27.22,
+      "fin": 27.49,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 27.49,
+      "fin": 27.66,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "arranco",
+      "inicio": 27.68,
+      "fin": 28.46,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "Esta",
+      "inicio": 28.66,
+      "fin": 28.9,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "vez",
+      "inicio": 28.96,
+      "fin": 29.12,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "se",
+      "inicio": 29.2,
+      "fin": 29.28,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "me",
+      "inicio": 29.32,
+      "fin": 29.44,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "fue",
+      "inicio": 29.5,
+      "fin": 29.72,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 29.8,
+      "fin": 29.98,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "guagua",
+      "inicio": 30.04,
+      "fin": 30.48,
+      "frase": 8,
+      "clave": true
+    },
+    {
+      "texto": "y",
+      "inicio": 30.52,
+      "fin": 30.6,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "me",
+      "inicio": 30.66,
+      "fin": 30.8,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "quedé",
+      "inicio": 30.9,
+      "fin": 31.36,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "senta'o",
+      "inicio": 31.46,
+      "fin": 31.88,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "en",
+      "inicio": 31.94,
+      "fin": 32.04,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 32.119,
+      "fin": 32.28,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "banco",
+      "inicio": 32.36,
+      "fin": 33,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "Titanic,",
+      "inicio": 33.26,
+      "fin": 33.84,
+      "frase": 9,
+      "clave": true
+    },
+    {
+      "texto": "se",
+      "inicio": 33.9,
+      "fin": 34.06,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "me",
+      "inicio": 34.12,
+      "fin": 34.2,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "hundió",
+      "inicio": 34.18,
+      "fin": 34.42,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 34.46,
+      "fin": 34.56,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "barco",
+      "inicio": 34.62,
+      "fin": 35.3,
+      "frase": 9,
+      "clave": false
+    }
+  ]
+}
