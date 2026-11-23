@@ -1,0 +1,1023 @@
+{
+ "firma": "cancion",
+ "duracion": 35.1,
+ "frases": [
+  {
+   "n": 1,
+   "texto": "Otra ve', otro día, otra noche en Miami",
+   "clave": "miami",
+   "inicio": 0.84,
+   "fin": 3.38
+  },
+  {
+   "n": 2,
+   "texto": "Máscara negra, ropa negra, gafas negra', mami",
+   "clave": "mascara",
+   "inicio": 3.48,
+   "fin": 6.16
+  },
+  {
+   "n": 3,
+   "texto": "Me fui sin prenda', sin decirle na' a la doña",
+   "clave": "prenda",
+   "inicio": 6.244,
+   "fin": 8.54
+  },
+  {
+   "n": 4,
+   "texto": "Y ahora maquinando en el carro dejo una moña",
+   "clave": "carro",
+   "inicio": 8.58,
+   "fin": 11.16
+  },
+  {
+   "n": 5,
+   "texto": "Así es la vida, cuando meno' estás fallando",
+   "clave": "vida",
+   "inicio": 11.46,
+   "fin": 13.7
+  },
+  {
+   "n": 6,
+   "texto": "Es que tu pareja piensa que estás traicionando",
+   "clave": "traicionando",
+   "inicio": 13.84,
+   "fin": 16.16
+  },
+  {
+   "n": 7,
+   "texto": "No es mentira, contigo me siento cabrón",
+   "clave": "cabron",
+   "inicio": 16.5,
+   "fin": 18.5
+  },
+  {
+   "n": 8,
+   "texto": "Pero a vece' jodiendo no dejas ni enrolar un blunt",
+   "clave": "blunt",
+   "inicio": 18.6,
+   "fin": 21.06
+  },
+  {
+   "n": 9,
+   "texto": "Y me dice: \"Hijueputa, tú lo que ere' e' un cabrón",
+   "clave": "hijueputa",
+   "inicio": 21.1,
+   "fin": 23.52
+  },
+  {
+   "n": 10,
+   "texto": "Tú me tiene' aborrecía', tú me tiene' en depresión\"",
+   "clave": "depresion",
+   "inicio": 23.6,
+   "fin": 25.92
+  },
+  {
+   "n": 11,
+   "texto": "Y yo le digo que el tiempo a mí me va a dar to'a la razón",
+   "clave": "tiempo",
+   "inicio": 26.02,
+   "fin": 28.44
+  },
+  {
+   "n": 12,
+   "texto": "Cuando yo me case contigo y te regale una mansión",
+   "clave": "mansion",
+   "inicio": 28.48,
+   "fin": 31.08
+  },
+  {
+   "n": 13,
+   "texto": "Y te dé uno' par de día' y otro carro más cabrón",
+   "clave": "carro",
+   "inicio": 31.18,
+   "fin": 33.62
+  },
+  {
+   "n": 14,
+   "texto": "Ahora tiene' lo que viste un…",
+   "clave": "viste",
+   "inicio": 33.66,
+   "fin": 35.1
+  }
+ ],
+ "palabras": [
+  {
+   "texto": "Otra",
+   "inicio": 0.84,
+   "fin": 1.12,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "ve',",
+   "inicio": 1.22,
+   "fin": 1.313,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "otro",
+   "inicio": 1.5,
+   "fin": 1.74,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "día,",
+   "inicio": 1.78,
+   "fin": 2.04,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "otra",
+   "inicio": 2.14,
+   "fin": 2.34,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "noche",
+   "inicio": 2.4,
+   "fin": 2.7,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "en",
+   "inicio": 2.74,
+   "fin": 2.84,
+   "frase": 1,
+   "clave": false
+  },
+  {
+   "texto": "Miami",
+   "inicio": 2.9,
+   "fin": 3.38,
+   "frase": 1,
+   "clave": true
+  },
+  {
+   "texto": "Máscara",
+   "inicio": 3.48,
+   "fin": 3.92,
+   "frase": 2,
+   "clave": true
+  },
+  {
+   "texto": "negra,",
+   "inicio": 3.98,
+   "fin": 4.26,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "ropa",
+   "inicio": 4.36,
+   "fin": 4.62,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "negra,",
+   "inicio": 4.68,
+   "fin": 4.92,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "gafas",
+   "inicio": 5,
+   "fin": 5.28,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "negra',",
+   "inicio": 5.36,
+   "fin": 5.56,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "mami",
+   "inicio": 5.7,
+   "fin": 6.16,
+   "frase": 2,
+   "clave": false
+  },
+  {
+   "texto": "Me",
+   "inicio": 6.244,
+   "fin": 6.416,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "fui",
+   "inicio": 6.47,
+   "fin": 6.62,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "sin",
+   "inicio": 6.7,
+   "fin": 6.837,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "prenda',",
+   "inicio": 6.837,
+   "fin": 7.16,
+   "frase": 3,
+   "clave": true
+  },
+  {
+   "texto": "sin",
+   "inicio": 7.2,
+   "fin": 7.32,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "decirle",
+   "inicio": 7.36,
+   "fin": 7.74,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "na'",
+   "inicio": 7.8,
+   "fin": 8.1,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "a",
+   "inicio": 8.1,
+   "fin": 8.18,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "la",
+   "inicio": 8.14,
+   "fin": 8.24,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "doña",
+   "inicio": 8.2,
+   "fin": 8.54,
+   "frase": 3,
+   "clave": false
+  },
+  {
+   "texto": "Y",
+   "inicio": 8.58,
+   "fin": 8.66,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "ahora",
+   "inicio": 8.66,
+   "fin": 8.96,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "maquinando",
+   "inicio": 9.04,
+   "fin": 9.54,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "en",
+   "inicio": 9.56,
+   "fin": 9.64,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "el",
+   "inicio": 9.66,
+   "fin": 9.76,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "carro",
+   "inicio": 9.82,
+   "fin": 10.1,
+   "frase": 4,
+   "clave": true
+  },
+  {
+   "texto": "dejo",
+   "inicio": 10.16,
+   "fin": 10.428,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "una",
+   "inicio": 10.38,
+   "fin": 10.56,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "moña",
+   "inicio": 10.68,
+   "fin": 11.16,
+   "frase": 4,
+   "clave": false
+  },
+  {
+   "texto": "Así",
+   "inicio": 11.46,
+   "fin": 11.64,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "es",
+   "inicio": 11.68,
+   "fin": 11.76,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "la",
+   "inicio": 11.78,
+   "fin": 11.86,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "vida,",
+   "inicio": 11.94,
+   "fin": 12.14,
+   "frase": 5,
+   "clave": true
+  },
+  {
+   "texto": "cuando",
+   "inicio": 12.24,
+   "fin": 12.48,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "meno'",
+   "inicio": 12.56,
+   "fin": 12.736,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "estás",
+   "inicio": 12.82,
+   "fin": 13.02,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "fallando",
+   "inicio": 13.08,
+   "fin": 13.7,
+   "frase": 5,
+   "clave": false
+  },
+  {
+   "texto": "Es",
+   "inicio": 13.84,
+   "fin": 13.92,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "que",
+   "inicio": 13.96,
+   "fin": 14.04,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "tu",
+   "inicio": 14.12,
+   "fin": 14.2,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "pareja",
+   "inicio": 14.3,
+   "fin": 14.64,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "piensa",
+   "inicio": 14.72,
+   "fin": 15,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "que",
+   "inicio": 15.04,
+   "fin": 15.12,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "estás",
+   "inicio": 15.12,
+   "fin": 15.34,
+   "frase": 6,
+   "clave": false
+  },
+  {
+   "texto": "traicionando",
+   "inicio": 15.38,
+   "fin": 16.16,
+   "frase": 6,
+   "clave": true
+  },
+  {
+   "texto": "No",
+   "inicio": 16.5,
+   "fin": 16.58,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "es",
+   "inicio": 16.56,
+   "fin": 16.64,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "mentira,",
+   "inicio": 16.66,
+   "fin": 17.04,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "contigo",
+   "inicio": 17.12,
+   "fin": 17.52,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "me",
+   "inicio": 17.58,
+   "fin": 17.66,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "siento",
+   "inicio": 17.72,
+   "fin": 18,
+   "frase": 7,
+   "clave": false
+  },
+  {
+   "texto": "cabrón",
+   "inicio": 18.08,
+   "fin": 18.5,
+   "frase": 7,
+   "clave": true
+  },
+  {
+   "texto": "Pero",
+   "inicio": 18.6,
+   "fin": 18.76,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "a",
+   "inicio": 18.76,
+   "fin": 18.84,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "vece'",
+   "inicio": 18.88,
+   "fin": 19.072,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "jodiendo",
+   "inicio": 19.18,
+   "fin": 19.56,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "no",
+   "inicio": 19.64,
+   "fin": 19.74,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "dejas",
+   "inicio": 19.78,
+   "fin": 20.11,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "ni",
+   "inicio": 20.1,
+   "fin": 20.18,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "enrolar",
+   "inicio": 20.2,
+   "fin": 20.6,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "un",
+   "inicio": 20.64,
+   "fin": 20.72,
+   "frase": 8,
+   "clave": false
+  },
+  {
+   "texto": "blunt",
+   "inicio": 20.76,
+   "fin": 21.06,
+   "frase": 8,
+   "clave": true
+  },
+  {
+   "texto": "Y",
+   "inicio": 21.1,
+   "fin": 21.18,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "me",
+   "inicio": 21.26,
+   "fin": 21.34,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "dice:",
+   "inicio": 21.4,
+   "fin": 21.66,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "\"Hijueputa,",
+   "inicio": 21.72,
+   "fin": 22.22,
+   "frase": 9,
+   "clave": true
+  },
+  {
+   "texto": "tú",
+   "inicio": 22.32,
+   "fin": 22.4,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "lo",
+   "inicio": 22.46,
+   "fin": 22.54,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "que",
+   "inicio": 22.62,
+   "fin": 22.7,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "ere'",
+   "inicio": 22.72,
+   "fin": 22.81,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "e'",
+   "inicio": 22.88,
+   "fin": 22.96,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "un",
+   "inicio": 22.98,
+   "fin": 23.06,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "cabrón",
+   "inicio": 23.12,
+   "fin": 23.52,
+   "frase": 9,
+   "clave": false
+  },
+  {
+   "texto": "Tú",
+   "inicio": 23.6,
+   "fin": 23.68,
+   "frase": 10,
+   "clave": false
+  },
+  {
+   "texto": "me",
+   "inicio": 23.74,
+   "fin": 23.82,
+   "frase": 10,
+   "clave": false
+  },
+  {
+   "texto": "tiene'",
+   "inicio": 23.9,
+   "fin": 24.033,
+   "frase": 10,
+   "clave": false
+  },
+  {
+   "texto": "aborrecía',",
+   "inicio": 24.18,
+   "fin": 24.72,
+   "frase": 10,
+   "clave": false
+  },
+  {
+   "texto": "tú",
+   "inicio": 24.84,
+   "fin": 24.92,
+   "frase": 10,
+   "clave": false
+  },
+  {
+   "texto": "me",
+   "inicio": 24.98,
+   "fin": 25.06,
+   "frase": 10,
+   "clave": false
+  },
+  {
+   "texto": "tiene'",
+   "inicio": 25.14,
+   "fin": 25.307,
+   "frase": 10,
+   "clave": false
+  },
+  {
+   "texto": "en",
+   "inicio": 25.36,
+   "fin": 25.44,
+   "frase": 10,
+   "clave": false
+  },
+  {
+   "texto": "depresión\"",
+   "inicio": 25.48,
+   "fin": 25.92,
+   "frase": 10,
+   "clave": true
+  },
+  {
+   "texto": "Y",
+   "inicio": 26.02,
+   "fin": 26.1,
+   "frase": 11,
+   "clave": false
+  },
+  {
+   "texto": "yo",
+   "inicio": 26.12,
+   "fin": 26.2,
+   "frase": 11,
+   "clave": false
+  },
+  {
+   "texto": "le",
+   "inicio": 26.26,
+   "fin": 26.38,
+   "frase": 11,
+   "clave": false
+  },
+  {
+   "texto": "digo",
+   "inicio": 26.44,
+   "fin": 26.66,
+   "frase": 11,
+   "clave": false
+  },
+  {
+   "texto": "que",
+   "inicio": 26.72,
+   "fin": 26.8,
+   "frase": 11,
+   "clave": false
+  },
+  {
+   "texto": "el",
+   "inicio": 26.8,
+   "fin": 26.88,
+   "frase": 11,
+   "clave": false
+  },
+  {
+   "texto": "tiempo",
+   "inicio": 26.9,
+   "fin": 27.08,
+   "frase": 11,
+   "clave": true
+  },
+  {
+   "texto": "a",
+   "inicio": 27.12,
+   "fin": 27.2,
+   "frase": 11,
+   "clave": false
+  },
+  {
+   "texto": "mí",
+   "inicio": 27.2,
+   "fin": 27.3,
+   "frase": 11,
+   "clave": false
+  },
+  {
+   "texto": "me",
+   "inicio": 27.36,
+   "fin": 27.48,
+   "frase": 11,
+   "clave": false
+  },
+  {
+   "texto": "va",
+   "inicio": 27.52,
+   "fin": 27.6,
+   "frase": 11,
+   "clave": false
+  },
+  {
+   "texto": "a",
+   "inicio": 27.64,
+   "fin": 27.72,
+   "frase": 11,
+   "clave": false
+  },
+  {
+   "texto": "dar",
+   "inicio": 27.68,
+   "fin": 27.76,
+   "frase": 11,
+   "clave": false
+  },
+  {
+   "texto": "to'a",
+   "inicio": 27.86,
+   "fin": 27.96,
+   "frase": 11,
+   "clave": false
+  },
+  {
+   "texto": "la",
+   "inicio": 28,
+   "fin": 28.1,
+   "frase": 11,
+   "clave": false
+  },
+  {
+   "texto": "razón",
+   "inicio": 28.18,
+   "fin": 28.44,
+   "frase": 11,
+   "clave": false
+  },
+  {
+   "texto": "Cuando",
+   "inicio": 28.48,
+   "fin": 28.72,
+   "frase": 12,
+   "clave": false
+  },
+  {
+   "texto": "yo",
+   "inicio": 28.78,
+   "fin": 28.88,
+   "frase": 12,
+   "clave": false
+  },
+  {
+   "texto": "me",
+   "inicio": 28.94,
+   "fin": 29.04,
+   "frase": 12,
+   "clave": false
+  },
+  {
+   "texto": "case",
+   "inicio": 29.1,
+   "fin": 29.36,
+   "frase": 12,
+   "clave": false
+  },
+  {
+   "texto": "contigo",
+   "inicio": 29.42,
+   "fin": 29.74,
+   "frase": 12,
+   "clave": false
+  },
+  {
+   "texto": "y",
+   "inicio": 29.78,
+   "fin": 29.86,
+   "frase": 12,
+   "clave": false
+  },
+  {
+   "texto": "te",
+   "inicio": 29.9,
+   "fin": 29.98,
+   "frase": 12,
+   "clave": false
+  },
+  {
+   "texto": "regale",
+   "inicio": 30.04,
+   "fin": 30.4,
+   "frase": 12,
+   "clave": false
+  },
+  {
+   "texto": "una",
+   "inicio": 30.46,
+   "fin": 30.62,
+   "frase": 12,
+   "clave": false
+  },
+  {
+   "texto": "mansión",
+   "inicio": 30.68,
+   "fin": 31.08,
+   "frase": 12,
+   "clave": true
+  },
+  {
+   "texto": "Y",
+   "inicio": 31.18,
+   "fin": 31.26,
+   "frase": 13,
+   "clave": false
+  },
+  {
+   "texto": "te",
+   "inicio": 31.32,
+   "fin": 31.42,
+   "frase": 13,
+   "clave": false
+  },
+  {
+   "texto": "dé",
+   "inicio": 31.46,
+   "fin": 31.54,
+   "frase": 13,
+   "clave": false
+  },
+  {
+   "texto": "uno'",
+   "inicio": 31.56,
+   "fin": 31.7,
+   "frase": 13,
+   "clave": false
+  },
+  {
+   "texto": "par",
+   "inicio": 31.8,
+   "fin": 31.956,
+   "frase": 13,
+   "clave": false
+  },
+  {
+   "texto": "de",
+   "inicio": 31.956,
+   "fin": 32.036,
+   "frase": 13,
+   "clave": false
+  },
+  {
+   "texto": "día'",
+   "inicio": 32.008,
+   "fin": 32.36,
+   "frase": 13,
+   "clave": false
+  },
+  {
+   "texto": "y",
+   "inicio": 32.4,
+   "fin": 32.48,
+   "frase": 13,
+   "clave": false
+  },
+  {
+   "texto": "otro",
+   "inicio": 32.5,
+   "fin": 32.659,
+   "frase": 13,
+   "clave": false
+  },
+  {
+   "texto": "carro",
+   "inicio": 32.72,
+   "fin": 32.98,
+   "frase": 13,
+   "clave": true
+  },
+  {
+   "texto": "más",
+   "inicio": 33.02,
+   "fin": 33.16,
+   "frase": 13,
+   "clave": false
+  },
+  {
+   "texto": "cabrón",
+   "inicio": 33.22,
+   "fin": 33.62,
+   "frase": 13,
+   "clave": false
+  },
+  {
+   "texto": "Ahora",
+   "inicio": 33.66,
+   "fin": 33.9,
+   "frase": 14,
+   "clave": false
+  },
+  {
+   "texto": "tiene'",
+   "inicio": 34,
+   "fin": 34.217,
+   "frase": 14,
+   "clave": false
+  },
+  {
+   "texto": "lo",
+   "inicio": 34.32,
+   "fin": 34.4,
+   "frase": 14,
+   "clave": false
+  },
+  {
+   "texto": "que",
+   "inicio": 34.46,
+   "fin": 34.58,
+   "frase": 14,
+   "clave": false
+  },
+  {
+   "texto": "viste",
+   "inicio": 34.62,
+   "fin": 34.82,
+   "frase": 14,
+   "clave": true
+  },
+  {
+   "texto": "un…",
+   "inicio": 34.86,
+   "fin": 35.1,
+   "frase": 14,
+   "clave": false
+  }
+ ]
+}

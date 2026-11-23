@@ -1,0 +1,70 @@
+{
+  "titulo": "Lyric video lyric-otra-noche-en-miami",
+  "idioma": "es",
+  "subtitulos": "no",
+  "frases": [
+    {
+      "texto": "Otra ve', otro día, otra noche en Miami",
+      "clave": "miami"
+    },
+    {
+      "texto": "Máscara negra, ropa negra, gafas negra', mami",
+      "clave": "mascara"
+    },
+    {
+      "texto": "Me fui sin prenda', sin decirle na' a la doña",
+      "clave": "prenda"
+    },
+    {
+      "texto": "Y ahora maquinando en el carro dejo una moña",
+      "clave": "carro"
+    },
+    {
+      "texto": "Así es la vida, cuando meno' estás fallando",
+      "clave": "vida"
+    },
+    {
+      "texto": "Es que tu pareja piensa que estás traicionando",
+      "clave": "traicionando"
+    },
+    {
+      "texto": "No es mentira, contigo me siento cabrón",
+      "clave": "cabron"
+    },
+    {
+      "texto": "Pero a vece' jodiendo no dejas ni enrolar un blunt",
+      "clave": "blunt"
+    },
+    {
+      "texto": "Y me dice: \"Hijueputa, tú lo que ere' e' un cabrón",
+      "clave": "hijueputa"
+    },
+    {
+      "texto": "Tú me tiene' aborrecía', tú me tiene' en depresión\"",
+      "clave": "depresion"
+    },
+    {
+      "texto": "Y yo le digo que el tiempo a mí me va a dar to'a la razón",
+      "clave": "tiempo"
+    },
+    {
+      "texto": "Cuando yo me case contigo y te regale una mansión",
+      "clave": "mansion"
+    },
+    {
+      "texto": "Y te dé uno' par de día' y otro carro más cabrón",
+      "clave": "carro"
+    },
+    {
+      "texto": "Ahora tiene' lo que viste un…",
+      "clave": "viste"
+    }
+  ],
+  "lyric": {
+    "bn": true,
+    "funde": 34.75,
+    "marca": false,
+    "velocidad": 1,
+    "idaVuelta": false
+  }
+}
