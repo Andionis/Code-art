@@ -34,3 +34,4 @@ Abre una conversación nueva en la carpeta CODE ART y escribe: **«continúa el 
 - Mismo estilo: sin marca, sin latidos (golpes-sin-usar.json), letra chica, una palabra por pantalla; sin ad-libs entre paréntesis.
 - [x] Borrador v1: revisar/Ansiedad v1 (borrador).mp4
 - [x] Borrador v2: desvanecido final más largo (imagen y música 34,1 → 35,3; la última palabra ya no se va aparte) — revisar/Ansiedad v2 (borrador).mp4
+- [x] Aprobado v2. Final a 60 fps: salida/2026-11-23-lyric-ansiedad/Ansiedad (letra).mp4. Sin miniatura ni descripciones.
