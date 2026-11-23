@@ -5,3 +5,4 @@ Los temas que ya tienen video, uno por línea (fecha · tema · carpeta en salid
 - 2026-11-19: Lyric video «Hombre» (Lil Naay)
 - 2026-11-19: Lyric video «Dios Primero» (Lil Naay)
 - 2026-11-22 · Lyric video «Certero» (letra)
+- 2026-11-23 · Lyric video «Otra noche en Miami» (letra)

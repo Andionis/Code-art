@@ -34,3 +34,4 @@ Abre una conversación nueva en la carpeta CODE ART y escribe: **«continúa el 
 - Sin ad-libs entre paréntesis. El audio se corta en «…viste un»: la última línea llega hasta ahí («un…»).
 - Desvanecido 34,75 → 35,1 (el video ya se oscurece al final).
 - [x] Borrador v1: revisar/Otra noche en Miami v1 (borrador).mp4
+- [x] Aprobado v1. Final a 60 fps: salida/2026-11-23-lyric-otra-noche-en-miami/Otra noche en Miami (letra).mp4. Sin miniatura ni descripciones.
