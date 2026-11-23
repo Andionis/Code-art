@@ -138,7 +138,7 @@ function letra(g, t, col, b) {
     const sig = pags[i + 1];
     const a = pg.inicio - 0.12, z = sig ? sig.inicio - 0.1 : v.duracion + 1;
     if (t < a || t > z) return;
-    const sal = sig ? k.sale(k.tramo(t, z - 0.16, z)) : k.suave(k.tramo(t, FUNDE + 0.3, FUNDE + 1.3)) ; // la última letra se va al empezar el desvanecido: luego, solo música
+    const sal = sig ? k.sale(k.tramo(t, z - 0.16, z)) : 0 ; // la última letra se va al empezar el desvanecido: luego, solo música
     const ps = pg.palabras;
     g.save();
     g.translate(540, 1060); g.scale(1 + 0.12 * sal, 1 + 0.12 * sal); g.translate(-540, -1060);
