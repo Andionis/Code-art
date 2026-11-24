@@ -11,16 +11,19 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Pendiente del creador
 
-- Nada por ahora (guion aprobado: «Aprobado, haz la voz»). Voz hecha: 60,6 s.
+- Aprobar la escena 1 (el hook): «escena 1 hook v1 (borrador).mp4».
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
 - [x] 1. La idea y los datos → idea.md
 - [x] 2. El guion → guion.json, **aprobado por el creador**
 - [x] 3. La voz (una sola vez, con el guion cerrado)
-- [ ] 4. El plan → plan.md, con sus escenas
+- [x] 4. El plan → plan.md, con sus escenas
 - [ ] 5. Escena por escena (cada una, su borrador aprobado):
-  - [ ] escena 1 (el hook)
+  - [ ] escena 1: el hook (hasta 10,7 s) — borrador v1 enseñado
+  - [ ] escena 2: a quién le pasa y qué se pega (hasta 26,7 s)
+  - [ ] escena 3: el experimento (hasta 42,0 s)
+  - [ ] escena 4: el chicle y el final (hasta el final)
 - [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
 - [ ] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
