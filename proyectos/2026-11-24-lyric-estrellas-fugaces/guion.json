@@ -1,0 +1,48 @@
+{
+  "titulo": "Lyric video lyric-estrellas-fugaces",
+  "idioma": "es",
+  "subtitulos": "no",
+  "frases": [
+    {
+      "texto": "Tú y yo somos como estrellas fugaces",
+      "clave": "estrellas"
+    },
+    {
+      "texto": "Cosas que todos ven, pero no entienden",
+      "clave": "entienden"
+    },
+    {
+      "texto": "Nacimos pa' estar juntos hasta la muerte",
+      "clave": "juntos"
+    },
+    {
+      "texto": "Yo siempre te siento, dime si me sientes",
+      "clave": "siento"
+    },
+    {
+      "texto": "Muchas veces yo intenté olvidarte",
+      "clave": "olvidarte"
+    },
+    {
+      "texto": "Pero no te saco nunca de mi mente",
+      "clave": "mente"
+    },
+    {
+      "texto": "Contigo yo vo'a seguir la corriente",
+      "clave": "corriente"
+    },
+    {
+      "texto": "El destino no miente",
+      "clave": "destino"
+    },
+    {
+      "texto": "Y quiero",
+      "clave": "quiero"
+    }
+  ],
+  "lyric": {
+    "bn": true,
+    "funde": 21.2,
+    "marca": false
+  }
+}

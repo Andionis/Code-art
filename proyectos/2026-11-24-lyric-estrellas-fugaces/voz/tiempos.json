@@ -1,0 +1,449 @@
+{
+  "firma": "cancion",
+  "duracion": 22,
+  "frases": [
+    {
+      "n": 1,
+      "texto": "Tú y yo somos como estrellas fugaces",
+      "clave": "estrellas",
+      "inicio": 0.94,
+      "fin": 3.22
+    },
+    {
+      "n": 2,
+      "texto": "Cosas que todos ven, pero no entienden",
+      "clave": "entienden",
+      "inicio": 3.7,
+      "fin": 5.8
+    },
+    {
+      "n": 3,
+      "texto": "Nacimos pa' estar juntos hasta la muerte",
+      "clave": "juntos",
+      "inicio": 6.4,
+      "fin": 8.5
+    },
+    {
+      "n": 4,
+      "texto": "Yo siempre te siento, dime si me sientes",
+      "clave": "siento",
+      "inicio": 8.56,
+      "fin": 11.26
+    },
+    {
+      "n": 5,
+      "texto": "Muchas veces yo intenté olvidarte",
+      "clave": "olvidarte",
+      "inicio": 11.96,
+      "fin": 13.88
+    },
+    {
+      "n": 6,
+      "texto": "Pero no te saco nunca de mi mente",
+      "clave": "mente",
+      "inicio": 14.06,
+      "fin": 16.8
+    },
+    {
+      "n": 7,
+      "texto": "Contigo yo vo'a seguir la corriente",
+      "clave": "corriente",
+      "inicio": 17.3,
+      "fin": 19.3
+    },
+    {
+      "n": 8,
+      "texto": "El destino no miente",
+      "clave": "destino",
+      "inicio": 19.5,
+      "fin": 21.02
+    },
+    {
+      "n": 9,
+      "texto": "Y quiero",
+      "clave": "quiero",
+      "inicio": 21.08,
+      "fin": 21.82
+    }
+  ],
+  "palabras": [
+    {
+      "texto": "Tú",
+      "inicio": 0.94,
+      "fin": 1.02,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "y",
+      "inicio": 1.06,
+      "fin": 1.14,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "yo",
+      "inicio": 1.12,
+      "fin": 1.22,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "somos",
+      "inicio": 1.28,
+      "fin": 1.56,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "como",
+      "inicio": 1.64,
+      "fin": 1.8,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "estrellas",
+      "inicio": 1.84,
+      "fin": 2.24,
+      "frase": 1,
+      "clave": true
+    },
+    {
+      "texto": "fugaces",
+      "inicio": 2.34,
+      "fin": 3.22,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "Cosas",
+      "inicio": 3.7,
+      "fin": 4,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 4.04,
+      "fin": 4.14,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "todos",
+      "inicio": 4.2,
+      "fin": 4.46,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "ven,",
+      "inicio": 4.52,
+      "fin": 4.66,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "pero",
+      "inicio": 4.74,
+      "fin": 4.96,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "no",
+      "inicio": 5,
+      "fin": 5.08,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "entienden",
+      "inicio": 5.08,
+      "fin": 5.8,
+      "frase": 2,
+      "clave": true
+    },
+    {
+      "texto": "Nacimos",
+      "inicio": 6.4,
+      "fin": 6.82,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "pa'",
+      "inicio": 6.88,
+      "fin": 6.96,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "estar",
+      "inicio": 7.02,
+      "fin": 7.18,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "juntos",
+      "inicio": 7.22,
+      "fin": 7.46,
+      "frase": 3,
+      "clave": true
+    },
+    {
+      "texto": "hasta",
+      "inicio": 7.48,
+      "fin": 7.7,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 7.76,
+      "fin": 7.84,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "muerte",
+      "inicio": 7.94,
+      "fin": 8.5,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "Yo",
+      "inicio": 8.56,
+      "fin": 8.66,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "siempre",
+      "inicio": 8.72,
+      "fin": 9.02,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "te",
+      "inicio": 9.1,
+      "fin": 9.24,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "siento,",
+      "inicio": 9.32,
+      "fin": 9.74,
+      "frase": 4,
+      "clave": true
+    },
+    {
+      "texto": "dime",
+      "inicio": 9.96,
+      "fin": 10.24,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "si",
+      "inicio": 10.32,
+      "fin": 10.42,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "me",
+      "inicio": 10.46,
+      "fin": 10.6,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "sientes",
+      "inicio": 10.68,
+      "fin": 11.26,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "Muchas",
+      "inicio": 11.96,
+      "fin": 12.24,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "veces",
+      "inicio": 12.34,
+      "fin": 12.6,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "yo",
+      "inicio": 12.66,
+      "fin": 12.74,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "intenté",
+      "inicio": 12.74,
+      "fin": 13.04,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "olvidarte",
+      "inicio": 13.1,
+      "fin": 13.88,
+      "frase": 5,
+      "clave": true
+    },
+    {
+      "texto": "Pero",
+      "inicio": 14.06,
+      "fin": 14.3,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "no",
+      "inicio": 14.38,
+      "fin": 14.5,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "te",
+      "inicio": 14.56,
+      "fin": 14.72,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "saco",
+      "inicio": 14.84,
+      "fin": 15.36,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "nunca",
+      "inicio": 15.46,
+      "fin": 15.72,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 15.78,
+      "fin": 15.88,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "mi",
+      "inicio": 15.94,
+      "fin": 16.059,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "mente",
+      "inicio": 16.16,
+      "fin": 16.8,
+      "frase": 6,
+      "clave": true
+    },
+    {
+      "texto": "Contigo",
+      "inicio": 17.3,
+      "fin": 17.72,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "yo",
+      "inicio": 17.78,
+      "fin": 17.9,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "vo'a",
+      "inicio": 17.94,
+      "fin": 18.06,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "seguir",
+      "inicio": 18.14,
+      "fin": 18.42,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 18.48,
+      "fin": 18.56,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "corriente",
+      "inicio": 18.66,
+      "fin": 19.3,
+      "frase": 7,
+      "clave": true
+    },
+    {
+      "texto": "El",
+      "inicio": 19.5,
+      "fin": 19.6,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "destino",
+      "inicio": 19.64,
+      "fin": 20.12,
+      "frase": 8,
+      "clave": true
+    },
+    {
+      "texto": "no",
+      "inicio": 20.24,
+      "fin": 20.387,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "miente",
+      "inicio": 20.58,
+      "fin": 21.02,
+      "frase": 8,
+      "clave": false
+    },
+    {
+      "texto": "Y",
+      "inicio": 21.08,
+      "fin": 21.16,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "quiero",
+      "inicio": 21.24,
+      "fin": 21.82,
+      "frase": 9,
+      "clave": true
+    }
+  ]
+}
