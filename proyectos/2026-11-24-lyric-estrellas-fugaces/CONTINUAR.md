@@ -33,3 +33,4 @@ Abre una conversación nueva en la carpeta CODE ART y escribe: **«continúa el 
 - Música: el audio del segundo video (TikTok con la letra en pantalla), 0 → 22 s (después, cierre de TikTok). La letra, leída de ese texto en pantalla. Termina en «Y quiero…» (ahí se corta el audio).
 - Mismo estilo: sin marca, sin latidos, letra chica, una palabra por pantalla. Desvanecido 21,2 → 22.
 - [x] Borrador v1: revisar/Estrellas fugaces v1 (borrador).mp4
+- [x] Aprobado v1. Final a 60 fps: salida/2026-11-24-lyric-estrellas-fugaces/Estrellas fugaces (letra).mp4.
