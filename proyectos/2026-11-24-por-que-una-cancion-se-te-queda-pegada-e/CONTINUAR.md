@@ -11,7 +11,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Pendiente del creador
 
-- Aprobar la escena 4: «escena 4 v1 (borrador).mp4».
+- Aprobar el video entero: «completo v1 (borrador).mp4». Miniatura (portada 1) y descripciones ya hechas en salida/.
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
@@ -23,7 +23,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
   - [x] escena 1: el hook (hasta 10,7 s) — aprobada («Apruebo»)
   - [x] escena 2: a quién le pasa y qué se pega (hasta 26,7 s) — aprobada («Apruebo»)
   - [x] escena 3: el experimento (hasta 42,0 s) — aprobada («Apruebo»)
-  - [ ] escena 4: el chicle y el final (hasta el final) — borrador v1 enseñado
+  - [x] escena 4: el chicle y el final (hasta el final) — aprobada («Apruebo»)
 - [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
 - [ ] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
