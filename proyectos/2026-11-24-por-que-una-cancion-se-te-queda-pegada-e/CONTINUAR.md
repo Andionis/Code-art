@@ -11,7 +11,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Pendiente del creador
 
-- Aprobar la escena 2: «escenas 1-2 v1 (borrador).mp4».
+- Aprobar la escena 3: «escenas 1-3 v1 (borrador).mp4».
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
@@ -21,8 +21,8 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 - [x] 4. El plan → plan.md, con sus escenas
 - [ ] 5. Escena por escena (cada una, su borrador aprobado):
   - [x] escena 1: el hook (hasta 10,7 s) — aprobada («Apruebo»)
-  - [ ] escena 2: a quién le pasa y qué se pega (hasta 26,7 s) — borrador v1 enseñado
-  - [ ] escena 3: el experimento (hasta 42,0 s)
+  - [x] escena 2: a quién le pasa y qué se pega (hasta 26,7 s) — aprobada («Apruebo»)
+  - [ ] escena 3: el experimento (hasta 42,0 s) — borrador v1 enseñado
   - [ ] escena 4: el chicle y el final (hasta el final)
 - [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
