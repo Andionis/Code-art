@@ -1,0 +1,20 @@
+{
+  "titulo": "Por qué una canción se te queda pegada en la cabeza",
+  "idioma": "es",
+  "subtitulos": "arriba",
+  "voz": { "id": "TX3LPaxmHKxFdv7VOQHJ" },
+  "frases": [
+    { "texto": "¿Por qué una canción se te queda pegada en la cabeza y no hay forma de sacarla?", "clave": "pegada", "hook": true },
+    { "texto": "Y ni siquiera es la canción entera: es un pedacito que se repite solo, como un disco rayado.", "clave": "rayado", "hook": true },
+    { "texto": "Le pasa a nueve de cada diez personas, cada semana.", "clave": "nueve" },
+    { "texto": "Casi siempre es el coro: unos quince a treinta segundos, que tu cerebro pone en bucle.", "clave": "bucle" },
+    { "texto": "Y se pegan más las rápidas y fáciles, que suben y bajan como «Estrellita, ¿dónde estás?».", "clave": "fáciles" },
+    { "texto": "Pero lo más raro es que no necesitas oírla para escucharla.", "clave": "escucharla" },
+    { "texto": "En un experimento, apagaron unos segundos de canciones conocidas, y la parte del cerebro que oye siguió encendida.", "clave": "encendida" },
+    { "texto": "Tu cerebro rellenaba el hueco: la seguía cantando por dentro.", "clave": "rellenaba" },
+    { "texto": "Por eso, si intentas taparla con otra canción, muchas veces es peor.", "clave": "peor" },
+    { "texto": "¿Lo que sí ayuda? Masticar chicle: tu boca se ocupa y le cuesta seguir cantándola.", "clave": "chicle" },
+    { "texto": "Así que no es que la canción no se vaya: es que tú la sigues cantando sin darte cuenta.", "clave": "cantando" },
+    { "texto": "Envíaselo a un amigo que le pueda interesar.", "clave": "amigo" }
+  ]
+}
