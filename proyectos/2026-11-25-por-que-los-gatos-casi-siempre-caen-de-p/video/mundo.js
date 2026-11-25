@@ -127,17 +127,18 @@ function mitad(g, lado, rol, enc, s, t, opc, capa) {
   const pDetras = patas.filter((p) => !pDelante.includes(p));
   if (capa === "detras") { for (const p of pDetras) p.f(); return; }
   if (capa === "delante") { for (const p of pDelante) p.f(); return; }
-  cuerpo(g, cx, rx, ry, c, sn, lado);
-  g.save();
-  // la mitad iluminada (turquesa o naranja) cuando se explica que son «dos gatos pegados»
+  // la mitad iluminada (turquesa o rosa) cuando se explica que son «dos gatos pegados»: un aura por detrás
   const halo = lado > 0 ? opc.haloF : opc.haloB;
   if (halo && halo.al > 0) {
-    g.save(); g.globalCompositeOperation = "lighter";
-    g.strokeStyle = `rgba(${halo.c},${0.9 * halo.al})`; g.lineWidth = 16; g.shadowColor = `rgba(${halo.c},1)`; g.shadowBlur = 40;
-    elipse(g, cx, 0, rx + 10, ry + 10); g.stroke();
+    g.save(); g.globalAlpha *= halo.al;
+    g.shadowColor = `rgba(${halo.c},1)`; g.shadowBlur = 50;
+    g.strokeStyle = `rgb(${halo.c})`; g.lineWidth = 34;
+    elipse(g, cx, 0, rx + 8, ry + 8); g.stroke();
     g.restore();
   }
-  g.restore();
+  cuerpo(g, cx, rx, ry, c, sn, lado);
+  g.save();
+g.restore();
 }
 
 function cabeza(g, rol, t, opc) {
