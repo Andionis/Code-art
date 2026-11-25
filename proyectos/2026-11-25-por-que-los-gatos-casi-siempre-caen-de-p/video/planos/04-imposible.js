@@ -37,7 +37,7 @@ function remolino(g, x, y, u, s) {
   }
   g.restore();
 }
-const EMPUJES = [0, 0.35, 0.7, 1.05, 1.4].map((d, i) => ({ t: Temp - 0.55 + d, x: i % 2 ? -230 : 170, dx: i % 2 ? -40 : 50 }));
+export const EMPUJES = [0, 0.35, 0.7, 1.05, 1.4].map((d, i) => ({ t: Temp - 0.55 + d, x: i % 2 ? -230 : 170, dx: i % 2 ? -40 : 50 }));
 
 // la costura de luz en la cintura: «dos gatos pegados»
 export function costura(g, c, al, cost) {
