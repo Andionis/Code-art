@@ -33,3 +33,4 @@ Abre una conversación nueva en la carpeta CODE ART y escribe: **«continúa el 
 - La canción se corta en «…pa' que se dé la vuelta»: la letra llega hasta ahí (el resto que mandó no suena en el video).
 - Mismo estilo: sin marca, sin latidos, letra chica, una palabra por pantalla; sin ad-libs. Desvanecido 27,4 → 27,74.
 - [x] Borrador v1: revisar/Ser rico v1 (borrador).mp4
+- [x] Aprobado v1. Final a 60 fps: salida/2026-11-25-lyric-ser-rico/Ser rico (letra).mp4.

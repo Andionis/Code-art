@@ -8,3 +8,4 @@ Los temas que ya tienen video, uno por línea (fecha · tema · carpeta en salid
 - 2026-11-23 · Lyric video «Otra noche en Miami» (letra)
 - 2026-11-23 · Lyric video «Ansiedad» (letra)
 - 2026-11-24 · Lyric video «Estrellas fugaces» (letra)
+- 2026-11-25 · Lyric video «Ser rico» (letra)
