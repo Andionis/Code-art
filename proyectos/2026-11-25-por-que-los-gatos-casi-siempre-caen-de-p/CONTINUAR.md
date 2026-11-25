@@ -26,8 +26,8 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
   - [x] escena 2: el oído (hasta 15,0 s) — aprobada v1
   - [x] escena 3: imposible y las dos mitades (hasta 25,4 s) — aprobada v1
   - [x] escena 4: la patinadora y la otra mitad (hasta 36,0 s) — aprobada v1
-  - [ ] escena 5: aterrizaje, gatitos y «casi» (hasta 50,3 s) — borrador v1 enseñado
-  - [ ] escena 6: remate y cierre (hasta el final)
+  - [x] escena 5: aterrizaje, gatitos y «casi» (hasta 50,3 s) — aprobada v1
+  - [ ] escena 6: remate y cierre (hasta el final) — borrador v1 enseñado
 - [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
 - [ ] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
