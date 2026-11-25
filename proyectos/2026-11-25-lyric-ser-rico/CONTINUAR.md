@@ -1,0 +1,35 @@
+# Lyric video lyric-ser-rico: todo lo necesario para continuar
+
+Este archivo es la memoria del proyecto. En una conversación nueva basta con leerlo, junto con METODO.md y lo que este
+pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
+
+## Lo decidido (con las palabras del creador)
+
+-
+
+## Pendiente del creador
+
+-
+
+## Pasos (METODO.md; marca cada uno al terminarlo)
+
+- [ ] 1. La idea y los datos → idea.md
+- [ ] 2. El guion → guion.json, **aprobado por el creador**
+- [ ] 3. La voz (una sola vez, con el guion cerrado)
+- [ ] 4. El plan → plan.md, con sus escenas
+- [ ] 5. Escena por escena (cada una, su borrador aprobado):
+  - [ ] escena 1 (el hook)
+- [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
+      miniatura y las descripciones)
+- [ ] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
+      propuesto
+
+## Para seguir en un chat nuevo
+
+Abre una conversación nueva en la carpeta CODE ART y escribe: **«continúa el proyecto 2026-11-25-lyric-ser-rico»**.
+
+## Este video
+- Fondo y música: el mismo video que mandó (videoclip horizontal, 27,7 s), a velocidad normal y seguido (sincronizado), recortado en vertical siguiendo al artista en cada toma (fondo/f/, centros por toma en el ffmpeg crop).
+- La canción se corta en «…pa' que se dé la vuelta»: la letra llega hasta ahí (el resto que mandó no suena en el video).
+- Mismo estilo: sin marca, sin latidos, letra chica, una palabra por pantalla; sin ad-libs. Desvanecido 27,4 → 27,74.
+- [x] Borrador v1: revisar/Ser rico v1 (borrador).mp4

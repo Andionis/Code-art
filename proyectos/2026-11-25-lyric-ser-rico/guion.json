@@ -1,0 +1,42 @@
+{
+  "titulo": "Lyric video lyric-ser-rico",
+  "idioma": "es",
+  "subtitulos": "no",
+  "frases": [
+    {
+      "texto": "Ser rico e' otra cosa, te lo juro, otra cosa",
+      "clave": "rico"
+    },
+    {
+      "texto": "Yo pensaba en to' esto cuando yo estaba en el lodo",
+      "clave": "lodo"
+    },
+    {
+      "texto": "Mira cómo el tiempo pasa",
+      "clave": "tiempo"
+    },
+    {
+      "texto": "Del que tú te burla' corona, al que tú humilla' progresa",
+      "clave": "corona"
+    },
+    {
+      "texto": "Yo era uno de eso', 'taba en la pobreza, y yo no me iba a quedar con esa",
+      "clave": "pobreza"
+    },
+    {
+      "texto": "Gracia' a papá Dio' que el mundo da pila 'e vuelta",
+      "clave": "gracia"
+    },
+    {
+      "texto": "Yo hice pila 'e vuelta pa' que se dé la vuelta",
+      "clave": "vuelta"
+    }
+  ],
+  "lyric": {
+    "bn": true,
+    "funde": 27.4,
+    "marca": false,
+    "velocidad": 1,
+    "idaVuelta": false
+  }
+}

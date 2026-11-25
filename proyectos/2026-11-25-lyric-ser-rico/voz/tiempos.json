@@ -1,0 +1,596 @@
+{
+  "firma": "cancion",
+  "duracion": 27.74,
+  "frases": [
+    {
+      "n": 1,
+      "texto": "Ser rico e' otra cosa, te lo juro, otra cosa",
+      "clave": "rico",
+      "inicio": 1,
+      "fin": 4.12
+    },
+    {
+      "n": 2,
+      "texto": "Yo pensaba en to' esto cuando yo estaba en el lodo",
+      "clave": "lodo",
+      "inicio": 4.8,
+      "fin": 7.26
+    },
+    {
+      "n": 3,
+      "texto": "Mira cómo el tiempo pasa",
+      "clave": "tiempo",
+      "inicio": 7.8,
+      "fin": 9.28
+    },
+    {
+      "n": 4,
+      "texto": "Del que tú te burla' corona, al que tú humilla' progresa",
+      "clave": "corona",
+      "inicio": 10.64,
+      "fin": 14.78
+    },
+    {
+      "n": 5,
+      "texto": "Yo era uno de eso', 'taba en la pobreza, y yo no me iba a quedar con esa",
+      "clave": "pobreza",
+      "inicio": 15.7,
+      "fin": 20
+    },
+    {
+      "n": 6,
+      "texto": "Gracia' a papá Dio' que el mundo da pila 'e vuelta",
+      "clave": "gracia",
+      "inicio": 22,
+      "fin": 24.4
+    },
+    {
+      "n": 7,
+      "texto": "Yo hice pila 'e vuelta pa' que se dé la vuelta",
+      "clave": "vuelta",
+      "inicio": 24.667,
+      "fin": 27.54
+    }
+  ],
+  "palabras": [
+    {
+      "texto": "Ser",
+      "inicio": 1,
+      "fin": 1.14,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "rico",
+      "inicio": 1.2,
+      "fin": 1.4,
+      "frase": 1,
+      "clave": true
+    },
+    {
+      "texto": "e'",
+      "inicio": 1.44,
+      "fin": 1.52,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "otra",
+      "inicio": 1.52,
+      "fin": 1.74,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "cosa,",
+      "inicio": 1.82,
+      "fin": 2.24,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "te",
+      "inicio": 2.76,
+      "fin": 2.86,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "lo",
+      "inicio": 2.9,
+      "fin": 3,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "juro,",
+      "inicio": 3.04,
+      "fin": 3.28,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "otra",
+      "inicio": 3.38,
+      "fin": 3.6,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "cosa",
+      "inicio": 3.68,
+      "fin": 4.12,
+      "frase": 1,
+      "clave": false
+    },
+    {
+      "texto": "Yo",
+      "inicio": 4.8,
+      "fin": 4.9,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "pensaba",
+      "inicio": 4.96,
+      "fin": 5.3,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "en",
+      "inicio": 5.32,
+      "fin": 5.42,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "to'",
+      "inicio": 5.46,
+      "fin": 5.6,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "esto",
+      "inicio": 5.66,
+      "fin": 5.84,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "cuando",
+      "inicio": 5.88,
+      "fin": 6.14,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "yo",
+      "inicio": 6.2,
+      "fin": 6.28,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "estaba",
+      "inicio": 6.3,
+      "fin": 6.56,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "en",
+      "inicio": 6.6,
+      "fin": 6.68,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 6.72,
+      "fin": 6.82,
+      "frase": 2,
+      "clave": false
+    },
+    {
+      "texto": "lodo",
+      "inicio": 6.88,
+      "fin": 7.26,
+      "frase": 2,
+      "clave": true
+    },
+    {
+      "texto": "Mira",
+      "inicio": 7.8,
+      "fin": 8.039,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "cómo",
+      "inicio": 8.08,
+      "fin": 8.24,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 8.28,
+      "fin": 8.36,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "tiempo",
+      "inicio": 8.38,
+      "fin": 8.68,
+      "frase": 3,
+      "clave": true
+    },
+    {
+      "texto": "pasa",
+      "inicio": 8.76,
+      "fin": 9.28,
+      "frase": 3,
+      "clave": false
+    },
+    {
+      "texto": "Del",
+      "inicio": 10.64,
+      "fin": 10.78,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 10.82,
+      "fin": 10.92,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "tú",
+      "inicio": 10.96,
+      "fin": 11.08,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "te",
+      "inicio": 11.14,
+      "fin": 11.24,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "burla'",
+      "inicio": 11.3,
+      "fin": 11.617,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "corona,",
+      "inicio": 11.76,
+      "fin": 12.28,
+      "frase": 4,
+      "clave": true
+    },
+    {
+      "texto": "al",
+      "inicio": 13.1,
+      "fin": 13.22,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 13.26,
+      "fin": 13.38,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "tú",
+      "inicio": 13.46,
+      "fin": 13.54,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "humilla'",
+      "inicio": 13.56,
+      "fin": 14.015,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "progresa",
+      "inicio": 14.12,
+      "fin": 14.78,
+      "frase": 4,
+      "clave": false
+    },
+    {
+      "texto": "Yo",
+      "inicio": 15.7,
+      "fin": 15.78,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "era",
+      "inicio": 15.8,
+      "fin": 15.98,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "uno",
+      "inicio": 16.059,
+      "fin": 16.239,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 16.28,
+      "fin": 16.36,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "eso',",
+      "inicio": 16.42,
+      "fin": 16.6,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "'taba",
+      "inicio": 17.02,
+      "fin": 17.14,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "en",
+      "inicio": 17.18,
+      "fin": 17.26,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 17.28,
+      "fin": 17.38,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "pobreza,",
+      "inicio": 17.44,
+      "fin": 18.02,
+      "frase": 5,
+      "clave": true
+    },
+    {
+      "texto": "y",
+      "inicio": 18.34,
+      "fin": 18.42,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "yo",
+      "inicio": 18.48,
+      "fin": 18.56,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "no",
+      "inicio": 18.6,
+      "fin": 18.68,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "me",
+      "inicio": 18.72,
+      "fin": 18.8,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "iba",
+      "inicio": 18.8,
+      "fin": 18.92,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "a",
+      "inicio": 18.94,
+      "fin": 19.02,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "quedar",
+      "inicio": 19.02,
+      "fin": 19.28,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "con",
+      "inicio": 19.34,
+      "fin": 19.52,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "esa",
+      "inicio": 19.62,
+      "fin": 20,
+      "frase": 5,
+      "clave": false
+    },
+    {
+      "texto": "Gracia'",
+      "inicio": 22,
+      "fin": 22.137,
+      "frase": 6,
+      "clave": true
+    },
+    {
+      "texto": "a",
+      "inicio": 22.2,
+      "fin": 22.28,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "papá",
+      "inicio": 22.34,
+      "fin": 22.64,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "Dio'",
+      "inicio": 22.68,
+      "fin": 22.845,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 22.92,
+      "fin": 23,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "el",
+      "inicio": 23,
+      "fin": 23.08,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "mundo",
+      "inicio": 23.12,
+      "fin": 23.36,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "da",
+      "inicio": 23.4,
+      "fin": 23.52,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "pila",
+      "inicio": 23.58,
+      "fin": 23.825,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "'e",
+      "inicio": 23.775,
+      "fin": 23.855,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "vuelta",
+      "inicio": 23.9,
+      "fin": 24.4,
+      "frase": 6,
+      "clave": false
+    },
+    {
+      "texto": "Yo",
+      "inicio": 24.667,
+      "fin": 25.008,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "hice",
+      "inicio": 25.2,
+      "fin": 25.46,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "pila",
+      "inicio": 25.52,
+      "fin": 25.735,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "'e",
+      "inicio": 25.685,
+      "fin": 25.765,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "vuelta",
+      "inicio": 25.8,
+      "fin": 26.2,
+      "frase": 7,
+      "clave": true
+    },
+    {
+      "texto": "pa'",
+      "inicio": 26.26,
+      "fin": 26.34,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 26.4,
+      "fin": 26.52,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "se",
+      "inicio": 26.58,
+      "fin": 26.7,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "dé",
+      "inicio": 26.74,
+      "fin": 26.82,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "la",
+      "inicio": 26.88,
+      "fin": 26.98,
+      "frase": 7,
+      "clave": false
+    },
+    {
+      "texto": "vuelta",
+      "inicio": 27.02,
+      "fin": 27.54,
+      "frase": 7,
+      "clave": true
+    }
+  ]
+}
