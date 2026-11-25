@@ -238,7 +238,7 @@ export function gato(g, x, y, s, ang, rf, rb, ef = 0, eb = 0, dobla = 0, t = 0, 
   detras(() => mitad(g, -1, rb, eb, s, t, opc));
   delante(() => mitad(g, 1, rf, ef, s, t, opc));
   cintura(g, rf, rb, dobla);
-  delante(() => cabeza(g, rf, t, opc));
+  delante(() => { const cs = opc.cabeza ?? 1; g.save(); g.translate(330, 0); g.scale(cs, cs); g.translate(-330, 0); cabeza(g, rf, t, opc); g.restore(); });
   detras(() => mitad(g, -1, rb, eb, s, t, opc, "delante"));
   delante(() => mitad(g, 1, rf, ef, s, t, opc, "delante"));
   g.restore();
@@ -332,4 +332,80 @@ export function veloArriba(g, al = 1) {
   const gr = g.createLinearGradient(0, 220, 0, 600);
   gr.addColorStop(0, "rgba(8,30,80,0)"); gr.addColorStop(0.45, `rgba(8,30,80,${0.32 * al})`); gr.addColorStop(1, "rgba(8,30,80,0)");
   g.fillStyle = gr; g.fillRect(0, 220, 1080, 380);
+}
+
+// ---------- la sala: pared, ventana con luz, alfombra ----------
+const SALA = (() => {
+  const c = k.lienzo(1080, 1920), g = c.getContext("2d");
+  const gp = g.createLinearGradient(0, 0, 0, 1300); gp.addColorStop(0, "#2d6f73"); gp.addColorStop(1, "#4fa3a0");
+  g.fillStyle = gp; g.fillRect(0, 0, 1080, 1300);
+  // papel pintado: rayas suaves
+  g.fillStyle = "rgba(255,255,255,0.05)"; for (let x = 0; x < 1080; x += 90) g.fillRect(x, 0, 40, 1300);
+  // la ventana con luz de tarde
+  g.fillStyle = "#f7e2b5"; k.redondo(g, 640, 420, 340, 470, 14); g.fill();
+  const gv = g.createLinearGradient(640, 420, 980, 890); gv.addColorStop(0, "#fff6d8"); gv.addColorStop(1, "#ffc36b");
+  g.fillStyle = gv; k.redondo(g, 660, 440, 300, 430, 10); g.fill();
+  g.fillStyle = "#e9d2a6"; g.fillRect(803, 440, 14, 430); g.fillRect(660, 648, 300, 14);
+  g.fillStyle = "#d9bb86"; g.fillRect(620, 880, 380, 30);
+  // el zócalo y el piso de madera
+  g.fillStyle = "#e8e0d0"; g.fillRect(0, 1270, 1080, 40);
+  const gm = g.createLinearGradient(0, 1310, 0, 1920); gm.addColorStop(0, "#9a5d34"); gm.addColorStop(1, "#6a3a1c");
+  g.fillStyle = gm; g.fillRect(0, 1310, 1080, 610);
+  g.strokeStyle = "rgba(40,15,5,0.35)"; g.lineWidth = 3;
+  for (let y = 1340, i = 0; y < 1920; y += 34 + i * 4, i++) { g.beginPath(); g.moveTo(0, y); g.lineTo(1080, y); g.stroke(); }
+  // la alfombra
+  g.fillStyle = "#c8443c"; g.beginPath(); g.ellipse(540, 1640, 520, 170, 0, 0, Math.PI * 2); g.fill();
+  g.strokeStyle = "#f2c14e"; g.lineWidth = 12; g.beginPath(); g.ellipse(540, 1640, 470, 140, 0, 0, Math.PI * 2); g.stroke();
+  return k.fijar(c);
+})();
+export function sala(g) {
+  g.drawImage(SALA, 0, 0);
+  // el rayo de luz de la ventana sobre el piso
+  g.save(); g.globalCompositeOperation = "lighter";
+  const gl = g.createLinearGradient(800, 650, 500, 1700); gl.addColorStop(0, "rgba(255,200,120,0.25)"); gl.addColorStop(1, "rgba(255,200,120,0)");
+  g.fillStyle = gl; g.beginPath(); g.moveTo(660, 880); g.lineTo(960, 880); g.lineTo(800, 1800); g.lineTo(200, 1800); g.closePath(); g.fill();
+  g.restore();
+}
+
+// Un cojín grande y mullido; `hunde` (0-1) lo aplasta cuando cae algo encima.
+export function cojin(g, x, y, w, h, color = ["#ffb347", "#e0702a", "#a8481a"], hunde = 0) {
+  const hh = h * (1 - 0.25 * hunde), ww = w * (1 + 0.06 * hunde);
+  g.fillStyle = "rgba(30,10,0,0.35)"; g.beginPath(); g.ellipse(x, y + hh * 0.45, ww * 0.55, hh * 0.18, 0, 0, Math.PI * 2); g.fill();
+  const gr = g.createLinearGradient(x, y - hh / 2, x, y + hh / 2);
+  gr.addColorStop(0, color[0]); gr.addColorStop(0.6, color[1]); gr.addColorStop(1, color[2]);
+  g.fillStyle = gr;
+  g.beginPath();
+  g.moveTo(x - ww / 2, y - hh * 0.3);
+  g.quadraticCurveTo(x, y - hh * 0.6 + 30 * hunde, x + ww / 2, y - hh * 0.3);
+  g.quadraticCurveTo(x + ww / 2 + 30, y, x + ww / 2, y + hh * 0.35);
+  g.quadraticCurveTo(x, y + hh * 0.55, x - ww / 2, y + hh * 0.35);
+  g.quadraticCurveTo(x - ww / 2 - 30, y, x - ww / 2, y - hh * 0.3);
+  g.closePath(); g.fill();
+  g.save(); g.clip(); pelo(g, 0.25); g.restore();
+  // el botón del centro y los pliegues
+  g.strokeStyle = "rgba(90,30,5,0.35)"; g.lineWidth = 5;
+  for (const d of [-1, 1]) { g.beginPath(); g.moveTo(x, y); g.quadraticCurveTo(x + d * ww * 0.2, y - hh * 0.1, x + d * ww * 0.4, y - hh * 0.25); g.stroke(); }
+  g.fillStyle = color[2]; g.beginPath(); g.arc(x, y, 12, 0, Math.PI * 2); g.fill();
+  g.fillStyle = "rgba(255,255,255,0.3)"; g.beginPath(); g.ellipse(x - ww * 0.2, y - hh * 0.3, ww * 0.2, hh * 0.06, -0.1, 0, Math.PI * 2); g.fill();
+}
+
+// El sofá bajo, de lado; el asiento a la altura `ya`.
+export function sofa(g, x, ya, w) {
+  // patas
+  g.fillStyle = "#3b2414"; for (const d of [-0.42, 0.42]) { g.fillRect(x + d * w - 14, ya + 150, 28, 60); }
+  // base y asiento
+  const gb = g.createLinearGradient(0, ya - 40, 0, ya + 160); gb.addColorStop(0, "#8e7bd8"); gb.addColorStop(1, "#4b3b94");
+  g.fillStyle = gb; k.redondo(g, x - w / 2, ya - 30, w, 190, 40); g.fill();
+  // respaldo
+  const gr = g.createLinearGradient(0, ya - 420, 0, ya); gr.addColorStop(0, "#9f8ce6"); gr.addColorStop(1, "#5b48a8");
+  g.fillStyle = gr; k.redondo(g, x - w / 2 + 20, ya - 400, w - 40, 400, 60); g.fill();
+  // cojín del asiento
+  const gc = g.createLinearGradient(0, ya - 60, 0, ya + 40); gc.addColorStop(0, "#b6a6f2"); gc.addColorStop(1, "#7462c4");
+  g.fillStyle = gc; k.redondo(g, x - w / 2 + 30, ya - 70, w - 60, 100, 36); g.fill();
+  // brazos
+  for (const d of [-1, 1]) {
+    const ga = g.createLinearGradient(0, ya - 220, 0, ya + 150); ga.addColorStop(0, "#a593ea"); ga.addColorStop(1, "#4b3b94");
+    g.fillStyle = ga; k.redondo(g, x + d * w / 2 - (d > 0 ? 90 : 0), ya - 220, 90, 380, 45); g.fill();
+  }
+  k.reflejo(g, x - w / 2 + 60, ya - 380, w - 120, 50, 0.18);
 }
