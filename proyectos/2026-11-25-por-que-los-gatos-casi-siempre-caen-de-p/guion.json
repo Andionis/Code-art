@@ -2,19 +2,59 @@
   "titulo": "Por qué los gatos casi siempre caen de pie",
   "idioma": "es",
   "subtitulos": "arriba",
-  "voz": { "id": "TX3LPaxmHKxFdv7VOQHJ" },
+  "voz": {
+    "id": "TX3LPaxmHKxFdv7VOQHJ"
+  },
   "frases": [
-    { "texto": "¿Por qué los gatos casi siempre caen de pie?", "clave": "pie", "hook": true },
-    { "texto": "Aunque se caigan de espaldas, en el aire, sin nada de dónde agarrarse, se dan la vuelta.", "clave": "vuelta", "hook": true },
-    { "texto": "Primero, su oído funciona como el nivel de burbuja de un albañil: le dice al instante dónde está el suelo.", "clave": "oído" },
-    { "texto": "Pero girar en el aire parece imposible: no tiene nada contra qué empujar.", "clave": "imposible" },
-    { "texto": "El truco: su espalda es tan flexible que se dobla por la mitad, como si fueran dos gatos pegados.", "clave": "mitad" },
-    { "texto": "Encoge las patas de adelante, y la mitad delantera gira rapidísimo, como una patinadora que cierra los brazos.", "clave": "patinadora" },
-    { "texto": "Luego estira esas patas, encoge las de atrás, y gira la otra mitad.", "clave": "otra" },
-    { "texto": "Ya mirando al suelo, dobla las patas como resortes para aguantar el golpe.", "clave": "resortes" },
-    { "texto": "Los gatitos empiezan a hacerlo a las tres semanas, y a las siete ya les sale perfecto.", "clave": "siete" },
-    { "texto": "Pero si caen desde muy poca altura, no les da tiempo a girar. Por eso es «casi» siempre.", "clave": "casi" },
-    { "texto": "Así que no es suerte: es un giro en dos mitades que hacen sin pensar.", "clave": "giro" },
-    { "texto": "Envíaselo a un amigo que le pueda interesar.", "clave": "amigo" }
+    {
+      "texto": "¿Por qué los gatos casi siempre caen de pie?",
+      "clave": "pie",
+      "hook": true
+    },
+    {
+      "texto": "Aunque se caigan de espaldas, en el aire, sin nada de dónde agarrarse, se dan la vuelta.",
+      "clave": "vuelta",
+      "hook": true
+    },
+    {
+      "texto": "Primero, su oído funciona como el nivel de burbuja de un albañil: le dice al instante dónde está el suelo.",
+      "clave": "oído"
+    },
+    {
+      "texto": "Pero girar en el aire parece imposible: no tiene nada contra qué empujar.",
+      "clave": "imposible"
+    },
+    {
+      "texto": "El truco: su espalda es tan flexible que se dobla por la mitad, como si fueran dos gatos pegados.",
+      "clave": "mitad"
+    },
+    {
+      "texto": "Encoge las patas de adelante, y la mitad delantera gira rapidísimo, como una patinadora que cierra los brazos.",
+      "clave": "patinadora"
+    },
+    {
+      "texto": "Luego estira esas patas, encoge las de atrás, y gira la otra mitad.",
+      "clave": "otra"
+    },
+    {
+      "texto": "Ya mirando al suelo, dobla las patas como resortes para aguantar el golpe.",
+      "clave": "resortes"
+    },
+    {
+      "texto": "Los gatitos empiezan a hacerlo a las tres semanas, y a las siete ya les sale perfecto.",
+      "clave": "siete"
+    },
+    {
+      "texto": "Pero si caen desde muy poca altura, no les da tiempo a girar. Por eso es «casi» siempre.",
+      "clave": "casi"
+    },
+    {
+      "texto": "Así que no es suerte: es un giro en dos mitades que hacen sin pensar.",
+      "clave": "giro"
+    },
+    {
+      "texto": "Envíaselo a un amigo que le pueda interesar, y sígueme para más.",
+      "clave": "sígueme"
+    }
   ]
 }

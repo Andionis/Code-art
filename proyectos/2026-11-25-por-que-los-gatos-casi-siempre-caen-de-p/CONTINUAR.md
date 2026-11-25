@@ -7,7 +7,9 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 - «Hazme el tema 75»: ¿Por qué los gatos casi siempre caen de pie? Video explicativo 2D (no lyric).
 - Voz: Liam (TX3LPaxmHKxFdv7VOQHJ), como en el video de los mocos (plan gratis).
-- Marca de agua Michi Lyrics en cada plano (preferencias.md).
+- «No quiero marca de agua»: este video va sin marca de agua.
+- «Que el video termine en el último fragmento del comienzo»: el final enlaza con el primer fotograma (bucle).
+- «Que diga sígueme al final con un botón en el final»: el cierre añade «y sígueme para más», con un botón SÍGUEME que se aprieta (como `#piezas/planos/comprar.js`).
 
 ## Pendiente del creador
 
