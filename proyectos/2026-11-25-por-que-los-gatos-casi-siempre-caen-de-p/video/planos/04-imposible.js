@@ -39,6 +39,17 @@ function remolino(g, x, y, u, s) {
 }
 const EMPUJES = [0, 0.35, 0.7, 1.05, 1.4].map((d, i) => ({ t: Temp - 0.55 + d, x: i % 2 ? -230 : 170, dx: i % 2 ? -40 : 50 }));
 
+// la costura de luz en la cintura: «dos gatos pegados»
+export function costura(g, c, al, cost) {
+  if (al <= 0) return;
+  g.save(); g.globalCompositeOperation = "lighter"; g.globalAlpha *= al;
+  g.translate(c.x, c.y); g.scale(c.s, c.s);
+  g.strokeStyle = `rgba(255,255,230,${0.6 + 0.4 * cost})`; g.lineWidth = 10 + 10 * cost; g.lineCap = "round"; g.shadowColor = "rgba(255,255,200,1)"; g.shadowBlur = 30;
+  g.setLineDash([22, 16]);
+  g.beginPath(); g.moveTo(0, -125); g.lineTo(0, 125); g.stroke();
+  g.restore();
+}
+
 export function dibuja(g, t) {
   cielo(g, lento(t), 0);
   const c = CAM(t);
@@ -49,15 +60,6 @@ export function dibuja(g, t) {
   gato(g, c.x, c.y, c.s, 0.03 * Math.sin((t - T0) * 1.1), PI, PI, 0.25 + 0.3 * patalea * (0.5 + 0.5 * Math.sin(t * 11)), 0.3 + 0.3 * patalea * (0.5 + 0.5 * Math.sin(t * 11 + 2)), dobla, t * 0.6,
     { agita: 0.25 + 0.9 * patalea, haloF: { c: HALO_F, al: hal }, haloB: { c: HALO_B, al: hal } });
   for (const e of EMPUJES) remolino(g, c.x + e.x * c.s + e.dx * tr(t, e.t, e.t + 0.8), c.y - 330 * c.s - 80 * tr(t, e.t, e.t + 0.8), tr(t, e.t, e.t + 0.8), c.s);
-  // la costura de luz en la cintura: «dos gatos pegados»
-  const cosA = su(tr(t, Tdos - 0.1, Tdos + 0.2));
-  if (cosA > 0) {
-    g.save(); g.globalCompositeOperation = "lighter"; g.globalAlpha *= cosA;
-    g.translate(c.x, c.y); g.scale(c.s, c.s);
-    g.strokeStyle = `rgba(255,255,230,${0.6 + 0.4 * cost})`; g.lineWidth = 10 + 10 * cost; g.lineCap = "round"; g.shadowColor = "rgba(255,255,200,1)"; g.shadowBlur = 30;
-    g.setLineDash([22, 16]);
-    g.beginPath(); g.moveTo(0, -125); g.lineTo(0, 125); g.stroke();
-    g.restore();
-  }
+  costura(g, c, su(tr(t, Tdos - 0.1, Tdos + 0.2)), k.pulso(t, Tpeg + 0.1, 0.3));
   veloArriba(g, 1);
 }

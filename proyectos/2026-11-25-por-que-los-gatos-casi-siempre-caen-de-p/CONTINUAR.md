@@ -24,8 +24,8 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 - [ ] 5. Escena por escena (cada una, su borrador aprobado):
   - [x] escena 1: el hook (hasta 8,7 s) — aprobada v1
   - [x] escena 2: el oído (hasta 15,0 s) — aprobada v1
-  - [ ] escena 3: imposible y las dos mitades (hasta 25,4 s) — borrador v1 enseñado
-  - [ ] escena 4: la patinadora y la otra mitad (hasta 36,0 s)
+  - [x] escena 3: imposible y las dos mitades (hasta 25,4 s) — aprobada v1
+  - [ ] escena 4: la patinadora y la otra mitad (hasta 36,0 s) — borrador v1 enseñado
   - [ ] escena 5: aterrizaje, gatitos y «casi» (hasta 50,3 s)
   - [ ] escena 6: remate y cierre (hasta el final)
 - [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
