@@ -2,18 +2,55 @@
   "titulo": "Por qué el pulpo tiene tres corazones",
   "idioma": "es",
   "subtitulos": "arriba",
-  "voz": { "id": "TX3LPaxmHKxFdv7VOQHJ" },
+  "voz": {
+    "id": "TX3LPaxmHKxFdv7VOQHJ"
+  },
   "frases": [
-    { "texto": "¿Por qué el pulpo tiene tres corazones?", "clave": "tres", "hook": true },
-    { "texto": "Y uno de ellos se detiene cada vez que nada.", "clave": "detiene", "hook": true },
-    { "texto": "Para empezar, su sangre no es roja: es azul, porque lleva cobre en vez de hierro.", "clave": "azul" },
-    { "texto": "Para sacar el oxígeno del agua, esa sangre tiene que cruzar sus dos branquias.", "clave": "branquias" },
-    { "texto": "Y al pasar por ellas pierde fuerza, como el agua en una manguera que pisas.", "clave": "fuerza" },
-    { "texto": "Por eso cada branquia tiene su propio corazón, que empuja la sangre a través de ella.", "clave": "propio" },
-    { "texto": "Y el tercero, el más grande, la manda cargada de oxígeno a todo el cuerpo.", "clave": "cuerpo" },
-    { "texto": "Pero cuando el pulpo nada, ese corazón grande deja de latir.", "clave": "latir" },
-    { "texto": "Por eso nadar lo agota, y casi siempre prefiere caminar con sus brazos.", "clave": "caminar" },
-    { "texto": "Así que no le sobran corazones: sin los tres, su sangre azul no llegaría a ninguna parte.", "clave": "tres" },
-    { "texto": "Envíaselo a un amigo que le pueda interesar.", "clave": "amigo" }
+    {
+      "texto": "¿Por qué el pulpo tiene tres corazones?",
+      "clave": "tres",
+      "hook": true
+    },
+    {
+      "texto": "Y uno de ellos se detiene cada vez que nada.",
+      "clave": "detiene",
+      "hook": true
+    },
+    {
+      "texto": "Para empezar, su sangre no es roja: es azul, porque lleva cobre en vez de hierro.",
+      "clave": "azul"
+    },
+    {
+      "texto": "Para sacar el oxígeno del agua, esa sangre tiene que cruzar sus dos branquias.",
+      "clave": "branquias"
+    },
+    {
+      "texto": "Y al pasar por ellas pierde fuerza, como el agua en una manguera que pisas.",
+      "clave": "fuerza"
+    },
+    {
+      "texto": "Por eso cada branquia tiene su propio corazón, que empuja la sangre a través de ella.",
+      "clave": "propio"
+    },
+    {
+      "texto": "Y el tercero, el más grande, la manda cargada de oxígeno a todo el cuerpo.",
+      "clave": "cuerpo"
+    },
+    {
+      "texto": "Pero cuando el pulpo nada, ese corazón grande deja de latir.",
+      "clave": "latir"
+    },
+    {
+      "texto": "Por eso nadar lo agota, y casi siempre prefiere caminar con sus brazos.",
+      "clave": "caminar"
+    },
+    {
+      "texto": "Así que no le sobran corazones: sin los tres, su sangre azul no llegaría a ninguna parte.",
+      "clave": "tres"
+    },
+    {
+      "texto": "Envíaselo a un amigo que le pueda interesar, y sígueme para más.",
+      "clave": "sígueme"
+    }
   ]
 }
