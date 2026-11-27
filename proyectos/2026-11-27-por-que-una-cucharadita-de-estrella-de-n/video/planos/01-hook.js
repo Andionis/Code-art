@@ -9,7 +9,7 @@
 //   1.000.000.000 t en «toneladas». Reposa antes del corte.
 import * as k from "#kit";
 import { v } from "#voz";
-import { balancin, valle, PIV, BI, CUCH_ALTO, marcaDeAgua } from "../mundo.js";
+import { balancin, valle, PIV, BI, CUCH_ALTO } from "../mundo.js";
 
 export const desde = 0;
 
@@ -97,5 +97,4 @@ export function dibuja(g, t) {
   // la cifra: corre en «mil millones» y para en «toneladas»
   const cuenta = entra(tr(t, Tmil - 0.1, Tton + 0.1)), al = tr(t, Tmil - 0.3, Tmil);
   if (al > 0) k.pastilla(g, 540, 1235, k.fmt(Math.round(1e9 * cuenta)), "t", "170,205,255", al, 104);
-  marcaDeAgua(g);
 }

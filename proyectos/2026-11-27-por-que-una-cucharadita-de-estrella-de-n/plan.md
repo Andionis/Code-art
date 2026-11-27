@@ -28,7 +28,7 @@
 | 10 | A esa densidad, toda la humanidad cabría en un terrón de **azúcar**. | Una mesa; un río de personitas se arremolina y entra en un terrón de azúcar, que brilla; «8.000 millones». | «azúcar» | quieta | corte en «Tierra» |
 | 11 | Y la **Tierra** entera, en una bola de trescientos metros. | La Tierra grande gira; se aprieta de golpe en una bolita brillante; «300 m». | «trescientos» | quieta | corte en «Así» |
 | 12 | Así que no es que sea un material pesado: es que en esa cucharadita no queda **nada** vacío. | La cucharita del hook, de cerca; la cámara entra en su luz hasta ver los neutrones apretados, sin huecos. | «nada» | entra | sigue |
-| 13 | Envíaselo a un amigo que le pueda interesar. | La cámara sale hasta ver el balancín con la cucharita abajo y la montaña arriba, como al principio. | «amigo» | se aleja | fin |
+| 13 | **Sígueme** para más. | La cámara sale de la luz y queda como al final del hook: la cucharita de cerca con «1.000.000.000 t»; debajo llega un botón «Seguir» y un dedo lo aprieta en «más» (pasa a «Siguiendo»). | «más» | sale | fin |
 
 ## Las escenas
 
@@ -39,4 +39,4 @@
 | 3 (el átomo) | 5-6 | 29.2 | |
 | 4 (los neutrones) | 7-8 | 40.6 | |
 | 5 (las comparaciones) | 9-11 | 53.4 | |
-| 6 (remate y cierre) | 12-13 | 62 | |
+| 6 (remate y cierre) | 12-13 | 61.4 | |

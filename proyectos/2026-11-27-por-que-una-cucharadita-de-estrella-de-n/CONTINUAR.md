@@ -8,6 +8,8 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 - Guion aprobado («Apruebo»). Video explicativo con voz (no lyric). Voz TX3LPaxmHKxFdv7VOQHJ, hecha (62 s).
 - Voz en la nube: ELEVENLABS_API_KEY=sk_dummy NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt (el proxy pone la clave).
 
+- Escena 1 v1, corregida: «No quiero marca de agua» (en todos), «que el video termine en el último fragmento del comienzo» (acaba en la cucharita de cerca con 1.000.000.000 t) y «que diga sígueme al final con un botón»: cierre de la voz «Sígueme para más.» y botón «Seguir» que se aprieta.
+
 ## Pendiente del creador
 
 -

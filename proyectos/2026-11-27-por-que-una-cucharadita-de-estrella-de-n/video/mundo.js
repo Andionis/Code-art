@@ -1,9 +1,7 @@
 // Lo que comparten los planos: el valle al atardecer con el balancín, la cucharita con su luz azul y la montaña (el
-// hook y el final), y la marca de agua.
+// hook y el final).
 import * as k from "#kit";
 import { v } from "#voz";
-import { marcaDeAgua } from "#piezas/marca-agua.js";
-export { marcaDeAgua };
 
 const { mez, azar } = k;
 

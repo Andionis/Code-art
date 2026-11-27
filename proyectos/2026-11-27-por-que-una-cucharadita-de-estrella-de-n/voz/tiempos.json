@@ -1,97 +1,97 @@
 {
-  "firma": "a7fa07597458",
-  "duracion": 62,
+  "firma": "a45cea42bbc7",
+  "duracion": 61.44,
   "frases": [
     {
       "n": 1,
       "texto": "¿Por qué una cucharadita de estrella de neutrones pesaría más que una montaña?",
       "clave": "montaña",
       "inicio": 0,
-      "fin": 4.44
+      "fin": 4.32
     },
     {
       "n": 2,
       "texto": "Una sola cucharadita: más de mil millones de toneladas.",
       "clave": "toneladas",
-      "inicio": 4.72,
-      "fin": 8.96
+      "inicio": 4.56,
+      "fin": 8.92
     },
     {
       "n": 3,
       "texto": "Todo empieza con una estrella gigante, mucho más grande que el Sol, que se queda sin combustible.",
       "clave": "combustible",
-      "inicio": 9.28,
-      "fin": 14.88
+      "inicio": 9.2,
+      "fin": 14.8
     },
     {
       "n": 4,
       "texto": "Su centro ya no aguanta su propio peso, y en menos de un segundo se desploma.",
       "clave": "desploma",
-      "inicio": 14.92,
-      "fin": 19.76
+      "inicio": 14.84,
+      "fin": 19.64
     },
     {
       "n": 5,
       "texto": "Y lo que aplasta es lo mismo de lo que estás hecho tú: átomos.",
       "clave": "átomos",
-      "inicio": 19.8,
-      "fin": 23.76
+      "inicio": 19.84,
+      "fin": 23.44
     },
     {
       "n": 6,
       "texto": "Un átomo está casi vacío: si fuera un estadio, su núcleo sería una hormiga en el centro.",
       "clave": "vacío",
       "inicio": 23.84,
-      "fin": 29.2
+      "fin": 28.88
     },
     {
       "n": 7,
       "texto": "Pero la gravedad es tan fuerte que mete los electrones dentro del núcleo, y todo se vuelve neutrones.",
       "clave": "neutrones",
-      "inicio": 29.253,
-      "fin": 35.36
+      "inicio": 29.28,
+      "fin": 35.24
     },
     {
       "n": 8,
       "texto": "Ya no queda ni un hueco: pegados unos con otros, como canicas en un frasco apretado.",
       "clave": "hueco",
       "inicio": 35.44,
-      "fin": 40.56
+      "fin": 40.4
     },
     {
       "n": 9,
       "texto": "Así, más que todo el Sol queda metido en una bola de unos veinte kilómetros, lo que mide una ciudad.",
       "clave": "ciudad",
-      "inicio": 40.68,
-      "fin": 46.32
+      "inicio": 40.64,
+      "fin": 46.4
     },
     {
       "n": 10,
       "texto": "A esa densidad, toda la humanidad cabría en un terrón de azúcar.",
       "clave": "azúcar",
-      "inicio": 46.4,
-      "fin": 50.08
+      "inicio": 46.8,
+      "fin": 50.64
     },
     {
       "n": 11,
       "texto": "Y la Tierra entera, en una bola de trescientos metros.",
       "clave": "Tierra",
-      "inicio": 50.12,
-      "fin": 53.36
+      "inicio": 50.68,
+      "fin": 53.72
     },
     {
       "n": 12,
       "texto": "Así que no es que sea un material pesado: es que en esa cucharadita no queda nada vacío.",
       "clave": "nada",
-      "inicio": 53.44,
-      "fin": 59.2
+      "inicio": 53.92,
+      "fin": 59.44
     },
     {
       "n": 13,
-      "texto": "Envíaselo a un amigo que le pueda interesar.",
-      "clave": "amigo",
-      "inicio": 59.28,
-      "fin": 61.2
+      "texto": "Sígueme para más.",
+      "clave": "Sígueme",
+      "inicio": 59.52,
+      "fin": 60.64
     }
   ],
   "palabras": [
@@ -133,27 +133,27 @@
     {
       "texto": "estrella",
       "inicio": 1.28,
-      "fin": 1.68,
+      "fin": 1.6,
       "frase": 1,
       "clave": false
     },
     {
       "texto": "de",
-      "inicio": 1.72,
-      "fin": 1.76,
+      "inicio": 1.68,
+      "fin": 1.72,
       "frase": 1,
       "clave": false
     },
     {
       "texto": "neutrones",
-      "inicio": 1.8,
+      "inicio": 1.76,
       "fin": 2.4,
       "frase": 1,
       "clave": false
     },
     {
       "texto": "pesaría",
-      "inicio": 2.48,
+      "inicio": 2.52,
       "fin": 2.88,
       "frase": 1,
       "clave": false
@@ -181,182 +181,182 @@
     },
     {
       "texto": "montaña?",
-      "inicio": 3.6,
-      "fin": 4.44,
+      "inicio": 3.68,
+      "fin": 4.32,
       "frase": 1,
       "clave": true
     },
     {
       "texto": "Una",
-      "inicio": 4.72,
-      "fin": 4.96,
+      "inicio": 4.56,
+      "fin": 4.88,
       "frase": 2,
       "clave": false
     },
     {
       "texto": "sola",
-      "inicio": 5.12,
-      "fin": 5.36,
+      "inicio": 5.04,
+      "fin": 5.28,
       "frase": 2,
       "clave": false
     },
     {
       "texto": "cucharadita:",
-      "inicio": 5.44,
-      "fin": 6.56,
+      "inicio": 5.32,
+      "fin": 6.4,
       "frase": 2,
       "clave": false
     },
     {
       "texto": "más",
-      "inicio": 6.6,
-      "fin": 6.72,
+      "inicio": 6.48,
+      "fin": 6.64,
       "frase": 2,
       "clave": false
     },
     {
       "texto": "de",
-      "inicio": 6.8,
-      "fin": 7.04,
+      "inicio": 6.72,
+      "fin": 6.96,
       "frase": 2,
       "clave": false
     },
     {
       "texto": "mil",
-      "inicio": 7.12,
-      "fin": 7.28,
+      "inicio": 7.04,
+      "fin": 7.2,
       "frase": 2,
       "clave": false
     },
     {
       "texto": "millones",
-      "inicio": 7.36,
+      "inicio": 7.28,
       "fin": 7.84,
       "frase": 2,
       "clave": false
     },
     {
       "texto": "de",
-      "inicio": 7.92,
-      "fin": 7.96,
+      "inicio": 7.88,
+      "fin": 7.92,
       "frase": 2,
       "clave": false
     },
     {
       "texto": "toneladas.",
       "inicio": 8,
-      "fin": 8.96,
+      "fin": 8.92,
       "frase": 2,
       "clave": true
     },
     {
       "texto": "Todo",
-      "inicio": 9.28,
-      "fin": 9.44,
+      "inicio": 9.2,
+      "fin": 9.36,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "empieza",
-      "inicio": 9.52,
-      "fin": 9.92,
+      "inicio": 9.44,
+      "fin": 9.76,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "con",
-      "inicio": 10,
-      "fin": 10.08,
+      "inicio": 9.84,
+      "fin": 9.92,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "una",
-      "inicio": 10.16,
-      "fin": 10.24,
+      "inicio": 9.96,
+      "fin": 10,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "estrella",
-      "inicio": 10.32,
-      "fin": 10.64,
+      "inicio": 10.08,
+      "fin": 10.48,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "gigante,",
-      "inicio": 10.72,
-      "fin": 11.6,
+      "inicio": 10.56,
+      "fin": 11.44,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "mucho",
-      "inicio": 11.68,
-      "fin": 11.92,
+      "inicio": 11.52,
+      "fin": 11.76,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "más",
-      "inicio": 12,
-      "fin": 12.08,
+      "inicio": 11.84,
+      "fin": 11.92,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "grande",
-      "inicio": 12.16,
-      "fin": 12.4,
+      "inicio": 12,
+      "fin": 12.24,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "que",
-      "inicio": 12.44,
-      "fin": 12.48,
+      "inicio": 12.28,
+      "fin": 12.32,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "el",
-      "inicio": 12.56,
-      "fin": 12.64,
+      "inicio": 12.4,
+      "fin": 12.48,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "Sol,",
-      "inicio": 12.76,
-      "fin": 13.12,
+      "inicio": 12.56,
+      "fin": 12.96,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "que",
-      "inicio": 13.16,
-      "fin": 13.2,
+      "inicio": 13.04,
+      "fin": 13.12,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "se",
-      "inicio": 13.28,
-      "fin": 13.32,
+      "inicio": 13.2,
+      "fin": 13.28,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "queda",
-      "inicio": 13.36,
-      "fin": 13.6,
+      "inicio": 13.4,
+      "fin": 13.52,
       "frase": 3,
       "clave": false
     },
     {
       "texto": "sin",
-      "inicio": 13.64,
+      "inicio": 13.6,
       "fin": 13.68,
       "frase": 3,
       "clave": false
@@ -364,217 +364,217 @@
     {
       "texto": "combustible.",
       "inicio": 13.76,
-      "fin": 14.88,
+      "fin": 14.8,
       "frase": 3,
       "clave": true
     },
     {
       "texto": "Su",
-      "inicio": 14.92,
-      "fin": 14.96,
+      "inicio": 14.84,
+      "fin": 14.88,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "centro",
-      "inicio": 15.04,
-      "fin": 15.44,
+      "inicio": 14.96,
+      "fin": 15.36,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "ya",
-      "inicio": 15.52,
+      "inicio": 15.44,
       "fin": 15.6,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "no",
-      "inicio": 15.68,
-      "fin": 15.76,
+      "inicio": 15.64,
+      "fin": 15.68,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "aguanta",
-      "inicio": 15.84,
-      "fin": 16.16,
+      "inicio": 15.76,
+      "fin": 16.08,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "su",
-      "inicio": 16.24,
-      "fin": 16.32,
+      "inicio": 16.16,
+      "fin": 16.24,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "propio",
-      "inicio": 16.4,
-      "fin": 16.64,
+      "inicio": 16.32,
+      "fin": 16.56,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "peso,",
-      "inicio": 16.76,
-      "fin": 17.2,
+      "inicio": 16.68,
+      "fin": 17.12,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "y",
-      "inicio": 17.24,
-      "fin": 17.28,
+      "inicio": 17.16,
+      "fin": 17.2,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "en",
-      "inicio": 17.36,
-      "fin": 17.44,
+      "inicio": 17.28,
+      "fin": 17.36,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "menos",
-      "inicio": 17.52,
+      "inicio": 17.44,
       "fin": 17.68,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "de",
-      "inicio": 17.76,
-      "fin": 17.84,
+      "inicio": 17.8,
+      "fin": 17.92,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "un",
-      "inicio": 17.92,
-      "fin": 18,
+      "inicio": 18,
+      "fin": 18.08,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "segundo",
-      "inicio": 18.08,
-      "fin": 18.48,
+      "inicio": 18.16,
+      "fin": 18.56,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "se",
-      "inicio": 18.64,
-      "fin": 18.72,
+      "inicio": 18.72,
+      "fin": 18.8,
       "frase": 4,
       "clave": false
     },
     {
       "texto": "desploma.",
-      "inicio": 18.8,
-      "fin": 19.76,
+      "inicio": 18.88,
+      "fin": 19.64,
       "frase": 4,
       "clave": true
     },
     {
       "texto": "Y",
-      "inicio": 19.8,
-      "fin": 19.84,
+      "inicio": 19.84,
+      "fin": 19.92,
       "frase": 5,
       "clave": false
     },
     {
       "texto": "lo",
-      "inicio": 19.92,
-      "fin": 19.96,
+      "inicio": 20,
+      "fin": 20.04,
       "frase": 5,
       "clave": false
     },
     {
       "texto": "que",
-      "inicio": 20,
-      "fin": 20.08,
+      "inicio": 20.08,
+      "fin": 20.16,
       "frase": 5,
       "clave": false
     },
     {
       "texto": "aplasta",
-      "inicio": 20.16,
+      "inicio": 20.24,
       "fin": 20.64,
       "frase": 5,
       "clave": false
     },
     {
       "texto": "es",
-      "inicio": 20.72,
-      "fin": 20.8,
+      "inicio": 20.8,
+      "fin": 20.88,
       "frase": 5,
       "clave": false
     },
     {
       "texto": "lo",
-      "inicio": 20.88,
-      "fin": 20.96,
+      "inicio": 20.96,
+      "fin": 21.04,
       "frase": 5,
       "clave": false
     },
     {
       "texto": "mismo",
-      "inicio": 21.04,
-      "fin": 21.28,
-      "frase": 5,
-      "clave": false
-    },
-    {
-      "texto": "de",
-      "inicio": 21.32,
+      "inicio": 21.12,
       "fin": 21.36,
       "frase": 5,
       "clave": false
     },
     {
+      "texto": "de",
+      "inicio": 21.4,
+      "fin": 21.44,
+      "frase": 5,
+      "clave": false
+    },
+    {
       "texto": "lo",
-      "inicio": 21.44,
-      "fin": 21.48,
+      "inicio": 21.52,
+      "fin": 21.56,
       "frase": 5,
       "clave": false
     },
     {
       "texto": "que",
-      "inicio": 21.52,
-      "fin": 21.573,
+      "inicio": 21.6,
+      "fin": 21.68,
       "frase": 5,
       "clave": false
     },
     {
       "texto": "estás",
-      "inicio": 21.627,
-      "fin": 21.84,
+      "inicio": 21.72,
+      "fin": 21.92,
       "frase": 5,
       "clave": false
     },
     {
       "texto": "hecho",
-      "inicio": 21.88,
+      "inicio": 21.96,
       "fin": 22.08,
       "frase": 5,
       "clave": false
     },
     {
       "texto": "tú:",
-      "inicio": 22.133,
-      "fin": 22.64,
+      "inicio": 22.16,
+      "fin": 22.8,
       "frase": 5,
       "clave": false
     },
     {
       "texto": "átomos.",
-      "inicio": 22.76,
-      "fin": 23.76,
+      "inicio": 22.92,
+      "fin": 23.44,
       "frase": 5,
       "clave": true
     },
@@ -594,21 +594,21 @@
     },
     {
       "texto": "está",
-      "inicio": 24.44,
-      "fin": 24.72,
+      "inicio": 24.4,
+      "fin": 24.64,
       "frase": 6,
       "clave": false
     },
     {
       "texto": "casi",
       "inicio": 24.8,
-      "fin": 24.96,
+      "fin": 25.04,
       "frase": 6,
       "clave": false
     },
     {
       "texto": "vacío:",
-      "inicio": 25.04,
+      "inicio": 25.12,
       "fin": 25.84,
       "frase": 6,
       "clave": true
@@ -636,35 +636,35 @@
     },
     {
       "texto": "estadio,",
-      "inicio": 26.36,
+      "inicio": 26.32,
       "fin": 26.88,
       "frase": 6,
       "clave": false
     },
     {
       "texto": "su",
-      "inicio": 26.92,
-      "fin": 26.96,
+      "inicio": 26.96,
+      "fin": 27.04,
       "frase": 6,
       "clave": false
     },
     {
       "texto": "núcleo",
-      "inicio": 27.04,
-      "fin": 27.36,
+      "inicio": 27.12,
+      "fin": 27.44,
       "frase": 6,
       "clave": false
     },
     {
       "texto": "sería",
-      "inicio": 27.44,
-      "fin": 27.6,
+      "inicio": 27.52,
+      "fin": 27.68,
       "frase": 6,
       "clave": false
     },
     {
       "texto": "una",
-      "inicio": 27.68,
+      "inicio": 27.72,
       "fin": 27.76,
       "frase": 6,
       "clave": false
@@ -672,111 +672,111 @@
     {
       "texto": "hormiga",
       "inicio": 27.84,
-      "fin": 28.16,
-      "frase": 6,
-      "clave": false
-    },
-    {
-      "texto": "en",
-      "inicio": 28.2,
       "fin": 28.24,
       "frase": 6,
       "clave": false
     },
     {
+      "texto": "en",
+      "inicio": 28.28,
+      "fin": 28.32,
+      "frase": 6,
+      "clave": false
+    },
+    {
       "texto": "el",
-      "inicio": 28.32,
+      "inicio": 28.36,
       "fin": 28.4,
       "frase": 6,
       "clave": false
     },
     {
       "texto": "centro.",
-      "inicio": 28.52,
-      "fin": 29.2,
+      "inicio": 28.48,
+      "fin": 28.88,
       "frase": 6,
       "clave": false
     },
     {
       "texto": "Pero",
-      "inicio": 29.253,
-      "fin": 29.36,
-      "frase": 7,
-      "clave": false
-    },
-    {
-      "texto": "la",
-      "inicio": 29.4,
+      "inicio": 29.28,
       "fin": 29.44,
       "frase": 7,
       "clave": false
     },
     {
+      "texto": "la",
+      "inicio": 29.48,
+      "fin": 29.52,
+      "frase": 7,
+      "clave": false
+    },
+    {
       "texto": "gravedad",
-      "inicio": 29.52,
+      "inicio": 29.6,
       "fin": 30,
       "frase": 7,
       "clave": false
     },
     {
       "texto": "es",
-      "inicio": 30.12,
-      "fin": 30.24,
+      "inicio": 30.08,
+      "fin": 30.16,
       "frase": 7,
       "clave": false
     },
     {
       "texto": "tan",
       "inicio": 30.32,
-      "fin": 30.56,
+      "fin": 30.48,
       "frase": 7,
       "clave": false
     },
     {
       "texto": "fuerte",
       "inicio": 30.64,
-      "fin": 30.96,
+      "fin": 31.04,
       "frase": 7,
       "clave": false
     },
     {
       "texto": "que",
-      "inicio": 31.04,
-      "fin": 31.12,
+      "inicio": 31.12,
+      "fin": 31.2,
       "frase": 7,
       "clave": false
     },
     {
       "texto": "mete",
       "inicio": 31.28,
-      "fin": 31.48,
+      "fin": 31.44,
       "frase": 7,
       "clave": false
     },
     {
       "texto": "los",
-      "inicio": 31.52,
-      "fin": 31.6,
+      "inicio": 31.48,
+      "fin": 31.52,
       "frase": 7,
       "clave": false
     },
     {
       "texto": "electrones",
-      "inicio": 31.68,
-      "fin": 32.24,
+      "inicio": 31.6,
+      "fin": 32.16,
       "frase": 7,
       "clave": false
     },
     {
       "texto": "dentro",
-      "inicio": 32.32,
-      "fin": 32.64,
+      "inicio": 32.24,
+      "fin": 32.56,
       "frase": 7,
       "clave": false
     },
     {
       "texto": "del",
-      "inicio": 32.68,
+      "inicio": 32.64,
       "fin": 32.72,
       "frase": 7,
       "clave": false
@@ -784,20 +784,20 @@
     {
       "texto": "núcleo,",
       "inicio": 32.8,
-      "fin": 33.44,
+      "fin": 33.36,
       "frase": 7,
       "clave": false
     },
     {
       "texto": "y",
-      "inicio": 33.56,
-      "fin": 33.68,
+      "inicio": 33.4,
+      "fin": 33.44,
       "frase": 7,
       "clave": false
     },
     {
       "texto": "todo",
-      "inicio": 33.8,
+      "inicio": 33.68,
       "fin": 33.92,
       "frase": 7,
       "clave": false
@@ -805,21 +805,21 @@
     {
       "texto": "se",
       "inicio": 34,
-      "fin": 34.08,
+      "fin": 34.16,
       "frase": 7,
       "clave": false
     },
     {
       "texto": "vuelve",
-      "inicio": 34.16,
+      "inicio": 34.2,
       "fin": 34.4,
       "frase": 7,
       "clave": false
     },
     {
       "texto": "neutrones.",
-      "inicio": 34.44,
-      "fin": 35.36,
+      "inicio": 34.48,
+      "fin": 35.24,
       "frase": 7,
       "clave": true
     },
@@ -832,49 +832,49 @@
     },
     {
       "texto": "no",
-      "inicio": 35.6,
-      "fin": 35.68,
+      "inicio": 35.56,
+      "fin": 35.6,
       "frase": 8,
       "clave": false
     },
     {
       "texto": "queda",
-      "inicio": 35.84,
-      "fin": 36,
+      "inicio": 35.68,
+      "fin": 35.92,
       "frase": 8,
       "clave": false
     },
     {
       "texto": "ni",
-      "inicio": 36.08,
-      "fin": 36.24,
+      "inicio": 36,
+      "fin": 36.16,
       "frase": 8,
       "clave": false
     },
     {
       "texto": "un",
-      "inicio": 36.32,
-      "fin": 36.4,
+      "inicio": 36.24,
+      "fin": 36.32,
       "frase": 8,
       "clave": false
     },
     {
       "texto": "hueco:",
-      "inicio": 36.52,
-      "fin": 37.04,
+      "inicio": 36.4,
+      "fin": 36.96,
       "frase": 8,
       "clave": true
     },
     {
       "texto": "pegados",
-      "inicio": 37.12,
-      "fin": 37.52,
+      "inicio": 37.04,
+      "fin": 37.44,
       "frase": 8,
       "clave": false
     },
     {
       "texto": "unos",
-      "inicio": 37.6,
+      "inicio": 37.52,
       "fin": 37.76,
       "frase": 8,
       "clave": false
@@ -910,504 +910,469 @@
     {
       "texto": "en",
       "inicio": 39.12,
-      "fin": 39.16,
+      "fin": 39.2,
       "frase": 8,
       "clave": false
     },
     {
       "texto": "un",
-      "inicio": 39.2,
+      "inicio": 39.24,
       "fin": 39.28,
       "frase": 8,
       "clave": false
     },
     {
       "texto": "frasco",
-      "inicio": 39.32,
-      "fin": 39.52,
+      "inicio": 39.36,
+      "fin": 39.6,
       "frase": 8,
       "clave": false
     },
     {
       "texto": "apretado.",
-      "inicio": 39.6,
-      "fin": 40.56,
+      "inicio": 39.68,
+      "fin": 40.4,
       "frase": 8,
       "clave": false
     },
     {
       "texto": "Así,",
-      "inicio": 40.68,
-      "fin": 41.2,
+      "inicio": 40.64,
+      "fin": 41.28,
       "frase": 9,
       "clave": false
     },
     {
       "texto": "más",
-      "inicio": 41.24,
-      "fin": 41.36,
+      "inicio": 41.36,
+      "fin": 41.52,
       "frase": 9,
       "clave": false
     },
     {
       "texto": "que",
-      "inicio": 41.48,
-      "fin": 41.6,
+      "inicio": 41.6,
+      "fin": 41.68,
       "frase": 9,
       "clave": false
     },
     {
       "texto": "todo",
-      "inicio": 41.68,
-      "fin": 41.84,
+      "inicio": 41.84,
+      "fin": 42.08,
       "frase": 9,
       "clave": false
     },
     {
       "texto": "el",
-      "inicio": 41.92,
-      "fin": 42,
+      "inicio": 42.12,
+      "fin": 42.16,
       "frase": 9,
       "clave": false
     },
     {
       "texto": "Sol",
-      "inicio": 42.08,
-      "fin": 42.24,
-      "frase": 9,
-      "clave": false
-    },
-    {
-      "texto": "queda",
-      "inicio": 42.36,
+      "inicio": 42.24,
       "fin": 42.48,
       "frase": 9,
       "clave": false
     },
     {
-      "texto": "metido",
+      "texto": "queda",
       "inicio": 42.56,
-      "fin": 42.8,
+      "fin": 42.72,
       "frase": 9,
       "clave": false
     },
     {
-      "texto": "en",
-      "inicio": 42.84,
-      "fin": 42.88,
-      "frase": 9,
-      "clave": false
-    },
-    {
-      "texto": "una",
-      "inicio": 42.96,
+      "texto": "metido",
+      "inicio": 42.8,
       "fin": 43.04,
       "frase": 9,
       "clave": false
     },
     {
-      "texto": "bola",
+      "texto": "en",
       "inicio": 43.12,
-      "fin": 43.36,
+      "fin": 43.16,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "una",
+      "inicio": 43.2,
+      "fin": 43.28,
+      "frase": 9,
+      "clave": false
+    },
+    {
+      "texto": "bola",
+      "inicio": 43.36,
+      "fin": 43.6,
       "frase": 9,
       "clave": false
     },
     {
       "texto": "de",
-      "inicio": 43.4,
-      "fin": 43.44,
-      "frase": 9,
-      "clave": false
-    },
-    {
-      "texto": "unos",
-      "inicio": 43.56,
+      "inicio": 43.64,
       "fin": 43.68,
       "frase": 9,
       "clave": false
     },
     {
+      "texto": "unos",
+      "inicio": 43.8,
+      "fin": 43.92,
+      "frase": 9,
+      "clave": false
+    },
+    {
       "texto": "veinte",
-      "inicio": 43.84,
-      "fin": 44.08,
+      "inicio": 44,
+      "fin": 44.24,
       "frase": 9,
       "clave": false
     },
     {
       "texto": "kilómetros,",
-      "inicio": 44.16,
-      "fin": 44.88,
+      "inicio": 44.4,
+      "fin": 45.12,
       "frase": 9,
       "clave": false
     },
     {
       "texto": "lo",
-      "inicio": 44.92,
-      "fin": 44.96,
+      "inicio": 45.16,
+      "fin": 45.2,
       "frase": 9,
       "clave": false
     },
     {
       "texto": "que",
-      "inicio": 45,
-      "fin": 45.04,
+      "inicio": 45.28,
+      "fin": 45.36,
       "frase": 9,
       "clave": false
     },
     {
       "texto": "mide",
-      "inicio": 45.12,
-      "fin": 45.28,
+      "inicio": 45.4,
+      "fin": 45.6,
       "frase": 9,
       "clave": false
     },
     {
       "texto": "una",
-      "inicio": 45.36,
-      "fin": 45.44,
+      "inicio": 45.68,
+      "fin": 45.84,
       "frase": 9,
       "clave": false
     },
     {
       "texto": "ciudad.",
-      "inicio": 45.48,
-      "fin": 46.32,
+      "inicio": 45.92,
+      "fin": 46.4,
       "frase": 9,
       "clave": true
     },
     {
       "texto": "A",
-      "inicio": 46.4,
-      "fin": 46.48,
+      "inicio": 46.8,
+      "fin": 46.88,
       "frase": 10,
       "clave": false
     },
     {
       "texto": "esa",
-      "inicio": 46.56,
-      "fin": 46.64,
+      "inicio": 46.96,
+      "fin": 47.12,
       "frase": 10,
       "clave": false
     },
     {
       "texto": "densidad,",
-      "inicio": 46.72,
-      "fin": 47.44,
+      "inicio": 47.24,
+      "fin": 47.92,
       "frase": 10,
       "clave": false
     },
     {
       "texto": "toda",
-      "inicio": 47.48,
-      "fin": 47.68,
-      "frase": 10,
-      "clave": false
-    },
-    {
-      "texto": "la",
-      "inicio": 47.76,
-      "fin": 47.8,
-      "frase": 10,
-      "clave": false
-    },
-    {
-      "texto": "humanidad",
-      "inicio": 47.84,
+      "inicio": 48,
       "fin": 48.24,
       "frase": 10,
       "clave": false
     },
     {
-      "texto": "cabría",
-      "inicio": 48.32,
-      "fin": 48.64,
+      "texto": "la",
+      "inicio": 48.28,
+      "fin": 48.32,
       "frase": 10,
       "clave": false
     },
     {
-      "texto": "en",
-      "inicio": 48.68,
-      "fin": 48.72,
-      "frase": 10,
-      "clave": false
-    },
-    {
-      "texto": "un",
-      "inicio": 48.76,
+      "texto": "humanidad",
+      "inicio": 48.44,
       "fin": 48.8,
       "frase": 10,
       "clave": false
     },
     {
-      "texto": "terrón",
-      "inicio": 48.92,
-      "fin": 49.12,
-      "frase": 10,
-      "clave": false
-    },
-    {
-      "texto": "de",
-      "inicio": 49.16,
+      "texto": "cabría",
+      "inicio": 48.88,
       "fin": 49.2,
       "frase": 10,
       "clave": false
     },
     {
+      "texto": "en",
+      "inicio": 49.24,
+      "fin": 49.28,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "un",
+      "inicio": 49.32,
+      "fin": 49.36,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "terrón",
+      "inicio": 49.44,
+      "fin": 49.76,
+      "frase": 10,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 49.8,
+      "fin": 49.84,
+      "frase": 10,
+      "clave": false
+    },
+    {
       "texto": "azúcar.",
-      "inicio": 49.28,
-      "fin": 50.08,
+      "inicio": 49.92,
+      "fin": 50.64,
       "frase": 10,
       "clave": true
     },
     {
       "texto": "Y",
-      "inicio": 50.12,
-      "fin": 50.16,
+      "inicio": 50.68,
+      "fin": 50.72,
       "frase": 11,
       "clave": false
     },
     {
       "texto": "la",
-      "inicio": 50.2,
-      "fin": 50.24,
+      "inicio": 50.76,
+      "fin": 50.8,
       "frase": 11,
       "clave": false
     },
     {
       "texto": "Tierra",
-      "inicio": 50.32,
-      "fin": 50.56,
+      "inicio": 50.88,
+      "fin": 51.12,
       "frase": 11,
       "clave": true
     },
     {
       "texto": "entera,",
-      "inicio": 50.72,
-      "fin": 51.04,
+      "inicio": 51.28,
+      "fin": 51.68,
       "frase": 11,
       "clave": false
     },
     {
       "texto": "en",
-      "inicio": 51.12,
-      "fin": 51.2,
-      "frase": 11,
-      "clave": false
-    },
-    {
-      "texto": "una",
-      "inicio": 51.28,
-      "fin": 51.36,
-      "frase": 11,
-      "clave": false
-    },
-    {
-      "texto": "bola",
-      "inicio": 51.44,
-      "fin": 51.6,
-      "frase": 11,
-      "clave": false
-    },
-    {
-      "texto": "de",
-      "inicio": 51.68,
+      "inicio": 51.72,
       "fin": 51.76,
       "frase": 11,
       "clave": false
     },
     {
+      "texto": "una",
+      "inicio": 51.84,
+      "fin": 51.92,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "bola",
+      "inicio": 52,
+      "fin": 52.16,
+      "frase": 11,
+      "clave": false
+    },
+    {
+      "texto": "de",
+      "inicio": 52.24,
+      "fin": 52.32,
+      "frase": 11,
+      "clave": false
+    },
+    {
       "texto": "trescientos",
-      "inicio": 51.92,
-      "fin": 52.4,
+      "inicio": 52.4,
+      "fin": 53.04,
       "frase": 11,
       "clave": false
     },
     {
       "texto": "metros.",
-      "inicio": 52.48,
-      "fin": 53.36,
+      "inicio": 53.12,
+      "fin": 53.72,
       "frase": 11,
       "clave": false
     },
     {
       "texto": "Así",
-      "inicio": 53.44,
-      "fin": 53.56,
-      "frase": 12,
-      "clave": false
-    },
-    {
-      "texto": "que",
-      "inicio": 53.6,
-      "fin": 53.76,
-      "frase": 12,
-      "clave": false
-    },
-    {
-      "texto": "no",
       "inicio": 53.92,
-      "fin": 54,
-      "frase": 12,
-      "clave": false
-    },
-    {
-      "texto": "es",
-      "inicio": 54.04,
-      "fin": 54.08,
+      "fin": 54.12,
       "frase": 12,
       "clave": false
     },
     {
       "texto": "que",
       "inicio": 54.16,
-      "fin": 54.2,
-      "frase": 12,
-      "clave": false
-    },
-    {
-      "texto": "sea",
-      "inicio": 54.24,
-      "fin": 54.4,
-      "frase": 12,
-      "clave": false
-    },
-    {
-      "texto": "un",
-      "inicio": 54.44,
-      "fin": 54.48,
-      "frase": 12,
-      "clave": false
-    },
-    {
-      "texto": "material",
-      "inicio": 54.68,
-      "fin": 54.88,
-      "frase": 12,
-      "clave": false
-    },
-    {
-      "texto": "pesado:",
-      "inicio": 54.96,
-      "fin": 55.76,
-      "frase": 12,
-      "clave": false
-    },
-    {
-      "texto": "es",
-      "inicio": 55.84,
-      "fin": 55.92,
-      "frase": 12,
-      "clave": false
-    },
-    {
-      "texto": "que",
-      "inicio": 55.96,
-      "fin": 56,
-      "frase": 12,
-      "clave": false
-    },
-    {
-      "texto": "en",
-      "inicio": 56.08,
-      "fin": 56.16,
-      "frase": 12,
-      "clave": false
-    },
-    {
-      "texto": "esa",
-      "inicio": 56.24,
-      "fin": 56.4,
-      "frase": 12,
-      "clave": false
-    },
-    {
-      "texto": "cucharadita",
-      "inicio": 56.44,
-      "fin": 57.12,
+      "fin": 54.32,
       "frase": 12,
       "clave": false
     },
     {
       "texto": "no",
-      "inicio": 57.28,
-      "fin": 57.36,
+      "inicio": 54.48,
+      "fin": 54.56,
       "frase": 12,
       "clave": false
     },
     {
-      "texto": "queda",
-      "inicio": 57.44,
+      "texto": "es",
+      "inicio": 54.6,
+      "fin": 54.64,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 54.72,
+      "fin": 54.76,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "sea",
+      "inicio": 54.8,
+      "fin": 54.96,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "un",
+      "inicio": 55,
+      "fin": 55.04,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "material",
+      "inicio": 55.24,
+      "fin": 55.44,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "pesado:",
+      "inicio": 55.52,
+      "fin": 56.24,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "es",
+      "inicio": 56.32,
+      "fin": 56.4,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "que",
+      "inicio": 56.44,
+      "fin": 56.48,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "en",
+      "inicio": 56.52,
+      "fin": 56.56,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "esa",
+      "inicio": 56.64,
+      "fin": 56.72,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "cucharadita",
+      "inicio": 56.8,
+      "fin": 57.44,
+      "frase": 12,
+      "clave": false
+    },
+    {
+      "texto": "no",
+      "inicio": 57.6,
       "fin": 57.68,
       "frase": 12,
       "clave": false
     },
     {
+      "texto": "queda",
+      "inicio": 57.76,
+      "fin": 58,
+      "frase": 12,
+      "clave": false
+    },
+    {
       "texto": "nada",
-      "inicio": 57.92,
-      "fin": 58.16,
+      "inicio": 58.24,
+      "fin": 58.48,
       "frase": 12,
       "clave": true
     },
     {
       "texto": "vacío.",
-      "inicio": 58.24,
-      "fin": 59.2,
+      "inicio": 58.56,
+      "fin": 59.44,
       "frase": 12,
       "clave": false
     },
     {
-      "texto": "Envíaselo",
-      "inicio": 59.28,
-      "fin": 59.68,
-      "frase": 13,
-      "clave": false
-    },
-    {
-      "texto": "a",
-      "inicio": 59.707,
-      "fin": 59.733,
-      "frase": 13,
-      "clave": false
-    },
-    {
-      "texto": "un",
-      "inicio": 59.76,
-      "fin": 59.8,
-      "frase": 13,
-      "clave": false
-    },
-    {
-      "texto": "amigo",
-      "inicio": 59.84,
-      "fin": 60.08,
+      "texto": "Sígueme",
+      "inicio": 59.52,
+      "fin": 59.84,
       "frase": 13,
       "clave": true
     },
     {
-      "texto": "que",
-      "inicio": 60.12,
-      "fin": 60.16,
+      "texto": "para",
+      "inicio": 59.92,
+      "fin": 60,
       "frase": 13,
       "clave": false
     },
     {
-      "texto": "le",
-      "inicio": 60.2,
-      "fin": 60.24,
-      "frase": 13,
-      "clave": false
-    },
-    {
-      "texto": "pueda",
-      "inicio": 60.32,
-      "fin": 60.44,
-      "frase": 13,
-      "clave": false
-    },
-    {
-      "texto": "interesar.",
-      "inicio": 60.48,
-      "fin": 61.2,
+      "texto": "más.",
+      "inicio": 60.08,
+      "fin": 60.64,
       "frase": 13,
       "clave": false
     }
