@@ -5,7 +5,8 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Lo decidido (con las palabras del creador)
 
--
+- Guion aprobado («Apruebo»). Video explicativo con voz (no lyric). Voz TX3LPaxmHKxFdv7VOQHJ, hecha (62 s).
+- Voz en la nube: ELEVENLABS_API_KEY=sk_dummy NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt (el proxy pone la clave).
 
 ## Pendiente del creador
 
@@ -13,12 +14,17 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 
 ## Pasos (METODO.md; marca cada uno al terminarlo)
 
-- [ ] 1. La idea y los datos → idea.md
-- [ ] 2. El guion → guion.json, **aprobado por el creador**
-- [ ] 3. La voz (una sola vez, con el guion cerrado)
-- [ ] 4. El plan → plan.md, con sus escenas
+- [x] 1. La idea y los datos → idea.md
+- [x] 2. El guion → guion.json, **aprobado por el creador**
+- [x] 3. La voz (una sola vez, con el guion cerrado)
+- [x] 4. El plan → plan.md, con sus escenas
 - [ ] 5. Escena por escena (cada una, su borrador aprobado):
-  - [ ] escena 1 (el hook)
+  - [ ] escena 1 (el hook, 0-9.2)
+  - [ ] escena 2 (la estrella, -19.8)
+  - [ ] escena 3 (el átomo, -29.2)
+  - [ ] escena 4 (los neutrones, -40.6)
+  - [ ] escena 5 (las comparaciones, -53.4)
+  - [ ] escena 6 (remate y cierre, -62)
 - [ ] 6. El sonido y el video entero: el borrador completo, **aprobado por el creador** (mientras lo mira: la
       miniatura y las descripciones)
 - [ ] 7. El render final, la miniatura (flyer.jpg) y las descripciones (descripciones.md), entregados; lo aprendido,
