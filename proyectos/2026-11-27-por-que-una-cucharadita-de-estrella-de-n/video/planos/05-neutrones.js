@@ -63,7 +63,7 @@ export function dibuja(g, t) {
   // las bolitas se juntan hasta llenar la pantalla, y siguen apretadas, temblando
   const aprieta = su(tr(t, Tpeg - 0.1, Tcan - 0.4));
   for (const s of ASIG) {
-    const tiembla = (1 + 2 * aprieta) * Math.sin(t * 31 + s.fin[0] * 0.05 + s.fin[1] * 0.03);
+    const tiembla = (1 + 2 * aprieta) * (1 - tr(t, Tcan - 0.5, Tcan - 0.25)) * Math.sin(t * 31 + s.fin[0] * 0.05 + s.fin[1] * 0.03);
     let x, y, r;
     if (s.b) {
       const p = ini(s.b);
