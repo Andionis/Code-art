@@ -1,0 +1,21 @@
+{
+  "titulo": "La cucharadita que pesa como una montaña",
+  "idioma": "es",
+  "subtitulos": "arriba",
+  "voz": { "id": "TX3LPaxmHKxFdv7VOQHJ" },
+  "frases": [
+    { "texto": "¿Por qué una cucharadita de estrella de neutrones pesaría más que una montaña?", "clave": "montaña", "hook": true },
+    { "texto": "Una sola cucharadita: más de mil millones de toneladas.", "clave": "toneladas", "hook": true },
+    { "texto": "Todo empieza con una estrella gigante, mucho más grande que el Sol, que se queda sin combustible.", "clave": "combustible" },
+    { "texto": "Su centro ya no aguanta su propio peso, y en menos de un segundo se desploma.", "clave": "desploma" },
+    { "texto": "Y lo que aplasta es lo mismo de lo que estás hecho tú: átomos.", "clave": "átomos" },
+    { "texto": "Un átomo está casi vacío: si fuera un estadio, su núcleo sería una hormiga en el centro.", "clave": "vacío" },
+    { "texto": "Pero la gravedad es tan fuerte que mete los electrones dentro del núcleo, y todo se vuelve neutrones.", "clave": "neutrones" },
+    { "texto": "Ya no queda ni un hueco: pegados unos con otros, como canicas en un frasco apretado.", "clave": "hueco" },
+    { "texto": "Así, más que todo el Sol queda metido en una bola de unos veinte kilómetros, lo que mide una ciudad.", "clave": "ciudad" },
+    { "texto": "A esa densidad, toda la humanidad cabría en un terrón de azúcar.", "clave": "azúcar" },
+    { "texto": "Y la Tierra entera, en una bola de trescientos metros.", "clave": "Tierra" },
+    { "texto": "Así que no es que sea un material pesado: es que en esa cucharadita no queda nada vacío.", "clave": "nada" },
+    { "texto": "Envíaselo a un amigo que le pueda interesar.", "clave": "amigo" }
+  ]
+}
