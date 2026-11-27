@@ -21,7 +21,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 - [x] 3. La voz (una sola vez, con el guion cerrado)
 - [x] 4. El plan → plan.md, con sus escenas
 - [ ] 5. Escena por escena (cada una, su borrador aprobado):
-  - [ ] escena 1 (el hook, 0-9.2)
+  - [x] escena 1 (el hook, 0-9.2): aprobada en v2
   - [ ] escena 2 (la estrella, -19.8)
   - [ ] escena 3 (el átomo, -29.2)
   - [ ] escena 4 (los neutrones, -40.6)

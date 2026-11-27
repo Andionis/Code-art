@@ -34,7 +34,7 @@
 
 | Escena | Frases | Acaba en (s) | Aprobada |
 |---|---|---|---|
-| 1 (el hook) | 1-2 | 9.2 | |
+| 1 (el hook) | 1-2 | 9.2 | sí (v2) |
 | 2 (la estrella) | 3-4 | 19.8 | |
 | 3 (el átomo) | 5-6 | 29.2 | |
 | 4 (los neutrones) | 7-8 | 40.6 | |
