@@ -150,3 +150,42 @@ export function balancin(g, t, ang, { alzaMontana = 0, giroM = 0, cuch = null, b
   if (cuch) cuchara(g, cuch.x, cuch.y, cuch.ang, CUCH_ESC, t, brilla);
 }
 export { SUELO };
+
+// ---------------------------------------------------------------- los átomos
+// Una partícula del núcleo: una bolita con luz (protón rojo, neutrón gris azulado).
+const TONOS = { p: ["#ffb0a0", "#ff4a36", "#8a160c"], n: ["#eef2fa", "#8f9bb4", "#2e3648"] };
+export function particula(g, x, y, r, tipo = "p") {
+  if (r < 0.4) return;
+  const c = TONOS[tipo], gr = g.createRadialGradient(x - r * 0.35, y - r * 0.4, r * 0.05, x, y, r);
+  gr.addColorStop(0, c[0]); gr.addColorStop(0.55, c[1]); gr.addColorStop(1, c[2]);
+  g.fillStyle = gr; g.beginPath(); g.arc(x, y, r, 0, Math.PI * 2); g.fill();
+}
+// El núcleo: un racimo de protones y neutrones de radio rn. neutro (0 a 1): cuántos protones se han vuelto neutrones.
+const RACIMO = (() => { const a = azar(5), l = []; for (let i = 0; i < 12; i++) { const an = i * 2.4, d = Math.sqrt(i / 12) * 0.62; l.push([Math.cos(an) * d, Math.sin(an) * d, a() < 0.5 ? "p" : "n", a()]); } return l; })();
+export function nucleo(g, x, y, rn, neutro = 0) {
+  k.brillo(g, x, y, rn * 6, "roja", 0.5 * (1 - neutro));
+  k.brillo(g, x, y, rn * 5, "azul", 0.35 * neutro);
+  for (const [dx, dy, tipo, u] of RACIMO) particula(g, x + dx * rn, y + dy * rn, rn * 0.42, tipo === "p" && u > neutro ? "p" : "n");
+}
+// Un átomo de radio R en (x, y): su nube azul de electrones, tres órbitas y sus electrones girando, y el núcleo en el
+// centro (radio R·ratio). sem: para que cada átomo gire distinto. cae (0 a 1): los electrones caen al núcleo en espiral.
+export function atomo(g, x, y, R, t, sem = 0, { ratio = 0.13, cae = 0, neutro = 0, al = 1 } = {}) {
+  if (R < 2 || al <= 0.01) return;
+  const A = g.globalAlpha; g.save(); g.globalAlpha = A * al;
+  const Re = R * (1 - cae);
+  if (Re > 1) {
+    const ng = g.createRadialGradient(x, y, 0, x, y, Re);
+    ng.addColorStop(0, "rgba(90,150,255,0.10)"); ng.addColorStop(0.7, "rgba(70,130,255,0.16)"); ng.addColorStop(0.95, "rgba(110,180,255,0.22)"); ng.addColorStop(1, "rgba(110,180,255,0)");
+    g.fillStyle = ng; g.beginPath(); g.arc(x, y, Re, 0, Math.PI * 2); g.fill();
+  }
+  for (let i = 0; i < 3; i++) {
+    const rot = sem * 1.7 + i * (Math.PI / 3), ra = Re * 0.92, rb = Re * 0.34;
+    if (ra > 3) { g.strokeStyle = `rgba(150,205,255,${0.28 * (1 - cae)})`; g.lineWidth = Math.max(1, R / 160); g.beginPath(); g.ellipse(x, y, ra, rb, rot, 0, Math.PI * 1.98); g.stroke(); }
+    const fa = t * (2.2 + i * 0.4) + sem * 3 + i * 2.1 + cae * 9;
+    const ex = Math.cos(fa) * ra, ey = Math.sin(fa) * rb;
+    const px = x + ex * Math.cos(rot) - ey * Math.sin(rot), py = y + ex * Math.sin(rot) + ey * Math.cos(rot);
+    k.brillo(g, px, py, Math.max(10, R * 0.16), "cian", 1);
+  }
+  nucleo(g, x, y, Math.max(1.2, R * ratio), neutro);
+  g.restore();
+}
