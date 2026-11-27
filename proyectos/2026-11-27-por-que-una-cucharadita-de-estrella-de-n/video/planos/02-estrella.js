@@ -19,11 +19,11 @@ export const Tcae = Tdes - 0.05, Tboom = Tcae + 0.22;     // se hunde; fogonazo 
 
 const R = 10;                                              // el radio de la gigante (en el mundo)
 // la cámara se aleja: de pegada a la superficie a verla entera con el Sol al lado
-const radPant = k.claves([[T0 - 0.05, 1500], [Tsol + 0.3, 400], [Tcomb + 0.8, 370], [Tdes, 350]]);
+const radPant = k.claves([[T0 - 0.05, 1500], [Tsol + 0.3, 400], [Tcomb - 0.1, 390], [Tagu + 0.2, 500], [Tdes, 540]]);
 const entraFin = (t) => mez(1, 0.22, su(tr(t, Tboom + 0.15, Tboom + 1.0)));
 const cam = (t) => { const d = ((F * R) / radPant(t)) * entraFin(t); const y = 1.2 * (entraFin(t) - 0.22) / 0.78; return k.mira([0, y, d], [0, y, 0]); };
 // el Sol: llega desde abajo a la derecha y frena en su sitio
-const SOL = [8.4, -10.2, 0], SOL_DE = [26, -24, 0];
+const SOL = [6.6, -9.0, 0], SOL_DE = [26, -24, 0];
 const solEn = (t) => k.mezV(SOL_DE, SOL, entra(tr(t, Tsol - 0.45, Tsol + 0.1)));
 const apagada = ["#e08a62", "#b0401f", "#7a2210", "#350a04", "200,60,30"];
 const cielo = k.cielo(9, 2600, [0, 0, -200], 700, 40);
@@ -43,7 +43,7 @@ export function dibuja(g, t) {
     k.etiqueta(g, S.x - 95, S.y + rs + 40, "el Sol", "255,214,110", tr(t, Tsol - 0.1, Tsol + 0.15) * (1 - tr(t, Tboom, Tboom + 0.3)), 50);
   }
   // la gigante: se apaga, tiembla, se encoge y se hunde
-  const apaga = su(tr(t, Tcomb - 0.3, Tcomb + 0.9));
+  const apaga = su(tr(t, Tcomb - 0.3, Tcomb + 0.7));
   const tiembla = su(tr(t, Tagu - 0.1, Tagu + 0.4)) * (1 - tr(t, Tcae, Tcae + 0.05));
   const encoge = mez(1, 0.8, su(tr(t, Tagu, Tcae)));
   const hunde = sale(tr(t, Tcae, Tboom));
