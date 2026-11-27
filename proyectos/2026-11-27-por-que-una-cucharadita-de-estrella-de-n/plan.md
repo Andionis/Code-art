@@ -36,7 +36,7 @@
 |---|---|---|---|
 | 1 (el hook) | 1-2 | 9.2 | sí (v2) |
 | 2 (la estrella) | 3-4 | 20.2 | sí (v1) |
-| 3 (el átomo) | 5-6 | 29.2 | |
+| 3 (el átomo) | 5-6 | 29.2 | sí (v1) |
 | 4 (los neutrones) | 7-8 | 40.6 | |
 | 5 (las comparaciones) | 9-11 | 53.4 | |
 | 6 (remate y cierre) | 12-13 | 61.4 | |

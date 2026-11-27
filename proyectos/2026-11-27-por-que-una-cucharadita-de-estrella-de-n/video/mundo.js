@@ -153,7 +153,7 @@ export { SUELO };
 
 // ---------------------------------------------------------------- los átomos
 // Una partícula del núcleo: una bolita con luz (protón rojo, neutrón gris azulado).
-const TONOS = { p: ["#ffb0a0", "#ff4a36", "#8a160c"], n: ["#eef2fa", "#8f9bb4", "#2e3648"] };
+const TONOS = { p: ["#ffb0a0", "#ff4a36", "#8a160c"], n: ["#f2f7ff", "#7d9de6", "#1b2858"] };
 export function particula(g, x, y, r, tipo = "p") {
   if (r < 0.4) return;
   const c = TONOS[tipo], gr = g.createRadialGradient(x - r * 0.35, y - r * 0.4, r * 0.05, x, y, r);
@@ -161,7 +161,7 @@ export function particula(g, x, y, r, tipo = "p") {
   g.fillStyle = gr; g.beginPath(); g.arc(x, y, r, 0, Math.PI * 2); g.fill();
 }
 // El núcleo: un racimo de protones y neutrones de radio rn. neutro (0 a 1): cuántos protones se han vuelto neutrones.
-const RACIMO = (() => { const a = azar(5), l = []; for (let i = 0; i < 12; i++) { const an = i * 2.4, d = Math.sqrt(i / 12) * 0.62; l.push([Math.cos(an) * d, Math.sin(an) * d, a() < 0.5 ? "p" : "n", a()]); } return l; })();
+export const RACIMO = (() => { const a = azar(5), l = []; for (let i = 0; i < 12; i++) { const an = i * 2.4, d = Math.sqrt(i / 12) * 0.62; l.push([Math.cos(an) * d, Math.sin(an) * d, a() < 0.5 ? "p" : "n", a()]); } return l; })();
 export function nucleo(g, x, y, rn, neutro = 0) {
   k.brillo(g, x, y, rn * 6, "roja", 0.5 * (1 - neutro));
   k.brillo(g, x, y, rn * 5, "azul", 0.35 * neutro);

@@ -23,7 +23,7 @@ pida. Al terminar cada paso, márcalo y apunta lo que haya cambiado.
 - [ ] 5. Escena por escena (cada una, su borrador aprobado):
   - [x] escena 1 (el hook, 0-9.2): aprobada en v2
   - [x] escena 2 (la estrella, -20.2): aprobada en v1
-  - [ ] escena 3 (el átomo, -29.2)
+  - [x] escena 3 (el átomo y el estadio, -29.2): aprobada en v1
   - [ ] escena 4 (los neutrones, -40.6)
   - [ ] escena 5 (las comparaciones, -53.4)
   - [ ] escena 6 (remate y cierre, -62)
